@@ -7,7 +7,7 @@ import threading
 OVERRIDE_DUPLICATE_FILES = False
 MAX_WORKERS = 8
 
-env_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), '.env')
+env_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), '.env')
 if not os.path.exists(env_path):
     raise FileNotFoundError(f"Environment file not found at {env_path}")
 load_dotenv(env_path)
@@ -102,7 +102,7 @@ def main():
     finally:
         cursor.close()
 
-    data_dir = os.path.join(os.path.dirname(__file__), "interactions_data")
+    data_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "interactions_data", "raw")
     if not os.path.exists(data_dir):
         print(f"Data directory '{data_dir}' does not exist. Nothing to upload.")
         sf_conn.close()
@@ -117,7 +117,7 @@ def main():
     
     for root, dirs, files in os.walk(data_dir):
         policy_num = os.path.basename(root)
-        if policy_num == "interactions_data" or policy_num == "":
+        if policy_num in ["interactions_data", "raw", ""]:
             continue
             
         for file in files:

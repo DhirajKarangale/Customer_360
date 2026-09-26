@@ -20,12 +20,12 @@ MODELS = {
     "SUMMARY": "llama3.1-8b"
 }
 
-env_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), '.env')
+env_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), '.env')
 if not os.path.exists(env_path):
     raise FileNotFoundError(f"Environment file not found at {env_path}")
 load_dotenv(env_path)
 
-SCHEMA_PROMPT_PATH = os.path.join(os.path.dirname(__file__), 'llm_schema_prompt.md')
+SCHEMA_PROMPT_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'docs', 'llm_schema_prompt.md')
 SCHEMA_PROMPT = ""
 if os.path.exists(SCHEMA_PROMPT_PATH):
     with open(SCHEMA_PROMPT_PATH, "r", encoding="utf-8") as f:
@@ -236,7 +236,7 @@ def main():
         print(f"Could not connect to Snowflake: {e}")
         return
 
-    output_dir = os.path.join(os.path.dirname(__file__), "interactions_data")
+    output_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "interactions_data", "raw")
     os.makedirs(output_dir, exist_ok=True)
     
     start_index = START_POLICY - 1
