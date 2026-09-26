@@ -1,0 +1,156 @@
+import os
+import snowflake.connector
+from dotenv import load_dotenv
+import concurrent.futures
+import threading
+
+OVERRIDE_DUPLICATE_FILES = False
+MAX_WORKERS = 8
+
+env_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), '.env')
+if not os.path.exists(env_path):
+    raise FileNotFoundError(f"Environment file not found at {env_path}")
+load_dotenv(env_path)
+
+SF_USER = os.getenv("SNOWFLAKE_USER")
+SF_PASSWORD = os.getenv("SNOWFLAKE_PASSWORD")
+SF_ACCOUNT = os.getenv("SNOWFLAKE_ACCOUNT")
+SF_WAREHOUSE = os.getenv("SNOWFLAKE_WAREHOUSE")
+SF_DATABASE = os.getenv("SNOWFLAKE_DATABASE")
+SF_SCHEMA = os.getenv("SNOWFLAKE_SCHEMA")
+
+stats_lock = threading.Lock()
+upload_count = 0
+skip_count = 0
+override_count = 0
+
+def get_snowflake_conn():
+    conn = snowflake.connector.connect(
+        user=SF_USER,
+        password=SF_PASSWORD,
+        account=SF_ACCOUNT
+    )
+    cursor = conn.cursor()
+    if SF_WAREHOUSE:
+        cursor.execute(f"CREATE WAREHOUSE IF NOT EXISTS {SF_WAREHOUSE}")
+        cursor.execute(f"USE WAREHOUSE {SF_WAREHOUSE}")
+    if SF_DATABASE:
+        cursor.execute(f"CREATE DATABASE IF NOT EXISTS {SF_DATABASE}")
+        cursor.execute(f"USE DATABASE {SF_DATABASE}")
+    if SF_SCHEMA:
+        cursor.execute(f"CREATE SCHEMA IF NOT EXISTS {SF_SCHEMA}")
+        cursor.execute(f"USE SCHEMA {SF_SCHEMA}")
+    cursor.close()
+    return conn
+
+def process_file(file_info, sf_conn, stage_name):
+    global upload_count, skip_count, override_count
+    local_path, stage_relative_path, policy_num, is_duplicate = file_info
+    
+    if is_duplicate and not OVERRIDE_DUPLICATE_FILES:
+        print(f"  [SKIPPED] {stage_relative_path} (already present)")
+        with stats_lock:
+            skip_count += 1
+        return
+        
+    put_path = local_path.replace('\\', '/')
+    cursor = sf_conn.cursor()
+    
+    try:
+        overwrite_flag = "TRUE" if (is_duplicate and OVERRIDE_DUPLICATE_FILES) else "FALSE"
+        query = f"PUT 'file://{put_path}' @{stage_name}/{policy_num} AUTO_COMPRESS=FALSE OVERWRITE={overwrite_flag}"
+        cursor.execute(query)
+        
+        if is_duplicate and OVERRIDE_DUPLICATE_FILES:
+            print(f"  [OVERWRITTEN] {stage_relative_path}")
+            with stats_lock:
+                override_count += 1
+        else:
+            print(f"  [UPLOADED] {stage_relative_path}")
+            with stats_lock:
+                upload_count += 1
+    except Exception as e:
+        print(f"  [ERROR] Failed to upload {local_path}: {e}")
+    finally:
+        cursor.close()
+
+def main():
+    print("Connecting to Snowflake...")
+    try:
+        sf_conn = get_snowflake_conn()
+    except Exception as e:
+        print(f"Could not connect to Snowflake: {e}")
+        return
+
+    cursor = sf_conn.cursor()
+    stage_name = "INTERACTIONS_STAGE"
+    
+    cursor.execute(f"CREATE STAGE IF NOT EXISTS {stage_name}")
+    print(f"Stage '{stage_name}' is ready.")
+
+    print("Checking for existing files in the Snowflake stage...")
+    existing_files = set()
+    try:
+        cursor.execute(f"LIST @{stage_name}")
+        for row in cursor.fetchall():
+            file_path = row[0]
+            if file_path.lower().startswith(f"{stage_name.lower()}/"):
+                file_path = file_path[len(stage_name) + 1:]
+            existing_files.add(file_path)
+    except Exception as e:
+        print(f"Warning: Could not list stage (it might be empty): {e}")
+    finally:
+        cursor.close()
+
+    data_dir = os.path.join(os.path.dirname(__file__), "interactions_data")
+    if not os.path.exists(data_dir):
+        print(f"Data directory '{data_dir}' does not exist. Nothing to upload.")
+        sf_conn.close()
+        return
+
+    print("Scanning local directory and queueing files for upload...")
+    
+    total_files_on_snowflake = len(existing_files)
+    print(f"Total files initially present on Snowflake: {total_files_on_snowflake}")
+    
+    all_files_to_process = []
+    
+    for root, dirs, files in os.walk(data_dir):
+        policy_num = os.path.basename(root)
+        if policy_num == "interactions_data" or policy_num == "":
+            continue
+            
+        for file in files:
+            local_path = os.path.join(root, file)
+            stage_relative_path = f"{policy_num}/{file}"
+            
+            is_duplicate = stage_relative_path in existing_files or f"{stage_relative_path}.gz" in existing_files
+            all_files_to_process.append((local_path, stage_relative_path, policy_num, is_duplicate))
+
+    print(f"Starting parallel upload process using {MAX_WORKERS} workers...")
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        futures = []
+        for file_info in all_files_to_process:
+            futures.append(executor.submit(process_file, file_info, sf_conn, stage_name))
+            
+        for future in concurrent.futures.as_completed(futures):
+            try:
+                future.result()
+            except Exception as e:
+                print(f"Worker encountered an error: {e}")
+
+    sf_conn.close()
+    
+    total_files_after_upload = total_files_on_snowflake + upload_count
+    
+    print("\n--- Upload Summary ---")
+    print(f"Total files initially present on Snowflake: {total_files_on_snowflake}")
+    print(f"New files uploaded: {upload_count}")
+    print(f"Duplicate files overwritten: {override_count}")
+    print(f"Duplicate files ignored (skipped): {skip_count}")
+    print(f"Total files in Snowflake after upload: {total_files_after_upload}")
+    print("Upload process complete!")
+
+if __name__ == "__main__":
+    main()

@@ -6,8 +6,8 @@ import snowflake.connector
 from dotenv import load_dotenv
 import concurrent.futures
 
-START_POLICY = 8
-END_POLICY = 8
+START_POLICY = 11
+END_POLICY = 11
 
 MAX_WORKERS = 4
 
@@ -21,10 +21,9 @@ MODELS = {
 }
 
 env_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), '.env')
-if os.path.exists(env_path):
-    load_dotenv(env_path)
-else:
-    load_dotenv()
+if not os.path.exists(env_path):
+    raise FileNotFoundError(f"Environment file not found at {env_path}")
+load_dotenv(env_path)
 
 SCHEMA_PROMPT_PATH = os.path.join(os.path.dirname(__file__), 'llm_schema_prompt.md')
 SCHEMA_PROMPT = ""
@@ -33,7 +32,7 @@ if os.path.exists(SCHEMA_PROMPT_PATH):
         SCHEMA_PROMPT = f.read()
 
 PG_HOST = os.getenv("POSTGRES_HOST")
-PG_PORT = os.getenv("POSTGRES_PORT", "5432")
+PG_PORT = os.getenv("POSTGRES_PORT")
 PG_NAME = os.getenv("POSTGRES_DB")
 PG_USER = os.getenv("POSTGRES_USER")
 PG_PASS = os.getenv("POSTGRES_PASSWORD")
@@ -41,9 +40,9 @@ PG_PASS = os.getenv("POSTGRES_PASSWORD")
 SF_USER = os.getenv("SNOWFLAKE_USER")
 SF_PASSWORD = os.getenv("SNOWFLAKE_PASSWORD")
 SF_ACCOUNT = os.getenv("SNOWFLAKE_ACCOUNT")
-SF_WAREHOUSE = os.getenv("SNOWFLAKE_WAREHOUSE", "COMPUTE_WH")
-SF_DATABASE = os.getenv("SNOWFLAKE_DATABASE", "CUSTOMER360_DB")
-SF_SCHEMA = os.getenv("SNOWFLAKE_SCHEMA", "PUBLIC")
+SF_WAREHOUSE = os.getenv("SNOWFLAKE_WAREHOUSE")
+SF_DATABASE = os.getenv("SNOWFLAKE_DATABASE")
+SF_SCHEMA = os.getenv("SNOWFLAKE_SCHEMA")
 
 def get_snowflake_conn():
     conn = snowflake.connector.connect(
