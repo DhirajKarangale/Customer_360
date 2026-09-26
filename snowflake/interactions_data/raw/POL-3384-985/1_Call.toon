@@ -1,0 +1,32 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:25:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Vihaan Patel,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,insurance agent
+messages[23]{user,text}:
+  user_1,Hi is this Shield Life Services
+  user_2,Ah yes this is Shield Life Services How can I assist you today
+  user_1,I am Vihaan Patel and I have a travel policy with DCoders
+  user_2,Okay Vihaan let me just check on that for you [typing] Can you please provide me with your policy number
+  user_1,It's TP-001234
+  user_2,Thank you [pause] Ah yes I have your policy details right here What seems to be the issue with your policy today
+  user_1,I was trying to file a claim but the system says my policy is expired
+  user_2,I apologize for the inconvenience Let me check on the status [hold music starts] [hold music ends after 2 minutes]
+  user_2,Vihaan I've checked on the status and it seems like your policy did expire last week
+  user_1,What That can't be right I could've sworn I paid the premium
+  user_2,I understand your concern Let me check on the payment history [typing] Ah yes it seems like the payment was due on the 1st of this month but we didn't receive it
+  user_1,[sighs] I must have missed the email I've been really busy with work
+  user_2,It's okay these things happen Let me see what we can do [pause] I can offer you a reinstatement option but you'll need to pay the premium and a small fee
+  user_1,How much will that be
+  user_2,[typing] Let me just calculate that for you [pause] It'll be a total of $250
+  user_1,That sounds okay I'll pay it But can you also tell me why I didn't receive any reminders
+  user_2,I apologize for that It seems like our system didn't send out reminders for some reason I'll make sure to escalate this issue
+  user_1,Okay thank you for your help Neha
+  user_2,You're welcome Vihaan I'll go ahead and process the reinstatement [typing] [background noise: dog barks]
+  user_1,Wait no I just realized I don't need the policy anymore
+  user_2,Okay Vihaan in that case we can just cancel the policy and you won't need to pay the premium
+  user_1,Yeah that sounds good
+  user_2,Alright I've cancelled the policy [pause] You should receive a confirmation email shortly
+  user_1,Great thank you Neha
+  user_2,You're welcome Vihaan Have a great day [call ends]

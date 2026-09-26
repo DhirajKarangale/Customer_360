@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Cancellation of Health Policy HP-001234
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Pooja Bhatia,pooja.bhatia@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,vikram.p@omniinsurancegroup.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,03/10/2024 T:11:04:20,"Hi Vikram,\n\nI hope this email finds you well. I am writing to confirm that my health policy HP-001234 has been cancelled as per our previous discussions. Could you please confirm if the cancellation is updated in the system and if I will receive a refund?\n\nThanks,\n\nPooja",
+  user_2,user_1,,03/10/2024 T:11:16:50,"Dear Pooja,\n\nThank you for your email. I am happy to confirm that your health policy HP-001234 has been successfully cancelled and updated in our system. You will receive a refund within 7-10 working days. Please find attached a copy of the cancellation confirmation for your records.\n\nBest regards,\nVikram Patel",https://storage.omniinsurancegroup.com/docs/Policy_HP001234_Cancellation.pdf

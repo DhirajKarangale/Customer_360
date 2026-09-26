@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 30/09/2026 T:14:05:00
+end_timestamp: 30/09/2026 T:14:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Kiara Sen,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Ramesh Tiwari,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Ramesh I hope you're doing well I just wanted to confirm that I've received the quote for my auto policy renewal and I'm okay with the terms
+  user_2,Ah great to hear that Kiara Yeah I've got you down for the renewal with the comprehensive coverage and the slight premium increase due to your vehicle's value going up
+  user_1,That sounds right I just want to make sure that the policy is active from the date I sign the form not from the expiration date of the old policy
+  user_2,That's correct Kiara The new policy will be active from the date you sign the digital form or email us the physical one whichever you prefer
+  user_1,Alright that sounds good I'll go ahead and sign the digital form now [pause] Can you just confirm that you've received it once I've signed

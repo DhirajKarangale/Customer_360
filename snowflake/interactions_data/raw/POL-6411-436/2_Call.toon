@@ -1,0 +1,12 @@
+call_id: REC-DCD-003A
+start_timestamp: 28/02/2024 T:10:10:00
+end_timestamp: 28/02/2024 T:10:14:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Aditya Singh,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Neha Kapoor,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Neha this is Aditya Singh I sent you an email about my health policy SH-123456
+  user_2,Hi Aditya yeah I got your email -- sorry I didn't get a chance to respond yet
+  user_1,It says my policy has expired I'm not sure what to do to reinstate it
+  user_2,Let me just check on that for you [typing] Ah yes I see the issue here
+  user_2,It looks like the payment for the renewal was missed so the policy lapsed [sighs]

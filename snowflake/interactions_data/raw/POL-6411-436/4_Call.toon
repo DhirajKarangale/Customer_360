@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 29/02/2024 T:14:10:00
+end_timestamp: 29/02/2024 T:14:14:00
+participants[2]{id,name,role}:
+  123e4567-e89b-12d3-a456-426655440000,Aditya Singh,customer
+  789a0123-b456-789c-d012-345678901234,Neha Kapoor,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Neha I just wanted to confirm if I can pay the 15500 INR online to reinstate my policy
+  user_2,Ah yes Aditya you can definitely do that The payment link is available on our website under the payments section
+  user_1,Okay great And just to confirm the policy will be reinstated from the date of payment right
+  user_2,That's correct Aditya Once the payment is processed your policy will be reinstated from the date of payment [typing] I'm just checking the status real quick
+  user_1,Alright sounds good Thanks Neha I'll go ahead and make the payment now

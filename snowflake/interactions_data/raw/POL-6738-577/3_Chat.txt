@@ -1,0 +1,10 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d7,Sai Kumar,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey neha, just wanted to confirm my auto policy is updated to expired in the system?",
+  user_2,26/09/2024 T14:50:30,"Hi Sai, yes it is. I've checked and your policy status is now expired. You won't be covered for any accidents or damages from now on.",
+  user_1,26/09/2024 T14:51:00,"ok, thats what i thought. i dont plan on renewing it anyway. thanks for the help neha",
+  user_2,26/09/2024 T14:51:20,"You're welcome, Sai. If you change your mind or need any other assistance, feel free to reach out. Have a great day!",
+  user_1,26/09/2024 T14:51:40,"will do, thanks again"

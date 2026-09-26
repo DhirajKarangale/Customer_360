@@ -1,0 +1,14 @@
+call_id: REC-INS-002C
+start_timestamp: 26/09/2026 T:10:05:00
+end_timestamp: 26/09/2026 T:10:22:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Vihaan Patel,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Neha Kapoor,insurance agent
+messages[7]{user,text}:
+  user_1,Hi Neha this is Vihaan Patel I hope you got my email about my health policy
+  user_2,Ah yes Vihaan good morning I did receive your email regarding policy SH-123456
+  user_1,Yeah that's the one I thought it was set for auto-renewal but I got a notification that it's expired
+  user_2,I apologize for the inconvenience Let me just check on that for you [typing] Ah I see the issue here
+  user_1,What's going on
+  user_2,It looks like there was a technical glitch and the auto-renewal didn't go through But don't worry we can reinstate the policy for you
+  user_1,Okay that sounds good How do I go about doing that

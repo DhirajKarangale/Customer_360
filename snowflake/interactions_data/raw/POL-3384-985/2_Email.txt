@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Travel Policy Expiration and Cancellation
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c97,Vihaan Patel,vihaan.patel@mail.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d7,Neha Kapoor,neha.kapoor@shieldlifeservices.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,27/09/2024 T:10:06:40,"Dear Vihaan,\n\nI hope this email finds you well. I am following up on our previous call regarding your travel policy with DCoders. As discussed, I have cancelled the policy as per your request. Please find the cancellation confirmation attached to this email.\n\nIf you have any further queries or concerns, please do not hesitate to reach out.\n\nBest regards,\nNeha Kapoor",https://storage.shieldlifeservices.com/docs/Policy_Cancellation_Confirmation_VP_2026.pdf
+  user_1,user_2,,27/09/2024 T:10:14:10,"Hi Neha,\n\nThanks for your prompt response and for cancelling my policy. I appreciate your help in resolving the issue. I will make sure to review my policy details more carefully in the future.\n\nBest regards,\nVihaan Patel"

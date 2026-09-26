@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Auto Policy Renewal Options for Kiara Sen
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c97,Kiara Sen,kiara.sen@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d7,Ramesh Tiwari,ramesh.tiwari@safeshieldagency.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,28/09/2024 T:10:06:40,"Hi Ramesh,\n\nI wanted to follow up on our call last week regarding my auto policy with DCoders. You mentioned it had expired and we discussed renewal options. Could you please provide me with a detailed quote for the new policy year, including any changes in premium or coverage?\n\nPolicy Number: DC-001234\n\nThanks,\nKiara",
+  user_2,user_1,,28/09/2024 T:10:14:10,"Dear Kiara,\n\nThank you for your email. I have attached a detailed quote for your auto policy renewal with DCoders. As discussed, the new policy year will see a slight increase in premium due to the addition of comprehensive coverage. Please review the attached document and let me know if you have any questions or if you'd like to proceed with the renewal.\n\nBest regards,\nRamesh Tiwari",https://storage.safeshieldagency.com/docs/Quote_DC001234_2026.pdf

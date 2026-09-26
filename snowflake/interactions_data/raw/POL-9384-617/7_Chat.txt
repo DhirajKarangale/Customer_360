@@ -1,0 +1,9 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Atharv Pandey,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[4]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey vikram, just wanted to confirm if my policy is active now?",
+  user_2,26/09/2024 T14:50:30,"Hi Atharv, yeah it should be active now. Let me just check real quick *real quick*",
+  user_1,26/09/2024 T14:51:00,"ok, i just got a bit worried since i had that payment issue earlier",
+  user_2,26/09/2024 T14:51:45,"Yeah, I can see that it was a bit of a mess, but everything looks good now. Your policy is active, and you're all set. I'll send you a confirmation email just in case"

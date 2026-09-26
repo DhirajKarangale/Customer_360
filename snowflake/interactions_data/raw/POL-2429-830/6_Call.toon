@@ -1,0 +1,12 @@
+call_id: REC-INS-006C
+start_timestamp: 27/09/2026 T:14:05:00
+end_timestamp: 27/09/2026 T:14:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Arjun Reddy,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Ravi I'm calling to confirm that my health policy HP-001234 has been cancelled
+  user_2,Ah yes Arjun Good afternoon I'm checking on that for you [pause] [typing] Yes it's confirmed that your policy HP-001234 has been cancelled as per your request
+  user_1,Okay great thanks for confirming Ravi I just wanted to make sure since I've been getting some mixed messages
+  user_2,No problem at all Arjun I completely understand It's always better to double-check these things [sighs] I'm glad I could help clarify things for you
+  user_1,Thanks Ravi appreciate your help with this

@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Arjun Reddy,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Ravi Menon,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey ravi, just wanted to confirm if u got my email with the signed cancellation form for my health policy HP-001234",
+  user_2,26/09/2024 T14:50:15,"yes arjun, i did. thanks for the prompt response. i'll go ahead and process the cancellation. u'll get a confirmation email once it's done",
+  user_1,26/09/2024 T14:50:30,"great, thx. can u pls confirm if i'll get a refund for the unused premium",
+  user_2,26/09/2024 T14:50:45,"yes, u'll get a refund for the unused premium. i'll make sure to include the details in the confirmation email. btw, is there a reason for cancelling the policy?",
+  user_1,26/09/2024 T14:51:00,"yeah, i got a better offer from another insurer. thx for ur help ravi. appreciate it"

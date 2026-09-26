@@ -1,0 +1,10 @@
+chat_id: 9f8a5c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Aditya Singh,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Neha Kapoor,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,28/02/2024 T10:10:00,"hey neha, just wanted to follow up on my health policy SH-123456. u said it lapsed due to a missed payment. whats the next step to reinstate it?",
+  user_2,28/02/2024 T10:10:30,"hi aditya, yeah i checked and the policy did lapse. to reinstate, we need to pay the missed premium and a small reinstatement fee. i can guide you through the process",
+  user_1,28/02/2024 T10:11:00,"ok, thats great. how much is the total amount i need to pay? and can i pay online?",
+  user_2,28/02/2024 T10:11:45,"let me just check the exact amount for you... (1 sec) okay, it looks like the total due is 15,500 INR. and yes, you can pay online through our website or i can send you a link",
+  user_2,28/02/2024 T10:12:10,"also, aditya, just a heads up that the policy will be reinstated from the date of payment, not the original expiry date. does that work for you?"

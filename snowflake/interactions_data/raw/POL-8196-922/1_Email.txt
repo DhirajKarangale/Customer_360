@@ -1,0 +1,7 @@
+mail_id: 3421qwe-3423-470e-a3fc-799eaf739c96
+subject: Policy Expiration: Health Policy for Diya Menon
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Diya Menon,diya.menon@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,anjali.desai@firstguardbrokers.com,insurance agent
+mails[1]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/02/2023 T:10:05:00,"Dear Diya,\n\nI am writing to inform you that your health policy with DCoders is set to expire on 01/03/2023. We would like to discuss renewal options with you to ensure continuous coverage. Please let us know a convenient time to talk.\n\nBest regards,\nAnjali Desai",

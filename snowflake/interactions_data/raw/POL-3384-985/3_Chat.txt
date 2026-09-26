@@ -1,0 +1,10 @@
+chat_id: 9f8a5c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d7,Vihaan Patel,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey neha, just wanted to follow up on my travel policy with dcoders. i think it expired but i never got any reminders",
+  user_2,26/09/2024 T14:50:30,"Hi Vihaan, sorry to hear that. Can you please confirm your policy number so I can look into this for you?",
+  user_1,26/09/2024 T14:51:00,"its TRV-001234. i also wanted to know why i didnt get any reminders",
+  user_2,26/09/2024 T14:52:00,"I've checked on your policy, Vihaan. It seems there was an issue with the email address we had on file. I'm going to go ahead and update it for you. Your policy did indeed expire, but we can offer you a reinstatement option if you're interested.",
+  user_1,26/09/2024 T14:53:00,"oh ok, thanks for letting me know. i think ill just cancel it then. can you do that for me?"

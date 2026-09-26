@@ -1,0 +1,12 @@
+call_id: REC-INS-006C
+start_timestamp: 26/09/2026 T:14:10:00
+end_timestamp: 26/09/2026 T:14:14:00
+participants[2]{id,name,role}:
+  4f3a7028-a699-4de4-b932-41271ff311d6,Sai Kumar,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Neha this is Sai Kumar I'm calling about my auto policy
+  user_2,Hi Sai good afternoon Can you please confirm your policy number for me
+  user_1,It's AP-001234
+  user_2,Thank you Sai I've checked on the system and your policy has been updated to expired as per our previous conversation
+  user_1,Okay that's great thank you Neha I just wanted to confirm that everything is in order

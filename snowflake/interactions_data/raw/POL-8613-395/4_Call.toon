@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Pooja Bhatia,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Vikram I'm calling to confirm that my health policy HP-001234 has been cancelled
+  user_2,Ah yes Pooja Good morning I've checked on the system and yes your policy has been cancelled
+  user_1,Okay great And can you confirm that the status is updated in the system
+  user_2,Yes it's updated as Cancelled I've also sent you a confirmation email with the details
+  user_2,[sighs] And just to reconfirm you should receive your refund within 7-10 working days

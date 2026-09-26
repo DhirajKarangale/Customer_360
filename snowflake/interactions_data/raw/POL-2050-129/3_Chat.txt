@@ -1,0 +1,10 @@
+chat_id: 9f8a2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Vihaan Patel,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Neha Kapoor,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey neha, just wanted to follow up on our call earlier about my health policy SH-123456. did u manage to reinstate it?",
+  user_2,26/09/2024 T14:50:30,"Hi Vihaan, yes I did look into it. I've sent a request to our underwriting team to reinstate your policy. You should receive an email with the updated status soon.",
+  user_1,26/09/2024 T14:51:00,"thx neha! i really appreciate it. btw, do i need to pay the premium again or will it be pro-rated?",
+  user_2,26/09/2024 T14:51:45,"You're welcome, Vihaan! Since it was a technical glitch on our end, we'll pro-rate the premium for the period it was expired. I'll send you a separate email with the updated premium amount and payment link.",
+  user_1,26/09/2024 T14:52:10,"sounds good, thx again neha! looking forward to the email"

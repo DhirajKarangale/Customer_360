@@ -1,0 +1,11 @@
+call_id: REC-INS-004C
+start_timestamp: 01/03/2023 T:10:00:00
+end_timestamp: 01/03/2023 T:10:04:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Diya Menon,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,insurance agent
+messages[4]{user,text}:
+  user_1,Hi Anjali I just wanted to confirm that my policy is all set
+  user_2,Ah yeah Diya your policy is all set to expire today actually I'm so sorry I didn't get a chance to send you the confirmation email yet
+  user_1,Oh no I thought we had renewed it with the premium plan that includes dental and vision care
+  user_2,We did Diya I apologize for the confusion your new policy is active as of today and you should receive an email with all the details shortly

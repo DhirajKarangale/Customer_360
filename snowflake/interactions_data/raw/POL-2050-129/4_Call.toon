@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Vihaan Patel,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Neha Kapoor,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Neha this is Vihaan Patel calling about my health policy SH-123456
+  user_2,Hi Vihaan good morning I hope you're doing well How can I assist you today
+  user_1,I just wanted to confirm that my policy has been reinstated and what's the updated premium amount
+  user_2,Ah yes Vihaan I've checked on the system and your policy has been successfully reinstated The premium will be pro-rated and I've sent you an email with the updated amount and payment link
+  user_1,Okay great thank you so much Neha I really appreciate your help

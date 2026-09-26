@@ -1,0 +1,12 @@
+call_id: REC-INS-006C
+start_timestamp: 30/09/2026 T:14:05:00
+end_timestamp: 30/09/2026 T:14:09:00
+participants[2]{id,name,role}:
+  4f3a7028-a699-4de4-b932-41271ff311d6,Vihaan Patel,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Neha I'm calling about my travel policy with DCoders I just wanted to confirm that it's been cancelled
+  user_2,Ah yes Vihaan Good afternoon I've checked on the status and yes your policy has been successfully cancelled as per your request
+  user_1,Okay great thanks for confirming I just wanted to make sure everything was taken care of
+  user_2,You're welcome Vihaan I've also updated the status to expired in our system so you won't receive any further reminders or notifications
+  user_1,Alright sounds good thanks again for your help Neha

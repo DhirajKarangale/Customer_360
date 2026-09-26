@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 30/09/2026 T:14:05:00
+end_timestamp: 30/09/2026 T:14:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Arjun Reddy,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Ravi I hope you're doing well I just wanted to follow up on my health policy that expired on March 10th
+  user_2,Ah Arjun good afternoon Yeah I remember your case Let me just check on the status real quick [pause] [typing]
+  user_1,Thanks Ravi I appreciate it I'm just a bit concerned because I haven't received any updates on the reinstatement
+  user_2,Okay Arjun I've checked on it and it looks like we received your payment and reinstatement form on the 25th of March [sighs] I apologize again for the oversight earlier
+  user_1,Alright that's a relief Thanks for letting me know Ravi I guess I just need to wait for the updated policy documents now

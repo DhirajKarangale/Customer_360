@@ -1,0 +1,21 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:25:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Sai Kumar,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,insurance agent
+messages[14]{user,text}:
+  user_1,Hi is this DCoders
+  user_2,Ah yes this is DCoders How can I assist you today
+  user_1,I am Sai Kumar I have an auto policy with you
+  user_2,Okay Sai Kumar can you please provide me with your policy number so I can look into this for you
+  user_1,It's AP-001234
+  user_2,Thank you Sai Kumar [typing] Ah I see that your policy is set to expire today
+  user_1,Yeah that's why I'm calling I didn't receive any renewal notice
+  user_2,I apologize for the inconvenience Sai Kumar [sighs] Let me see what happened [hold music starts]
+  user_2,[hold music ends] Sai Kumar I've checked on our system and it seems that the renewal notice was sent to your email address but it might have gone to your spam folder
+  user_1,Oh I didn't check my spam folder [dog barks in the background]
+  user_2,[laughs] No worries Sai Kumar I can assist you with the renewal process if you'd like
+  user_1,Actually I don't think I want to renew it
+  user_2,Okay Sai Kumar I've gone ahead and updated the status of your policy to expired [pause] Is there anything else I can assist you with today
+  user_1,No that's all thank you Neha

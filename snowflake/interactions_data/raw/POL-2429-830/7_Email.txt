@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Cancellation Confirmation - Health Policy HP-001234
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Arjun Reddy,arjun.reddy@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,ravi.menon@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,30/09/2024 T:10:06:40,"Hi Ravi,\n\nI just wanted to confirm that my health policy HP-001234 has been cancelled as per our previous conversations. Could you please confirm this in writing one last time?\n\nThanks,\nArjun",
+  user_2,user_1,,30/09/2024 T:10:14:10,"Dear Arjun,\n\nYes, I can confirm that your health policy HP-001234 has been successfully cancelled as per your request. Please find the formal cancellation notice attached for your records.\n\nBest regards,\nRavi Menon",https://storage.dcoders.com/docs/Policy_HP001234_Cancellation_Notice_2026.pdf

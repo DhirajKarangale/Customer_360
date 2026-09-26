@@ -1,0 +1,21 @@
+call_id: REC-INS-003A
+start_timestamp: 01/03/2023 T:10:00:00
+end_timestamp: 01/03/2023 T:10:19:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Diya Menon,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,insurance agent
+messages[14]{user,text}:
+  user_2,Hi Diya good morning I hope you're doing well I'm Anjali from First Guard Brokers
+  user_1,Hi Anjali good morning yeah I'm doing alright thanks
+  user_2,Great I'm calling about your health policy with DCoders it's set to expire today
+  user_1,Oh yeah I got your email yesterday I've been meaning to look into it
+  user_2,No worries at all that's why I'm here to help [typing] Can you please confirm your policy number for me
+  user_1,Umm it's... [pause] SH-123456
+  user_2,Great thank you Diya [pause] I've located your policy [pause] It looks like you have a few options for renewal
+  user_1,Okay that sounds good what are they
+  user_2,[Hold music starts] [pause] Sorry about this Diya I'm just checking on some details [hold music continues for 2 minutes]
+  user_2,[Hold music ends] Sorry about the wait Diya [pause] As I was saying you have the option to renew with the same coverage or upgrade to our premium plan
+  user_1,That sounds interesting what's the difference between the two
+  user_2,[Dog barks in the background] [pause] Sorry about that [pause] The premium plan offers additional coverage for dental and vision care
+  user_1,That sounds good I think I'll go with the premium plan
+  user_2,Great choice Diya [pause] I just need to confirm a few details [pause] [Typing] Okay all set your policy has been renewed with the premium coverage
