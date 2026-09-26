@@ -34,7 +34,7 @@ if os.path.exists(SCHEMA_PROMPT_PATH):
 
 PG_HOST = os.getenv("POSTGRES_HOST")
 PG_PORT = os.getenv("POSTGRES_PORT", "5432")
-PG_NAME = os.getenv("POSTGRES_DEFAULT_DB")
+PG_NAME = os.getenv("POSTGRES_DB")
 PG_USER = os.getenv("POSTGRES_USER")
 PG_PASS = os.getenv("POSTGRES_PASSWORD")
 
