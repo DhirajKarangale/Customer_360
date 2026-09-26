@@ -45,7 +45,7 @@ def get_snowflake_conn():
 
 def process_file(file_info, sf_conn, stage_name):
     global upload_count, skip_count, override_count
-    local_path, stage_relative_path, policy_num, is_duplicate = file_info
+    local_path, stage_relative_path, folder, policy_num, is_duplicate = file_info
     
     if is_duplicate and not OVERRIDE_DUPLICATE_FILES:
         print(f"  [SKIPPED] {stage_relative_path} (already present)")
@@ -58,7 +58,7 @@ def process_file(file_info, sf_conn, stage_name):
     
     try:
         overwrite_flag = "TRUE" if (is_duplicate and OVERRIDE_DUPLICATE_FILES) else "FALSE"
-        query = f"PUT 'file://{put_path}' @{stage_name}/{policy_num} AUTO_COMPRESS=FALSE OVERWRITE={overwrite_flag}"
+        query = f"PUT 'file://{put_path}' @{stage_name}/{folder}/{policy_num} AUTO_COMPRESS=FALSE OVERWRITE={overwrite_flag}"
         cursor.execute(query)
         
         if is_duplicate and OVERRIDE_DUPLICATE_FILES:
@@ -102,11 +102,8 @@ def main():
     finally:
         cursor.close()
 
-    data_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "interactions_data", "raw")
-    if not os.path.exists(data_dir):
-        print(f"Data directory '{data_dir}' does not exist. Nothing to upload.")
-        sf_conn.close()
-        return
+    base_data_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "interactions_data")
+    folders_to_upload = ["raw", "cleaned"]
 
     print("Scanning local directory and queueing files for upload...")
     
@@ -115,17 +112,22 @@ def main():
     
     all_files_to_process = []
     
-    for root, dirs, files in os.walk(data_dir):
-        policy_num = os.path.basename(root)
-        if policy_num in ["interactions_data", "raw", ""]:
+    for folder in folders_to_upload:
+        data_dir = os.path.join(base_data_dir, folder)
+        if not os.path.exists(data_dir):
             continue
             
-        for file in files:
-            local_path = os.path.join(root, file)
-            stage_relative_path = f"{policy_num}/{file}"
-            
-            is_duplicate = stage_relative_path in existing_files or f"{stage_relative_path}.gz" in existing_files
-            all_files_to_process.append((local_path, stage_relative_path, policy_num, is_duplicate))
+        for root, dirs, files in os.walk(data_dir):
+            policy_num = os.path.basename(root)
+            if policy_num in ["interactions_data", "raw", "cleaned", ""]:
+                continue
+                
+            for file in files:
+                local_path = os.path.join(root, file)
+                stage_relative_path = f"{folder}/{policy_num}/{file}"
+                
+                is_duplicate = stage_relative_path in existing_files or f"{stage_relative_path}.gz" in existing_files
+                all_files_to_process.append((local_path, stage_relative_path, folder, policy_num, is_duplicate))
 
     print(f"Starting parallel upload process using {MAX_WORKERS} workers...")
 

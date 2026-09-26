@@ -6,8 +6,8 @@ import snowflake.connector
 from dotenv import load_dotenv
 import concurrent.futures
 
-START_POLICY = 11
-END_POLICY = 11
+START_POLICY = 12
+END_POLICY = 25
 
 MAX_WORKERS = 4
 
@@ -25,7 +25,7 @@ if not os.path.exists(env_path):
     raise FileNotFoundError(f"Environment file not found at {env_path}")
 load_dotenv(env_path)
 
-SCHEMA_PROMPT_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'docs', 'llm_schema_prompt.md')
+SCHEMA_PROMPT_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'prompts', 'llm_schema_prompt.md')
 SCHEMA_PROMPT = ""
 if os.path.exists(SCHEMA_PROMPT_PATH):
     with open(SCHEMA_PROMPT_PATH, "r", encoding="utf-8") as f:
