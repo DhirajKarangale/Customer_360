@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Ishaan Bose,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Karan Joshi,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey karan, just wanted to confirm if the renewal form i sent back is ok? and is my policy active now?",
+  user_2,26/09/2024 T14:50:30,"Hi Ishaan, yeah i got the form. but i have some bad news. our system still shows your policy as expired. i'm looking into it",
+  user_1,26/09/2024 T14:51:00,"expired? but i thought we sorted that out? what's going on?",
+  user_2,26/09/2024 T14:51:45,"i know, i apologize for the inconvenience. it seems there was a glitch in our system. i'm escalating this to my supervisor. can you please hold on for a minute?",
+  user_2,26/09/2024 T14:53:10,"ok, i just got an update. we need to re-initiate the renewal process. i'll send you a new link to sign the form again. sorry again for the trouble"

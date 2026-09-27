@@ -1,0 +1,12 @@
+call_id: REC-INS-006C
+start_timestamp: 30/09/2026 T:11:05:00
+end_timestamp: 30/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Sai Kumar,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Vikram I just wanted to confirm that my home policy has been reinstated
+  user_2,Ah yeah Sai good morning Let me just check on that for you [pause] Okay I've checked and it looks like everything is in order Your policy HP-001234 has been successfully reinstated with the same terms and conditions
+  user_1,That's great news thanks so much for your help Vikram I really appreciate it
+  user_2,You're welcome Sai It was my pleasure to assist you If you have any other questions or concerns feel free to reach out to me anytime [sighs] Also I just want to let you know that your policy will now expire on March 10th next year
+  user_1,Got it thanks for the reminder I'll make sure to mark my calendar [typing]

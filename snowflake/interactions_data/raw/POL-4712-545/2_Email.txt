@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Auto Policy AP-001234 - Expiration and Renewal
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Sai Kumar,sai.kumar@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d7,Anjali Desai,anjali.desai@firstguardbrokers.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,27/09/2024 T:10:05:00,"Dear Sai,\n\nI hope this email finds you well. I am following up on our call earlier today regarding your auto policy AP-001234 with DCoders. As discussed, your policy has expired due to non-payment of the renewal fee. I have attached a formal notice from DCoders for your reference.\n\nIf you wish to reinstate your policy, please let me know, and I will guide you through the process.\n\nBest regards,\nAnjali Desai",https://storage.firstguardbrokers.com/docs/Policy_AP001234_Expiration_Notice.pdf
+  user_1,user_2,,27/09/2024 T:10:20:00,"Hi Anjali,\n\nThanks for the follow-up email. I am still considering my options regarding the policy. Can you please provide me with a quote for reinstatement, including any late fees that may apply?\n\nThanks,\nSai"

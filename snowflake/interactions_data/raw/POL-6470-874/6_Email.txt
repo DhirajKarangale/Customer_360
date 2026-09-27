@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Home Policy Application Update
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Rohan Deshmukh,rohan.deshmukh@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d7,Anita Sharma,anita.sharma@trustwealthadvisors.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2024 T:10:06:40,"Dear Rohan,\n\nI hope this email finds you well. I am writing to confirm that your home policy application has been successfully processed and is now active. You can find the policy documents attached to this email for your reference.\n\nPlease review the documents carefully and let me know if you have any questions or concerns.\n\nBest regards,\nAnita Sharma",https://storage.trustwealthadvisors.com/docs/HomePolicy_RD_2026.pdf
+  user_1,user_2,,28/09/2024 T:10:14:10,"Hi Anita,\n\nThank you for the update. I have received the policy documents and will review them shortly. Could you please confirm the policy status in the system is now 'Active'?\n\nThanks,\nRohan"

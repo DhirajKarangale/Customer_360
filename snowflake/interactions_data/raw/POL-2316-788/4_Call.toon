@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Krishna Das,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Anjali Desai,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Anjali I'm calling about my life policy LP-001234 Can you please tell me the current status
+  user_2,Ah yes Krishna I've located your policy in our system Let me just check on the status for you [pause] Okay it looks like we've received the documents you sent over and I've reviewed them Everything looks good
+  user_1,That's great news What's the next step to get my policy active
+  user_2,Well I just need to update a few things on our end and then your policy will be active You should receive an email with your policy documents and details within the next 24 hours
+  user_1,Alright sounds good Thank you so much for your help Anjali

@@ -1,0 +1,10 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c97,Sai Kumar,customer
+  3a6a7028-a699-4de4-b932-41271ff311d7,Vikram Patel,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:42:00,"hey vikram, i got ur email about my auto policy expiring. can u pls tell me whats the next step? i really need insurance for my car",
+  user_2,26/09/2024 T14:42:30,"Hi Sai, yeah, unfortunately, your policy (AP-001234) has expired and we cant renew it. I can help you with a new policy tho",
+  user_1,26/09/2024 T14:43:15,"thats really disappointing. can u pls give me some options for a new policy? or maybe some other insurance providers i can look into?",
+  user_2,26/09/2024 T14:44:00,"I can def give you some options. we have a new policy that just launched, its a bit pricier but it has better coverage. or i can give you some other providers, but you'll have to contact them directly",
+  user_1,26/09/2024 T14:45:00,"ok, that sounds good. can u pls send me the details of the new policy? and also some other providers i can look into? thx"

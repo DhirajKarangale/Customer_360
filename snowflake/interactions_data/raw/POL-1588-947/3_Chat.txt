@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d7,Shaurya Joshi,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey vikram, just wanted to confirm if my auto policy is cancelled?"
+  user_2,26/09/2024 T14:50:30,"Hi Shaurya, yes it is. I sent you an email with the confirmation and refund details. You should receive the refund within 7-10 business days."
+  user_1,26/09/2024 T14:51:00,"ok cool, thx. can u pls confirm the policy number again?"
+  user_2,26/09/2024 T14:51:20,"Your policy number is AP-001234. It's now marked as cancelled in our system."
+  user_1,26/09/2024 T14:52:00,"great, thx vikram. appreciate the help"

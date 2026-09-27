@@ -1,0 +1,12 @@
+call_id: REC-INS-007C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4f3a7028-a699-4de4-b932-41271ff311d6,Krishna Das,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Ramesh I just wanted to confirm that my auto insurance policy is active now
+  user_2,Ah yeah Krishna your policy is active as of today I had sent you the documents via email
+  user_1,Yeah I got them thanks a lot Ramesh I just wanted to make sure everything is in order before I start driving my new car
+  user_2,Of course Krishna that's completely understandable Your policy is all set and you're good to go
+  user_1,Great thanks again Ramesh I appreciate your help [sighs]

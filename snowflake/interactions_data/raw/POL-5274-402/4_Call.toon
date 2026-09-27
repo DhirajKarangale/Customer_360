@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 27/09/2026 T:11:05:00
+end_timestamp: 27/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  3421f7d8-4a9f-4f3e-8f9a-5e9f7d8a4b2c,Kunal Mehta,customer
+  8a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Ramesh I just wanted to confirm if my auto policy is active now
+  user_2,Ah yeah Kunal Good morning Let me just check on that for you [pause] Ah yes I see that the policy is active now
+  user_1,Great thanks so much Ramesh I really appreciate it
+  user_2,No problem at all Kunal If you have any other questions or need any further assistance just give me a call [sighs] Is there anything else I can help you with today
+  user_1,No that's all for now thanks again Ramesh [ typing ]

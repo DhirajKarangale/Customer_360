@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:15:00
+end_timestamp: 28/09/2026 T:11:20:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Ananya Nair,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Suresh I'm calling about my auto policy with DCoders I just got an email saying it's active again
+  user_2,Ah great to hear that Ananya Yeah I can confirm that your policy has been reinstated successfully
+  user_1,That's a relief I was worried I'd have to go through the whole application process again
+  user_2,No need to worry about that this time We just needed to update your address and process the payment
+  user_1,Okay cool And just to confirm my new expiration date is... [pause] when is it again

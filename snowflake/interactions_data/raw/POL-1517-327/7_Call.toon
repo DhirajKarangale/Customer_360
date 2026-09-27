@@ -1,0 +1,12 @@
+call_id: REC-INS-007A
+start_timestamp: 30/09/2026 T:14:05:00
+end_timestamp: 30/09/2026 T:14:09:00
+participants[2]{id,name,role}:
+  4f3a7028-a699-4de4-b932-41271ff311d6,Sai Kumar,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Anjali this is Sai Kumar calling about my life policy LP-001234
+  user_2,Hi Sai good afternoon How can I assist you with your policy today
+  user_1,I just wanted to confirm that my policy is active and up to date
+  user_2,Ah yes let me just check on that for you [pause] [typing] Yes everything looks good Your policy is active and up to date
+  user_1,Great thank you so much Anjali I appreciate it

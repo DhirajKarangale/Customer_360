@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:15:00
+end_timestamp: 28/09/2026 T:11:20:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Ananya Nair,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Sunita Agarwal,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Sunita I hope you're doing well I just wanted to follow up on my health policy that expired on the 10th
+  user_2,Ah Ananya good morning Yeah I remember your case Let me just check on the status real quick [pause] [typing]
+  user_1,Okay sounds good I just wanted to confirm if I can still reinstate it and what the total amount due is
+  user_2,Yeah you can definitely reinstate it The total amount due is ₹15,500 which includes the outstanding premium of ₹14,000 and a reinstatement fee of ₹1,500
+  user_2,You have 30 days from the date of expiry to pay this amount and get your policy reinstated [sighs] I hope that helps

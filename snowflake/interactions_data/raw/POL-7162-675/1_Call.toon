@@ -1,0 +1,14 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Isha Agarwal,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Vikram Singh,insurance agent
+messages[7]{user,text}:
+  user_2,Hi Isha good afternoon Can you hear me
+  user_1,Yeah I can hear you Good afternoon
+  user_2,This is Vikram from ProtectAll Agency I'm calling about your auto policy with DCoders
+  user_1,Oh hi Vikram Yeah I'm aware of the policy
+  user_2,Great Isha I'm calling because your policy is up for renewal and I noticed you haven't made the payment yet
+  user_1,Actually Vikram I've been meaning to call you guys I don't think I'll be able to renew it this time
+  user_2,I see Okay Isha Let me just check a few things [pause] [typing] Okay I've checked and it looks like your policy will expire in two days if we don't receive the payment

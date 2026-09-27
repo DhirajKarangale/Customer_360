@@ -1,0 +1,9 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d7,Suhana Joshi,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,insurance agent
+messages[4]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T15:10:00,"hey ravi, just wanted to check on my life policy with dcoders again. is it active yet?",
+  user_2,26/09/2024 T15:10:30,"hi suhana! yeah, i checked on it this morning. it's still active. you should've recieved a confirmation email from us already",
+  user_1,26/09/2024 T15:11:00,"oh, i havent recieved any email yet. can u pls re-send it to me? and also, can u confirm my policy number is LIF-001234?",
+  user_2,26/09/2024 T15:11:45,"sure thing suhana! i've re-sent the confirmation email to you. and yes, your policy number is indeed LIF-001234. let me know if you need anything else"

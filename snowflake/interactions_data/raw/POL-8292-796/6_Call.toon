@@ -1,0 +1,12 @@
+call_id: REC-INS-002C
+start_timestamp: 15/10/2024 T:14:05:00
+end_timestamp: 15/10/2024 T:14:09:00
+participants[2]{id,name,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Nandini Rajput,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Anjali I hope you're doing well I just wanted to follow up on the application I sent in for the new health policy
+  user_2,Ah Nandini good afternoon Yeah I've received your application and I'm just reviewing it right now [typing] Can you please confirm your date of birth for me
+  user_1,Umm it's 12th August 1985
+  user_2,Great thank you [sighs] I've processed your application and I'm happy to inform you that your new policy is active as of today You should receive your policy documents via email within the next 24 hours
+  user_1,That's great news thank you so much Anjali I really appreciate your help throughout this process

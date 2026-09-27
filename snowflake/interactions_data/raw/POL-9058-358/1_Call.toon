@@ -1,0 +1,14 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Pooja Bhatia,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,insurance agent
+messages[7]{user,text}:
+  user_2,Hi Pooja good afternoon Can you hear me
+  user_1,Yeah yeah I can hear you Good afternoon
+  user_2,This is Ramesh from Safe Shield Agency I am calling regarding your auto policy with DCoders
+  user_1,Oh hi Ramesh Yeah I was expecting your call
+  user_2,Great So I just wanted to confirm a few details with you before we proceed with the policy
+  user_1,Okay sure Go ahead
+  user_2,Can you please confirm your vehicle's registration number and the policy start date

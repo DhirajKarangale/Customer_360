@@ -1,0 +1,10 @@
+chat_id: 9a8b7c06-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f3a7028-a699-4de4-b932-41271ff311d6,Riya Mukherjee,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T15:10:00,"hey anjali i got the renewal form and quote thx for sending those over. i'm still a bit confused about the premium increase tho",
+  user_2,26/09/2024 T15:10:30,"Hi Riya! I'm glad you received the documents. The premium increase is due to the new healthcare regulations and inflation. I can walk you through the details if you'd like?",
+  user_1,26/09/2024 T15:11:00,"yeah that would be great. i dont understand why its so much higher than last year. did the regulations change that much?",
+  user_2,26/09/2024 T15:12:00,"Yes, the new regulations have introduced additional coverage requirements, which have increased the costs for us. I can send you a detailed breakdown of the changes if that would help?",
+  user_1,26/09/2024 T15:13:00,"that would be awesome thx. also, is there any way to reduce the premium? i'm on a tight budget rn"

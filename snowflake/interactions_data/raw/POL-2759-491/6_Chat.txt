@@ -1,0 +1,8 @@
+chat_id: 6a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Meera Chauhan,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,insurance agent
+messages[3]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey ravi just wanted to confirm if my policy is active now?",
+  user_2,26/09/2024 T14:50:30,"Hi Meera! Yes, your life policy LP-001234 is now active. You should have received the policy documents via email. Let me know if you need any further assistance",
+  user_1,26/09/2024 T14:51:00,"thx ravi *thanks* i did get the email. just wanted to confirm. can i call u if i need any more help?"

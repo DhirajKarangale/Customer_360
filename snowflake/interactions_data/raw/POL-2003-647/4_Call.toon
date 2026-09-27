@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  3421f7d8-4a9f-4f3e-8f9a-5e9f7d8a4b2,Krishna Das,customer
+  8a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,insurance agent
+messages[5]{user,text}:
+  user_2,Hi Krishna, hope you're doing well. I'm calling about your auto insurance policy for your new Toyota Corolla. [00:00]
+  user_1,Yeah, hi Ramesh. I'm good, thanks. I'm looking forward to getting the policy started. [00:05]
+  user_2,Great. I just need to confirm a few details. Can you please confirm your vehicle's Vehicle Identification Number (VIN) and the coverage start date you're looking for? [00:10]
+  user_1,Ah, yeah... the VIN is... umm... [00:15] ...4T1BF1FK7NU012345. And I'd like the coverage to start as soon as possible, please. [00:20]
+  user_2,Alright, Krishna. I've updated the details. Your policy is now active, and you should receive the documents via email shortly. Is there anything else I can assist you with today? [00:50]

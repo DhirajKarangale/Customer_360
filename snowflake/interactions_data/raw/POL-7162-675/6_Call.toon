@@ -1,0 +1,22 @@
+call_id: REC-INS-002C
+start_timestamp: 28/09/2026 T:14:05:00
+end_timestamp: 28/09/2026 T:14:25:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Isha Agarwal,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Singh,insurance agent
+messages[14]{user,text}:
+  user_1,Hi Vikram this is Isha Agarwal I'm calling about my auto policy with DCoders
+  user_2,Ah Isha good afternoon I've been trying to reach you regarding your policy it's currently expired
+  user_1,Expired I thought we had discussed a possible extension or reinstatement
+  user_2,I apologize for the confusion Isha but our system doesn't allow extensions beyond a certain point
+  user_1,[sighs] That's really frustrating I was expecting some more time to make the payment
+  user_2,I understand your concern Isha but I can try to help you with the reinstatement process
+  user_1,Okay that would be great thank you
+  user_2,[typing] Can you please confirm your policy number for me
+  user_1,It's... uh... [pause] DC-001234
+  user_2,[typing] Alright Isha I've located your policy Let me just check a few things [hold music starts]
+  user_1,[background noise: dog barks] Hello Vikram are you still there
+  user_2,[hold music ends] Ah yes Isha sorry about that I was just checking on the reinstatement fee
+  user_1,Reinstatement fee How much is that going to be
+  user_2,[typing] It looks like it'll be around 10% of your annual premium
+  user_1,That's a bit steep but I guess I have no choice [sighs]

@@ -1,0 +1,10 @@
+chat_id: 9f8a2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d7,Saanvi Pillai,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey neha, just wanted to check on the status of my health policy with dcoders. did u send the email with payment details?",
+  user_2,26/09/2024 T14:50:30,"Hi Saanvi! Yes, I did send the email with payment details and instructions. Did you receive it? If not, I can resend it.",
+  user_1,26/09/2024 T14:51:00,"yeah i got it thx. just wanted to confirm if the policy is active or still pending?",
+  user_2,26/09/2024 T14:51:20,"Your policy is still in 'Pending' status, Saanvi. Once the payment of ₹15,000 is processed, it will be activated. You can check the status on our website or mobile app.",
+  user_1,26/09/2024 T14:52:00,"ok cool. and how long will it take to activate after payment?"

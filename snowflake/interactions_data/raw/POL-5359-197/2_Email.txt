@@ -1,0 +1,8 @@
+mail_id: 4821qwe-3423-470e-a3fc-799eaf739c96
+subject: Re: Health Policy Renewal Options
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Dhruv Kapoor,dhruv.kapoor@dcoders.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,vikram.p@omniinsurancegroup.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2024 T:10:05:00,"Dear Dhruv,\n\nI hope this email finds you well. As we discussed over the phone earlier, I wanted to follow up on the renewal options for your health policy that expired last month. I have attached a few plans that you may be interested in. Please review them and let me know if you would like to discuss further or if you have any questions.\n\nBest regards,\nVikram Patel",https://storage.omniinsurancegroup.com/docs/Health_Policy_Options_2026.pdf
+  user_1,user_2,,28/09/2024 T:10:20:00,"Hi Vikram,\n\nThanks for the email and the attached plans. I will review them and get back to you by tomorrow. Can you please confirm if the new policy will be effective immediately after I sign up, or if there will be a waiting period?\n\nThanks,\nDhruv Kapoor"

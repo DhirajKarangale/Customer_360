@@ -1,0 +1,8 @@
+mail_id: 4821qwe-3423-470e-a3fc-799eaf739c96
+subject: Re: Health Policy Expiration - Urgent
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Vihaan Patel,vihaan.patel@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,anjali.desai@firstguardbrokers.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,12/10/2024 T:11:04:20,"Hi Anjali,\n\nI just got off the phone with you regarding my health policy expiration. I'm still unsure about the next steps to take. Can you please provide me with a detailed explanation of what I need to do to reinstate my policy or get a new one?\n\nThanks,\nVihaan",
+  user_2,user_1,,12/10/2024 T:11:17:05,"Dear Vihaan,\n\nThank you for your email. I apologize again for the inconvenience caused by the expiration of your health policy. To reinstate your policy, you will need to pay the outstanding premium amount and provide a declaration of good health. Alternatively, you can opt for a new policy, which would require you to go through the underwriting process again. I have attached a document outlining the steps and requirements for both options.\n\nPlease let me know which option you prefer, and I will guide you through the process.\n\nBest regards,\nAnjali Desai",https://storage.firstguardbrokers.com/docs/Policy_Reinstatement_New_Issue_Guidelines.pdf

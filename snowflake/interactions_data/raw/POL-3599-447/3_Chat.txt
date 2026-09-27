@@ -1,0 +1,10 @@
+chat_id: 8a2e5c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f3a7028-a699-4de4-b932-41271ff311d7,Riya Mukherjee,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey anjali hope ur doin well i sent the form and docs as u asked",
+  user_2,26/09/2024 T14:50:30,"Hi Riya! Yeah, I'm good thanks. Just checking on the status of your application. I haven't received the documents yet. Could you please re-send them?",
+  user_1,26/09/2024 T14:51:00,"oh sorry abt that i'll send them again *about* 10 mins",
+  user_2,26/09/2024 T14:55:00,"No worries, Riya. I've received the documents now. I'll review them and get back to you by tomorrow with an update on your policy status.",
+  user_1,26/09/2024 T14:55:30,"thx anjali looking forward to it"

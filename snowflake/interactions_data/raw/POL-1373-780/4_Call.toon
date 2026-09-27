@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Dev Chatterjee,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Anjali Desai,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Anjali I'm calling about the home policy we discussed earlier
+  user_2,Ah Dev good morning How can I assist you today
+  user_1,I just wanted to confirm that everything is in order for the policy to be activated
+  user_2,Let me just check on that for you [pause] [typing] Yes everything looks good I've sent the digital confirmation document to your email for your signature
+  user_1,Great thanks so much Anjali I'll go ahead and sign it now

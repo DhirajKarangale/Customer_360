@@ -1,0 +1,9 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Kunal Mehta,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,insurance agent
+messages[4]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey ramesh, just wanted to confirm if my auto policy is active now?",
+  user_2,26/09/2024 T14:50:30,"Hi Kunal, yeah it is active now. I sent you the updated documents via email. Did you get them?",
+  user_1,26/09/2024 T14:51:00,"yeah i got them, thx. just wanted to make sure everything is in order before i start driving my new car",
+  user_2,26/09/2024 T14:51:20,"You're welcome, Kunal. Everything looks good on our end. If you have any more questions or concerns, feel free to reach out. Drive safe!"

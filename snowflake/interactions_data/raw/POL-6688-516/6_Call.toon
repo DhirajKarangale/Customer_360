@@ -1,0 +1,22 @@
+call_id: REC-INS-002C
+start_timestamp: 26/09/2026 T:14:05:00
+end_timestamp: 26/09/2026 T:14:25:00
+participants[2]{id,name,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Ananya Nair,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[14]{user,text}:
+  user_1,Hi Suresh I'm calling about my auto policy with DCoders
+  user_2,Hi Ananya good afternoon Can you please confirm your policy number for me
+  user_1,It's AP-001234
+  user_2,Okay thank you Ananya I'm checking on the status of your policy [typing]
+  user_1,Yeah I'm a bit worried because I haven't received any updates on it
+  user_2,I apologize for the inconvenience Ananya It looks like your policy has expired as of last month [sighs]
+  user_1,Expired What do you mean It was supposed to be reinstated
+  user_2,I understand that you had paid the reinstatement fee and submitted the form But it seems there was an issue with the processing [background noise: dog barks]
+  user_1,An issue What kind of issue
+  user_2,It looks like the payment didn't go through properly [hold music starts playing]
+  user_1,[on hold for 2 minutes] Hello
+  user_2,Ananya I apologize for the hold I'm going to go ahead and process the payment again to reinstate your policy [typing]
+  user_1,Okay that sounds good But what about the $50 reinstatement fee Do I need to pay that again
+  user_2,No Ananya you won't need to pay the fee again I'm waiving it for you this time [background noise: papers shuffling]
+  user_1,Okay great thank you Suresh I appreciate it

@@ -1,0 +1,9 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Shaurya Joshi,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Karan Joshi,insurance agent
+messages[4]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey karan just wanted to confirm if my home policy is cancelled?"
+  user_2,26/09/2024 T14:50:30,"Hi Shaurya! Yeah, I've confirmed it on my end. Your policy HP-001234 is cancelled effective immediately."
+  user_1,26/09/2024 T14:51:00,"thx karan can u pls confirm if i'll get a refund for the remaining *premiun* premium?"
+  user_2,26/09/2024 T14:51:45,"You're welcome, Shaurya! Yes, you'll receive a refund for the unused premium. I'll send you a confirmation email with the refund details shortly."

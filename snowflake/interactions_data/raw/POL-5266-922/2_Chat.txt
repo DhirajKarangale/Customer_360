@@ -1,0 +1,10 @@
+chat_id: 9f8a2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Nandini Rajput,customer
+  483ce1dc-44c1-41db-886f-539e46b7bdad,Vikram Patel,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:42:00,"hey Vikram, thx for ur help on the call earlier. i wanted to confirm if u sent me the renewal docs for my life insurance policy?",
+  user_2,26/09/2024 T14:42:15,"Hi Nandini! Yeah, I did send them to you via email. Did you get them? If not, I can resend",
+  user_1,26/09/2024 T14:42:30,"no i didnt get them. can u pls resend? also, can u tell me the status of my policy? is it active?",
+  user_2,26/09/2024 T14:42:50,"I've resent the documents. As for the status, I've checked and your policy is currently 'Pending Renewal'. We need to finalize the renewal by the 20th to avoid any lapse in coverage",
+  user_2,26/09/2024 T14:43:10,"Would you like to proceed with the renewal today? I can guide you through the process"

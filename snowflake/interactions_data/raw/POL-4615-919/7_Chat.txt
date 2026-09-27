@@ -1,0 +1,11 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Rohan Ahuja,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey ramesh, just wanted to confirm that the payment for the auto policy reinstatement has been made successfully",
+  user_2,26/09/2024 T14:50:30,"Hi Rohan, yeah i just checked and the payment has been processed. Your policy is now active again. I'll send you the updated documents via email",
+  user_1,26/09/2024 T14:51:00,"awesome, thanks so much for your help ramesh! i really appreciate it",
+  user_2,26/09/2024 T14:51:20,"You're welcome Rohan! It was my pleasure to assist you. If you have any other questions or need further assistance, feel free to reach out",
+  user_1,26/09/2024 T14:51:40,"will do, thanks again! btw, what's the status of my policy in the system now?",
+  user_2,26/09/2024 T14:52:00,"it's marked as active again, but since it was previously expired, the system will show it as 'Expired' for a short period. don't worry, it's just a technicality"

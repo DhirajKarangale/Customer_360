@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Health Policy Expiration and Reinstatement
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Ananya Nair,ananya.nair@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Sunita Agarwal,sunita.agarwal@protectallagency.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,28/10/2024 T:11:04:20,"Dear Sunita,\n\nI am writing to express my disappointment that my health policy has officially expired. I had requested a payment extension and was under the impression that I had more time to settle the outstanding amount. Could you please clarify the next steps and any possible alternatives for me to get my policy reinstated?\n\nLooking forward to hearing from you.\n\nBest regards,\nAnanya Nair",
+  user_2,user_1,,28/10/2024 T:11:21:15,"Dear Ananya,\n\nI apologize for any inconvenience caused and appreciate your prompt email. Unfortunately, the policy has indeed expired, and the payment deadline has passed. However, I can offer you a quote for a new policy with similar coverage. Please find the attached document for your review. If you're interested, we can discuss the details further.\n\nBest regards,\nSunita Agarwal",https://storage.protectallagency.com/docs/New_Policy_Quote_ANAIR_2024.pdf

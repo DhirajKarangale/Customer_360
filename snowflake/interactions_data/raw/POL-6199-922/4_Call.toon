@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 27/09/2026 T:11:05:00
+end_timestamp: 27/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Aarav Sharma,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Sunita Agarwal,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Sunita I hope you're doing well I just wanted to confirm that my health policy is active now
+  user_2,Ah yeah Aarav good morning I've checked on our system and yes your policy is active now
+  user_1,Okay great that's a relief I just wanted to make sure because I have a doctor's appointment next week
+  user_2,Yeah no problem at all Aarav you're all set now If you need any further assistance or have any questions feel free to reach out to me
+  user_1,Alright sounds good thanks Sunita have a great day [sighs]

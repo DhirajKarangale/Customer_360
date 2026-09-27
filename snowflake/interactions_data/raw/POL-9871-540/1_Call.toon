@@ -1,0 +1,21 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:25:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Suhana Joshi,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,insurance agent
+messages[14]{user,text}:
+  user_1,Hi is this DCoders
+  user_2,Yes this is DCoders How can I assist you today
+  user_1,I am calling about my travel policy I think it expired
+  user_2,I see Let me check on that for you Can you please provide me with your policy number
+  user_1,It's TRV-001234
+  user_2,Thank you [typing] Ah yes I see that your policy did expire on the 10th of this month
+  user_1,Oh no I didn't realize that [sighs] What can I do to get it renewed
+  user_2,Well we can definitely help you with that [background noise: dog barks] I apologize for the noise
+  user_1,No worries I have pets too [laughs]
+  user_2,[laughs] Okay so for the renewal we'll need to update some information and you'll need to pay the premium
+  user_1,Okay that sounds good How much is the premium
+  user_2,[pause] Let me just check on that for you [hold music starts]
+  user_2,[hold music ends] I apologize for the wait The premium comes out to be 500 dollars
+  user_1,That's okay I can pay that

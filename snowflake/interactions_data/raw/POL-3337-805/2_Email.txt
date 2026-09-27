@@ -1,0 +1,8 @@
+mail_id: 4821qwe-3423-470e-a3fc-799eaf739c96
+subject: Re: Auto Policy Expiration and Renewal Options
+participants[2]{id,name,email,role}:
+  8a6a7028-a699-4de4-b932-41271ff311d6,Dhruv Kapoor,dhruv.kapoor@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Sunita Agarwal,sunita.agarwal@protectallagency.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,10/03/2023 T:11:04:20,"Dear Dhruv,\n\nI hope this email finds you well. As we discussed over the phone earlier, I wanted to follow up on your auto policy with DCoders, which expired on March 8th. I've attached a detailed comparison of our current auto insurance plans for your review. Please let me know if you'd like to reinstate your old policy or explore new options.\n\nBest regards,\nSunita Agarwal",https://storage.protectallagency.com/docs/Auto_Insurance_Plans_2023.pdf
+  user_1,user_2,,10/03/2023 T:11:21:15,"Hi Sunita,\n\nThanks for the prompt follow-up and the attached document. I'd like to discuss the options in more detail. Could you please give me a call at your earliest convenience?\n\nThanks,\nDhruv Kapoor"

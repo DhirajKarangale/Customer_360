@@ -1,0 +1,12 @@
+call_id: REC-INS-002C
+start_timestamp: 30/09/2026 T:14:05:00
+end_timestamp: 30/09/2026 T:14:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Ananya Nair,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Vikram I hope you're doing well I just wanted to follow up on the reinstatement of my auto policy with DCoders
+  user_2,Ah Ananya good afternoon Yeah I've got everything processed on my end The reinstatement is going through and you should receive a confirmation email shortly
+  user_1,That sounds great thank you so much for your help I really appreciate it [sighs] I'm just glad I can get back to driving without worrying about not having insurance
+  user_2,No problem at all Ananya It's all part of the service We'll get you back on the road in no time [typing] I just need to confirm your payment method for the $50 penalty
+  user_1,It's the same as before my credit card on file

@@ -1,0 +1,9 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Aditi Mahajan,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,insurance agent
+messages[4]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey ramesh, just wanted to check on my policy status. did i miss the payment deadline?",
+  user_2,26/09/2024 T14:50:30,"Hi Aditi, yeah unfortunately the deadline was yesterday. I had granted you a 24hr extension but it's expired now. Your policy has been cancelled.",
+  user_1,26/09/2024 T14:51:00,"oh no! is there anything i can do to get it reinstated? i really need the coverage",
+  user_2,26/09/2024 T14:51:45,"I'm afraid not, Aditi. The policy has been updated to 'Expired' in our system. You can consider purchasing a new policy, but you'll have to go through the underwriting process again. I'm really sorry it had to end like this."

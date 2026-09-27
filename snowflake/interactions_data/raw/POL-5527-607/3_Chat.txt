@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Vivaan Gupta,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Neha Kapoor,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey neha, just wanted to follow up on the new quote for my travel policy. did u get the info i sent over email?",
+  user_2,26/09/2024 T14:50:30,"Hi Vivaan! Yeah, I got it. Thanks for providing the details. I'm working on getting you a quote. Just to confirm, you mentioned you have hypertension. Can you tell me a bit more about that? Like, when were you diagnosed?",
+  user_1,26/09/2024 T14:51:15,"yeah, i was diagnosed about 5 yrs ago. its under control with meds tho",
+  user_2,26/09/2024 T14:52:00,"Okay, that's good to know. I just need to ask, have you had any major complications or hospitalizations due to hypertension in the past 2 years?",
+  user_1,26/09/2024 T14:52:40,"no, nothing major. just the usual check-ups with my doc"

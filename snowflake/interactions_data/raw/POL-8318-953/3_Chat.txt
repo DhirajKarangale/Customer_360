@@ -1,0 +1,10 @@
+chat_id: 8a2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Sai Kumar,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey vikram, i got the reinstatement form and docs u sent over email. thx! can u pls tell me what's the next step to get my home policy reinstated?",
+  user_2,26/09/2024 T14:50:30,"Hi Sai, great to hear that! *you're* welcome. Next step would be to fill out the form, sign it, and send it back to me along with the payment for the *reinstatement* fee.",
+  user_1,26/09/2024 T14:51:15,"ok, got it. how much is the reinstatement fee? and can i pay online?",
+  user_2,26/09/2024 T14:52:00,"The fee is $50. And yes, you can pay online. I'll send you a secure payment link. Please note that the payment needs to be made within the next 24 hours to avoid any further lapse in coverage.",
+  user_1,26/09/2024 T14:53:00,"sounds good. pls go ahead and send the link. and just to confirm, once the payment is made and the form is received, my policy will be reinstated and i'll get a confirmation email, right?"

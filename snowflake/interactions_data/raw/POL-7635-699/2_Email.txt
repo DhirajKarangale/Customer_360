@@ -1,0 +1,8 @@
+mail_id: 4821qwe-3423-470e-a3fc-799eaf739c96
+subject: Auto Policy Renewal - Changes and Confirmation
+participants[2]{id,name,email,role}:
+  8a6a7028-a699-4de4-b932-41271ff311d6,Shaurya Joshi,shaurya.joshi@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anita Sharma,anita.sharma@trustwealthadvisors.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,28/09/2024 T:11:04:20,"Hi Anita,\n\nI hope you're doing well. I wanted to follow up on our previous call regarding my auto policy renewal. I've been thinking, and I'd like to make some changes to my coverage. Could you please let me know the best way to proceed?\n\nThanks,\nShaurya",
+  user_2,user_1,,28/09/2024 T:11:16:50,"Hi Shaurya,\n\nThank you for reaching out. I'd be happy to help you make changes to your auto policy. To confirm, you'd like to adjust your coverage before the auto-renewal on the 20th of this month, correct? Please find attached a form to request changes. Kindly fill it out and return it to me by the 18th so I can process the updates in time.\n\nBest regards,\nAnita Sharma",https://storage.trustwealthadvisors.com/docs/Auto_Policy_Change_Request_Form.pdf

@@ -1,0 +1,22 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:14:05:00
+end_timestamp: 28/09/2026 T:14:25:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Reyansh Tiwari,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[14]{user,text}:
+  user_1,Hi Suresh I'm calling about my auto insurance policy
+  user_2,Ah Reyansh good afternoon I've got you on my screen right now Can you hear me okay
+  user_1,Yeah I can hear you fine Thanks for taking my call
+  user_2,No problem at all Reyansh I see that your policy is up for renewal but it's been cancelled due to two missed payments
+  user_1,[sighs] Yeah I know I've been meaning to call about that I've been having some issues with my bank
+  user_2,I understand that unforeseen circumstances can happen Let me see what I can do to help you [typing]
+  user_1,So what are my options
+  user_2,Well Reyansh I can offer you a payment plan to reinstate your policy But if you decide not to reinstate it will remain cancelled
+  user_1,[pauses] That sounds good I think I'd like to reinstate it
+  user_2,Great I just need to put you on hold for a minute while I check a few things [hold music starts]
+  user_2,[hold music ends] Okay Reyansh I've checked and everything looks good To reinstate your policy I'll need you to make a payment of $500 by the end of the week
+  user_1,That sounds doable But what if I miss another payment
+  user_2,If you miss another payment Reyansh your policy will be cancelled again and you'll have to reapply [dog barks in the background]
+  user_1,Okay got it I'll make sure to make the payment on time
+  user_2,Great I'll send you a confirmation email with all the details [typing]

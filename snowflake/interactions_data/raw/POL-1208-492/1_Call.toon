@@ -1,0 +1,14 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Vihaan Patel,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[7]{user,text}:
+  user_2,Hi Vihaan good afternoon Can you hear me
+  user_1,Yeah I can hear you Good afternoon
+  user_2,So Vihaan I understand you're calling about your life policy with DCoders Can you please confirm your policy number for me
+  user_1,Ah yeah It's LP-001234
+  user_2,Okay great [typing] So I've located your policy details Vihaan Can you tell me a little bit about why you're calling today
+  user_1,Yeah I just wanted to check on the status of my policy and make sure everything is active and up to date
+  user_2,Alright [sighs] Let me just check on that for you [pause] Okay yes everything looks good Your policy is currently active and we've received all the necessary payments

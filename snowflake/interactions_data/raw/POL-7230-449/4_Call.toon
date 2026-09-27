@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2023 T:11:05:00
+end_timestamp: 28/09/2023 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Samar Ghosh,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Sunita Agarwal,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Sunita I hope you're doing well I just wanted to confirm if you received the payment for my health policy reinstatement
+  user_2,Ah yes Samar Good morning I just checked and yes we have received the payment of ₹5,500
+  user_1,Great thank you so much for confirming Sunita So what's the next step now
+  user_2,Now that we've received the payment your policy will be reinstated effective immediately I'll just need to update the status in our system [typing] Ah yes that's done
+  user_1,Alright sounds good Sunita Thank you for your help I really appreciate it

@@ -1,0 +1,14 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f3a7028-a699-4de4-b932-41271ff311d6,Samar Ghosh,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,insurance agent
+messages[7]{user,text}:
+  user_2,Hi Samar good afternoon I'm Neha from Shield Life Services How can I assist you today
+  user_1,Hi Neha I'm calling about my health policy with DCoders I think it's about to expire or maybe it already has
+  user_2,I see Let me just check on that for you Can you please confirm your policy number for me
+  user_1,It's HP-001234
+  user_2,Thank you Samar I've checked on the status of your policy and it appears that it has indeed expired as of last month
+  user_1,Oh no I wasn't aware of that What are my options now
+  user_2,We can discuss renewal options or I can also provide you with some alternative plans that might better suit your current needs Would you like me to go over those with you

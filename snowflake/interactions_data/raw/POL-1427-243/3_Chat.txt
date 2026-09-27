@@ -1,0 +1,10 @@
+chat_id: 9f8a5c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d7,Samar Ghosh,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anita Sharma,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey anita, thx for the email. i had a few ques about the new premium rates *question*",
+  user_2,26/09/2024 T14:50:30,"Hi Samar! I'd be happy to help. What specifically would you like to know about the new rates?",
+  user_1,26/09/2024 T14:51:15,"are there any additional deductibles or copays with the enhanced coverage? *deductibles*",
+  user_2,26/09/2024 T14:52:00,"Actually, yes. There is a small deductible of $50 for each doctor visit, but it's capped at $200 per year. No additional copays though!",
+  user_2,26/09/2024 T14:53:00,"Would you like me to walk you through the rest of the changes and how they affect your policy?"

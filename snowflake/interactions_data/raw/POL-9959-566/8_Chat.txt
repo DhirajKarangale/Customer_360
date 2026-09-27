@@ -1,0 +1,9 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d7,Vedant Thakur,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,insurance agent
+messages[4]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T15:10:00,"hey anjali whats the status of my policy?",
+  user_2,26/09/2024 T15:10:30,"Hi Vedant, your policy is currently under review. I'll let you know as soon as its *its* active.",
+  user_1,26/09/2024 T15:11:00,"ok cool. how long will it take?",
+  user_2,26/09/2024 T15:11:20,"It should be active by end of day today or tomorrow morning at the latest. I'll send you a confirmation email once its *it's* done."

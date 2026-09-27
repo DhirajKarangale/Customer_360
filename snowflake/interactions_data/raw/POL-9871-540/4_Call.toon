@@ -1,0 +1,12 @@
+call_id: REC-DCD-004C
+start_timestamp: 15/10/2026 T:14:05:00
+end_timestamp: 15/10/2026 T:14:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Suhana Joshi,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Neha Kapoor,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Neha I hope you're doing well I'm calling about my travel policy TRV-001234
+  user_2,Ah Suhana good afternoon How can I assist you with your travel policy today
+  user_1,I just wanted to confirm that it's active and I also wanted to know the expiry date again
+  user_2,[typing] Okay let me just check on that for you [pause] Yes your policy is active and the expiry date is the 10th of next month
+  user_1,Great thank you so much Neha I really appreciate your help

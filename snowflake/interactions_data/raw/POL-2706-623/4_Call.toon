@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4f3a7028-a699-4de4-b932-41271ff311d6,Tanvi Saxena,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Neha I'm calling about my auto policy I wanted to confirm if it's been updated in the system yet
+  user_2,Ah yes Tanvi Good morning I'm checking on that for you [pause] Okay I see that the payment has been processed and the policy has been reinstated
+  user_1,Great that's a relief But I also wanted to confirm that the status has been updated to active in the system
+  user_2,Let me just check on that for you [typing] Ah yes I see that the status is still showing as expired I apologize for the oversight
+  user_2,I'm going to go ahead and update that for you right now [pause] Okay that's been updated The status should now reflect that your policy is active

@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Confirmation: Cancellation of Home Policy HP-001234
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Neha Chauhan,neha.chauhan@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d7,Neha Kapoor,neha.kapoor@shieldlifeservices.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,27/09/2024 T:10:05:00,"Dear Neha,\n\nThis is a confirmation email regarding the cancellation of your home policy HP-001234 with DCoders, as per our phone conversation earlier today. The policy has been cancelled effective immediately.\n\nPlease find attached a confirmation letter for your records.\n\nIf you have any further questions or concerns, please do not hesitate to reach out.\n\nBest regards,\nNeha Kapoor",https://storage.shieldlifeservices.com/docs/Policy_HP001234_Cancellation.pdf
+  user_1,user_2,,27/09/2024 T:10:15:00,"Hi Neha,\n\nThanks for the confirmation email. I appreciate your help in cancelling my policy. I have received the confirmation letter and will keep it for my records.\n\nBest regards,\nNeha Chauhan"

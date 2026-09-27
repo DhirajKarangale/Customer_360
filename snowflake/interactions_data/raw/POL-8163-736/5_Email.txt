@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Health Policy Renewal and Expiration
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Vivaan Gupta,vivaan.gupta@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,ravi.menon@securefuturegroup.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,04/04/2024 T:11:15:00,"Hi Ravi,\n\nI hope this email finds you well. I am writing to follow up on our previous conversations regarding my health policy that expired on March 10th. I had submitted the renewal application form as per your instructions, and I am yet to receive an update on the status. Could you please look into this and let me know the current status of my application?\n\nPolicy Number: HP-001234\n\nThanks,\nVivaan",
+  user_2,user_1,,04/04/2024 T:11:30:00,"Dear Vivaan,\n\nThank you for your email. I apologize for the delay in processing your renewal application. I have checked on the status, and I regret to inform you that your policy has been cancelled due to non-payment of premiums within the stipulated time frame. I have attached a formal cancellation notice for your reference.\n\nPlease let me know if you have any further questions or concerns.\n\nBest regards,\nRavi Menon",https://storage.securefuturegroup.com/docs/Policy_HP001234_Cancellation_Notice.pdf

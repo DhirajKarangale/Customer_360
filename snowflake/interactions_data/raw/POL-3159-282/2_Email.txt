@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Auto Policy Expiration and Renewal Inquiry
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Aaradhya Verma,aaradhya.v@mail.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,neha.k@shieldlifeservices.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,27/09/2024 T:10:05:00,"Hi Neha,\n\nI hope this email finds you well. I wanted to follow up on our call earlier today regarding my auto policy. You mentioned it had expired on March 10th. I'm still unsure about the next steps to take for renewal. Could you please provide more information on the renewal process and any necessary documents I need to submit?\n\nPolicy Number: DC-001234\n\nThanks,\nAaradhya",
+  user_2,user_1,,27/09/2024 T:10:20:00,"Dear Aaradhya,\n\nThank you for your email. I apologize again for the inconvenience caused by the policy expiration. To renew your auto policy, please find attached a renewal form that you'll need to fill out and return to us. You can also visit our website to make the payment online. If you have any questions or concerns, feel free to reach out to me directly.\n\nBest regards,\nNeha Kapoor",https://storage.shieldlifeservices.com/docs/Auto_Policy_Renewal_Form.pdf

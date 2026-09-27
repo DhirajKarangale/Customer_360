@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c98
+subject: Re: Auto Policy Renewal Update
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Shaurya Joshi,shaurya.joshi@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anita Sharma,anita.sharma@trustwealthadvisors.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,20/09/2026 T:10:05:00,"Hi Anita,\n\nI just wanted to confirm that my auto policy renewal is still on track for today. I haven't received any confirmation yet, and I want to make sure everything is in order.\n\nThanks,\nShaurya",
+  user_2,user_1,,20/09/2026 T:10:12:00,"Hi Shaurya,\n\nThank you for reaching out. I've checked on the status of your auto policy renewal, and it's still pending in our system. However, please be assured that it will be active by the end of the day. You will receive a confirmation email once it's processed. If you have any further questions or concerns, feel free to ask.\n\nBest regards,\nAnita Sharma"

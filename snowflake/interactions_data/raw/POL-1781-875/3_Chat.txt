@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4e8a5b03-3423-470e-a3fc-799eaf739c97,Meera Chauhan,customer
+  3a6a7028-a699-4de4-b932-41271ff311d7,Anita Sharma,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey anita whats the status of my auto policy with dcoders? i got a notice it expired",
+  user_2,26/09/2024 T14:50:30,"Hi Meera, yes your policy did expire on the 10th of this month. I can help you with renewal options if you'd like",
+  user_1,26/09/2024 T14:51:15,"oh no! i totally forgot *facepalm*. what are my options? can i still renew it?",
+  user_2,26/09/2024 T14:52:00,"Don't worry, it happens! Yes, you can still renew it, but there might be a small lapse in coverage. I can also look into alternative policies for you if you'd like",
+  user_2,26/09/2024 T14:53:00,"Let me just check a few things real quick. Can you please confirm your policy number for me?"

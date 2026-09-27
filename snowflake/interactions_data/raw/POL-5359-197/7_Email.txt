@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Health Policy Renewal and Expiration Confirmation
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Dhruv Kapoor,dhruv.kapoor@mail.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,vikram.p@omniinsurancegroup.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,30/09/2024 T:10:45:00,"Hi Vikram,\n\nI hope this email finds you well. I just wanted to confirm that my old health policy has been successfully marked as expired in the system and the new one is active with no gaps in coverage.\n\nCould you please confirm this and let me know if there's anything else I need to do on my end?\n\nThanks,\nDhruv",
+  user_2,user_1,,30/09/2024 T:11:01:10,"Hi Dhruv,\n\nYes, I've checked the system and confirmed that your old policy has been updated to 'Expired' and the new one is active with the correct effective date. You're all set and there's no further action required from your end.\n\nIf you have any more questions or concerns, feel free to reach out.\n\nBest regards,\nVikram Patel",

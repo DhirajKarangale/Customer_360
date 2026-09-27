@@ -1,0 +1,8 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Dhruv Kapoor,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[3]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey vikram just wanted to confirm that my policy is updated to expired in the system?",
+  user_2,26/09/2024 T14:50:15,"Hi Dhruv! yeah i've double checked and ur policy is updated to 'Expired' in our system dont worry ur new policy is active and backdated to the current date",
+  user_1,26/09/2024 T14:50:30,"thx vikram thats a relief i was worried about the gap in coverage"

@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d7,Sneha Roy,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey vikram, just got ur email abt my auto insurance renewal. can u pls confirm if my policy is really expired? *really*",
+  user_2,26/09/2024 T14:50:30,"Hi Sneha, yes unfortunately it is. the policy expired last month due to non-payment. i sent u a renewal quote in my email",
+  user_1,26/09/2024 T14:51:00,"oh no! i didnt get any notification. can u pls resend the quote? and whats the process to renew it?",
+  user_2,26/09/2024 T14:51:45,"i've resent the quote to ur email. to renew, simply click the link in the email, review the terms, and make the payment online. if u need help, i can walk u thru it",
+  user_1,26/09/2024 T14:52:15,"ok got it, thx vikram. will review and get back to u if i need any help"

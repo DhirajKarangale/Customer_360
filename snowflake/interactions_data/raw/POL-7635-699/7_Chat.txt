@@ -1,0 +1,9 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Shaurya Joshi,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anita Sharma,insurance agent
+messages[4]{user,timestamp,text,media_url}:
+  user_1,20/02/2024 T10:05:00,"hey anita, just wanted to check on my auto policy renewal. is it all set for the 20th?",
+  user_2,20/02/2024 T10:05:30,"hi shaurya! yeah, everything looks good. we've processed the changes you requested. it should be active by the 20th. the status will show as 'Pending' in our system until then",
+  user_1,20/02/2024 T10:06:15,"ok cool, thanks for the update. just to confirm, my vin number is still *correct*? JT2UF40E5M0001111",
+  user_2,20/02/2024 T10:07:00,"yes, that's correct. we've got the right vin number on file. you should receive a confirmation email once the policy is active"

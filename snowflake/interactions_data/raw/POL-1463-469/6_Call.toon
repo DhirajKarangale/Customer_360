@@ -1,0 +1,12 @@
+call_id: REC-INS-002C
+start_timestamp: 26/09/2026 T:14:05:00
+end_timestamp: 26/09/2026 T:14:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Neha Chauhan,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,insurance agent
+messages[5]{user,text}:
+  user_1,Hi I'm calling about my home policy with DCoders I just wanted to confirm that it's cancelled
+  user_2,Ah yes of course Let me just check on that for you Can you please confirm your policy number for me
+  user_1,It's HP-001234
+  user_2,Okay great I've checked and yes your policy HP-001234 is cancelled effective immediately You won't receive any further bills
+  user_1,Great thank you so much for confirming that I really appreciate it

@@ -1,0 +1,12 @@
+call_id: REC-INS-006C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Aaradhya Verma,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,insurance agent
+messages[5]{user,text}:
+  user_1,[00:00] Hi Neha, hope you're doing well. I just wanted to confirm that you received the signed renewal form I sent over yesterday.
+  user_2,[00:05] Ah, yeah, good morning Aaradhya. Yeah, I did receive it, thanks for sending it over so quickly. I've processed the renewal, and you should be all set with the new policy details.
+  user_1,[00:15] Great, thank you so much, Neha. I really appreciate your help with this. Can you just confirm that the policy is active now and not expired?
+  user_2,[00:20] [sighs] Actually, Aaradhya, I need to let you know that the policy is still showing as expired in our system. I'm going to go ahead and escalate this to our admin team to get it updated ASAP.
+  user_1,[00:35] Okay, no worries, Neha. I appreciate your honesty. Please keep me updated on the status, and thanks again for your help.

@@ -1,0 +1,12 @@
+call_id: REC-DCO-004C
+start_timestamp: 27/09/2026 T:11:05:00
+end_timestamp: 27/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  8a6a7028-a699-4de4-b932-41271ff311d6,Shaurya Joshi,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Karan Joshi,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Karan I just wanted to confirm that my home policy HP-001234 has been cancelled
+  user_2,Ah yeah Shaurya Good morning I can check that for you [pause] Ah yes it's been cancelled
+  user_1,Okay great And I should be receiving a refund for the unused premium right
+  user_2,That's correct [sighs] You should be receiving a refund within the next 7-10 business days
+  user_2,And I've sent you a confirmation email with all the details just to keep for your records

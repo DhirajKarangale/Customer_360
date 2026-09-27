@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:15:00
+end_timestamp: 28/09/2026 T:11:20:00
+participants[2]{id,name,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Nandini Rajput,customer
+  483ce1dc-44c1-41db-886f-539e46b7bdad,Vikram Patel,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Vikram I hope you're doing well I just wanted to follow up on my life insurance policy renewal
+  user_2,Ah yeah Nandini good morning I've got your file right here [pause] Let me just check on the status real quick [typing]
+  user_1,Okay sounds good I just want to make sure everything is in order before the 20th
+  user_2,Alright so I've checked and it looks like we've received all the necessary documents from you [pause] I'm going to go ahead and process the renewal right now [typing]
+  user_1,Great thank you so much Vikram I really appreciate it Can you just confirm that my policy will be active after this

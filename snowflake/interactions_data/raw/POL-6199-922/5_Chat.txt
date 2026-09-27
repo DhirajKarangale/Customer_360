@@ -1,0 +1,9 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Aarav Sharma,customer
+  3a6a7028-a699-4de4-b932-41271ff311d7,Sunita Agarwal,insurance agent
+messages[4]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T15:10:00,"hey sunita hope ur doin well *good*",
+  user_2,26/09/2024 T15:10:30,"Hi Aarav! I'm doing great, thanks! How can I assist you today?",
+  user_1,26/09/2024 T15:11:00,"just wanted to confirm if my health policy is active now? i had a doc appt coming up",
+  user_2,26/09/2024 T15:11:45,"Yes, Aarav, your health policy is active. You should be all set for your doctor's appointment. If you need any further assistance, feel free to ask!"

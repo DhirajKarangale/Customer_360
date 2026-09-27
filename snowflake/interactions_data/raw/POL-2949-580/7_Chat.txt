@@ -1,0 +1,9 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Pranav Mishra,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,insurance agent
+messages[4]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey ramesh, just wanted to check on my policy status again",
+  user_2,26/09/2024 T14:50:15,"Hi Pranav! Your policy is still active. We've got you covered",
+  user_1,26/09/2024 T14:50:30,"thx ramesh. btw, i got a notice that my policy is up for renewal in 6 months. is that correct?",
+  user_2,26/09/2024 T14:50:50,"Yes, that's right. We'll send you a formal renewal notice 2 months prior to the expiration date. Don't worry, we'll take care of it"

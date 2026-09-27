@@ -1,0 +1,22 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:25:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Kriti Mahajan,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Karan Joshi,insurance agent
+messages[14]{user,text}:
+  user_1,Hi Karan I hope you're doing well I'm calling about my health policy I sent the renewal form and payment last week but I haven't received any confirmation yet
+  user_2,Ah Kriti good morning Yeah I can check on that for you Can you please confirm your policy number for me
+  user_1,Umm it's HP-009876
+  user_2,Okay got it [typing] Ah yes I see the payment was processed successfully but it looks like there was an issue with the payment gateway confirmation email
+  user_1,Oh no What does that mean
+  user_2,It means that even though the payment went through our system didn't receive the confirmation from the payment gateway so we didn't send you a confirmation email [dog barks in the background]
+  user_1,That's frustrating I was worried that the payment didn't go through
+  user_2,I apologize for the inconvenience Kriti I'm going to go ahead and manually update the status and send you a confirmation email right now [typing]
+  user_1,Okay thank you so much Karan I appreciate it
+  user_2,No problem at all Kriti I'm just going to put you on hold for a quick second while I update the system [hold music starts playing]
+  user_1,[sighs] Okay
+  user_2,[hold music stops] Alright Kriti I've updated the system and sent you a confirmation email You should receive it within the next 10 minutes
+  user_1,Great thank you Karan I really appreciate your help
+  user_2,No problem Kriti Is there anything else I can assist you with today
+  user_1,No that's all thank you

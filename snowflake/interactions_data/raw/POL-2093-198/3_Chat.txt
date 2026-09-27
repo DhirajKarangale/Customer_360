@@ -1,0 +1,10 @@
+chat_id: 9f8a5c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d7,Suhana Joshi,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Karan Joshi,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey karan, did u get my payment for the health policy reinstatement? *did*",
+  user_2,26/09/2024 T14:50:30,"Hi Suhana! Yes, I received the payment. I'm just verifying the details. Can you pls confirm your policy number is HP-001234?",
+  user_1,26/09/2024 T14:51:10,"yeah thats correct. hp-001234. how long will it take to update the status?",
+  user_2,26/09/2024 T14:51:45,"It should be updated within the next 24 hours. I'll send you a confirmation email once it's done. Your new expiration date will be 31/12/2024.",
+  user_2,26/09/2024 T14:52:10,"Also, I've attached a receipt for your payment. Please find it here.",https://storage.dcoders.com/docs/Receipt_HP001234_2024.pdf

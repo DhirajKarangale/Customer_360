@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Cancellation of Auto Policy AP-001234
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Roshni Yadav,roshni.yadav@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Sunita Agarwal,sunita.agarwal@protectallagency.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,28/09/2024 T:10:06:40,"Hi Sunita,\n\nI hope this email finds you well. I am following up on our call earlier today regarding the cancellation of my auto policy AP-001234. Could you please confirm if the cancellation has been processed and if there are any further steps I need to take?\n\nThanks,\nRoshni",
+  user_2,user_1,,28/09/2024 T:10:14:10,"Dear Roshni,\n\nThank you for your email. I am pleased to inform you that the cancellation of your auto policy AP-001234 has been successfully processed. You will receive a confirmation letter and any applicable refund within the next 7-10 working days. Please find attached a copy of the cancellation confirmation for your records.\n\nBest regards,\nSunita Agarwal",https://storage.protectallagency.com/docs/Policy_AP001234_Cancellation.pdf

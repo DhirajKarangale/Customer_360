@@ -1,0 +1,10 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f3a7028-a699-4de4-b932-41271ff311d7,Meera Chauhan,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:42:00,"hey ravi, thx for the call earlier. i wanted to follow up on my life policy LP-001234. whats the status now?",
+  user_2,26/09/2024 T14:42:15,"Hi Meera, your policy is still pending. We need to complete a few more formalities to activate it. Would you like to proceed?",
+  user_1,26/09/2024 T14:42:30,"yeah, i'd like to proceed. whats the next step?",
+  user_2,26/09/2024 T14:42:50,"Great! I'll send you a link to digitally sign the documents. Please find it in the chat. You'll also receive a copy on your registered email.",
+  user_1,26/09/2024 T14:43:10,"ok, got it. thx ravi. how long will it take to activate the policy after i sign the docs?",

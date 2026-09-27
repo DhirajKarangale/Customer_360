@@ -1,0 +1,12 @@
+call_id: REC-INS-006C
+start_timestamp: 26/09/2026 T:14:10:00
+end_timestamp: 26/09/2026 T:14:14:00
+participants[2]{id,name,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Nandini Rajput,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Singh,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Vikram I hope you're doing well I just wanted to confirm that my auto policy is active and I also wanted to ask about the coverage for my new car
+  user_2,Ah yeah Nandini good afternoon Your policy is active and I've got the details for your new 2024 Honda Civic right here [pause] Let me just check a few things [typing]
+  user_1,Okay sounds good I just want to make sure everything is in order
+  user_2,Alright so I've checked and everything looks good The coverage for your new car is as per our previous discussion and the updated policy document I sent you via email
+  user_1,Great thanks so much Vikram I really appreciate your help [sighs] I'm glad we were able to get everything sorted out

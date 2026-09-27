@@ -1,0 +1,10 @@
+chat_id: 9f8a5c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Atharv Pandey,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Neha Kapoor,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:42:00,"hey neha, thanks for the doc on reinstatement. i've reviewed it and i'm interested in exploring new policy options as well. can we discuss those now?",
+  user_2,26/09/2024 T14:42:15,"Hi Atharv! Yeah, of course, we can discuss new options. What are your current coverage needs? Have they changed since your last policy?",
+  user_1,26/09/2024 T14:43:00,"actually, yeah. my family's grown since then. i've got 2 kids now. so i need something that covers them as well.",
+  user_2,26/09/2024 T14:43:30,"Congratulations on the new additions! I've got just the thing. Let me share some family health plans that might suit your needs.",https://storage.dcoders.com/docs/Family_Health_Plans_2026.pdf
+  user_1,26/09/2024 T14:44:00,"awesome, thanks neha! i'll take a look. btw, what's the typical *wait* period for these new policies?",

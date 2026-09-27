@@ -1,0 +1,10 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Kriti Mahajan,customer
+  3a6a7028-a699-4de4-b932-41271ff311d7,Karan Joshi,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey kar*n* i just got the renewal form and payment link thx for sending those over",
+  user_2,26/09/2024 T14:50:30,"You're welcome, Kriti. Just to confirm, you'll need to settle the outstanding amount and return the form by the end of the month to reinstate your policy.",
+  user_1,26/09/2024 T14:51:00,"ok sounds good how do i know if the payment went thru? will i get a confirmation email or something?",
+  user_2,26/09/2024 T14:51:45,"Yes, you'll receive a confirmation email from our payment gateway once the transaction is successful. Also, I'll update your policy status in our system and send you a follow-up email to confirm the renewal.",
+  user_1,26/09/2024 T14:52:10,"alrigh*t* thanks kar*n* i'll keep an eye out for those emails"

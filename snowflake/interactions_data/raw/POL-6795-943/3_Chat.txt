@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Aaradhya Verma,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Neha Kapoor,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey neha, got ur email with the renewal form. can u pls explain the changes in premium amt? its higher than last yr",
+  user_2,26/09/2024 T14:50:30,"Hi Aaradhya, yeah the premium has increased by 10% this year due to inflation and other market factors. but we've also added more coverage for pre-existing conditions",
+  user_1,26/09/2024 T14:51:15,"thats good to know. but can u tell me more about the pre-existing conditions coverage? is it still 50% or has it changed?",
+  user_2,26/09/2024 T14:52:00,"actually, we've increased the coverage to 70% for pre-existing conditions. and we've also added a new feature for chronic disease management",
+  user_1,26/09/2024 T14:53:00,"ok, thats great news! i think i'm ready to sign the renewal form. can u pls send me the link to sign digitally?"

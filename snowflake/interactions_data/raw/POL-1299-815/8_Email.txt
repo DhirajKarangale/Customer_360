@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Health Policy Reinstatement and Expiration
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Kiara Sen,kiara.sen@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,anjali.d@firstguardbrokers.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,30/09/2024 T:11:04:20,"Hi Anjali,\n\nI hope this email finds you well. I just wanted to confirm that my health policy has been successfully reinstated and is now active. Also, I would like to request a confirmation of the expiration date of my policy so I can plan accordingly.\n\nThanks,\nKiara",
+  user_2,user_1,,30/09/2024 T:11:16:50,"Dear Kiara,\n\nThank you for your email. I am pleased to confirm that your health policy has been successfully reinstated and is now active. As per our previous discussions, your policy was reinstated retroactively from the date of expiration. The new expiration date of your policy is 10th March 2025. I have attached a confirmation letter for your records.\n\nBest regards,\nAnjali Desai",https://storage.firstguardbrokers.com/docs/PolicyConfirmation_KiaraSen_2024.pdf

@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:15:00
+end_timestamp: 28/09/2026 T:11:20:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Ishaan Bose,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Karan Joshi,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Karan Ishaan here I just wanted to follow up on my health policy with DCoders
+  user_2,Ah Ishaan good morning Yeah I've been trying to get that sorted out for you I apologize again for the inconvenience with the auto-renewal
+  user_1,Thanks Karan I appreciate it So what's the current status on my policy
+  user_2,Okay so I've escalated the issue and we're going to have to initiate a new renewal process I'm going to send you a new link to sign the form and we'll get this sorted out as soon as possible
+  user_1,Alright sounds good thanks Karan I'll keep an eye out for the link

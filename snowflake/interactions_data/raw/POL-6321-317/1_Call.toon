@@ -1,0 +1,18 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Rohan Ahuja,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Sunita Agarwal,insurance agent
+messages[11]{user,text}:
+  user_2,Hi Rohan this is Sunita from Protect All Agency How can I assist you today
+  user_1,Hi Sunita I am calling about my home policy with DCoders I need to make some changes
+  user_2,Okay sure thing Can you please provide me with your policy number so I can look into it
+  user_1,It's HP-001234
+  user_2,Alright thank you [typing] Ah yes I have your policy details here What changes would you like to make
+  user_1,Actually I am moving to a new house and I want to cancel my current policy
+  user_2,I see [sighs] Okay that's a big change Let me just check a few things [pause] Yes we can definitely assist you with the cancellation
+  user_1,Great thank you How long will it take to process
+  user_2,It should take about 3-5 business days for the cancellation to be effective
+  user_1,Okay that sounds good And will I get a refund for the remaining premium
+  user_2,Yes you will receive a refund for the unused portion of your premium [pause] I will go ahead and process the cancellation for you

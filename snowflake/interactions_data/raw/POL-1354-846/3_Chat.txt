@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Ishaan Bose,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey vikram, just wanted to confirm if my life policy is active now?",
+  user_2,26/09/2024 T14:50:15,"Hi Ishaan, yes it is! I sent you an email with the updated policy documents. Did you receive it?",
+  user_1,26/09/2024 T14:50:30,"yeah i got it, thx! just wanted to double check. can u pls confirm the policy status in ur system?",
+  user_2,26/09/2024 T14:50:45,"I've checked, and it's showing as active. You're all set! If you have any more questions, feel free to ask",
+  user_1,26/09/2024 T14:51:00,"awesome, thx vikram! u've been a huge help"

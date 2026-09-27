@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Krishna Das,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:42:00,"hey suresh, its krishna das. i got ur email about my auto policy renewal. can u explain y the premium is higher this yr?",
+  user_2,26/09/2024 T14:42:15,"Hi Krishna, yeah the premium has gone up a bit this year. We had to adjust the rates due to increased claims in your area. But dont worry, we can discuss possible discounts",
+  user_1,26/09/2024 T14:43:00,"ok, thats not great to hear. what kinda discounts r we talkin about? i dont wanna pay more than last yr",
+  user_2,26/09/2024 T14:43:30,"Well, we have a few options. If you opt for a higher deductible, we can lower the premium. Or, if you've had no claims in the past year, you might be eligible for a no-claim bonus",
+  user_1,26/09/2024 T14:44:10,"thats a good point about the no-claim bonus. can u check if i qualify for that? and btw, whats the deadline for renewal?"

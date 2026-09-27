@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Health Policy Renewal with DCoders
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Neha Chauhan,neha.c@mail.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Karan Joshi,karan.j@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,30/09/2024 T:10:06:40,"Hi Karan,\n\nI am getting anxious about my health policy status. You mentioned there was a delay in processing my renewal, but I haven't received any update since. Can you please look into this and let me know the current status? I am worried about my coverage.\n\nPolicy Number: HP-123456\n\nThanks,\nNeha",
+  user_2,user_1,,30/09/2024 T:10:14:10,"Dear Neha,\n\nI apologize for the delay and any inconvenience it has caused. I have checked on the status, and I regret to inform you that due to the processing delay, your policy has been marked as expired in our system. I am working on resolving this as soon as possible. I will keep you updated on the progress and ensure your coverage is reinstated.\n\nBest regards,\nKaran Joshi",

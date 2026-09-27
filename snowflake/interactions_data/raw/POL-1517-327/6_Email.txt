@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Life Policy LP-001234 - Confirmation and Next Steps
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Sai Kumar,sai.kumar@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,anjali.desai@firstguardbrokers.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,30/09/2024 T:11:04:20,"Hi Anjali,\n\nI hope this email finds you well. I am writing to confirm that my life policy LP-001234 is active and up to date. I also wanted to inquire about the next steps for my policy, specifically regarding the premium payments and any additional documentation required.\n\nPlease let me know if there's anything I need to do on my end.\n\nThanks,\nSai Kumar",
+  user_2,user_1,,30/09/2024 T:11:16:50,"Dear Sai,\n\nThank you for your email. I am pleased to confirm that your life policy LP-001234 is indeed active and up to date. As we previously discussed, your next premium payment is due on October 15th, and I will send you a reminder a week before the due date.\n\nRegarding additional documentation, I have attached a confirmation letter for your records. If you have any questions or concerns, please do not hesitate to reach out.\n\nBest regards,\nAnjali Desai",https://storage.firstguardbrokers.com/docs/Policy_LP001234_Confirmation_2026.pdf

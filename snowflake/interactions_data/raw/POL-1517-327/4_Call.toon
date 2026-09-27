@@ -1,0 +1,22 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:14:05:00
+end_timestamp: 28/09/2026 T:14:25:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d7,Sai Kumar,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,insurance agent
+messages[14]{user,text}:
+  user_1,Hi Anjali I hope you're doing well I'm calling about my life policy LP-001234
+  user_2,Ah Sai Kumar nice to talk to you again How can I assist you with your policy today
+  user_1,I just wanted to confirm that it's active and up to date I haven't received any updates recently
+  user_2,Let me just check on that for you [typing] Ah yes everything looks good Your policy is active and all premiums are paid up to date
+  user_1,That's great to hear Thanks for confirming Anjali
+  user_2,You're welcome Sai Kumar Is there anything else I can help you with
+  user_1,Actually yes I was wondering if I could make some changes to my policy [hold music starts]
+  user_2,[hold music ends] I apologize for the brief hold Sai Kumar What changes were you looking to make
+  user_1,I'd like to increase my coverage amount and add my spouse as a beneficiary
+  user_2,Okay that's definitely doable [typing] I just need to confirm a few details with you Can you please confirm your spouse's date of birth and occupation
+  user_1,Ah yeah that's [pauses] umm let me check [background noise: dog barks] Ah sorry about that My spouse's date of birth is 12th August 1985 and she's a marketing manager
+  user_2,Got it [typing] And can you also confirm your current occupation and annual income
+  user_1,Yeah I'm a software engineer and my annual income is around 1.2 million
+  user_2,Okay great [typing] I've updated the details Sai Kumar I'll send you a confirmation email with the changes
+  user_1,Thanks Anjali I appreciate your help [sighs] Sorry again for the long call

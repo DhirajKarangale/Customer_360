@@ -1,0 +1,14 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Kunal Mehta,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,insurance agent
+messages[7]{user,text}:
+  user_2,Hi Kunal good afternoon Can you hear me
+  user_1,Yeah yeah I can hear you Good afternoon
+  user_2,Thanks for calling DCoders today My name is Ramesh and I'll be assisting you with your auto policy How can I help you today
+  user_1,Hi Ramesh I'm looking to get my auto policy activated I just purchased a new car and I need to get it insured as soon as possible
+  user_2,Congratulations on the new car That's great news Can you please provide me with your policy number so I can look into this for you
+  user_1,It's AP-001234
+  user_2,Alright I've located your policy details Kunal I just need to confirm a few details with you to get your policy activated Can you please confirm your vehicle's make and model

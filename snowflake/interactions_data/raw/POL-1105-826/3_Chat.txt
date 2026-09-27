@@ -1,0 +1,10 @@
+chat_id: 9f8a5c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d7,Suhana Joshi,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey vikram, i got ur email abt my health policy. i dont think i shud hav a penalty for the gap in coverage. can u explain y thats the case?",
+  user_2,26/09/2024 T14:50:30,"Hi Suhana, sorry again for the inconvenience. The penalty is standard procedure for lapsed policies. However, I can try to waive it for you. Can you please fill out the attached form and I'll see what I can do?",
+  user_1,26/09/2024 T14:51:15,"thx vikram. i'll fill it out. but can u also look into y i didnt get a notification my policy was expiring? i dont want this to happen again",
+  user_2,26/09/2024 T14:52:00,"Absolutely, Suhana. I've made a note to investigate the notification issue. We'll make sure you're notified well in advance next time. I'll also send you a confirmation email once I receive the form.",
+  user_1,26/09/2024 T14:53:00,"ok sounds good. thx for ur help vikram"

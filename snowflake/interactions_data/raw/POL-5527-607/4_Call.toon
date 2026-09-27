@@ -1,0 +1,22 @@
+call_id: REC-INS-004C
+start_timestamp: 26/09/2026 T:11:05:00
+end_timestamp: 26/09/2026 T:11:25:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Vivaan Gupta,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Neha Kapoor,insurance agent
+messages[14]{user,text}:
+  user_1,Hi is this Shield Life Services
+  user_2,Ah yes this is Shield Life Services My name is Neha Kapoor How can I assist you today
+  user_1,Hi Neha I'm Vivaan Gupta I'm calling about my travel policy with DCoders It says it's expired
+  user_2,I apologize for the inconvenience Vivaan Can you please provide me with your policy number so I can look into this further
+  user_1,It's... umm... TRV-001234
+  user_2,Thank you Vivaan [typing] I've located your policy It does show that it has expired on the 20th of this month
+  user_1,Yeah I know I was wondering if I could get it reinstated or get a new quote
+  user_2,Let me see what options are available for you [hold music starts] 
+  user_1,[sighs] 
+  user_2,[hold music ends] I apologize for the wait Vivaan It looks like we can offer you a new quote However I need to ask you a few questions to get the process started
+  user_1,Okay that sounds good
+  user_2,Great Can you please confirm your date of birth [dog barks in the background]
+  user_1,It's 12th August 1990
+  user_2,Thank you Vivaan [typing] I've updated the information in our system
+  user_1,So what's the next step

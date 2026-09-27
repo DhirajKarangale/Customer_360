@@ -1,0 +1,12 @@
+call_id: REC-INS-007A
+start_timestamp: 27/09/2026 T:11:05:00
+end_timestamp: 27/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4f3a7028-a699-4de4-b932-41271ff311d6,Akanksha Bhatt,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Ramesh I just wanted to confirm that my life policy is active now
+  user_2,Ah yes Akanksha Good morning Your policy LP-001234 is indeed active as of today [00:10]
+  user_1,That's great news thank you so much for your help throughout this process [00:15]
+  user_2,You're welcome Akanksha It was my pleasure to assist you If you have any more questions or need further assistance please don't hesitate to reach out [00:20]
+  user_1,Will do thanks again and have a great day [00:25]

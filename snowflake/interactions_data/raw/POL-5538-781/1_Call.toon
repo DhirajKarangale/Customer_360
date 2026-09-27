@@ -1,0 +1,18 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f3a7028-a699-4de4-b932-41271ff311d6,Akanksha Bhatt,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[11]{user,text}:
+  user_2,Hi Akanksha good afternoon Can you hear me
+  user_1,Yeah I can hear you Good afternoon
+  user_2,Great So I'm Suresh from Secure Life Solutions I'm calling about your life insurance policy with DCoders
+  user_1,Oh hi Suresh Yeah I've been meaning to call you guys about that
+  user_2,What seems to be the issue with your policy
+  user_1,Well I just got a letter saying it's inactive and I don't know why
+  user_2,I apologize for the inconvenience Let me just check on that for you [typing]
+  user_2,Ah I see the issue It looks like your last payment was missed
+  user_1,Oh no I didn't realize that I'll pay it right away
+  user_2,Great I'll go ahead and assist you with the payment process [sighs] And I'll make sure your policy is updated to active status
+  user_1,Thank you so much Suresh I really appreciate it

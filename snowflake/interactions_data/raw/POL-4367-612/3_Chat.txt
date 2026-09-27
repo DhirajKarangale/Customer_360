@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Ananya Nair,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey Vikram, thx for the quote u sent over email. i was thinkin of reinstating my old policy instead of gettin a new one. is that poss? *possible",
+  user_2,26/09/2024 T14:50:30,"Hi Ananya, yes, reinstatement is an option. However, please note that there might be a penalty for the lapse in coverage. Let me check on the specifics for your policy.",
+  user_1,26/09/2024 T14:51:10,"ok, thx for the heads up. how long will it take to reinstate? and can u pls confirm the penalty amt?",
+  user_2,26/09/2024 T14:52:00,"Reinstatement typically takes 24-48 hours. As for the penalty, it's a one-time fee of $50. But I need to confirm a few details with our underwriting team. Can you please confirm your policy number and the date you'd like the coverage to resume?",
+  user_1,26/09/2024 T14:53:20,"policy # is DC-001234. and i'd like the coverage to resume from today, if poss. thx"

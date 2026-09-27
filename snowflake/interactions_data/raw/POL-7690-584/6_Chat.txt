@@ -1,0 +1,9 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Atharv Pandey,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Anjali Desai,insurance agent
+messages[4]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey anjali whats the status of my policy update?",
+  user_2,26/09/2024 T14:50:15,"Hi Atharv, your policy is still in *pendding* status. I'll send you an email once its active",
+  user_1,26/09/2024 T14:50:30,"ok thats cool. so how long will it take to get active?",
+  user_2,26/09/2024 T14:50:45,"it should be active within the next 2-3 working days. i'll keep you updated"

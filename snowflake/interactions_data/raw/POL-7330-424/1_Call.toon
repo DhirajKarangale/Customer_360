@@ -1,0 +1,14 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Sneha Roy,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Karan Joshi,insurance agent
+messages[7]{user,text}:
+  user_2,Hi Sneha good afternoon Can you hear me
+  user_1,Yeah I can hear you Good afternoon
+  user_2,Thanks for calling Safe Step Insurance I'm Karan Joshi How can I assist you today
+  user_1,Hi Karan I'm calling about my home policy with DCoders I think it's about to expire or maybe it already has
+  user_2,I see Let me just check on that for you [typing] Can you please confirm your policy number for me
+  user_1,It's HP-001234
+  user_2,I've checked on the status and I'm afraid your policy has expired as of last week [sighs] Would you like to discuss renewal options

@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 30/09/2026 T:11:05:00
+end_timestamp: 30/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Kriti Mahajan,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Vikram this is Kriti Mahajan I just wanted to follow up on my home policy reinstatement
+  user_2,Ah Kriti good morning I've got your file right here [pause] Let me just check on the status
+  user_1,Okay sounds good I just wanted to make sure everything was processed correctly
+  user_2,Alright [typing] Yes everything looks good The reinstatement fee has been processed and your policy is now active again
+  user_1,Great thank you so much Vikram I really appreciate your help

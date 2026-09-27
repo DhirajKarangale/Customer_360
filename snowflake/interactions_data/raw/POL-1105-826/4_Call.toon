@@ -1,0 +1,12 @@
+call_id-004C
+start_timestamp: 30/09/2026 T:14:05:00
+end_timestamp: 30/09/209:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Suhana Joshi,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Vikram I'm calling about my health policy I got the form you sent over and I just wanted to confirm a few things
+  user_2,Ah Suhana good afternoon Yeah I'm happy to help What's on your mind
+  user_1,So I was looking at the form and I saw that there's a section for payment details Can I pay online or do I need to send a check
+  user_2,You can definitely pay online We have a secure payment portal on our website I can give you the link if you'd like
+  user_2,[sighs] Also just to confirm your policy will be reinstated as soon as we receive the payment and the completed form

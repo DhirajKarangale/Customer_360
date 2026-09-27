@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Home Policy Renewal with DCoders
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Sneha Roy,sneha.r@mail.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Karan Joshi,karan.j@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2024 T:10:06:40,"Dear Sneha,\n\nI hope this email finds you well. I wanted to follow up on our previous conversation regarding the renewal of your home policy with DCoders. As we discussed, I have processed the renewal with the 5% loyalty discount we agreed upon. Your new policy documents are attached for your reference.\n\nPlease let me know if you have any further questions or concerns.\n\nBest regards,\nKaran Joshi",https://storage.dcoders.com/docs/HomePolicy_SHR12345_2026.pdf
+  user_1,user_2,,28/09/2024 T:10:14:10,"Hi Karan,\n\nThanks for the update and the documents. I've reviewed them and everything looks good. I appreciate your help in getting the renewal sorted out. Please go ahead and mark my policy as active in the system.\n\nThanks again,\nSneha"

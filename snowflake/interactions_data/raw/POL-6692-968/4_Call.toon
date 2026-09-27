@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  3421f7d8-4a9f-4f3e-8f9a-5f4e3a7b1c6,Vihaan Patel,customer
+  8a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Ravi I'm calling about my health policy I still haven't received any update on the status after making the payment
+  user_2,Ah sorry to hear that Vihaan Let me check on that for you [pause] Can you please confirm your policy number for me
+  user_1,It's HP-001234
+  user_2,Okay [typing] I've checked and it seems like the admin team is still processing the payment I apologize for the delay [sighs] I'll escalate this again to ensure it gets resolved today
+  user_1,Okay thanks Ravi I appreciate it Can you also confirm if I'll get a notification once it's active

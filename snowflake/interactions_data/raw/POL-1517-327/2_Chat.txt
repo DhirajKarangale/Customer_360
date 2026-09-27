@@ -1,0 +1,9 @@
+chat_id: 8a5c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d7,Sai Kumar,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,insurance agent
+messages[4]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:42:00,"hey anjali, just wanted to confirm my life policy LP-001234 is active?"
+  user_2,26/09/2024 T14:42:15,"Hi Sai! Yeah, I checked and your policy LP-001234 is active and up to date. Do you have any other questions?"
+  user_1,26/09/2024 T14:42:30,"no thats all thanks anjali *thats"
+  user_2,26/09/2024 T14:42:45,"You're welcome Sai! Have a great day!"

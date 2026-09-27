@@ -1,0 +1,10 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d7,Shaurya Joshi,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anita Sharma,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey anita, hope ur doin well. i sent the form back on 18th. did u recieve it?",
+  user_2,26/09/2024 T14:50:30,"Hi Shaurya! Yeah, I'm good thanks. Let me check on the form real quick *real quick*",
+  user_2,26/09/2024 T14:51:00,"Okay, I've checked and it looks like we did receive the form. However, I need to confirm a few details with you. Can you please confirm your vehicle's VIN number?",
+  user_1,26/09/2024 T14:51:45,"oh yeah! its *its* JTHKD5BH5A5035181",
+  user_2,26/09/2024 T14:52:15,"Great, thanks for confirming! I've updated the info. Your policy should be processed by the 20th. I'll keep you posted on the status."

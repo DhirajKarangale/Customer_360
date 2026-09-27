@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Roshni Yadav,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Sunita Agarwal,insurance agent
+messages[5]{user,text}:
+  user_1,Hi I'm calling about my auto policy AP-001234 I just wanted to confirm if it's been cancelled
+  user_2,Ah yes Roshni Yadav [00:10] Can you please confirm your address on file so I can look into this for you
+  user_1,It's 123 Main Street Apartment 4 [00:15] Is that correct
+  user_2,Yes that's correct [00:20] I've checked on the status of your policy and I can confirm that it has been cancelled as per our previous discussion
+  user_1,Okay great thank you so much [sighs] I really appreciate it [00:25]

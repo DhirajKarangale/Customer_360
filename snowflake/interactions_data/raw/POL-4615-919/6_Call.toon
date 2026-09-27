@@ -1,0 +1,12 @@
+call_id: REC-INS-002C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4f3a7028-a699-4de4-b932-41271ff311d6,Rohan Ahuja,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,insurance agent
+messages[5]{user,text}:
+  user_2,Hi Rohan hope you're doing well I wanted to follow up on the revised quote I sent you yesterday for your auto policy
+  user_1,Yeah I got it thanks for the follow-up Ramesh I was just going over the numbers and I think I'm okay with the premium but I'm still a bit concerned about the lapse fee
+  user_2,I completely understand your concern Rohan I've already negotiated the best possible rate for you but I can try to see if there's any further flexibility on the lapse fee -- let me just check on that for you [pause] [typing]
+  user_2,Okay so I just checked and it looks like we can offer you an additional 5% discount on the lapse fee if you're willing to pay the premium upfront
+  user_1,That sounds like a good deal Ramesh I think I'm ready to move forward with the reinstatement

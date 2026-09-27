@@ -1,0 +1,21 @@
+call_id: REC-INS-004C
+start_timestamp: 29/09/2026 T:14:05:00
+end_timestamp: 29/09/2026 T:14:25:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Rohan Ahuja,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Sunita Agarwal,insurance agent
+messages[14]{user,text}:
+  user_1,Hi Sunita I'm calling about my home policy with DCoders I was supposed to get a refund after cancellation
+  user_2,Ah yes Mr Ahuja I'm happy to help you with that Can you please confirm your policy number for me
+  user_1,Umm it's... [pause]... HP-001234
+  user_2,Great thank you [typing] I'm checking on the status of your refund
+  user_1,Yeah I was told it would take 3-5 business days but it's been a week now
+  user_2,I apologize for the delay Mr Ahuja [sighs] It looks like there was an issue with the processing Let me see what I can do to expedite it for you [hold music starts]
+  user_1,[background noise: dog barks] Oh sorry about that my dog is being a bit loud
+  user_2,[laughs] No worries Mr Ahuja I'm back now [hold music ends] I've escalated the issue and you should receive your refund within the next 2 business days
+  user_1,Okay that sounds good But can you also confirm that my policy is cancelled
+  user_2,Absolutely [typing] Yes your policy HP-001234 is cancelled effective as of last week You won't receive any further bills from us
+  user_1,Great thank you so much Sunita I really appreciate your help
+  user_2,You're welcome Mr Ahuja It was my pleasure to assist you Is there anything else I can help you with today
+  user_1,No that's all thank you again
+  user_2,You're welcome Have a great day Mr Ahuja [call ends with a slight delay]

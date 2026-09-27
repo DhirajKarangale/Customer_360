@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Health Policy Renewal and Premium Increase
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Samar Ghosh,samar.ghosh@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,neha.kapoor@shieldlifeservices.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,30/09/2024 T:11:04:20,"Dear Samar,\n\nI hope this email finds you well. I wanted to follow up on our previous conversation regarding your health policy renewal. As discussed, I have attached a revised quote with the additional 2% discount we discussed. Please review it and let me know if you have any further questions or concerns.\n\nPlease note that your policy has already expired, and it's essential to renew it as soon as possible to avoid any gaps in coverage.\n\nBest regards,\nNeha Kapoor",https://storage.shieldlifeservices.com/docs/Revised_Quote_SH-123456_2026.pdf
+  user_1,user_2,,30/09/2024 T:11:21:10,"Hi Neha,\n\nThanks for the revised quote. I appreciate the additional discount. However, I'm still a bit concerned about the overall premium increase. Could you please provide a detailed breakdown of the changes and the reasons behind the increase?\n\nLooking forward to hearing back from you.\n\nBest regards,\nSamar Ghosh"

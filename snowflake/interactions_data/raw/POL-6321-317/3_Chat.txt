@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d7,Rohan Ahuja,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Sunita Agarwal,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey sunita, just wanted to check on the status of my home policy cancellation",
+  user_2,26/09/2024 T14:50:30,"Hi Rohan, I've checked on the status. It's still in process, but don't worry, it should be cancelled within the next 2 business days",
+  user_1,26/09/2024 T14:51:00,"ok cool, thx for the update. also, can u pls confirm if i'll get a refund for the unused premium?",
+  user_2,26/09/2024 T14:51:45,"Yes, you will receive a refund for the unused portion of your premium. I'll make sure to send you a confirmation email once the cancellation is complete",
+  user_1,26/09/2024 T14:52:10,"great, thx sunita. looking forward to the email"

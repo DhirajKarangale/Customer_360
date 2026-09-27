@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d7,Neha Chauhan,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Karan Joshi,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey karan, its neha. i got ur email with the renewal quote. can u explain the changes in coverage and premium?",
+  user_2,26/09/2024 T14:50:30,"Hi Neha! Yeah, sure. The premium has increased by 10% due to the addition of new benefits like dental and vision coverage. We've also expanded the network of hospitals.",
+  user_1,26/09/2024 T14:51:15,"thats great! but i was thinking of downgrading to a lower plan to save on premium. is that possible?",
+  user_2,26/09/2024 T14:52:00,"I can definitely help you with that, Neha. However, please note that downgrading might affect your coverage. Let me check the options for you.",
+  user_2,26/09/2024 T14:53:20,"Okay, I've checked. If you downgrade to the lower plan, you'll save around 15% on premium, but you'll lose the dental and vision coverage. Also, the deductible will increase by $500. Would you like me to send you the updated quote?"

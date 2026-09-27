@@ -1,0 +1,22 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:25:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Pranav Mishra,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,insurance agent
+messages[14]{user,text}:
+  user_1,Hi is this DCoders
+  user_2,Yes this is DCoders How can I assist you today
+  user_1,I am Pranav Mishra and I am calling about my life insurance policy
+  user_2,Okay Pranav can you please provide me with your policy number so I can look into this for you
+  user_1,It's... umm... [pause]... SH-123456
+  user_2,Thank you Pranav [typing] I'm checking on the status of your policy
+  user_2,[hold music starts] Please hold for just a moment while I check on some information
+  user_1,[sighs] Okay...
+  user_2,[hold music ends] I apologize for the delay Pranav I've located your policy
+  user_1,Great what's the status
+  user_2,[pause] I'm showing that your policy is currently active but it's set to expire soon
+  user_1,What do you mean expire soon
+  user_2,It looks like the premium payment is overdue and if we don't receive payment within the next 30 days the policy will be cancelled
+  user_1,Oh no I didn't realize that [dog barks in the background] Sorry about that
+  user_2,No worries Pranav [laughs] I have pets too

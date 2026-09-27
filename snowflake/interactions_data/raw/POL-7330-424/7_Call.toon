@@ -1,0 +1,22 @@
+call_id: REC-INS-007C
+start_timestamp: 26/09/2026 T:14:05:00
+end_timestamp: 26/09/2026 T:14:25:00
+participants[2]{id,name,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Sneha Roy,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Karan Joshi,insurance agent
+messages[14]{user,text}:
+  user_1,Hi, I'm calling about my home policy with DCoders. I think there's been a mistake with the status.
+  user_2,Ah, sorry to hear that, Sneha. Can you please confirm your policy number so I can look into this for you?
+  user_1,It's... umm... HP-001234. I think.
+  user_2,Okay, thank you. [typing] Ah, yes. I see the issue. Your policy was marked as expired, but I also see that we had discussed renewal options and I had sent over a quote.
+  user_1,Exactly! I had confirmed the renewal and even received the documents, but when I checked the status online, it still said expired.
+  user_2,I apologize for the confusion, Sneha. Let me see what's going on here. [hold music starts] 
+  user_2,[hold music ends] Sorry about the wait, Sneha. I've checked on the status, and it seems there was a delay in updating the system. I'm going to go ahead and mark it as expired now.
+  user_1,Wait, what? You're marking it as expired? But I just renewed it!
+  user_2,I know, I know. I apologize for the mistake. This is just a technical step to correct the system. Don't worry, your policy is active, and you're covered.
+  user_1,[sighs] Okay... I hope this gets sorted out soon.
+  user_2,It will, Sneha. I'm going to send you a confirmation email right now. [typing] And I'll also follow up with our IT department to ensure this doesn't happen again.
+  user_1,Thank you, Karan. I appreciate it.
+  user_2,You're welcome, Sneha. Is there anything else I can assist you with today?
+  user_1,No, that's all. Thanks again.
+  user_2,You're welcome. Have a great day, Sneha. [dog barks in the background] Ah, sorry about that. My dog is just excited to see me.

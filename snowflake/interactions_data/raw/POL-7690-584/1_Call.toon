@@ -1,0 +1,14 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f3a7028-a699-4de4-b932-41271ff311d6,Atharv Pandey,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,insurance agent
+messages[7]{user,text}:
+  user_2,Hi is this Atharv Pandey from DCoders
+  user_1,Yeah that's me
+  user_2,Hi Atharv this is Anjali from First Guard Brokers I'm calling about your life policy with us
+  user_1,Oh hi Anjali Yeah I've been meaning to call you guys about that
+  user_2,Great So I just wanted to confirm a few details with you to move forward with the policy
+  user_1,Sure go ahead
+  user_2,Okay so I just need to confirm your date of birth and address real quick [typing]

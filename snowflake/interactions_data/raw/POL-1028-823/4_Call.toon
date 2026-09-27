@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:15:00
+end_timestamp: 28/09/2026 T:11:20:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Aaradhya Verma,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Anjali I'm calling about my auto policy with DCoders I think it's expired
+  user_2,Ah yeah Aaradhya I see that your policy did expire on the 20th of this month due to a missed payment
+  user_1,Oh no I'm so sorry about that I didn't realize it had expired Can you help me reinstate it
+  user_2,Of course Aaradhya Let me just check a few things [pause] Okay so the total comes out to be $250 for the back premium and reinstatement fee
+  user_1,That sounds good I'll go ahead and pay that now Can you confirm once the payment is processed

@@ -1,0 +1,22 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:25:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Aarav Sharma,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Ravi Menon,insurance agent
+messages[14]{user,text}:
+  user_2,Hi Aarav good afternoon Can you hear me
+  user_1,Yeah yeah I can hear you Good afternoon
+  user_2,Great thanks for calling DCoders today My name is Ravi Menon and I'll be assisting you with your life insurance policy
+  user_1,Nice to talk to you Ravi I'm calling about my life policy I'm not sure if it's active or not
+  user_2,Okay no problem at all Aarav Can you please provide me with your policy number so I can look into this for you
+  user_1,It's... umm... [pause]... LP-001234
+  user_2,Alright thank you Aarav I'm going to check on the status of your policy [typing]... Ah yes I see that your policy is currently in a pending state
+  user_1,Pending What does that mean
+  user_2,It means that we're still processing your application [dog barks in the background]... Sorry about that [pause]... As I was saying we're still processing your application and it hasn't been activated yet
+  user_1,Okay that makes sense But how long will it take to activate
+  user_2,Typically it takes around 3 to 5 business days for the policy to be activated [hold music starts playing]... I'm going to check on the status of your application [hold music continues for 2 minutes]
+  user_2,[hold music stops]... I apologize for the hold Aarav I've checked on the status of your application and it looks like there was an issue with the payment processing
+  user_1,Oh no What kind of issue
+  user_2,It looks like the payment was declined [sighs]... But don't worry we can resolve this issue today I just need to update the payment information
+  user_1,Okay that sounds good Thank you Ravi

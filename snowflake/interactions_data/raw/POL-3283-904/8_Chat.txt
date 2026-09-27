@@ -1,0 +1,8 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Ananya Nair,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,insurance agent
+messages[3]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey ramesh, just wanted to confirm that my policy is active now?",
+  user_2,26/09/2024 T14:50:15,"Hi Ananya! Yes, your policy is active now. You should have received a confirmation email with all the details.",
+  user_1,26/09/2024 T14:50:30,"ok cool, thx! i'll check my email. also, can u pls send me the policy doc again? i cant find it"

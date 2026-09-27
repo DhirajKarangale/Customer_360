@@ -1,0 +1,10 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d7,Samar Ghosh,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey ravi, just wanted to confirm if i paid the renewal fee, would my policy be active again?"
+  user_2,26/09/2024 T14:50:30,"Hi Samar, yes that's correct. If you pay the renewal fee of $542.50, your policy will be reinstated. However, please note that there might be a small lapse in coverage since it's already expired."
+  user_1,26/09/2024 T14:51:00,"ok, got it. can u pls confirm if the payment link u sent me is still valid?"
+  user_2,26/09/2024 T14:51:20,"Yes, the payment link I sent you via email is still valid. You can use it to make the payment. If you're having any issues, I can also provide you with an alternate payment method."
+  user_1,26/09/2024 T14:52:00,"alrigh, thx ravi. i'll make the payment ASAP. can u pls update me once its done?"

@@ -1,0 +1,10 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f3a7028-a699-4de4-b932-41271ff311d7,Suhana Joshi,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:42:00,"hey ravi, thx for the call earlier. just wanted to check on the status of my life policy with dcoders",
+  user_2,26/09/2024 T14:42:15,"Hi Suhana! Yeah, I checked on it and it's still pending but our team is working on it. Should be active soon",
+  user_1,26/09/2024 T14:42:30,"ok thats good to hear. do u have an estimated time frame for when it will be active?",
+  user_2,26/09/2024 T14:42:50,"We're looking at another 2-3 *two to three* working days. I'll make sure to keep you updated",
+  user_1,26/09/2024 T14:43:05,"sounds good. thx for the update ravi"

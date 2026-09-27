@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d7,Aaradhya Verma,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey neha, got ur email with the renewal form. can u pls clarify whats the diff in premium amt from last yr? and r thr any changes in coverage?",
+  user_2,26/09/2024 T14:51:15,"Hi Aaradhya, yeah the premium has gone up by 10% this year due to inflation. As for coverage, we've added a new feature for mental health support. I can send u the updated policy doc if u want",
+  user_1,26/09/2024 T14:52:30,"thats a pretty big jump in premium... can u explain the mental health support feature? is it included in the base plan or is it an add-on?",
+  user_2,26/09/2024 T14:54:00,"its included in the base plan now. we've partnered with a few therapists and counselors to provide online sessions. its 3 free sessions per year, and then u can opt for more at a discounted rate",
+  user_1,26/09/2024 T14:55:20,"ok that sounds good. but i'm still not sure about the premium increase... can u see if theres any discount i can get?"

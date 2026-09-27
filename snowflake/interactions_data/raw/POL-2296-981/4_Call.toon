@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:15:00
+end_timestamp: 28/09/2026 T:11:20:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Sneha Roy,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Suresh I'm calling about my health policy I think it expired on 1st March
+  user_2,Ah yeah Sneha Roy let me just check on that for you [pause] Ah yes your policy did expire on 01/03/2023
+  user_1,Okay that's what I thought I got your email with the documents needed for renewal but I'm a bit confused about the medical certificate
+  user_2,The medical certificate is just a formality Sneha we need it to update our records [sighs] I can guide you through the process if you'd like
+  user_2,Also I'll need you to confirm your current address and phone number just to ensure everything is up to date [typing]

@@ -1,0 +1,10 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c97,Vihaan Patel,customer
+  3a6a7028-a699-4de4-b932-41271ff311d7,Suresh Deshmukh,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey suresh, i need to make some changes to my life policy LP-001234. can u help me with the paperwork?",
+  user_2,26/09/2024 T14:50:30,"Hi Vihaan! Yeah, I can help you with that. What changes are you looking to make? *looking* at your policy details now",
+  user_1,26/09/2024 T14:51:15,"i wanna add my wife as a beneficiary and also increase the coverage amount. is that possible?",
+  user_2,26/09/2024 T14:52:00,"That's doable. I'll send you the necessary forms to fill out. You'll need to provide some additional documents for your wife, like her ID proof and address proof.",
+  user_1,26/09/2024 T14:53:00,"ok sounds good. can u send me the forms asap? and also, will this affect my premium amount?"

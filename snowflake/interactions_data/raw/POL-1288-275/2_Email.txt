@@ -1,0 +1,8 @@
+mail_id: 3421qwe-3423-470e-a3fc-799eaf739c96
+subject: Re: Travel Policy Expiration and Renewal Options
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Vedant Thakur,vedant.t@gmail.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,ravi.m@securefuturegroup.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,27/09/2024 T:10:05:00,"Dear Vedant,\n\nI hope this email finds you well. As we discussed earlier today, your travel policy with DCoders has expired as of today. I wanted to follow up on our conversation regarding renewal options. If you're interested in continuing your coverage, I can guide you through the process and answer any questions you may have.\n\nPlease let me know a convenient time to talk, and I'll be happy to assist you further.\n\nBest regards,\nRavi Menon",
+  user_1,user_2,,27/09/2024 T:10:20:00,"Hi Ravi,\n\nThanks for your email. I appreciate your help in this matter. I'm actually planning a trip next month, so I'd like to explore my options for renewing the policy. Could you please send me some quotes for different plans, and we can discuss them over the phone tomorrow?\n\nThanks,\nVedant"

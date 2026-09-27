@@ -1,0 +1,12 @@
+call_id: REC-INS-007A
+start_timestamp: 15/10/2026 T:14:05:00
+end_timestamp: 15/10/2026 T:14:09:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Suhana Joshi,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Neha I'm calling about my travel policy TRV-001234 I just got an email saying it's expired
+  user_2,Ah Suhana good afternoon I'm checking on that for you [pause] Can you please confirm your policy number again
+  user_1,It's TRV-001234 [sighs] I already sent you an email about this last week
+  user_2,I apologize for the inconvenience Suhana I've checked and it seems there was an error on our end Your policy is actually active until the 10th of next month
+  user_2,So you don't need to worry about it expiring just yet [typing] I'll send you a confirmation email to update your records

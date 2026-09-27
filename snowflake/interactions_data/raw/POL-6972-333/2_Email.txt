@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Notification: Auto Policy Expiration - AP-001234
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Sai Kumar,sai.kumar@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,vikram.p@omniinsurancegroup.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,26/09/2026 T:10:30:00,"Dear Sai Kumar,\n\nI am writing to follow up on our phone conversation earlier today regarding your auto policy (AP-001234) with DCoders. As discussed, the policy has expired as of today, and unfortunately, we are unable to offer any further options for renewal.\n\nPlease note that you will no longer be covered under this policy, and it is essential to secure alternative coverage to avoid any potential risks.\n\nIf you have any questions or concerns, please do not hesitate to reach out to me directly.\n\nBest regards,\nVikram Patel",
+  user_1,user_2,,26/09/2026 T:10:45:00,"Hi Vikram,\n\nThanks for the email. I am disappointed that the policy cannot be renewed. Can you please provide me with information on how to obtain a new policy or recommend alternative insurance providers?\n\nLooking forward to hearing back from you.\n\nBest regards,\nSai Kumar"

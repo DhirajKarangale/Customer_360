@@ -1,0 +1,9 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c97,Roshni Yadav,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[4]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey suresh, just wanted to follow up on my auto policy. its still showing pending",
+  user_2,26/09/2024 T14:50:30,"hi roshni, yeah i saw that. i'm so sorry about the delay. we need one more doc from u to get it active",
+  user_1,26/09/2024 T14:51:00,"oh ok, what doc do u need? i thought i sent everything",
+  user_2,26/09/2024 T14:51:45,"its the vehicle inspection *report*. can u pls upload it to the portal or email it to me?"

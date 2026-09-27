@@ -1,0 +1,21 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:25:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Vihaan Patel,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[14]{user,text}:
+  user_1,Hi Suresh I'm calling about my life policy with DCoders
+  user_2,Ah yeah Hi Vihaan Good morning How can I assist you today
+  user_1,I just wanted to confirm that my policy is active and up to date
+  user_2,Let me just check on that for you [typing] Ah yes LP-001234 is active and all payments are up to date
+  user_1,Great thanks for confirming that Can you also tell me what the coverage amount is
+  user_2,[pause] Ah yes the coverage amount is 10 lakhs
+  user_1,Okay that sounds right [dog barks in the background] Sorry about that my dog is being a bit loud
+  user_2,[laughs] No worries at all Vihaan I have a dog too [hold music starts playing]
+  user_2,[after 2 minutes] Sorry about the hold Vihaan I had to check on some details [hold music stops]
+  user_1,No problem at all Suresh I appreciate your help
+  user_2,So I just wanted to confirm that you're all set with your policy and there's nothing else I can assist you with
+  user_1,Actually yeah I was wondering if I could make some changes to my policy
+  user_2,Ah I see [sighs] Let me just check what options are available to you [pause] Ah yes we can make some changes but it would require some additional paperwork
+  user_1,Okay that sounds good Can you walk me through the process

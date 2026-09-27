@@ -1,0 +1,12 @@
+call_id: REC-INS-007C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Aaradhya Verma,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Neha I'm calling about my health policy with DCoders I think it's expired
+  user_2,Ah Aaradhya good morning Yes your policy did expire on the 10th of this month I've been trying to reach you to discuss the renewal
+  user_1,Oh I'm so sorry I've been meaning to call you back I got your email with the renewal form but I had a few questions about the premium increase and the new mental health feature
+  user_2,Of course I'd be happy to clarify The premium increase is due to inflation but the new mental health support is a great addition to the base plan And I was able to secure a 5% discount for you
+  user_2,Aaradhya are you ready to proceed with the renewal I can guide you through the payment process

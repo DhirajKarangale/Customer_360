@@ -1,0 +1,14 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Samar Ghosh,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,insurance agent
+messages[7]{user,text}:
+  user_2,Hi Samar good afternoon Can you hear me
+  user_1,Yeah yeah I can hear you Good afternoon
+  user_2,Thanks for calling DCoders today My name is Ravi Menon and I'll be assisting you with your auto policy
+  user_1,Thanks Ravi I'm calling about my auto policy It's supposed to expire today and I wanted to know the status
+  user_2,Okay let me just check on that for you [typing] Ah yes I see that your policy is indeed up for renewal today
+  user_1,So what's the next step I need to take to renew it
+  user_2,Actually Samar I apologize but it looks like we haven't received any payment from you for the renewal and the policy has expired as of today [sighs]

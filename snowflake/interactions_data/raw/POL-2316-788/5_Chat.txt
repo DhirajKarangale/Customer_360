@@ -1,0 +1,9 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Krishna Das,customer
+  2a6a7028-a699-4de4-b932-41271ff311d7,Anjali Desai,insurance agent
+messages[4]{user,timestamp,text,media_url}:
+  user_1,28/09/2024 T10:05:00,"hey anjali whats the status of my policy lp-001234?",
+  user_2,28/09/2024 T10:05:30,"Hi Krishna, I've checked on the status of your policy LP-001234. It's currently in the final stages of activation. You should receive an email with the policy documents within the next 24 hours.",
+  user_1,28/09/2024 T10:06:15,"thats great news anjali thanks for the update. can u pls confirm if i need to do anything else from my end?",
+  user_2,28/09/2024 T10:07:00,"No, Krishna, you're all set. We've received all the necessary documents from you, and our team is just finalizing the activation process. You'll receive a confirmation email once it's active."

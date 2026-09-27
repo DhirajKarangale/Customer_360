@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Ishaan Bose,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Vikram I just wanted to confirm that my life policy is active now
+  user_2,Ah yeah Ishaan Good morning Your policy is indeed active I can see that in our system
+  user_1,Okay great Thanks for your help the other day I really appreciate it
+  user_2,No problem at all Ishaan We're here to help [typing] I'm just checking a few more details to ensure everything is in order
+  user_1,Alright sounds good Take your time

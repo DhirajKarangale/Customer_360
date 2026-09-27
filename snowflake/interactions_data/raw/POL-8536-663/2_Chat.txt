@@ -1,0 +1,10 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  3421bbe-3423-470e-a3fc-799eaf739c96,Kunal Mehta,customer
+  3a6a7028-a699-4de4-b932-41271ff311d7,Anita Sharma,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:42:00,"hey anita, thx for helping me with the home policy over the phone earlier"
+  user_2,26/09/2024 T14:42:15,"You're welcome, Kunal! I'm happy to assist you further. What would you like to know about your policy?"
+  user_1,26/09/2024 T14:43:00,"can u pls tell me whats the coverage for *flood* damage?"
+  user_2,26/09/2024 T14:43:30,"Yes, of course. Your policy covers flood damage up to $200,000. However, there's a deductible of $1,000."
+  user_1,26/09/2024 T14:44:10,"thats great, thanks! what's the next step to get this policy *active*?"

@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Samar Ghosh,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Ravi I'm calling about my auto policy I haven't received any confirmation that it's been renewed after I made the payment
+  user_2,Ah Samar good morning I'm checking on that for you Can you please confirm your policy number for me
+  user_1,It's AP-001234
+  user_2,Okay thank you I've checked and it looks like the payment was processed successfully but there was a slight delay in updating the status in our system Your policy is now active again with a lapse in coverage from the 26th to the 28th
+  user_1,Okay that sounds good Thanks for letting me know Ravi

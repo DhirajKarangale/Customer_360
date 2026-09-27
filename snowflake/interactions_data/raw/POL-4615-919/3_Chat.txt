@@ -1,0 +1,10 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d7,Rohan Ahuja,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:42:00,"hey ramesh, got ur email. thx for follow up on my auto policy"
+  user_2,26/09/2024 T14:42:15,"Hi Rohan, no problem at all. I wanted to make sure you're aware of the expiration. Have you had a chance to review the documents I sent over?"
+  user_1,26/09/2024 T14:43:00,"yeah, i took a look. i'm still deciding what to do. can u tell me more about the reinstatement process?"
+  user_2,26/09/2024 T14:43:30,"Reinstatement is pretty straightforward. We can do it over the phone or online. You'll just need to pay the back premium and we'll get you reinstated. However, I want to let you know that there might be a small lapse fee."
+  user_1,26/09/2024 T14:44:10,"ok, that sounds doable. can u give me a quote for the back premium and lapse fee?"

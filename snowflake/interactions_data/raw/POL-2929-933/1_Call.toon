@@ -1,0 +1,21 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:25:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Kriti Mahajan,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Anita Sharma,insurance agent
+messages[14]{user,text}:
+  user_2,Hi Kriti good afternoon Can you hear me
+  user_1,Yeah yeah I can hear you Good afternoon
+  user_2,Great So I'm Anita from Trust Wealth Advisors How can I assist you today
+  user_1,I'm calling about my auto policy with DCoders I think it's expired
+  user_2,I see Let me just check on that for you [typing] Can you please confirm your policy number for me
+  user_1,It's AP-001234
+  user_2,Thank you [pause] Ah yes I see the issue here Your policy did expire last week
+  user_1,[sighs] Oh no I didn't realize that What do I need to do to get it reinstated
+  user_2,Well we can definitely help you with that But first let me just check a few things [hold music starts] 
+  user_2,[hold music ends] I apologize for the wait So it looks like we can reinstate your policy but you'll need to pay the back premium
+  user_1,Okay that sounds good How much will that be
+  user_2,[typing] Let me just calculate that for you [pause] It comes out to be $150
+  user_1,That's fine I can pay that But can you also tell me why my policy expired in the first place
+  user_2,It looks like we didn't receive the payment on time [dog barks in the background] I apologize for the distraction

@@ -1,0 +1,10 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  34205bbe-3423-470e-a3fc-799eaf739c96,Vedant Thakur,customer
+  3a6a7028-a699-4de4-b932-41271ff311d7,Anjali Desai,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:42:00,"hey anjali, thx for the call earlier. i wanted to confirm a few things about the term life insurance plan u suggested",
+  user_2,26/09/2024 T14:42:15,"Hi Vedant! No problem at all. I'd be happy to help. What would you like to know about the plan?",
+  user_1,26/09/2024 T14:43:00,"ok so i have 2 kids and my wife. how much coverage do u think i should opt for?",
+  user_2,26/09/2024 T14:43:30,"Typically, we recommend coverage that's at least 5-7 times your annual income. But let me ask, what's your current annual income, Vedant?",
+  user_1,26/09/2024 T14:44:10,"its around 15 lakhs *15,00,000. and btw, whats the diff btw term life and whole life insurance?"

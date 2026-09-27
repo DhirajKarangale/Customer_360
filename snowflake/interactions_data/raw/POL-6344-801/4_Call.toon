@@ -1,0 +1,22 @@
+call_id: REC-INS-004C
+start_timestamp: 30/09/2026 T:14:05:00
+end_timestamp: 30/09/2026 T:14:25:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Pranav Mishra,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,insurance agent
+messages[14]{user,text}:
+  user_1,Hi is this DCoders insurance
+  user_2,Ah yes this is DCoders How can I assist you today
+  user_1,I'm calling about my life insurance policy I received a cancellation notice
+  user_2,I'm so sorry to hear that Let me just check on the status of your policy [typing] Can you please confirm your policy number for me
+  user_1,It's LP-001234
+  user_2,Thank you [pause] I've located your policy It looks like it was cancelled due to non-payment of premium
+  user_1,But I didn't receive any reminders or notifications [background noise: dog barks]
+  user_2,I apologize for the inconvenience We did send out a notice but it's possible it was missed [hold music starts] Please hold for just a moment while I check on the details
+  user_2,[hold music ends] I've checked and it seems the notice was sent to your email address on file [pause] Would you like to reinstate your policy
+  user_1,Yes please How much do I need to pay
+  user_2,[typing] Let me just calculate the amount [pause] You would need to pay the overdue premium plus a small reinstatement fee
+  user_1,Okay that sounds good Can I pay over the phone
+  user_2,Yes of course [background noise: keyboard typing] I just need to take your payment information
+  user_1,Wait I just realized I don't have my payment info with me Can I call back later
+  user_2,Of course Pranav You can call back at your convenience However please note that your policy will remain cancelled until payment is made

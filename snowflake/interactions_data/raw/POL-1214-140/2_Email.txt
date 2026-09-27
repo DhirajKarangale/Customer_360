@@ -1,0 +1,8 @@
+mail_id: 4821qwe-3423-470e-a3fc-799eaf739c96
+subject: Re: Auto Policy Expiration - Urgent
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Akanksha Bhatt,akanksha.bhatt@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,anjali.desai@firstguardbrokers.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,24/03/2023 T:11:04:20,"Hi Anjali,\n\nI just received a call from your office stating that my auto policy has expired. I am shocked as I was not informed about the expiration date. Can you please look into this and let me know the next steps to reinstate my policy?\n\nPolicy Number: AP-001234\n\nThanks,\nAkanksha",
+  user_2,user_1,,24/03/2023 T:11:17:05,"Dear Akanksha,\n\nThank you for reaching out. I apologize for the inconvenience caused. I have checked on your policy, and unfortunately, it has indeed expired on March 10th. To reinstate your policy, you will need to pay the outstanding premium and a small reinstatement fee. I have attached a quote for your reference. Please let me know if you would like to proceed, and I will guide you through the process.\n\nBest regards,\nAnjali Desai",https://storage.firstguardbrokers.com/docs/Reinstatement_Quote_AP001234.pdf

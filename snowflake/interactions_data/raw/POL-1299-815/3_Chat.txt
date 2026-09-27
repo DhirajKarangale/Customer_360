@@ -1,0 +1,10 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d7,Kiara Sen,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey anjali, just got ur email abt my health policy. i'm surprised it expired on the 10th. didnt get any notification *notificiation*",
+  user_2,26/09/2024 T14:50:30,"Hi Kiara, I apologize for the oversight. I've sent you the invoice and reinstatement form via email. Please let me know if you have any questions or concerns.",
+  user_1,26/09/2024 T14:51:15,"thx anjali. i'll go thru the docs. can u pls confirm if i can still get treated under this policy if i reinstate it today?",
+  user_2,26/09/2024 T14:52:00,"Yes, Kiara. If you reinstate the policy today, you'll be covered retroactively from the date of lapse. However, please note that you'll need to pay the premium for the lapsed period as well.",
+  user_1,26/09/2024 T14:53:00,"ok, got it. thx for clarifying. i'll send the payment ASAP"

@@ -1,0 +1,14 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f3a7028-a699-4de4-b932-41271ff311d6,Shaurya Joshi,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Karan Joshi,insurance agent
+messages[7]{user,text}:
+  user_2,Hi Shaurya good afternoon Can you hear me
+  user_1,Yeah yeah I can hear you Good afternoon
+  user_2,Great So I'm Karan from Safe Step Insurance How can I assist you today
+  user_1,I'm calling about my home policy with DCoders I need to cancel it
+  user_2,I see Okay Can you please confirm your policy number for me
+  user_1,It's HP-001234
+  user_2,Alright Shaurya I've located your policy in our system I'm going to go ahead and assist you with the cancellation process [sighs] [typing]

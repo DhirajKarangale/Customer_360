@@ -1,0 +1,21 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:25:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Kavya Iyer,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Vikram Singh,insurance agent
+messages[14]{user,text}:
+  user_1,Hi is this ProtectAll Agency
+  user_2,Ah yes this is Vikram from ProtectAll Agency How can I assist you today
+  user_1,I'm Kavya Iyer I have a travel policy with DCoders and I'm trying to understand the status of my policy
+  user_2,Okay Kavya can you please provide me with your policy number so I can look into this for you
+  user_1,It's TP-001234
+  user_2,Thank you Kavya [typing] Ah I see that your policy is currently showing as expired
+  user_1,Expired What do you mean It was supposed to be active until the end of the month
+  user_2,I apologize for the confusion Kavya Let me see what happened [pause] Ah I see that there was an issue with the payment processing
+  user_1,But I'm sure I paid the premium on time
+  user_2,I understand Kavya Let me put you on hold for just a minute while I look into this further [hold music starts]
+  user_1,[sighs] Okay
+  user_2,[hold music ends] Kavya I apologize for the delay I've checked on the payment and it seems that there was an error on our end
+  user_1,So what does this mean for my policy
+  user_2,We can reinstate your policy but you'll need to pay the premium again and we'll also need to update your payment information to avoid any future issues

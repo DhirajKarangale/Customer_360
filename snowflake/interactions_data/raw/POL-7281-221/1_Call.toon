@@ -1,0 +1,14 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Diya Menon,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Karan Joshi,insurance agent
+messages[7]{user,text}:
+  user_2,Hi Diya good afternoon Can you hear me
+  user_1,Yeah I can hear you Good afternoon
+  user_2,Great thanks for calling in today My name is Karan and I'll be assisting you with your auto policy
+  user_1,Nice to talk to you Karan I'm calling about my auto policy I just got a notification that it's up for renewal
+  user_2,Ah perfect timing We do have your policy up for renewal Can you please confirm your policy number for me
+  user_1,It's AP-001234
+  user_2,Alright thank you Diya I've located your policy in our system Everything looks good for renewal We just need to update some information to move forward Would you be available to answer a few questions

@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Auto Policy Reinstatement and Status Update
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Tanvi Saxena,tanvi.saxena@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,neha.kapoor@shieldlifeservices.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,28/09/2024 T:11:04:20,"Hi Neha,\n\nI hope this email finds you well. I am writing to follow up on our previous call regarding my auto policy. You had mentioned that the policy status was updated to 'active' after the reinstatement. However, I just checked my account and it still shows as 'expired'. Could you please look into this and update the status accordingly?\n\nPolicy Number: DC-001234\n\nThanks,\nTanvi",
+  user_2,user_1,,28/09/2024 T:11:16:50,"Dear Tanvi,\n\nThank you for reaching out. I apologize for the oversight. I have checked on the status and it seems there was a delay in updating the system. I have now manually updated the status to 'expired' as per our previous discussion. Please note that this is the correct status as we had agreed to let the policy expire after the reinstatement period lapsed. You will receive a formal notification from our system shortly.\n\nBest regards,\nNeha Kapoor",

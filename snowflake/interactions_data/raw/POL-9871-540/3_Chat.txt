@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Suhana Joshi,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey neha, just wanted to confirm if my travel policy is active now? i made the payment yesterday",
+  user_2,26/09/2024 T14:50:30,"Hi Suhana, yes it is active now. I've updated the status in our system. You should receive a confirmation email shortly.",
+  user_1,26/09/2024 T14:51:00,"thx neha! i really appreciate your help. btw, can you pls tell me the expiry date of my policy now?",
+  user_2,26/09/2024 T14:51:20,"Your policy, TRV-001234, is now valid until 10th of next month. I've also attached the updated policy document to the email I sent you earlier.",
+  user_1,26/09/2024 T14:52:00,"great, thanks again neha! you're a lifesaver"

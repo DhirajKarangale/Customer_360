@@ -1,0 +1,8 @@
+mail_id: 4821qwe-3423-470e-a3fc-799eaf739c96
+subject: Re: Health Policy Expiration and Reinstatement
+participants[2]{id,name,email,role}:
+  8a6a7028-a699-4de4-b932-41271ff311d6,Pranav Mishra,pranav.mishra@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,ramesh.tiwari@safeshieldagency.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2024 T:10:05:00,"Dear Pranav,\n\nI hope this email finds you well. As discussed over the phone earlier, I am sending you the details regarding the reinstatement of your health policy. Please find attached the payment receipt and the updated policy document. Your policy will be active from the date of payment. If you have any further questions or concerns, please do not hesitate to reach out.\n\nBest regards,\nRamesh Tiwari",https://storage.safeshieldagency.com/docs/Policy_Reinstatement_PRM_2026.pdf
+  user_1,user_2,,28/09/2024 T:10:20:00,"Hi Ramesh,\n\nThanks for the prompt response and for sending the documents. I have reviewed the policy and the payment receipt. Everything looks good. Please let me know if there's anything else I need to do from my end.\n\nThanks again for your help.\nBest regards,\nPranav Mishra"

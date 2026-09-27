@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d7,Dhruv Kapoor,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Sunita Agarwal,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey sunita, thx for the email and attachment. can we discuss the options for my auto policy over chat? i'm a bit confused",
+  user_2,26/09/2024 T14:50:30,"Hi Dhruv! Of course, I'd be happy to help clarify things for you. Your policy did expire on March 8th, and I can offer you a few options to either reinstate it or explore new plans that might be more suitable for you.",
+  user_1,26/09/2024 T14:51:15,"ok, that sounds good. what are the reinstatement fees looking like? and are there any penalties for the lapse in coverage?",
+  user_2,26/09/2024 T14:52:00,"The reinstatement fee is $50, and there's a small penalty of 10% on your premium for the first month. However, if you choose to switch to a new plan, we can waive the penalty and you might even find a better rate.",
+  user_1,26/09/2024 T14:53:00,"that sounds like a good deal. can you send me some quotes for new plans? and btw, what's the deadline to reinstate my old policy?"

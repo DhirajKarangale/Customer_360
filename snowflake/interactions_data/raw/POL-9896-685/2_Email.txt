@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Auto Policy Renewal for Policy Number: AP-001234
+participants[2]{id,name,email,role}:
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,suresh.d@dcoders.com,insurance agent
+  08205bbe-3423-470e-a3fc-799eaf739c95,Krishna Das,krishna.d@securelifesolutions.com,customer
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,12/10/2024 T:10:05:00,"Dear Krishna,\n\nI hope this email finds you well. As discussed over the phone, I am following up on the renewal of your auto policy (AP-001234) that expired on the 10th of this month. I have attached a renewal quote for your review. Please let me know if you have any questions or if there's anything else I can assist you with.\n\nBest regards,\nSuresh Deshmukh",https://storage.dcoders.com/docs/Renewal_Quote_AP001234_2026.pdf
+  user_1,user_2,,12/10/2024 T:10:20:00,"Hi Suresh,\n\nThanks for the prompt follow-up. I've reviewed the quote and I'm interested in renewing the policy. However, I'd like to discuss the premium amount as it seems a bit higher than last year. Could you please call me at your earliest convenience to discuss this further?\n\nThanks,\nKrishna"

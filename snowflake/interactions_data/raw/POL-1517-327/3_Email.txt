@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Life Policy LP-001234 Status
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Sai Kumar,sai.kumar@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,anjali.desai@firstguardbrokers.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,28/09/2024 T:10:06:40,"Hi Anjali,\n\nI hope this email finds you well. I am writing to confirm the status of my life policy LP-001234. I had called and chatted with you earlier, but I wanted to have a record of our conversation. Could you please confirm if my policy is active and up to date?\n\nThanks,\nSai Kumar",
+  user_2,user_1,,28/09/2024 T:10:14:10,"Dear Sai,\n\nThank you for your email. I am happy to confirm that your life policy LP-001234 is indeed active and up to date. I have attached a confirmation letter for your records. Please let me know if you have any further questions or concerns.\n\nBest regards,\nAnjali Desai",https://storage.firstguardbrokers.com/docs/Policy_LP001234_Confirmation_2026.pdf

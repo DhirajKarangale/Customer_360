@@ -1,0 +1,22 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:14:05:00
+end_timestamp: 28/09/2026 T:14:25:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Pranav Mishra,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Singh,insurance agent
+messages[14]{user,text}:
+  user_1,Hi Vikram this is Pranav Mishra calling about my auto policy with DCoders
+  user_2,Ah Pranav good afternoon thanks for calling ProtectAll Agency how can I assist you today
+  user_1,I'm calling about my auto policy it's still not showing as active in the system
+  user_2,I apologize for the inconvenience Pranav let me check on that for you [typing] can you please confirm your policy number
+  user_1,It's AP-001234
+  user_2,Thank you [pause] I've located your policy and I see that we're still working on reinstating it [hold music starts]
+  user_2,[hold music ends] I apologize for the wait Pranav I've escalated this issue to our team and we're working to resolve it as soon as possible
+  user_1,Okay that sounds good but can you tell me what's causing the delay
+  user_2,[sighs] Honestly Pranav it looks like there was an issue with the payment processing and it caused a bit of a backlog [dog barks in the background]
+  user_1,That's frustrating I hope it gets resolved soon
+  user_2,Me too Pranav I'm going to go ahead and give you a temporary reference number so you can use it if you need to contact us again [typing] it's TR-009876
+  user_1,Got it TR-009876 thanks Vikram
+  user_2,You're welcome Pranav I'll also send you a follow-up email with the details [pause] is there anything else I can assist you with today
+  user_1,No that's all for now thanks for your help Vikram
+  user_2,You're welcome Pranav have a great day [call ends with a tone]

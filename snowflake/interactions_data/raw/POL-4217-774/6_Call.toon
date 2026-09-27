@@ -1,0 +1,12 @@
+call_id: REC-INS-002C
+start_timestamp: 26/09/2026 T:14:05:00
+end_timestamp: 26/09/2026 T:14:09:00
+participants[2]{id,name,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Kriti Mahajan,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Vikram I hope you're doing well I just wanted to confirm that my home policy is active again
+  user_2,Ah yeah Kriti good afternoon I've checked on the system and yes your policy is active again the reinstatement was successful
+  user_1,That's great news thank you so much for your help throughout this process I really appreciate it
+  user_2,You're welcome Kriti it was my pleasure to assist you If you have any other questions or concerns feel free to reach out to me anytime
+  user_1,Will do thanks again and have a great day [00:04:00] [ typing ]

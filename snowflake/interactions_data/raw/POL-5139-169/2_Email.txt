@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Health Policy Renewal for Aaradhya Verma
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c97,Aaradhya Verma,aaradhya.v@mail.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d7,Suresh Deshmukh,suresh.d@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,27/09/2024 T:10:05:00,"Dear Aaradhya,\n\nI hope this email finds you well. As discussed over the phone earlier, I am sending you the renewal details for your health policy with DCoders. Please find attached the policy renewal form and the updated premium rates for the next term.\n\nIf you have any questions or need assistance with the renewal process, please do not hesitate to reach out.\n\nBest regards,\nSuresh Deshmukh",https://storage.securehealthinsurance.com/docs/Policy_Renewal_Form_SH998235_2026.pdf
+  user_1,user_2,,27/09/2024 T:10:20:00,"Hi Suresh,\n\nThanks for sending the renewal details. I have a few questions regarding the updated premium rates. Could you please clarify why there is an increase of 15% from the previous term?\n\nLooking forward to hearing back from you.\n\nBest regards,\nAaradhya"

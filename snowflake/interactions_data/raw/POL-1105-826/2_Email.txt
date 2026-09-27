@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Health Policy Expiration and Renewal
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Suhana Joshi,suhana.joshi@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,vikram.p@omniinsurancegroup.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,28/09/2024 T:10:45:00,"Hi Vikram,\n\nI spoke with you earlier today regarding my health policy. You mentioned it had expired last month. I'm shocked as I didn't receive any notification. Can you please guide me on the next steps to renew or reinstate my policy?\n\nPolicy Number: HP-123456\n\nThanks,\nSuhana",
+  user_2,user_1,,28/09/2024 T:11:10:00,"Dear Suhana,\n\nThank you for your email. I apologize for the inconvenience caused by the lack of notification. I've checked on your policy, and it's possible to reinstate it. However, there might be a small penalty for the gap in coverage. I've attached a form that you'll need to fill out and return to us. Please find the details of the reinstatement process in the attached document.\n\nBest regards,\nVikram Patel",https://storage.omniinsurancegroup.com/docs/Reinstatement_Form_HP123456.pdf

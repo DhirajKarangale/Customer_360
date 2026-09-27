@@ -1,0 +1,12 @@
+call_id: REC-INS-006C
+start_timestamp: 30/09/2026 T:14:05:00
+end_timestamp: 30/09/2026 T:14:09:00
+participants[2]{id,name,role}:
+  4f3a7028-a699-4de4-b932-41271ff311d6,Sneha Roy,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Anita Sharma,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Anita I'm calling about my health policy HP-001234 I just wanted to confirm if it's been cancelled
+  user_2,Ah yes Sneha Roy -- let me just check on that for you [pause] Yes it has been successfully cancelled
+  user_1,Okay great thanks for letting me know I just wanted to make sure since I hadn't received a confirmation letter yet
+  user_2,I apologize for the delay in sending the letter It should be with you within the next few days If you don't receive it by then please let me know and I'll look into it for you
+  user_1,Alright sounds good thanks for your help Anita [sighs]

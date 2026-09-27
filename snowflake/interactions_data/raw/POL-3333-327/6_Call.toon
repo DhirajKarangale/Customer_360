@@ -1,0 +1,12 @@
+call_id: REC-INS-002C
+start_timestamp: 03/10/2026 T:14:05:00
+end_timestamp: 03/10/2026 T:14:09:00
+participants[2]{id,name,role}:
+  4f3a7028-a699-4de4-b932-41271ff311d6,Reyansh Tiwari,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Suresh I'm calling about my auto insurance policy [00:00]
+  user_2,Ah Reyansh good afternoon How can I assist you with your policy today [00:05]
+  user_1,I just wanted to confirm that my payment of $500 was processed successfully and my policy is active [00:10]
+  user_2,Let me check on that for you [00:12] [typing] Ah yes I see that the payment was processed successfully but I have some bad news [00:20]
+  user_1,What do you mean [00:22] [concerned]

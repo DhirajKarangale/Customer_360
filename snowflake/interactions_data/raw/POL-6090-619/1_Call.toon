@@ -1,0 +1,14 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f3a7028-a699-4de4-b932-41271ff311d6,Dev Chatterjee,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Anita Sharma,insurance agent
+messages[7]{user,text}:
+  user_2,Hi Dev Chatterjee good afternoon Can you hear me
+  user_1,Yeah yeah I can hear you Good afternoon
+  user_2,Great So I'm Anita Sharma from Trust Wealth Advisors and I'll be helping you with your auto policy today
+  user_1,Okay sounds good I'm looking to get my policy activated
+  user_2,Alright Let me just check on the status real quick [typing] Okay it looks like we just need to finalize a few details to get you all set up
+  user_1,That sounds great What do I need to do
+  user_2,Well I just need to confirm your vehicle information and we'll be good to go [sighs] Can you please confirm your vehicle's make and model

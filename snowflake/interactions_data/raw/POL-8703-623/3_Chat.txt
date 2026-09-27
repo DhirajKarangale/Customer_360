@@ -1,0 +1,10 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Nandini Rajput,customer
+  3a6a7028-a699-4de4-b932-41271ff311d7,Vikram Singh,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey vikram, i got ur email abt the invoice and payment instructions. i paid the outstanding premium and reinstatement fee. can u pls confirm if my policy is active now?",
+  user_2,26/09/2024 T14:51:15,"Hi Nandini, thanks for the prompt payment. I'm checking on the status... *checking*... yes, your payment has been processed successfully.",
+  user_1,26/09/2024 T14:52:30,"thats great news! so my policy is active now? and whats the new expiry date?",
+  user_2,26/09/2024 T14:53:45,"Yes, your policy is active now. The new expiry date is 26/09/2025. I'll send you an updated policy document via email shortly.",
+  user_1,26/09/2024 T14:55:00,"awesome, thanks vikram! looking forward to receiving the updated doc. have a great day!"

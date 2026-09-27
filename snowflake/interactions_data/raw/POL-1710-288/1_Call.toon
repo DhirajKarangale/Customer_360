@@ -1,0 +1,14 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f3a7028-a699-4de4-b932-41271ff311d6,Suhana Joshi,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,insurance agent
+messages[7]{user,text}:
+  user_2,Hi Suhana good afternoon Can you hear me
+  user_1,Yeah I can hear you Good afternoon
+  user_2,Great So I'm Ravi from Secure Future Group I'm calling about your life policy with DCoders
+  user_1,Oh yeah I've been meaning to call you guys about that
+  user_2,What seems to be the issue with your policy
+  user_1,Actually I just wanted to confirm the status of my policy and make sure everything is in order
+  user_2,Let me just check on that for you [typing] Okay yes your policy is currently in pending status but don't worry we're working on activating it for you

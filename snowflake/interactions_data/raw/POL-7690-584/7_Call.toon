@@ -1,0 +1,22 @@
+call_id: REC-INS-007C
+start_timestamp: 30/09/2026 T:14:05:00
+end_timestamp: 30/09/2026 T:14:25:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Atharv Pandey,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Anjali Desai,insurance agent
+messages[14]{user,text}:
+  user_2,Hi Atharv this is Anjali from First Guard Brokers I hope you're doing well
+  user_1,Yeah I'm doing great thanks Anjali How can I help you
+  user_2,I'm calling about your life policy with DCoders We've received the signed form and I just need to confirm a few details
+  user_1,Okay sounds good I'm ready when you are
+  user_2,Great So can you please confirm your date of birth and address for me
+  user_1,Umm let me check my ID real quick [pause] Yeah my date of birth is 12th August 1990 and my address is 1456 Oakwood Drive
+  user_2,Perfect thank you Atharv I've updated that in our system [typing]
+  user_1,So what's the status of my policy now
+  user_2,It's still pending but don't worry it should be active within the next 2-3 working days
+  user_1,Okay that sounds good I just want to make sure everything is in order
+  user_2,Of course I completely understand [hold music starts] I'm going to check on a few more things [hold music ends] Sorry about that Atharv I had to check on some details
+  user_1,No worries I'm still here
+  user_2,Great So I've checked and everything looks good Your policy should be active soon
+  user_1,Alright thanks Anjali I appreciate your help [dog barks in the background] Oh sorry about that my dog is being a bit loud
+  user_2,[laughs] No worries at all Atharv I have a dog too [background noise of a dog barking faintly]

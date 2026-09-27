@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:15:00
+end_timestamp: 28/09/2026 T:11:20:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Aaradhya Verma,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Neha Kapoor,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Neha I hope you're doing well I just wanted to confirm that I've signed the renewal form digitally
+  user_2,Ah great to hear that Aaradhya I've received the signed form and I'll go ahead and process the renewal for you
+  user_1,Thanks so much Neha I really appreciate your help throughout this process
+  user_2,You're welcome Aaradhya It was my pleasure to assist you If you have any more questions or need further assistance please don't hesitate to reach out
+  user_1,Will do thanks again and have a great day

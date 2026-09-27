@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:15:00
+end_timestamp: 28/09/2026 T:11:20:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Kavya Iyer,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Suresh I hope you're doing well I just wanted to follow up on my policy renewal
+  user_2,Ah Kavya good morning Yeah I've got all your documents and I'm just processing the renewal right now
+  user_1,Okay great I just wanted to confirm that everything is in order before you proceed
+  user_2,Yeah everything looks good I just need to update a few details on our end and we'll be all set [typing] Ah yes I see that your policy has been successfully renewed
+  user_1,Great thank you so much Suresh I really appreciate your help [sighs] I'm glad that's all taken care of

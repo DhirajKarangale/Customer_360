@@ -1,0 +1,11 @@
+call_id: REC-INS-007A
+start_timestamp: 27/09/2026 T:14:05:00
+end_timestamp: 27/09/2026 T:14:09:00
+participants[2]{id,name,role}:
+  4f3a7028-a699-4de4-b932-41271ff311d6,Kunal Mehta,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,insurance agent
+messages[4]{user,text}:
+  user_1,Hi Ramesh I just wanted to confirm that my auto policy is active now
+  user_2,Ah yeah Kunal Good afternoon Just give me a moment to check on that for you [pause] [typing]
+  user_1,Okay thanks
+  user_2,Alright Kunal I've checked and yes your auto policy for the Toyota Camry is active now You should be all set to go

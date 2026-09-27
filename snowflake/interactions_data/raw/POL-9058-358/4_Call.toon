@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2024 T:11:05:00
+end_timestamp: 28/09/2024 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Pooja Bhatia,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Ramesh Tiwari,insurance agent
+messages[5]{user,text}:
+  user_2,Hi Pooja this is Ramesh from Safe Shield Agency How are you today
+  user_1,I'm good thanks Ramesh How can I assist you
+  user_2,I just wanted to follow up on your auto policy with DCoders We've received the updated details and I'm happy to inform you that your policy status is now showing as Pending
+  user_1,That's great news Ramesh Thank you for the update When can I expect the policy document
+  user_2,You should receive it via email within the next 24 to 48 hours If you have any further questions or concerns please don't hesitate to reach out

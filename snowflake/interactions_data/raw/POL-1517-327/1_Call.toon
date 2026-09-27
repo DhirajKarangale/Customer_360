@@ -1,0 +1,14 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Sai Kumar,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Anjali Desai,insurance agent
+messages[7]{user,text}:
+  user_2,Hi Sai Kumar good afternoon Can you hear me
+  user_1,Yeah yeah I can hear you Good afternoon
+  user_2,Great So I'm Anjali from First Guard Brokers and I'll be assisting you with your life policy today Can you please confirm your policy number
+  user_1,It's LP-001234
+  user_2,Okay thank you Sai Kumar I've located your policy in our system [typing] Can you please tell me a little bit about why you're calling today
+  user_1,I just wanted to check the status of my policy and make sure everything is active
+  user_2,Alright I've checked on the status and everything looks good Your policy is currently active and up to date [sighs] Is there anything else I can assist you with today

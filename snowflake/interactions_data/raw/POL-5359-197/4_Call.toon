@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  3421f7d8-4a6c-4f3e-8f6d-3a4e5b2c1d4,Dhruv Kapoor,customer
+  6a7e1f7d-8c4a-4f3e-8f6d-3a4e5b2c1d4,Vikram Patel,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Vikram I hope you're doing well I just wanted to confirm that I've received the new policy documents and I'm reviewing them now
+  user_2,Ah great to hear that Dhruv Yeah I sent them over yesterday Just let me know if you have any questions or need any clarification on anything
+  user_1,Actually yeah I did have a question about the effective date of the policy You mentioned it would be backdated to the current date but I just want to confirm that's correct
+  user_2,That's right Dhruv The new policy will be effective as of today's date so you'll be covered from now on [ typing ] Let me just check on the system real quick to confirm
+  user_2,Yeah that's all confirmed The policy is updated in our system and you're all set [sighs] I'm glad we could get that sorted out for you

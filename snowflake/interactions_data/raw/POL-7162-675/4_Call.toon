@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Isha Agarwal,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Singh,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Vikram I hope you're doing well I just wanted to confirm if you sent me the payment link for my auto policy
+  user_2,Ah yeah Isha good morning I did send it to you about an hour ago Did you not receive it
+  user_1,No I didn't receive it yet Maybe it went to spam or something Can you please resend it
+  user_2,Sure thing Isha [typing] Okay I've resent the link You should receive it shortly
+  user_1,Okay great thanks Vikram I'll go ahead and make the payment now [sighs] I'm really sorry again for the delay

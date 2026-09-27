@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d7,Meera Chauhan,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey anjali i sent the reinstatement form and payment link u sent me. how long will it take to reinstate my policy?",
+  user_2,26/09/2024 T14:50:30,"Hi Meera, thanks for sending those over. I'll review them ASAP. Reinstatement usually takes 24-48 hours after we receive all required docs and payment.",
+  user_1,26/09/2024 T14:51:00,"ok thats great. i really need it to be done asap. i have a *road* trip planned for this weekend",
+  user_2,26/09/2024 T14:51:45,"I completely understand, Meera. I'll expedite the process. You'll receive an email with your updated policy documents once it's reinstated. Please note that your policy will be reinstated with the same coverage and premium as before.",
+  user_1,26/09/2024 T14:52:10,"thx anjali. i really appreciate it. can u also confirm if my policy will be active from the date of reinstatement or from the original expiry date?"

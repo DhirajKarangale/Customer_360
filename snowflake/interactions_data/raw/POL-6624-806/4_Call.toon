@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Aditi Mahajan,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Ramesh Tiwari,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Ramesh I hope you're doing well I just wanted to follow up on our previous conversation about my health policy
+  user_2,Ah Aditi good morning Yeah I remember we discussed your policy and the outstanding payment
+  user_1,Exactly I just wanted to confirm if I pay the remaining 15,000 today will my policy be active again
+  user_2,Let me just check on that [pause] Ah yes if you pay the 15,000 today your policy will be reinstated and you'll be covered again
+  user_1,Okay great thank you so much Ramesh I really appreciate your help [sighs] I'm glad I can get this sorted out

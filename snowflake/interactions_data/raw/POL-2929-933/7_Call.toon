@@ -1,0 +1,21 @@
+call_id: REC-INS-007B
+start_timestamp: 26/09/2026 T:14:05:00
+end_timestamp: 26/09/2026 T:14:25:00
+participants[2]{id,name,role}:
+  3421cbee-3423-470e-a3fc-799eaf739c96,Kriti Mahajan,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anita Sharma,insurance agent
+messages[14]{user,text}:
+  user_1,Hi Anita I'm calling about my auto policy with DCoders I think it's expired
+  user_2,Ah Kriti good afternoon Can you please confirm your policy number for me
+  user_1,Umm let me check... Ah yes it's AP-001234
+  user_2,Okay thank you Kriti I'm checking on the status... [typing] Ah I see the issue here
+  user_1,What's going on Is it really expired
+  user_2,Yes I'm afraid so Kriti It looks like the payment was missed and the policy lapsed
+  user_1,[sighs] Oh no I had no idea I could've sworn I paid it
+  user_2,Don't worry Kriti these things happen Let me see what we can do to reinstate it [hold music starts]
+  user_2,[hold music ends] Okay I'm back Kriti I've checked and we can reinstate the policy but there will be a back premium of $150
+  user_1,That sounds good I'll pay it But can you confirm that everything will be active again after the payment
+  user_2,Absolutely Kriti Once the payment is processed your policy will be active again and you'll receive the updated documents via email
+  user_1,Okay that sounds great Thank you so much Anita You're a lifesaver [dog barks in the background]
+  user_2,[laughs] You're welcome Kriti I'm glad I could help Now let me just confirm a few more details... [typing]
+  user_2,Alright Kriti I've confirmed everything If you could please make the payment by the end of the day that would be great

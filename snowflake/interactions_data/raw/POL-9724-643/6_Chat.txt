@@ -1,0 +1,10 @@
+chat_id: 9f8a5c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Saanvi Pillai,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Neha Kapoor,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,29/09/2024 T10:05:00,"hey neha, just wanted to check on my policy status again *status*",
+  user_2,29/09/2024 T10:05:30,"hi saanvi! your policy is still pending, but dont worry, it should be activated soon. did you get my last email with the payment details?",
+  user_1,29/09/2024 T10:06:15,"yeah i got it, thanks! i just wanted to confirm if the payment has been processed yet",
+  user_2,29/09/2024 T10:07:00,"let me just check on that for you... (1 sec) okay, it looks like the payment is still processing, but it should be cleared by tomorrow",
+  user_1,29/09/2024 T10:07:45,"alr, thanks for the update neha! you've been really helpful"

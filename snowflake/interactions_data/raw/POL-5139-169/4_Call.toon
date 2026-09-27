@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:15:00
+end_timestamp: 28/09/2026 T:11:20:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Aaradhya Verma,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Suresh I hope you're doing well I received the brochure you sent over and I have a few questions about the policy
+  user_2,Ah great to hear that Aaradhya What would you like to know about the policy
+  user_1,Well I was looking at the coverage for mental health and alternative therapies and I was wondering if there are any specific requirements or limitations for availing these benefits
+  user_2,That's a great question Aaradhya [pause] Ah yes we do have some requirements in place for availing these benefits [pause] Let me just check the policy document real quick [typing]
+  user_2,Okay so it looks like you'll need to get a doctor's referral for alternative therapies and for mental health coverage you'll need to undergo an assessment with one of our empaneled psychologists [sighs] I apologize but it seems like the policy document isn't very clear on this

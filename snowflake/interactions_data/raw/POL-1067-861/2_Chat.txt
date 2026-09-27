@@ -1,0 +1,9 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d7,Akanksha Bhatt,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,insurance agent
+messages[4]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:42:00,"hey ramesh, just wanted to follow up on my life policy LP-001234. is it active yet?",
+  user_2,26/09/2024 T14:42:15,"Hi Akanksha, yeah i checked on it. it *should* be active by end of day today. i'll send you a confirmation email once its done",
+  user_1,26/09/2024 T14:42:30,"thx ramesh. can u pls check again? i really need to know its active today",
+  user_2,26/09/2024 T14:43:00,"ok, just rechecked. yes, its still on track to be active today. you'll get an email with all the details once its done"

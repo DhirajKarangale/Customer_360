@@ -1,0 +1,12 @@
+call_id: REC-INS-006C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Vedant Thakur,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Ramesh Tiwari,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Ramesh I'm calling about my home policy HP-001234 I got your email but I'm still unsure about the renewal
+  user_2,Ah Vedant good morning I'm glad you called I can walk you through the renewal process again if you'd like
+  user_1,Yeah that would be great I'm just not sure if I can afford the premium right now [sighs] it's a bit higher than I expected
+  user_2,I completely understand Vedant Let me see what I can do [pause] Ah yes I can offer you a payment plan that might make it more manageable for you
+  user_2,So with the payment plan your monthly premium would be around $71 per month instead of the full $850 upfront Would that work for you

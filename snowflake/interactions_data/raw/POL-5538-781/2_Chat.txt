@@ -1,0 +1,10 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d7,Akanksha Bhatt,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:42:00,"hey suresh, hope ur doin well. i just checked my policy status and its still inactive. i made the payment last week as we discussed on the call",
+  user_2,26/09/2024 T14:42:30,"Hi Akanksha! Yeah, I'm good thanks. Sorry to hear that the policy is still inactive. Can you please confirm your policy number so I can check on the status?",
+  user_1,26/09/2024 T14:43:15,"its LP-009876. i also got a confirmation *email* from ur end that the payment was sucessful",
+  user_2,26/09/2024 T14:44:00,"Thanks for the policy number, Akanksha. I've checked and it seems there was a slight delay in updating the status. I'm going to go ahead and activate it now. You should receive a confirmation email shortly.",
+  user_1,26/09/2024 T14:45:10,"thx so much suresh! i really appreciate ur help. can u pls confirm once its active?"

@@ -1,0 +1,11 @@
+call_id: REC-INS-007C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Kunal Mehta,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Anita Sharma,insurance agent
+messages[4]{user,text}:
+  user_1,Hi Anita I just wanted to confirm that my home policy is active now
+  user_2,Ah yes Kunal Good morning Your policy is indeed active I can see that the payment has been processed successfully
+  user_1,Great thanks so much for your help throughout this process I really appreciate it
+  user_2,You're welcome Kunal It was my pleasure to assist you If you have any more questions or need further assistance don't hesitate to reach out

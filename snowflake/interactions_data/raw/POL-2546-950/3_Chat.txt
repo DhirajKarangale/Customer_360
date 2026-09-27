@@ -1,0 +1,10 @@
+chat_id: 9f8a2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d7,Krishna Das,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey vikram, got ur email with the renewal form. can u explain y the premium has gone up so much? *so*",
+  user_2,26/09/2024 T14:50:30,"Hi Krishna, yeah the premium increase is due to the addition of new benefits and the rising medical costs. I can walk you through the details if you'd like",
+  user_1,26/09/2024 T14:51:15,"ok that sounds good. also, r there any other plans that might be more cost-effective? i dont wanna pay *that* much more",
+  user_2,26/09/2024 T14:52:00,"Let me check on some alternative plans for you. Can you please confirm your current age and any pre-existing medical conditions?",
+  user_1,26/09/2024 T14:53:20,"im 32 and i have *none*. also, can u tell me what happens to my policy now that its expired? is it completely cancelled?"

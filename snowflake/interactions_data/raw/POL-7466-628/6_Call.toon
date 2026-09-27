@@ -1,0 +1,15 @@
+call_id: REC-INS-002C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Ishaan Bose,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Karan Joshi,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Karan Ishaan here [00:00]
+  user_2,Ah Ishaan good morning How can I assist you today [00:02]
+  user_1,I just wanted to follow up on my health policy with DCoders I haven't received any updates on the renewal [00:05]
+  user_2,I apologize for the inconvenience Ishaan Let me check on the status [00:07] [typing] Ah yes I see the issue here Your policy is still showing as expired due to the auto-renewal glitch [00:10]
+  user_1,Okay that's what I thought What's the next step to get it renewed [00:12]
+  user_2,Don't worry Ishaan I'll send you a new link to sign the form and we'll get this sorted out [00:14]
+  user_1,Alright sounds good thanks Karan [00:16]
+  user_2,You're welcome Ishaan Sorry again for the trouble [00:18]

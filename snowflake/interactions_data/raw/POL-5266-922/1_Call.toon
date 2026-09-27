@@ -1,0 +1,14 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Nandini Rajput,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[7]{user,text}:
+  user_2,Hi Nandini good morning Can you hear me
+  user_1,Yeah yeah I can hear you Good morning
+  user_2,Great thanks for calling DCoders today My name is Vikram and I'll be assisting you with your insurance query How can I help you today
+  user_1,I'm calling about my life insurance policy I just got a notification that it's due for renewal and I wanted to confirm some details
+  user_2,Ah perfect timing Nandini Can you please provide me with your policy number so I can look into this for you
+  user_1,It's LP-001234
+  user_2,Okay great [typing] Ah yes I have your policy details here Nandini Your policy is currently set to renew on the 20th of this month Would you like to proceed with the renewal or make any changes

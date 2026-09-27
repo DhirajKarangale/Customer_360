@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Isha Agarwal,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Anita Sharma,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey anita, thx for the email. u mentioned the premium might have changed. can u pls confirm the new premium amount?",
+  user_2,26/09/2024 T14:50:30,"Hi Isha, yes the premium has changed. Let me just check the updated amount for you.",
+  user_2,26/09/2024 T14:51:00,"Isha, the new premium amount is ₹25,500 per annum. We also have a 5% discount for online renewal.",
+  user_1,26/09/2024 T14:51:20,"thx anita. thats a bit higher than i expected. is the coverage still the same?",
+  user_2,26/09/2024 T14:51:45,"Yes, the coverage remains the same. We've actually added a few more benefits, including a free health checkup every year."

@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d7,Dhruv Kapoor,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey vikram, just wanted to follow up on the renewal of my health policy. did u recieve the signed form i sent over last week?",
+  user_2,26/09/2024 T14:50:30,"Hi Dhruv, yeah i got it thanks for sending it over. i'm still waiting on the underwriting team to review it. should hear back from them by tomorrow",
+  user_1,26/09/2024 T14:51:00,"ok cool, just wanna make sure everything is in place before my doc appt next week. also, can u pls confirm if my policy is still expired or is it active again?",
+  user_2,26/09/2024 T14:51:45,"Dhruv, i've checked the system and ur policy is still showing as expired. but dont worry, once the underwriting team approves the renewal, we'll get it reinstated ASAP",
+  user_1,26/09/2024 T14:52:10,"alrigh, thx for the update vikram. keep me posted on any progress"

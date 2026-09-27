@@ -1,0 +1,14 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f3a7028-a699-4de4-b932-41271ff311d6,Meera Chauhan,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,insurance agent
+messages[7]{user,text}:
+  user_2,Hi Meera good afternoon Can you hear me
+  user_1,Yeah I can hear you Good afternoon
+  user_2,Great thanks for calling in today My name is Anjali and I'll be assisting you with your auto policy
+  user_1,Thanks Anjali I'm calling about my auto policy It's supposed to expire today and I wanted to confirm the status
+  user_2,Okay let me just check on that for you [typing] Ah yes I see that your policy is indeed up for renewal today
+  user_1,So what's the status right now Is it still active
+  user_2,Unfortunately it looks like the policy has expired as of today [sighs] I apologize for the inconvenience

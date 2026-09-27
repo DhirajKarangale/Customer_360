@@ -1,0 +1,10 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f8a5bbe-3423-470e-a3fc-799eaf739c97,Sneha Roy,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:42:00,"hey suresh, i sent u an email about my health policy renewal. did u get it?",
+  user_2,26/09/2024 T14:42:15,"yes sneha, i did. i'm looking into it. can u pls confirm ur policy number again?",
+  user_1,26/09/2024 T14:42:30,"its SH-123456. i think it expired on 01/03/2023",
+  user_2,26/09/2024 T14:42:50,"ok, i've checked. yes, it did expire on 01/03/2023. i'll guide u through the renewal process. pls give me a few mins to pull up the details",
+  user_1,26/09/2024 T14:43:10,"ok, thx suresh. i really appreciate ur help. i'm a bit worried about the lapse in coverage"

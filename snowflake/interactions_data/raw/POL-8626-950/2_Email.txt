@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Travel Policy Expiration and Reinstatement
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Kavya Iyer,kavya.iyer@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Singh,vikram.singh@protectallagency.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2024 T:10:45:00,"Dear Kavya,\n\nI hope this email finds you well. As discussed during our call earlier today, I am following up on the status of your travel policy with DCoders. Unfortunately, our system indicates that the policy has expired due to a payment processing error. However, I am happy to assist you in reinstating the policy if you are willing to pay the premium again and update your payment information.\n\nPlease find attached a payment link and a form to update your payment details. If you have any questions or concerns, please do not hesitate to reach out to me directly.\n\nBest regards,\nVikram Singh",https://payment.protectallagency.com/link/DCoders-KI-001
+  user_1,user_2,,28/09/2024 T:11:10:00,"Hi Vikram,\n\nThanks for your prompt follow-up. I am still unsure about why the payment wasn't processed correctly in the first place. Can you look into this and get back to me? I would appreciate it if you could also provide a detailed breakdown of the premium amount and any additional fees associated with reinstating the policy.\n\nLooking forward to hearing back from you.\n\nBest regards,\nKavya Iyer"

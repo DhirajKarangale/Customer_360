@@ -1,0 +1,14 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Aditi Mahajan,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,insurance agent
+messages[7]{user,text}:
+  user_2,Hi Aditi good afternoon Can you hear me
+  user_1,Yeah yeah I can hear you Good afternoon
+  user_2,This is Ramesh from Safe Shield Agency I'm calling about your health policy with DCoders
+  user_1,Oh hi Ramesh Yeah I've been meaning to call you guys about that
+  user_2,What seems to be the issue with your policy Aditi
+  user_1,Well I got a letter saying it's going to expire soon and I'm not sure why
+  user_2,I apologize for the inconvenience Let me just check on that for you [typing] Ah yes I see the issue here Your premium payments have been missed for the past two quarters

@@ -1,0 +1,10 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c97,Neha Chauhan,customer
+  3a6a7028-a699-4de4-b932-41271ff311d7,Karan Joshi,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey karan, just wanted to confirm if i got the renewal form and policy terms correct? i got a bit confused with the premium increase",
+  user_2,26/09/2024 T14:50:30,"Hi Neha! Yeah, the premium increase is due to the added benefits we discussed earlier. You should have received the updated policy terms and renewal form via email. Let me check if everything is in order",
+  user_1,26/09/2024 T14:51:00,"yeah i got it... but i'm still not sure about the *increased* premium. can u explain it again?",
+  user_2,26/09/2024 T14:51:45,"The 5% increase is because we've added more comprehensive coverage for critical illnesses. It's a bit more expensive, but it provides better protection. Would you like me to walk you through the details again?",
+  user_1,26/09/2024 T14:52:15,"no thats alright... i think i understand. so whats the next step to renew my policy?"

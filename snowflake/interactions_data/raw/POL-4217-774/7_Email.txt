@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Home Policy Reinstatement Confirmation
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Kriti Mahajan,kriti.mahajan@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,vikram.p@omniinsurancegroup.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,30/09/2024 T:10:45:00,"Hi Vikram,\n\nI just wanted to confirm that my home policy has been successfully reinstated and I am now fully covered. Could you please confirm this in writing?\n\nThanks,\nKriti",
+  user_2,user_1,,30/09/2024 T:10:52:15,"Dear Kriti,\n\nYes, I am pleased to confirm that your home policy has been successfully reinstated, and you are now fully covered. I have attached a confirmation letter for your records.\n\nPlease note that as per our previous discussions, your policy status has been updated to 'Expired' in our system to reflect the period it was inactive. However, this does not affect your current coverage.\n\nBest regards,\nVikram Patel",https://storage.omniinsurancegroup.com/docs/Policy Confirmation_Kriti Mahajan_2026.pdf

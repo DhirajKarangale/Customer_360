@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Health Policy Documents and Activation
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Akanksha Bhatt,akanksha.bhatt@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anita Sharma,anita.sharma@trustwealthadvisors.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,28/09/2024 T:10:04:20,"Hi Anita,\n\nI hope this email finds you well. I wanted to follow up on our previous conversation regarding my health insurance policy with DCoders. You mentioned that the policy documents would be sent to me via email, but I haven't received them yet. Could you please look into this and let me know the status?\n\nThanks,\nAkanksha",
+  user_2,user_1,,28/09/2024 T:10:12:50,"Dear Akanksha,\n\nThank you for reaching out. I apologize for the delay in receiving your policy documents. I have checked on the status, and it seems that the documents were sent to you earlier. However, I have re-sent them to you again for your reference. Please find the attached documents. If you have any further questions or concerns, please don't hesitate to reach out.\n\nBest regards,\nAnita Sharma",https://storage.trustwealthadvisors.com/docs/Policy_Docs_Akanksha_Bhatt_2026.pdf

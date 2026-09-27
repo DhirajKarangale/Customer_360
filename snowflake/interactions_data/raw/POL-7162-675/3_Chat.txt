@@ -1,0 +1,10 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d7,Isha Agarwal,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Singh,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey vikram, did u get my email about the payment extension for my auto policy?",
+  user_2,26/09/2024 T14:50:30,"Hi Isha, yeah i got it. sorry but we cant extend it by 2 days. our system wont allow it. u need to pay today or tomorrow or ur policy will expire",
+  user_1,26/09/2024 T14:51:15,"thats really bad news... i was counting on that extension. cant u make an exception? *expection",
+  user_2,26/09/2024 T14:52:00,"i understand ur situation but our hands are tied. if u pay today or tomorrow, we can still reinstate ur policy. but if it expires, u'll have to buy a new one",
+  user_1,26/09/2024 T14:53:00,"ok... i'll try to make the payment today. thanks for letting me know. can u pls send me the payment link again?"

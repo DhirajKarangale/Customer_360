@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c98
+subject: Re: Health Policy Expiration and Renewal
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Aaradhya Verma,aaradhya.v@mail.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,neha.k@shieldlifeservices.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,30/09/2024 T:10:06:40,"Hi Neha,\n\nI just received an email from DCoders stating that my health policy has expired. I'm confused because we had just renewed it. Can you please clarify the status of my policy?\n\nPolicy Number: SH-998235\n\nThanks,\nAaradhya",
+  user_2,user_1,,30/09/2024 T:10:14:10,"Dear Aaradhya,\n\nThank you for reaching out. I apologize for the confusion. I have checked on the status of your policy, and it appears that the email from DCoders was an error. Your policy is indeed active until next year. I have attached a confirmation letter for your reference.\n\nBest regards,\nNeha Kapoor",https://storage.shieldlifeservices.com/docs/Policy_SH998235_Confirmation_2026.pdf

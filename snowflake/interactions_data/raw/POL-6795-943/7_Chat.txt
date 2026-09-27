@@ -1,0 +1,9 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Aaradhya Verma,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Neha Kapoor,insurance agent
+messages[4]{user,timestamp,text,media_url}:
+  user_1,28/09/2024 T10:05:00,"hey neha, just wanted to confirm that my policy is active now?",
+  user_2,28/09/2024 T10:05:30,"Hi Aaradhya! Yes, your policy is active. I've sent you a confirmation email with all the details. You should have received it by now.",
+  user_1,28/09/2024 T10:06:15,"ok cool, thx! btw, i think i got an email from dcoders saying my policy was expiring? *expired",
+  user_2,28/09/2024 T10:07:00,"That's an automated email, Aaradhya. Since we've already renewed your policy, you can disregard that email. Your policy is now active until next year."

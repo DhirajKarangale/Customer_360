@@ -1,0 +1,12 @@
+call_id: REC-INS-006C
+start_timestamp: 28/09/2026 T:14:05:00
+end_timestamp: 28/09/2026 T:14:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Vihaan Patel,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Ravi I'm calling about my health policy HP-001234 I just wanted to confirm if everything is in order now
+  user_2,Ah yes Vihaan Good afternoon I've checked on the status and I'm happy to inform you that the issue has been resolved Your policy is now active
+  user_1,That's great news thanks for following up on it Ravi I really appreciate it
+  user_2,You're welcome Vihaan It was our mistake initially and I apologize again for the inconvenience caused We'll make sure to keep a closer eye on policy expirations moving forward
+  user_1,Thanks Ravi I'm glad we could get this sorted out Have a great day

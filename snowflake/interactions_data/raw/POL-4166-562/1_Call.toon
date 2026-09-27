@@ -1,0 +1,14 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f3a7028-a699-4de4-b932-41271ff311d6,Atharv Pandey,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,insurance agent
+messages[7]{user,text}:
+  user_2,Hi is this Atharv Pandey
+  user_1,Yeah this is Atharv
+  user_2,Atharv good afternoon I am Ravi Menon from Secure Future Group I am calling regarding your health policy with DCoders
+  user_1,Oh hi Ravi good afternoon
+  user_2,Atharv I hope you are doing well I am calling to inform you that your health policy is up for renewal this month
+  user_1,Oh okay I wasn't aware of that
+  user_2,Atharv I can see that you haven't made the payment yet and the policy is going to expire in two days Would you like to renew it or cancel

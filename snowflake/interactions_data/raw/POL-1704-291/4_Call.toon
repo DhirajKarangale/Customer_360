@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 27/09/2026 T:11:05:00
+end_timestamp: 27/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4f3a7028-a699-4de4-b932-41271ff311d6,Meera Chauhan,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Neha I'm calling about my auto policy with DCoders I just wanted to confirm if it's active now
+  user_2,Ah yes Meera Good morning Your policy is indeed active now I apologize again for the delay earlier
+  user_1,Okay great thanks for letting me know Can you just confirm my policy details real quick
+  user_2,Of course Let me just check on that [pause] [typing] Yes everything looks good Your policy number is DC-001234 and it's active as of today
+  user_1,Alright sounds good thanks Neha I appreciate your help

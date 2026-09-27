@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:15:00
+end_timestamp: 28/09/2026 T:11:20:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Akanksha Bhatt,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Suresh I hope you're doing well I just wanted to confirm if my policy is active now
+  user_2,Ah yeah Akanksha good morning I've checked on the status and yes your policy is active now You should have received a confirmation email by now
+  user_1,Yeah I did receive it thanks so much for your help Suresh I really appreciate it
+  user_2,You're welcome Akanksha It was my pleasure to assist you If you have any more questions or concerns feel free to reach out to me anytime
+  user_1,Will do thanks again Suresh have a great day [sighs]

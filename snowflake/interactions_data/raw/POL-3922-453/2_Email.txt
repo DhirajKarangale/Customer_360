@@ -1,0 +1,8 @@
+mail_id: 4821qwe-3423-470e-a3fc-799eaf739c96
+subject: Re: Health Policy Expiration - DCoders
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Ananya Nair,ananya.nair@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Singh,vikram.singh@protectallagency.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,02/03/2023 T:11:04:20,"Hi Vikram,\n\nI just received a call from you regarding my health policy with DCoders. You mentioned it had expired on March 1st, 2023. I would like to know what options I have to reinstate or renew the policy. Could you please provide me with the necessary steps and any associated costs?\n\nPolicy Number: HP-123456\n\nThanks,\nAnanya",
+  user_2,user_1,,02/03/2023 T:11:16:50,"Dear Ananya,\n\nThank you for your email. I apologize again for the inconvenience caused by the policy expiration. To reinstate your health policy, you will need to pay the outstanding premium and a small reinstatement fee. I have attached a quote for your reference. Please review and let me know if you would like to proceed. If you have any questions or concerns, feel free to ask.\n\nBest regards,\nVikram Singh",https://storage.protectallagency.com/docs/Reinstatement_Quote_HP123456.pdf

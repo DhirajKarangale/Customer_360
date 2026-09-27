@@ -1,0 +1,22 @@
+call_id: REC-INS-006C
+start_timestamp: 30/09/2026 T:14:05:00
+end_timestamp: 30/09/2026 T:14:25:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Dhruv Kapoor,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[14]{user,text}:
+  user_1,Hi Vikram this is Dhruv Kapoor I'm calling about my health policy
+  user_2,Ah Dhruv good afternoon How can I assist you today
+  user_1,I'm still waiting to hear back about the renewal I sent the form over a week ago
+  user_2,I apologize for the delay Let me check on the status for you [typing] Ah yes I see that it's still pending with the underwriting team
+  user_1,[sighs] Okay that's really frustrating I was told it would be expedited
+  user_2,I understand your concern Dhruv and I'm going to escalate this further [hold music starts] 
+  user_2,[hold music ends] I've escalated the issue and I should have an update for you by the end of the day
+  user_1,That's not good enough Vikram I need to know what's going on with my policy
+  user_2,I understand Dhruv but sometimes these things take a little longer [dog barks in the background] Ah excuse me for a second [pause]
+  user_2,Okay I'm back Sorry about that Where were we Ah yes your policy
+  user_1,You were going to tell me what's going on with the underwriting team
+  user_2,Right So it looks like there was an issue with the paperwork [typing] But I've sent it back to them and they should be reviewing it again today
+  user_1,And what's the worst-case scenario here Is my policy going to be cancelled
+  user_2,I don't think that's likely Dhruv but I do need to inform you that the policy is currently expired
+  user_1,[alarmed] What do you mean it's expired I thought we were in the process of renewing it

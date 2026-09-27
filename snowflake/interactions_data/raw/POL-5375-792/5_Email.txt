@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Health Policy Expiration and Reinstatement
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Rahul Jain,rahul.jain@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Sunita Agarwal,sunita.agarwal@protectallagency.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,30/09/2024 T:10:45:00,"Hi Sunita,\n\nI hope this email finds you well. I wanted to follow up on our previous conversations regarding my health policy that was supposed to be active until next year but got expired due to a payment processing issue. I appreciate your efforts in escalating the issue and facilitating the reinstatement of my policy. I have reviewed the form you sent and have attached the completed form for your reference.\n\nPlease let me know the next steps and the expected timeline for the policy to be active again.\n\nThanks,\nRahul",https://storage.customer.com/docs/Completed_Reinstatement_Form.pdf
+  user_2,user_1,,30/09/2024 T:11:10:00,"Dear Rahul,\n\nThank you for your email and for completing the reinstatement form. I am glad to inform you that the payments team has reviewed your case and has approved the reinstatement of your policy. I have attached an updated policy document for your reference. Your policy will be active again effective immediately, and you will receive a confirmation email with the details shortly.\n\nPlease do not hesitate to reach out if you have any further questions or concerns.\n\nBest regards,\nSunita Agarwal",https://storage.protectallagency.com/docs/Updated_Policy_Document_SH-123456.pdf

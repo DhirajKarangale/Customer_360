@@ -1,0 +1,21 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:25:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Suhana Joshi,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Karan Joshi,insurance agent
+messages[14]{user,text}:
+  user_1,Hi is this Safe Step Insurance
+  user_2,Ah yes it is How can I assist you today
+  user_1,I'm calling about my health policy with DCoders I think it's expired
+  user_2,I see Let me just check on that for you Can you please provide me with your policy number
+  user_1,Umm it's... [pause]... HP-001234
+  user_2,Okay thank you [typing] Ah yes I see the policy here It does show that it's expired as of last month
+  user_1,Oh no [sighs] I didn't realize that What's the process to reinstate it
+  user_2,Well we can definitely help you with that [background noise: dog barks] I apologize for the noise
+  user_1,No worries [laughs]
+  user_2,So to reinstate the policy we'll need to go over some information with you and then you'll need to pay the back premium
+  user_1,Okay that sounds good How long will it take
+  user_2,It should only take about 10-15 minutes [hold music starts playing]
+  user_1,[hold music continues for 2 minutes] Ah hello
+  user_2,I apologize for the hold [hold music stops] Where were we Ah yes the reinstatement process

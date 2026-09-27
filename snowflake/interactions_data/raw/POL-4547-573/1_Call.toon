@@ -1,0 +1,14 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f3a7028-a699-4de4-b932-41271ff311d6,Aditi Mahajan,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[7]{user,text}:
+  user_2,Hi Aditi good afternoon Can you hear me
+  user_1,Yeah I can hear you Good afternoon
+  user_2,Great thanks for calling DCoders today My name is Vikram and I'll be assisting you with your insurance policy
+  user_1,Nice to talk to you Vikram I'm calling about my life insurance policy I just wanted to confirm the status
+  user_2,Okay let me just check on that for you [typing] Can you please confirm your policy number for me
+  user_1,It's LP-001234
+  user_2,Alright Aditi your policy is currently in the process of being activated and should be active by the end of the day [sighs] Is there anything else I can assist you with today

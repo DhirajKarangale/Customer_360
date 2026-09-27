@@ -1,0 +1,9 @@
+chat_id: 9a6a7028-a699-4de4-b932-41271ff311d7
+participants[2]{id,name,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Vivaan Gupta,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,insurance agent
+messages[4]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T15:10:00,"hey ravi, just wanted to check on my health policy status again. u said it was active but the system still shows pending",
+  user_2,26/09/2024 T15:10:30,"hi vivaan, sorry about the confusion. can u pls provide me with ur policy number so i can check on it?",
+  user_1,26/09/2024 T15:11:00,"its HP-123456. i already sent it to u in my last email",
+  user_2,26/09/2024 T15:12:00,"ok, i've checked on it. it seems there was a delay in updating the status. i'm going to go ahead and update it now. u should see the change in the system soon"

@@ -1,0 +1,12 @@
+call_id: REC-INS-006C
+start_timestamp: 30/09/2026 T:14:05:00
+end_timestamp: 30/09/2026 T:14:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Roshni Yadav,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Sunita Agarwal,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Sunita I just wanted to confirm that my auto policy AP-001234 has been cancelled
+  user_2,Ah yes Roshni Good afternoon I can check that for you Can you please confirm your address on file for verification
+  user_1,It's 123 Main Street Apartment 4 New York 10001
+  user_2,Okay thank you Roshni I've checked and your policy AP-001234 has been successfully cancelled You should receive a confirmation letter and refund details within the next 3-4 working days
+  user_1,Great thank you so much Sunita I really appreciate your help

@@ -1,0 +1,9 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Vihaan Patel,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,insurance agent
+messages[4]{user,timestamp,text,media_url}:
+  user_1,28/09/2024 T15:10:00,"hey ravi, just wanted to check on my policy status again. is it active now?",
+  user_2,28/09/2024 T15:10:30,"hi vihaan, yeah it should be active now. let me just check real quick *real quick*",
+  user_1,28/09/2024 T15:11:00,"ok, i just got a bit worried since i havent recieved any confirmation email yet",
+  user_2,28/09/2024 T15:11:45,"i apologize for the delay. it looks like our system is still showing it as expired. i'll go ahead and escalate this again to get it updated. sorry for the inconvenience, vihaan"

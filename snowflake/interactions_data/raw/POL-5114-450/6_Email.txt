@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Home Policy for 1456 Oakwood Drive - Confirmation and Next Steps
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Sai Kumar,sai.kumar@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Singh,vikram.singh@protectallagency.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,30/09/2024 T:10:06:40,"Hi Vikram,\n\nI just wanted to confirm that I have received my policy documents in the mail and everything looks good. Thank you for your assistance throughout this process. I appreciate your help in getting my home policy activated.\n\nBest regards,\nSai Kumar",
+  user_2,user_1,,30/09/2024 T:10:14:10,"Dear Sai,\n\nYou're welcome! I'm glad to hear that you've received your policy documents and that everything is in order. If you have any further questions or need any additional assistance, please don't hesitate to reach out. We're always here to help.\n\nBest regards,\nVikram Singh"

@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Cancellation of Health Policy HP-001234
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Sneha Roy,sneha.roy@gmail.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anita Sharma,anita.sharma@trustwealthadvisors.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,30/09/2024 T:10:45:00,"Hi Anita,\n\nI hope this email finds you well. I am writing to follow up on the cancellation of my health policy HP-001234. I had spoken with you earlier and you mentioned that the policy would be cancelled at the end of the month. I just wanted to confirm if the cancellation has been processed and if I can expect a refund (if applicable) soon.\n\nPlease let me know if there are any further steps I need to take from my end.\n\nThanks,\nSneha",
+  user_2,user_1,,30/09/2024 T:11:10:00,"Dear Sneha,\n\nThank you for your email. I am pleased to inform you that the cancellation of your health policy HP-001234 has been successfully processed. You will receive a confirmation letter and refund (if applicable) within the next 7-10 working days. If you have not received the letter by then, please do not hesitate to reach out to me.\n\nPlease note that the refund will be processed as per our company's refund policy, and you will receive a separate email with the refund details once it is processed.\n\nBest regards,\nAnita Sharma",

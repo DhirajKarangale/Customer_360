@@ -1,0 +1,9 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Aditi Mahajan,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[4]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey vikram, just wanted to confirm if my life insurance policy is active now?",
+  user_2,26/09/2024 T14:50:30,"Hi Aditi, yes it is! I checked on it earlier today. You should have received a confirmation email by now.",
+  user_1,26/09/2024 T14:51:00,"thx! yeah i got the email but just wanted to double check. can u pls confirm my policy number is LP-001234?",
+  user_2,26/09/2024 T14:51:20,"Yes, that's correct. Your policy number is indeed LP-001234 and it's active. If you have any other questions, feel free to ask!"

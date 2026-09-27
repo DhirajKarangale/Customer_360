@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Life Insurance Policy Application - Next Steps
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Vedant Thakur,vedant.t@mail.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,anjali.d@firstguardbrokers.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,28/09/2024 T:11:04:20,"Hi Anjali,\n\nI hope this email finds you well. I am writing to confirm that I would like to proceed with the term life insurance policy we discussed earlier. Please let me know the next steps and what documents I need to provide to complete the application process.\n\nThanks,\nVedant",
+  user_2,user_1,,28/09/2024 T:11:16:50,"Dear Vedant,\n\nThank you for your email. I am glad you decided to move forward with the term life insurance policy. To complete the application, please find attached a document outlining the required documents and the next steps. If you have any questions or concerns, please do not hesitate to reach out.\n\nBest regards,\nAnjali Desai",https://storage.firstguardbrokers.com/docs/Life_Insurance_Application_Next_Steps.pdf

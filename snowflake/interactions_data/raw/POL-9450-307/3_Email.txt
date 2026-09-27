@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Home Insurance Policy for Delhi Property
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Pranav Mishra,pranav.mishra@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,vikram.p@omniinsurancegroup.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2024 T:10:06:40,"Dear Pranav,\n\nI hope this email finds you well. As discussed during our previous call and chat, I am sending you a detailed quote for the home insurance policy for your Delhi property valued at 80 lakhs. Please find the attached document for your review.\n\nTo proceed with the activation, kindly confirm your acceptance of the terms and conditions by return email. If you have any questions or need further clarification, please do not hesitate to reach out.\n\nBest regards,\nVikram Patel",https://storage.omniinsurancegroup.com/docs/Home_Insurance_Quote_PM_2026.pdf
+  user_1,user_2,,28/09/2024 T:10:14:10,"Hi Vikram,\n\nThanks for sending the quote. I have reviewed the document and I am satisfied with the terms. Please proceed with the activation of the policy. I confirm my acceptance of the terms and conditions as outlined in the attached document.\n\nLooking forward to receiving the policy documents.\n\nBest regards,\nPranav Mishra"

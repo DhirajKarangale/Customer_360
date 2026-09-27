@@ -1,0 +1,12 @@
+call_id: REC-INS-007C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Vedant Thakur,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Anjali Desai,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Anjali I hope you're doing well I just wanted to confirm that I've sent over all the required documents for my term life insurance policy
+  user_2,Ah Vedant good morning Yes I've received all the documents and everything looks good We're just waiting for the underwriting process to complete
+  user_1,Okay great And how long does the underwriting process usually take
+  user_2,Typically it takes around 2-3 business days But in some cases it might take a bit longer We'll keep you updated on the status
+  user_1,Alright sounds good Thanks for the update Anjali

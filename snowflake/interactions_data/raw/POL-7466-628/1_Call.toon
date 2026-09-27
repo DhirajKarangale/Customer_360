@@ -1,0 +1,14 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Ishaan Bose,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Karan Joshi,insurance agent
+messages[7]{user,text}:
+  user_2,Hi Ishaan this is Karan from Safe Step Insurance How are you today
+  user_1,I'm good thanks Karan I'm calling about my health policy with DCoders
+  user_2,Ah great Can you please provide me with your policy number so I can look into it for you
+  user_1,It's HP-001234
+  user_2,Okay thank you Ishaan I've located your policy... [pause] I see that your policy has expired as of last month
+  user_1,Expired What do you mean It was supposed to be renewed automatically
+  user_2,I apologize for the inconvenience Ishaan It seems there was an issue with the auto-renewal process Let me see what I can do to assist you [sighs]

@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d7,Dev Chatterjee,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anita Sharma,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey anita, just wanted to follow up on my auto policy activation. did u get the info i sent over email?",
+  user_2,26/09/2024 T14:50:30,"hi dev! yeah i got it, thanks for sending the make and model of your vehicle. just need to confirm your address to finalize the activation",
+  user_1,26/09/2024 T14:51:00,"oh, i thot i sent that too *thought. my bad! its 123 main st, apt 4, new york, ny 10001",
+  user_2,26/09/2024 T14:51:45,"no worries, dev! just updated the address. your policy should be active now. i'll send you a confirmation email with all the details",
+  user_1,26/09/2024 T14:52:10,"awesome, thx anita! looking forward to getting the email. have a great day!"

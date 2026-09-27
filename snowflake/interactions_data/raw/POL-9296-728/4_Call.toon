@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 29/09/2026 T:14:10:00
+end_timestamp: 29/09/2026 T:14:14:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Meera Chauhan,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Anjali this is Meera Chauhan I just wanted to confirm if my auto policy has been reinstated
+  user_2,Ah Meera good afternoon I'm checking on that for you [pause] Yes I can see that the payment has been processed and the policy has been reinstated with the same coverage and premium as before
+  user_1,That's great news thank you so much Anjali I really appreciate your help with this [sighs]
+  user_2,You're welcome Meera I'm glad I could assist you If you have any other questions or concerns feel free to reach out to me anytime
+  user_1,Will do thanks again Anjali have a great day [ typing ]

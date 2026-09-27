@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4e8a5bbe-3423-470e-a3fc-799eaf739c97,Diya Menon,customer
+  3a6a7028-a699-4de4-b932-41271ff311d7,Karan Joshi,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey karan whats the status of my auto policy renewal?",
+  user_2,26/09/2024 T14:50:30,"Hi Diya, I've updated the info we discussed earlier. Your policy is now in 'Pending' status. I'll send you a confirmation email once it's processed.",
+  user_1,26/09/2024 T14:51:00,"thx karan. can u pls confirm my policy number again?",
+  user_2,26/09/2024 T14:51:20,"Your policy number is AP-001234. I've also attached a copy of your updated policy document for your records.",https://storage.dcoders.com/docs/Policy_AP001234_2026.pdf
+  user_1,26/09/2024 T14:52:00,"got it thx. will wait for the confirmation email"

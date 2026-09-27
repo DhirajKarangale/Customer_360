@@ -1,0 +1,21 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:25:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Rohan Ahuja,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Sunita Agarwal,insurance agent
+messages[14]{user,text}:
+  user_1,Hi is this Sunita from Protect All Agency
+  user_2,Ah yes this is Sunita How can I assist you today Rohan
+  user_1,I'm calling about my health policy with DCoders I think it expired
+  user_2,I see Let me just check on that for you [typing] Ah yes your policy did expire on the 10th of this month
+  user_1,Okay that's what I thought I got an email from you about reinstating it
+  user_2,That's right We sent you a quote for reinstatement which includes the outstanding premium and a small fee
+  user_1,Right I remember now So how do I go about paying that
+  user_2,You can pay online through our website or over the phone with a credit card [hold music starts] 
+  user_1,[background noise: dog barks] Sorry about that my dog is being a bit loud
+  user_2,[laughs] No worries at all So would you like to pay over the phone
+  user_1,Yeah that would be great Can you just confirm the amount again
+  user_2,It's a total of ₹25,000 including the outstanding premium of ₹23,000 and a reinstatement fee of ₹2,000 [typing]
+  user_1,Okay got it And will my policy be active immediately after payment
+  user_2,[pause] Let me just check on that for you [hold music starts]

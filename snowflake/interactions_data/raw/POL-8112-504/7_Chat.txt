@@ -1,0 +1,10 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Aaradhya Verma,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Neha Kapoor,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey neha, just wanted to check on the status of my policy renewal. is it done yet?",
+  user_2,26/09/2024 T14:50:30,"hi aaradhya! yeah, i processed the renewal, but the system is still showing it as expired. i escalated it to the admin team to resolve the issue",
+  user_1,26/09/2024 T14:51:00,"thats weird. do u know how long it will take to get it fixed?",
+  user_2,26/09/2024 T14:51:45,"usually it takes a few hours, but i'll follow up with them to expedite the process. i'll keep you updated",
+  user_1,26/09/2024 T14:52:10,"ok, thanks neha. pls keep me posted. i dont want any gaps in my coverage"

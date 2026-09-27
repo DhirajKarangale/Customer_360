@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Auto Policy Cancellation and Reinstatement
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Reyansh Tiwari,reyansh.tiwari@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,suresh.d@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,27/09/2024 T:10:06:40,"Hi Suresh,\n\nI am writing to express my disappointment with the cancellation of my auto insurance policy. I understand that I missed two payments, but I had some unforeseen circumstances that prevented me from making the payments on time. Can you please look into this and see if there's anything that can be done to reinstate my policy?\n\nPolicy Number: DC-001234\n\nThanks,\nReyansh",
+  user_2,user_1,,27/09/2024 T:10:14:10,"Dear Reyansh,\n\nThank you for reaching out. I understand that unforeseen circumstances can arise, and I'm more than happy to help. However, our system does have a reinstatement process in place. I've attached a document that outlines the steps and requirements for reinstatement. Please review it and let me know if you have any questions or concerns.\n\nBest regards,\nSuresh Deshmukh",https://storage.dcoders.com/docs/Reinstatement_Process_2026.pdf

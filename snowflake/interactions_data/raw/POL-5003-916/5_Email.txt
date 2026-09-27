@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Home Policy Renewal for HP-001234
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Vedant Thakur,vedant.t@mail.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,ramesh.t@safeshieldagency.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2024 T:10:45:00,"Dear Vedant,\n\nI hope this email finds you well. I wanted to follow up on our previous conversation regarding the renewal of your home policy, HP-001234. As we discussed, the policy has expired, and I understand your concerns about the deadline. Please be assured that we can still process the renewal, but I would need your confirmation by the end of the day. If you have any questions or concerns, please don't hesitate to reach out.\n\nBest regards,\nRamesh Tiwari",
+  user_1,user_2,,28/09/2024 T:11:10:00,"Hi Ramesh,\n\nThanks for your email. I appreciate your help in this matter. I am still reviewing the quote you sent, but I do have a few questions. Could you please clarify what would happen if I don't renew the policy today? Would I be able to get the same premium amount if I renew it tomorrow or the day after?\n\nThanks,\nVedant"

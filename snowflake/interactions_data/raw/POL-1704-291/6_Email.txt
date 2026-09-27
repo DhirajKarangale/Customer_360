@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Auto Policy Activation - DC-001234
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Meera Chauhan,meera.chauhan@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,neha.kapoor@shieldlifeservices.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,30/09/2024 T:10:06:40,"Hi Neha,\n\nI just wanted to confirm that my auto policy with DCoders is active now. I received the confirmation email with the policy document, but I'd like to double-check the details.\n\nPolicy Number: DC-001234\n\nThanks,\nMeera",
+  user_2,user_1,,30/09/2024 T:10:14:10,"Dear Meera,\n\nYes, your auto policy with DCoders is now active. I've checked the system, and everything looks good. You should be all set. If you have any further questions or concerns, please don't hesitate to reach out.\n\nBest regards,\nNeha Kapoor",

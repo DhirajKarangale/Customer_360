@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Health Insurance Policy for Riya Mukherjee and Husband
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c97,Riya Mukherjee,riya.mukherjee@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d7,Anjali Desai,anjali.desai@firstguardbrokers.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,28/09/2024 T:10:06:40,"Hi Anjali,\n\nI hope this email finds you well. I wanted to follow up on our previous call regarding the health insurance policy for my husband and me. You had mentioned a policy that would suit our needs, and I would like to proceed with the application. Could you please guide me through the next steps?\n\nThanks,\nRiya",
+  user_2,user_1,,28/09/2024 T:10:14:10,"Dear Riya,\n\nThank you for your email. I'm glad you're interested in moving forward with the policy. I have attached the application form and a detailed brochure for your review. Please fill out the form and return it to me by the end of the week. I will also need some additional documents, which I have listed below:\n\n- ID proof\n- Address proof\n- Medical reports (if any)\n\nPlease let me know if you have any questions or concerns.\n\nBest regards,\nAnjali Desai",https://storage.firstguardbrokers.com/docs/Application_Form_Health_Policy_2026.pdf

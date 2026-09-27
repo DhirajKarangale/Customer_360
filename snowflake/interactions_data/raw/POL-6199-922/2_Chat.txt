@@ -1,0 +1,10 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d7,Aarav Sharma,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Sunita Agarwal,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:42:00,"hey sunita, just wanted to confirm if my health policy is active now? i made the payment over the phone with you last week",
+  user_2,26/09/2024 T14:42:15,"Hi Aarav! Let me just check on that for you. Can you please confirm your policy number so I can look it up?",
+  user_1,26/09/2024 T14:42:30,"its HP-009876, i think thats the right one",
+  user_2,26/09/2024 T14:43:00,"Great, thank you! I've checked and your policy is now active. You should receive a confirmation email shortly. Would you like me to send you a copy of the updated policy documents?",
+  user_1,26/09/2024 T14:43:20,"yeah that would be great, thanks sunita!"

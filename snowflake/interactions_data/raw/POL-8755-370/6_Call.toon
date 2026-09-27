@@ -1,0 +1,13 @@
+call_id: REC-INS-002C
+start_timestamp: 26/09/2026 T:10:30:00
+end_timestamp: 26/09/2026 T:10:34:00
+participants[2]{id,name,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Diya Menon,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Ravi I just wanted to confirm that my new policy is all set and I won't have any issues with the coverage
+  user_2,Ah yeah Diya your new policy is all set and you're good to go I've sent you a confirmation email with all the details
+  user_1,Okay great thanks so much Ravi I really appreciate all your help with this
+  user_2,No problem at all Diya it's what I'm here for [sighs] I'm just glad we could get everything sorted out for you
+  user_1,Yeah me too thanks again Ravi have a great day
+  user_2,You too Diya take care [ typing ] I'm just going to go ahead and update the status of your old policy to expired in our system

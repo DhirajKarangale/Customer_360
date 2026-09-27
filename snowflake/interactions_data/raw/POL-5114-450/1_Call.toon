@@ -1,0 +1,14 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Sai Kumar,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Vikram Singh,insurance agent
+messages[7]{user,text}:
+  user_2,Hi Sai Kumar good afternoon Can you hear me
+  user_1,Yeah I can hear you Good afternoon
+  user_2,Thanks for choosing DCoders I'm Vikram from ProtectAll Agency How can I assist you today
+  user_1,I'm looking to get a home policy I just moved into a new place
+  user_2,Congratulations on the new home Can you please provide me with your address so I can look up the details
+  user_1,Ah yeah it's 1456 Oakwood Drive [pause] Sorry what was your name again
+  user_2,No worries at all Sai My name is Vikram Singh I've got your address noted [typing] Okay I've found the location

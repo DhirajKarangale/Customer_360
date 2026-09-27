@@ -1,0 +1,14 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Saanvi Pillai,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,insurance agent
+messages[7]{user,text}:
+  user_2,Hi Saanvi good afternoon Can you hear me
+  user_1,Yeah I can hear you Good afternoon
+  user_2,Great So I'm Anjali from First Guard Brokers I'm calling about your health policy with DCoders
+  user_1,Oh hi Anjali Yeah I have a policy with them
+  user_2,Okay I'm looking at your policy details right now... [pause] It says here that you've requested to cancel your policy Is that correct
+  user_1,Yeah that's right I've been thinking about it for a while now and I don't think I need it anymore
+  user_2,Alright I understand I'm going to go ahead and process the cancellation for you [sighs] I just need to confirm a few details with you first

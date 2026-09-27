@@ -1,0 +1,10 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d7,Rohan Deshmukh,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anita Sharma,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:42:00,"hey anita whats the next step for my home policy?"
+  user_2,26/09/2024 T14:42:15,"Hi Rohan! I've got your address and property type noted. Can you please tell me a bit about the property's value and what kind of coverage you're looking for?"
+  user_1,26/09/2024 T14:43:00,"its a 3bhk flat in mumbai. worth around 2.5 cr. i want to cover it for 2 cr"
+  user_2,26/09/2024 T14:43:30,"Okay, that sounds good. We have a few plans that might suit your needs. I'll send you some options. Would you prefer a comprehensive plan or one with a deductible?"
+  user_1,26/09/2024 T14:44:10,"comprehensive sounds good. but whats the diff btw the two?"

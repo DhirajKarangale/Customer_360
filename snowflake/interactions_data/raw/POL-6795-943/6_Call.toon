@@ -1,0 +1,11 @@
+call_id: REC-INS-002C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Aaradhya Verma,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,insurance agent
+messages[4]{user,text}:
+  user_1,Hi Neha I hope you're doing well I just wanted to confirm that my policy is all set now
+  user_2,Ah yeah Aaradhya good morning Your policy is all set and active now I've sent you the confirmation email with all the details
+  user_1,Great thanks so much for your help Neha I really appreciate it
+  user_2,You're welcome Aaradhya It was my pleasure to assist you If you have any other questions or need anything else feel free to reach out

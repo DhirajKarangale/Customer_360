@@ -1,0 +1,12 @@
+call_id: REC-INS-007C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4f3a7028-a699-4de4-b932-41271ff311d6,Krishna Das,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Anjali I hope you're doing well I just wanted to confirm the status of my life policy LP-001234
+  user_2,Ah Krishna good morning Yeah I'm doing great thanks for asking Your policy is actually now active
+  user_1,That's great news Thank you so much for your help throughout this process
+  user_2,You're welcome Krishna It was my pleasure to assist you If you have any more questions or need any further assistance don't hesitate to reach out
+  user_1,Will do Thanks again and have a great day

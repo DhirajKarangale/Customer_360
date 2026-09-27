@@ -1,0 +1,10 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Ananya Nair,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey ramesh, hope ur doin well. i wanted to confirm if i can pay the premium in 2 installments?",
+  user_2,26/09/2024 T14:50:30,"Hi Ananya! Yeah, you can pay in 2 installments. We have a 5% surcharge for that option tho",
+  user_1,26/09/2024 T14:51:00,"thats ok. can u pls tell me the total premium amount again? and do i need to pay any *addition*al fees?",
+  user_2,26/09/2024 T14:51:20,"The total premium is 25,000. And no, there are no additional fees apart from the 5% surcharge for the installment option. You'll get a discount of 2.5% if you pay the full amount upfront tho",
+  user_1,26/09/2024 T14:52:00,"ok sounds good. how do i proceed with the payment? can i do it online?"

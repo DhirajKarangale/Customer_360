@@ -1,0 +1,10 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d7,Vihaan Patel,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:42:00,"hey suresh, its vihaan. i just wanted to confirm my life policy with dcoders is active?"
+  user_2,26/09/2024 T14:42:15,"Hi Vihaan! Yeah, I can check that for you. Can you please confirm your policy number?"
+  user_1,26/09/2024 T14:42:30,"its LP-001234"
+  user_2,26/09/2024 T14:42:50,"Great, thanks for confirming! I've checked and your policy is active and up to date. All payments are in order."
+  user_1,26/09/2024 T14:43:10,"thats great to hear! thanks suresh. can i get a soft copy of my policy doc?"

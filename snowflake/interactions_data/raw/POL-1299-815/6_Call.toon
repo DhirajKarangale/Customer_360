@@ -1,0 +1,21 @@
+call_id: REC-INS-006C
+start_timestamp: 28/09/2026 T:14:05:00
+end_timestamp: 28/09/2026 T:14:25:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Kiara Sen,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,insurance agent
+messages[14]{user,text}:
+  user_1,Hi Anjali I'm calling about my health policy I'm still waiting to hear back about the reinstatement
+  user_2,Ah Kiara good afternoon I apologize for the delay Let me just check on the status for you [typing]
+  user_1,Okay thank you I'm getting a bit worried that it's taking so long
+  user_2,I completely understand Kiara I'm checking on it right now [pause] Ah yes I see the issue here
+  user_1,What's the issue
+  user_2,It looks like the payment didn't go through due to a technical glitch on our end [sighs] I'm so sorry about that
+  user_1,Oh no that's frustrating Can you fix it now
+  user_2,Yes of course Kiara Let me just process the payment again [hold music starts]
+  user_1,[background noise: dog barks] Hello Anjali are you still there
+  user_2,[hold music ends] Yes Kiara I'm here I apologize for the hold I'm processing the payment now
+  user_1,Okay thank you I appreciate it
+  user_2,You're welcome Kiara I've processed the payment and your policy is now reinstated [ typing]
+  user_1,Great thank you so much Anjali I really appreciate your help
+  user_2,You're welcome Kiara It was my pleasure to assist you Is there anything else I can help you with today

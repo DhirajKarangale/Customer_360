@@ -1,0 +1,27 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:25:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Riya Mukherjee,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,insurance agent
+messages[14]{user,text}:
+  user_1,Hi Anjali this is Riya Mukherjee I hope you're doing well
+  user_2,Ah Riya good morning I'm doing great thanks How about you
+  user_1,I'm good thanks I just wanted to follow up on the health insurance policy we discussed last week
+  user_2,Ah yes of course Let me just check on the status real quick [typing]
+  user_1,Okay sounds good
+  user_2,Okay so it looks like everything is in order and your policy is set to go active today
+  user_1,That's great news But I just wanted to confirm a few things before it goes active
+  user_2,Of course what would you like to confirm
+  user_1,Well I just wanted to make sure that my husband is covered under the policy as well
+  user_2,Ah yes he is definitely covered I've got him listed as a dependent on the policy
+  user_1,Okay great And what about the deductible Is it still 500 rupees
+  user_2,That's correct the deductible is 500 rupees [dog barks in the background]
+  user_2,Sorry about that my dog is just being a little loud today
+  user_1,[laughs] No worries I have a dog too
+  user_2,[hold music plays for 30 seconds]
+  user_2,Okay I'm back Sorry about the hold I just needed to check on a few things
+  user_1,No problem I'm still here
+  user_2,Okay so everything looks good and your policy is set to go active today You should receive an email with all the details by the end of the day
+  user_1,Great thanks so much for your help Anjali
+  user_2,You're welcome Riya It was my pleasure to assist you Have a great day

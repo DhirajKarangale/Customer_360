@@ -1,0 +1,33 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:25:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Vivaan Gupta,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,insurance agent
+messages[23]{user,text}:
+  user_1,Hi is this DCoders
+  user_2,Ah yes this is Ravi from Secure Future Group How can I assist you today
+  user_1,I am Vivaan Gupta I have a health policy with you guys
+  user_2,Great Vivaan Can you please provide me with your policy number so I can look into it for you
+  user_1,Umm let me check [pause] Ah yes it's HP-001234
+  user_2,Thank you Vivaan [typing] I'm checking on the status of your policy
+  user_1,Yeah I just wanted to know the current status
+  user_2,It says here that your policy is currently pending [pause] Can you please hold for just a minute while I check on the reason for the pending status
+  user_1,Okay [hold music starts]
+  user_2,[hold music ends] I apologize for the wait Vivaan It looks like we're waiting on some additional documentation from you
+  user_1,What kind of documentation
+  user_2,[dog barks in the background] Ah sorry about that [clears throat] As I was saying we need a copy of your ID proof and a medical certificate
+  user_1,Okay that makes sense I think I had sent those documents last week
+  user_2,Let me check on that [pause] [typing] Ah yes I see that we did receive the documents but it seems like they were incomplete
+  user_1,Incomplete How
+  user_2,It looks like the medical certificate was missing a signature from your doctor
+  user_1,Oh I see
+  user_2,If you could please resend the complete documents we'll be happy to process your policy
+  user_1,Okay will do
+  user_2,Great Vivaan I'll go ahead and update the status to pending documentation
+  user_1,Okay sounds good
+  user_2,You should receive an email with the updated status shortly
+  user_1,Alright thanks Ravi
+  user_2,You're welcome Vivaan Have a great day
+  user_1,You too bye
+  user_2,Bye

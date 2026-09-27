@@ -1,0 +1,22 @@
+call_id: REC-INS-004C
+start_timestamp: 29/09/2026 T:11:05:00
+end_timestamp: 29/09/2026 T:11:25:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Ananya Nair,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,insurance agent
+messages[14]{user,text}:
+  user_1,Hi Ramesh I hope you're doing well I'm calling about the health policy we discussed earlier
+  user_2,Ah Ananya good morning Yeah I'm doing great thanks for calling back How can I assist you today
+  user_1,I just wanted to confirm a few things before we proceed with the purchase
+  user_2,Sure thing Ananya please go ahead and ask away
+  user_1,So I just wanted to know if the policy covers pre-existing conditions
+  user_2,Ah great question Ananya [typing] Yes it does but there's a waiting period of two years before you can make a claim
+  user_1,Okay that sounds good And what about the premium payment Can I pay it monthly
+  user_2,[dog barks in the background] Ah sorry about that [clears throat] Yes you can pay it monthly but there's a slight surcharge for that option
+  user_1,Okay that's fine I think I can manage that [hold music plays for 30 seconds]
+  user_2,[music stops] Sorry about the hold Ananya I just needed to check on something [pause] Yeah so the surcharge is about 5% of the total premium
+  user_1,That sounds reasonable And can you please confirm the total premium for my family
+  user_2,[typing] Yeah it's around 25,000 per year for a family of three
+  user_1,Okay that sounds good And what's the next step to complete the purchase
+  user_2,Great [sighs] I just need to send you a link to complete the payment and upload the required documents
+  user_1,Okay sounds good Please go ahead and send it to me

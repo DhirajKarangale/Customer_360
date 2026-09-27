@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Health Policy Status with DCoders
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Aarav Sharma,aarav.s@mail.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,suresh.d@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,30/09/2024 T:11:04:20,"Hi Suresh,\n\nI hope this email finds you well. I just wanted to confirm the status of my health policy with DCoders. Could you please let me know if it's active and if there are any outstanding payments due?\n\nPolicy Number: HP-123456\n\nThanks,\nAarav",
+  user_2,user_1,,30/09/2024 T:11:10:50,"Dear Aarav,\n\nThank you for reaching out. I'm happy to confirm that your health policy with DCoders is active. As we previously discussed, your payment method was updated successfully, and there are no outstanding payments due at this time. If you have any further questions or concerns, please don't hesitate to contact me.\n\nBest regards,\nSuresh Deshmukh"

@@ -1,0 +1,8 @@
+mail_id: 4821qwe-3423-470e-a3fc-799eaf739c96
+subject: Re: Home Policy Expiration and Renewal Options
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Vedant Thakur,vedant.t@mail.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,ramesh.t@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,27/09/2024 T:10:05:00,"Dear Vedant,\n\nI hope this email finds you well. As we discussed over the phone earlier, I wanted to follow up on your home policy with DCoders, which has expired as of last week. I understand this may have caused some inconvenience, and I'm here to help you explore renewal options that suit your current needs.\n\nPlease find attached a personalized renewal quote for your review. If you have any questions or would like to discuss further, please don't hesitate to reach out.\n\nBest regards,\nRamesh Tiwari",https://storage.dcoders.com/docs/HomePolicy_RenewalQuote_VT2026.pdf
+  user_1,user_2,,27/09/2024 T:10:20:00,"Hi Ramesh,\n\nThanks for your prompt follow-up and for sending over the renewal quote. I appreciate your help in this matter. I'll review the quote and get back to you by tomorrow with any questions I may have.\n\nThanks again,\nVedant"

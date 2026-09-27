@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Aarav Sharma,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Suresh I'm calling about my auto policy I think it's expired
+  user_2,Ah yeah Aarav Sharma let me check on that for you [pause] Yeah it looks like your policy did expire on March 10th
+  user_1,Oh no I didn't get any notice [sighs] I don't know how that happened
+  user_2,Don't worry Aarav it's an easy fix We can renew it right now over the phone if you'd like
+  user_2,And I'll make sure to update your contact information so you don't miss any future notices [typing]

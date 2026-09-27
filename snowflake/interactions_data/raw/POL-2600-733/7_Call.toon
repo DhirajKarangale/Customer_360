@@ -1,0 +1,12 @@
+call_id: REC-INS-007C
+start_timestamp: 27/09/2026 T:11:05:00
+end_timestamp: 27/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Aarav Sharma,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Suresh I just wanted to confirm one last time that my health policy is active
+  user_2,Ah yeah Aarav good morning I can check that for you right away [typing]
+  user_1,Thanks Suresh I just want to make sure everything is in order
+  user_2,Okay Aarav I've checked and your policy is active [sighs] You're all set
+  user_1,Great thanks so much Suresh I really appreciate your help

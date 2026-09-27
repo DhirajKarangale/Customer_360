@@ -1,0 +1,21 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:25:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Rahul Jain,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Sunita Agarwal,insurance agent
+messages[14]{user,text}:
+  user_1,Hi is this DCoders
+  user_2,Ah yes this is Sunita from Protect All Agency How can I assist you today
+  user_1,I am Rahul Jain I have a health policy with you and I need some information about it
+  user_2,Okay Rahul can you please provide me with your policy number so I can look into this for you
+  user_1,It's... umm... SH-123456
+  user_2,Thank you Rahul [typing] I'm just checking on that for you [pause] Ah yes I have your policy details here
+  user_1,Great So I wanted to know what's the status of my policy
+  user_2,Let me just check that for you [pause] Ah yes it says here that your policy is currently expired
+  user_1,Expired What do you mean It was supposed to be active till next year
+  user_2,I apologize for the inconvenience Rahul It seems there was an issue with the payment processing [background noise: dog barks] 
+  user_1,But I have been paying my premiums on time
+  user_2,I understand that Rahul Let me see what I can do to assist you [hold music starts playing]
+  user_1,[hold music continues for 2 minutes] Hello Are you still there
+  user_2,Yes Rahul I apologize for the hold I'm going to go ahead and escalate this issue to our payments team to look into this further

@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  3421fbee-3423-470e-a3fc-799eaf739c96,Vihaan Patel,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Anjali I'm calling about my health policy I think we discussed it last time and you were going to guide me through the reinstatement process
+  user_2,Ah yes Vihaan good morning I've got your file right here Let me just pull up the details [pause] Okay so to reinstate your policy we'll need to get a few things from you
+  user_1,Okay that sounds good What do I need to do
+  user_2,Well first we'll need a payment for the outstanding premium and then we'll need you to sign a reinstatement form which I can email to you [typing] I'm sending you the form now
+  user_2,Also Vihaan just to confirm your policy will be reinstated from the date we receive the payment and the signed form so you'll be covered again from that point onwards

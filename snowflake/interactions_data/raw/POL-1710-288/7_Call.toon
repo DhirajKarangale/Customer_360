@@ -1,0 +1,21 @@
+call_id: REC-INS-002C
+start_timestamp: 26/09/2026 T:10:30:00
+end_timestamp: 26/09/2026 T:10:52:00
+participants[2]{id,name,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Suhana Joshi,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,insurance agent
+messages[14]{user,text}:
+  user_1,Hi Ravi good morning I hope you're doing well
+  user_2,Good morning Suhana Yeah I'm doing great thanks How about you
+  user_1,I'm good thanks Just wanted to follow up on my life policy with DCoders
+  user_2,Ah yeah I remember we've been working on that Let me just check the status real quick [typing]
+  user_1,Okay sounds good
+  user_2,[hold music plays for 2 minutes]
+  user_2,Sorry about the hold Suhana I'm back So it looks like your policy is still active
+  user_1,That's great news Thanks for letting me know
+  user_1,[dog barks in the background] Oh sorry about that my dog is being a bit loud today
+  user_2,[laughs] No worries at all I have a dog too What's your dog's name
+  user_1,Her name is Luna She's a golden retriever
+  user_2,Aww that's a great name I'm sure she's a sweetheart [background noise of papers shuffling]
+  user_2,So I just want to confirm a few details with you Can you please confirm your policy number
+  user_1,It's LIF-001234

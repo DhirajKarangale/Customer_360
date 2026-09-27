@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d7,Saanvi Pillai,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:42:00,"hey anjali just wanted to confirm if my policy is cancelled? i got the email but wanted to double check",
+  user_2,26/09/2024 T14:42:15,"Hi Saanvi! Yes, your policy has been successfully cancelled. I've sent you a confirmation letter via email. You should have received it by now.",
+  user_1,26/09/2024 T14:42:30,"yeah i got it thanks so much for your help anjali! is there anything else i need to do?",
+  user_2,26/09/2024 T14:42:50,"You're welcome, Saanvi! No, that's all. Your policy is now officially cancelled. If you have any other questions or need assistance in the future, feel free to reach out.",
+  user_1,26/09/2024 T14:43:05,"great thanks again anjali have a great day!"

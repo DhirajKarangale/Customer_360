@@ -1,0 +1,10 @@
+chat_id: 9f8a2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Pranav Mishra,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Neha Kapoor,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey my policy got cancelled i just got the email. can u help me reinstate it?",
+  user_2,26/09/2024 T14:50:30,"Hi Pranav, sorry to hear that your policy got cancelled. Can you please confirm your policy number so I can look into this further?",
+  user_1,26/09/2024 T14:51:00,"its SH-123456. i was suppost to make a payment but i had some *unforseen* circumstances",
+  user_2,26/09/2024 T14:51:45,"I've checked on your policy, Pranav. Unfortunately, the cancellation is final due to non-payment. However, I can guide you through the process of applying for a new policy if you'd like.",
+  user_1,26/09/2024 T14:52:20,"thats really bad news. can u at least give me a discount on the new policy since i was a previous customer?"

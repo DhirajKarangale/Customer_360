@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4f3a7028-a699-4de4-b932-41271ff311d6,Vedant Thakur,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Ramesh I hope you're doing well I wanted to follow up on the renewal quote you sent me for my home policy
+  user_2,Ah yeah Vedant good morning I'm doing great thanks for calling back How can I assist you with the quote
+  user_1,Yeah I just wanted to confirm the premium amount and the deadline to renew my policy HP-001234
+  user_2,[typing] Okay let me just check that for you [pause] Alright I've got it here The premium amount is 850 dollars and the deadline to renew is actually today
+  user_1,Today That's a bit sooner than I expected [sighs] Okay what happens if I don't renew it today

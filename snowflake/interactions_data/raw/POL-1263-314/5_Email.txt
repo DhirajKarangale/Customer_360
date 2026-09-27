@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Health Policy Update - DCoders
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Vivaan Gupta,vivaan.gupta@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,ravi.menon@securefuturegroup.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2024 T:10:06:40,"Dear Vivaan,\n\nI hope this email finds you well. I am writing to follow up on the status of your health policy with DCoders. As per our previous conversation, I had informed you that the policy was active. However, I noticed that the system still shows it as 'Pending'. I would like to request you to confirm if you have received any updates or notifications from our end regarding the policy status.\n\nPlease let me know if there's anything else I can assist you with.\n\nBest regards,\nRavi Menon",
+  user_1,user_2,,28/09/2024 T:10:14:10,"Hi Ravi,\n\nThanks for reaching out. I haven't received any updates, but I did receive a notification that the policy was active. I'm a bit confused about the status. Could you please look into this and clarify the current status of my policy?\n\nPolicy Number: HP-123456\n\nThanks,\nVivaan Gupta"

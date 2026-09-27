@@ -1,0 +1,9 @@
+chat_id: 9f8a5c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d7,Samar Ghosh,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anita Sharma,insurance agent
+messages[4]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey anita, just wanted to check on the status of my life policy? got ur email but still havent recieved the confirmation email with policy details",
+  user_2,26/09/2024 T14:50:30,"Hi Samar, sorry about the delay. I've checked on the status and it's still in the activation process. You should receive the confirmation email with policy details by end of day today.",
+  user_1,26/09/2024 T14:51:00,"thx anita. just to confirm, the policy will be active by today right? and will i get a call from ur team once its active?",
+  user_2,26/09/2024 T14:51:45,"Yes, that's correct Samar. The policy will be active by today and you'll receive a confirmation email with all the details. You won't receive a call from our team, but if you have any questions or concerns, feel free to reach out to me directly."

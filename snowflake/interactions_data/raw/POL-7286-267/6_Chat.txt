@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Aaradhya Verma,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Neha Kapoor,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T15:10:00,"hey neha, just wanted to confirm if i can still renew my policy? its been expired for a few days now",
+  user_2,26/09/2024 T15:10:30,"Hi Aaradhya, yes you can still renew it. I can guide you through the process. However, please note that there might be a small late fee",
+  user_1,26/09/2024 T15:11:00,"ok thats fine. how much is the late fee? and can u also tell me again about the new mental health feature?",
+  user_2,26/09/2024 T15:11:45,"The late fee is 2% of the premium amount. And yes, the new feature includes access to counseling sessions and mental wellness programs. It's a great addition to our policy",
+  user_1,26/09/2024 T15:12:10,"thats great! i think i'm ready to renew. can u send me the link to pay the premium online?"

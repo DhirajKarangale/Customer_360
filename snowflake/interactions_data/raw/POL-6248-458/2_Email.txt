@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Health Policy Expiration - DCoders
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Reyansh Tiwari,reyansh.tiwari@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,ramesh.tiwari@safeshieldagency.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,27/09/2024 T:10:05:00,"Hi Ramesh,\n\nI just spoke with you regarding my health policy with DCoders. You mentioned it had expired on the 10th of this month. I'm shocked as I didn't receive any renewal reminders. Can you please look into this and let me know the next steps to reinstate or renew my policy?\n\nPolicy Number: HP-123456\n\nThanks,\nReyansh",
+  user_2,user_1,,27/09/2024 T:10:20:00,"Dear Reyansh,\n\nThank you for your email. I apologize for the inconvenience caused by the lack of renewal reminders. I've checked on your policy, and it indeed expired on the 10th due to non-payment of premiums. To reinstate your policy, you'll need to pay the outstanding premium amount and a small reinstatement fee. I've attached a detailed invoice for your reference. Please let me know if you have any questions or concerns.\n\nBest regards,\nRamesh Tiwari",https://storage.safeshieldagency.com/docs/Invoice_HP123456_2026.pdf

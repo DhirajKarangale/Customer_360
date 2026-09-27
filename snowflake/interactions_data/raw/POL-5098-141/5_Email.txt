@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Health Policy Renewal - SH-123456
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Kiara Sen,kiara.sen@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,vikram.p@omniinsurancegroup.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,30/09/2024 T:10:45:00,"Dear Kiara,\n\nI hope this email finds you well. I am writing to follow up on our previous conversation regarding the status of your health policy renewal. I apologize again for the technical issue that caused the delay in updating your policy status. I am pleased to inform you that the issue has been resolved, and your policy has been successfully renewed. Your new policy period is from 15th September 2024 to 14th September 2025.\n\nPlease find attached a copy of your updated policy document for your records.\n\nIf you have any further questions or concerns, please do not hesitate to reach out to me.\n\nBest regards,\nVikram Patel",https://storage.omniinsurancegroup.com/docs/Policy_SH123456_2024.pdf
+  user_1,user_2,,30/09/2024 T:11:10:00,"Hi Vikram,\n\nThank you so much for your email and for resolving the issue with my policy renewal. I appreciate your efforts in getting everything sorted out. I have received the updated policy document and will review it carefully.\n\nThanks again for your help and assistance throughout this process.\n\nBest regards,\nKiara Sen"

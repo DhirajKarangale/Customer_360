@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Shaurya Joshi,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T15:10:00,"hey neha, i need an update on my health policy. is it possible to get it reinstated or should i go for the new one?",
+  user_2,26/09/2024 T15:10:30,"Hi Shaurya, I've checked on your policy. You can either reinstate the old one or upgrade to the new one with dental and vision coverage. The new one has a 10% higher premium, but I can offer you a one-time 5% discount if you decide within the next 48 hours.",
+  user_1,26/09/2024 T15:11:15,"thats great, thanks for the offer. can u pls tell me more about the dental and vision coverage? whats the *waiting* period for major dental procedures?",
+  user_2,26/09/2024 T15:12:00,"The waiting period for major dental procedures is 6 months. I've already sent you the brochure via email, but I can also share it with you here if you'd like.",
+  user_1,26/09/2024 T15:12:45,"no thats ok, i'll check the email. so if i decide to upgrade, when can i expect the policy to be active?",

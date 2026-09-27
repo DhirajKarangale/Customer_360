@@ -1,0 +1,14 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Ananya Nair,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,insurance agent
+messages[7]{user,text}:
+  user_2,Hi Ananya good afternoon Can you hear me
+  user_1,Yeah I can hear you Good afternoon
+  user_2,Great thanks for calling DCoders today My name is Ramesh and I'll be assisting you with your health policy How can I help you today
+  user_1,Hi Ramesh I'm looking to purchase a health policy for myself and my family Can you guide me through the process
+  user_2,Absolutely Ananya We have various plans that cater to different needs and budgets Can you tell me a little bit about your family and what you're looking for in a health policy
+  user_1,Okay We're a family of three my husband myself and our 7-year-old son We're looking for a policy that covers hospitalization and critical illnesses
+  user_2,Alright that sounds good We have a few plans that might suit your needs Let me just check on some details [typing] Ah yes We have a plan that covers hospitalization critical illnesses and also provides a personal accident cover Would you like me to explain the details

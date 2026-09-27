@@ -1,0 +1,10 @@
+chat_id: 9f8a5c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d7,Krishna Das,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:42:00,"hey anjali whats the status of my life policy LP-001234?",
+  user_2,26/09/2024 T14:42:15,"Hi Krishna, I've located your policy. It's still in pending status. We need to finalize a few more details to activate it.",
+  user_1,26/09/2024 T14:43:00,"ok whats the next step? do i need to send any docs?",
+  user_2,26/09/2024 T14:43:20,"Yes, please. We need a proof of income and a medical certificate. You can upload them to our portal or email them to me.",
+  user_1,26/09/2024 T14:44:00,"ok got it. can u send me the link to the portal? and whats ur email id?"

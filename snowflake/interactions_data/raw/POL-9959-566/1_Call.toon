@@ -1,0 +1,14 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Vedant Thakur,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,insurance agent
+messages[7]{user,text}:
+  user_2,Hi Vedant good afternoon Can you hear me
+  user_1,Yeah I can hear you Good afternoon
+  user_2,Thanks for choosing DCoders I'm Anjali from First Guard Brokers How can I assist you today
+  user_1,I'm looking to purchase a life insurance policy Can you guide me through the process
+  user_2,Absolutely We have various plans to choose from Can you tell me a little bit about yourself and what you're looking for in a policy
+  user_1,Okay I'm 35 years old married with two kids I'm looking for a policy that will provide financial security for my family in case something happens to me
+  user_2,That sounds great I think our term life insurance plan would be a good fit for you I'll just need to confirm a few details [typing]

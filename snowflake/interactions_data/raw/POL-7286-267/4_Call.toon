@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Aaradhya Verma,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Neha Kapoor,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Neha I hope you're doing well I'm calling about my health policy with DCoders
+  user_2,Ah Aaradhya good morning Yeah I'm doing great thanks How can I assist you with your policy today
+  user_1,So I was going through the renewal form you sent and I had a few questions about the premium and coverage
+  user_2,Okay sure thing Let me just pull up your policy details real quick [typing] Ah yes I see you're referring to the 10% premium increase and the new mental health support feature
+  user_1,Exactly And I was wondering if there's any way to get a discount on the premium I've been a loyal customer for a few years now

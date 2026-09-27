@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Ananya Nair,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Sunita Agarwal,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey sunita i got ur email abt the policy reinstatement. how long do i hav to pay the premium and the fee?",
+  user_2,26/09/2024 T14:50:30,"Hi Ananya, you have 30 days from the date of expiry to pay the outstanding premium and the reinstatement fee to get your policy active again.",
+  user_1,26/09/2024 T14:51:00,"thats good to know. can u pls tell me the total amount i need to pay? i dont hav the email with me rn",
+  user_2,26/09/2024 T14:51:20,"The total amount due is ₹15,500. This includes the outstanding premium of ₹14,000 and a reinstatement fee of ₹1,500.",
+  user_2,26/09/2024 T14:51:40,"I can send you the invoice again if you'd like. Would you like me to do that?"

@@ -1,0 +1,10 @@
+chat_id: 9f8a5c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Pranav Mishra,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Ramesh Tiwari,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey ramesh, just wanted to check on the status of my home policy (HP-001234). still says pending",
+  user_2,26/09/2024 T14:50:30,"hi pranav, sorry about the delay. i'm checking on it now. can you pls confirm your address?",
+  user_1,26/09/2024 T14:51:10,"yeah, its 123, green valley, near city hospital. u have all the docs, right?",
+  user_2,26/09/2024 T14:52:00,"yes, we do. just a min, let me update the system... okay, all set. your policy should be active now",
+  user_1,26/09/2024 T14:53:00,"awesome, thx ramesh! can u send me a confirmation email or something?"

@@ -1,0 +1,21 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:25:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Pranav Mishra,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,insurance agent
+messages[14]{user,text}:
+  user_1,Hi is this DCoders
+  user_2,Ah yes this is Ramesh from Safe Shield Agency representing DCoders How can I assist you today
+  user_1,I am Pranav Mishra I have a health policy with you guys and I am trying to understand the status of my policy
+  user_2,Okay Pranav can you please provide me with your policy number so I can look into this for you
+  user_1,It's HP-001234
+  user_2,Alright let me just check on that for you [typing] Ah yes I see that your policy HP-001234 is currently showing as expired
+  user_1,Expired What do you mean It was supposed to be active till the end of the year
+  user_2,I apologize for the inconvenience Pranav It seems that the payment for the renewal was not processed successfully [background noise: dog barks]
+  user_1,But I did make the payment I have the receipt right here
+  user_2,I apologize for the mistake Let me see what I can do to assist you further [hold music starts playing]
+  user_2,[hold music ends] Ah sorry about the wait Pranav I've checked on the payment and it seems that it was indeed made but there was an issue with the processing
+  user_1,So what does this mean for my policy
+  user_2,Well we can reinstate your policy but you will need to pay the premium for the current month as well
+  user_1,Okay that sounds good How do I go about doing that

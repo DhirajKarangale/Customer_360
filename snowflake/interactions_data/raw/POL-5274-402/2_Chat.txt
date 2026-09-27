@@ -1,0 +1,10 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d7,Kunal Mehta,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:42:00,"hey ramesh, i need to activate my auto policy. i just got a new car",
+  user_2,26/09/2024 T14:42:15,"Hi Kunal! Congrats on the new car! Can you pls confirm the make and model of the vehicle so i can update the policy details?",
+  user_1,26/09/2024 T14:43:00,"its a *toyota* toyata camry. sorry about the typo",
+  user_2,26/09/2024 T14:43:20,"No worries, Kunal! So, just to confirm, it's a Toyota Camry. I'll go ahead and update the policy. Do you have the Vehicle Identification Number (VIN) handy?",
+  user_1,26/09/2024 T14:44:00,"yeah, its 4T1BF1FK7HU123456"

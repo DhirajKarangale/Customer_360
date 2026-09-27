@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c98
+subject: Re: Health Policy Update - Expiration and New Policy
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Kavya Iyer,kavya.iyer@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Karan Joshi,karan.joshi@safestepinsurance.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,30/09/2024 T:10:45:00,"Dear Kavya,\n\nI hope this email finds you well. I am writing to confirm that your old health policy has officially expired as of today. As per our previous discussions, we have successfully processed your new policy, and you should have received the details by now. If you have any questions or concerns, please do not hesitate to reach out.\n\nBest regards,\nKaran Joshi",
+  user_1,user_2,,30/09/2024 T:11:01:15,"Hi Karan,\n\nThank you for your email and for all your help throughout this process. I have received the new policy details and everything looks good. I appreciate your assistance in getting my new policy issued promptly.\n\nBest regards,\nKavya Iyer"

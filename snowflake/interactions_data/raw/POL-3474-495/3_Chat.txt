@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d7,Rohan Ahuja,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Sunita Agarwal,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T15:10:00,"hey sunita, i got ur email abt reinstating my health policy. whats the next step?",
+  user_2,26/09/2024 T15:10:30,"Hi Rohan, thanks for getting back. To reinstate your policy, you'll need to pay the outstanding premium and a small reinstatement fee. I've attached the payment link to this chat.",
+  user_1,26/09/2024 T15:11:00,"ok, how much is the total amount i need to pay? and whats the reinstatement fee?",
+  user_2,26/09/2024 T15:11:20,"The total amount due is ₹25,000, which includes the outstanding premium of ₹23,000 and a reinstatement fee of ₹2,000. Here is the payment link: https://payment.dcoders.com/reinstate-policy",
+  user_1,26/09/2024 T15:12:00,"ok, i'll make the payment now. will my policy be active immediately after payment?"

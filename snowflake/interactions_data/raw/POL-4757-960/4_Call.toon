@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Samar Ghosh,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Neha I hope you're doing well I wanted to follow up on our previous conversation about my health policy
+  user_2,Ah Samar good morning Yeah I remember we discussed the renewal options and the premium increase
+  user_1,Exactly I was thinking about it and I'm still not sure if I want to renew with the new premium I mean the 5% discount you offered is helpful but it's still a bit steep for me
+  user_2,I completely understand Samar Let me see what else I can do for you [pause] Ah yes I can offer you an additional 2% discount but that's the maximum I can provide
+  user_2,However I would like to remind you that your policy has already expired and if you don't renew it you'll lose your coverage [sighs]

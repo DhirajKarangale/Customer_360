@@ -1,0 +1,12 @@
+call_id: REC-INS-002C
+start_timestamp: 30/09/2026 T:11:05:00
+end_timestamp: 30/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4f3a7028-a699-4de4-b932-41271ff311d6,Reyansh Tiwari,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Ramesh I just made the payment for my health policy online [00:05]
+  user_2,Ah great to hear that Reyansh Can you please confirm the transaction ID so I can update the records on my end [00:10]
+  user_1,Yeah it's TRX123456 [00:15]
+  user_2,Alright thank you I've updated the records Your policy should be reinstated now [00:25]
+  user_1,Great thanks a lot Ramesh I really appreciate your help [00:35]

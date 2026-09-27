@@ -1,0 +1,12 @@
+call_id: REC-INS-006C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4f3a7028-a699-4de4-b932-41271ff311d6,Sneha Roy,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[5]{user,text}:
+  user_1,Hi is this DCoders insurance
+  user_2,Yes this is DCoders How can I assist you today
+  user_1,Hi Vikram I just wanted to confirm that my life policy LP-001234 is cancelled
+  user_2,Ah yes Sneha I can confirm that your policy LP-001234 was cancelled effective immediately as per our previous conversation [pause] Would you like me to check on the status of your refund
+  user_1,No that's alright thank you Vikram I just wanted to confirm the cancellation [sighs] I appreciate your help

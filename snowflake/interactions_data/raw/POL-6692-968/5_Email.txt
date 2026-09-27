@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Health Policy HP-001234 - Expiration and Renewal
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Vihaan Patel,vihaan.patel@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,ravi.menon@securefuturegroup.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,28/09/2024 T:11:04:20,"Hi Ravi,\n\nI hope this email finds you well. I am writing to follow up on our previous conversations regarding my health policy HP-001234. As per our last call, I was expecting an update on the status of my policy after making the payment. However, I have yet to receive any confirmation. Could you please look into this and let me know the current status of my policy?\n\nThanks,\nVihaan",
+  user_2,user_1,,28/09/2024 T:11:22:10,"Dear Vihaan,\n\nThank you for your email. I apologize for the delay in updating you on the status of your policy. I have checked on the status, and I am pleased to inform you that the issue has been resolved, and your policy is now active. You should receive a confirmation email shortly. Please find attached a copy of your updated policy document for your records.\n\nBest regards,\nRavi Menon",https://storage.securefuturegroup.com/docs/Policy_HP001234_2026.pdf

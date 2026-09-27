@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 30/09/2023 T:14:10:00
+end_timestamp: 30/09/2023 T:14:14:00
+participants[2]{id,name,role}:
+  8f4a5b32-3423-470e-a3fc-799eaf739c96,Ananya Nair,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Singh,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Vikram I hope you're doing well I just wanted to confirm the payment for my health policy reinstatement
+  user_2,Ah yeah Ananya good afternoon I've got your details right here Let me just check on the status [pause] Okay so the payment has been processed successfully
+  user_1,That's great news thank you so much Vikram How long will it take for the policy to be active again
+  user_2,As I mentioned earlier it usually takes 3 to 5 working days But since you opted for expedited processing it should be active by tomorrow [sighs] I'll send you a confirmation email once it's done
+  user_1,Alright sounds good thank you so much for your help Vikram I really appreciate it

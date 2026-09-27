@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c98
+subject: Re: Health Policy HP-001234 Status Update
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Vihaan Patel,vihaan.patel@mail.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,ravi.menon@securefuturegroup.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,30/09/2024 T:11:04:20,"Hi Ravi,\n\nI hope this email finds you well. I am writing to follow up on the status of my health policy HP-001234. As per our previous conversation, I had made the payment, but the policy status is still showing as 'Expired' in the system. Could you please look into this matter urgently and update me on the current status?\n\nThanks,\nVihaan",
+  user_2,user_1,,30/09/2024 T:11:16:50,"Dear Vihaan,\n\nThank you for your email. I apologize for the inconvenience caused due to the delay in updating the policy status. I have escalated the issue to our admin team, and they will update the status to 'Active' by the end of the day. However, please note that the policy will be updated to 'Expired' in the system as per our company's policy, as the payment was made after the due date. I will send you a confirmation email once the update is done.\n\nBest regards,\nRavi Menon"

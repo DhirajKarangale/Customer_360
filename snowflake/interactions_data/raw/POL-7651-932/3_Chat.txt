@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d7,Shaurya Joshi,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey neha, got ur email with the policy comparison. can u explain the diff btw the old and new policy in simple terms?",
+  user_2,26/09/2024 T14:50:30,"Hi Shaurya! Yeah, sure. The main difference is the new policy includes dental and vision coverage, which your old policy doesn't have. However, the premium is 15% higher.",
+  user_1,26/09/2024 T14:51:15,"thats a pretty big jump. is there any way to negotiate the premium?",
+  user_2,26/09/2024 T14:52:00,"I can try to see what we can do, but I gotta warn you, the 15% is already a discounted rate. Let me check with my team real quick.",
+  user_2,26/09/2024 T14:55:00,"Okay, I just checked and we can offer you a one-time 5% discount on the new premium if you decide to upgrade within the next 48 hours."

@@ -1,0 +1,10 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d7,Sai Kumar,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Singh,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:42:00,"hey Vikram, i need to know the status of my home policy",
+  user_2,26/09/2024 T14:42:15,"Hi Sai, I've checked on the system. Your home policy is currently *in review*. Can you please confirm your address to ensure I'm looking at the correct details?",
+  user_1,26/09/2024 T14:42:30,"yeah its 1456 oakwood drive",
+  user_2,26/09/2024 T14:42:50,"Great, thanks for confirming! I've located your policy. It's currently pending activation. Would you like me to guide you through the next steps to get it activated?",
+  user_1,26/09/2024 T14:43:10,"yeah pls go ahead"

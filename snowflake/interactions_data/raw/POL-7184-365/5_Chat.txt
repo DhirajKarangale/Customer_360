@@ -1,0 +1,9 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Kavya Iyer,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Anita Sharma,insurance agent
+messages[4]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey anita just wanted to confirm if my policy is active now?",
+  user_2,26/09/2024 T14:50:30,"Hi Kavya! Yes, your policy is active now. We've sent a confirmation email to you. You should receive it shortly.",
+  user_1,26/09/2024 T14:51:00,"thx anita *thanks* i'll check my email. can u pls confirm my policy number again?",
+  user_2,26/09/2024 T14:51:20,"Your policy number is LP-009876. You can also find it in the confirmation email we sent."

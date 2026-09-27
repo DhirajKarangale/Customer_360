@@ -1,0 +1,14 @@
+call_id: REC-DCD-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f3a7028-a699-4de4-b932-41271ff311d6,Meera Chauhan,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,insurance agent
+messages[7]{user,text}:
+  user_2,Hi Meera good afternoon Can you hear me
+  user_1,Yeah I can hear you Good afternoon
+  user_2,This is Neha from Shield Life Services I'm calling about your auto policy with DCoders How can I assist you today
+  user_1,Hi Neha I just wanted to confirm the status of my policy I haven't received any updates yet
+  user_2,Let me check on that for you [typing] Can you please confirm your policy number for me
+  user_1,It's AP-001234
+  user_2,Thank you Meera Your policy is currently in the activation process and should be active by the end of the day You will receive a confirmation email once it's active Is there anything else I can help you with

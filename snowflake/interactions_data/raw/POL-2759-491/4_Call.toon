@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Meera Chauhan,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Ravi Menon,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Ravi I hope you're doing well I just wanted to follow up on my life policy LP-001234
+  user_2,Ah yeah Meera good morning I've got you on my screen right now Let me just check the status real quick [pause] Okay yeah it looks like you've completed the digital signature and we've received all the necessary documents
+  user_1,Great that's a relief What's the next step then
+  user_2,Well we're just waiting for our underwriting team to review everything and then we'll activate your policy That should happen by the end of the day today or tomorrow at the latest
+  user_1,Alright sounds good Thanks for the update Ravi

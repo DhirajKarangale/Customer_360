@@ -1,0 +1,23 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:14:05:00
+end_timestamp: 28/09/2026 T:14:25:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Neha Chauhan,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Karan Joshi,insurance agent
+messages[14]{user,text}:
+  user_1,Hi, I'm calling about my health policy with DCoders. I think it's expired.
+  user_2,Ah, hi Neha. Yeah, I can check on that for you. Can you please confirm your policy number?
+  user_1,Umm, let me check... Ah, yes. It's HP-001234.
+  user_2,Okay, thank you. [typing] Ah, yes. I see that your policy did expire on the 10th of this month.
+  user_1,Oh no. I didn't realize that. What are my options for renewal?
+  user_2,Well, we can definitely discuss renewal options. However, I need to let you know that there's been a 5% premium increase due to added benefits.
+  user_1,Added benefits? What kind of benefits?
+  user_2,[sighs] Let me see... [pause] Ah, yes. We've added coverage for mental health services and increased the limit for outpatient consultations.
+  user_1,That sounds good, I guess. But I'm not sure about the premium increase.
+  user_2,I completely understand. [background noise: dog barks] Sorry about that. As I was saying, the premium increase is due to the added benefits. However, we can discuss possible discounts or alternative plans that might suit your needs better.
+  user_1,Okay. That sounds good. Can you walk me through the details again?
+  user_2,Of course. [hold music plays for 2 minutes] Sorry about the hold, Neha. As I was saying, the new premium would be $150 per month, and you'd get the added benefits I mentioned earlier.
+  user_1,Okay, I think I understand. What's the next step to renew my policy?
+  user_2,Great! I just need to send you a renewal form, and you can sign and return it to us. We'll take care of the rest.
+  user_1,Okay, sounds good. Thank you, Karan.
+  user_2,You're welcome, Neha. We'll get your policy renewed as soon as possible.

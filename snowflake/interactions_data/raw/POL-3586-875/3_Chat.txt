@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Kavya Iyer,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey suresh, did u recv my email with the docs for policy renewal?",
+  user_2,26/09/2024 T14:50:30,"yes kavya, i did. thanks for sending those over. just need to verify a few things. can u pls confirm ur current address?",
+  user_1,26/09/2024 T14:51:15,"yeah its still the same. 123, marina apt, mumbai. didnt change",
+  user_2,26/09/2024 T14:52:00,"ok, great. also, i noticed ur *ID* proof is not clear. can u pls re-upload a clearer *scan* of ur aadhar card?",
+  user_1,26/09/2024 T14:53:00,"oh sorry about that. let me try again. can u give me 2 mins?",

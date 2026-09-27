@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Health Policy Expiration - Urgent
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Vihaan Patel,vihaan.patel@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,ravi.menon@securefuturegroup.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,12/10/2026 T:11:04:20,"Hi Ravi,\n\nI just spoke with you regarding my health policy and you mentioned it had expired on the 10th of this month. I am shocked and concerned as I wasn't notified. Can you please look into this and let me know the next steps to reinstate or renew my policy?\n\nPolicy Number: HP-123456\n\nThanks,\nVihaan",
+  user_2,user_1,,12/10/2026 T:11:17:05,"Dear Vihaan,\n\nThank you for your email. I apologize for any inconvenience caused by the lack of notification. I have checked on the status, and indeed, your policy expired on the 10th due to non-payment of the premium. I am sending you a renewal quote and a payment link to settle the outstanding amount. Please find the details attached.\n\nBest regards,\nRavi Menon",https://storage.securefuturegroup.com/docs/HP123456_Renewal_Quote_2026.pdf

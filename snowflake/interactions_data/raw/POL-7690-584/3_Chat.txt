@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d7,Atharv Pandey,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:42:00,"hey anjali, got ur email with the form. whats the next step after i sign it?",
+  user_2,26/09/2024 T14:42:15,"Hi Atharv, thanks for getting back to me. After you sign and return the form, I'll review it and update your policy details in our system.",
+  user_1,26/09/2024 T14:42:30,"ok cool. and how long will that take? i need to know the status of my policy asap",
+  user_2,26/09/2024 T14:42:45,"It should take about 2-3 working days. I'll make sure to expedite the process. You'll receive an email once it's updated.",
+  user_1,26/09/2024 T14:43:00,"thx anjali. also, can u pls confirm if my policy will be active after the update or will it be pending?"

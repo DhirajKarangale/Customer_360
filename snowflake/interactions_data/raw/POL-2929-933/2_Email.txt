@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Auto Policy Expiration and Reinstatement
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Kriti Mahajan,kriti.mahajan@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anita Sharma,anita.sharma@trustwealthadvisors.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,27/09/2024 T:10:05:00,"Dear Kriti,\n\nI hope this email finds you well. I am following up on our call earlier today regarding your auto policy with DCoders. As discussed, I have reinstated your policy after confirming the missed payment and calculating the back premium of $150. Please find the updated policy documents attached for your reference.\n\nIf you have any further questions or concerns, please do not hesitate to reach out.\n\nBest regards,\nAnita Sharma",https://storage.trustwealthadvisors.com/docs/Policy_DC123456_2026.pdf
+  user_1,user_2,,27/09/2024 T:10:20:00,"Hi Anita,\n\nThanks for your prompt assistance in reinstating my auto policy. I have reviewed the updated documents and everything looks good. Please let me know if there's anything else I need to do from my end.\n\nThanks again for your help.\n\nBest regards,\nKriti Mahajan"

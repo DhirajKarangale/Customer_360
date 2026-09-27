@@ -1,0 +1,21 @@
+call_id: REC-INS-006C
+start_timestamp: 26/09/2026 T:14:05:00
+end_timestamp: 26/09/2026 T:14:25:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Atharv Pandey,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,insurance agent
+messages[14]{user,text}:
+  user_2,Hi Atharv this is Ravi from Secure Future Group I hope you're doing well
+  user_1,Yeah I'm doing alright thanks Ravi What's up
+  user_2,I just wanted to follow up on our previous conversation regarding your health policy with DCoders
+  user_1,Oh yeah I remember We had discussed the cancellation
+  user_2,Exactly So I just wanted to confirm that the policy has been successfully cancelled and it's now expired
+  user_1,Okay that sounds good I think I got the confirmation email too
+  user_2,Great I'm glad to hear that But I just want to double-check a few things to make sure everything is in order
+  user_1,Sure go ahead
+  user_2,[typing] Okay so I'm just checking the status real quick [pause] Yeah everything looks good
+  user_1,Okay cool
+  user_2,[hold music starts] Sorry about this Atharv I'm just going to check one more thing [hold music continues for 2 minutes]
+  user_2,[hold music ends] Sorry about the wait Atharv I just wanted to confirm that the cancellation was processed correctly
+  user_1,No worries Ravi I appreciate you double-checking
+  user_2,You're welcome Atharv It's all part of our service [dog barks in the background] Ah sorry about that my dog is just being a bit loud today

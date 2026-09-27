@@ -1,0 +1,12 @@
+call_id: REC-INS-006C
+start_timestamp: 15/10/2026 T:14:05:00
+end_timestamp: 15/10/2026 T:14:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Kriti Mahajan,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Karan Joshi,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Karan I hope you're doing well I just wanted to confirm that my health policy is now active again after the renewal
+  user_2,Ah yeah Kriti good afternoon I've checked on our system and yes your policy is active now [pause] You should be all set
+  user_1,That's great thank you so much for your help Karan I really appreciate it [sighs] I was worried I'd have a gap in coverage
+  user_2,No problem at all Kriti We're here to help [typing] I've also sent you a confirmation email with all the details just in case you need to refer to them
+  user_1,Okay sounds good thanks again Karan have a great day [call ends abruptly]

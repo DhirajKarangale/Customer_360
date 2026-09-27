@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 29/09/2026 T:11:05:00
+end_timestamp: 29/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4f3a7028-a699-4de4-b932-41271ff311d6,Suhana Joshi,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,insurance agent
+messages[5]{user,text}:
+  user_2,Hi Suhana hope you're doing well I'm calling to follow up on your life policy with DCoders
+  user_1,Yeah I'm doing great thanks for calling Ravi I was just about to check on the status of my policy
+  user_2,Ah perfect timing I just checked on it and I'm happy to inform you that your policy is now active
+  user_1,That's amazing news thank you so much Ravi I really appreciate all your help
+  user_2,You're welcome Suhana it was my pleasure to assist you If you have any other questions or concerns feel free to reach out to me anytime

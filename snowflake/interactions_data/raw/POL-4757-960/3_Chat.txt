@@ -1,0 +1,10 @@
+chat_id: 9f8a5c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d7,Samar Ghosh,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey neha, thx for the email. i'm still not sure about the premium increase. can u explain whats goin on?",
+  user_2,26/09/2024 T14:50:30,"Hi Samar, I'd be happy to help clarify. The premium increase is due to the addition of new benefits and a general rate hike across the board. Would you like me to break down the changes?",
+  user_1,26/09/2024 T14:51:15,"yeah thats wud be great. also is there any room for negotiation? i've been a loyal customer for 5 yrs",
+  user_2,26/09/2024 T14:52:00,"I can definitely look into that for you, Samar. Let me just check a few things. (1 sec)",
+  user_2,26/09/2024 T14:53:10,"Okay, I've checked and it looks like we can offer you a 5% discount on the new premium as a one-time courtesy for your loyalty. How does that sound?"

@@ -1,0 +1,8 @@
+mail_id: 4821qwe-3423-470e-a3fc-799eaf739c96
+subject: Re: Cancellation and Reissue of Health Policy
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Kavya Iyer,kavya.iyer@gmail.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Karan Joshi,karan.joshi@safestepinsurance.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,27/09/2026 T:10:30:00,"Dear Kavya,\n\nI hope this email finds you well. As discussed over the phone earlier today, I am writing to confirm the cancellation of your existing health policy (Policy Number: HP-001234) due to non-payment. Please find attached the cancellation confirmation document for your records.\n\nI will initiate the process for a new policy as per our discussion. You will receive a separate email with the new policy details once it is issued.\n\nIf you have any questions or concerns, please do not hesitate to reach out.\n\nBest regards,\nKaran Joshi",https://storage.safestepinsurance.com/docs/Policy_HP001234_Cancellation.pdf
+  user_1,user_2,,27/09/2026 T:10:45:00,"Hi Karan,\n\nThanks for your prompt response. I have received the cancellation confirmation document. Please let me know if there's any additional information required from my end to expedite the issuance of the new policy.\n\nLooking forward to hearing back from you soon.\n\nBest regards,\nKavya Iyer"

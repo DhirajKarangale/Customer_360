@@ -1,0 +1,21 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:25:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Ishaan Bose,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[14]{user,text}:
+  user_1,Hi is this Omni Insurance Group
+  user_2,Ah yes this is Vikram from Omni Insurance Group How can I assist you today
+  user_1,I'm calling about my life policy with DCoders I'm not sure if it's active or not
+  user_2,Okay let me check on that for you Can you please provide me with your policy number
+  user_1,Umm it's... [pause]... LP-001234
+  user_2,Alright thank you [typing]... I'm checking on the status of your policy
+  user_1,[background noise: dog barks] Oh sorry about that my dog is being a bit loud
+  user_2,[laughs] No worries at all [pause]... Okay I've located your policy It looks like it's currently in a pending status
+  user_1,Pending What does that mean
+  user_2,It means that we're still processing some information [hold music starts playing]... I'm going to check on the status of the processing [hold music continues for 2 minutes]
+  user_2,[hold music stops] I apologize for the hold Ishaan It looks like there was an issue with the payment processing
+  user_1,Oh no What kind of issue
+  user_2,It seems that the payment was declined [sighs]... But don't worry we can resolve this over the phone
+  user_1,Okay that sounds good

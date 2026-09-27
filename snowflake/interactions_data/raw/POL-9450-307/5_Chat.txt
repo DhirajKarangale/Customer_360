@@ -1,0 +1,9 @@
+chat_id: 9a8s7d6f-5e8a-49db-9cb2-d27a1f64f001
+participants[2]{id,name,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Pranav Mishra,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[4]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey vikram, just wanted to confirm if i got all the documents for my home insurance policy",
+  user_2,26/09/2024 T14:50:30,"Hi Pranav! Yeah, you should have received all the documents via email. Did you check your spam folder?",
+  user_1,26/09/2024 T14:51:10,"yeah i checked... cant find anythin*thing. can u pls re-send?",
+  user_2,26/09/2024 T14:51:45,"Sure thing, Pranav! I'll re-send the documents right away. Also, I'll make sure to update your policy status to 'Active' in our system."

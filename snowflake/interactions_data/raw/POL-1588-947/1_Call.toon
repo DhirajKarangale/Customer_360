@@ -1,0 +1,14 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Shaurya Joshi,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[7]{user,text}:
+  user_2,Hi Shaurya good afternoon Can you hear me
+  user_1,Yeah I can hear you Good afternoon
+  user_2,Thanks for calling DCoders today My name is Vikram and I'll be assisting you with your auto policy How can I help you today
+  user_1,Hi Vikram I'm calling about my auto policy I need to cancel it
+  user_2,I see Okay before we proceed can you please confirm your policy number for me
+  user_1,It's AP-001234
+  user_2,Alright Shaurya I've located your policy in our system I just need to confirm a few details with you before we proceed with the cancellation [pause] Can you please confirm your current address on file

@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 30/09/2026 T:11:15:00
+end_timestamp: 30/09/2026 T:11:20:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Akanksha Bhatt,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Anjali I'm calling about my auto policy I just made the payment for the outstanding premium and reinstatement fee
+  user_2,Ah great thank you for that Akanksha I just need to confirm a few details to update the status in our system Can you please confirm your policy number
+  user_1,It's AP-001234
+  user_2,Okay got it And can you confirm the payment method you used for the outstanding premium and reinstatement fee
+  user_2,Alright Akanksha your policy should be updated to active status shortly You will receive a confirmation email with the updated policy documents within the next 24 hours

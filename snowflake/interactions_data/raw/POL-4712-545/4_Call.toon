@@ -1,0 +1,21 @@
+call_id: REC-INS-004C
+start_timestamp: 26/09/2026 T:10:00:00
+end_timestamp: 26/09/2026 T:10:19:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Sai Kumar,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,insurance agent
+messages[14]{user,text}:
+  user_1,Hi is this Anjali from First Guard Brokers
+  user_2,Ah yes this is Anjali How can I assist you today Sai
+  user_1,I'm calling about my auto policy AP-001234 I got a notice it expired
+  user_2,I apologize for the inconvenience Sai Your policy did expire due to non-payment of the renewal fee
+  user_1,[sighs] I know I was meaning to pay but it slipped my mind Can I still reinstate it
+  user_2,Let me check on that for you [pause] [typing] Yes you can reinstate it but there will be a fee
+  user_1,How much is the fee
+  user_2,The reinstatement fee is $250 plus a $75 late fee and your new annual premium is $1,200
+  user_1,That's a bit more than I expected [pause] Can you hold for a minute
+  user_2,Of course Sai [hold music plays for 2 minutes]
+  user_1,Hi Anjali I'm back [dog barks in the background] Sorry about that
+  user_2,No worries Sai I'm here to help [background noise of keyboard typing] So shall I guide you through the payment process
+  user_1,Yes please that would be great
+  user_2,Great I just need to confirm a few details [pause] Can you please confirm your policy number and date of birth

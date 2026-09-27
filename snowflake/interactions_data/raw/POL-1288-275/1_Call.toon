@@ -1,0 +1,14 @@
+call_id: REC-TRV-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Vedant Thakur,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,insurance agent
+messages[7]{user,text}:
+  user_2,Hi Vedant good afternoon Can you hear me
+  user_1,Yeah I can hear you Good afternoon
+  user_2,Thanks for calling DCoders today I'm Ravi Menon from Secure Future Group How can I assist you with your travel policy
+  user_1,Hi Ravi I'm calling about my travel policy I think it's supposed to expire soon Can you check the status for me
+  user_2,Ah sure thing Vedant Let me just check on that for you [typing] Okay I've got it here Your policy number is TRV-001A and it's indeed set to expire today
+  user_1,Today That's what I thought What happens now
+  user_2,Well since it's expired you won't be covered for any new trips However if you'd like to renew or purchase a new policy I'd be happy to guide you through the process

@@ -1,0 +1,10 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Dhruv Kapoor,customer
+  3a6a7028-a699-4de4-b932-41271ff311d7,Vikram Patel,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey vikram, got ur email abt the renewal options. thx for the info. i was wondering if ther's a waiting period b4 the new policy kicks in?",
+  user_2,26/09/2024 T14:50:30,"Hi Dhruv, yeah there's a 30 day waiting period for the new policy to be effective. but dont worry, u'll be covered from the day u sign up. we'll backdate it to today's date",
+  user_1,26/09/2024 T14:51:00,"thats great news! so i can go ahead and sign up now? and will i get a new policy doc?",
+  user_2,26/09/2024 T14:51:20,"yes, pls go ahead and sign up. i'll send u the new policy doc via email once its processed. u can also download it from ur online account",
+  user_1,26/09/2024 T14:51:40,"awesome, thx vikram! i'll sign up now. btw, whats the status of my old policy in the system? is it still showing as expired?",

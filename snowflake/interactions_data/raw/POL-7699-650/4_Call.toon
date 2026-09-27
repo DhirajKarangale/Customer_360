@@ -1,0 +1,13 @@
+call_id: REC-INS-004C
+start_timestamp: 29/09/2024 T:14:00:00
+end_timestamp: 29/09/2024 T:14:04:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Atharv Pandey,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Neha Kapoor,insurance agent
+messages[6]{user,text}:
+  user_1,Hi Neha thanks for taking my call I was going through the document you sent over email and I think I'm interested in the family health plan we discussed earlier
+  user_2,Ah great to hear that Atharv I'm glad you found the document helpful What specifically about the family plan caught your attention
+  user_1,Well my family is growing and I want to make sure they're all covered I like that this plan has a lower deductible and covers maternity costs
+  user_2,That's wonderful news about your growing family Congratulations And yes this plan is very popular among our clients with families The lower deductible and maternity coverage are definitely big pluses
+  user_1,Okay so what's the next step to get this plan in place And will my old policy be completely cancelled
+  user_2,We'll need to finalize the paperwork and I'll guide you through the process Don't worry your old policy will be updated to reflect the changes and since it's already expired we'll just mark it as such in our system

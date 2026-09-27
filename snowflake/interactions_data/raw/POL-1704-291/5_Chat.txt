@@ -1,0 +1,9 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Meera Chauhan,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,insurance agent
+messages[4]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T15:10:00,"hey neha, just wanted to confirm if my auto policy is active now?",
+  user_2,26/09/2024 T15:10:30,"Hi Meera, yes it is! I'm glad to inform you that your auto policy with DCoders is now active. You should have received a confirmation email with the policy document.",
+  user_1,26/09/2024 T15:11:00,"thx neha! i did get the email. can u pls confirm my policy number again?",
+  user_2,26/09/2024 T15:11:20,"Your policy number is DC-001234. If you have any more questions or need further assistance, feel free to ask!"

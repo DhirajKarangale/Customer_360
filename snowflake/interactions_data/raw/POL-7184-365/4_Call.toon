@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Kavya Iyer,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Anita Sharma,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Anita, hope you're doing well. I just wanted to follow up on the life policy we discussed earlier.
+  user_2,Ah, hi Kavya. Yeah, I'm doing great, thanks. I've got the update on your policy right here. [pause] So, I see that you've returned the form and we've received it.
+  user_1,Great, thank you so much for letting me know. So, what's the current status of my policy?
+  user_2,Well, I'm happy to inform you that we've processed the form and your policy is now active. You should receive a confirmation email shortly. [typing]
+  user_1,That's amazing news, Anita. Thank you so much for your help throughout this process. I really appreciate it.

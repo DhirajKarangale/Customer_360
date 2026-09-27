@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Auto Policy Expiration and Reinstatement Options
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Ananya Nair,ananya.nair@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,vikram.p@omniinsurancegroup.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/03/2023 T:10:05:00,"Dear Ananya,\n\nI hope this email finds you well. As we discussed over the phone earlier, your auto policy with DCoders had expired on March 8th. I wanted to follow up on the options we discussed for reinstatement or setting up a new policy. Please find attached a personalized quote for a new policy that matches your previous coverage. If you're interested in reinstating your old policy, please let me know by return email, and I'll guide you through the process.\n\nBest regards,\nVikram Patel",https://storage.omniinsurancegroup.com/docs/Quote_AN_2023.pdf
+  user_1,user_2,,28/03/2023 T:10:20:00,"Hi Vikram,\n\nThanks for the follow-up and the quote. I'm interested in reinstating my old policy. Could you please let me know what I need to do next? I'd appreciate it if you could also confirm if there are any penalties for the lapse in coverage.\n\nThanks,\nAnanya"

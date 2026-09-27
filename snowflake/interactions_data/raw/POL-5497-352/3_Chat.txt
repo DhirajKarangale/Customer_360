@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d7,Sneha Roy,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey vikram just wanted to confirm if my policy is cancelled?"
+  user_2,26/09/2024 T14:50:15,"Hi Sneha! Yes, your life policy LP-001234 was cancelled effective immediately as per our previous conversation. You should receive a confirmation letter and refund within 7-10 business days."
+  user_1,26/09/2024 T14:50:30,"thx so much vikram u r a lifesaver!!"
+  user_2,26/09/2024 T14:50:45,"You're welcome, Sneha! It was my pleasure to assist you. If you have any other questions or need further assistance, feel free to ask."
+  user_1,26/09/2024 T14:51:00,"no thats all thx again bye"

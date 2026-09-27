@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Health Policy Expiration and New Options
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Nandini Rajput,nandini.r@mail.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d7,Anjali Desai,anjali.d@firstguardbrokers.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2024 T:11:04:20,"Dear Nandini,\n\nI hope this email finds you well. As discussed during our call yesterday, I wanted to follow up on the new health policy I presented to you. The policy offers additional benefits, including a higher sum insured and a wider network of hospitals. I have attached a detailed brochure for your review.\n\nPlease let me know if you have any questions or if you would like to proceed with the application.\n\nBest regards,\nAnjali Desai",https://storage.firstguardbrokers.com/docs/Health_Policy_Brochure_2026.pdf
+  user_1,user_2,,28/09/2024 T:11:21:10,"Hi Anjali,\n\nThanks for the follow-up email. I've reviewed the brochure and I'm interested in learning more about the policy. Could you please clarify the premium amount and the process for switching from my current expired policy?\n\nThanks,\nNandini"

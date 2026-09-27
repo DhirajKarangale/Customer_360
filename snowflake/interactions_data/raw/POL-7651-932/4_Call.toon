@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Shaurya Joshi,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Neha I'm calling about my health policy I think we last spoke about reinstating it or upgrading to a new one
+  user_2,Ah yes Shaurya Good morning I've got your file right here We discussed the new policy with dental and vision coverage and the premium increase
+  user_1,Right and you said you could try to negotiate the premium for me
+  user_2,That's correct I was able to secure a one-time 5% discount if you upgrade within the next 48 hours But I have to let you know that the policy will still be about 10% more than your old one
+  user_2,So what would you like to do Shaurya Would you like to reinstate your old policy or take the new one with the discount

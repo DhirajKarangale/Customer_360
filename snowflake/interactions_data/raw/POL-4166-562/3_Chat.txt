@@ -1,0 +1,10 @@
+chat_id: 9f8a5c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d7,Atharv Pandey,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey ravi, got ur email abt my health policy expiring in 2 days. thx for reminding me",
+  user_2,26/09/2024 T14:50:30,"Hi Atharv, yeah no problem at all. I wanted to make sure you're aware of the deadline. Have you thought about renewing or would you like me to cancel it?",
+  user_1,26/09/2024 T14:51:15,"actually i think i'll cancel it. can u pls go ahead w/ the cancellation process?",
+  user_2,26/09/2024 T14:52:00,"Alright Atharv, I've initiated the cancellation. You should receive a confirmation email shortly. Is there anything else I can assist you with?",
+  user_2,26/09/2024 T14:53:00,"Update: Your policy has been successfully cancelled and is now marked as 'Expired' in our system. You'll receive a formal email notification soon."

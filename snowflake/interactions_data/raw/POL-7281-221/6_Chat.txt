@@ -1,0 +1,9 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Diya Menon,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Karan Joshi,insurance agent
+messages[4]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey karan whats the status of my auto policy renewal? its been a while",
+  user_2,26/09/2024 T14:50:30,"Hi Diya, I apologize for the delay. Your policy (AP-001234) is still in 'Pending' status. I'm looking into it and will get back to you soon.",
+  user_1,26/09/2024 T14:51:00,"ok thats good to know. can u tell me whats causing the delay? is it somethin on my end?",
+  user_2,26/09/2024 T14:51:45,"It's not on your end, Diya. We're just experiencing a high volume of renewals this quarter. I'll escalate it and keep you updated. You'll receive a confirmation email once it's processed."

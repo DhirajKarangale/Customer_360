@@ -1,0 +1,12 @@
+call_id: REC-INS-002C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Aditi Mahajan,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Ramesh I hope you're doing well I just wanted to follow up on my health policy with DCoders
+  user_2,Ah Aditi good morning Yeah I've got your file right here Let me just check on the status [pause] Okay I see that we haven't received the payment yet
+  user_1,Yeah I know I'm really sorry about that I've been having some financial difficulties and I was wondering if it's possible to get an extension on the payment
+  user_2,I understand that Aditi but I have to inform you that the policy is set to expire today if we don't receive the payment [sighs] However I can offer you a one-time courtesy extension of 24 hours
+  user_1,That would be great thank you so much Ramesh I really appreciate it [relieved]

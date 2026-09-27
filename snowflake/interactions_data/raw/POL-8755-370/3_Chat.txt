@@ -1,0 +1,10 @@
+chat_id: 9f8a5c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Diya Menon,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey ravi, thx for the email. i'm still confused about the diff btw reinstating my policy and buying a new one. can u pls explain?",
+  user_2,26/09/2024 T14:50:30,"Hi Diya, no worries at all. Reinstating your policy means we'll reactivate your old policy with the same terms and conditions, but you'll have to pay the lapsed premium + a small reinstatement fee.",
+  user_1,26/09/2024 T14:51:15,"ok, got it. and what about buying a new policy? is it better than reinstating the old one?",
+  user_2,26/09/2024 T14:52:00,"Buying a new policy means you'll get a fresh policy with updated terms and conditions. You might get better coverage or a lower premium, but you'll have to go through the underwriting process again, and pre-existing conditions might be excluded.",
+  user_2,26/09/2024 T14:52:45,"I can give you a quick quote for both options if you'd like?"

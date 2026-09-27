@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 27/09/2026 T:11:05:00
+end_timestamp: 27/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Rohan Deshmukh,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Anita Sharma,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Anita I hope you're doing well I just wanted to follow up on the home policy we discussed earlier
+  user_2,Ah yeah Rohan good morning I've got all your details right here [pause] So you're interested in the comprehensive plan is that correct
+  user_1,That's right I think it's the best option for me considering the property value and the coverage
+  user_2,Okay great [typing] I'm just going to go ahead and process the application for you [pause] Can you please confirm your address one more time just to make sure everything is accurate
+  user_1,It's 1456 Oakwood Drive [sighs] I hope that's the last time I have to give that out

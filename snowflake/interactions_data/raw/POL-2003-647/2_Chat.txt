@@ -1,0 +1,10 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,insurance agent
+  08205bbe-3423-470e-a3fc-799eaf739c97,Krishna Das,customer
+messages[5]{user,timestamp,text,media_url}:
+  user_2,26/09/2024 T14:42:00,"hey krishna, thanks for reaching out to dcoders for your auto insurance needs. how can i assist you today?",
+  user_1,26/09/2024 T14:42:30,"hi ramesh, i just bought a new car and i need to insure it asap. can u pls help me with the process?",
+  user_2,26/09/2024 T14:43:15,"congrats on the new car! of course, i'd be happy to help. can you pls provide me with your vehicle's make, model, and year?",
+  user_1,26/09/2024 T14:44:00,"its a *toyata* toyota corolla 2022. and i also need to know how much it will cost me",
+  user_2,26/09/2024 T14:45:00,"got it, thanks for the info. i'll need to check some details. can you pls hold on for a minute?"

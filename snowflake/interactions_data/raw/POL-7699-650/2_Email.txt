@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Health Policy Expiration and Reinstatement Options
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Atharv Pandey,atharv.pandey@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,neha.kapoor@shieldlifeservices.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,02/03/2023 T:10:45:00,"Dear Atharv,\n\nI hope this email finds you well. As we discussed over the phone earlier, I wanted to follow up on your health policy with DCoders, which expired on 01/03/2023. I understand that you are interested in exploring reinstatement options. I have attached a document outlining the process and requirements for reinstatement. Please review it and let me know if you have any questions or concerns.\n\nAdditionally, I would like to schedule a call to discuss your current coverage needs and explore new policy options that might better suit your requirements. Would you be available for a call next Wednesday at 2 PM?\n\nBest regards,\nNeha Kapoor",https://storage.shieldlifeservices.com/docs/Reinstatement_Process.pdf
+  user_1,user_2,,02/03/2023 T:11:10:00,"Hi Neha,\n\nThanks for the email and the attachment. I appreciate your help in this matter. I will review the document and get back to you soon. Regarding the call, next Wednesday at 2 PM works for me. Please send me a calendar invite.\n\nThanks again,\nAtharv"

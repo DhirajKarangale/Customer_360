@@ -1,0 +1,10 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Aditi Mahajan,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey ramesh, i got ur email abt my health policy. can u pls clarify the exact amount i need to pay to avoid expiration? i think i made a partial payment last quarter",
+  user_2,26/09/2024 T14:50:30,"Hi Aditi, thanks for reaching out. Let me check on that for you. Can you pls confirm your policy number so I can look it up?",
+  user_1,26/09/2024 T14:51:10,"its HP-001234. and yeah i did make a partial payment of 15000 last quarter. did it get applied to my account?",
+  user_2,26/09/2024 T14:52:00,"Yes, I see that you made a partial payment of 15000. However, the total due amount is 30000. You still owe 15000 to avoid policy expiration. Would you like to make the payment now?",
+  user_2,26/09/2024 T14:53:00,"Also, please note that if we dont receive the payment within the next 48 hours, your policy will be expired and you wont be able to make any claims. I can assist you with the payment process if youd like."

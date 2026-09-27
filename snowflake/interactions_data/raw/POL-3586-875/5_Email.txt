@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Policy Renewal - DCoders Health Policy
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Kavya Iyer,kavya.iyer@gmail.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,suresh.d@securelifesolutions.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,28/09/2024 T:10:06:40,"Hi Suresh,\n\nI just wanted to confirm that my policy has been successfully renewed. I received the confirmation email, but I also wanted to personally thank you for your assistance throughout the process. Your help was greatly appreciated.\n\nBest regards,\nKavya",
+  user_2,user_1,,28/09/2024 T:10:14:10,"Dear Kavya,\n\nYou're welcome! I'm glad I could assist you in renewing your policy. I've checked on our end, and everything looks good. Your policy is now active, and you should receive your new policy documents shortly. If you have any further questions or concerns, please don't hesitate to reach out.\n\nBest regards,\nSuresh Deshmukh"

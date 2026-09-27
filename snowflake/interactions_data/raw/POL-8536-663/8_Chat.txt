@@ -1,0 +1,8 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Kunal Mehta,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anita Sharma,insurance agent
+messages[3]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey anita just wanted to confirm that my home policy is active now",
+  user_2,26/09/2024 T14:50:15,"Hi Kunal! Yes, your policy is active. I've sent you a confirmation email with the policy document. You should have received it by now.",
+  user_1,26/09/2024 T14:50:30,"ok cool thx anita i'll check my email *inbox* now"

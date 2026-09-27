@@ -1,0 +1,12 @@
+call_id: REC-INS-007C
+start_timestamp: 30/09/2026 T:14:05:00
+end_timestamp: 30/09/2026 T:14:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Vivaan Gupta,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Neha Kapoor,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Neha I'm calling about my travel policy with DCoders It's expired and I need to know what to do next
+  user_2,Ah Vivaan good afternoon I've checked on your policy and yes it has expired Let me see what options we have for you [pause] Okay I can offer you a new quote or we can discuss reinstating the old policy Which one would you prefer
+  user_1,Actually I think I'd like to go with the new quote You'd already sent me one via email but I had a few more questions about the trip cancellation coverage
+  user_2,Of course Vivaan Let me just pull up the quote real quick [typing] Okay I've got it here So you're wondering about trip cancellations due to medical emergencies
+  user_1,Exactly And I also wanted to confirm if my hypertension would affect the premium at all

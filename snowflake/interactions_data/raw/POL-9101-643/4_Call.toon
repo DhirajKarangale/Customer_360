@@ -1,0 +1,22 @@
+call_id: REC-INS-004C
+start_timestamp: 26/09/2026 T:14:05:00
+end_timestamp: 26/09/2026 T:14:25:00
+participants[2]{id,name,role}:
+  3421f7d8-4a6c-4f3e-8f6d-3a4e5b2c1d6,Samar Ghosh,customer
+  8a6a7028-a699-4de4-b932-41271ff311d6,Anita Sharma,insurance agent
+messages[14]{user,text}:
+  user_1,Hi is this DCoders insurance
+  user_2,Ah yes this is DCoders How can I assist you today
+  user_1,I'm Samar Ghosh and I'm calling about my life policy I haven't received any confirmation email yet
+  user_2,Okay let me check on that for you Can you please provide me with your policy number
+  user_1,Umm it's... [pause]... LIF-009823
+  user_2,Alright thank you [typing]... I'm checking on the status of your policy
+  user_1,[background noise: dog barks] Oh sorry about that my dog is being a bit loud
+  user_2,[laughs] No worries at all I have a dog too [pause]... Okay I've checked on your policy and it looks like it's still in the activation process
+  user_1,But I was told it would be active by the end of the day yesterday
+  user_2,I apologize for the delay [sighs]... Let me see what's causing the holdup [pause]... Ah I see the issue It looks like there was a technical glitch that's causing the delay
+  user_1,Okay... So what's the estimated time for it to be active now
+  user_2,We're working on resolving the issue as soon as possible I'd say within the next hour or so you should receive a confirmation email with your policy details
+  user_1,Alright that sounds good Thank you for your help Anita
+  user_2,You're welcome Samar I apologize again for the inconvenience and appreciate your patience [hold music starts playing]... I'm going to go ahead and escalate this issue to our technical team to ensure it gets resolved ASAP
+  user_1,[hold music continues for about 2 minutes]... Okay I'm back [hold music stops]... I just wanted to confirm that the issue has been escalated and you should receive an update shortly

@@ -1,0 +1,9 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f3a7028-a699-4de4-b932-41271ff311d6,Kiara Sen,cust6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey vikram, i got the renewal form thx! just wanted to confirm if i need to send it back by the 20th of this month?",
+  user_2,26/09/2024 T14:50:30,"Hi Kiara! Yeah, that's correct. We need to receive the completed form by the 20th to process the renewal smoothly.",
+  user_1,26/09/2024 T14:51:00,"ok cool, just 1 more thing - do i need to pay the premium upfront or can i do it later?",
+  user_2,26/09/2024 T14:51:20,"You can pay the premium along with the form submission, or we can also arrange for a payment plan if needed. Let me know what works best for you.",
+  user_1,26/09/2024 T14:52:00,"thx vikram, i think i'll pay upfront. can u pls confirm my policy num is SH-123456?"

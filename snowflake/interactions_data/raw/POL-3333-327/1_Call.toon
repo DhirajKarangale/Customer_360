@@ -1,0 +1,18 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Reyansh Tiwari,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[7]{user,text}:
+  user_2,Hi is this Reyansh Tiwari from DCoders
+  user_1,Yeah that's me
+  user_2,Hi Reyansh good afternoon My name is Suresh Deshmukh and I'm calling from Secure Life Solutions I'm your insurance agent for your auto policy
+  user_1,Hi Suresh
+  user_2,Reyansh I'm calling to inform you that your auto policy is up for renewal It's been a year since you purchased the policy
+  user_1,Oh okay I wasn't aware of that
+  user_2,Don't worry it's an automated process I just need to confirm a few details with you to renew the policy But I noticed that you haven't made any payments for the past two months
+  user_1,Yeah I've been meaning to get to that
+  user_2,I understand that unforeseen circumstances can arise However since you've missed two payments your policy has been cancelled and is now expired
+  user_1,What That's not what I wanted to hear
+  user_2,I apologize for the inconvenience Reyansh If you'd like to reinstate your policy we can discuss the options available to you

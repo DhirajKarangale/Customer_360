@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d7,Reyansh Tiwari,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey suresh, i got ur email abt the reinstatement process. i'm still not sure why my policy was cancelled in the first place *canceled*",
+  user_2,26/09/2024 T14:50:30,"Hi Reyansh, sorry again for the inconvenience. I understand your frustration. The policy was cancelled due to two missed payments. However, I'm happy to help you reinstate it. Can you please review the document I sent and let me know if you have any questions?",
+  user_1,26/09/2024 T14:51:15,"i did review it... but i dont see why i should pay the extra fee for reinstatement. can't u just waive it?",
+  user_2,26/09/2024 T14:52:00,"I understand your concern, Reyansh. Unfortunately, the reinstatement fee is a standard policy. However, I can offer you a payment plan to make it more manageable. Would you like me to explain the options?",
+  user_1,26/09/2024 T14:53:20,"yeah, that sounds good i guess. but what if i decide not to reinstate? what happens to my policy then?",

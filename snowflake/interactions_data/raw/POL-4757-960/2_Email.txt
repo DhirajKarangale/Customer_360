@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Health Policy Expiration and Renewal Options
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Samar Ghosh,samar.ghosh@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,neha.kapoor@shieldlifeservices.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2024 T:10:45:00,"Dear Samar,\n\nI hope this email finds you well. As we discussed over the phone earlier, I am following up on your health policy with DCoders, which has expired as of last month. I understand this may cause some inconvenience, and I'm here to help you explore your options for renewal or alternative plans that better suit your current needs.\n\nPlease find attached a detailed comparison of our available plans, including their coverage and premium rates. If you have any questions or would like to discuss further, please don't hesitate to reach out.\n\nBest regards,\nNeha Kapoor",https://storage.shieldlifeservices.com/docs/Health_Policy_Comparison_2026.pdf
+  user_1,user_2,,28/09/2024 T:11:10:00,"Hi Neha,\n\nThanks for your prompt follow-up and for sending over the policy comparison. I'm a bit concerned about the premium increase in the renewal option. Could you please explain the reasons behind this increase and if there's any room for negotiation?\n\nLooking forward to hearing back from you.\n\nBest,\nSamar Ghosh"

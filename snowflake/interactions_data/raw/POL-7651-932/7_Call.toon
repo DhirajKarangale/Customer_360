@@ -1,0 +1,12 @@
+call_id: REC-INS-007C
+start_timestamp: 30/09/2026 T:14:05:00
+end_timestamp: 30/09/2026 T:14:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Shaurya Joshi,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Neha I'm calling about my health policy I think it's expired
+  user_2,Ah yes Shaurya I've been meaning to reach out to you about that Your policy did expire last week I apologize for the oversight
+  user_1,Okay so what are my options I don't want to be without coverage
+  user_2,Well we can either reinstate your old policy or I can offer you an upgraded policy with additional benefits including dental and vision coverage
+  user_2,However I have to inform you that the policy has officially expired so we'll need to go through the process of reinstatement or purchasing a new policy

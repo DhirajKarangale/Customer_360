@@ -1,0 +1,22 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:25:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Atharv Pandey,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Anjali Desai,insurance agent
+messages[14]{user,text}:
+  user_2,Hi Atharv this is Anjali from First Guard Brokers I hope you're doing well
+  user_1,Yeah I'm doing great thanks Anjali How can I help you
+  user_2,I'm calling about your life policy with DCoders We need to update some details
+  user_1,Okay that sounds good I've been expecting this call
+  user_2,Great So can you please confirm your date of birth and address for me
+  user_1,Umm let me check my ID real quick [pause] Yeah it's 12th August 1990 and my address is 1456 Oakwood Drive
+  user_2,Got it thanks Atharv [typing] I'm just updating this in our system
+  user_1,So what's the status of my policy right now
+  user_2,It's currently pending We need to finalize the updates and then it'll be active
+  user_1,Okay that sounds good How long will it take
+  user_2,It should take about 2-3 working days [hold music starts] I'm going to put you on hold for just a minute while I check on something
+  user_1,[background noise: dog barks] [sighs] Okay
+  user_2,[hold music ends] Sorry about that Atharv I just needed to check on the processing time
+  user_1,No worries I'm still here
+  user_2,Great So I just confirmed that everything looks good on our end We'll send you an email once the policy is active

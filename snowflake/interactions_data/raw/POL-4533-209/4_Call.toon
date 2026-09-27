@@ -1,0 +1,11 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Kavya Iyer,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[4]{user,text}:
+  user_1,Hi Vikram I just wanted to confirm that my policy is active now
+  user_2,Ah yeah Kavya I can check that for you [pause] Can you please hold for just a sec
+  user_2,[sighs] Okay I've checked and yes your policy is now active The status has been updated in our system
+  user_1,Great thanks so much Vikram I really appreciate your help [ typing ]

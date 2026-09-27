@@ -1,0 +1,22 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:25:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Shaurya Joshi,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,insurance agent
+messages[14]{user,text}:
+  user_1,Hi is this DCoders
+  user_2,Ah yes this is Neha from Shield Life Services representing DCoders How can I assist you today
+  user_1,I am calling about my health policy I think it expired
+  user_2,I apologize for the inconvenience Can you please provide me with your policy number so I can look into this for you
+  user_1,It's... umm... SH-123456
+  user_2,Thank you Shaurya I'm checking on that [typing] Ah I see the issue here
+  user_1,What's the issue
+  user_2,It looks like your policy did expire last month I apologize for not sending you a reminder
+  user_1,Oh no I had no idea [sighs] What can I do now
+  user_2,We can definitely help you reinstate it or look into a new policy that suits your needs [hold music starts] Please hold for just a minute while I check on some options
+  user_1,[background noise: dog barks] Okay
+  user_2,[hold music ends] I apologize for the wait Shaurya I've checked on some options for you We can reinstate your old policy or I can offer you a new one with some additional benefits
+  user_1,That sounds good What are the additional benefits
+  user_2,[typing] Let me just pull up the details [pause] Ah yes we have a new policy that includes dental and vision coverage
+  user_1,That sounds great How much would it be

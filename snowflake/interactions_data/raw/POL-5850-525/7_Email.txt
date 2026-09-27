@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Auto Policy Update - Pending Status
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Roshni Yadav,roshni.yadav@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,suresh.d@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,30/09/2024 T:11:04:20,"Hi Suresh,\n\nI am writing to follow up on my auto policy, which is still showing as pending. I had sent the vehicle inspection report as requested. Could you please provide an update on the status?\n\nPolicy Number: DC-001234\n\nThanks,\nRoshni",
+  user_2,user_1,,30/09/2024 T:11:16:50,"Dear Roshni,\n\nThank you for your patience and for following up on your auto policy. I apologize for the delay. I have checked on the status, and I am pleased to inform you that the policy is now updated to 'Active' in our system. You should receive your policy documents via email shortly. If you have any further questions or concerns, please do not hesitate to reach out.\n\nBest regards,\nSuresh Deshmukh",

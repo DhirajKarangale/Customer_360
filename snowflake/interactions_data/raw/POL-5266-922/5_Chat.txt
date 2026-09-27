@@ -1,0 +1,9 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Nandini Rajput,customer
+  483ce1dc-44c1-41db-886f-539e46b7bdad,Vikram Patel,insurance agent
+messages[4]{user,timestamp,text,media_url}:
+  user_1,28/09/2024 T10:05:00,"hey vikram, just wanted to confirm if my policy is active now?",
+  user_2,28/09/2024 T10:05:30,"Hi Nandini, yes it is! I processed the renewal yesterday and it's all set. You should receive a confirmation email soon.",
+  user_1,28/09/2024 T10:06:15,"thats great news! can u pls check if the status is updated in the system as well?",
+  user_2,28/09/2024 T10:07:00,"Just checked, and yes, your policy status is now 'Active' in our system. All good!"

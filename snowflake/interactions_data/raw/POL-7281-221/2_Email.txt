@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Auto Policy Renewal Update
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Diya Menon,diya.menon@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d7,Karan Joshi,karan.joshi@safestepinsurance.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,27/09/2024 T:10:05:00,"Dear Diya,\n\nI hope this email finds you well. I am following up on our call earlier today regarding your auto policy renewal. As discussed, I have updated your policy information in our system. However, I need you to review and confirm the details before we proceed with the renewal process.\n\nPlease find attached a copy of your updated policy document for your review.\n\nIf everything looks correct, kindly reply to this email with a confirmation. If you have any questions or concerns, feel free to reach out to me directly.\n\nBest regards,\nKaran Joshi",https://storage.safestepinsurance.com/docs/Policy_Auto_2026.pdf
+  user_1,user_2,,27/09/2024 T:10:20:00,"Hi Karan,\n\nThanks for the update. I've reviewed the policy document, and everything looks good. Please go ahead with the renewal process.\n\nThanks,\nDiya"

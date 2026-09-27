@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2024 T:11:05:00
+end_timestamp: 28/09/2024 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Isha Agarwal,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Anita Sharma,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Anita I hope you're doing well I just wanted to confirm the renewal of my health policy with DCoders
+  user_2,Ah Isha good morning Yeah I'm doing great thanks for asking So you want to renew your health policy that expired on 1st March this year
+  user_1,Exactly I received your email and I'm interested in renewing it with the same coverage and the new premium amount we discussed earlier
+  user_2,Perfect I've checked on our system and everything looks good Your new premium is ₹25,500 per annum with the 5% discount for online renewal
+  user_2,Shall I go ahead and process the renewal for you Isha

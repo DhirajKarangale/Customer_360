@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:15:00
+end_timestamp: 28/09/2026 T:11:20:00
+participants[2]{id,name,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Nandini Rajput,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Singh,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Vikram I hope you're doing well I just wanted to confirm that my auto policy is active now
+  user_2,Ah yeah Nandini good morning Your policy is active now and the new expiry date is 26th September 2025
+  user_1,Great thanks for letting me know I also wanted to ask about the coverage for my new car I recently purchased a new vehicle
+  user_2,Okay Nandini can you please provide me with the vehicle details so I can check the coverage for you
+  user_1,Yeah sure it's a Honda Civic 2024 model [pause] Ah I think I have the details somewhere [pause] Ah yes the vehicle ID is HONDA-2024-001

@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d7,Kriti Mahajan,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey vikram, just wanted to follow up on the reinstatement form u sent me. how long will it take to process once u receive it?",
+  user_2,26/09/2024 T14:50:30,"Hi Kriti, thanks for reaching out. Once I receive the completed form, it should take about 3-5 business days to process. Did you have any questions about the form?",
+  user_1,26/09/2024 T14:51:15,"yeah, what's the deal with the reinstatement fee? u mentioned it in ur email but didnt specify the amount",
+  user_2,26/09/2024 T14:52:00,"The reinstatement fee is $25. I apologize for not including that in the email. It's a one-time fee to reactivate your policy.",
+  user_1,26/09/2024 T14:53:00,"ok thats fine. ill send the form back today. can u pls confirm once u receive it?"

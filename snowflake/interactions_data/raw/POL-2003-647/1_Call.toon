@@ -1,0 +1,14 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Krishna Das,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,insurance agent
+messages[7]{user,text}:
+  user_2,Hi Krishna good afternoon Can you hear me
+  user_1,Yeah I can hear you Good afternoon
+  user_2,Thanks for choosing DCoders for your insurance needs How can I assist you today
+  user_1,I am looking to purchase an auto insurance policy for my new car
+  user_2,Congratulations on the new car Can you please provide me with your vehicle details
+  user_2,[typing] Okay got it What is your preferred coverage start date
+  user_1,As soon as possible

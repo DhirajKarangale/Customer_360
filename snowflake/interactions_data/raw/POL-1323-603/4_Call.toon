@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 30/09/2026 T:14:05:00
+end_timestamp: 30/09/2026 T:14:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Sneha Roy,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Anita Sharma,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Anita I'm calling about my health policy HP-001234 I just wanted to confirm if it's been cancelled
+  user_2,Ah yes Sneha Roy [00:10] I've checked on the system and yes your policy has been successfully cancelled
+  user_1,Okay that's great thank you [00:15] I just wanted to make sure because I hadn't received the confirmation letter yet
+  user_2,I apologize for the delay [00:20] Let me just check on the status of the letter [pause, typing] Ah yes it looks like it was sent out last week [00:30] If you haven't received it by now it's possible it might have gone to your spam folder
+  user_1,Okay I'll check that [00:35] And just to confirm the policy is definitely cancelled now [00:40]

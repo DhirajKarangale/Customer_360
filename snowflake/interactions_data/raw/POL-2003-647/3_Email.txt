@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Auto Insurance Policy for 2022 Toyota Corolla
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Krishna Das,krishna.das@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,ramesh.tiwari@safeshieldagency.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,28/09/2024 T:10:06:40,"Hi Ramesh,\n\nI hope this email finds you well. I wanted to follow up on our previous conversation regarding the auto insurance policy for my new 2022 Toyota Corolla. Could you please provide me with a quote and let me know what documents are required to complete the policy?\n\nThanks,\nKrishna",
+  user_2,user_1,,28/09/2024 T:10:14:10,"Dear Krishna,\n\nThank you for your email. I have attached a quote for your auto insurance policy. Please review it and let me know if you have any questions. I have also attached a list of required documents to complete the policy. If everything looks good, we can finalize the policy and get you covered as soon as possible.\n\nBest regards,\nRamesh Tiwari",https://storage.safeshieldagency.com/docs/Quote_KrishnaDas_2026.pdf,https://storage.safeshieldagency.com/docs/RequiredDocuments_AutoPolicy_2026.pdf

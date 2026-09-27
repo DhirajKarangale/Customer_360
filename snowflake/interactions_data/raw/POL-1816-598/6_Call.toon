@@ -1,0 +1,12 @@
+call_id: REC-INS-006C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Neha Chauhan,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Karan Joshi,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Karan I hope you're doing well I just wanted to follow up on my health policy with DCoders
+  user_2,Ah yeah Neha good morning I've got your file right here Let me just check on the status real quick [pause] Okay yeah it looks like we're all set to renew your policy
+  user_1,Great that sounds good I just wanted to confirm that I'm getting the new wellness program with the 24/7 health hotline and gym membership discounts
+  user_2,That's correct Neha You'll have access to all those benefits with the new policy [typing] I'm just sending over the final renewal form for you to sign and return
+  user_1,Okay sounds good I'll go ahead and sign that and send it back to you today Thanks Karan

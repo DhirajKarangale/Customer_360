@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Suhana Joshi,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey neha i just got an email saying my policy is expired? i thought i renewed it last month?",
+  user_2,26/09/2024 T14:50:30,"Hi Suhana, I apologize for the confusion. Let me check on that for you. Can you please confirm your policy number?",
+  user_1,26/09/2024 T14:51:00,"its TRV-001234",
+  user_2,26/09/2024 T14:51:45,"Thank you, Suhana. I've checked and it seems there was an error on our end. Your policy is actually active until the 10th of next month. I apologize again for the mistake.",
+  user_1,26/09/2024 T14:52:10,"oh ok thats a relief! thank you so much neha you're a lifesaver"

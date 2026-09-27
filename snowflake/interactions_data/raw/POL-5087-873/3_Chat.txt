@@ -1,0 +1,10 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d7,Vihaan Patel,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey anjali whats the status of my health policy? i havent recieved any updates",
+  user_2,26/09/2024 T14:50:30,"Hi Vihaan, I apologize for the delay. Your policy has indeed expired on the 10th of this month. I had sent you an email with the details on how to reinstate or obtain a new one.",
+  user_1,26/09/2024 T14:51:00,"oh no! i didnt see that email can u pls send it again? and whats the diff btw reinstating and getting a new one?",
+  user_2,26/09/2024 T14:52:00,"I've resent the email. Reinstating your policy means you'll keep the same coverage and premium, but you'll need to pay the back premium from the date it expired. Getting a new policy might have different coverage options and premiums. Let me know if you need help with either process.",
+  user_1,26/09/2024 T14:53:00,"thx anjali i think ill go with reinstating it. can u guide me thru the process?"

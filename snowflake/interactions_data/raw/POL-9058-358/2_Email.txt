@@ -1,0 +1,8 @@
+mail_id: 4821qwe-3423-470e-a3fc-799eaf739c96
+subject: Re: Auto Policy Update for Vehicle Registration Number Confirmation
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Pooja Bhatia,pooja.bhatia@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,ramesh.tiwari@safeshieldagency.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2024 T:10:05:00,"Dear Pooja,\n\nI hope this email finds you well. I am following up on our call earlier today regarding your auto policy with DCoders. As discussed, I need to confirm your vehicle's registration number and policy start date to proceed with the policy update. Could you please provide me with the required information at your earliest convenience?\n\nBest regards,\nRamesh Tiwari",
+  user_1,user_2,,28/09/2024 T:10:20:00,"Hi Ramesh,\n\nThanks for your email. My vehicle's registration number is MH-12-GF-1234, and the policy start date is 01/04/2024. Please let me know if there's anything else I need to provide.\n\nThanks,\nPooja Bhatia"

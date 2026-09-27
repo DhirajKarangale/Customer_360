@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Auto Policy Expiration and Coverage for 2024 Honda Civic
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Nandini Rajput,nandini.r@mail.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d7,Vikram Singh,vikram.s@protectallagency.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,30/09/2024 T:10:45:00,"Hi Vikram,\n\nI hope this email finds you well. I am writing to confirm that my auto policy is now active and to thank you for your assistance in reinstating it. I also appreciate the coverage details you provided for my new 2024 Honda Civic. However, I noticed that the policy status is still showing as expired in the system. Could you please look into this and update the status accordingly?\n\nBest regards,\nNandini",
+  user_2,user_1,,30/09/2024 T:11:10:00,"Dear Nandini,\n\nThank you for your email and for bringing this to my attention. I apologize for the inconvenience caused by the incorrect policy status. I have updated the status to active in our system, and you should now see the correct status when you log in to your account. Please let me know if you have any further questions or concerns.\n\nBest regards,\nVikram Singh",

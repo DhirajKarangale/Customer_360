@@ -1,0 +1,22 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:25:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Aaradhya Verma,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Anjali Desai,insurance agent
+messages[14]{user,text}:
+  user_1,Hi is this First Guard Brokers
+  user_2,Ah yes this is Anjali from First Guard Brokers How can I assist you today
+  user_1,I'm calling about my auto policy with DCoders I think it's expired
+  user_2,I see Let me just check on that for you Can you please provide me with your policy number
+  user_1,Umm it's... [pause]... DC-001234
+  user_2,Okay thank you [typing] Ah yes I see the policy here It does show that it's expired as of last month
+  user_1,Oh no I didn't realize that [sighs] What's the process to reinstate it
+  user_2,Well we can definitely help you with that [background noise: dog barks] I apologize about that [pause] As I was saying we can reinstate the policy but you would need to pay the back premium and a small reinstatement fee
+  user_1,Okay that sounds good How much would that be
+  user_2,[typing] Let me just calculate that for you [pause] It would be a total of $250
+  user_1,That's fine I can pay that But can you also tell me why it expired in the first place
+  user_2,Ah yes [pause] It looks like we didn't receive the payment on time [background noise: hold music starts playing] I'm going to check on the status of your payment [hold music continues for 2 minutes]
+  user_2,[hold music stops] I apologize for the wait It looks like the payment was returned due to insufficient funds
+  user_1,Oh I see [pause] Well I'd like to go ahead and pay the back premium and reinstate the policy
+  user_2,Great I just need to confirm a few details with you [typing]

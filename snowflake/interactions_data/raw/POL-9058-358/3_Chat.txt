@@ -1,0 +1,10 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f05bbe-3423-470e-a3fc-799eaf739c97,Pooja Bhatia,customer
+  3a6a7028-a699-4de4-b932-41271ff311d7,Ramesh Tiwari,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:42:00,"hi, i got ur email abt my auto policy. whats the next step?", 
+  user_2,26/09/2024 T14:42:30,"Hi Pooja, thanks for getting back. I just need to confirm a few more details. Can you pls confirm your vehicle's make and model?", 
+  user_1,26/09/2024 T14:43:15,"its a *toyota* corolla altis. 2018 model", 
+  user_2,26/09/2024 T14:44:00,"Great, thanks for confirming. I'm updating the details in our system. Your policy status will be updated to 'Pending' shortly.", 
+  user_1,26/09/2024 T14:44:45,"ok, thx. how long will it take to get the policy doc?",

@@ -1,0 +1,21 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:25:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Aarav Sharma,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Sunita Agarwal,insurance agent
+messages[14]{user,text}:
+  user_1,Hi is this DCoders
+  user_2,Ah yes this is Sunita from Protect All Agency representing DCoders How can I assist you today
+  user_1,I am Aarav Sharma I have a health policy with you guys and I am trying to understand the status of my policy
+  user_2,Okay Aarav can you please provide me with your policy number so I can look into this for you
+  user_1,It's SH-123456
+  user_2,Thank you Aarav [typing] I'm checking on the status of your policy
+  user_1,Okay
+  user_2,Aarav it seems like your policy is currently inactive We had sent you a notice about the payment due date but it looks like we haven't received the payment yet
+  user_1,Oh I didn't receive any notice [dog barks in the background] Sorry about that my dog is being a bit loud
+  user_2,[laughs] No worries Aarav I understand Let me just check on the notice [hold music starts playing]
+  user_2,[hold music stops] Aarav I've checked and it seems like the notice was sent to your email address but it might have gone to your spam folder
+  user_1,Okay I'll check that
+  user_2,Also Aarav I can assist you with making the payment over the phone if you'd like to reactivate your policy
+  user_1,Yeah that would be great thank you

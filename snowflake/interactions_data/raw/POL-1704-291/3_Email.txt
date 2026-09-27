@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Auto Policy Activation Status
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Meera Chauhan,meera.chauhan@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,neha.kapoor@shieldlifeservices.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,28/09/2024 T:11:04:20,"Hi Neha,\n\nI hope this email finds you well. I am writing to follow up on my auto policy with DCoders, which was supposed to be active by the end of the previous day. I understand that you mentioned it would be active soon in our previous chat, but I am getting anxious as I need to use it urgently. Could you please provide me with a final update on the status?\n\nPolicy Number: DC-001234\n\nThanks,\nMeera",
+  user_2,user_1,,28/09/2024 T:11:17:05,"Dear Meera,\n\nThank you for your email. I apologize for the delay in activating your auto policy. I have checked on the status, and I am pleased to inform you that it is now active. You should receive a confirmation email from DCoders shortly. In the meantime, I have attached a copy of your policy document for your reference.\n\nPlease let me know if you have any further questions or concerns.\n\nBest regards,\nNeha Kapoor",https://storage.shieldlifeservices.com/docs/Policy_DC001234_2026.pdf

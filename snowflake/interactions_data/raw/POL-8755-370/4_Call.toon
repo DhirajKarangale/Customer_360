@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  3421f7d8-4a6c-4f3e-8f6d-5a4b7c2e9f1a,Diya Menon,customer
+  7a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Ravi I'm calling about my auto policy I got your email and I'm still a bit confused about the difference between reinstating and buying a new one
+  user_2,Ah Diya good morning Yeah I'd be happy to clarify that for you again So reinstating your old policy would mean we'd just update the dates and you'd be covered again under the same terms
+  user_1,Okay that sounds simple enough But what about the new policy option you mentioned What's the benefit of going with that
+  user_2,Well Diya our new policies have some updated features and better coverage options For example we've added roadside assistance and a more comprehensive collision coverage
+  user_1,That sounds great actually I think I'd like to go with the new policy Can you walk me through the next steps

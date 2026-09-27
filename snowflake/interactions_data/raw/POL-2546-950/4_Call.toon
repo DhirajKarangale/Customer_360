@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:15:00
+end_timestamp: 28/09/2026 T:11:20:00
+participants[2]{id,name,role}:
+  3421f7d8-4a6c-4f3e-8f6d-5a4b7c9e8d7a,Krishna Das,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Vikram I'm calling about my health policy I think it's expired
+  user_2,Ah yes Krishna your policy did expire last month I sent you a renewal form via email did you get a chance to review it
+  user_1,Yeah I did but I had some questions about the premium increase it seems a bit steep
+  user_2,I understand your concern Krishna the increase is mainly due to the addition of new benefits and rising medical costs however I can look into alternative plans for you
+  user_1,That would be great thank you Vikram I'd appreciate it

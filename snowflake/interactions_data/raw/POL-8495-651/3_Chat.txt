@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d7,Aarav Sharma,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anita Sharma,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey anita, got ur email abt my travel policy renewal. thx for the follow up",
+  user_2,26/09/2024 T14:50:30,"Hi Aarav, you're welcome! I'm glad I could remind you. Did you have a chance to review the renewal form I sent over?",
+  user_1,26/09/2024 T14:51:15,"yeah, i did. just wanted to confirm when the new policy would be effective if i send it back by the 18th?",
+  user_2,26/09/2024 T14:52:00,"Great question, Aarav! If you return the form by the 18th, your new policy will be effective from the 20th. You'll receive a confirmation email with the details once it's processed.",
+  user_1,26/09/2024 T14:53:00,"ok, sounds good. also, just to confirm, my old policy is *definitely* expired, right? i dont wanna be stuck without coverage"

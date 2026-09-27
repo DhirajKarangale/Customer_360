@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Auto Policy Renewal Inquiry
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Nandini Rajput,nandini.r@mail.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Singh,vikram.s@protectallagency.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,27/09/2024 T:10:05:00,"Hi Vikram,\n\nI just spoke with you regarding my auto policy renewal. I'm shocked to hear it expired last week. Can you please provide me with the necessary steps to reinstate it? I'd appreciate it if you could also let me know the total amount due for the renewal.\n\nPolicy Number: DC-001234\n\nThanks,\nNandini",
+  user_2,user_1,,27/09/2024 T:10:20:00,"Dear Nandini,\n\nThank you for your prompt email. I apologize again for the inconvenience caused by the expiration of your auto policy. To reinstate it, you'll need to pay the outstanding premium and a small reinstatement fee. I've attached a detailed invoice for your reference. Please find the payment instructions on the invoice. If you have any questions or concerns, feel free to reach out to me directly.\n\nBest regards,\nVikram Singh",https://storage.protectallagency.com/docs/Invoice_DC001234_2026.pdf

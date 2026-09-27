@@ -1,0 +1,22 @@
+call_id: REC-INS-002C
+start_timestamp: 20/09/2026 T:14:05:00
+end_timestamp: 20/09/2026 T:14:25:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Shaurya Joshi,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anita Sharma,insurance agent
+messages[14]{user,text}:
+  user_1,Hi Anita I'm calling about my auto policy renewal that's supposed to happen on the 20th
+  user_2,Ah Shaurya good afternoon How can I assist you with your policy today
+  user_1,I just wanted to confirm that everything is in order and that I won't have any issues with the renewal
+  user_2,Let me just check on that for you [pause] [typing] Ah yes I see that your policy is still pending
+  user_1,Pending What does that mean Is there a problem
+  user_2,No no it's just that we're still processing the changes you requested [hold music starts] [hold music ends after 1 minute]
+  user_2,I apologize for the hold Shaurya As I was saying we're still processing the changes You had requested some updates to your coverage
+  user_1,Right I remember now I sent in that form on the 18th
+  user_2,Exactly And we've received it [dog barks in the background] I apologize for the background noise
+  user_1,No worries I have dogs too [laughter]
+  user_2,[laughter] Anyway as I was saying we're just waiting for the underwriting team to review the changes
+  user_1,Okay that sounds good And you're sure everything will be processed in time for the 20th
+  user_2,Absolutely We'll make sure everything is taken care of [pause] [sighs] I just need to confirm your vehicle's VIN number one more time
+  user_1,It's [pause] [reads out VIN number]
+  user_2,Great thank you Shaurya I've confirmed that [typing] You should receive an email once the policy is active

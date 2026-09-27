@@ -1,0 +1,12 @@
+call_id: REC-INS-007C
+start_timestamp: 28/09/2024 T:11:05:00
+end_timestamp: 28/09/2024 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Dev Chatterjee,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Anjali Desai,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Anjali I'm calling about my health policy HP-123456 I think we discussed the renewal and I had some questions
+  user_2,Ah Dev good morning Yes we did discuss the renewal and I sent over the updated quote Did you have a chance to review it
+  user_1,Yeah I did and I was wondering if there's any way to reduce the premium It's a bit higher than I expected
+  user_2,I understand your concern Dev However the premium increase is mainly due to the coverage for your pre-existing conditions But I can offer you a payment plan to make it more manageable
+  user_1,That sounds good I think I'll go with that Can you confirm that the policy will be updated and I'll receive a new policy document

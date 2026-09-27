@@ -1,0 +1,10 @@
+chat_id: 9a6a7028-a699-4de4-b932-41271ff311d7
+participants[2]{id,name,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c97,Vivaan Gupta,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey ravi, just wanted to check on the status of my health policy with dcoders. is it still pending?",
+  user_2,26/09/2024 T14:50:30,"hi vivaan! yeah, it's still pending. we're waiting for the signed medical certificate. did u manage to get it signed by ur doctor?",
+  user_1,26/09/2024 T14:51:00,"oh yeah! i got it signed yesterday. i'll scan and send it to u by today evening. sorry for the delay",
+  user_2,26/09/2024 T14:51:20,"no worries at all, vivaan! just send it as soon as u can. i'll make sure to process it ASAP. u can send it to my email or upload it on our portal",
+  user_1,26/09/2024 T14:51:40,"cool, thanks ravi! i'll upload it on the portal. can u pls confirm once u receive it?"

@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Travel Policy Expiration and Reinstatement
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Kavya Iyer,kavya.iyer@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Singh,vikram.singh@protectallagency.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,28/09/2024 T:11:04:20,"Hi Vikram,\n\nI hope this email finds you well. I wanted to follow up on our previous conversations regarding my travel policy with DCoders, which expired due to a payment processing error. You mentioned that I would need to pay the premium again and update my payment information to reinstate the policy. Could you please provide me with a detailed breakdown of the costs involved, including any additional fees?\n\nLooking forward to hearing back from you.\n\nBest regards,\nKavya Iyer",
+  user_2,user_1,,28/09/2024 T:11:22:10,"Dear Kavya,\n\nThank you for your email. I apologize again for the inconvenience caused by the payment processing error. To reinstate your travel policy, the total cost would be 3000 INR, which includes the premium of 2500 INR and a reinstatement fee of 500 INR. Please find the detailed breakdown attached to this email. If you have any further questions or concerns, please do not hesitate to reach out.\n\nBest regards,\nVikram Singh",https://storage.protectallagency.com/docs/Reinstatement_Breakdown_KIyer_2026.pdf

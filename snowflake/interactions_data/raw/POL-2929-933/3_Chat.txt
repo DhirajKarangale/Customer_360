@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d7,Kriti Mahajan,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anita Sharma,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey anita, just wanted to confirm that my auto policy is active now? i paid the back premium of $150",
+  user_2,26/09/2024 T14:50:30,"Hi Kriti, yes your policy is active again. I've checked the status and it's all good now. You should receive an email with the updated documents shortly",
+  user_1,26/09/2024 T14:51:00,"thx anita! i really appreciate ur help. btw, can u tell me why my policy got expired in the first place?",
+  user_2,26/09/2024 T14:51:45,"You're welcome, Kriti! Your policy expired due to a missed payment. We sent you a few reminders, but unfortunately, we didn't receive the payment on time. But all sorted now!",
+  user_1,26/09/2024 T14:52:10,"ok, got it. i'll make sure to set up auto pay this time. thx again for ur help, anita!"

@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Auto Policy Renewal and Payment Extension Request
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Isha Agarwal,isha.agarwal@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Singh,vikram.singh@protectallagency.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2024 T:10:05:00,"Dear Isha,\n\nI hope this email finds you well. Unfortunately, I regret to inform you that your auto policy with DCoders has expired as of today, due to non-payment. As per our previous conversations, I had sent you a payment link to renew your policy, but it seems the payment was not made on time.\n\nIf you would like to reinstate your policy, please let me know, and I will guide you through the process. Please note that there might be a small reinstatement fee applicable.\n\nLooking forward to hearing from you.\n\nBest regards,\nVikram Singh",
+  user_1,user_2,,28/09/2024 T:10:20:00,"Hi Vikram,\n\nI'm shocked and disappointed to hear that my policy has expired. I had requested a payment extension, and I thought we had agreed on it. I'm extremely dissatisfied with the service I've received from DCoders and ProtectAll Agency.\n\nI would like to escalate this matter and request a review of my case. Please provide me with the necessary contact information for your supervisor or the complaints department.\n\nSincerely,\nIsha Agarwal"

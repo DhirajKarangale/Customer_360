@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Home Insurance Policy for Delhi Property
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Pranav Mishra,pranav.mishra@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,vikram.p@omniinsurancegroup.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,30/09/2024 T:10:06:40,"Dear Pranav,\n\nI hope this email finds you well. I am writing to confirm that your home insurance policy for your Delhi property has been successfully activated. As per our previous discussions, the policy details are as follows:\n\nPolicy Number: HP-001234\nPolicy Type: Home Insurance\nCoverage Amount: ₹80,00,000\nPremium Amount: ₹12,000\nPolicy Status: Active\n\nPlease find the policy documents attached to this email for your reference. If you have any questions or concerns, please do not hesitate to reach out to me.\n\nBest regards,\nVikram Patel",https://storage.omniinsurancegroup.com/docs/Policy_HP001234_2026.pdf
+  user_1,user_2,,30/09/2024 T:10:14:10,"Dear Vikram,\n\nThank you for your email and for activating my home insurance policy. I have reviewed the policy documents and everything seems to be in order. Please let me know if there's anything else I need to do from my end.\n\nThanks again for your assistance.\n\nBest regards,\nPranav Mishra"

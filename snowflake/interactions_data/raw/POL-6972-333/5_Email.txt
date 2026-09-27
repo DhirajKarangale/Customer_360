@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Auto Policy AP-001234 - Expiration and Next Steps
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Sai Kumar,sai.kumar@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,vikram.p@omniinsurancegroup.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,30/09/2024 T:10:45:00,"Dear Sai Kumar,\n\nI hope this email finds you well. I am writing to follow up on our previous conversations regarding your auto policy AP-001234, which has officially expired as of today. As discussed, we were unable to renew this policy, but I am more than happy to assist you in exploring alternative options for a new policy that suits your needs.\n\nPlease find attached a document outlining a few options from our company, including a new policy with enhanced coverage. If you're interested, I can also provide you with information on other insurance providers that might offer more competitive rates.\n\nLooking forward to hearing back from you and discussing how we can best support you in this transition.\n\nBest regards,\nVikram Patel",https://storage.omniinsurancegroup.com/docs/NewPolicyOptions_AP001234.pdf
+  user_1,user_2,,30/09/2024 T:11:10:00,"Hi Vikram,\n\nThanks for your email and for the document outlining the new policy options. I appreciate your efforts in trying to find a solution for me. However, I am a bit disappointed that my policy expired without any further options for renewal. I would like to discuss the new policy you've suggested in more detail, especially the enhanced coverage and the associated costs.\n\nCould you please call me at your earliest convenience to discuss this further?\n\nThanks,\nSai Kumar"

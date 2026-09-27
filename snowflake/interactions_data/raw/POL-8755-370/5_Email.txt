@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Auto Policy Expiration and New Quote
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Diya Menon,diya.menon@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,ravi.menon@securefuturegroup.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,30/09/2024 T:10:06:40,"Dear Diya,\n\nI hope this email finds you well. I wanted to follow up on our previous conversation regarding your auto policy, which has expired. As we discussed, I have attached a new quote for your review. Please let me know if you have any questions or if there's anything else I can assist you with.\n\nBest regards,\nRavi Menon",https://storage.securefuturegroup.com/docs/New_Auto_Policy_Quote_2026.pdf
+  user_1,user_2,,30/09/2024 T:10:14:10,"Hi Ravi,\n\nThanks for the follow-up and the new quote. I appreciate your help in getting my auto insurance back on track. I do have a few questions regarding the new policy. Could you please clarify the difference in coverage between the two options you provided?\n\nThanks,\nDiya"

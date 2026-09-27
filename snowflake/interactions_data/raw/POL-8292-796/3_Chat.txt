@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Nandini Rajput,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:42:00,"hey anjali, thx for the email about the new policy. can u pls clarify the premium amt? is it monthly or yearly?",
+  user_2,26/09/2024 T14:42:30,"Hi Nandini, the premium amount I mentioned is yearly. However, you can opt for monthly payments if that's more convenient for you.",
+  user_1,26/09/2024 T14:43:15,"ok thats great! also, how do i switch from my current expired policy to this new one? do i need to fill out a new application?",
+  user_2,26/09/2024 T14:44:00,"Since your policy has expired, we'll need to treat this as a new application. But don't worry, I'll guide you through the process. I'll send you a link to the application form via email.",
+  user_1,26/09/2024 T14:45:00,"sounds good, thx anjali. btw, will i be able to get the same coverage as my old policy or will there be any changes?"

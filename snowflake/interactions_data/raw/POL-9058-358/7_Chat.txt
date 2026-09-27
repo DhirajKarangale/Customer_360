@@ -1,0 +1,9 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c97,Pooja Bhatia,customer
+  3a6a7028-a699-4de4-b932-41271ff311d7,Ramesh Tiwari,insurance agent
+messages[4]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey ramesh, just wanted to check on the status of my auto policy with dcoders",
+  user_2,26/09/2024 T14:50:30,"hi pooja! yeah, i just checked and it's still showing as *pending*. you should receive the policy doc via email within the next 24 hrs",
+  user_1,26/09/2024 T14:51:00,"ok cool, thx for the update! just to confirm, my vehicle's reg no is MH-12-GF-1234, right?",
+  user_2,26/09/2024 T14:51:20,"that's correct, pooja! your vehicle's reg no is indeed MH-12-GF-1234. and the policy start date is 01/04/2024, as we discussed earlier"

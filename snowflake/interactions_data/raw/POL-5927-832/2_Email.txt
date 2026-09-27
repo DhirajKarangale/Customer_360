@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Auto Policy Expiration - DCoders
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Pranav Mishra,pranav.mishra@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d7,Vikram Singh,vikram.singh@protectallagency.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,27/09/2024 T:10:05:00,"Hi Vikram,\n\nI just got off the phone with you regarding my auto policy with DCoders. You mentioned it had expired on the 10th of this month. I'm shocked and disappointed that I wasn't notified. Can you please look into this and let me know the next steps to get it reinstated?\n\nPolicy Number: DC-001234\n\nThanks,\nPranav",
+  user_2,user_1,,27/09/2024 T:10:20:00,"Dear Pranav,\n\nThank you for your email. I apologize again for the inconvenience caused by the expiration of your auto policy. I have escalated this matter to our team, and we will be in touch with DCoders to understand why the renewal notification was not sent to you. In the meantime, I recommend that you do not drive your vehicle until the policy is reinstated. I will keep you updated on the progress and will notify you as soon as we have a resolution.\n\nBest regards,\nVikram Singh",

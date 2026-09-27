@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Health Policy Expiration and Reinstatement
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Reyansh Tiwari,reyansh.tiwari@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,ramesh.tiwari@safeshieldagency.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,28/09/2024 T:10:06:40,"Hi Ramesh,\n\nI hope this email finds you well. I wanted to follow up on our previous conversation regarding my health policy with DCoders. I have reviewed the payment plan you provided, and I am comfortable with paying 50% upfront and the remaining 50% in two installments. However, I would like to confirm if I can make the payment online or if I need to visit your office.\n\nPlease let me know the next steps to reinstate my policy.\n\nThanks,\nReyansh",
+  user_2,user_1,,28/09/2024 T:10:14:10,"Dear Reyansh,\n\nThank you for your email. I'm glad you're comfortable with the payment plan. You can make the payment online through our website using the payment link I provided earlier. If you need assistance, I can also guide you through the process over the phone. Please find the payment link below:\n\nhttps://safeshieldagency.com/payment-link\n\nOnce the payment is made, please reply to this email with the transaction ID, and I will ensure your policy is reinstated promptly.\n\nBest regards,\nRamesh Tiwari",

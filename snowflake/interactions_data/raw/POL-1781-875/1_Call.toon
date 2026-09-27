@@ -1,0 +1,14 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Meera Chauhan,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Anita Sharma,insurance agent
+messages[7]{user,text}:
+  user_2,Hi Meera good afternoon Can you hear me
+  user_1,Yeah I can hear you Good afternoon
+  user_2,This is Anita from Trust Wealth Advisors I'm calling about your auto policy with DCoders
+  user_1,Oh hi Anita Yeah I've been meaning to call you guys about that
+  user_2,What seems to be the issue with your policy Meera
+  user_1,Well I think it's expired I got a notice in the mail last week
+  user_2,I apologize for the inconvenience Let me just check on that for you [typing] Ah yes I see the issue here Your policy did expire on the 10th of this month

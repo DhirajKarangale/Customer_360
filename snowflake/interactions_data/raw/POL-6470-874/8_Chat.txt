@@ -1,0 +1,8 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f008
+participants[2]{id,name,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Rohan Deshmukh,customer
+  3a6a7028-a699-4de4-b932-41271ff311d7,Anita Sharma,insurance agent
+messages[3]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T15:10:00,"hey anita just wanted to confirm that my home policy is active now?",
+  user_2,26/09/2024 T15:10:30,"Hi Rohan! Yes, your home policy is active. I've checked the system and it's all good. You should have received a confirmation email with the policy documents.",
+  user_1,26/09/2024 T15:11:00,"awesome thanks anita! yeah i got the email. just wanted to double check. thanks for all your help"

@@ -1,0 +1,12 @@
+call_id: REC-INS-006C
+start_timestamp: 30/09/2026 T:14:10:00
+end_timestamp: 30/09/2026 T:14:14:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Rohan Ahuja,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Sunita Agarwal,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Sunita I'm calling about my home policy with DCoders I just wanted to confirm that it's been cancelled
+  user_2,Ah yes Rohan Good afternoon I've checked on the status and yes your policy has been successfully cancelled
+  user_1,Okay great And what about the refund I was supposed to get for the unused premium
+  user_2,The refund has been processed and you should receive it within the next 2-3 business days [typing] I've checked the status and it's all set
+  user_1,Alright sounds good Thanks for your help Sunita I appreciate it [sighs]

@@ -1,0 +1,21 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:25:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Kavya Iyer,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[14]{user,text}:
+  user_2,Hi Kavya good afternoon Can you hear me
+  user_1,Yeah yeah I can hear you Good afternoon
+  user_2,Great thanks for calling DCoders today My name is Vikram and I'll be assisting you with your policy
+  user_1,Nice to talk to you Vikram I'm calling about my life policy
+  user_2,Ah okay Can you please provide me with your policy number so I can look into it for you
+  user_1,It's LP-001234
+  user_2,Alright [typing] Ah yes I have it here Can you tell me a little bit about why you're calling today
+  user_1,Well I just got a letter saying my policy is pending and I'm not sure what that means
+  user_2,I see [sighs] Okay let me just check on that for you [hold music starts]
+  user_2,[hold music ends] I apologize for the wait Kavya It looks like there was an issue with your payment
+  user_1,Oh no What kind of issue
+  user_2,[dog barks in the background] Ah sorry about that [pauses] It looks like your payment was declined
+  user_1,That's weird I could've sworn I paid it
+  user_2,Don't worry we can sort this out [typing] I'm going to go ahead and send you a new invoice

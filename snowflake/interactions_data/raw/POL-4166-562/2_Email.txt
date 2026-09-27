@@ -1,0 +1,8 @@
+mail_id: 4821qwe-3423-470e-a3fc-799eaf739c96
+subject: Re: Health Policy Renewal - Expiring in 2 Days
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Atharv Pandey,atharv.pandey@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,ravi.menon@securefuturegroup.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2024 T:10:05:00,"Dear Atharv,\n\nI hope this email finds you well. As discussed over the phone earlier, your health policy with DCoders is set to expire in two days. I wanted to follow up on the renewal process. If you're interested in renewing, please let me know and I'll guide you through the process. If not, please confirm and I'll ensure the policy is cancelled to avoid any unwanted charges.\n\nLooking forward to hearing back from you.\n\nBest regards,\nRavi Menon",
+  user_1,user_2,,28/09/2024 T:10:20:00,"Hi Ravi,\n\nThanks for the follow-up. I've decided not to renew the policy. Could you please go ahead and cancel it? I'd appreciate it if you could also confirm the cancellation via email once it's done.\n\nThanks,\nAtharv"

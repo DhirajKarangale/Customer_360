@@ -1,0 +1,21 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:25:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Aarav Sharma,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[14]{user,text}:
+  user_1,Hi is this Secure Life Solutions
+  user_2,Ah yes this is Suresh from Secure Life Solutions How can I assist you today
+  user_1,I am Aarav Sharma and I am calling about my health policy with DCoders
+  user_2,Aarav Sharma with DCoders Ah okay let me just check on that for you [typing] Can you please confirm your policy number for me
+  user_1,It's SH-123456
+  user_2,Thank you Aarav [pause] I've located your policy Can you tell me a little bit about what's going on with your policy
+  user_1,Well I just got a letter saying it's going to be cancelled if I don't pay my premium
+  user_2,I see [sighs] Let me see what's going on here [pause] Ah I see the issue It looks like your payment method expired
+  user_1,Oh I didn't realize that
+  user_2,No worries it happens [background noise: dog barks] Sorry about that just my dog [pause] So I can update your payment method for you right now if you'd like
+  user_1,That would be great thank you
+  user_2,Okay [typing] I just need you to confirm your new payment method [hold music starts playing]
+  user_1,[after hold music stops] Hi is this still Suresh
+  user_2,Ah yes Aarav I'm back [background noise: papers shuffling] Sorry about the hold I just needed to update some information on my end

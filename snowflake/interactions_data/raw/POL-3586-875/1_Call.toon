@@ -1,0 +1,21 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:25:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Kavya Iyer,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[14]{user,text}:
+  user_1,Hi is this Secure Life Solutions
+  user_2,Ah yes it is How can I assist you today
+  user_1,I'm calling about my health policy with DCoders I think it's expired
+  user_2,I see Let me just check on that for you Can you please provide me with your policy number
+  user_1,Umm it's... [pause]... HP-001234
+  user_2,Okay thank you [typing] Ah yes I have it here
+  user_1,So is it expired
+  user_2,Yes I'm afraid it is [sighs] The policy expired on 01/03/2023
+  user_1,Oh no I didn't realize that [background noise: dog barks] Sorry about that
+  user_2,No worries at all [chuckles] So would you like to renew the policy or
+  user_1,Yeah I think so Can you tell me the process
+  user_2,Of course [hold music starts] I just need to check a few things [hold music ends after 1 minute] Okay I'm back
+  user_1,Hi
+  user_2,Hi again So to renew the policy I just need to update some information and we can go from there

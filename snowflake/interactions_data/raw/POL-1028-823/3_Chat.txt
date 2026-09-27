@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Aaradhya Verma,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Anjali Desai,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T15:10:00,"hey anjali i just checked my policy status and it says expired can u pls help me with that",
+  user_2,26/09/2024 T15:10:30,"Hi Aaradhya, sorry to hear that your policy has expired. Can you please confirm your policy number so I can look into this further?",
+  user_1,26/09/2024 T15:11:00,"its AP-001234 i think i missed a payment or smthn",
+  user_2,26/09/2024 T15:12:00,"Thank you for confirming, Aaradhya. I've checked on your policy, and it looks like it expired due to a missed payment. We can reinstate it for you, but you'll need to pay the back premium and a reinstatement fee. Would you like me to calculate the total cost?",
+  user_1,26/09/2024 T15:13:00,"yeah pls go ahead and calc the cost i wanna get it reinstated asap"

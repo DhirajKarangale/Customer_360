@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d7,Tanvi Saxena,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey neha, just wanted to confirm i paid the reinstatement fee for my auto policy",
+  user_2,26/09/2024 T14:50:30,"Hi Tanvi, thanks for reaching out. Can you please confirm the payment method and date so I can verify?",
+  user_1,26/09/2024 T14:51:15,"i paid online thru the link u sent me... *you*... on the 25th",
+  user_2,26/09/2024 T14:52:00,"Great, thank you for the update. I've checked and your payment has been processed successfully. Your policy is now reinstated.",
+  user_1,26/09/2024 T14:52:45,"thx neha! can u pls update the status in the system to reflect that its no longer expired?"

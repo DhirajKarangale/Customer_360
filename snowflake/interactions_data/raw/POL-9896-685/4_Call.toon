@@ -1,0 +1,23 @@
+call_id: REC-INS-004C
+start_timestamp: 15/12/2026 T:14:05:00
+end_timestamp: 15/12/2026 T:14:25:00
+participants[2]{id,name,role}:
+  3421f7d8-4a6c-4f3e-8f6d-3a5a4f7c9e8a,Krishna Das,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[14]{user,text}:
+  user_1,Hi Suresh I'm calling about my auto policy AP-001234 that expired on the 10th
+  user_2,Ah yeah Krishna good afternoon I've got your file right here [typing] Can you please confirm your policy number again
+  user_1,It's AP-001234
+  user_2,Great thank you Krishna I see that your policy did expire on the 10th of this month [sighs] I apologize for the inconvenience
+  user_1,Yeah I got the renewal quote but the premium is higher than last year Can you explain why
+  user_2,Let me check on that for you [hold music starts] [pause for 2 minutes]
+  user_2,[hold music ends] Ah sorry about the wait Krishna I'm back So it looks like the premium increase is due to increased claims in your area
+  user_1,That doesn't make sense I've never made a claim
+  user_2,I understand your concern Krishna But the increase is not just based on individual claims It's also based on the overall claims in your area [dog barks in the background]
+  user_1,Okay I see What can I do to reduce the premium
+  user_2,Well we do offer a no-claim bonus and a higher deductible option [typing] Let me check if you're eligible for the bonus [pause for 1 minute]
+  user_2,[typing] Ah yes Krishna you are eligible for the no-claim bonus That would reduce your premium by 10%
+  user_1,That sounds good What about the deductible
+  user_2,If you opt for a higher deductible that would reduce your premium by another 5% But keep in mind that you'll have to pay more out of pocket in case of a claim
+  user_1,Okay I think I'll go with the no-claim bonus and the higher deductible Can you update my policy
+  user_2,Great choice Krishna I'll go ahead and update your policy [typing] [pause for 2 minutes] Alright Krishna your policy has been updated and it's now active

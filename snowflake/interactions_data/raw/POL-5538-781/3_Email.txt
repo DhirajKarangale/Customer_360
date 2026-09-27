@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Life Insurance Policy Activation Confirmation
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c97,Akanksha Bhatt,akanksha.bhatt@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d7,Suresh Deshmukh,suresh.d@securelifesolutions.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2024 T:10:05:00,"Dear Akanksha,\n\nI hope this email finds you well. I am writing to confirm that your life insurance policy with DCoders has been successfully activated. As discussed during our previous call and chat, the issue with the missed payment has been resolved, and your policy is now in an active status.\n\nPlease find attached a confirmation letter with the updated policy details for your records.\n\nIf you have any further questions or concerns, please do not hesitate to reach out to me directly.\n\nBest regards,\nSuresh Deshmukh",https://storage.securelifesolutions.com/docs/PolicyConfirmation_ABhatt_2026.pdf
+  user_1,user_2,,28/09/2024 T:10:15:00,"Hi Suresh,\n\nThank you so much for your prompt assistance in resolving the issue with my life insurance policy. I appreciate your help and professionalism throughout the process. I have received the confirmation letter and will review it shortly.\n\nThanks again for your support.\n\nBest regards,\nAkanksha Bhatt"

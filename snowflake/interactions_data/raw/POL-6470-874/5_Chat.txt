@@ -1,0 +1,10 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c97,Rohan Deshmukh,customer
+  3a6a7028-a699-4de4-b932-41271ff311d7,Anita Sharma,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey anita, just wanted to check on the status of my home policy application",
+  user_2,26/09/2024 T14:50:15,"Hi Rohan, your application is being processed. I just need to confirm a few details. Can you please confirm your address again?",
+  user_1,26/09/2024 T14:50:30,"yeah its 123 main st apt 4, mumbai *maharashtra*",
+  user_2,26/09/2024 T14:50:45,"Great, thank you for confirming. I'm just updating the details. Your policy should be active by the end of the day.",
+  user_1,26/09/2024 T14:51:00,"awesome, thanks anita! can i get a confirmation email once its active?"

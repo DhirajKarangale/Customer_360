@@ -1,0 +1,10 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d7,Dev Chatterjee,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey anjali, i got ur email with policy options. i think i like the 2nd one. can u pls confirm whats the next step?",
+  user_2,26/09/2024 T14:50:30,"Hi Dev, great choice! The 2nd option is one of our most popular plans. To proceed, I just need you to confirm your address and a few other details. Can you pls confirm your address is still 1456 Oakwood Drive?",
+  user_1,26/09/2024 T14:51:10,"yeah thats correct. 1456 oakwood drive. whats the *next* step?",
+  user_2,26/09/2024 T14:51:40,"I'll send over a confirmation document for you to sign digitally. Once that's done, I'll activate your policy. You should receive the document in the next 10 minutes.",
+  user_1,26/09/2024 T14:52:20,"sounds good. thx anjali. looking forward to it"

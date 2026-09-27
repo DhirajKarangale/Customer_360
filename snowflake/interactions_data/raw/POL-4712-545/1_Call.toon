@@ -1,0 +1,14 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Sai Kumar,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Anjali Desai,insurance agent
+messages[7]{user,text}:
+  user_2,Hi Sai Kumar this is Anjali from First Guard Brokers How are you today
+  user_1,I'm good thanks Anjali I'm calling about my auto policy with DCoders
+  user_2,Ah great Can you please provide me with your policy number so I can look into it for you
+  user_1,It's AP-001234
+  user_2,Okay thank you [typing] I've located your policy... I see that it's currently set to expire on the 20th of this month
+  user_1,Yeah that's right I was wondering what I need to do to renew it
+  user_2,I apologize Sai but it looks like we haven't received any payment from you for the renewal and the policy has actually expired as of today [sighs]

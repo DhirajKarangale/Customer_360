@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 29/09/2026 T:14:05:00
+end_timestamp: 29/09/2026 T:14:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Dhruv Kapoor,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Sunita Agarwal,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Sunita I hope you're doing well I wanted to follow up on our previous conversation about my auto policy
+  user_2,Ah yeah hi Dhruv I'm doing great thanks for calling back So you wanted to discuss the options for your auto policy that expired on March 8th
+  user_1,Exactly I was thinking maybe I could just reinstate the old policy or look into new options like we discussed earlier
+  user_2,Right so for reinstatement there's a $50 fee and a 10% penalty on your premium But if you're interested in new options I can give you some quotes
+  user_2,[sighs] I'm going to go ahead and check some quotes real quick [typing] Okay so it looks like we have a few options that might be more suitable for you

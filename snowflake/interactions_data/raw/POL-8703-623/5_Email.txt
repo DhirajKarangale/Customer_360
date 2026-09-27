@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Auto Policy Expiry and Coverage for New Vehicle
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Nandini Rajput,nandini.r@mail.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d7,Vikram Singh,vikram.s@protectallagency.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,29/09/2024 T:11:04:20,"Hi Vikram,\n\nI hope this email finds you well. I wanted to follow up on our previous conversation regarding my auto policy. You had mentioned that my policy was active until 26/09/2025, but I noticed that the system still shows it as expired. Could you please look into this and update the status accordingly?\n\nAlso, I would like to inquire about the coverage for my new car, a 2024 Honda Civic with vehicle ID HONDA-2024-001. Could you please let me know if there are any additional premiums or changes required to ensure my new vehicle is fully covered?\n\nThanks in advance for your assistance.\n\nBest regards,\nNandini",
+  user_2,user_1,,29/09/2024 T:11:17:50,"Dear Nandini,\n\nThank you for reaching out. I apologize for the inconvenience caused by the incorrect policy status. I have updated the system, and your policy should now reflect the correct status as active until 26/09/2025.\n\nRegarding your new vehicle, I have checked the coverage, and everything seems to be in order. However, I would like to confirm a few details to ensure you have the best coverage. Please find attached a document outlining the coverage details for your new vehicle.\n\nIf you have any questions or concerns, please do not hesitate to reach out.\n\nBest regards,\nVikram Singh",https://storage.protectallagency.com/docs/Coverage_Details_HONDA-2024-001.pdf

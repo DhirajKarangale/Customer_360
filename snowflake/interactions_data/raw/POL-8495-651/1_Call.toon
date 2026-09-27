@@ -1,0 +1,14 @@
+call_id: REC-TRV-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Aarav Sharma,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Anita Sharma,insurance agent
+messages[7]{user,text}:
+  user_1,Hi is this Trust Wealth Advisors
+  user_2,Yes this is Anita from Trust Wealth Advisors How can I assist you today
+  user_1,I am calling about my travel policy with DCoders I think it expired recently
+  user_2,I see Let me check on that for you Can you please provide me with your policy number
+  user_1,It's TRV-001A
+  user_2,Thank you Aarav I've checked and yes your policy has expired on the 10th of this month
+  user_1,Okay that's what I thought Can you tell me what I need to do to renew it

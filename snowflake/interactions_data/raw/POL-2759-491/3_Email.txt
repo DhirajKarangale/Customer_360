@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Life Policy LP-001234 Activation
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Meera Chauhan,meera.chauhan@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,ravi.menon@securefuturegroup.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2024 T:10:06:40,"Dear Meera,\n\nI hope this email finds you well. I am following up on our previous conversation regarding your life policy LP-001234. As discussed, I have attached the documents that require your digital signature for policy activation. Please find the documents attached to this email.\n\nPolicy Activation Documents: https://storage.securefuturegroup.com/docs/LP001234_Activation_Docs.pdf\n\nIf you have any questions or concerns, please do not hesitate to reach out.\n\nBest regards,\nRavi Menon",
+  user_1,user_2,,28/09/2024 T:10:14:10,"Hi Ravi,\n\nThanks for sending the documents. I have reviewed them and will proceed with the digital signature. Please let me know the next steps after I complete the signature process.\n\nThanks,\nMeera"

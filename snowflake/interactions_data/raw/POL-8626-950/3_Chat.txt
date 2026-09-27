@@ -1,0 +1,10 @@
+chat_id: 9f8a5c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Kavya Iyer,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Singh,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey vikram, just wanted to follow up on my travel policy with dcoders. did u get a chance to look into the payment error?"
+  user_2,26/09/2024 T14:50:30,"hi kavya! yeah, i did. it looks like the payment didnt go thru due to a technical glitch. ur policy is currently expired"
+  user_1,26/09/2024 T14:51:00,"oh no! thats so frustrating. can u pls tell me how much i need to pay to reinstate it? and are there any additional fees?"
+  user_2,26/09/2024 T14:51:45,"yeah, of course. the premium is 2500 inr. and theres a small fee of 500 inr for reinstatement. so total would be 3000 inr"
+  user_1,26/09/2024 T14:52:15,"ok, thats fine. can u pls send me the payment link or details so i can pay it online?"

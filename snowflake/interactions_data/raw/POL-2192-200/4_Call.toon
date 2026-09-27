@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2024 T:11:05:00
+end_timestamp: 28/09/2024 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Dev Chatterjee,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Anjali thanks for taking my call I wanted to discuss the renewal of my health policy
+  user_2,Of course Dev good morning I've got your file right here HP-123456 is the policy number correct
+  user_1,Yeah that's correct I received your email about the policy expiring on 25th September
+  user_2,I see you've already received the formal notice I'd be happy to walk you through the renewal process and answer any questions you may have
+  user_1,Great thanks I'd appreciate that Can you just confirm what the new premium would be and if there are any changes to the coverage

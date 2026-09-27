@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 20/09/2026 T:14:05:00
+end_timestamp: 20/09/2026 T:14:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Shaurya Joshi,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Anita Sharma,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Anita I hope you're doing well I just wanted to confirm if my auto policy renewal is all set for the 20th
+  user_2,Ah yeah Shaurya good afternoon We've received the form you sent over and we're processing the changes you requested
+  user_1,Great thanks for letting me know I just wanted to double-check because I don't want any issues with my coverage
+  user_2,Not at all Shaurya everything looks good on our end We've updated your policy and it should be active by the 20th
+  user_2,Just to confirm your policy status will show as 'Pending' in our system until the renewal is complete on the 20th

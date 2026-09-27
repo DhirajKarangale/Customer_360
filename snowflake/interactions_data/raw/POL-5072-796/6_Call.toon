@@ -1,0 +1,12 @@
+call_id: REC-INS-002C
+start_timestamp: 27/09/2026 T:11:05:00
+end_timestamp: 27/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Saanvi Pillai,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,insurance agent
+messages[5]{user,text}:
+  user_2,Hi Saanvi hope you're doing well I just wanted to follow up on your health policy cancellation with DCoders
+  user_1,Hi Anjali yeah I'm doing alright thanks for checking in I just wanted to confirm that everything is taken care of
+  user_2,Absolutely Saanvi I've double-checked and your policy has been successfully cancelled You won't receive any further bills or notifications from DCoders
+  user_1,That's great to hear thank you so much for your help Anjali I really appreciate it
+  user_2,You're welcome Saanvi It was my pleasure to assist you If you have any other questions or need anything else feel free to reach out

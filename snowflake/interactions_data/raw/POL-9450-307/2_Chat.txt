@@ -1,0 +1,10 @@
+chat_id: 9f4a2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Pranav Mishra,customer
+  3a6a7028-a699-4de4-b932-41271ff311d7,Vikram Patel,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:42:00,"hey Vikram, thx for the call earlier. i wanted to know more about the home insurance policy u mentioned",
+  user_2,26/09/2024 T14:42:15,"Hi Pranav! I'd be happy to explain more about our home insurance policy. What specifically would you like to know?",
+  user_1,26/09/2024 T14:43:00,"well, i just bought a new house in delhi for around 80 lakhs. what kind of coverage can i expect?",
+  user_2,26/09/2024 T14:43:30,"Congratulations on your new home! For a house valued at 80 lakhs, we can offer a comprehensive policy that covers damage to the structure, contents, and also provides liability coverage. Would you like me to share a quote?",
+  user_1,26/09/2024 T14:44:00,"yeah, that sounds great. pls go ahead and share the quote. also, what's the process to get the policy activated?"

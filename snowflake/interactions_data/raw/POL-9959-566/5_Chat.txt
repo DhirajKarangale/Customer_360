@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d7,Vedant Thakur,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T15:10:00,"hey anjali whats the next step for my life insurance policy?",
+  user_2,26/09/2024 T15:10:30,"Hi Vedant! I've sent you a doc with the policy details. Can you pls review and let me know if you're okay with the terms?",
+  user_1,26/09/2024 T15:12:00,"ok got it. whats the diffrence between *term* life and whole life insurance again?",
+  user_2,26/09/2024 T15:13:00,"Term life provides coverage for a specific period (e.g., 10, 20, or 30 years). Whole life, on the other hand, covers you for your entire lifetime as long as premiums are paid. Whole life also has a cash value component.",
+  user_1,26/09/2024 T15:15:00,"alright that makes sense. so for me, term life is the way to go. how do i proceed with the application?"

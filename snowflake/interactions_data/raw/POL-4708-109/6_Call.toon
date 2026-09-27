@@ -1,0 +1,12 @@
+call_id: REC-INS-002C
+start_timestamp: 25/10/2024 T:14:05:00
+end_timestamp: 25/10/2024 T:14:09:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Ananya Nair,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Sunita Agarwal,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Sunita I hope you're doing well I just wanted to follow up on my health policy that expired
+  user_2,Ah Ananya good afternoon I'm doing well thanks for reaching out Your policy did expire on the 10th of this month
+  user_1,Yeah I know I got your email about the reinstatement fee and the outstanding premium I just wanted to confirm if I can still pay by the 25th
+  user_2,Actually Ananya I need to let you know that the payment deadline has passed and the policy is now officially expired I apologize for any inconvenience this may have caused
+  user_1,Oh no I see... I was really hoping to get it reinstated What are my options now

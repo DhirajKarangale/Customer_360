@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Auto Policy Expiration and Renewal
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Samar Ghosh,samar.ghosh@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,ravi.menon@securefuturegroup.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,27/09/2024 T:10:05:00,"Hi Ravi,\n\nI am writing to follow up on our call earlier today regarding my auto policy. You mentioned it had expired due to non-payment. Can you please provide me with the payment details and any additional steps I need to take to renew it?\n\nPolicy Number: DC-001234\n\nThanks,\nSamar",
+  user_2,user_1,,27/09/2024 T:10:20:00,"Dear Samar,\n\nThank you for your prompt follow-up. I have attached a payment invoice for your auto policy renewal. Please find the payment details below:\n\nPolicy Number: DC-001234\nPayment Amount: $542.50\nPayment Method: Online Bank Transfer or Cheque\n\nTo avoid any lapse in coverage, please settle the payment by the end of the week. If you have any questions or concerns, feel free to reach out to me directly.\n\nBest regards,\nRavi Menon",https://storage.securefuturegroup.com/docs/Payment_Invoice_DC001234.pdf

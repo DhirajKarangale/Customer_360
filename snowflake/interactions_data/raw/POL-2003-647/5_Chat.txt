@@ -1,0 +1,10 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c97,Krishna Das,customer
+  3a6a7028-a699-4de4-b932-41271ff311d7,Ramesh Tiwari,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:42:00,"hey ramesh, just got the policy docs via email. thanks for the quick turnaround",
+  user_2,26/09/2024 T14:42:15,"you're welcome, krishna! glad we could get everything sorted out for you. did you have a chance to review the policy details?",
+  user_1,26/09/2024 T14:43:00,"yeah, i did. looks good to me. just one thing - can you confirm the coverage start date is today?",
+  user_2,26/09/2024 T14:43:20,"yes, that's correct. your coverage started today, as per our previous discussion. you're all set!",
+  user_1,26/09/2024 T14:43:40,"awesome, thanks again ramesh! you've been a huge help"

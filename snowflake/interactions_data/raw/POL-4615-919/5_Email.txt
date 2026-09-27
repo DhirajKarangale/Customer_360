@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Auto Policy Expiration and Reinstatement
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Rohan Ahuja,rohan.ahuja@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,ramesh.tiwari@safeshieldagency.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2024 T:11:04:20,"Dear Rohan,\n\nI hope this email finds you well. I wanted to follow up on our previous conversation regarding your auto policy with DCoders, which has expired. As discussed, I have negotiated with the underwriter to reduce the lapse fee. Please find the revised quote attached to this email.\n\nIf you are ready to proceed with the reinstatement, kindly let me know, and I will guide you through the next steps.\n\nBest regards,\nRamesh Tiwari",https://storage.safeshieldagency.com/docs/Revised_Quote_Rohan_Ahuja_2026.pdf
+  user_1,user_2,,28/09/2024 T:11:21:10,"Hi Ramesh,\n\nThanks for your email and for negotiating the lapse fee. I appreciate your efforts. I will review the revised quote and get back to you by the end of the day.\n\nThanks again,\nRohan Ahuja"

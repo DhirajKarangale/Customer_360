@@ -1,0 +1,9 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c97,Sneha Roy,customer
+  3a6a7028-a699-4de4-b932-41271ff311d7,Anita Sharma,insurance agent
+messages[4]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey anita, just wanted to confirm if my policy HP-001234 has been cancelled?",
+  user_2,26/09/2024 T14:50:30,"Hi Sneha! Yes, your policy HP-001234 has been successfully cancelled. You should receive a confirmation letter and refund (if applicable) within 7-10 working days.",
+  user_1,26/09/2024 T14:51:00,"thx anita! i just wanted to make sure since i havent recieved any mail yet. can u pls check if its been sent?",
+  user_2,26/09/2024 T14:51:45,"I've checked, Sneha. The confirmation letter was sent to your registered email address on 25th Sep. Please check your spam folder if you haven't received it yet. If you still can't find it, I can resend it to you."

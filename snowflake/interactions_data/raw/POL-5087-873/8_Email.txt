@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c98
+subject: Re: Health Policy Expiration and Reinstatement
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Vihaan Patel,vihaan.patel@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,anjali.desai@firstguardbrokers.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,30/09/2024 T:10:45:00,"Hi Anjali,\n\nI hope this email finds you well. I just wanted to confirm that my health policy has been successfully reinstated and is now active. I received the confirmation letter, but I'd like to double-check the status one last time.\n\nCould you please let me know if everything is in order?\n\nThanks,\nVihaan",
+  user_2,user_1,,30/09/2024 T:11:01:15,"Dear Vihaan,\n\nThank you for your email. I'm happy to confirm that your health policy has been successfully reinstated, and it is now active. I've checked the status, and everything is in order. You should be all set.\n\nIf you have any further questions or concerns, please don't hesitate to reach out.\n\nBest regards,\nAnjali Desai",

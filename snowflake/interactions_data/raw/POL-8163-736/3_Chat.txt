@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d7,Vivaan Gupta,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey ravi, just got the renewal application form. thx for sending it over. but i'm a bit confused about the premium amount. can u pls clarify?",
+  user_2,26/09/2024 T14:50:30,"Hi Vivaan, yeah sure thing. The premium amount has increased by 10% this year due to the addition of new benefits. Would you like me to walk you through the changes?",
+  user_1,26/09/2024 T14:51:15,"yeah that would be great, thx. also, is there a deadline for submitting the renewal application?",
+  user_2,26/09/2024 T14:52:00,"I'd be happy to explain the changes. As for the deadline, since your policy has already expired on March 10th, we can consider it a reinstatement. You'll need to submit the application within the next 30 days to avoid any lapse in coverage.",
+  user_1,26/09/2024 T14:53:20,"ok, got it. thx for the clarification, ravi. i'll review the form and get back to you soon."

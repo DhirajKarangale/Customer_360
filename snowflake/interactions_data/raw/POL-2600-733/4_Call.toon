@@ -1,0 +1,22 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:25:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Aarav Sharma,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[14]{user,text}:
+  user_1,Hi is this Secure Life Solutions
+  user_2,Ah yes this is Suresh from Secure Life Solutions How can I assist you today
+  user_1,I'm Aarav Sharma and I'm calling about my health policy with DCoders
+  user_2,Aarav Sharma Ah yes I remember we spoke earlier about updating your payment method
+  user_1,Yeah that's right I just wanted to confirm if everything is okay with my policy now
+  user_2,Let me just check on that for you [typing] Ah yes everything looks good Your policy is active
+  user_1,Great thanks so much for your help Suresh
+  user_2,You're welcome Aarav It was my pleasure to assist you [background noise: dog barks]
+  user_1,Sorry to hear that [laughs] I hope your dog is okay
+  user_2,[laughs] Oh yeah he's fine just a bit excited [hold music starts playing]
+  user_1,[on hold for 2 minutes] 
+  user_2,[hold music stops] I apologize for the hold Aarav I just wanted to confirm a few more details
+  user_1,Okay no problem
+  user_2,Great so I just need to confirm your policy number and date of birth [typing]
+  user_1,My policy number is SH-123456 and my date of birth is 12th August 1990

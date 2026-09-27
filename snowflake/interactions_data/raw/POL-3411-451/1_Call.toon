@@ -1,0 +1,14 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Akanksha Bhatt,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Anita Sharma,insurance agent
+messages[7]{user,text}:
+  user_2,Hi Akanksha good afternoon Can you hear me
+  user_1,Yeah yeah I can hear you Good afternoon
+  user_2,Great So I'm Anita from Trust Wealth Advisors and I'll be helping you with your health insurance policy today
+  user_1,Okay that sounds good I'm looking to get a new policy
+  user_2,Alright Can you please confirm your date of birth and contact number for verification purposes
+  user_1,Umm my date of birth is 12th August 1990 and my contact number is 9876543210
+  user_2,Thank you Akanksha I've verified the details Your policy is now active and you should receive the documents via email shortly

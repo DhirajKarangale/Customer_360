@@ -1,0 +1,14 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f3a7028-a699-4de4-b932-41271ff311d6,Sneha Roy,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[7]{user,text}:
+  user_2,Hi Sneha Roy good afternoon Can you hear me
+  user_1,Yeah I can hear you Good afternoon
+  user_2,This is Vikram Patel from Omni Insurance Group How can I assist you today
+  user_1,Hi Vikram I am calling about my life policy with DCoders I need to cancel it
+  user_2,I see Okay let me just check on that for you [typing] Can you please confirm your policy number for me
+  user_1,It's LP-001234
+  user_2,Alright Sneha I've located your policy [sighs] I'm going to go ahead and process the cancellation for you Is there a reason you're cancelling

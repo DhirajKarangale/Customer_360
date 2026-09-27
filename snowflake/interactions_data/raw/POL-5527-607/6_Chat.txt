@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Vivaan Gupta,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Neha Kapoor,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T15:10:00,"hey neha, just got ur email with the new quote. thx! can u pls clarify whats covered in case of trip cancellations due to medical emergencies? *emergencies*",
+  user_2,26/09/2024 T15:10:30,"Hi Vivaan, glad you got the quote. For trip cancellations due to medical emergencies, we cover up to 100% of the trip cost if the cancellation is due to a medical condition that was not pre-existing at the time of policy purchase.",
+  user_1,26/09/2024 T15:11:00,"ok, got it. and whats the process to file a claim in case of a medical emergency? do i need to provide any docs?",
+  user_2,26/09/2024 T15:11:45,"To file a claim, you'll need to provide medical reports from the treating doctor, proof of trip cancellation, and a completed claim form. We'll guide you through the process. I'll send you the claim form via email.",
+  user_1,26/09/2024 T15:12:10,"sounds good, thx neha. looking forward to the form. btw, is my old policy officially expired now?",

@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Rohan Ahuja,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,insurance agent
+messages[5]{user,text}:
+  user_2,Hi Rohan hope you're doing well I'm calling to follow up on our previous conversation about your auto policy with DCoders
+  user_1,Yeah I'm doing alright thanks for calling Ramesh I was just about to get back to you on the quote you sent over
+  user_2,Ah great I'm glad I caught you then So what are your thoughts on the quote I sent over for the back premium and lapse fee
+  user_1,To be honest Ramesh I'm a bit concerned about the lapse fee I wasn't expecting it to be that high
+  user_2,I completely understand Rohan but I want to assure you that it's a standard fee for reinstating a policy after it's expired I can try to see if there's any room for negotiation though

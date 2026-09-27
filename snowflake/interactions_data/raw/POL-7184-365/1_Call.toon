@@ -1,0 +1,14 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Kavya Iyer,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Anita Sharma,insurance agent
+messages[7]{user,text}:
+  user_2,Hi Kavya Iyer this is Anita Sharma from Trust Wealth Advisors How are you today
+  user_1,I'm good thanks How can I help you
+  user_2,I'm calling regarding your life policy with DCoders We need to discuss the status of your policy
+  user_1,Oh yeah I've been meaning to look into that What's the current status
+  user_2,[typing] Okay let me just check on that for you [pause] It looks like your policy is currently inactive We need to update some information to get it active again
+  user_1,Inactive That's weird I could've sworn I paid the premiums on time
+  user_2,Don't worry it's just a minor issue We can resolve this quickly I'll guide you through the process

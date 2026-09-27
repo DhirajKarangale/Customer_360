@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Health Policy Renewal and Alternative Options
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Krishna Das,krishna.das@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,vikram.p@omniinsurancegroup.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,28/09/2024 T:11:04:20,"Hi Vikram,\n\nI hope this email finds you well. I wanted to follow up on our previous conversation regarding my health policy renewal. I've been reviewing the form you sent, and I'm still concerned about the premium increase. Could you please provide more details on the new benefits that are causing the increase? Additionally, I'd like to explore alternative plans that might be more cost-effective for me.\n\nLooking forward to hearing back from you.\n\nBest regards,\nKrishna Das",
+  user_2,user_1,,28/09/2024 T:11:22:10,"Dear Krishna,\n\nThank you for your email. I understand your concerns about the premium increase, and I'd be happy to explain the new benefits in more detail. The increase is primarily due to the addition of mental health coverage and an enhanced wellness program. However, I also understand that this may not be a priority for everyone.\n\nRegarding alternative plans, I've attached a few options that might be more suitable for your needs. Please take a look and let me know if you'd like me to elaborate on any of them.\n\nBest regards,\nVikram Patel",https://storage.omniinsurancegroup.com/docs/Alternative_Plans_2026.pdf

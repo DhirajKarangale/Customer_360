@@ -1,0 +1,14 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Nandini Rajput,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Singh,insurance agent
+messages[7]{user,text}:
+  user_2,Hi Nandini good morning Can you hear me
+  user_1,Yeah yeah I can hear you Good morning
+  user_2,Great thanks for calling DCoders today My name is Vikram and I'll be assisting you with your auto policy How can I help you today
+  user_1,Hi Vikram I'm calling about my auto policy I think it's due for renewal but I'm not sure
+  user_2,Let me check on that for you Can you please provide me with your policy number
+  user_1,It's AP-001234
+  user_2,I've checked on your policy Nandini and it looks like it's actually expired as of last week I apologize for the inconvenience

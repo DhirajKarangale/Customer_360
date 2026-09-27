@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Life Insurance Policy Renewal Documents
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Nandini Rajput,nandini.r@mail.com,customer
+  483ce1dc-44c1-41db-886f-539e46b7bdad,Vikram Patel,vikram.p@omniinsurancegroup.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,28/09/2024 T:11:04:20,"Hi Vikram,\n\nI hope this email finds you well. I wanted to follow up on our previous conversation regarding my life insurance policy renewal. I haven't received the documents yet, and I'm getting a bit concerned as the deadline is approaching. Could you please look into this and let me know the status?\n\nPolicy Number: LP-001234\n\nThanks,\nNandini",
+  user_2,user_1,,28/09/2024 T:11:16:50,"Dear Nandini,\n\nThank you for reaching out. I apologize for the delay in sending the documents. I have resent the renewal documents to your email address. Please find them attached to this email as well. Your policy is still in 'Pending Renewal' status, and we need to finalize it by the 20th to avoid any lapse in coverage. If you have any questions or concerns, please don't hesitate to reach out.\n\nBest regards,\nVikram Patel",https://storage.omniinsurancegroup.com/docs/Life_Policy_LP001234_Renewal_Docs_2026.pdf

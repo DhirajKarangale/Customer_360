@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Vivaan Gupta,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Ravi this is Vivaan Gupta I'm calling about my health policy with DCoders
+  user_2,Ah Vivaan good morning How can I assist you today
+  user_1,I just wanted to check on the status of my policy It's been a few days since we last spoke
+  user_2,Let me just check on that for you [pause] Ah yes I see that we've received the medical certificate with the doctor's signature
+  user_1,Great So what's the next step Is my policy active now

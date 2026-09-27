@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 30/09/2026 T:14:05:00
+end_timestamp: 30/09/2026 T:14:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Vivaan Gupta,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ravi Menon,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Ravi I hope you're doing well I just wanted to follow up on my health policy renewal
+  user_2,Ah Vivaan good afternoon Yeah I've got your file right here Let me just check on the status [pause] Okay so I see you've submitted the application and we've received it
+  user_1,Great that's a relief I was worried it might have gotten lost in the mail or something
+  user_2,No no everything looks good on our end We're just waiting on the underwriting team to review it [sighs] I apologize again for the oversight on the expiration notice
+  user_2,You should receive an update from us within the next 7-10 business days If everything goes smoothly your new policy will be active and you'll receive a confirmation email

@@ -1,0 +1,14 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Vihaan Patel,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,insurance agent
+messages[7]{user,text}:
+  user_2,Hi Vihaan good afternoon Can you hear me
+  user_1,Yeah I can hear you Good afternoon
+  user_2,Thanks for calling DCoders today My name is Anjali and I'll be assisting you with your policy queries How can I help you today
+  user_1,Hi Anjali I'm calling about my health policy I think it's about to expire or maybe it already has I'm not sure
+  user_2,I see Let me just check on that for you [typing] Can you please confirm your policy number for me
+  user_1,It's HP-001234
+  user_2,Thank you Vihaan I've checked on the status of your policy and it looks like it has indeed expired on the 10th of this month [sighs] I apologize for the inconvenience

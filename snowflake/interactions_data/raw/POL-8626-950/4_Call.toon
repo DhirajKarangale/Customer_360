@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4f3a7028-a699-4de4-b932-41271ff311d6,Kavya Iyer,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Singh,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Vikram I'm calling about my travel policy with DCoders I just got a notification that it's expired
+  user_2,Ah Kavya Iyer yes I can help you with that Can you please confirm your policy number for me
+  user_1,It's TRV-001234
+  user_2,Okay thank you Kavya I've checked on the system and it seems like the policy did expire due to a technical glitch But don't worry we can reinstate it for you
+  user_1,Okay that sounds good How much will it cost to reinstate it

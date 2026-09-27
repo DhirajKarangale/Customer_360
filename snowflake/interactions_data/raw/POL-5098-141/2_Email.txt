@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Re: Health Policy Expiration and Renewal
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Kiara Sen,kiara.sen@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,vikram.p@omniinsurancegroup.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,12/10/2026 T:11:04:20,"Hi Vikram,\n\nI spoke with you earlier today regarding my health policy. You mentioned it had expired on the 10th of this month. I would like to know the next steps to renew it. Could you please guide me through the process?\n\nThanks,\nKiara",
+  user_2,user_1,,12/10/2026 T:11:17:05,"Dear Kiara,\n\nThank you for your email. I apologize again for the inconvenience caused by the expiration of your policy. To renew, please find attached a renewal form that you need to fill out and return to us by the 20th of this month. If you have any questions or need assistance, please don't hesitate to reach out.\n\nBest regards,\nVikram Patel",https://storage.omniinsurancegroup.com/docs/Renewal_Form_Health_Policy_2026.pdf

@@ -1,0 +1,10 @@
+chat_id: 8a52c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Kavya Iyer,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey vikram, just made the payment for my life policy. can u pls confirm if u received it?",
+  user_2,26/09/2024 T14:50:30,"Hi Kavya, thanks for the prompt payment. I'm checking on the status... pls give me a min",
+  user_1,26/09/2024 T14:51:00,"ok, thx. also, is there anything else i need to do to update my policy status from pending?",
+  user_2,26/09/2024 T14:52:00,"Just confirmed, payment is received. Your policy status will be updated to active shortly. You'll receive a confirmation email once it's done. No further action needed from your end",
+  user_1,26/09/2024 T14:52:30,"great, thx so much for your help vikram. have a good day"
