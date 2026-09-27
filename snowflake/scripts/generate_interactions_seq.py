@@ -10,7 +10,7 @@ import winsound
 import traceback
 import shutil
 
-START_POLICY = 126
+START_POLICY = 125
 END_POLICY = 200
 
 OVERRIDE = False
