@@ -15,6 +15,9 @@ END_POLICY = 200
 
 OVERRIDE = False
 
+MIN_DELAY_SECONDS = 4
+MAX_DELAY_SECONDS = 10
+
 MIN_INTERACTIONS = 4
 MAX_INTERACTIONS = 8
 
@@ -206,13 +209,11 @@ def process_policy(index, policy, total_in_batch, output_dir, sf_conn):
 
 def play_error_sound():
     try:
-        # Play a noticeable sequence of beeps
-        for _ in range(3):
-            winsound.Beep(1000, 500)
-            time.sleep(0.1)
+        for _ in range(7):
+            winsound.Beep(3000, 2000) 
+            time.sleep(0.2)
     except:
-        # Fallback if winsound fails
-        print('\a') # system bell
+        print('\a') 
 
 def main():
     print("Fetching policy data from PostgreSQL...")
@@ -258,9 +259,12 @@ def main():
 
             process_policy(index, policy, total_to_process, output_dir, sf_conn)
             
-            # Wait for a random delay between 4 and 10 seconds if not the last item
+            print("  -> Policy generated successfully. Now intentionally throwing an error to test the alarm...")
+            raise Exception("Intentional Test Error for Sound")
+            
+            # Wait for a random delay between MIN_DELAY_SECONDS and MAX_DELAY_SECONDS if not the last item
             if index < total_to_process - 1:
-                delay = random.randint(4, 10)
+                delay = random.randint(MIN_DELAY_SECONDS, MAX_DELAY_SECONDS)
                 print(f"  -> Successfully generated. Waiting for {delay} seconds before the next policy...")
                 time.sleep(delay)
                 
