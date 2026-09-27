@@ -4,12 +4,13 @@ import json
 import psycopg2
 import snowflake.connector
 from dotenv import load_dotenv
+from sf_auth import get_snowflake_conn
 import concurrent.futures
 
-START_POLICY = 36
-END_POLICY = 40
+START_POLICY = 81
+END_POLICY = 90
 
-MAX_WORKERS = 4
+MAX_WORKERS = 5
 
 MIN_INTERACTIONS = 4
 MAX_INTERACTIONS = 8
@@ -37,31 +38,7 @@ PG_NAME = os.getenv("POSTGRES_DB")
 PG_USER = os.getenv("POSTGRES_USER")
 PG_PASS = os.getenv("POSTGRES_PASSWORD")
 
-SF_USER = os.getenv("SNOWFLAKE_USER")
-SF_PASSWORD = os.getenv("SNOWFLAKE_PASSWORD")
-SF_ACCOUNT = os.getenv("SNOWFLAKE_ACCOUNT")
-SF_WAREHOUSE = os.getenv("SNOWFLAKE_WAREHOUSE")
-SF_DATABASE = os.getenv("SNOWFLAKE_DATABASE")
-SF_SCHEMA = os.getenv("SNOWFLAKE_SCHEMA")
 
-def get_snowflake_conn():
-    conn = snowflake.connector.connect(
-        user=SF_USER,
-        password=SF_PASSWORD,
-        account=SF_ACCOUNT
-    )
-    cursor = conn.cursor()
-    if SF_WAREHOUSE:
-        cursor.execute(f"CREATE WAREHOUSE IF NOT EXISTS {SF_WAREHOUSE}")
-        cursor.execute(f"USE WAREHOUSE {SF_WAREHOUSE}")
-    if SF_DATABASE:
-        cursor.execute(f"CREATE DATABASE IF NOT EXISTS {SF_DATABASE}")
-        cursor.execute(f"USE DATABASE {SF_DATABASE}")
-    if SF_SCHEMA:
-        cursor.execute(f"CREATE SCHEMA IF NOT EXISTS {SF_SCHEMA}")
-        cursor.execute(f"USE SCHEMA {SF_SCHEMA}")
-    cursor.close()
-    return conn
 
 def get_postgres_conn():
     return psycopg2.connect(

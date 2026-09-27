@@ -3,6 +3,7 @@ import re
 import json
 import snowflake.connector
 from dotenv import load_dotenv
+from sf_auth import get_snowflake_conn
 import concurrent.futures
 
 MAX_WORKERS = 4
@@ -19,31 +20,7 @@ if not os.path.exists(env_path):
     raise FileNotFoundError(f"Environment file not found at {env_path}")
 load_dotenv(env_path)
 
-SF_USER = os.getenv("SNOWFLAKE_USER")
-SF_PASSWORD = os.getenv("SNOWFLAKE_PASSWORD")
-SF_ACCOUNT = os.getenv("SNOWFLAKE_ACCOUNT")
-SF_WAREHOUSE = os.getenv("SNOWFLAKE_WAREHOUSE")
-SF_DATABASE = os.getenv("SNOWFLAKE_DATABASE")
-SF_SCHEMA = os.getenv("SNOWFLAKE_SCHEMA")
 
-def get_snowflake_conn():
-    conn = snowflake.connector.connect(
-        user=SF_USER,
-        password=SF_PASSWORD,
-        account=SF_ACCOUNT
-    )
-    cursor = conn.cursor()
-    if SF_WAREHOUSE:
-        cursor.execute(f"CREATE WAREHOUSE IF NOT EXISTS {SF_WAREHOUSE}")
-        cursor.execute(f"USE WAREHOUSE {SF_WAREHOUSE}")
-    if SF_DATABASE:
-        cursor.execute(f"CREATE DATABASE IF NOT EXISTS {SF_DATABASE}")
-        cursor.execute(f"USE DATABASE {SF_DATABASE}")
-    if SF_SCHEMA:
-        cursor.execute(f"CREATE SCHEMA IF NOT EXISTS {SF_SCHEMA}")
-        cursor.execute(f"USE SCHEMA {SF_SCHEMA}")
-    cursor.close()
-    return conn
 
 def call_cortex_llm(sf_conn, prompt, model_name):
     cursor = sf_conn.cursor()
