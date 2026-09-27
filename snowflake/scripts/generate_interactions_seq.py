@@ -210,10 +210,21 @@ def process_policy(index, policy, total_in_batch, output_dir, sf_conn):
 def play_error_sound():
     try:
         for _ in range(7):
-            winsound.Beep(3000, 2000) 
-            time.sleep(0.2)
+            winsound.Beep(3000, 1000) 
+            time.sleep(0.05)
     except:
         print('\a') 
+
+def play_success_sound():
+    try:
+        winsound.Beep(392, 150)  # G4
+        winsound.Beep(523, 150)  # C5
+        winsound.Beep(659, 150)  # E5
+        winsound.Beep(784, 200)  # G5
+        winsound.Beep(659, 150)  # E5
+        winsound.Beep(784, 600)  # G5 (held)
+    except:
+        pass
 
 def main():
     print("Fetching policy data from PostgreSQL...")
@@ -244,6 +255,7 @@ def main():
     total_to_process = len(policies_to_process)
     print(f"Processing {total_to_process} policies SEQUENTIALLY...")
     
+    pipeline_successful = True
     for index, policy in enumerate(policies_to_process):
         try:
             p_num = policy['policy_number']
@@ -259,9 +271,6 @@ def main():
 
             process_policy(index, policy, total_to_process, output_dir, sf_conn)
             
-            print("  -> Policy generated successfully. Now intentionally throwing an error to test the alarm...")
-            raise Exception("Intentional Test Error for Sound")
-            
             # Wait for a random delay between MIN_DELAY_SECONDS and MAX_DELAY_SECONDS if not the last item
             if index < total_to_process - 1:
                 delay = random.randint(MIN_DELAY_SECONDS, MAX_DELAY_SECONDS)
@@ -272,11 +281,16 @@ def main():
             print(f"\n[!] ERROR OCCURRED during processing policy '{policy.get('policy_number', 'UNKNOWN')}':")
             traceback.print_exc()
             print("Stopping the pipeline and sounding alarm...")
+            pipeline_successful = False
             play_error_sound()
             break
 
     sf_conn.close()
     print("\nData generation pipeline finished!")
+    
+    if pipeline_successful and total_to_process > 0:
+        print("  -> All policies processed! Playing success chime...")
+        play_success_sound()
 
 if __name__ == "__main__":
     main()
