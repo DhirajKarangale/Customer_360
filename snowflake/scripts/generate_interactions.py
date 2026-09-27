@@ -6,8 +6,8 @@ import snowflake.connector
 from dotenv import load_dotenv
 import concurrent.futures
 
-START_POLICY = 12
-END_POLICY = 25
+START_POLICY = 36
+END_POLICY = 40
 
 MAX_WORKERS = 4
 
