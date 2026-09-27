@@ -7,8 +7,8 @@ from dotenv import load_dotenv
 from sf_auth import get_snowflake_conn
 import concurrent.futures
 
-START_POLICY = 81
-END_POLICY = 90
+START_POLICY = 121
+END_POLICY = 125
 
 MAX_WORKERS = 5
 

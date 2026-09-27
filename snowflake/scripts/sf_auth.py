@@ -18,7 +18,7 @@ KEY_REQUIRED = os.getenv("KEY_REQUIRED", "false").lower() == "true"
 
 def get_snowflake_conn():
     if KEY_REQUIRED:
-        key_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "rsa_key.p8")
+        key_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "rsa_key.p8")
         with open(key_path, "rb") as key_file:
             p_key = serialization.load_pem_private_key(
                 key_file.read(),
