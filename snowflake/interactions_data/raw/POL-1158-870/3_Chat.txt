@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Aarav Sharma,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:50:00,"hey Vikram, just wanted to follow up on our prev convo about my home policy. did u get a chance to look into reinstatement?", 
+  user_2,26/09/2024 T14:50:30,"Hi Aarav, yeah I did. I sent you an email with the reinstatement form. Did you get a chance to review it?", 
+  user_1,26/09/2024 T14:51:00,"oh yeah i got it. thx for that. so whats the next step? do i just fill it out and send it back?", 
+  user_2,26/09/2024 T14:51:45,"Exactly. Just fill it out, sign it, and send it back to me. I'll take care of the rest. Also, just a heads up, there might be a small fee for reinstatement.", 
+  user_1,26/09/2024 T14:52:10,"ok sounds good. how long will it take to get the policy active again after u receive the form?",

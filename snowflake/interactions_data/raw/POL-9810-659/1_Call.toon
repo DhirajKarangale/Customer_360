@@ -1,0 +1,14 @@
+call_id: REC-INS-001A
+start_timestamp: 15/03/2023 T:14:05:00
+end_timestamp: 15/03/2023 T:14:22:00
+participants[2]{id,name,role}:
+  4f6a7028-a699-4de4-b932-41271ff311d6,Pranav Mishra,customer
+  2a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,insurance agent
+messages[7]{user,text}:
+  user_2,Hi Pranav good afternoon Can you hear me
+  user_1,Yeah I can hear you Good afternoon
+  user_2,Thanks for choosing DCoders I'm Neha from Shield Life Services How can I assist you today
+  user_1,Hi Neha I'm looking to get a home policy I just moved into a new place and I want to get it insured as soon as possible
+  user_2,Congratulations on your new home That's a great decision Can you please provide me with your address so I can guide you through the process
+  user_1,Ah yeah it's 1456 Oakwood Drive -- [pause] -- sorry what was the process again
+  user_2,No worries at all Pranav The process is quite straightforward We'll just need some basic information from you and then we can activate your policy right away [typing] I've got your address noted

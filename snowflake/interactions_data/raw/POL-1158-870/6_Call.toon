@@ -1,0 +1,23 @@
+call_id: REC-INS-006C
+start_timestamp: 30/09/2026 T:14:05:00
+end_timestamp: 30/09/2026 T:14:25:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Aarav Sharma,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[14]{user,text}:
+  user_1,Hi Vikram this is Aarav Sharma calling about my home policy
+  user_2,Ah Aarav good afternoon I've got you on my screen here let me just pull up your policy real quick [typing]
+  user_1,Thanks I just wanted to confirm that everything is okay with the reinstatement
+  user_2,Yeah everything looks good on my end [pause] Ah I see that the new premium invoice was sent out to you on the 28th
+  user_1,Yeah I got that thanks but I was wondering if there's any way to reduce the premium
+  user_2,I can definitely look into that for you Aarav [pause] Can you hold for just a minute while I check on some options [hold music starts]
+  user_1,[sighs] Okay
+  user_2,[hold music ends] Alright I'm back Aarav I was able to review your policy and I think I can offer you a slightly better rate [dog barks in the background]
+  user_1,Really what's the new rate
+  user_2,[pause] Let me just confirm this with my supervisor real quick [pause] Ah yes I can offer you a 5% discount on your premium
+  user_1,That sounds great thanks Vikram
+  user_2,No problem Aarav I'm glad I could help [pause] Now I just need to update your policy with the new rate [typing]
+  user_1,Okay sounds good
+  user_2,Alright everything should be updated now Aarav your policy is active and you should receive a new invoice with the updated premium within the next few days
+  user_1,Great thanks again Vikram
+  user_2,No problem Aarav have a great day [call ends]

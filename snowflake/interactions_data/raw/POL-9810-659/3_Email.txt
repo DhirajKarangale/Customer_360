@@ -1,0 +1,8 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c97
+subject: Home Insurance Policy for New Address
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Pranav Mishra,pranav.mishra@email.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,neha.kapoor@shieldlifeservices.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2024 T:10:06:40,"Dear Pranav,\n\nI hope this email finds you well. As discussed over the phone and chat, I am sending you the home insurance policy form for your new address. Please find the attached form and kindly fill it out with the required details. If you have any questions or need assistance, feel free to reach out to me directly.\n\nBest regards,\nNeha Kapoor",https://storage.shieldlifeservices.com/docs/Home_Insurance_Form_2026.pdf
+  user_1,user_2,,28/09/2024 T:10:14:10,"Hi Neha,\n\nThanks for sending the form. I have a few questions regarding the policy coverage and premium. Could you please clarify if the policy covers damages due to natural disasters and what the annual premium would be?\n\nLooking forward to hearing back from you.\n\nBest regards,\nPranav Mishra"

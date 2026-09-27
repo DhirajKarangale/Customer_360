@@ -1,0 +1,10 @@
+chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Pranav Mishra,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Neha Kapoor,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T15:10:00,"hey neha, just wanted to confirm if u got the form i sent back?"
+  user_2,26/09/2024 T15:10:30,"Hi Pranav! Yeah, I got it. Thanks for sending it back so quickly. I'm reviewing it now."
+  user_1,26/09/2024 T15:11:00,"cool, just wanted to make sure. also, can u pls confirm if the policy is active now?"
+  user_2,26/09/2024 T15:11:20,"Almost there, Pranav! I just need to update a few things on my end. I'll send you a confirmation email once it's all set. Should be active by EOD today"
+  user_1,26/09/2024 T15:11:40,"awesome, thx neha! looking forward to the email"

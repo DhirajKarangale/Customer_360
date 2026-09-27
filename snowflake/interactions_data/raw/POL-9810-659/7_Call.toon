@@ -1,0 +1,12 @@
+call_id: REC-INS-007C
+start_timestamp: 27/09/2026 T:11:05:00
+end_timestamp: 27/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Pranav Mishra,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Neha Kapoor,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Neha I just wanted to confirm that my home insurance policy is active now
+  user_2,Ah yes Pranav Good morning I just checked and yes your policy is active as of today [00:10]
+  user_1,That's great news Thanks so much for your help throughout this process [00:15]
+  user_2,You're welcome Pranav It was my pleasure to assist you If you have any more questions or need any further assistance please don't hesitate to reach out [00:20]
+  user_1,Will do Thanks again and have a great day [00:25]

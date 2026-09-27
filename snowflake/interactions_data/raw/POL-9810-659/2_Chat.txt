@@ -1,0 +1,10 @@
+chat_id: 9f8a2c03-5e8a-49db-9cb2-d27a1f64f002
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d7,Pranav Mishra,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,26/09/2024 T14:42:10,"hey i just moved into a new home and i need to get it insured. can u help me with that?",
+  user_2,26/09/2024 T14:42:30,"Hi Pranav! Congrats on the new home! I'd be happy to help you with that. Can you please provide me with your new address?",
+  user_1,26/09/2024 T14:43:05,"its 1456, oakwood apartments, near city center. is that enuf info?",
+  user_2,26/09/2024 T14:43:20,"That's great, thank you! Just to confirm, is the correct address 1456 Oakwood Apartments, Near City Center, or do you have a specific street name or zip code?",
+  user_2,26/09/2024 T14:43:40,"Also, I just need to let you know that I'll be sending over a form for you to fill out to finalize the policy details. It's a pretty straightforward process."

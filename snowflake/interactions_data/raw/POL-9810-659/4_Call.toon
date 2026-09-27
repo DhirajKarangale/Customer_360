@@ -1,0 +1,12 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:11:05:00
+end_timestamp: 28/09/2026 T:11:09:00
+participants[2]{id,name,role}:
+  4a6a7028-a699-4de4-b932-41271ff311d6,Pranav Mishra,customer
+  2a6a7028-a699-4de4-b932-41271ff311d5,Neha Kapoor,insurance agent
+messages[5]{user,text}:
+  user_1,Hi Neha I hope you're doing well I just wanted to follow up on the home insurance policy we discussed earlier
+  user_2,Ah yeah Pranav good morning I've got your file right here Let me just pull it up [typing] Okay so I see you had some questions about the policy coverage and premium
+  user_1,Yeah that's right I was wondering if the policy covers natural disasters like earthquakes and floods
+  user_2,Okay so our policy does cover natural disasters but there's a deductible that applies in such cases [sighs] Let me see if I can find the exact amount [pause] Ah yes it's 5% of the total insured value
+  user_1,Okay that sounds good And what's the annual premium looking like
