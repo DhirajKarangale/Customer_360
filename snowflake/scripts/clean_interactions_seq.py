@@ -1,15 +1,19 @@
+import sys
 import os
 import re
 import json
 import time
 import random
-import winsound
+try:
+    import winsound
+except ImportError:
+    winsound = None
 import traceback
 import snowflake.connector
 from dotenv import load_dotenv
 from sf_auth import get_snowflake_conn
 
-TEST_MODE = True
+TEST_MODE = False
 OVERWRITE_EXISTING = False
 
 MIN_DELAY_SECONDS = 60
@@ -208,22 +212,65 @@ def process_policy_folder(policy_num, raw_policy_dir, cleaned_policy_dir, sf_con
         
     print(f"  Finished cleaning for Policy: {policy_num}")
 
+def mac_play_beeps(beeps_with_pauses):
+    try:
+        import math
+        import wave
+        sample_rate = 44100
+        wave_file = "/tmp/mac_beep.wav"
+        with wave.open(wave_file, 'w') as wf:
+            wf.setnchannels(1)
+            wf.setsampwidth(2)
+            wf.setframerate(sample_rate)
+            
+            audio_data = bytearray()
+            for freq, duration_ms, pause_ms in beeps_with_pauses:
+                num_samples = int(sample_rate * (duration_ms / 1000.0))
+                for i in range(num_samples):
+                    value = int(32767.0 * math.sin(2.0 * math.pi * freq * i / sample_rate))
+                    audio_data.extend(value.to_bytes(2, 'little', signed=True))
+                
+                if pause_ms > 0:
+                    pause_samples = int(sample_rate * (pause_ms / 1000.0))
+                    audio_data.extend(b'\x00\x00' * pause_samples)
+            
+            wf.writeframesraw(audio_data)
+        os.system(f"afplay {wave_file}")
+        os.remove(wave_file)
+    except Exception:
+        pass
+
 def play_error_sound():
     try:
-        for _ in range(7):
-            winsound.Beep(3000, 1000) 
-            time.sleep(0.05)
+        if sys.platform == 'win32' and winsound:
+            for _ in range(7):
+                winsound.Beep(3000, 1000) 
+                time.sleep(0.05)
+        elif sys.platform == 'darwin':
+            mac_play_beeps([(3000, 1000, 50)] * 7)
+        else:
+            print('\a') 
     except:
         print('\a') 
 
 def play_success_sound():
     try:
-        winsound.Beep(392, 150)  # G4
-        winsound.Beep(523, 150)  # C5
-        winsound.Beep(659, 150)  # E5
-        winsound.Beep(784, 200)  # G5
-        winsound.Beep(659, 150)  # E5
-        winsound.Beep(784, 600)  # G5 (held)
+        if sys.platform == 'win32' and winsound:
+            winsound.Beep(392, 150)  # G4
+            winsound.Beep(523, 150)  # C5
+            winsound.Beep(659, 150)  # E5
+            winsound.Beep(784, 200)  # G5
+            winsound.Beep(659, 150)  # E5
+            winsound.Beep(784, 600)  # G5 (held)
+        elif sys.platform == 'darwin':
+            mac_play_beeps([
+                (392, 150, 0),
+                (523, 150, 0),
+                (659, 150, 0),
+                (784, 200, 0),
+                (659, 150, 0),
+                (784, 600, 0)
+            ])
     except:
         pass
 
