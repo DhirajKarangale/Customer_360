@@ -1,14 +1,19 @@
 import os
 import re
 import json
+import time
+import random
+import winsound
+import traceback
 import snowflake.connector
 from dotenv import load_dotenv
 from sf_auth import get_snowflake_conn
-import concurrent.futures
 
-MAX_WORKERS = 4
-TEST_MODE = False
+TEST_MODE = True
 OVERWRITE_EXISTING = False
+
+MIN_DELAY_SECONDS = 60
+MAX_DELAY_SECONDS = 300
 
 MODELS = {
     "CLEANING": "llama3.1-70b",
@@ -19,7 +24,6 @@ env_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__
 if not os.path.exists(env_path):
     raise FileNotFoundError(f"Environment file not found at {env_path}")
 load_dotenv(env_path)
-
 
 
 def call_cortex_llm(sf_conn, prompt, model_name):
@@ -175,6 +179,7 @@ def process_file(sf_conn, raw_filepath, cleaned_filepath, filename):
         print(f"    Saved cleaned JSON to {final_out_path}")
     else:
         print(f"    Failed to process {filename}")
+        raise Exception(f"Failed to process {filename}")
 
 def process_policy_folder(policy_num, raw_policy_dir, cleaned_policy_dir, sf_conn):
     print(f"  Starting cleaning for Policy: {policy_num}")
@@ -203,6 +208,25 @@ def process_policy_folder(policy_num, raw_policy_dir, cleaned_policy_dir, sf_con
         
     print(f"  Finished cleaning for Policy: {policy_num}")
 
+def play_error_sound():
+    try:
+        for _ in range(7):
+            winsound.Beep(3000, 1000) 
+            time.sleep(0.05)
+    except:
+        print('\a') 
+
+def play_success_sound():
+    try:
+        winsound.Beep(392, 150)  # G4
+        winsound.Beep(523, 150)  # C5
+        winsound.Beep(659, 150)  # E5
+        winsound.Beep(784, 200)  # G5
+        winsound.Beep(659, 150)  # E5
+        winsound.Beep(784, 600)  # G5 (held)
+    except:
+        pass
+
 def main():
     base_dir = os.path.dirname(os.path.dirname(__file__))
     raw_dir = os.path.join(base_dir, "interactions_data", "raw")
@@ -210,6 +234,7 @@ def main():
 
     if not os.path.exists(raw_dir):
         print(f"Raw directory not found at {raw_dir}")
+        play_error_sound()
         return
 
     print("Connecting to Snowflake...")
@@ -217,6 +242,7 @@ def main():
         sf_conn = get_snowflake_conn()
     except Exception as e:
         print(f"Could not connect to Snowflake: {e}")
+        play_error_sound()
         return
 
     print("Scanning raw directory for policy folders...")
@@ -225,12 +251,18 @@ def main():
     print(f"Found {len(policy_folders)} policy folders to process.")
     
     if TEST_MODE:
-        print("TEST_MODE is enabled. Only processing 1 policy folder.")
+        print("TEST_MODE is enabled. Only processing 2 policy folders.")
         policy_folders = policy_folders[:2]
     
-    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-        futures = []
-        for policy_num in policy_folders:
+    total_to_process = len(policy_folders)
+    print(f"Processing {total_to_process} policies SEQUENTIALLY...")
+    
+    pipeline_successful = True
+
+    for index, policy_num in enumerate(policy_folders):
+        try:
+            print(f"\nProcessing Policy {index + 1}/{total_to_process}: {policy_num}")
+            
             raw_policy_dir = os.path.join(raw_dir, policy_num)
             cleaned_policy_dir = os.path.join(cleaned_dir, policy_num)
             
@@ -242,16 +274,28 @@ def main():
                     print(f"Skipping Policy {policy_num} (Already completely processed in cleaned folder)")
                     continue
 
-            futures.append(executor.submit(process_policy_folder, policy_num, raw_policy_dir, cleaned_policy_dir, sf_conn))
-            
-        for future in concurrent.futures.as_completed(futures):
-            try:
-                future.result()
-            except Exception as e:
-                print(f"Error processing a policy folder: {e}")
+            process_policy_folder(policy_num, raw_policy_dir, cleaned_policy_dir, sf_conn)
+
+            # Wait for a random delay between MIN_DELAY_SECONDS and MAX_DELAY_SECONDS if not the last item
+            if index < total_to_process - 1:
+                delay = random.randint(MIN_DELAY_SECONDS, MAX_DELAY_SECONDS)
+                print(f"  -> Successfully processed. Waiting for {delay} seconds before the next policy...")
+                time.sleep(delay)
+
+        except Exception as e:
+            print(f"\n[!] ERROR OCCURRED during processing policy '{policy_num}':")
+            traceback.print_exc()
+            print("Stopping the pipeline and sounding alarm...")
+            pipeline_successful = False
+            play_error_sound()
+            break
 
     sf_conn.close()
-    print("Cleaning pipeline finished.")
+    print("\nCleaning pipeline finished!")
+    
+    if pipeline_successful and total_to_process > 0:
+        print("  -> All policies processed! Playing success chime...")
+        play_success_sound()
 
 if __name__ == "__main__":
     main()
