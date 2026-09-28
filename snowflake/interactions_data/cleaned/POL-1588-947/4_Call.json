@@ -1,0 +1,25 @@
+{
+  "content": "Customer Shaurya Joshi called insurance agent Vikram Patel to confirm the cancellation of auto policy AP-001234 and the receipt of the confirmation letter and refund. The agent verified in the system that the policy is cancelled and the refund has been processed.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Shaurya Joshi",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "auto policy cancellation",
+      "refund confirmation"
+    ],
+    "action_items": []
+  }
+}

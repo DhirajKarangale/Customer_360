@@ -1,0 +1,28 @@
+{
+  "content": "Akanksha Bhatt called about her auto policy, confirming payment for outstanding premium and reinstatement fee. Anjali Desai updated the policy status and informed Akanksha that she will receive a confirmation email with updated policy documents within 24 hours.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T11:15:00",
+    "participants": {
+      "customer": {
+        "name": "Akanksha Bhatt",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "auto policy",
+      "payment confirmation",
+      "policy update"
+    ],
+    "action_items": [
+      "Akanksha will receive a confirmation email with updated policy documents within 24 hours"
+    ]
+  }
+}

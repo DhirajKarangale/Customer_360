@@ -1,0 +1,28 @@
+{
+  "content": "Customer Dev Chatterjee contacted insurance agent Anjali Desai to check the status of his health policy (HP-123456). Anjali confirmed that the policy expired on 25/09/2024, provided an attached expiration notice, and offered to discuss renewal options.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-27T10:05:00",
+    "participants": {
+      "customer": {
+        "name": "Dev Chatterjee",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "anxious",
+    "topics": [
+      "Health Policy Expiration",
+      "Policy Status",
+      "Policy Renewal"
+    ],
+    "action_items": [
+      "Discuss policy renewal options with the customer"
+    ]
+  }
+}

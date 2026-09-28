@@ -1,0 +1,29 @@
+{
+  "content": "Dev Chatterjee inquired about a comprehensive home policy for his new home at 1456 Oakwood Drive, covering damage from natural disasters and theft. Anjali Desai provided options and their respective premiums in an attached document.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-27T10:05:00",
+    "participants": {
+      "customer": {
+        "name": "Dev Chatterjee",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "home policy",
+      "natural disasters",
+      "theft"
+    ],
+    "action_items": [
+      "review attached document",
+      "respond with questions or proceed with policy options"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "content": "Vedant Thakur confirmed with Ravi Menon that his policy has been renewed with the Gold Plan and received a confirmation email. He also inquired about the status of his old policy, which is now marked as expired in the system.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T10:05:00",
+    "participants": {
+      "customer": {
+        "name": "Vedant Thakur",
+        "id": "3421f7d8-4a9f-4f3e-8d84-5f4e8a7c9e2"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "7a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "policy renewal",
+      "policy status"
+    ],
+    "action_items": []
+  }
+}

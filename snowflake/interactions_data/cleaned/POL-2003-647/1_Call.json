@@ -1,0 +1,29 @@
+{
+  "content": "Customer Krishna Das called to purchase an auto insurance policy for a new car. Insurance agent Ramesh Tiwari assisted him by asking for the vehicle details and the preferred coverage start date, which the customer requested to be as soon as possible.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Krishna Das",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "auto insurance",
+      "new car",
+      "coverage start date"
+    ],
+    "action_items": [
+      "Provide vehicle details",
+      "Set coverage start date to as soon as possible"
+    ]
+  }
+}

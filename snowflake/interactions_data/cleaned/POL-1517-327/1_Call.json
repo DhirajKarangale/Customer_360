@@ -1,0 +1,26 @@
+{
+  "content": "Sai Kumar called to check the status of his life insurance policy (LP-001234). The insurance agent, Anjali Desai, verified the policy in the system and confirmed to the customer that his policy is currently active and up to date.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Sai Kumar",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d5"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "policy status",
+      "life insurance",
+      "policy verification"
+    ],
+    "action_items": []
+  }
+}

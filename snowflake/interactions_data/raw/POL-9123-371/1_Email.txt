@@ -1,0 +1,7 @@
+mail_id: d7f883b1-91a3-48e2-b13c-74a00913e284
+subject: Inquiry regarding Health Policy Status - DCoders (Policy # DC-HLT-2023-8891)
+participants[2]{id,name,email,role}:
+  c1928374-56a1-4ef2-9b21-123456789abc,Neha Chauhan,neha.chauhan@mail.com,customer
+  a9827364-12b3-4fe1-8a90-987654321fed,Karan Joshi,karan.joshi@safestepins.com,insurance agent
+mails[1]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,14/10/2024 T:11:30:22,"Hi Karan,\n\nI am writing to check the current status of my health insurance policy (Policy ID: DC-HLT-2023-8891) managed through DCoders. I noticed that my coverage seems to have lapsed, but I never received a formal renewal notice or cancellation confirmation.\n\nCould you please look into this and let me know why it shows as expired? I need this sorted out immediately as I have upcoming medical appointments.\n\nLooking forward to your prompt response.\n\nRegards,\nNeha Chauhan",

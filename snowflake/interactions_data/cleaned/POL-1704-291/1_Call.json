@@ -1,0 +1,28 @@
+{
+  "content": "Customer Meera Chauhan calls insurance agent Neha Kapoor from Shield Life Services to check the status of her auto policy (AP-001234). The agent confirms the policy is currently in the activation process, will be active by the end of the day, and a confirmation email will be sent upon completion.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Meera Chauhan",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "auto policy status",
+      "policy activation"
+    ],
+    "action_items": [
+      "Wait for policy activation by the end of the day",
+      "Receive confirmation email upon activation"
+    ]
+  }
+}

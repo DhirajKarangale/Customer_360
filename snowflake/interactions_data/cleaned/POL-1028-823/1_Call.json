@@ -1,0 +1,29 @@
+{
+  "content": "Aaradhya Verma called to inquire about their expired auto policy with DCoders. Anjali Desai assisted and explained the process to reinstate the policy, which included paying the back premium and a small reinstatement fee of $250. The policy expired due to a returned payment caused by insufficient funds.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Aaradhya Verma",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d5"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "auto policy",
+      "policy expiration",
+      "reinstatement process"
+    ],
+    "action_items": [
+      "pay back premium and reinstatement fee",
+      "confirm policy details"
+    ]
+  }
+}

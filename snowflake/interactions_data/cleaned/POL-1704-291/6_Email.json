@@ -1,0 +1,25 @@
+{
+  "content": "Meera Chauhan emailed insurance agent Neha Kapoor to confirm the activation status and verify the details of her auto policy (Policy Number: DC-001234). Neha Kapoor responded confirming that the policy is active, all details in the system are correct, and the customer is fully covered.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-30T10:06:40",
+    "participants": {
+      "customer": {
+        "name": "Meera Chauhan",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Auto Policy Activation",
+      "Policy Verification"
+    ],
+    "action_items": []
+  }
+}

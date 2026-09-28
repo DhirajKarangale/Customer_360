@@ -1,0 +1,29 @@
+{
+  "content": "Meera Chauhan followed up with insurance agent Neha Kapoor regarding the urgent activation status of her auto policy (DC-001234). Neha apologized for the delay, confirmed that the policy is now active, noted that a confirmation email will be sent shortly, and provided an attached copy of the policy document.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-28T11:04:20",
+    "participants": {
+      "customer": {
+        "name": "Meera Chauhan",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "anxious",
+    "topics": [
+      "Auto Policy Activation",
+      "Policy Status Update",
+      "Policy Document"
+    ],
+    "action_items": [
+      "Check for confirmation email from DCoders",
+      "Review attached policy document"
+    ]
+  }
+}

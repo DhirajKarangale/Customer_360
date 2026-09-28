@@ -1,0 +1,25 @@
+{
+  "content": "Customer Krishna Das called insurance agent Anjali Desai to confirm the status of his life insurance policy (LP-001234). The agent informed him that the policy is currently active. The customer expressed gratitude for the assistance and ended the call.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Krishna Das",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "policy status",
+      "life insurance"
+    ],
+    "action_items": []
+  }
+}

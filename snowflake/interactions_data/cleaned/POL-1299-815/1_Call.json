@@ -1,0 +1,24 @@
+{
+  "content": "Kiara Sen called to inquire about her health policy, which she believed was about to expire or had already expired. Anjali Desai, the insurance agent, checked the system and confirmed that the policy had indeed expired on the 10th of the month.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Kiara Sen",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "health policy expiration"
+    ],
+    "action_items": []
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "content": "Kiara Sen called about her health policy, which had expired due to a technical issue that prevented notification. Anjali Desai apologized and offered to reinstate the policy immediately. Kiara inquired about the processing time for the reinstatement form.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:15:00",
+    "participants": {
+      "customer": {
+        "name": "Kiara Sen",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "health policy",
+      "reinstatement",
+      "technical issue"
+    ],
+    "action_items": [
+      "Kiara to return the reinstatement form"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "content": "The customer, Neha Chauhan, called to inquire about her expired health policy (HP-001234). The agent, Karan Joshi, informed her that the policy expired on the 10th of the month and explained that renewals now include a 5% premium increase ($150 per month) due to newly added mental health coverage and increased outpatient limits. After reviewing the details, the customer agreed to proceed, and the agent stated he would send a renewal form for her to sign and return.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Neha Chauhan",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "policy expiration",
+      "policy renewal",
+      "premium increase",
+      "added benefits"
+    ],
+    "action_items": [
+      "Agent to send renewal form to the customer",
+      "Customer to sign and return the renewal form"
+    ]
+  }
+}

@@ -1,10 +1,26 @@
 import os
 from google import genai
+from groq import Groq
 from sf_auth import get_snowflake_conn
 
-# 'snowflake' or 'gemini'
+# 'snowflake', 'gemini', or 'groq'
 LLM_PROVIDER = "gemini"
 
+GEMINI_MODELS = [
+    "gemini-3.5-flash",
+    "gemini-3.6-flash",
+    "gemini-3.7-flash",
+    "gemini-3.8-flash"
+]
+
+GROQ_MODELS = [
+    "openai/gpt-oss-120b",
+    "qwen/qwen3.8-27b",
+    "openai/gpt-oss-20b"
+]
+
+GEMINI_MODEL_INDEX = 3
+GROQ_MODEL_INDEX = 0
 CORTEX_CALL_COUNT = 0
 CURRENT_CONN = None
 
@@ -59,7 +75,10 @@ def _call_snowflake_llm(sf_conn, prompt, model_name):
             pass
 
 def _call_gemini_llm(prompt, model_name):
-    gemini_model = "gemini-3.5-flash-lite"
+    try:
+        gemini_model = GEMINI_MODELS[GEMINI_MODEL_INDEX]
+    except IndexError:
+        gemini_model = GEMINI_MODELS[0]
         
     api_key = os.getenv("GEMINI_API_KEY")
     if not api_key:
@@ -77,6 +96,33 @@ def _call_gemini_llm(prompt, model_name):
         print(f"Error calling Gemini: {e}")
         return None
 
+def _call_groq_llm(prompt, model_name):
+    try:
+        groq_model = GROQ_MODELS[GROQ_MODEL_INDEX]
+    except IndexError:
+        groq_model = GROQ_MODELS[0]
+        
+    api_key = os.getenv("GROQ_API_KEY")
+    if not api_key:
+        print("GROQ_API_KEY not found in environment variables.")
+        return None
+        
+    try:
+        client = Groq(api_key=api_key)
+        chat_completion = client.chat.completions.create(
+            messages=[
+                {
+                    "role": "user",
+                    "content": prompt,
+                }
+            ],
+            model=groq_model,
+        )
+        return chat_completion.choices[0].message.content
+    except Exception as e:
+        print(f"Error calling Groq: {e}")
+        return None
+
 def call_llm(sf_conn, prompt, model_name):
     """
     General function to call the configured LLM provider.
@@ -85,6 +131,8 @@ def call_llm(sf_conn, prompt, model_name):
         return _call_snowflake_llm(sf_conn, prompt, model_name)
     elif LLM_PROVIDER.lower() == "gemini":
         return _call_gemini_llm(prompt, model_name)
+    elif LLM_PROVIDER.lower() == "groq":
+        return _call_groq_llm(prompt, model_name)
     else:
         print(f"Unknown LLM provider: {LLM_PROVIDER}")
         return None

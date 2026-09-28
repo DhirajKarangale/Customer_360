@@ -1,0 +1,25 @@
+{
+  "content": "Aarav Sharma called insurance agent Suresh Deshmukh to confirm the active status of his health policy. Suresh verified the account and confirmed that the policy is active and everything is in order.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-27T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Aarav Sharma",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "health policy status confirmation",
+      "policy verification"
+    ],
+    "action_items": []
+  }
+}

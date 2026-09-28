@@ -1,0 +1,27 @@
+{
+  "content": "Akanksha Bhatt called to inquire about the status of her life policy with DCoders. The insurance agent, Ramesh Tiwari, confirmed that the policy is currently being activated and will be active by the end of the day.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Akanksha Bhatt",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "life policy status",
+      "policy activation"
+    ],
+    "action_items": [
+      "policy activation by end of day"
+    ]
+  }
+}

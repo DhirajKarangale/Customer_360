@@ -1,0 +1,7 @@
+mail_id: e8f91b42-8812-4211-a889-102df89a19c3
+subject: Inquiry regarding Auto Policy Status and Recent Auto-Debit Failure - DCoders / First Guard Brokers
+participants[2]{id,name,email,role}:
+  c1928374-1122-48aa-91cc-554433221100,Meera Chauhan,meera.chauhan@gmail.com,customer
+  a9876543-2233-4fec-88bb-112233445566,Anjali Desai,anjali.desai@firstguardbrokers.com,insurance agent
+mails[1]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,14/10/2024 T:10:35:20,"Dear Anjali,\n\nI am writing to check the status of my auto insurance policy through DCoders (Policy Ref: DC-AUTO-9982334). I noticed that my bank account was debited last month, but I received a notice saying my coverage might be at risk due to a failed payment transaction earlier this week.\n\nTo be completely honest, I am quite frustrated because I update my payment details on time, and I cannot afford a lapse in my auto coverage. Could you please look into this immediately and let me know if my policy is still active, or if it has lapsed or expired?\n\nLooking forward to your prompt response.\n\nBest regards,\nMeera Chauhan\nPhone: +91-9876543210",

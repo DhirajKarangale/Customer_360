@@ -1,0 +1,28 @@
+{
+  "content": "Vedant Thakur's travel policy with DCoders has expired, and Ravi Menon is following up on renewal options. Vedant is planning a trip next month and wants to explore options for renewing the policy.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-27T10:05:00",
+    "participants": {
+      "customer": {
+        "name": "Vedant Thakur",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "travel policy expiration",
+      "renewal options"
+    ],
+    "action_items": [
+      "Ravi to send quotes for different plans",
+      "Vedant and Ravi to discuss over phone tomorrow"
+    ]
+  }
+}

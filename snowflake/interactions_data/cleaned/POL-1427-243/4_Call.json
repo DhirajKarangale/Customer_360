@@ -1,0 +1,29 @@
+{
+  "content": "Samar Ghosh followed up with insurance agent Anita Sharma to renew his expired health policy with the enhanced coverage option. Anita confirmed a slight increase in the deductible alongside more comprehensive critical illness coverage. Samar agreed to proceed and requested guidance on the next steps.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Samar Ghosh",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d5"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "health policy renewal",
+      "enhanced coverage",
+      "deductibles and copays",
+      "critical illness coverage"
+    ],
+    "action_items": [
+      "Guide the customer through the next steps for proceeding with the enhanced coverage."
+    ]
+  }
+}

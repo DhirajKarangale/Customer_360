@@ -1,0 +1,28 @@
+{
+  "content": "The customer, Dev Chatterjee, called to inquire about the status of his health policy, believing it may be expiring or already expired. The agent, Anjali Desai, greeted him, established contact, and requested his policy number to check its status.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Dev Chatterjee",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "health policy expiration",
+      "policy inquiry"
+    ],
+    "action_items": [
+      "Customer to provide policy number",
+      "Agent to check policy status"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "content": "Customer Shaurya Joshi called insurance agent Vikram Patel to cancel his auto policy (AP-001234). The agent located the policy and began the verification process by asking the customer to confirm his current address on file.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Shaurya Joshi",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "auto policy cancellation",
+      "policy verification"
+    ],
+    "action_items": [
+      "Confirm customer's current address on file",
+      "Proceed with auto policy cancellation"
+    ]
+  }
+}

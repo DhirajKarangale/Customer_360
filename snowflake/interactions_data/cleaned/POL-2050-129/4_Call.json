@@ -1,0 +1,28 @@
+{
+  "content": "Vihaan Patel called insurance agent Neha Kapoor to confirm the reinstatement of his health policy (SH-123456) and inquire about the updated premium amount. Neha confirmed the policy is successfully reinstated, explained that the premium is pro-rated, and noted that she has emailed the updated amount along with a payment link.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Vihaan Patel",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d5"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "policy reinstatement",
+      "premium amount",
+      "health policy SH-123456"
+    ],
+    "action_items": [
+      "Customer to review the email sent by the agent containing the updated pro-rated premium amount and complete the payment using the provided link."
+    ]
+  }
+}

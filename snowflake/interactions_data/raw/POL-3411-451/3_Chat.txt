@@ -1,0 +1,15 @@
+chat_id: ch-dcoders-98324
+participants[2]{id,name,role}:
+  c1482b1a-8f92-411a-bc03-e847192f1b01,Akanksha Bhatt,customer
+  d59821ef-9311-4a22-811c-2098492aef12,Anita Sharma,insurance agent
+messages[10]{user,timestamp,text,media_url}:
+  user_1,14/10/2026 T10:15:02,"hi anita, i got your email regarding my health policy activation. just wanted to check if the payment went through?",
+  user_2,14/10/2026 T10:15:45,"Hello Akanksha! Good morning. Let me check the system right away for you.",
+  user_2,14/10/2026 T10:16:12,"Yes, the payment status shows as cleared on our end. Your transaction reference was recorded successfully.",
+  user_1,14/10/2026 T10:17:01,"oh great! so my policy is active now right? *active",
+  user_2,14/10/2026 T10:17:30,"Almost! I just need to process the final renewal endorsement from my dashboard and it will be fully Active in the portal.",
+  user_1,14/10/2026 T10:18:15,"ok perfect. can you please send me the updated card or receipt once it's done?",
+  user_2,14/10/2026 T10:18:50,"Definitely, I am generating the digital e-card and payment receipt right now. Attaching it here.",https://storage.trustwealth.com/docs/Health_E_Card_Akanksha.pdf
+  user_1,14/10/2026 T10:19:33,"got it, thanks a lot for quick help!!",
+  user_2,14/10/2026 T10:20:05,"You're very welcome, Akanksha! Your health policy status is now updated to 'Active'. Have a wonderful day ahead!",
+  user_1,14/10/2026 T10:20:20,"thanks you too, bye!",

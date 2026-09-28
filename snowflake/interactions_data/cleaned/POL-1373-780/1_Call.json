@@ -1,0 +1,28 @@
+{
+  "content": "Dev Chatterjee contacted First Guard Brokers to inquire about a home policy for his new place at 1456 Oakwood Drive. Anjali Desai assisted him and asked for the type of coverage he was looking for.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Dev Chatterjee",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d5"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "home policy",
+      "new home",
+      "coverage"
+    ],
+    "action_items": [
+      "determine type of coverage needed"
+    ]
+  }
+}

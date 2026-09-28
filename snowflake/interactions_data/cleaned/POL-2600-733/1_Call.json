@@ -1,0 +1,30 @@
+{
+  "content": "Aarav Sharma called Suresh Deshmukh at Secure Life Solutions regarding a cancellation notice for his health policy with DCoders due to non-payment. Suresh identified that Aarav's payment method had expired and offered to update it. The agent placed the customer on hold to process the new payment method information.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Aarav Sharma",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "policy cancellation",
+      "expired payment method",
+      "premium payment",
+      "health policy"
+    ],
+    "action_items": [
+      "Confirm new payment method",
+      "Update payment information on the account"
+    ]
+  }
+}

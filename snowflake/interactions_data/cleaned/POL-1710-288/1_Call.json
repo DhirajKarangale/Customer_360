@@ -1,0 +1,28 @@
+{
+  "content": "Suhana Joshi contacted Ravi Menon from Secure Future Group to confirm the status of her DCoders life insurance policy. Ravi informed her that the policy is currently in pending status and that they are actively working on getting it activated.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Suhana Joshi",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "policy status",
+      "life insurance policy activation",
+      "policy inquiry"
+    ],
+    "action_items": [
+      "Agent to work on activating the customer's pending policy"
+    ]
+  }
+}

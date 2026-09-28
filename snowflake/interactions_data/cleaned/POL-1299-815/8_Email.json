@@ -1,0 +1,27 @@
+{
+  "content": "Kiara Sen inquired about the status of her health policy reinstatement and expiration date. Anjali Desai confirmed the policy's successful reinstatement and provided the new expiration date of 10th March 2025.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-30T11:04:20",
+    "participants": {
+      "customer": {
+        "name": "Kiara Sen",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "health policy reinstatement",
+      "expiration date"
+    ],
+    "action_items": [
+      "Kiara to review the attached confirmation letter"
+    ]
+  }
+}

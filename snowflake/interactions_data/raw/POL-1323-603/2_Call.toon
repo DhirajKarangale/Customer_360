@@ -1,0 +1,43 @@
+call_id: REC-DCO-99821
+start_timestamp: 14/10/2026 T:14:02:15
+end_timestamp: 14/10/2026 T:14:18:45
+participants[2]{id,name,role}:
+  c18293fa-1122-49aa-8811-992837465012,Sneha Roy,customer
+  99384756-3344-5566-7788-990011223344,Anita Sharma,insurance agent
+messages[44]{user,text}:
+  user_2,Hello, thank you for calling Trust Wealth Advisors, my name is Anita. Am I speaking with Ms. Sneha Roy?
+  user_1,Hi Anita. Umm, yes, this is Sneha. I actually sent an email earlier today about my health policy managed through DCoders... I want to get this thing cancelled, honestly.
+  user_2,Ah, I see your email right here on my screen, Ms. Roy. I'm really sorry to hear that you're looking to cancel your health policy. [typing] Let me just pull up your file... Give me one second please.
+  user_1,Yeah, sure. Take your time. [dog barks in background]
+  user_2,Thank you for waiting. So, I see policy number HP-883920. Is this the DCoders health policy you're referring to?
+  user_1,Yes, that's the one. Ever since the premium went up last month without any proper notice, I've just had it. Plus, the network hospitals near my place in Bangalore don't even honor cashless claims properly anymore. It's too much hassle.
+  user_2,[sighs] I completely understand your frustration, Ms. Roy. Premium revisions can definitely be jarring. Um, before we process a permanent cancellation though, let me check if we have any alternative plans or maybe a loyalty discount that could lower the cost for you?
+  user_1,Look, Anita, I appreciate you trying to help, but I've already made up my mind. I spoke with my family, and we switched to another provider yesterday. I just want this policy cancelled effective immediately and whatever refund is due, processed.
+  user_2,Understood. I respect your decision. Let me just navigate through the portal... [typing] Oh, system's being a bit slow today. Hang on one moment while I open the cancellation module.
+  user_1,No problem. [pause] By the way, is it going to take long? I have another call at 2:30.
+  user_2,No, no, we should be done well before that. Let's see... [clicks] Ah, it's asking for verification. Can you please confirm your registered mobile number and date of birth for security purposes?
+  user_1,Sure, my number is 9887766554 and my DOB is 14th August 1985.
+  user_2,Thank you, Ms. Roy. That matches. [typing] Now, I need to put you on a brief hold for about two minutes while I talk to my supervisor to authorize the pro-rata refund calculation. Is that okay?
+  user_1,Yeah, fine, go ahead.
+  user_2,Thank you. Please stay on the line. [hold music playing - soft instrumental jazz]
+  user_1,[humming along faintly to hold music]
+  user_2,Hi Ms. Roy, I'm back. Thank you for holding.
+  user_1,Welcome back. Did you get the supervisor approval?
+  user_2,Yes, I did. So, since your policy term runs through December 2026, and you've paid till date, you are eligible for a pro-rata refund for the remaining unutilized months.
+  user_1,Okay, how much is that amount going to be?
+  user_2,Let me check... [typing] It looks like the system is calculating... Ah, approximately 4,250 rupees will be credited back to your original payment source within 5 to 7 business days.
+  user_1,Alright, that sounds fair. As long as I get my money back and don't get charged next month, I'm good.
+  user_2,Definitely. I am initiating the cancellation request right now in the DCoders portal. [typing sounds] System is processing...
+  user_1,Okay.
+  user_2,Just a second... [clicks] Ah, it's throwing an error code. E-409. Let me refresh the page. Ugh, technology, right?
+  user_1,Tell me about it. Every time I try to do something online nowadays, something crashes.
+  user_2,So true. [chuckles] Okay, refreshing now... [typing] There we go. The page is back up. Let me re-enter your cancellation reason—policy premium hike and switching providers.
+  user_1,Yep, that accurately covers it.
+  user_2,Entering my agent ID... [typing] And clicking submit... [mouse click] Okay! The system has successfully updated the status. Your policy target end status in our system is now officially 'Cancelled'.
+  user_1,Oh, thank god. Finally. Will I get a confirmation email or SMS about this?
+  user_2,Yes, absolutely. An automated confirmation email along with the cancellation endorsement letter and refund details will be sent to your registered email address within the next hour.
+  user_1,Perfect. Thank you so much for your patience and help today, Anita. I know it's a cancellation, but you made it painless.
+  user_2,You're very welcome, Ms. Roy. I'm sorry we couldn't retain you as a DCoders customer, but if you ever need assistance with any other wealth or insurance products in the future, please don't hesitate to reach out to Trust Wealth Advisors.
+  user_1,Will do. Have a good afternoon!
+  user_2,You too, Ms. Roy. Take care, bye-bye!
+  user_1,Bye.

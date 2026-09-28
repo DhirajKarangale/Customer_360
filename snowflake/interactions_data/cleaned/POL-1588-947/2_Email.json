@@ -1,0 +1,29 @@
+{
+  "content": "Shaurya Joshi emails Vikram Patel to confirm the cancellation of auto policy AP-001234 following an earlier call. Vikram Patel replies confirming that the cancellation has been processed immediately and states that a confirmation letter and any applicable refund will be sent within 7-10 business days.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-28T10:06:40",
+    "participants": {
+      "customer": {
+        "name": "Shaurya Joshi",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Auto Policy Cancellation",
+      "Policy AP-001234",
+      "Refund Processing"
+    ],
+    "action_items": [
+      "Send confirmation letter to customer",
+      "Process applicable refund within 7-10 business days"
+    ]
+  }
+}

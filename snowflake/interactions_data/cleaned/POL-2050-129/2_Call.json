@@ -1,0 +1,29 @@
+{
+  "content": "Vihaan Patel called insurance agent Neha Kapoor regarding health policy SH-123456, which showed as expired despite being set for auto-renewal. Neha identified a technical glitch that caused the auto-renewal to fail and assured Vihaan that the policy can be reinstated, explaining the next steps.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-26T10:05:00",
+    "participants": {
+      "customer": {
+        "name": "Vihaan Patel",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d5"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "health policy",
+      "auto-renewal failure",
+      "policy expiration",
+      "policy reinstatement"
+    ],
+    "action_items": [
+      "Provide instructions to the customer on how to proceed with the policy reinstatement"
+    ]
+  }
+}

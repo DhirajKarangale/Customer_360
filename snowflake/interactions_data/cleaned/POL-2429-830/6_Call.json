@@ -1,0 +1,25 @@
+{
+  "content": "Arjun Reddy called insurance agent Ravi Menon to confirm the cancellation of his health insurance policy HP-001234. Ravi Menon verified and confirmed that the policy has indeed been successfully cancelled.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-27T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Arjun Reddy",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "policy cancellation",
+      "health insurance confirmation"
+    ],
+    "action_items": []
+  }
+}

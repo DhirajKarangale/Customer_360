@@ -1,0 +1,28 @@
+{
+  "content": "Aarav Sharma inquired about reinstating his home policy, which expired on March 10th. Vikram Patel provided a reinstatement form and mentioned a possible reinstatement fee.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-27T10:05:00",
+    "participants": {
+      "customer": {
+        "name": "Aarav Sharma",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "home policy reinstatement",
+      "expiration",
+      "reinstatement fee"
+    ],
+    "action_items": [
+      "fill out and return reinstatement form"
+    ]
+  }
+}

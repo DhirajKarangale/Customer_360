@@ -1,0 +1,31 @@
+{
+  "content": "Customer Krishna Das followed up regarding a health policy renewal, expressing concern over the premium increase and asking for details on the new benefits driving it, as well as more cost-effective alternative plans. Agent Vikram Patel explained that the increase is due to added mental health coverage and an enhanced wellness program, and provided an attached document with alternative plan options for the customer to review.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-28T11:04:20",
+    "participants": {
+      "customer": {
+        "name": "Krishna Das",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "Health policy renewal",
+      "Premium increase",
+      "Mental health coverage",
+      "Wellness program",
+      "Alternative plans"
+    ],
+    "action_items": [
+      "Customer to review the attached alternative plans document",
+      "Customer to let the agent know if they need further details on any of the alternative plans"
+    ]
+  }
+}

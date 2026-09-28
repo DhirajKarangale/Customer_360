@@ -1,0 +1,29 @@
+{
+  "content": "Ramesh Tiwari called Krishna Das to finalize the auto insurance policy for a new Toyota Corolla. Krishna provided the VIN (4T1BF1FK7NU012345) and requested the coverage to start as soon as possible. Ramesh updated the details, activated the policy, and informed Krishna that documents would be sent via email shortly.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Krishna Das",
+        "id": "3421f7d8-4a9f-4f3e-8f9a-5e9f7d8a4b2"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "8a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "auto insurance policy",
+      "Toyota Corolla",
+      "VIN verification",
+      "coverage start date"
+    ],
+    "action_items": [
+      "Send policy documents via email to the customer"
+    ]
+  }
+}

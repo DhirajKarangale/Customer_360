@@ -1,0 +1,29 @@
+{
+  "content": "Vihaan Patel called to confirm his life policy with DCoders is active and up to date. Suresh Deshmukh, the insurance agent, confirmed the policy is active and provided the coverage amount. Vihaan also inquired about making changes to his policy, which would require additional paperwork.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Vihaan Patel",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "life policy",
+      "coverage amount",
+      "policy changes"
+    ],
+    "action_items": [
+      "make changes to policy",
+      "complete additional paperwork"
+    ]
+  }
+}

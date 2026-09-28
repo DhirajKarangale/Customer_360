@@ -1,0 +1,28 @@
+{
+  "content": "Arjun Reddy called insurance agent Ravi Menon to confirm the cancellation of his policy (HP-001234). Ravi confirmed the cancellation was successful and informed Arjun that the unused premium refund would be credited to his original payment method within 7 to 10 working days.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-27T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Arjun Reddy",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "policy cancellation",
+      "refund status",
+      "unused premium"
+    ],
+    "action_items": [
+      "Process refund to the customer's original payment method within 7-10 working days"
+    ]
+  }
+}

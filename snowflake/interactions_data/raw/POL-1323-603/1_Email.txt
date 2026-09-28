@@ -1,0 +1,7 @@
+mail_id: dc-mail-8832-health-cancel
+subject: Urgent: Cancellation Request for Health Policy DC-HLTH-44921
+participants[2]{id,name,email,role}:
+  c9a81b23-11a2-4211-9a71-e221b27609d1,Sneha Roy,sneha.roy@gmail.com,customer
+  d1e2f3a4-55b6-48cc-8111-9876543210ef,Anita Sharma,anita.sharma@trustwealth.com,insurance agent
+mails[1]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,14/10/2024 T:10:15:22,"Dear Anita,\n\nI am writing to formally request the immediate cancellation of my health policy (Policy Number: DC-HLTH-44921) administered through DCoders.\n\nDue to a recent change in my corporate coverage, I no longer require this individual plan. I noticed a renewal charge pending on my account and would like to ensure the policy is terminated right away and any applicable refunds are processed.\n\nPlease confirm once this has been handled and let me know if any further documentation is required from my end.\n\nRegards,\nSneha Roy",

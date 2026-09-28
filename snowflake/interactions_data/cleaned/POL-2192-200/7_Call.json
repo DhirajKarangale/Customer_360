@@ -1,0 +1,30 @@
+{
+  "content": "Dev Chatterjee called insurance agent Anjali Desai to discuss the renewal premium for his health policy HP-123456. He inquired about reducing the higher-than-expected premium caused by pre-existing conditions coverage. Anjali explained the increase and offered a payment plan, which Dev accepted. Dev requested confirmation that the policy would be updated and new documents sent.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2024-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Dev Chatterjee",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d5"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "health policy renewal",
+      "premium cost",
+      "pre-existing conditions",
+      "payment plan"
+    ],
+    "action_items": [
+      "Set up a payment plan for the health policy premium",
+      "Update the policy and send a new policy document to the customer"
+    ]
+  }
+}

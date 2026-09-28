@@ -1,0 +1,34 @@
+call_id: CALL-DC-99234
+start_timestamp: 14/10/2026 T:11:02:15
+end_timestamp: 14/10/2026 T:11:18:42
+participants[2]{id,name,role}:
+  c14f8812-789a-43ef-b210-98e723411a01,Isha Agarwal,customer
+  98b23412-54ac-4bc9-a789-123477123ef8,Anita Sharma,insurance agent
+messages[45]{user,text}:
+  user_2,Hello, am I speaking with Ms. Isha Agarwal? This is Anita Sharma calling from Trust Wealth Advisors on behalf of DCoders.
+  user_1,Yes, hi Anita. I actually just saw your email about my health policy renewal. Good morning.
+  user_2,Good morning, Isha! How are you doing today? [sighs] Sorry to bother you about paperwork on a Tuesday morning.
+  user_1,Oh no worries at all, I'm just working from home today [dog barks in background] -- hold on a second, sorry about my dog barking. Buster, shh!
+  user_2,No problem at all, I totally understand. I have pets too, they always know when we are on important calls.
+  user_1,Exactly. [laughs] So yeah, regarding your email... to be honest, I'm not really looking to renew this particular health policy right now.
+  user_2,Ah, I see. [typing] Let me pull up your file here... DCoders health policy, policy number ends in 4491. You mentioned you aren't looking to renew? Can I ask if there's any specific reason, or if you found a better plan elsewhere?
+  user_1,Well, umm, my employer actually started providing corporate health coverage starting this month, so I don't really need a separate individual retail policy anymore. It feels like paying twice for the same thing, you know?
+  user_2,That makes total sense, absolutely. Corporate coverage is a great perk. But umm, let me just check the details here on my screen... [typing] Give me just a quick moment, the portal is running a bit slow today.
+  user_1,Sure, take your time.
+  user_2,*(11:05:10)* [Hold music plays: soft instrumental jazz]
+  user_2,*(11:07:30)* Thanks for holding, Isha. Still here. So, looking at your policy tenure, your grace period for renewal actually ended last week, and since the payment wasn't processed, the system has automatically flagged it to move towards an Expired status.
+  user_1,Oh, okay. So it's already expired then?
+  user_2,Well, it's currently in the final processing queue to be officially marked as 'Expired' in our core database. I just wanted to call and confirm if you wanted to push through with the renewal before we lock it out permanently, or if you're completely certain you want to let it expire.
+  user_1,Yeah, I am pretty certain. I don't want to pay the premium for this month since my employer's plan kicked in on the first. So letting it expire is totally fine with me.
+  user_2,Understood. Let me double check if there are any pending claims or outstanding balances from the previous coverage period. Hold on just another minute while I run the claims history check.
+  user_1,Sure thing. No claims were made in the last few months anyway, but good to check.
+  user_2,*(11:10:45)* [Hold music plays: classical piano]
+  user_2,*(11:13:20)* Sorry about that wait, system is super sluggish today. Good news is there are zero pending claims or outstanding dues on your account. Everything is fully settled up to the last active date.
+  user_1,Oh, wonderful. That's a relief.
+  user_2,Yes! So what I will do now is update the final target status in the DCoders portal right here while we are on the call, transitioning it fully to 'Expired'. You won't receive any more renewal notices after this.
+  user_1,Perfect. Thank you so much for walking me through it, Anita. You made this super painless.
+  user_2,Oh, it's my absolute pleasure, Isha! I'm sorry we couldn't keep you as a direct client, but if you ever need help with wealth advisory or other insurance products down the line, Trust Wealth Advisors is always here.
+  user_1,Definitely, I'll keep that in mind. Thanks again.
+  user_2,You're very welcome. Have a wonderful rest of your week, and give Buster a pat for me!
+  user_1,[laughs] I will. Bye-bye!
+  user_2,Take care, bye!

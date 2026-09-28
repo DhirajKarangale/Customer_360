@@ -1,0 +1,18 @@
+call_id: REC-DCO-HLT-002
+start_timestamp: 12/10/2024 T:11:15:22
+end_timestamp: 12/10/2024 T:11:18:50
+participants[2]{id,name,role}:
+  c148e210-911a-4288-8422-7913a89e9001,Akanksha Bhatt,customer
+  9821bb44-5512-4aa2-b123-0199feaa8933,Anita Sharma,insurance agent
+messages[10]{user,text}:
+  user_2,[00:00] Hello, am I speaking with Akanksha Bhatt? This is Anita Sharma calling from Trust Wealth Advisors, partnering with DCoders regarding your health policy.
+  user_1,[00:12] Hi Anita. Yeah, hi, this is Akanksha. Umm, I actually just dropped an email a little while ago about my policy status showing some pending renewal warning?
+  user_2,[00:26] Ah yes, absolutely! I just saw your email come through. Thanks for getting back so quickly. So, I checked the portal right after -- hold on, let me just pull up your file here [typing sound]. Yeah, I see the system flagged it because of a slight mismatch in the direct debit details last Friday.
+  user_1,[00:54] Oh! Really? That's strange because my bank account definitely has funds. But anyway, I just want to make sure it doesn't lapse. I need this health policy to remain active, you know, with all the medical checkups coming up this month.
+  user_2,[01:14] Exactly, exactly. Don't worry at all, Akanksha. That's why I'm calling. We can sort this right now over the phone so it stays active without any break in coverage. Do you have your net banking or a debit card handy?
+  user_1,[01:32] Umm, yeah, give me just two seconds... let me open my purse. -- Ah, here it is. Yes, I have my card right here. What do you need me to do?
+  user_2,[01:46] Perfect. [sighs] I'll just initiate a secure token payment link to your registered mobile number right now. Once you click it and authorize the standard premium amount of four thousand five hundred rupees, the system will instantly clear the flag.
+  user_1,[02:08] Okay, let me check... Oh, wait, the text just came through. Let me click it. [clicks sound] Uh-huh, it's asking for the OTP. Entering it now... 
+  user_2,[02:30] Awesome, take your time. Let's see... yep! Payment gateway just flashed green on my end. Perfect. The system has automatically updated your health policy status back to Active. You should receive a confirmation SMS and an updated policy schedule shortly.
+  user_1,[02:55] Oh, thank god! That was super fast. Thanks a lot for sorting it out so quickly, Anita. Have a great day!
+  user_2,[03:03] You are very welcome, Akanksha! Glad I could help. If you need anything else regarding your DCoders benefits, just reach out. Bye-bye!

@@ -1,0 +1,27 @@
+{
+  "content": "Akanksha Bhatt inquired about making changes to her active life policy LP-001234 and Ramesh Tiwari responded with the process and associated fees.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-28T10:06:40",
+    "participants": {
+      "customer": {
+        "name": "Akanksha Bhatt",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "life policy changes",
+      "policy updates"
+    ],
+    "action_items": [
+      "Akanksha to review policy changes process and discuss with Ramesh"
+    ]
+  }
+}

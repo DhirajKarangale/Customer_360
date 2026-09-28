@@ -1,0 +1,29 @@
+{
+  "content": "Krishna Das called insurance agent Anjali Desai to check the status of life policy LP-001234. Anjali confirmed that the submitted documents have been reviewed and approved. Anjali stated she will complete a few internal updates, and Krishna will receive the active policy documents via email within 24 hours.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Krishna Das",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d5"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "life policy status",
+      "document review",
+      "policy activation"
+    ],
+    "action_items": [
+      "Agent to update internal system and activate policy",
+      "Send email with policy documents and details to customer within 24 hours"
+    ]
+  }
+}

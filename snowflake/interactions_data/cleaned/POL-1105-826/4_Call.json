@@ -1,0 +1,29 @@
+{
+  "content": "Suhana Joshi called to confirm details about her health policy, specifically regarding payment options. Vikram Patel informed her that she can pay online through their secure payment portal and provided the necessary information. Her policy will be reinstated upon receiving the payment and completed form.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Suhana Joshi",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "health policy",
+      "payment options",
+      "policy reinstatement"
+    ],
+    "action_items": [
+      "complete and submit the form",
+      "make online payment"
+    ]
+  }
+}

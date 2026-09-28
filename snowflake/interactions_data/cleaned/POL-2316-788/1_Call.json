@@ -1,0 +1,28 @@
+{
+  "content": "Anjali Desai from First Guard Brokers connects with customer Krishna Das to finalize details for his pending life insurance policy (LP-001234) and get it activated.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Krishna Das",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "life insurance policy",
+      "policy activation",
+      "policy verification"
+    ],
+    "action_items": [
+      "Finalize details to activate the pending life insurance policy"
+    ]
+  }
+}

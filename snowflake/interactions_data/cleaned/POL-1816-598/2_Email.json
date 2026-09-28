@@ -1,0 +1,30 @@
+{
+  "content": "Neha Chauhan followed up regarding her expired health policy (HP-123456) with DCoders to inquire about renewal options and policy changes. Karan Joshi replied with the renewal form and updated policy terms, noting a 5% premium increase due to new benefits.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-12-10T11:04:20",
+    "participants": {
+      "customer": {
+        "name": "Neha Chauhan",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d7"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Health policy expiration",
+      "Policy renewal",
+      "Premium increase",
+      "Policy terms"
+    ],
+    "action_items": [
+      "Review the attached renewal form and updated policy terms",
+      "Reach out to Karan Joshi with any questions or concerns"
+    ]
+  }
+}

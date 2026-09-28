@@ -1,0 +1,26 @@
+{
+  "content": "Insurance agent Neha Kapoor emailed customer Neha Chauhan to confirm the successful cancellation of home policy HP-001234 and provided the formal cancellation letter as an attachment. Customer Neha Chauhan replied to confirm receipt, expressed appreciation for resolving a post-cancellation billing issue, and thanked the agent for her assistance.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-02-10T10:05:00",
+    "participants": {
+      "customer": {
+        "name": "Neha Chauhan",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d7"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Home Policy Cancellation",
+      "Cancellation Confirmation",
+      "Billing Issue Resolution"
+    ],
+    "action_items": []
+  }
+}

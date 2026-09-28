@@ -1,0 +1,24 @@
+{
+  "content": "Ishaan Bose confirmed with Vikram Patel that his life policy is active. Ishaan thanked Vikram for his help and Vikram ensured everything is in order.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Ishaan Bose",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "life policy activation"
+    ],
+    "action_items": []
+  }
+}

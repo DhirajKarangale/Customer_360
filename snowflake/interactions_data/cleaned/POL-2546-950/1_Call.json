@@ -1,0 +1,28 @@
+{
+  "content": "Krishna Das called to inquire about the status of their health policy (HP-001234). The insurance agent, Vikram Patel, checked the records and informed the customer that the policy expired last month, offering to help with the renewal process.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Krishna Das",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "confused",
+    "topics": [
+      "health policy status",
+      "policy expiration",
+      "policy renewal"
+    ],
+    "action_items": [
+      "Renew the expired health policy (HP-001234)"
+    ]
+  }
+}

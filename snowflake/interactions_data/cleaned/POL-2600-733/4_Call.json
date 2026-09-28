@@ -1,0 +1,28 @@
+{
+  "content": "Aarav Sharma called Suresh Deshmukh at Secure Life Solutions to confirm the status of his health policy after updating his payment method. Suresh verified that the policy is active. Afterward, Suresh requested and collected Aarav's policy number (SH-123456) and date of birth (August 12, 1990) to confirm additional details.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Aarav Sharma",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "policy status",
+      "payment method",
+      "policy verification"
+    ],
+    "action_items": [
+      "Confirm policy number (SH-123456) and date of birth"
+    ]
+  }
+}

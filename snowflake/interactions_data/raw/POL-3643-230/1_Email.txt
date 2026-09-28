@@ -1,0 +1,7 @@
+mail_id: em-dc-99283-01
+subject: Urgent: Status update needed regarding my health insurance policy DCoders-HLT-77892
+participants[2]{id,name,email,role}:
+  c1a2b3c4-d5e6-7f8a-9b0c-1d2e3f4a5b6c,Isha Agarwal,isha.agarwal@outlook.com,customer
+  f1e2d3c4-b5a6-9f8e-7d6c-5b4a3f2e1d0c,Anita Sharma,anita.sharma@trustwealthadvisors.com,insurance agent
+mails[1]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,14/10/2024 T:11:32:15,"Hi Anita,\n\nI am writing to find out what is going on with my health policy (DCoders-HLT-77892) issued through DCoders. I noticed that my online portal access shows some discrepancies, and I haven't received my renewal notice for this year yet.\n\nCould you please check the system and let me know if my coverage is still active or if it has lapsed? I need this sorted out immediately as I have upcoming medical appointments next week.\n\nLooking forward to a prompt response.\n\nRegards,\nIsha Agarwal",

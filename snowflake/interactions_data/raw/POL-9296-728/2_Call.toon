@@ -1,0 +1,18 @@
+call_id: REC-DC-002C
+start_timestamp: 14/10/2026 T:11:15:00
+end_timestamp: 14/10/2026 T:11:18:42
+participants[2]{id,name,role}:
+  c14890ab-1234-470e-a3fc-799eaf739c91,Meera Chauhan,customer
+  d5821bc3-5678-4def-9abc-123456789abc,Anjali Desai,insurance agent
+messages[10]{user,text}:
+  user_2,[00:00] First Guard Brokers, this is Anjali speaking, how can I help you today?
+  user_1,[00:06] Hi, um, yeah, hi Anjali. This is Meera Chauhan. I actually replied to an email yesterday about my auto policy with DCoders?
+  user_2,[00:16] [typing] Ah, yes, hi Meera! Let me just pull up your file here... DCoders auto policy, right? Give me just one second--
+  user_1,[00:24] Yeah, exactly. I mean, honestly, I sold that car like two months ago, and I keep getting these notices, so I just want to make sure it's completely closed out. I don't want any more coverage or charges, you know?
+  user_2,[00:35] Oh, I completely understand. Let's see here... [sighs] Okay, I see the renewal notice went out automatically. Since you no longer own the vehicle, we definitely need to get this expired and off the books. 
+  user_1,[00:48] Yes, please. I already switched my insurance over to my new provider for the new car anyway, so I just want this old DCoders policy marked as expired or terminated, whatever you guys call it.
+  user_2,[00:58] Not a problem at all. I can process that expiration for you right now. Since the effective coverage period has lapsed and you've confirmed the vehicle is gone, I will update the system status to Expired effective today.
+  user_1,[01:14] Perfect. Will I get some kind of confirmation email for my records? Just so I have proof it's done.
+  user_2,[01:21] [typing] Yep, absolutely. As soon as I hit save here, the system will auto-generate the closure notice to your email. Is there anything else I can help you update today, Meera?
+  user_1,[01:34] No, that's literally all I needed. Thank you so much for sorting it out quickly! Have a good day.
+  user_2,[01:39] You're very welcome! Have a wonderful day. Bye-bye!

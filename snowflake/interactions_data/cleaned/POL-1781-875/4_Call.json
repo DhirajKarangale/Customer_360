@@ -1,0 +1,31 @@
+{
+  "content": "Meera Chauhan calls insurance agent Anita Sharma to confirm if her auto policy has expired. Anita confirms the policy expired on the 10th of the current month and offers to discuss renewal options, alternative policies, and the potential impact of the coverage lapse on future rates.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Meera Chauhan",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d5"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "auto policy expiration",
+      "policy renewal",
+      "alternative policies",
+      "coverage lapse"
+    ],
+    "action_items": [
+      "Discuss policy renewal options",
+      "Explore alternative insurance policies",
+      "Discuss coverage lapse and effects on rates"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "content": "Dev Chatterjee called to confirm the status of his home policy. Anjali Desai, the insurance agent, checked and confirmed that everything was in order and sent a digital confirmation document to Dev's email for signature.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Dev Chatterjee",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d5"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "home policy activation",
+      "digital confirmation document"
+    ],
+    "action_items": [
+      "Dev to sign digital confirmation document"
+    ]
+  }
+}

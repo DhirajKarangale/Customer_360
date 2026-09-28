@@ -1,0 +1,28 @@
+{
+  "content": "Vivaan Gupta called to inquire about the status of his health policy with DCoders. Ravi Menon, the insurance agent, informed him that the medical certificate with the doctor's signature has been received. The next step and policy activation status were discussed.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Vivaan Gupta",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "health policy status",
+      "medical certificate",
+      "policy activation"
+    ],
+    "action_items": [
+      "next steps for policy activation"
+    ]
+  }
+}

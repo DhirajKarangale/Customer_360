@@ -1,0 +1,29 @@
+{
+  "content": "Krishna Das called insurance agent Vikram Patel to discuss their expired health policy. Krishna hesitated to renew due to a premium increase. Vikram explained the increase is due to new benefits and rising medical costs, and agreed to look into alternative, more affordable plans for the customer.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Krishna Das",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "hesitant",
+    "topics": [
+      "health policy expiration",
+      "policy renewal",
+      "premium increase",
+      "alternative plans"
+    ],
+    "action_items": [
+      "Vikram Patel to look into alternative, more affordable insurance plans for the customer"
+    ]
+  }
+}

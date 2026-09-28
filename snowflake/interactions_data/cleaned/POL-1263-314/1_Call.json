@@ -1,0 +1,27 @@
+{
+  "content": "Vivaan Gupta called to inquire about the status of his health policy. The policy is currently pending due to incomplete documentation. Ravi Menon, the insurance agent, requested Vivaan to resend the complete documents, including a copy of his ID proof and a medical certificate with a signature from his doctor.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Vivaan Gupta",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "health policy status",
+      "documentation requirements"
+    ],
+    "action_items": [
+      "Vivaan to resend complete documents"
+    ]
+  }
+}

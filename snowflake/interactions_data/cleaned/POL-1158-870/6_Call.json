@@ -1,0 +1,28 @@
+{
+  "content": "Aarav Sharma called to confirm the reinstatement of his home policy and inquired about reducing the premium. Vikram Patel, the insurance agent, offered a 5% discount on the premium after reviewing the policy.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Aarav Sharma",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "home policy reinstatement",
+      "premium reduction"
+    ],
+    "action_items": [
+      "update policy with new premium rate",
+      "send new invoice with updated premium"
+    ]
+  }
+}

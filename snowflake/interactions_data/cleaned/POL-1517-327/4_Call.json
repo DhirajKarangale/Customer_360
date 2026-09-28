@@ -1,0 +1,29 @@
+{
+  "content": "Customer Sai Kumar called insurance agent Anjali Desai to confirm his life policy (LP-001234) status and requested changes, including increasing coverage and adding his spouse as a beneficiary. The agent updated the policy details after verifying the customer's and spouse's information and agreed to send a confirmation email.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Sai Kumar",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d7"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "policy status check",
+      "coverage increase",
+      "beneficiary update",
+      "policy modification"
+    ],
+    "action_items": [
+      "Send a confirmation email with the policy changes to the customer"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "content": "The customer, Neha Chauhan, called Safe Step Insurance to inquire about the expiration status of her health policy with DCoders (policy number HP-001234). The agent, Karan Joshi, checked the system and confirmed that the policy expired on the 10th of the current month, and offered to discuss renewal options.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Neha Chauhan",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "health insurance policy",
+      "policy expiration",
+      "policy renewal"
+    ],
+    "action_items": [
+      "Discuss policy renewal options"
+    ]
+  }
+}

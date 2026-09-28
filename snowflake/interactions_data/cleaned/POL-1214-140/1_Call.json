@@ -1,0 +1,25 @@
+{
+  "content": "Akanksha Bhatt called to inquire about the status of her auto policy, which she believed was about to expire. Anjali Desai, the insurance agent, checked on the policy and informed Akanksha that it had already expired on the 10th of the month.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Akanksha Bhatt",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "auto policy status",
+      "policy expiration"
+    ],
+    "action_items": []
+  }
+}

@@ -1,0 +1,7 @@
+mail_id: dc-mail-2026-001
+subject: Urgent: Status update needed regarding my health insurance policy
+participants[2]{id,name,email,role}:
+  c148205b-3423-470e-a3fc-799eaf739c96,Akanksha Bhatt,akanksha.bhatt@gmail.com,customer
+  a3a6a702-a699-4de4-b932-41271ff311d6,Anita Sharma,anita.sharma@trustwealth.com,insurance agent
+mails[1]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,14/10/2026 T:09:30:15,"Dear Anita,\n\nI hope this email finds you well.\n\nI am writing to check the current status of my health policy tied through DCoders. I noticed some conflicting updates on my online portal suggesting that the policy might not be fully active, which is quite concerning as I have a medical check-up scheduled for next week.\n\nCould you please look into my account, confirm my coverage details, and ensure that the target system status reflects 'Active' as expected? Let me know if you need any additional documents from my end to clear this up.\n\nLooking forward to your prompt response.\n\nBest regards,\nAkanksha Bhatt",

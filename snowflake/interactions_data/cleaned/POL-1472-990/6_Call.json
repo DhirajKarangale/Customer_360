@@ -1,0 +1,28 @@
+{
+  "content": "Kriti Mahajan called insurance agent Karan Joshi to confirm that her health policy was successfully reactivated following her renewal, expressing concern about a potential gap in coverage. Karan verified her policy status in the system, confirmed it is active, and mentioned that a confirmation email with all the details has been sent to her.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-10-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Kriti Mahajan",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "relieved",
+    "topics": [
+      "health policy renewal",
+      "policy status",
+      "coverage activation"
+    ],
+    "action_items": [
+      "Check confirmation email for policy details"
+    ]
+  }
+}

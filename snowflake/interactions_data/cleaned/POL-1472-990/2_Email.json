@@ -1,0 +1,29 @@
+{
+  "content": "Customer Kriti Mahajan expressed concern over her health policy (HP-123456) expiring without prior notification. Agent Karan Joshi apologized for the oversight, confirmed the expiration was due to a missed payment, and provided a renewal form and payment link for the customer to settle the outstanding amount.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-12-10T11:04:20",
+    "participants": {
+      "customer": {
+        "name": "Kriti Mahajan",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "frustrated",
+    "topics": [
+      "Health Policy Expiration",
+      "Policy Renewal",
+      "Missed Payment"
+    ],
+    "action_items": [
+      "Fill out the renewal form",
+      "Complete the payment using the provided link to reinstate the policy"
+    ]
+  }
+}
