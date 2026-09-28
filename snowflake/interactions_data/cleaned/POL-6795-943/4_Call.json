@@ -1,0 +1,27 @@
+{
+  "content": "Aaradhya Verma called Neha Kapoor to confirm that she has digitally signed her insurance renewal form. Neha confirmed receipt of the form and stated she will proceed with processing the renewal.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:15:00",
+    "participants": {
+      "customer": {
+        "name": "Aaradhya Verma",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d5"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "policy renewal",
+      "digital signature confirmation"
+    ],
+    "action_items": [
+      "Process the insurance renewal"
+    ]
+  }
+}

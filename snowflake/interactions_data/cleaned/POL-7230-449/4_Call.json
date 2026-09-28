@@ -1,0 +1,27 @@
+{
+  "content": "Samar Ghosh called Sunita Agarwal to confirm the receipt of a \u20b95,500 payment for his health policy reinstatement. Sunita confirmed the payment was received and updated the system, immediately reinstating the policy.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Samar Ghosh",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "payment confirmation",
+      "health policy reinstatement"
+    ],
+    "action_items": [
+      "Policy status updated in the system by the agent"
+    ]
+  }
+}

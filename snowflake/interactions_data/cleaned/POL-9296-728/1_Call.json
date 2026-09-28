@@ -1,0 +1,26 @@
+{
+  "content": "Meera Chauhan called to check the status of her auto policy which was set to expire on the day of the call. Insurance agent Anjali Desai verified the account and confirmed that the policy has officially expired as of today.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Meera Chauhan",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "auto policy",
+      "policy expiration",
+      "renewal status"
+    ],
+    "action_items": []
+  }
+}

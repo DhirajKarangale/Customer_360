@@ -1,0 +1,30 @@
+{
+  "content": "Customer Krishna Das calls insurance agent Suresh Deshmukh to confirm auto policy AP-001234 updates. Suresh verifies the policy was renewed with a 15% discount and, upon request, updates the policy status to expired in the system.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-12-30T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Krishna Das",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "auto policy update",
+      "policy renewal",
+      "discount",
+      "policy status change"
+    ],
+    "action_items": [
+      "Verify auto policy AP-001234 update",
+      "Update policy status to expired"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "content": "Kriti Mahajan followed up with insurance agent Vikram Patel regarding the reinstatement of her home policy that expired on March 10th. Vikram provided the necessary steps, instructing her to fill out and return the attached reinstatement form, and noted that a small reinstatement fee may apply once the form is received.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-26T10:30:00",
+    "participants": {
+      "customer": {
+        "name": "Kriti Mahajan",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Home Policy Renewal",
+      "Policy Reinstatement",
+      "Reinstatement Form"
+    ],
+    "action_items": [
+      "Fill out and return the attached reinstatement form",
+      "Confirm the reinstatement fee upon receipt of the form"
+    ]
+  }
+}

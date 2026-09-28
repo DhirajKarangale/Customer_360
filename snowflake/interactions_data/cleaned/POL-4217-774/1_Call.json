@@ -1,0 +1,28 @@
+{
+  "content": "Kriti Mahajan called Vikram Patel at DCoders to inquire about renewing her home insurance policy (HP-001234). Vikram checked the system and informed her that the policy actually expired on the 10th of the current month, and offered to assist her with reinstating it.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Kriti Mahajan",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "home insurance",
+      "policy renewal",
+      "policy expiration"
+    ],
+    "action_items": [
+      "Assist customer with reinstating the expired home insurance policy"
+    ]
+  }
+}

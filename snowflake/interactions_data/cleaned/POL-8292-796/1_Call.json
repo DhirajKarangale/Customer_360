@@ -1,0 +1,28 @@
+{
+  "content": "The customer, Nandini Rajput, called to inquire about her expired health policy (SH-123456). The insurance agent, Anjali Desai, confirmed it expired last month and explained the reinstatement process, which requires paperwork and back premium payment. When the customer hesitated due to the effort involved, the agent offered to discuss a new, similar policy with additional benefits, which the customer agreed to hear about.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T09:05:00",
+    "participants": {
+      "customer": {
+        "name": "Nandini Rajput",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "expired health policy",
+      "policy reinstatement",
+      "new policy options"
+    ],
+    "action_items": [
+      "Go over the details of the new policy with additional benefits"
+    ]
+  }
+}

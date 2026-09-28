@@ -1,0 +1,30 @@
+{
+  "content": "Neha Kapoor followed up with Atharv Pandey regarding his expired health policy and sent an attachment detailing the reinstatement process and requirements. Atharv confirmed he will review the document and agreed to a follow-up call next Wednesday at 2:00 PM to discuss coverage needs and alternative policy options, requesting a calendar invite.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2023-02-03T10:45:00",
+    "participants": {
+      "customer": {
+        "name": "Atharv Pandey",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Health Policy Expiration",
+      "Reinstatement Options",
+      "Coverage Needs",
+      "New Policy Options"
+    ],
+    "action_items": [
+      "Atharv to review the reinstatement document",
+      "Neha to send a calendar invite for the call next Wednesday at 2:00 PM"
+    ]
+  }
+}

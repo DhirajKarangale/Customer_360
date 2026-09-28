@@ -1,0 +1,25 @@
+{
+  "content": "Meera Chauhan contacted insurance agent Anjali Desai to confirm the reinstatement of her auto policy. Anjali confirmed that the payment has been successfully processed and the policy has been reinstated with its previous coverage and premium.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-29T14:10:00",
+    "participants": {
+      "customer": {
+        "name": "Meera Chauhan",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "auto policy reinstatement",
+      "payment processing"
+    ],
+    "action_items": []
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "content": "Insurance agent Neha Kapoor followed up with customer Aaradhya Verma regarding a health policy showing as expired despite being renewed. Neha provided a renewal confirmation letter attachment and noted the issue is escalated to the admin team. Aaradhya acknowledged receipt of the letter and requested updates once the system is corrected.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-30T11:06:40",
+    "participants": {
+      "customer": {
+        "name": "Aaradhya Verma",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Health Policy Renewal",
+      "System Expiration Issue",
+      "Confirmation Letter"
+    ],
+    "action_items": [
+      "Resolve the expired policy status in the system",
+      "Keep the customer updated on the status of the policy update"
+    ]
+  }
+}

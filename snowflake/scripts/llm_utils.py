@@ -4,15 +4,15 @@ from groq import Groq
 from sf_auth import get_snowflake_conn
 
 # 'snowflake', 'gemini', or 'groq'
-LLM_PROVIDER = "groq"
+LLM_PROVIDER = "gemini"
 
 GEMINI_MODELS = [
+    "gemini-3.5-flash-lite",
     "gemini-3.1-pro-preview",
     "gemini-3.5-flash",
     "gemini-3.6-flash",
     "gemini-3.7-flash",
     "gemini-3.8-flash"
-    "gemini-3.5-flash-lite",
 ]
 
 GROQ_MODELS = [
@@ -21,7 +21,7 @@ GROQ_MODELS = [
     "openai/gpt-oss-20b"
 ]
 
-GEMINI_MODEL_INDEX = 5
+GEMINI_MODEL_INDEX = 0
 GROQ_MODEL_INDEX = 0
 CORTEX_CALL_COUNT = 0
 CURRENT_CONN = None

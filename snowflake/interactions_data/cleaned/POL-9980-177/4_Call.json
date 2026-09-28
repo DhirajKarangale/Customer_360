@@ -1,0 +1,30 @@
+{
+  "content": "Kiara Sen calls Ramesh Tiwari to confirm her acceptance of the auto policy renewal quote with comprehensive coverage and the premium increase. They clarify that the new policy will become active on the date she signs the form, and Kiara agrees to sign the digital form immediately while asking Ramesh to confirm receipt once signed.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Kiara Sen",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d5"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "auto policy renewal",
+      "premium increase",
+      "comprehensive coverage",
+      "policy start date"
+    ],
+    "action_items": [
+      "Kiara Sen to sign the digital renewal form",
+      "Ramesh Tiwari to confirm receipt of the signed form"
+    ]
+  }
+}

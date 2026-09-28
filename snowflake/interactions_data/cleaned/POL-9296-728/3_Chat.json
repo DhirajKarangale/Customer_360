@@ -1,0 +1,30 @@
+{
+  "content": "Meera Chauhan contacted insurance agent Anjali Desai to let her auto policy lapse because she sold her car last month. Anjali agreed to let the policy expire naturally on October 20th and confirmed that auto-renewal has been disabled to prevent future charges. Meera will receive an automated confirmation email once the policy officially expires.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-10-14T10:15:22",
+    "participants": {
+      "customer": {
+        "name": "Meera Chauhan",
+        "id": "c7382ffa-1092-4822-b281-987113cd1091"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "d8192aae-411a-4931-8f11-2098b111409b"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "auto policy lapse",
+      "car sold",
+      "policy expiration",
+      "disable auto-renewal"
+    ],
+    "action_items": [
+      "Disable auto-renewal on the policy",
+      "Send final confirmation email upon policy expiration on October 20th"
+    ]
+  }
+}

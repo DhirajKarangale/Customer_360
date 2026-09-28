@@ -1,0 +1,31 @@
+{
+  "content": "Insurance agent Anjali Desai followed up with customer Nandini Rajput regarding the DCoders Health Plus policy application (HP-001234) with a deadline of 15/10/2024, providing the application form. Nandini acknowledged receipt, reviewed the form, and asked for clarification on the required documents and the expected timeline for policy activation.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-30T11:04:20",
+    "participants": {
+      "customer": {
+        "name": "Nandini Rajput",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Health Policy Application",
+      "DCoders Health Plus",
+      "Required Documents",
+      "Policy Activation Timeline"
+    ],
+    "action_items": [
+      "Customer to fill out and return the application form by 15/10/2024",
+      "Agent to clarify required documents for the application process",
+      "Agent to provide expected timeline for policy activation"
+    ]
+  }
+}

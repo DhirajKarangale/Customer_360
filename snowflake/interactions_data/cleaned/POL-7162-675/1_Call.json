@@ -1,0 +1,28 @@
+{
+  "content": "Vikram Singh from ProtectAll Agency calls customer Isha Agarwal regarding the upcoming renewal and pending payment for her auto policy with DCoders. Isha informs Vikram that she does not think she will be able to renew the policy this time. Vikram notes that the policy will expire in two days if payment is not received.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Isha Agarwal",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "auto policy renewal",
+      "payment pending",
+      "policy expiration"
+    ],
+    "action_items": [
+      "Await customer decision regarding policy renewal before expiration in two days"
+    ]
+  }
+}

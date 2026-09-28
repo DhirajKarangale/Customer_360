@@ -1,0 +1,26 @@
+{
+  "content": "Arjun Reddy called DCoders to inquire about the status of his health policy (HP-001234). Insurance agent Ravi Menon checked the system and informed him that the policy expired on the 10th of the current month.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Arjun Reddy",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "health policy",
+      "policy expiration",
+      "policy status"
+    ],
+    "action_items": []
+  }
+}

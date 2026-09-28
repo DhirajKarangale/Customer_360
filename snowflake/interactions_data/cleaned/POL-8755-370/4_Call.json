@@ -1,0 +1,29 @@
+{
+  "content": "Customer Diya Menon called insurance agent Ravi Menon to understand the difference between reinstating her current auto policy and purchasing a new one. After the agent explained that a new policy includes updated features like roadside assistance and better collision coverage, the customer decided to proceed with the new policy and asked for the next steps.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Diya Menon",
+        "id": "3421f7d8-4a6c-4f3e-8f6d-5a4b7c2e9f1a"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "7a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "auto policy",
+      "policy reinstatement",
+      "new policy purchase",
+      "coverage benefits"
+    ],
+    "action_items": [
+      "Walk the customer through the next steps for purchasing the new policy"
+    ]
+  }
+}

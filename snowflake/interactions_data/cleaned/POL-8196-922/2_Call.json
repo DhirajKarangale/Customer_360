@@ -1,0 +1,29 @@
+{
+  "content": "Anjali Desai from First Guard Brokers called Diya Menon regarding her expiring health policy with DCoders. Anjali presented the options to renew current coverage or upgrade to the premium plan. After learning that the premium plan includes dental and vision care, Diya chose to upgrade, and Anjali successfully processed the renewal with the premium coverage.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-01-03T10:00:00",
+    "participants": {
+      "customer": {
+        "name": "Diya Menon",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Health policy expiration",
+      "Policy renewal",
+      "Premium plan upgrade",
+      "Dental and vision coverage"
+    ],
+    "action_items": [
+      "Renew health policy with premium coverage"
+    ]
+  }
+}

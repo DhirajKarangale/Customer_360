@@ -1,0 +1,28 @@
+{
+  "content": "Arjun Reddy follows up with insurance agent Ravi Menon regarding his health insurance policy that expired on March 10th. Ravi confirms that his payment and reinstatement form were received on March 25th, apologizes for the delay, and Arjun acknowledges he is relieved and will wait for the updated policy documents.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Arjun Reddy",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "relieved",
+    "topics": [
+      "health policy expiration",
+      "policy reinstatement",
+      "payment confirmation"
+    ],
+    "action_items": [
+      "Wait for updated policy documents"
+    ]
+  }
+}

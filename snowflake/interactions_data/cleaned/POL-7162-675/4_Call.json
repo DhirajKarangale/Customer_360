@@ -1,0 +1,29 @@
+{
+  "content": "The customer, Isha Agarwal, called the insurance agent, Vikram Singh, to report that she did not receive the payment link for her auto policy. Vikram confirmed he sent it earlier and successfully resent the link. Isha apologized for the payment delay and stated she would complete the payment immediately.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Isha Agarwal",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "apologetic",
+    "topics": [
+      "auto policy payment",
+      "payment link",
+      "policy billing"
+    ],
+    "action_items": [
+      "Vikram to resend the payment link",
+      "Isha to complete the auto policy payment"
+    ]
+  }
+}

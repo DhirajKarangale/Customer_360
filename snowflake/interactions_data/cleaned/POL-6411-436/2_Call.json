@@ -1,0 +1,28 @@
+{
+  "content": "Aditya Singh contacted insurance agent Neha Kapoor regarding his lapsed health policy (SH-123456). Neha checked the system and confirmed that the policy expired because the renewal payment was missed.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2024-02-28T10:10:00",
+    "participants": {
+      "customer": {
+        "name": "Aditya Singh",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d5"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "health policy expiration",
+      "policy reinstatement",
+      "missed renewal payment"
+    ],
+    "action_items": [
+      "Determine steps to reinstate the lapsed health policy"
+    ]
+  }
+}

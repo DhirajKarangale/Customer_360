@@ -1,0 +1,26 @@
+{
+  "content": "Ravi Menon followed up with Diya Menon regarding her auto policy status update to 'Expired' and the purchase of a new policy with better coverage, attaching a confirmation document. Diya confirmed receipt of the document and expressed satisfaction with the process, noting that all details look correct.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-30T10:45:00",
+    "participants": {
+      "customer": {
+        "name": "Diya Menon",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Auto policy expiration",
+      "New policy purchase",
+      "Policy confirmation document"
+    ],
+    "action_items": []
+  }
+}

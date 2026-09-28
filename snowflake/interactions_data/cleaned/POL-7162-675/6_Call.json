@@ -1,0 +1,29 @@
+{
+  "content": "Isha Agarwal called insurance agent Vikram Singh to discuss her auto policy with DCoders, which she discovered had expired. Although she was frustrated that an extension wasn't allowed, she agreed to proceed with the reinstatement process. Vikram located her policy using her policy number (DC-001234) and informed her that the reinstatement fee would be approximately 10% of her annual premium.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Isha Agarwal",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "frustrated",
+    "topics": [
+      "auto policy expiration",
+      "policy reinstatement",
+      "reinstatement fee"
+    ],
+    "action_items": [
+      "Proceed with policy reinstatement",
+      "Pay the reinstatement fee of approximately 10% of the annual premium"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "content": "Neha Kapoor followed up with Aaradhya Verma regarding her health policy renewal, explaining the premium increase due to inflation and introducing a new mental health support feature included in the base plan. Neha also offered a 5% loyalty discount and attached the updated renewal form. Aaradhya thanked her for the discount, confirmed she would review the form, and asked whether the mental health support feature extends to family members or is restricted to the primary policyholder.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-28T11:04:20",
+    "participants": {
+      "customer": {
+        "name": "Aaradhya Verma",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Health Policy Renewal",
+      "Premium Increase",
+      "Mental Health Support",
+      "Loyalty Discount"
+    ],
+    "action_items": [
+      "Aaradhya Verma to review the updated renewal form",
+      "Neha Kapoor to clarify if mental health support is available for family members"
+    ]
+  }
+}

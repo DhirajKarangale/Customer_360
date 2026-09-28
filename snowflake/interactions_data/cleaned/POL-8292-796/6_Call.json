@@ -1,0 +1,28 @@
+{
+  "content": "Nandini Rajput called insurance agent Anjali Desai to follow up on her new health policy application. Anjali confirmed receipt, verified Nandini's date of birth (August 12, 1985), and successfully processed the application, informing Nandini that her policy is active as of today and documents will be sent via email within 24 hours.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2024-10-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Nandini Rajput",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "health policy application",
+      "policy activation",
+      "application follow-up"
+    ],
+    "action_items": [
+      "Send policy documents via email within 24 hours"
+    ]
+  }
+}

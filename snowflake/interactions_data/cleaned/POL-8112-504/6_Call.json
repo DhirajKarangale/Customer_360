@@ -1,0 +1,29 @@
+{
+  "content": "Aaradhya Verma calls insurance agent Neha Kapoor to confirm receipt of her signed renewal form. Neha confirms she received it and processed the renewal, but discovers the system still shows the policy as expired. Neha agrees to escalate the issue to the administration team to update the status ASAP and promises to keep Aaradhya updated.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Aaradhya Verma",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "policy renewal",
+      "signed renewal form",
+      "policy expiration status"
+    ],
+    "action_items": [
+      "Escalate the expired policy status issue to the admin team",
+      "Keep the customer updated on the policy activation status"
+    ]
+  }
+}

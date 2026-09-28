@@ -1,0 +1,32 @@
+{
+  "content": "Customer Krishna Das called agent Suresh Deshmukh to discuss an expired auto policy (AP-001234) and inquire about a higher renewal premium. The agent explained that the increase was due to overall regional claims. To reduce the premium, the customer opted for a 10% no-claim bonus and a higher deductible for an additional 5% discount. The agent successfully updated the policy and it is now active.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-12-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Krishna Das",
+        "id": "3421f7d8-4a6c-4f3e-8f6d-3a5a4f7c9e8a"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "auto policy renewal",
+      "premium increase",
+      "regional claims",
+      "no-claim bonus",
+      "higher deductible"
+    ],
+    "action_items": [
+      "Update policy with no-claim bonus",
+      "Update policy with higher deductible option",
+      "Activate the renewed policy"
+    ]
+  }
+}

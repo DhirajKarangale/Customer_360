@@ -1,0 +1,28 @@
+{
+  "content": "Customer Nandini Rajput followed up with insurance agent Anjali Desai regarding the new health policy application. She inquired about coverage for pre-existing conditions and was informed there is a one-year waiting period. Satisfied with the answer, the customer expressed readiness to proceed with the application and asked for the next steps.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:15:00",
+    "participants": {
+      "customer": {
+        "name": "Nandini Rajput",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Health policy application",
+      "Pre-existing conditions coverage",
+      "Waiting period"
+    ],
+    "action_items": [
+      "Guide the customer through the next steps of the application process"
+    ]
+  }
+}

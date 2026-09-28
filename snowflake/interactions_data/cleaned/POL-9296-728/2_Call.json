@@ -1,0 +1,29 @@
+{
+  "content": "Customer Meera Chauhan called insurance agent Anjali Desai to cancel and close out an old DCoders auto policy for a car she sold two months ago. The agent processed the policy expiration effective today and confirmed that an automated closure notice email would be sent to the customer for her records.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-10-14T11:15:00",
+    "participants": {
+      "customer": {
+        "name": "Meera Chauhan",
+        "id": "c14890ab-1234-470e-a3fc-799eaf739c91"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "d5821bc3-5678-4def-9abc-123456789abc"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "auto policy cancellation",
+      "policy expiration",
+      "vehicle sold"
+    ],
+    "action_items": [
+      "Update system status of DCoders auto policy to Expired effective today",
+      "Auto-generate and send policy closure confirmation email to the customer"
+    ]
+  }
+}

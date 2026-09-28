@@ -1,0 +1,28 @@
+{
+  "content": "Vikram Patel from Omni Insurance Group followed up with customer Sai Kumar regarding his expired auto policy (AP-001234). Vikram confirmed the official expiration of the policy today and offered alternative options for a new policy.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Sai Kumar",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "auto policy expiration",
+      "policy renewal",
+      "alternative insurance options"
+    ],
+    "action_items": [
+      "Review alternative options for a new auto policy"
+    ]
+  }
+}

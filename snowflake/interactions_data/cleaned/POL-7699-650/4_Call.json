@@ -1,0 +1,30 @@
+{
+  "content": "Atharv Pandey calls insurance agent Neha Kapoor to express interest in the family health plan due to its lower deductible and maternity coverage. Neha congratulates Atharv on his growing family, explains that they need to finalize the paperwork, and confirms that his expired previous policy will be marked accordingly in the system.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2024-09-29T14:00:00",
+    "participants": {
+      "customer": {
+        "name": "Atharv Pandey",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d5"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "family health plan",
+      "maternity coverage",
+      "deductible",
+      "policy renewal and cancellation"
+    ],
+    "action_items": [
+      "Finalize the paperwork for the new family health plan",
+      "Update and mark the old policy as expired in the system"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "content": "Customer Dhruv Kapoor called agent Vikram Patel to check on the status of his health policy renewal, which he submitted over a week ago. The agent discovered the renewal is pending with the underwriting team due to an issue with the paperwork. The customer became frustrated and alarmed upon learning that his policy is currently expired while in the renewal process. The agent re-escalated the issue for same-day review.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Dhruv Kapoor",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "frustrated",
+    "topics": [
+      "health policy renewal",
+      "underwriting delay",
+      "expired policy",
+      "paperwork issue"
+    ],
+    "action_items": [
+      "Agent to follow up with underwriting team regarding paperwork review",
+      "Agent to provide an update to the customer by the end of the day"
+    ]
+  }
+}
