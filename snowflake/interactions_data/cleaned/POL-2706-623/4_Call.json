@@ -1,0 +1,28 @@
+{
+  "content": "Tanvi Saxena called insurance agent Neha Kapoor to confirm if her auto policy update and payment had been processed. While the payment was processed and the policy reinstated, Neha noticed the system still showed it as expired and promptly updated the status to active.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Tanvi Saxena",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "relieved",
+    "topics": [
+      "auto policy",
+      "payment processing",
+      "policy status update"
+    ],
+    "action_items": [
+      "Update policy status to active in the system"
+    ]
+  }
+}

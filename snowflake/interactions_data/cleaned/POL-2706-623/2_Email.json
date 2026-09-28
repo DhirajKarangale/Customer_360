@@ -1,0 +1,29 @@
+{
+  "content": "Tanvi Saxena follows up with insurance agent Neha Kapoor regarding the reinstatement of her expired auto policy. Neha replies with the total due amount of $542.50 (including a $50 reinstatement fee) and provides payment instructions and available methods via an attached document.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-12-10T11:04:20",
+    "participants": {
+      "customer": {
+        "name": "Tanvi Saxena",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Auto Policy Expiration",
+      "Policy Reinstatement",
+      "Payment Methods",
+      "Reinstatement Fee"
+    ],
+    "action_items": [
+      "Pay the total reinstatement amount of $542.50 using credit/debit card or bank transfer following the attached instructions"
+    ]
+  }
+}
