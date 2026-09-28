@@ -1,10 +1,13 @@
-chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+chat_id: chk-dcd-982341
 participants[2]{id,name,role}:
-  4a6a7028-a699-4de4-b932-41271ff311d6,Isha Agarwal,customer
-  2a6a7028-a699-4de4-b932-41271ff311d5,Anita Sharma,insurance agent
-messages[5]{user,timestamp,text,media_url}:
-  user_1,26/09/2024 T14:50:00,"hey anita, thx for the email. u mentioned the premium might have changed. can u pls confirm the new premium amount?",
-  user_2,26/09/2024 T14:50:30,"Hi Isha, yes the premium has changed. Let me just check the updated amount for you.",
-  user_2,26/09/2024 T14:51:00,"Isha, the new premium amount is ₹25,500 per annum. We also have a 5% discount for online renewal.",
-  user_1,26/09/2024 T14:51:20,"thx anita. thats a bit higher than i expected. is the coverage still the same?",
-  user_2,26/09/2024 T14:51:45,"Yes, the coverage remains the same. We've actually added a few more benefits, including a free health checkup every year."
+  c1452a8b-1234-4987-8123-56789abcdef0,Isha Agarwal,customer
+  d8521f7e-9876-4321-b456-123456789abc,Anita Sharma,insurance agent
+messages[8]{user,timestamp,text,media_url}:
+  user_1,14/10/2024 T10:15:22,"Hi Anita, following up on our call yesterday regarding my health policy health policy*.",
+  user_2,14/10/2024 T10:16:05,"Hello Isha! Yes, absolutely. I'm checking your file right now. How can I help you further with it today?",
+  user_1,14/10/2024 T10:17:12,"since i decided not to renew it, can u confirm if it's fully closed now? don't want any auto debit surprises smh",
+  user_2,14/10/2024 T10:18:40,"I completely understand your concern. Let me pull up the system status... Ah, yes. Since the grace period ended and we didn't receive the renewal premium, the policy status has officially been updated to 'Expired' in our portal as of today.",
+  user_1,14/10/2024 T10:19:15,"oh thank god. so no more charges will happen right?",
+  user_2,14/10/2024 T10:19:50,"Correct, no further charges or auto-debits will occur since the policy is now officially expired and inactive. You are all set.",
+  user_1,14/10/2024 T10:20:25,"phew perfect. thanks for sorting that out quickly tho! appreciate it",
+  user_2,14/10/2024 T10:21:02,"You're very welcome, Isha! If you ever need help with health insurance in the future, Trust Wealth Advisors is always here. Have a great day!",

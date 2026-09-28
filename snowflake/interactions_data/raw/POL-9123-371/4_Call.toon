@@ -1,12 +1,22 @@
-call_id: REC-INS-004C
-start_timestamp: 28/09/2026 T:11:15:00
-end_timestamp: 28/09/2026 T:11:20:00
+call_id: REC-DC-78904
+start_timestamp: 15/10/2026 T:14:15:00
+end_timestamp: 15/10/2026 T:14:18:30
 participants[2]{id,name,role}:
-  4a6a7028-a699-4de4-b932-41271ff311d6,Neha Chauhan,customer
-  3a6a7028-a699-4de4-b932-41271ff311d6,Karan Joshi,insurance agent
-messages[5]{user,text}:
-  user_1,Hi Karan I hope you're doing well I wanted to follow up on our previous conversation about my health policy with DCoders
-  user_2,Ah yeah Neha good morning I've got your file right here What specifically did you want to know about the policy
-  user_1,Well I was thinking of downgrading to the lower plan we discussed last time to save on premium But I'm a bit concerned about losing the dental and vision coverage
-  user_2,I completely understand your concern Neha But let me see what I can do [pause] Ah yes I can offer you a discount on the premium if you decide to stick with the current plan
-  user_1,That sounds great Karan Can you please go ahead and process the renewal with the discount
+  c1490a12-8812-4211-9a77-3e812aef9121,Neha Chauhan,customer
+  d8812b33-1124-4f99-81ac-559012cdbc45,Karan Joshi,insurance agent
+messages[14]{user,text}:
+  user_2,[00:00] Hello, am I speaking with Neha Chauhan?
+  user_1,[00:05] Yeah, hi. Neha here. Who is this?
+  user_2,[00:09] Hi Neha, this is Karan Joshi calling from Safe Step Insurance, partnering with DCoders. I'm following up on our recent email and chat regarding your health policy renewal.
+  user_1,[00:19] [sighs] Oh right. Look, I told the other person on chat already—I'm not renewing it.
+  user_2,[00:27] Ah, I understand, ma'am. I just wanted to double-check if there was any particular issue? We noticed the grace period for your policy payment actually ended a few days ago, so--
+  user_1,[00:39] Look, Karan, it's nothing personal, but I switched companies last month and my new employer provides a comprehensive group health cover. I literally have no use for this individual plan anymore.
+  user_2,[00:52] Understood completely. That makes total sense if you've got corporate coverage now. I just need to officially process this as expired in our system since the payment window lapsed without renewal.
+  user_1,[01:06] Yeah, fine by me. Do I need to fill out any forms or sign anything, or does it just drop off?
+  user_2,[01:14] Um, no paperwork needed on your end. Since the deadline passed and you're opting out, I'll just update the status in our portal to 'Expired' right now. [typing sounds]
+  user_1,[01:28] Perfect. Will I get some kind of confirmation email or anything? Just so I have it for my records.
+  user_2,[01:35] Yes, absolutely. Once I hit save here, the system will automatically dispatch a closure notice confirming that policy number DC-HLT-9921 has officially expired.
+  user_1,[01:48] Awesome. Thanks for making it quick and not giving me a hard sales pitch. [laughs slightly]
+  user_2,[01:54] Haha, no problem at all, Neha. We don't like wasting your time. Is there anything else regarding your account I can help clear up today?
+  user_1,[02:04] Nope, that's everything. Thanks, Karan. Have a good day.
+  user_2,[02:08] You too, Neha. Take care! Bye.

@@ -59,12 +59,7 @@ def _call_snowflake_llm(sf_conn, prompt, model_name):
             pass
 
 def _call_gemini_llm(prompt, model_name):
-    # Fallback to a default gemini model if not mapped
-    # "llama3.1-8b" might be mapped to "gemini-1.5-flash"
-    # "llama3.1-70b" might be mapped to "gemini-1.5-pro"
     gemini_model = "gemini-3.5-flash-lite"
-    if "8b" in model_name.lower():
-        gemini_model = "gemini-1.5-flash"
         
     api_key = os.getenv("GEMINI_API_KEY")
     if not api_key:

@@ -1,10 +1,15 @@
-chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+chat_id: cht-dc-9942-03
 participants[2]{id,name,role}:
-  4f6a7028-a699-4de4-b932-41271ff311d7,Meera Chauhan,customer
-  3a6a7028-a699-4de4-b932-41271ff311d6,Anjali Desai,insurance agent
-messages[5]{user,timestamp,text,media_url}:
-  user_1,26/09/2024 T14:50:00,"hey anjali i sent the reinstatement form and payment link u sent me. how long will it take to reinstate my policy?",
-  user_2,26/09/2024 T14:50:30,"Hi Meera, thanks for sending those over. I'll review them ASAP. Reinstatement usually takes 24-48 hours after we receive all required docs and payment.",
-  user_1,26/09/2024 T14:51:00,"ok thats great. i really need it to be done asap. i have a *road* trip planned for this weekend",
-  user_2,26/09/2024 T14:51:45,"I completely understand, Meera. I'll expedite the process. You'll receive an email with your updated policy documents once it's reinstated. Please note that your policy will be reinstated with the same coverage and premium as before.",
-  user_1,26/09/2024 T14:52:10,"thx anjali. i really appreciate it. can u also confirm if my policy will be active from the date of reinstatement or from the original expiry date?"
+  c7382ffa-1092-4822-b281-987113cd1091,Meera Chauhan,customer
+  d8192aae-411a-4931-8f11-2098b111409b,Anjali Desai,insurance agent
+messages[10]{user,timestamp,text,media_url}:
+  user_1,14/10/2026 T10:15:22,"Hi Anjali, are you there?",
+  user_2,14/10/2026 T10:16:05,"Hello Meera! Yes, I'm here. How can I help you today with your auto policy?",
+  user_1,14/10/2026 T10:17:12,"i wanted to talk about letting my policy laps *lapse since i sold my car last month",
+  user_2,14/10/2026 T10:18:30,"Ah, I understand. Since you've already sold the vehicle, we definitely need to update the status. We can let it expire naturally at the end of the term, or process a formal cancellation. Since the expiration date is just around the corner on the 20th, letting it expire is completely fine.",
+  user_1,14/10/2026 T10:19:40,"yeah lets just let it expire. i dont want any more charges or renewals.",
+  user_2,14/10/2026 T10:20:15,"Got it. I will make sure the auto-renewal is turned off right now so you won't be charged.",
+  user_1,14/10/2026 T10:20:50,"thanks so much. will i get any confirmation once its fully expired?",
+  user_2,14/10/2026 T10:21:40,"Yes, absolutely! Once the policy hits the expiration date on October 20th, the system will automatically transition the status to 'Expired' and send a final confirmation email to you.",
+  user_1,14/10/2026 T10:22:05,"perfect. thanks for your help anjali!",
+  user_2,14/10/2026 T10:22:45,"You're very welcome, Meera! Have a wonderful day, and feel free to reach out if you need auto insurance again in the future.",

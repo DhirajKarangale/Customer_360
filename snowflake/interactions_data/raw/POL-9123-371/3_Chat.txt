@@ -1,10 +1,11 @@
-chat_id: 8a5b2c03-5e8a-49db-9cb2-d27a1f64f002
+chat_id: dcd-cht-982341
 participants[2]{id,name,role}:
-  4f6a7028-a699-4de4-b932-41271ff311d7,Neha Chauhan,customer
-  3a6a7028-a699-4de4-b932-41271ff311d6,Karan Joshi,insurance agent
-messages[5]{user,timestamp,text,media_url}:
-  user_1,26/09/2024 T14:50:00,"hey karan, its neha. i got ur email with the renewal quote. can u explain the changes in coverage and premium?",
-  user_2,26/09/2024 T14:50:30,"Hi Neha! Yeah, sure. The premium has increased by 10% due to the addition of new benefits like dental and vision coverage. We've also expanded the network of hospitals.",
-  user_1,26/09/2024 T14:51:15,"thats great! but i was thinking of downgrading to a lower plan to save on premium. is that possible?",
-  user_2,26/09/2024 T14:52:00,"I can definitely help you with that, Neha. However, please note that downgrading might affect your coverage. Let me check the options for you.",
-  user_2,26/09/2024 T14:53:20,"Okay, I've checked. If you downgrade to the lower plan, you'll save around 15% on premium, but you'll lose the dental and vision coverage. Also, the deductible will increase by $500. Would you like me to send you the updated quote?"
+  c1482b12-8823-4e12-b911-34812a77f091,Neha Chauhan,customer
+  agt-9021-44bb-81ef-77312aa9018b,Karan Joshi,insurance agent
+messages[6]{user,timestamp,text,media_url}:
+  user_1,14/10/2026 T11:02:15,"hi karan, just following up on our call yesterday regarding my health poliy *policy",
+  user_2,14/10/2026 T11:03:02,"Hello Neha! Yes, I remember. You mentioned you wanted to go ahead with letting the policy lapse since you've switched to your new employer's corporate cover, right?",
+  user_1,14/10/2026 T11:04:10,"yep exactly. premium is due next week anyway and i dont see the point in paying double. can u confirm it will just expire?",
+  user_2,14/10/2026 T11:05:30,"Got it. Since you haven't made the renewal payment and your grace period ends today, the system will automatically transition your health policy status to 'Expired'. No cancellation charges or penalties will apply.",
+  user_1,14/10/2026 T11:06:12,"perfecrt *perfect. thanks for the help. can u send a confirmation email or something for my records?",
+  user_2,14/10/2026 T11:07:05,"Sure thing, Neha. I'll trigger the policy expiration statement to your registered email right away. Take care!",https://storage.safestepinsurance.com/docs/policy_expiration_statement_Neha.pdf
