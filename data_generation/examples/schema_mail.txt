@@ -1,0 +1,9 @@
+mail_id: 05545qwe-3423-470e-a3fc-799eaf739c96
+subject: Inquiry: Outpatient (OPD) Coverage and Deductibles
+participants[3]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Nandini Rajput,nandini.r@mail.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,suresh.d@dcoders.com,insurance agent
+  483ce1dc-44c1-41db-886f-539e46b7bdad,Vikram Patel,vikram.p@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,27/09/2024 T:09:06:40,"Hi Suresh,\n\nI am planning to undergo a knee consultation and MRI next week. Could you please clarify if my current health plan covers Outpatient Department (OPD) consultations and diagnostics?\n\nPolicy Number: SH-998234\n\nThanks,\nNandini",
+  user_2,user_1,user_3,27/09/2024 T:09:14:10,"Dear Nandini,\n\nThank you for reaching out. Yes, your comprehensive health plan does cover OPD consultations and diagnostic tests like MRIs. I have attached your updated policy document for your reference. I am copying Vikram to assist with pre-authorization.\n\nBest regards,\nSuresh Deshmukh",https://storage.securehealthinsurance.com/docs/Policy_SH998234_2026.pdf
