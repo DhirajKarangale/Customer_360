@@ -1,0 +1,29 @@
+{
+  "content": "Sneha Roy called to discuss her health policy that expired on March 1, 2023, and expressed interest in renewing it. Agent Suresh Deshmukh confirmed the expiration, offered to guide her through the renewal process, and requested her current address and phone number for verification.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Sneha Roy",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "health policy expiration",
+      "policy renewal",
+      "customer verification"
+    ],
+    "action_items": [
+      "Agent to guide Sneha through the renewal process",
+      "Sneha to provide current address and phone number"
+    ]
+  }
+}

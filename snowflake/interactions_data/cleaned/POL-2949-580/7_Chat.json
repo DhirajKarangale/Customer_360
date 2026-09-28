@@ -1,0 +1,28 @@
+{
+  "content": "Pranav asked Ramesh to confirm his policy status, which was affirmed as active, and inquired about a renewal notice. Ramesh confirmed the policy will renew in six months and that a formal renewal notice will be sent two months before expiration.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2024-09-26T14:50:00",
+    "participants": {
+      "customer": {
+        "name": "Pranav Mishra",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "policy status",
+      "renewal notice",
+      "policy renewal timeline"
+    ],
+    "action_items": [
+      "Send formal renewal notice two months before policy expiration"
+    ]
+  }
+}

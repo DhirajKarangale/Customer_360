@@ -1,0 +1,31 @@
+{
+  "content": "Meera followed up on her life policy LP-001234, learned it is pending and requires additional formalities. Ravi confirmed this and offered to send a digital signing link. Meera agreed to proceed and asked how long activation will take after she signs the documents.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2024-09-26T14:42:00",
+    "participants": {
+      "customer": {
+        "name": "Meera Chauhan",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d7"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "life policy LP-001234 status",
+      "policy activation formalities",
+      "digital document signing",
+      "activation timeline"
+    ],
+    "action_items": [
+      "Ravi to send digital signing link",
+      "Meera to sign the documents",
+      "Policy activation after documents are signed"
+    ]
+  }
+}

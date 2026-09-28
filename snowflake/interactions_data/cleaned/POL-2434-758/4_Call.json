@@ -1,0 +1,27 @@
+{
+  "content": "Customer Nandini Rajput called to confirm that her auto policy AP-001234 had been cancelled. Agent Sunita Agarwal verified the cancellation was effective immediately. Nandini thanked Sunita and expressed relief.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:15:00",
+    "participants": {
+      "customer": {
+        "name": "Nandini Rajput",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "auto policy cancellation",
+      "policy AP-001234 verification"
+    ],
+    "action_items": [
+      "Customer can contact the agent if further questions arise"
+    ]
+  }
+}

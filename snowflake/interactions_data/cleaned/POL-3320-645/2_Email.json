@@ -1,0 +1,30 @@
+{
+  "content": "Sneha Roy reported that her auto insurance policy (DC-001234) had expired without prior notification and asked how to reinstate it. Vikram Patel apologized, explained the lapse was due to non\u2011payment, attached a renewal quote, and requested her confirmation to proceed with renewal.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-27T10:06:40",
+    "participants": {
+      "customer": {
+        "name": "Sneha Roy",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "frustrated",
+    "topics": [
+      "auto insurance policy expiration",
+      "lack of notification",
+      "non\u2011payment",
+      "renewal quote"
+    ],
+    "action_items": [
+      "Customer to review the attached renewal quote",
+      "Customer to confirm if she wants to proceed with renewal"
+    ]
+  }
+}

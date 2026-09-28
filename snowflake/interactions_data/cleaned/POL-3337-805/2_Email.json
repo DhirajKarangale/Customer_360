@@ -1,0 +1,29 @@
+{
+  "content": "Sunita Agarwal followed up on Dhruv Kapoor's auto policy that expired on March\u202f8, providing a comparison of current auto\u2011insurance plans and asking whether he wants to reinstate the old policy or explore new options. Dhruv thanked her for the prompt follow\u2011up and the document, expressed interest in discussing the options further, and requested a phone call at her earliest convenience.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2023-03-10T11:04:20",
+    "participants": {
+      "customer": {
+        "name": "Dhruv Kapoor",
+        "id": "8a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "auto policy expiration",
+      "policy renewal options",
+      "policy reinstatement",
+      "new insurance plan comparison"
+    ],
+    "action_items": [
+      "Sunita to call Dhruv to discuss renewal options"
+    ]
+  }
+}

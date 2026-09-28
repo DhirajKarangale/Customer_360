@@ -1,0 +1,28 @@
+{
+  "content": "Dhruv Kapoor called about his auto policy AP-001234, which Sunita Agarwal confirmed had expired on March 8. Dhruv expressed surprise and asked about his options. Sunita offered to either reinstate the expired policy or explore a new policy and asked if he wanted to discuss the options.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Dhruv Kapoor",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "frustrated",
+    "topics": [
+      "auto policy expiration",
+      "policy reinstatement",
+      "new policy options"
+    ],
+    "action_items": [
+      "Agent to discuss reinstatement and new policy options with the customer"
+    ]
+  }
+}

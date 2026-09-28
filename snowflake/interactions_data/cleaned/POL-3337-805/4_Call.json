@@ -1,0 +1,29 @@
+{
+  "content": "Dhruv Kapoor called to discuss his auto policy that expired on March 8th. Sunita Agarwal explained that reinstating the policy would incur a $50 fee and a 10% premium penalty, and offered to provide new insurance quotes. She checked several alternative options and presented them for Dhruv to consider.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-29T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Dhruv Kapoor",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d5"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "auto policy reinstatement",
+      "new insurance options",
+      "fees and penalties"
+    ],
+    "action_items": [
+      "Agent to provide detailed quotes for new auto insurance options",
+      "Customer to review quotes and decide on reinstatement or a new policy"
+    ]
+  }
+}

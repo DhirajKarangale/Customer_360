@@ -1,0 +1,28 @@
+{
+  "content": "Suresh Deshmukh confirmed that Sneha Roy's health policy HP-001234 expired on 01/03/2023 and offered to assist with the renewal process.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Sneha Roy",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "health policy",
+      "policy expiration",
+      "renewal process"
+    ],
+    "action_items": [
+      "Agent to initiate renewal process for policy HP-001234"
+    ]
+  }
+}

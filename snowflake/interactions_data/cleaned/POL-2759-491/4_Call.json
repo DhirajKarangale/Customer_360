@@ -1,0 +1,31 @@
+{
+  "content": "Meera checked on her life policy LP-001234; Ravi confirmed the digital signature and required documents are received, and said the underwriting team will review the file and activate the policy by the end of the day or tomorrow.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Meera Chauhan",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d5"
+        }
+      ]
+    },
+    "user_mood": "relieved",
+    "topics": [
+      "life policy status",
+      "digital signature",
+      "document receipt",
+      "underwriting review",
+      "policy activation timeline"
+    ],
+    "action_items": [
+      "Underwriting team to review the policy documents",
+      "Activate the policy by end of day today or tomorrow"
+    ]
+  }
+}

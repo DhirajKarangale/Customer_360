@@ -1,0 +1,30 @@
+{
+  "content": "Ananya Nair called to inquire about a health insurance policy for her family of three, seeking coverage for hospitalization and critical illnesses. Agent Ramesh Tiwari introduced himself, asked about family details, and identified a plan that includes hospitalization, critical illness, and personal accident coverage, offering to explain the details.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Ananya Nair",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "health insurance policy",
+      "family coverage",
+      "hospitalization",
+      "critical illnesses",
+      "personal accident coverage"
+    ],
+    "action_items": [
+      "Agent to explain the details of the identified plan if the customer agrees"
+    ]
+  }
+}

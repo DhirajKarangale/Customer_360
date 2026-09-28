@@ -1,0 +1,33 @@
+{
+  "content": "Vihaan Patel called Shield Life Services about his travel policy (TP-001234) that appeared expired. The agent, Neha Kapoor, confirmed the policy had indeed expired due to a missed premium payment. Vihaan was surprised and frustrated. Neha offered a reinstatement for $250 and explained the lack of reminder emails, promising to escalate the issue. Vihaan initially agreed to pay but then decided to cancel the policy instead. Neha processed the cancellation and said a confirmation email would be sent.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Vihaan Patel",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "frustrated",
+    "topics": [
+      "policy expiration",
+      "missed premium payment",
+      "reinstatement cost",
+      "reminder email failure",
+      "policy cancellation"
+    ],
+    "action_items": [
+      "Calculate and charge $250 for policy reinstatement (later cancelled)",
+      "Escalate issue of missing reminder emails",
+      "Cancel the policy per customer request",
+      "Send policy cancellation confirmation email to the customer"
+    ]
+  }
+}

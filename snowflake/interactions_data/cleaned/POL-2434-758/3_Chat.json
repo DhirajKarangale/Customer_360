@@ -1,0 +1,28 @@
+{
+  "content": "Customer Nandini confirmed her auto policy cancellation; agent Sunita confirmed the policy AP-001234 was cancelled and that a confirmation letter and refund details will be sent within 7\u201110 working days. The customer expressed relief.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2024-09-26T14:50:00",
+    "participants": {
+      "customer": {
+        "name": "Nandini Rajput",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d7"
+        }
+      ]
+    },
+    "user_mood": "relieved",
+    "topics": [
+      "auto policy cancellation",
+      "refund"
+    ],
+    "action_items": [
+      "Send confirmation letter",
+      "Provide refund details within 7-10 working days"
+    ]
+  }
+}

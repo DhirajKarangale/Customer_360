@@ -1,0 +1,30 @@
+{
+  "content": "Dhruv follows up on his expired auto policy, asking for the total reinstatement cost (including the $50 fee and 10% penalty) and any additional discounts for a new policy. Sunita confirms the reinstatement cost is $120, provides new policy quotes with a 5% loyalty discount, and asks Dhruv to review the attached documents and respond with any further questions.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-29T11:04:20",
+    "participants": {
+      "customer": {
+        "name": "Dhruv Kapoor",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d7"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "auto policy reinstatement",
+      "cost breakdown",
+      "discounts",
+      "new policy quotes"
+    ],
+    "action_items": [
+      "Dhruv to review the attached policy options document",
+      "Dhruv to respond with any further questions or decision"
+    ]
+  }
+}

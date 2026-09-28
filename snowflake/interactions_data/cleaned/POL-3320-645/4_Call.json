@@ -1,0 +1,29 @@
+{
+  "content": "Sneha Roy called about her auto insurance policy, which had expired. Vikram Patel confirmed the expiration, apologized for the missed renewal email, and offered to handle the renewal process. Sneha thanked him and agreed to proceed.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Sneha Roy",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "relieved",
+    "topics": [
+      "auto insurance policy expiration",
+      "renewal process",
+      "missed renewal notification"
+    ],
+    "action_items": [
+      "Agent will assist with renewing the auto insurance policy",
+      "Agent will resend the renewal quote via email"
+    ]
+  }
+}

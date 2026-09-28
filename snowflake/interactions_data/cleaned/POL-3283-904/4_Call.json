@@ -1,0 +1,33 @@
+{
+  "content": "Ananya Nair confirmed details about a health insurance policy: coverage for pre\u2011existing conditions with a two\u2011year waiting period, monthly premium payment option with a 5% surcharge, total premium of about 25,000 per year for a family of three, and the next step is for the agent to send a payment link and request required documents.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-29T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Ananya Nair",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "health policy coverage",
+      "pre\u2011existing conditions",
+      "waiting period",
+      "premium payment options",
+      "monthly surcharge",
+      "total premium amount",
+      "next steps for purchase"
+    ],
+    "action_items": [
+      "Agent to send a payment link to the customer",
+      "Customer to complete payment and upload required documents"
+    ]
+  }
+}

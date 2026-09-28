@@ -1,0 +1,29 @@
+{
+  "content": "Sneha Roy emailed Suresh Deshmukh to follow up on renewing her health policy that expired on 01/03/2023, attaching her ID and medical certificate and asking for next steps. Suresh confirmed the documents are satisfactory, will process the renewal, and will send a confirmation email with the updated policy details.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-28T11:06:40",
+    "participants": {
+      "customer": {
+        "name": "Sneha Roy",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "health policy renewal",
+      "document submission",
+      "policy expiration"
+    ],
+    "action_items": [
+      "Agent to process policy renewal",
+      "Agent to send confirmation email with updated policy details"
+    ]
+  }
+}
