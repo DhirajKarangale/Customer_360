@@ -1,0 +1,30 @@
+{
+  "content": "Vedant Thakur contacted insurance agent Anjali Desai to follow up on a previously discussed term life insurance policy. While reviewing the provided documentation, Vedant inquired about specific riders and exclusions. He is currently considering adding a critical illness rider but is seeking advice on whether the additional premium cost is justified by the coverage benefits.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Vedant Thakur",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "term life insurance policy",
+      "riders",
+      "exclusions",
+      "critical illness rider",
+      "premium cost"
+    ],
+    "action_items": [
+      "Provide analysis on the value of the critical illness rider regarding premium vs. benefit"
+    ]
+  }
+}

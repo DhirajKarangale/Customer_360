@@ -1,0 +1,27 @@
+{
+  "content": "Aarav Sharma called DCoders to check the status of his auto policy, suspecting it had expired. Insurance agent Suresh Deshmukh verified the policy number AP-001234 and confirmed the policy expired on March 10. Suresh noted that a renewal notice was sent but missed, and offered Aarav the opportunity to renew the policy immediately.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Aarav Sharma",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Auto policy expiration",
+      "Policy renewal"
+    ],
+    "action_items": [
+      "Decide whether to renew the auto policy on the same day"
+    ]
+  }
+}

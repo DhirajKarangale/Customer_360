@@ -1,0 +1,29 @@
+{
+  "content": "Vedant followed up on a term life insurance plan discussed in an earlier call. He asked for a coverage recommendation given his family size (wife and two children). Agent Anjali advised 5-7 times annual income and asked for his income, which Vedant stated as 15 lakhs. Vedant also inquired about the difference between term life and whole life insurance.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2024-09-26T14:42:00",
+    "participants": {
+      "customer": {
+        "name": "Vedant Thakur",
+        "id": "34205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d7"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Term life insurance coverage amount",
+      "Income-based coverage recommendation",
+      "Difference between term and whole life insurance"
+    ],
+    "action_items": [
+      "Anjali to explain the difference between term and whole life insurance",
+      "Anjali to recommend specific coverage based on 15 lakhs income"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "content": "Vedant Thakur contacted insurance agent Anjali Desai to confirm the submission of required documents for his term life insurance policy. Anjali confirmed receipt of the documents and informed Vedant that the underwriting process is currently pending. She explained that underwriting typically takes 2-3 business days, though it may take longer, and assured he would be updated on the status.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Vedant Thakur",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d5"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Document submission confirmation",
+      "Term life insurance policy",
+      "Underwriting process timeline"
+    ],
+    "action_items": [
+      "Insurance agent to complete underwriting process",
+      "Insurance agent to update customer on status"
+    ]
+  }
+}

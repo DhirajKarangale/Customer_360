@@ -1,0 +1,29 @@
+{
+  "content": "Kiara Sen contacted Vikram Patel regarding her health insurance policy renewal (SH-123456). She confirmed submission of the renewal form and payment of the premium. Vikram encountered system issues where the policy was incorrectly displaying as 'expired' despite the payment. He promised to escalate the issue to ensure coverage remains active and committed to follow up with Kiara by the end of the day to confirm the records are updated.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Kiara Sen",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "Health insurance policy renewal",
+      "Premium payment status",
+      "System error regarding policy status"
+    ],
+    "action_items": [
+      "Escalate system issue regarding policy status to resolve expired record",
+      "Follow up with customer by end of day to confirm records are updated"
+    ]
+  }
+}

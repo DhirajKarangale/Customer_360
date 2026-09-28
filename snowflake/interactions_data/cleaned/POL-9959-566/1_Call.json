@@ -1,0 +1,29 @@
+{
+  "content": "Vedant Thakur inquired about purchasing a life insurance policy to provide financial security for his family. He is 35 years old, married with two children. Insurance agent Anjali Desai informed him that the term life insurance plan would be a suitable fit and indicated she needed to confirm a few additional details with him.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Vedant Thakur",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interest\u00aded",
+    "topics": [
+      "Life Insurance",
+      "Policy Purchase",
+      "Financial Security",
+      "Term Life Plan"
+    ],
+    "action_items": [
+      "Agent to confirm additional details for the term life insurance policy"
+    ]
+  }
+}
