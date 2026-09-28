@@ -80,9 +80,28 @@ def fetch_all_policy_data():
     conn.close()
     return data
 
+CORTEX_CALL_COUNT = 0
+CURRENT_CONN = None
+
 def call_cortex_llm(sf_conn, prompt, model_name):
-    cursor = sf_conn.cursor()
+    global CORTEX_CALL_COUNT, CURRENT_CONN
     
+    # Initialize CURRENT_CONN with the one passed from main on first run
+    if CURRENT_CONN is None:
+        CURRENT_CONN = sf_conn
+        
+    CORTEX_CALL_COUNT += 1
+    
+    if CORTEX_CALL_COUNT % 7 == 0:
+        print(f"    [Auth] Reached {CORTEX_CALL_COUNT} LLM calls. Refreshing Snowflake connection...")
+        try:
+            CURRENT_CONN.close()
+        except Exception:
+            pass
+        CURRENT_CONN = get_snowflake_conn()
+
+    conn_to_use = CURRENT_CONN
+    cursor = conn_to_use.cursor()
     query = f"SELECT SNOWFLAKE.CORTEX.COMPLETE('{model_name}', %s)"
     try:
         cursor.execute(query, (prompt,))
@@ -90,9 +109,29 @@ def call_cortex_llm(sf_conn, prompt, model_name):
         return result
     except Exception as e:
         print(f"Error calling Cortex: {e}")
-        raise e
+        if "Session no longer exists" in str(e):
+            print("    [Auth] Session expired! Force refreshing connection and retrying...")
+            try:
+                conn_to_use.close()
+            except Exception:
+                pass
+            CURRENT_CONN = get_snowflake_conn()
+            conn_to_use = CURRENT_CONN
+            cursor = conn_to_use.cursor()
+            try:
+                cursor.execute(query, (prompt,))
+                result = cursor.fetchone()[0]
+                return result
+            except Exception as e2:
+                print(f"Retry failed: {e2}")
+                raise e2
+        else:
+            raise e
     finally:
-        cursor.close()
+        try:
+            cursor.close()
+        except Exception:
+            pass
 
 def generate_interaction_sequence(sf_conn, policy):
     num_interactions = random.randint(MIN_INTERACTIONS, MAX_INTERACTIONS)
