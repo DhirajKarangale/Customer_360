@@ -1,0 +1,30 @@
+{
+  "content": "Ananya confirmed that her payment for health policy reinstatement was processed, and Vikram informed her that the policy will be active by the next day thanks to expedited processing. He will send a confirmation email once activation is complete.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-09-30T14:10:00",
+    "participants": {
+      "customer": {
+        "name": "Ananya Nair",
+        "id": "8f4a5b32-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "payment confirmation",
+      "health policy reinstatement",
+      "expedited processing",
+      "policy activation timeline"
+    ],
+    "action_items": [
+      "Vikram will send a confirmation email",
+      "Policy to become active by next day"
+    ]
+  }
+}

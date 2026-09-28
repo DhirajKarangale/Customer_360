@@ -1,0 +1,31 @@
+{
+  "content": "Isha Agarwal requests an urgent update on her health insurance policy (DCoders-HLT-77892), noting portal discrepancies and the lack of a renewal notice. She asks Anita Sharma to verify whether the coverage is active or has lapsed, emphasizing the need for a quick resolution due to upcoming medical appointments.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-10-14T11:32:15",
+    "participants": {
+      "customer": {
+        "name": "Isha Agarwal",
+        "id": "c1a2b3c4-d5e6-7f8a-9b0c-1d2e3f4a5b6c"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "f1e2d3c4-b5a6-9f8e-7d6c-5b4a3f2e1d0c"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "health insurance policy status",
+      "portal discrepancies",
+      "renewal notice missing",
+      "upcoming medical appointments"
+    ],
+    "action_items": [
+      "Agent to verify policy status in the system",
+      "Confirm whether coverage is active or lapsed",
+      "Respond promptly to the customer"
+    ]
+  }
+}

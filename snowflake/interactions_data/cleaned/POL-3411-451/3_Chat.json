@@ -1,0 +1,30 @@
+{
+  "content": "Akanksha verified that her payment was cleared and asked if her health policy was active. Anita confirmed the payment, noted a final renewal endorsement needed, generated and sent the digital e\u2011card and receipt, and confirmed the policy status is now Active.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-10-14T10:15:02",
+    "participants": {
+      "customer": {
+        "name": "Akanksha Bhatt",
+        "id": "c1482b1a-8f92-411a-bc03-e847192f1b01"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "d59821ef-9311-4a22-811c-2098492aef12"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "health policy activation",
+      "payment verification",
+      "policy status update",
+      "digital e\u2011card and receipt"
+    ],
+    "action_items": [
+      "Process final renewal endorsement",
+      "Send updated digital e\u2011card and payment receipt"
+    ]
+  }
+}

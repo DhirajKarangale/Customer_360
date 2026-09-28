@@ -1,0 +1,29 @@
+{
+  "content": "Shaurya confirmed his home policy HP-001234 was cancelled; Karan verified the cancellation, confirmed a refund will be issued within 7\u201110 business days, and sent a confirmation email with the details.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-27T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Shaurya Joshi",
+        "id": "8a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "home policy cancellation",
+      "refund",
+      "confirmation email"
+    ],
+    "action_items": [
+      "Refund to be issued within 7-10 business days",
+      "Confirmation email sent with details"
+    ]
+  }
+}

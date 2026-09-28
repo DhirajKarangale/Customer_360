@@ -1,0 +1,28 @@
+{
+  "content": "Isha confirmed she does not want to renew her health policy and asked if it is fully closed to avoid auto\u2011debits. Anita verified that the grace period ended, the policy status is now 'Expired', and assured that no further charges will occur. Isha expressed relief and thanked Anita, who offered future assistance.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2024-10-14T10:15:22",
+    "participants": {
+      "customer": {
+        "name": "Isha Agarwal",
+        "id": "c1452a8b-1234-4987-8123-56789abcdef0"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "d8521f7e-9876-4321-b456-123456789abc"
+        }
+      ]
+    },
+    "user_mood": "relieved",
+    "topics": [
+      "health policy renewal",
+      "policy expiration",
+      "auto-debit cancellation"
+    ],
+    "action_items": [
+      "No further action required; policy is expired"
+    ]
+  }
+}

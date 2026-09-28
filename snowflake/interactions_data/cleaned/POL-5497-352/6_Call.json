@@ -1,0 +1,25 @@
+{
+  "content": "Customer Sneha Roy confirmed that her life policy LP-001234 has been cancelled; the insurance agent Vikram Patel verified the cancellation and offered to check the refund status, which Sneha declined.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Sneha Roy",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "policy cancellation",
+      "refund status"
+    ],
+    "action_items": []
+  }
+}

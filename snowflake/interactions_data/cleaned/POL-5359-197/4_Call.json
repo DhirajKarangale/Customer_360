@@ -1,0 +1,26 @@
+{
+  "content": "Customer Dhruv confirmed receipt of the new policy documents and asked to verify that the policy\u2019s effective date is backdated to today. Agent Vikram confirmed the policy is effective as of the current date, checked the system, and updated it accordingly.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Dhruv Kapoor",
+        "id": "3421f7d8-4a6c-4f3e-8f6d-3a4e5b2c1d4"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "6a7e1f7d-8c4a-4f3e-8f6d-3a4e5b2c1d4"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "policy documents",
+      "effective date",
+      "system confirmation"
+    ],
+    "action_items": []
+  }
+}

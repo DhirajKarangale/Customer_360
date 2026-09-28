@@ -1,0 +1,30 @@
+{
+  "content": "Isha Agarwal confirmed that her health policy renewal with DCoders will proceed with the same coverage, a premium of \u20b925,500 per annum, and a 5% online renewal discount, with no additional fees. She agreed to make the payment immediately.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Isha Agarwal",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "health policy renewal",
+      "premium amount",
+      "fees",
+      "online discount",
+      "payment"
+    ],
+    "action_items": [
+      "Isha Agarwal to make the renewal payment"
+    ]
+  }
+}

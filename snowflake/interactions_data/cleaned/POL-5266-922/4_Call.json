@@ -1,0 +1,30 @@
+{
+  "content": "Nandini called to follow up on her life insurance policy renewal. Vikram confirmed all required documents were received, processed the renewal during the call, and assured her that the policy will remain active after completion.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:15:00",
+    "participants": {
+      "customer": {
+        "name": "Nandini Rajput",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "483ce1dc-44c1-41db-886f-539e46b7bdad"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "life insurance policy renewal",
+      "document verification",
+      "renewal processing",
+      "policy activation"
+    ],
+    "action_items": [
+      "Process the renewal of Nandini's life insurance policy",
+      "Confirm that the policy will be active after processing"
+    ]
+  }
+}

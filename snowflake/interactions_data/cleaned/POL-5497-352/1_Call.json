@@ -1,0 +1,28 @@
+{
+  "content": "Sneha Roy called Omni Insurance to cancel her life policy (LP-001234). Agent Vikram Patel verified the policy number, located the policy, and agreed to process the cancellation while asking for the reason.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Sneha Roy",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "life insurance policy cancellation",
+      "policy number verification"
+    ],
+    "action_items": [
+      "Process cancellation of policy LP-001234",
+      "Agent to record reason for cancellation"
+    ]
+  }
+}

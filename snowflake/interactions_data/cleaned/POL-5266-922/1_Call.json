@@ -1,0 +1,29 @@
+{
+  "content": "Customer Nandini called about her life insurance policy renewal. Agent Vikram verified the policy number LP-001234, confirmed the renewal date (20th of the month), and asked if she would like to proceed with the renewal or make any changes.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Nandini Rajput",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "life insurance policy renewal",
+      "policy number verification",
+      "renewal options"
+    ],
+    "action_items": [
+      "Customer to confirm whether to proceed with renewal or request changes",
+      "Agent to prepare renewal paperwork based on customer's decision"
+    ]
+  }
+}

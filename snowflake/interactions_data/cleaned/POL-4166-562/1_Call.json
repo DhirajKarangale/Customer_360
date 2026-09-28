@@ -1,0 +1,29 @@
+{
+  "content": "Ravi Menon from Secure Future Group called Atharv Pandey about the upcoming renewal of his health policy with DCoders. Ravi informed Atharv that the policy is due for renewal this month and that payment has not been received, with the policy set to expire in two days. Atharv was unaware of the renewal and was asked whether he wants to renew or cancel the policy.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Atharv Pandey",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "health policy renewal",
+      "payment pending",
+      "policy expiration"
+    ],
+    "action_items": [
+      "Atharv to decide whether to renew or cancel the policy",
+      "If renewing, Atharv needs to make the pending payment within two days"
+    ]
+  }
+}

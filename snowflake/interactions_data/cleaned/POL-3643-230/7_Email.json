@@ -1,0 +1,30 @@
+{
+  "content": "Isha confirmed she has paid for the renewal of health policy HP-001234; Anita confirmed the policy is successfully renewed effective 01/04/2023 and will send a confirmation email with the updated policy documents and receipt.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-30T10:06:40",
+    "participants": {
+      "customer": {
+        "name": "Isha Agarwal",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Health policy renewal",
+      "Payment confirmation",
+      "Policy activation",
+      "Receipt and policy documents"
+    ],
+    "action_items": [
+      "Anita will send a confirmation email with updated policy documents to Isha",
+      "Isha to review the attached receipt and renewed policy documents"
+    ]
+  }
+}

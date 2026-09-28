@@ -1,0 +1,28 @@
+{
+  "content": "Dhruv Kapoor confirmed his health policy renewal and thanked Vikram Patel for assistance, but noted the old policy still appears as expired. Vikram acknowledged the issue, verified the old policy had indeed expired last month, and committed to updating its status to 'Expired'.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-30T10:45:00",
+    "participants": {
+      "customer": {
+        "name": "Dhruv Kapoor",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "health policy renewal",
+      "policy status/expiration update"
+    ],
+    "action_items": [
+      "Vikram Patel will update the old policy status to 'Expired' in the system",
+      "Dhruv Kapoor to confirm the status update once completed"
+    ]
+  }
+}

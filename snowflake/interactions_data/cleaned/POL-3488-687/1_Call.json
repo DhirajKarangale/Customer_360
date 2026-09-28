@@ -1,0 +1,29 @@
+{
+  "content": "Suresh from Secure Life Solutions called Nandini to discuss her health policy. He discovered the policy had expired last month and was up for renewal. Nandini was unaware of the expiration. Suresh apologized and indicated they need to arrange renewal options.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Nandini Rajput",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "health policy status",
+      "policy expiration",
+      "renewal"
+    ],
+    "action_items": [
+      "Agent to discuss renewal options with the customer",
+      "Customer to review and decide on renewal"
+    ]
+  }
+}

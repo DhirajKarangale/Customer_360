@@ -1,0 +1,30 @@
+{
+  "content": "Akanksha Bhatt emailed Anita Sharma requesting a status check on her health insurance policy, which appears inactive on the portal, and asked for confirmation of active coverage before her upcoming medical check\u2011up, offering to provide any needed documents.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-10-14T09:30:15",
+    "participants": {
+      "customer": {
+        "name": "Akanksha Bhatt",
+        "id": "c148205b-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "a3a6a702-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "health insurance policy status",
+      "coverage verification",
+      "upcoming medical check\u2011up"
+    ],
+    "action_items": [
+      "Agent to review the customer's account",
+      "Confirm coverage details and ensure status is active",
+      "Request any additional documents if needed"
+    ]
+  }
+}

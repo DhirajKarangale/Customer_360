@@ -1,0 +1,28 @@
+{
+  "content": "Vikram Patel confirmed the cancellation of Sneha Roy's life policy LP-001234 and said a confirmation letter and refund will be sent within 7\u201110 business days; Sneha thanked him for the prompt assistance.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-27T10:05:00",
+    "participants": {
+      "customer": {
+        "name": "Sneha Roy",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "policy cancellation",
+      "refund",
+      "confirmation letter"
+    ],
+    "action_items": [
+      "Send confirmation letter and refund within 7-10 business days"
+    ]
+  }
+}

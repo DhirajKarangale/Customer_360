@@ -1,0 +1,28 @@
+{
+  "content": "Kiara called to inquire about her health policy's status. Vikram asked for and received the policy number (HP-001234), then confirmed that the policy had expired on March 10, 2023, and discussed next steps for renewal.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Kiara Sen",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "health policy expiration",
+      "policy number verification",
+      "policy renewal"
+    ],
+    "action_items": [
+      "Renew health policy HP-001234"
+    ]
+  }
+}

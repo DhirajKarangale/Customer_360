@@ -1,0 +1,26 @@
+{
+  "content": "Ravi Menon called Atharv Pandey to confirm that his health policy with DCoders has been successfully cancelled and is now expired. He double\u2011checked the status, addressed a brief hold delay and background noise, and Atharv confirmed receipt of the cancellation email and thanked Ravi.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-26T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Atharv Pandey",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "health policy cancellation",
+      "confirmation of cancellation",
+      "status verification"
+    ],
+    "action_items": []
+  }
+}

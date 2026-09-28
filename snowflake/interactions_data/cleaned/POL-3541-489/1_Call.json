@@ -1,0 +1,29 @@
+{
+  "content": "Agent Karan Joshi from Safe Step Insurance assisted customer Shaurya Joshi in cancelling his home policy (HP-001234) with DCoders. After confirming the policy number, the agent proceeded with the cancellation process.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Shaurya Joshi",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "home policy cancellation",
+      "policy number verification",
+      "Safe Step Insurance assistance"
+    ],
+    "action_items": [
+      "Cancel policy HP-001234",
+      "Provide cancellation confirmation to the customer"
+    ]
+  }
+}

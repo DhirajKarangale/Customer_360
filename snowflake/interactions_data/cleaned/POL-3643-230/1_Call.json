@@ -1,0 +1,28 @@
+{
+  "content": "Isha Agarwal called to inquire about her health policy HP-001234, which she discovered had expired on 01/03/2023. Agent Anita Sharma confirmed the expiration and offered to assist with the renewal process.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Isha Agarwal",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "confused",
+    "topics": [
+      "health policy",
+      "policy expiration",
+      "renewal process"
+    ],
+    "action_items": [
+      "Agent to initiate renewal process for policy HP-001234"
+    ]
+  }
+}

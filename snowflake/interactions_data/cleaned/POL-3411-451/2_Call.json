@@ -1,0 +1,31 @@
+{
+  "content": "Anita Sharma called Akanksha Bhatt to address a pending renewal warning caused by a direct debit mismatch on her health policy. Anita sent a secure payment link, Akanksha authorized the \u20b94,500 premium, and the policy status was instantly updated to Active. Akanksha received confirmation of the swift resolution and was advised to expect an SMS and updated policy schedule.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2024-12-10T11:15:22",
+    "participants": {
+      "customer": {
+        "name": "Akanksha Bhatt",
+        "id": "c148e210-911a-4288-8422-7913a89e9001"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "9821bb44-5512-4aa2-b123-0199feaa8933"
+        }
+      ]
+    },
+    "user_mood": "relieved",
+    "topics": [
+      "health policy renewal",
+      "direct debit mismatch",
+      "premium payment",
+      "policy activation"
+    ],
+    "action_items": [
+      "Payment of \u20b94,500 completed via secure link",
+      "Policy status updated to Active",
+      "Customer to receive confirmation SMS and updated policy schedule"
+    ]
+  }
+}

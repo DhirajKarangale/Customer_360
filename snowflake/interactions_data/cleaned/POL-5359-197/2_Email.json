@@ -1,0 +1,30 @@
+{
+  "content": "Vikram Patel emailed Dhruv Kapoor renewal options for his health policy that recently expired, including attached plan documents. Dhruv thanked him, said he will review the plans and respond by the next day, and asked whether the new policy would become effective immediately after enrollment or if there is a waiting period.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-28T10:05:00",
+    "participants": {
+      "customer": {
+        "name": "Dhruv Kapoor",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "health policy renewal",
+      "policy options",
+      "effective date",
+      "waiting period"
+    ],
+    "action_items": [
+      "Dhruv will review the attached policy plans and reply by tomorrow.",
+      "Vikram to confirm whether the new policy is effective immediately or has a waiting period."
+    ]
+  }
+}

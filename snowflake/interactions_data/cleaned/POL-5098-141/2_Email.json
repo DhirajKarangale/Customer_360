@@ -1,0 +1,29 @@
+{
+  "content": "Kiara Sen asked Vikram Patel how to renew her health policy that expired on December 10, 2026. Vikram apologized for the inconvenience, attached a renewal form, and instructed her to complete and return it by December 20, 2026, offering further assistance if needed.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-12-10T11:04:20",
+    "participants": {
+      "customer": {
+        "name": "Kiara Sen",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "health policy expiration",
+      "policy renewal process",
+      "renewal form submission"
+    ],
+    "action_items": [
+      "Kiara to fill out and return the attached renewal form by 2026-12-20",
+      "Kiara to contact Vikram if she has any questions or needs assistance"
+    ]
+  }
+}

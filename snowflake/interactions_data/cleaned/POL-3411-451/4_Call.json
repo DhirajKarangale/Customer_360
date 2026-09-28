@@ -1,0 +1,24 @@
+{
+  "content": "Akanksha Bhatt called to confirm that her health insurance policy was active. Agent Anita Sharma verified that the policy is indeed active and all is in order. Akanksha thanked her for the assistance, and Anita offered further help if needed. The call ended with friendly goodbyes.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Akanksha Bhatt",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d7"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "health insurance policy activation"
+    ],
+    "action_items": []
+  }
+}

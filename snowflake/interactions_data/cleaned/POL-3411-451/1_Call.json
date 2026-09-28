@@ -1,0 +1,29 @@
+{
+  "content": "Anita Sharma from Trust Wealth Advisors greeted Akanksha Bhatt, verified her date of birth (12 Aug 1990) and contact number (9876543210), and confirmed that a new health insurance policy has been activated, with the policy documents to be emailed shortly.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Akanksha Bhatt",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "health insurance policy",
+      "verification",
+      "policy activation",
+      "document delivery"
+    ],
+    "action_items": [
+      "Send policy documents to the customer via email"
+    ]
+  }
+}

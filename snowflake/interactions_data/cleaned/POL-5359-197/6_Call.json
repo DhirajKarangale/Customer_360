@@ -1,0 +1,27 @@
+{
+  "content": "Dhruv called to confirm his policy had been updated; Vikram verified the new policy is active, the old one expired, and it is backdated to prevent any coverage gap. Dhruv expressed relief and thanked Vikram for the assistance.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Dhruv Kapoor",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "relieved",
+    "topics": [
+      "policy update",
+      "coverage confirmation",
+      "policy activation",
+      "expired old policy"
+    ],
+    "action_items": []
+  }
+}

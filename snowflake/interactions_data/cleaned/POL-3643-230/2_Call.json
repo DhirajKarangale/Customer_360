@@ -1,0 +1,32 @@
+{
+  "content": "Isha Agarwal confirmed she will not renew her individual health policy since her employer now provides coverage. Anita Sharma verified the policy is in the final queue to be marked as Expired, checked that there are no pending claims or balances, and updated the status to Expired, ensuring no further renewal notices. Anita also offered future wealth advisory services.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-10-14T11:02:15",
+    "participants": {
+      "customer": {
+        "name": "Isha Agarwal",
+        "id": "c14f8812-789a-43ef-b210-98e723411a01"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "98b23412-54ac-4bc9-a789-123477123ef8"
+        }
+      ]
+    },
+    "user_mood": "relieved",
+    "topics": [
+      "health policy renewal",
+      "corporate health coverage",
+      "policy expiration",
+      "pending claims check"
+    ],
+    "action_items": [
+      "Agent to update policy status to Expired in DCoders portal",
+      "Confirm no pending claims or outstanding balances",
+      "No further renewal notices will be sent",
+      "Offer future wealth advisory or insurance products if needed"
+    ]
+  }
+}

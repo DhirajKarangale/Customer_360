@@ -1,0 +1,29 @@
+{
+  "content": "Isha Agarwal called to confirm renewal of her health policy that expired on 1 March. Anita Sharma verified the policy, quoted a new premium of \u20b925,500 per annum with a 5% online discount, and asked if she should proceed with the renewal.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2024-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Isha Agarwal",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "health policy renewal",
+      "premium amount",
+      "online discount",
+      "renewal processing"
+    ],
+    "action_items": [
+      "Agent to process renewal of the health policy"
+    ]
+  }
+}
