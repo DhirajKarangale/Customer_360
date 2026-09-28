@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import os
 import time
+import random
 from typing import Any, Optional
 
 from rag.config import (
@@ -13,6 +14,8 @@ from rag.config import (
     EMBEDDINGS_DATA_DIR,
     OVERRIDE_EMBEDDINGS,
     DIRECT_EMBEDDING_NO_CHUNKING,
+    EMBEDDING_MIN_DELAY_SECONDS,
+    EMBEDDING_MAX_DELAY_SECONDS,
 )
 from rag.embedding_manager import EmbeddingManager
 from rag.pipeline._utils import atomic_write_json, discover_json_files
@@ -120,6 +123,11 @@ class EmbeddingGenerationPipeline:
             text = chunk_data.get("content", "")
             if text:
                 embedding = self._embedder.embed_text(text)
+                
+                delay = random.uniform(EMBEDDING_MIN_DELAY_SECONDS, EMBEDDING_MAX_DELAY_SECONDS)
+                print(f"    [Delay] Waiting for {delay:.1f} seconds to respect rate limits...")
+                time.sleep(delay)
+                
                 entries.append({
                     "chunk_text": text,
                     "metadata": chunk_data.get("metadata", {}),
@@ -140,6 +148,11 @@ class EmbeddingGenerationPipeline:
                 if not text:
                     continue
                 embedding = self._embedder.embed_text(text)
+                
+                delay = random.uniform(EMBEDDING_MIN_DELAY_SECONDS, EMBEDDING_MAX_DELAY_SECONDS)
+                print(f"    [Delay] Waiting for {delay:.1f} seconds to respect rate limits...")
+                time.sleep(delay)
+                
                 entry = dict(chunk)
                 entry["embedding"] = embedding
                 entries.append(entry)

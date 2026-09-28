@@ -6,7 +6,7 @@ from langchain_groq import ChatGroq
 from utils.sf_auth import get_snowflake_conn
 
 # 'snowflake', 'gemini', or 'groq'
-LLM_PROVIDER = "groq"
+LLM_PROVIDER = "gemini"
 
 GEMINI_MODELS = [
     "gemini-3.5-flash-lite",
@@ -136,7 +136,18 @@ def call_llm(sf_conn, prompt, model_name):
         # If it's a BaseChatModel (Gemini/Groq), it takes a string/messages and returns an AIMessage
         else:
             response = llm.invoke([HumanMessage(content=prompt)])
-            return response.content
+            content = response.content
+            if isinstance(content, list):
+                text_parts = []
+                for part in content:
+                    if isinstance(part, str):
+                        text_parts.append(part)
+                    elif isinstance(part, dict) and 'text' in part:
+                        text_parts.append(part['text'])
+                    else:
+                        text_parts.append(str(part))
+                return "".join(text_parts)
+            return content
     except Exception as e:
         print(f"Error calling LLM ({LLM_PROVIDER}): {e}")
         return None

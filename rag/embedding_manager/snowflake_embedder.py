@@ -74,6 +74,7 @@ class EmbeddingManager:
             user=os.getenv("SNOWFLAKE_USER"),
             password=os.getenv("SNOWFLAKE_PASSWORD"),
             account=os.getenv("SNOWFLAKE_ACCOUNT"),
+            passcode="987043"
         )
 
         cursor = conn.cursor()
