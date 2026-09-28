@@ -79,5 +79,5 @@ ehthumbs_vista.db
 Thumbs.db
 
 # Snowflake
-snowflake/examples/
-# snowflake/interactions_data/
+# data_generation/examples/
+# data_generation/interactions_data/
