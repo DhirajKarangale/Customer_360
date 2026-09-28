@@ -25,6 +25,7 @@ DIRECT_EMBEDDING_NO_CHUNKING = False
 
 # ── Embedding ──
 EMBEDDING_MODEL = "snowflake-arctic-embed-l-v2.0"
+# EMBEDDING_MODEL = "VOYAGE-MULTILINGUAL-2"
 EMBEDDING_DIMENSION = 1024
 
 # ── Chunking ──
