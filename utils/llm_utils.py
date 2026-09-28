@@ -6,7 +6,7 @@ from langchain_groq import ChatGroq
 from utils.sf_auth import get_snowflake_conn
 
 # 'snowflake', 'gemini', or 'groq'
-LLM_PROVIDER = "gemini"
+LLM_PROVIDER = "groq"
 
 GEMINI_MODELS = [
     "gemini-3.5-flash-lite",

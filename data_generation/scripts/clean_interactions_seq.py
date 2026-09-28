@@ -5,6 +5,7 @@ import json
 import shutil
 import time
 import random
+from dotenv import load_dotenv
 
 import traceback
 import snowflake.connector
