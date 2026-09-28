@@ -5,8 +5,13 @@ import shutil
 import time
 import snowflake.connector
 from dotenv import load_dotenv
-from sf_auth import get_snowflake_conn
-from llm_utils import call_llm, LLM_PROVIDER
+import sys
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+from utils.sf_auth import get_snowflake_conn
+from utils.llm_utils import get_llm, call_llm, LLM_PROVIDER
+from langchain_core.prompts import PromptTemplate
+from langchain_core.output_parsers import StrOutputParser
+from utils.sound_utils import play_sound
 import concurrent.futures
 
 MAX_WORKERS = 5
@@ -49,7 +54,7 @@ def semantic_clean_with_llm(sf_conn, text):
     """
     Uses LLM to perform Semantic Normalization, Noise Removal, etc.
     """
-    prompt = f"""
+    prompt = PromptTemplate.from_template("""
     You are an expert data processor. Please clean the following interaction transcript.
     Apply the following cleaning rules STRICTLY without changing the user's core intent, meaning, or emotion:
 
@@ -70,21 +75,32 @@ def semantic_clean_with_llm(sf_conn, text):
     ---
 
     Provide ONLY the cleaned text. Do NOT include markdown formatting blocks or any conversational filler.
-    """
-    result = call_llm(sf_conn, prompt, MODELS["CLEANING"])
-    if result:
-        if "```" in result:
-            result = result.split("```")[1]
-            if result.startswith("text") or result.startswith("markdown"):
-                result = result.split('\n', 1)[1]
-        return result.strip()
+    """)
+    
+    llm = get_llm(MODELS["CLEANING"])
+    if not llm:
+        return text
+        
+    chain = prompt | llm | StrOutputParser()
+    
+    try:
+        result = chain.invoke({"text": text})
+        if result:
+            if "```" in result:
+                result = result.split("```")[1]
+                if result.startswith("text") or result.startswith("markdown"):
+                    result = result.split('\n', 1)[1]
+            return result.strip()
+    except Exception as e:
+        print(f"Error in semantic cleaning chain: {e}")
+        
     return text
 
 def structure_with_llm(sf_conn, raw_text, cleaned_text, file_type):
     """
     Uses LLM to structure the cleaned text into a JSON object with content and metadata.
     """
-    prompt = f"""
+    prompt = PromptTemplate.from_template("""
     You are an expert AI data structurer building data for a Retrieval-Augmented Generation (RAG) system.
     You are given both the ORIGINAL RAW TEXT (which contains metadata like timestamps, participants, IDs) and the CLEANED TEXT (which is semantically normalized).
     
@@ -131,20 +147,35 @@ def structure_with_llm(sf_conn, raw_text, cleaned_text, file_type):
     ---
     {cleaned_text}
     ---
-    """
-    result = call_llm(sf_conn, prompt, MODELS["STRUCTURING"])
-    if result:
-        if "```json" in result:
-            result = result.split("```json")[1].split("```")[0]
-        elif "```" in result:
-            result = result.split("```")[1].split("```")[0]
-            
-        try:
+    """)
+    
+    llm = get_llm(MODELS["STRUCTURING"])
+    if not llm:
+        return None
+        
+    chain = prompt | llm | StrOutputParser()
+    
+    try:
+        result = chain.invoke({
+            "file_type": file_type,
+            "raw_text": raw_text,
+            "cleaned_text": cleaned_text
+        })
+        
+        if result:
+            if "```json" in result:
+                result = result.split("```json")[1].split("```")[0]
+            elif "```" in result:
+                result = result.split("```")[1].split("```")[0]
+                
             json_obj = json.loads(result.strip())
             return json.dumps(json_obj, indent=2)
-        except json.JSONDecodeError:
-            print("Warning: LLM did not return valid JSON. Returning raw string.")
-            return result.strip()
+    except json.JSONDecodeError:
+        print("Warning: LLM did not return valid JSON. Returning raw string.")
+        return result.strip() if result else None
+    except Exception as e:
+        print(f"Error in structuring chain: {e}")
+        
     return None
 
 def process_file(sf_conn, raw_filepath, cleaned_filepath, filename):
@@ -225,6 +256,7 @@ def main():
 
     if not os.path.exists(raw_dir):
         print(f"Raw directory not found at {raw_dir}")
+        play_sound("error")
         return
 
     sf_conn = None
@@ -234,6 +266,7 @@ def main():
             sf_conn = get_snowflake_conn()
         except Exception as e:
             print(f"Could not connect to Snowflake: {e}")
+            play_sound("error")
             return
 
     print("Scanning raw directory for policy folders...")
@@ -244,6 +277,8 @@ def main():
     if TEST_MODE:
         print("TEST_MODE is enabled. Only processing 1 policy folder.")
         policy_folders = policy_folders[:2]
+    
+    pipeline_successful = True
     
     with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         futures = []
@@ -266,10 +301,16 @@ def main():
                 future.result()
             except Exception as e:
                 print(f"Error processing a policy folder: {e}")
+                pipeline_successful = False
 
     if sf_conn:
         sf_conn.close()
     print("Cleaning pipeline finished.")
+    
+    if pipeline_successful:
+        play_sound("success")
+    else:
+        play_sound("error")
 
 if __name__ == "__main__":
     main()

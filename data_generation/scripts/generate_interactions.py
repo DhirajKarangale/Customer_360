@@ -6,8 +6,11 @@ import shutil
 import time
 import snowflake.connector
 from dotenv import load_dotenv
-from sf_auth import get_snowflake_conn
-from llm_utils import call_llm, LLM_PROVIDER
+import sys
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+from utils.sf_auth import get_snowflake_conn
+from utils.llm_utils import call_llm, LLM_PROVIDER
+from utils.sound_utils import play_sound
 import concurrent.futures
 
 START_POLICY = 121
@@ -216,7 +219,12 @@ def process_policy(index, policy, total_in_batch, output_dir, sf_conn):
 
 def main():
     print("Fetching policy data from PostgreSQL...")
-    policies = fetch_all_policy_data()
+    try:
+        policies = fetch_all_policy_data()
+    except Exception as e:
+        print(f"Failed to fetch policies: {e}")
+        play_sound("error")
+        return
     print(f"Found {len(policies)} policies.")
     
     sf_conn = None
@@ -226,6 +234,7 @@ def main():
             sf_conn = get_snowflake_conn()
         except Exception as e:
             print(f"Could not connect to Snowflake: {e}")
+            play_sound("error")
             return
 
     output_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "interactions_data", "raw")
@@ -237,6 +246,8 @@ def main():
     
     print(f"Processing {len(policies_to_process)} policy using {MAX_WORKERS} workers...")
     
+    pipeline_successful = True
+    
     with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         futures = []
         for index, policy in enumerate(policies_to_process):
@@ -247,10 +258,16 @@ def main():
                 future.result()
             except Exception as e:
                 print(f"Error processing policy: {e}")
+                pipeline_successful = False
 
     if sf_conn:
         sf_conn.close()
     print("\nData generation complete!")
+    
+    if pipeline_successful:
+        play_sound("success")
+    else:
+        play_sound("error")
 
 if __name__ == "__main__":
     main()

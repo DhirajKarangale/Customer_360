@@ -79,5 +79,10 @@ ehthumbs_vista.db
 Thumbs.db
 
 # Snowflake
-# data_generation/examples/
-# data_generation/interactions_data/
+data_generation/examples/
+data_generation/interactions_data/
+
+# RAG Generated Data
+rag/chunks_data/
+rag/embeddings_data/
+rag/vector_store_data/

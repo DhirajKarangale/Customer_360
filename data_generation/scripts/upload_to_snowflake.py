@@ -1,7 +1,9 @@
 import os
 import snowflake.connector
 from dotenv import load_dotenv
-from sf_auth import get_snowflake_conn
+import sys
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+from utils.sf_auth import get_snowflake_conn
 import concurrent.futures
 import threading
 
