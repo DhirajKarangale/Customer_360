@@ -21,14 +21,15 @@ VECTOR_STORE_DIR = os.path.join(_RAG_DIR, "vector_store_data")
 # ── Override Behavior ──
 OVERRIDE_CHUNKS = False
 OVERRIDE_EMBEDDINGS = False
+DIRECT_EMBEDDING_NO_CHUNKING = False
 
 # ── Embedding ──
 EMBEDDING_MODEL = "snowflake-arctic-embed-l-v2.0"
 EMBEDDING_DIMENSION = 1024
 
 # ── Chunking ──
-CHUNK_SIZE = 512
-CHUNK_OVERLAP = 50
+CHUNK_SIZE = 1500
+CHUNK_OVERLAP = int(CHUNK_SIZE * 0.10)
 
 # ── Retrieval ──
 TOP_K = 5

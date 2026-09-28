@@ -7,10 +7,12 @@ from typing import Any, Optional
 
 from rag.config import (
     CHUNKS_DATA_DIR,
+    CLEANED_DATA_DIR,
     EMBEDDING_DIMENSION,
     EMBEDDING_MODEL,
     EMBEDDINGS_DATA_DIR,
     OVERRIDE_EMBEDDINGS,
+    DIRECT_EMBEDDING_NO_CHUNKING,
 )
 from rag.embedding_manager import EmbeddingManager
 from rag.pipeline._utils import atomic_write_json, discover_json_files
@@ -26,7 +28,10 @@ class EmbeddingGenerationPipeline:
         output_dir: Optional[str] = None,
         override: Optional[bool] = None,
     ) -> None:
-        self._chunks_dir = chunks_dir or CHUNKS_DATA_DIR
+        if DIRECT_EMBEDDING_NO_CHUNKING:
+            self._chunks_dir = chunks_dir or CLEANED_DATA_DIR
+        else:
+            self._chunks_dir = chunks_dir or CHUNKS_DATA_DIR
         self._output_dir = output_dir or EMBEDDINGS_DATA_DIR
         self._embedder = EmbeddingManager(EMBEDDING_MODEL, EMBEDDING_DIMENSION)
         self._override = override if override is not None else OVERRIDE_EMBEDDINGS
@@ -109,21 +114,35 @@ class EmbeddingGenerationPipeline:
             print(f"  [WARN] Failed to read {rel_path}: {e}")
             return None
 
-        chunks = chunk_data.get("chunks")
-        if not chunks or not isinstance(chunks, list):
-            print(f"  [WARN] No valid chunks in {rel_path}")
-            return None
-
-        # Generate embeddings for every chunk in this file
         entries: list[dict[str, Any]] = []
-        for chunk in chunks:
-            text = chunk.get("chunk_text", "")
-            if not text:
-                continue
-            embedding = self._embedder.embed_text(text)
-            entry = dict(chunk)
-            entry["embedding"] = embedding
-            entries.append(entry)
+        
+        if DIRECT_EMBEDDING_NO_CHUNKING:
+            text = chunk_data.get("content", "")
+            if text:
+                embedding = self._embedder.embed_text(text)
+                entries.append({
+                    "chunk_text": text,
+                    "metadata": chunk_data.get("metadata", {}),
+                    "embedding": embedding,
+                    "chunk_index": 0,
+                    "total_chunks": 1
+                })
+            else:
+                print(f"  [WARN] No valid content in {rel_path}")
+        else:
+            chunks = chunk_data.get("chunks")
+            if not chunks or not isinstance(chunks, list):
+                print(f"  [WARN] No valid chunks in {rel_path}")
+                return None
+
+            for chunk in chunks:
+                text = chunk.get("chunk_text", "")
+                if not text:
+                    continue
+                embedding = self._embedder.embed_text(text)
+                entry = dict(chunk)
+                entry["embedding"] = embedding
+                entries.append(entry)
 
         if not entries:
             return None

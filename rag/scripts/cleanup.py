@@ -1,13 +1,14 @@
 import sys
 import os
 
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
 from rag.pipeline import CleanupManager
 
-USAGE = """Usage: python rag/run_cleanup.py <target>
+USAGE = """Usage: python rag/scripts/cleanup.py <target>
 
 Targets:
+  [None]        Delete all generated RAG data (default)
   chunks        Delete generated chunk files
   embeddings    Delete generated embedding files
   vector_store  Delete the FAISS vector store
@@ -16,10 +17,14 @@ Targets:
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print(USAGE)
-        sys.exit(1)
-
-    action = sys.argv[1].lower()
+        action = "all"
+    else:
+        action = sys.argv[1].lower()
+        # Handle arguments passed with flags, like --all or -chunks
+        if action.startswith("--"):
+            action = action[2:]
+        elif action.startswith("-"):
+            action = action[1:]
 
     if action == "chunks":
         CleanupManager.cleanup_chunks()
