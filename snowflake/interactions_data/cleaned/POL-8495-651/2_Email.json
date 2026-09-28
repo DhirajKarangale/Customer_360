@@ -1,0 +1,29 @@
+{
+  "content": "Anita Sharma followed up with Aarav Sharma via email regarding his expired travel policy with DCoders, sending a renewal form to be returned by December 20. Aarav confirmed he would return the form by December 18 and requested clarification on whether the new policy's effective date would align with the original expiration or the date the form was submitted.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-12-10T11:04:20",
+    "participants": {
+      "customer": {
+        "name": "Aarav Sharma",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Travel Policy Renewal",
+      "DCoders Policy Expiration",
+      "Effective Date Clarification"
+    ],
+    "action_items": [
+      "Customer to return completed renewal form by December 18",
+      "Agent to clarify effective date of the new policy"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "content": "Pranav Mishra contacted Omni Insurance Group to inquire about obtaining a home insurance policy for a new property in Delhi valued at approximately 80 lakhs. Agent Vikram Patel reviewed available plans and asked to explain suitable options to the customer.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Pranav Mishra",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Home insurance policy",
+      "Property details",
+      "Plan options"
+    ],
+    "action_items": [
+      "Vikram Patel to explain suitable insurance plan options to Pranav Mishra"
+    ]
+  }
+}

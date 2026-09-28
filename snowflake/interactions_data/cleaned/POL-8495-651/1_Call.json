@@ -1,0 +1,28 @@
+{
+  "content": "Aarav Sharma called Trust Wealth Advisors to check the status of his travel policy (TRV-001A) with DCoders. The agent, Anita Sharma, confirmed that the policy expired on March 10th. Aarav then inquired about the necessary steps to renew the policy.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Aarav Sharma",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Travel insurance policy status",
+      "Policy expiration",
+      "Policy renewal process"
+    ],
+    "action_items": [
+      "Agent to provide renewal steps for policy TRV-001A"
+    ]
+  }
+}

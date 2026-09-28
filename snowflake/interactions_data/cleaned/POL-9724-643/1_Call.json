@@ -1,0 +1,30 @@
+{
+  "content": "Neha Kapoor from Shield Life Services contacted Saanvi Pillai regarding an outstanding payment on her active health policy (HP-001234). Saanvi stated she expected automatic deduction but had not received any notification. Neha apologized for the inconvenience, placed the policy on pending status, and committed to sending an email with payment details and instructions.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Saanvi Pillai",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "Health Policy Payment",
+      "Outstanding Balance",
+      "Automatic Deduction Issue",
+      "Policy Status Update"
+    ],
+    "action_items": [
+      "Place policy on pending status",
+      "Send email with payment details and instructions to customer"
+    ]
+  }
+}

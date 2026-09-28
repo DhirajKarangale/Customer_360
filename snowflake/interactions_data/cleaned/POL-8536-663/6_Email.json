@@ -1,0 +1,26 @@
+{
+  "content": "Anita Sharma confirmed to Kunal Mehta that his home policy (HP-001234) is active with $500,000 coverage and a $1,000 deductible, attaching the policy document. Kunal Mehta replied to confirm he had reviewed the document and that everything looks correct, asking if any further action is required from his side.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-30T11:04:20",
+    "participants": {
+      "customer": {
+        "name": "Kunal Mehta",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "content",
+    "topics": [
+      "Home Policy Activation",
+      "Policy Details Confirmation",
+      "Document Review"
+    ],
+    "action_items": []
+  }
+}

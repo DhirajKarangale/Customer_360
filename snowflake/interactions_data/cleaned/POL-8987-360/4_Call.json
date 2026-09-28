@@ -1,0 +1,28 @@
+{
+  "content": "Aarav Sharma called to inquire about the status of his life insurance policy because he had not received confirmation. Agent Ravi Menon confirmed that the policy is now active as of today and informed the customer that an email with details would be sent shortly. The customer expressed gratitude for the assistance.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-29T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Aarav Sharma",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Life Insurance",
+      "Policy Status",
+      "Confirmation"
+    ],
+    "action_items": [
+      "Send email with policy details to the customer shortly"
+    ]
+  }
+}

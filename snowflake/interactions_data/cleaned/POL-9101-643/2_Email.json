@@ -1,0 +1,27 @@
+{
+  "content": "Anita Sharma confirmed to customer Samar Ghosh that his life policy is currently in the process of being activated and advised that a confirmation email with policy details would follow. Samar thanked her and requested an estimated timeframe for receiving the confirmation email to review the details promptly.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-27T10:05:00",
+    "participants": {
+      "customer": {
+        "name": "Samar Ghosh",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d7"
+        }
+      ]
+    },
+    "user_mood": "positive",
+    "topics": [
+      "Life policy activation",
+      "Confirmation email timeline"
+    ],
+    "action_items": [
+      "Anita Sharma to provide an expected date for the policy confirmation email"
+    ]
+  }
+}

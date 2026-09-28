@@ -1,0 +1,28 @@
+{
+  "content": "Customer Shaurya Joshi contacted insurance agent Anita Sharma to discuss an upcoming auto policy renewal (Policy AP-001234). The customer received a renewal notification and inquired about confirming details or making changes. The agent identified the policy, noting it is scheduled to auto-renew on the 20th of the current month, and asked the customer whether they intended to modify their coverage or keep it as is.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Shaurya Joshi",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "auto insurance policy renewal",
+      "coverage modification",
+      "policy confirmation"
+    ],
+    "action_items": [
+      "Customer to decide whether to change coverage or maintain current terms for the upcoming renewal on the 20th."
+    ]
+  }
+}

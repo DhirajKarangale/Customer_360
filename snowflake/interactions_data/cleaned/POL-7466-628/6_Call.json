@@ -1,0 +1,28 @@
+{
+  "content": "Customer Ishaan Bose called to follow up on his health policy renewal with DCoders, noting he hadn't received updates. Agent Karan Joshi confirmed the policy showed as expired due to a known auto-renewal glitch. Karan assured Ishaan he would send a new link for the renewal form to resolve the issue. The call concluded with the customer acknowledging the solution.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Ishaan Bose",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "confused",
+    "topics": [
+      "Health policy renewal",
+      "Auto-renewal glitch",
+      "Policy status"
+    ],
+    "action_items": [
+      "Send new renewal form link to customer"
+    ]
+  }
+}

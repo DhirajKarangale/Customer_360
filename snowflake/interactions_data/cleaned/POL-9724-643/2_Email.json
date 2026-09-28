@@ -1,0 +1,28 @@
+{
+  "content": "Neha Kapoor emailed Saanvi Pillai with payment instructions for an outstanding health policy bill. The email details the payment of \u20b915,000 for policy HLT-001234, offering online or bank cheque/DD options. A payment receipt was attached, and the agent invited further questions.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-26T10:30:00",
+    "participants": {
+      "customer": {
+        "name": "Saanvi Pillai",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d7"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Health Policy Payment",
+      "Policy: HLT-001234",
+      "Payment Methods"
+    ],
+    "action_items": [
+      "Make payment of \u20b915,000 via online portal or cheque/DD payable to DCoders"
+    ]
+  }
+}

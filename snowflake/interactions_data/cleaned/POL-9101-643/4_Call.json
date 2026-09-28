@@ -1,0 +1,29 @@
+{
+  "content": "Samar Ghosh contacted DCoders Insurance regarding a missing confirmation email for life policy LIF-009823. After reviewing the policy, agent Anita Sharma identified a technical glitch causing a delay in activation, as the policy was promised to be active the previous day. Anita assured Samar that a confirmation email with policy details would be sent within the next hour and escalated the issue to the technical team for immediate resolution.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-26T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Samar Ghosh",
+        "id": "3421f7d8-4a6c-4f3e-8f6d-3a4e5b2c1d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "8a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "patient",
+    "topics": [
+      "Life insurance policy confirmation",
+      "Technical glitch in policy activation",
+      "Delay in activation"
+    ],
+    "action_items": [
+      "Escalate technical glitch to the technical team",
+      "Send confirmation email with policy details within the next hour"
+    ]
+  }
+}

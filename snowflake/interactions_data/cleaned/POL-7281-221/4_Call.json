@@ -1,0 +1,28 @@
+{
+  "content": "Karan Joshi called Diya Menon to follow up on the status of her auto policy renewal. Diya inquired about the delay, noting the status was previously pending. Karan confirmed the policy remains in \"Pending\" status, attributed the delay to standard processing times longer than usual, and apologized for the inconvenience, confirming there are no specific issues with the renewal.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:15:00",
+    "participants": {
+      "customer": {
+        "name": "Diya Menon",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "confused",
+    "topics": [
+      "Auto policy renewal",
+      "Policy status",
+      "Processing delay"
+    ],
+    "action_items": [
+      "Agent to continue monitoring the renewal process"
+    ]
+  }
+}

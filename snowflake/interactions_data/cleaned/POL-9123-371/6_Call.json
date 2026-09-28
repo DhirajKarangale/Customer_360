@@ -1,0 +1,25 @@
+{
+  "content": "Neha Chauhan called to confirm the status of her health policy renewal with DCoders. Insurance agent Karan Joshi confirmed that the policy had been successfully renewed, including the previously discussed discount. The call concluded with mutual courtesies and no further action items required.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Neha Chauhan",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Health policy renewal",
+      "Policy discount confirmation"
+    ],
+    "action_items": []
+  }
+}

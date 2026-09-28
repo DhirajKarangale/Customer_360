@@ -1,0 +1,29 @@
+{
+  "content": "Agent Karan Joshi called customer Neha Chauhan to follow up on a health policy renewal. Neha confirmed her intention not to renew because she switched companies and now has comprehensive group health coverage. The agent processed the policy as 'Expired' in the system, noting that no paperwork was required. A confirmation email with the closure notice will be sent to Neha.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-10-15T14:15:00",
+    "participants": {
+      "customer": {
+        "name": "Neha Chauhan",
+        "id": "c1490a12-8812-4211-9a77-3e812aef9121"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "d8812b33-1124-4f99-81ac-559012cdbc45"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Health policy renewal",
+      "Policy expiration",
+      "Switch to employer group health cover"
+    ],
+    "action_items": [
+      "Update policy status to 'Expired' in the portal",
+      "Send automatic closure confirmation email to customer"
+    ]
+  }
+}

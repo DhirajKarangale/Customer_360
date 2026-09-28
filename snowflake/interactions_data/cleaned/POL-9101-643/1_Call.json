@@ -1,0 +1,27 @@
+{
+  "content": "Samar Ghosh called DCoders to check the status of their life insurance policy (LP-001234). Insurance agent Anita Sharma located the policy and informed Samar that it is currently being activated, with a confirmation email expected within the next 24 hours.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Samar Ghosh",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Life Insurance Policy Status",
+      "Policy Activation"
+    ],
+    "action_items": [
+      "Customer to wait for confirmation email within 24 hours"
+    ]
+  }
+}

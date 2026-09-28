@@ -1,0 +1,29 @@
+{
+  "content": "Insurance agent Ravi Menon informed customer Aarav Sharma that his life insurance policy's payment information has been updated and the policy is expected to activate within 3-5 business days. A confirmation letter with updated details was attached. Aarav acknowledged the update and expressed appreciation for the assistance.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-29T10:06:40",
+    "participants": {
+      "customer": {
+        "name": "Aarav Sharma",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "grateful",
+    "topics": [
+      "Life Insurance Policy Update",
+      "Payment Information Update",
+      "Policy Activation Timeline"
+    ],
+    "action_items": [
+      "Agent to monitor policy activation (expected within 3-5 business days)",
+      "Customer to retain attached confirmation letter"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "content": "Customer Aarav Sharma called to confirm the renewal of his travel policy with DCoders. Insurance agent Anita Sharma verified that the new policy is effective from the 20th and confirmed the expiration of the old policy.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Aarav Sharma",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Travel policy renewal",
+      "Policy effective date",
+      "Old policy expiration"
+    ],
+    "action_items": [
+      "Customer to note the new policy effective date (the 20th) for upcoming travel"
+    ]
+  }
+}

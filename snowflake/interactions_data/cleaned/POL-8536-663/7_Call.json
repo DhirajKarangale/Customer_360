@@ -1,0 +1,27 @@
+{
+  "content": "Kunal Mehta called to confirm that his home insurance policy is active. Anita Sharma confirmed that the policy is active and the payment was processed successfully. Kunal expressed gratitude for the assistance.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Kunal Mehta",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d5"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Home policy status",
+      "Payment confirmation"
+    ],
+    "action_items": [
+      "Customer to reach out if further assistance is needed"
+    ]
+  }
+}

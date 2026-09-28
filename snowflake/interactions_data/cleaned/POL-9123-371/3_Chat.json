@@ -1,0 +1,28 @@
+{
+  "content": "Neha Chauhan followed up on a previous call regarding the lapse of her health insurance policy after switching to her new employer's corporate cover. She requested confirmation that the policy would expire without penalties due to the end of the grace period. Agent Karan Joshi confirmed that the policy status would automatically change to 'Expired' with no cancellation charges and initiated the sending of a policy expiration statement email to Neha.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-10-14T11:02:15",
+    "participants": {
+      "customer": {
+        "name": "Neha Chauhan",
+        "id": "c1482b12-8823-4e12-b911-34812a77f091"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "agt-9021-44bb-81ef-77312aa9018b"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Health insurance policy lapse",
+      "Confirmation of policy expiration",
+      "Cancellation charges"
+    ],
+    "action_items": [
+      "Agent to send policy expiration statement to customer's registered email"
+    ]
+  }
+}

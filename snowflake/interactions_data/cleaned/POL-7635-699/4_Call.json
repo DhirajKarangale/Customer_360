@@ -1,0 +1,29 @@
+{
+  "content": "Customer Shaurya Joshi called agent Anita Sharma to confirm the status of his auto policy renewal scheduled for the 20th. Anita confirmed that the submitted form was received, requested changes are being processed, and the policy is expected to be active by the 20th. She noted that the policy status will remain 'Pending' in the system until the renewal is complete.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-20T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Shaurya Joshi",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Auto policy renewal",
+      "Policy status confirmation",
+      "Coverage continuity"
+    ],
+    "action_items": [
+      "Customer to monitor policy status for 'Pending' designation until the 20th",
+      "Company to complete renewal processing by the 20th"
+    ]
+  }
+}

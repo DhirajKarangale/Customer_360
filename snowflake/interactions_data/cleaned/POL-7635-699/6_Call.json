@@ -1,0 +1,30 @@
+{
+  "content": "Shaurya Joshi contacted Anita Sharma to check the status of his auto policy renewal scheduled for the 20th. Anita confirmed that coverage changes requested on the 18th are currently pending underwriting review but are expected to be processed in time. Anita confirmed the VIN number for the vehicle, and Shaurya will receive an email notification once the policy is active.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-20T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Shaurya Joshi",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "content",
+    "topics": [
+      "Policy Renewal",
+      "Coverage Changes",
+      "Underwriting Review",
+      "Vehicle VIN Verification"
+    ],
+    "action_items": [
+      "Wait for underwriting team to review coverage changes",
+      "Agent to send email confirmation once policy is active"
+    ]
+  }
+}

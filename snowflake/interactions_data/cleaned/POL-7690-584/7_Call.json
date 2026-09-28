@@ -1,0 +1,28 @@
+{
+  "content": "Anjali Desai from First Guard Brokers called Atharv Pandey regarding his life policy with DCoders. After confirming the receipt of the signed form, Anjali verified Atharv's date of birth (August 12, 1990) and address (1456 Oakwood Drive). She informed him that the policy is currently pending but is expected to become active within 2-3 working days. Following a brief verification process, Anjali confirmed all details are in order and the policy will be activated soon.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Atharv Pandey",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d5"
+        }
+      ]
+    },
+    "user_mood": "positive",
+    "topics": [
+      "Life insurance policy confirmation",
+      "Personal data verification",
+      "Policy activation status"
+    ],
+    "action_items": [
+      "Agent to finalize policy activation within 2-3 working days"
+    ]
+  }
+}

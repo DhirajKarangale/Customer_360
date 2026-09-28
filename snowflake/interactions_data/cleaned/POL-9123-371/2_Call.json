@@ -1,0 +1,28 @@
+{
+  "content": "Karan Joshi from Safe Step Insurance called Neha Chauhan to follow up on the renewal of her health policy (HLTH-883921). Neha informed the agent she does not wish to renew because her new employer provides comprehensive corporate health coverage. Karan explained that the policy was already in a pending-expiry status and required only verbal confirmation to lapse, as no paperwork was needed. Neha confirmed the cancellation, and the agent updated the system to mark the policy as 'Expired' with no further charges.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2024-10-14T11:15:22",
+    "participants": {
+      "customer": {
+        "name": "Neha Chauhan",
+        "id": "d4c891e2-8823-41ef-b921-7848f93a1001"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "9b81237a-4c22-49ef-8712-11a23b98c45d"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Health policy renewal",
+      "Policy cancellation",
+      "Employer-sponsored coverage"
+    ],
+    "action_items": [
+      "Mark policy HLTH-883921 as Expired in the system"
+    ]
+  }
+}

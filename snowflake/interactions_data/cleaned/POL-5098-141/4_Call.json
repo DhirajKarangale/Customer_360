@@ -1,0 +1,29 @@
+{
+  "content": "Kiara Sen called Vikram Patel regarding her health policy renewal (SH-123456), confirming she had submitted the form and paid the premium. Vikram explained that due to a system error, the policy was still displaying as expired despite payment. He reassured Kiara that he would escalate the issue to resolve it and promised to follow up by the end of the day to confirm the status update.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Kiara Sen",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "Health policy renewal",
+      "Premium payment confirmation",
+      "System status error"
+    ],
+    "action_items": [
+      "Vikram Patel to escalate the system status issue",
+      "Vikram Patel to follow up with Kiara Sen by the end of the day to confirm the policy update"
+    ]
+  }
+}

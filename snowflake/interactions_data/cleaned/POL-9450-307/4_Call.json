@@ -1,0 +1,27 @@
+{
+  "content": "Pranav Mishra contacted insurance agent Vikram Patel to verify the status of his home insurance policy. Vikram confirmed that the policy has been successfully activated and informed the customer that the policy documents would be sent via email shortly. The call concluded with the customer expressing gratitude for the assistance.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Pranav Mishra",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Home insurance policy activation",
+      "Policy document delivery"
+    ],
+    "action_items": [
+      "Insurance agent to send policy documents to customer via email"
+    ]
+  }
+}

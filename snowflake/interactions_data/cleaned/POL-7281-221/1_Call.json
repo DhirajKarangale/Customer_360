@@ -1,0 +1,27 @@
+{
+  "content": "Diya Menon contacted Karan Joshi regarding the renewal of her auto insurance policy (AP-001234). Karan confirmed the policy is up for renewal and in good standing. He requested to update information by asking a few questions, which Diya agreed to.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Diya Menon",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Auto insurance renewal",
+      "Policy update"
+    ],
+    "action_items": [
+      "Agent to ask customer few questions to update policy information"
+    ]
+  }
+}

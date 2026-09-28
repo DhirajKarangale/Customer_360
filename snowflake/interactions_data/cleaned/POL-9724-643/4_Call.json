@@ -1,0 +1,28 @@
+{
+  "content": "Saanvi Pillai contacted insurance agent Neha Kapoor regarding the status of a health policy payment submitted last week to DCoders. Neha explained that the payment is still processing, which typically takes 2-3 business days to clear. The policy is currently pending and will be automatically activated upon successful payment processing. The agent advised Saanvi to monitor the status via the company website or mobile app.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:15:00",
+    "participants": {
+      "customer": {
+        "name": "Saanvi Pillai",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d5"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Health insurance policy",
+      "Payment status",
+      "Policy activation"
+    ],
+    "action_items": [
+      "Customer to monitor payment and policy status on website or mobile app"
+    ]
+  }
+}

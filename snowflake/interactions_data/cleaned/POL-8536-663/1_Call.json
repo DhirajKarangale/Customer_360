@@ -1,0 +1,28 @@
+{
+  "content": "Kunal Mehta contacted DCoders insurance to inquire about obtaining a home insurance policy for his new residence. The insurance agent, Anita Sharma, acknowledged his request and requested the property address (1456 Oakwood Drive). The agent confirmed locating the property in the system and offered to review the policy details with the customer.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Kunal Mehta",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Home insurance policy",
+      "New residence protection",
+      "Property lookup"
+    ],
+    "action_items": [
+      "Review home policy details for 1456 Oakwood Drive"
+    ]
+  }
+}
