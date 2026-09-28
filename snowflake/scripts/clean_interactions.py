@@ -1,6 +1,8 @@
 import os
 import re
 import json
+import shutil
+import time
 import snowflake.connector
 from dotenv import load_dotenv
 from sf_auth import get_snowflake_conn
@@ -158,22 +160,20 @@ def process_file(sf_conn, raw_filepath, cleaned_filepath, filename):
     structured_json = structure_with_llm(sf_conn, raw_text, semantic_cleaned, file_type)
 
     if structured_json:
-        base_name = os.path.splitext(filename)[0]
-        final_out_path = os.path.join(os.path.dirname(cleaned_filepath), f"{base_name}.json")
-        with open(final_out_path, 'w', encoding='utf-8') as f:
-            f.write(structured_json)
-        print(f"    Saved cleaned JSON to {final_out_path}")
+        return structured_json
     else:
         print(f"    Failed to process {filename}")
+        return None
 
 def process_policy_folder(policy_num, raw_policy_dir, cleaned_policy_dir, sf_conn):
     print(f"  Starting cleaning for Policy: {policy_num}")
-    os.makedirs(cleaned_policy_dir, exist_ok=True)
     
     files = [f for f in os.listdir(raw_policy_dir) if os.path.isfile(os.path.join(raw_policy_dir, f))]
     if TEST_MODE:
         files = files[:2]
         
+    results_to_save = []
+    
     for file in files:
         raw_filepath = os.path.join(raw_policy_dir, file)
         cleaned_filepath = os.path.join(cleaned_policy_dir, file)
@@ -184,12 +184,37 @@ def process_policy_folder(policy_num, raw_policy_dir, cleaned_policy_dir, sf_con
         if os.path.exists(expected_json_path):
             if OVERWRITE_EXISTING:
                 print(f"    Overwriting existing {file}")
-                os.remove(expected_json_path)
             else:
                 print(f"    Skipping {file} (Already processed)")
                 continue
             
-        process_file(sf_conn, raw_filepath, cleaned_filepath, file)
+        success = False
+        for attempt in range(3):
+            structured_json = process_file(sf_conn, raw_filepath, cleaned_filepath, file)
+            if structured_json:
+                results_to_save.append((expected_json_path, structured_json))
+                success = True
+                break
+            else:
+                if attempt < 2:
+                    print(f"    Retrying {file}... (Attempt {attempt + 2}/3)")
+                    time.sleep(2)
+                    
+        if not success:
+            print(f"    Failed to process {file} after 3 attempts. Aborting policy {policy_num} to prevent inconsistencies...")
+            if os.path.exists(cleaned_policy_dir):
+                try:
+                    shutil.rmtree(cleaned_policy_dir)
+                except Exception as e:
+                    print(f"    Could not delete {cleaned_policy_dir}: {e}")
+            return
+            
+    if results_to_save:
+        os.makedirs(cleaned_policy_dir, exist_ok=True)
+        for expected_json_path, structured_json in results_to_save:
+            with open(expected_json_path, 'w', encoding='utf-8') as f:
+                f.write(structured_json)
+            print(f"    Saved cleaned JSON to {expected_json_path}")
         
     print(f"  Finished cleaning for Policy: {policy_num}")
 

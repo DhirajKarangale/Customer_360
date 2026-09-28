@@ -7,7 +7,7 @@ from sf_auth import get_snowflake_conn
 LLM_PROVIDER = "gemini"
 
 GEMINI_MODELS = [
-    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
     "gemini-3.6-flash",
     "gemini-3.7-flash",
     "gemini-3.8-flash"
@@ -19,7 +19,7 @@ GROQ_MODELS = [
     "openai/gpt-oss-20b"
 ]
 
-GEMINI_MODEL_INDEX = 3
+GEMINI_MODEL_INDEX = 0
 GROQ_MODEL_INDEX = 0
 CORTEX_CALL_COUNT = 0
 CURRENT_CONN = None

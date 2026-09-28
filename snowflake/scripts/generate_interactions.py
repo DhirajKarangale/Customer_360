@@ -2,6 +2,8 @@ import os
 import random
 import json
 import psycopg2
+import shutil
+import time
 import snowflake.connector
 from dotenv import load_dotenv
 from sf_auth import get_snowflake_conn
@@ -109,6 +111,7 @@ def generate_interaction_sequence(sf_conn, policy):
 
 def generate_interaction_content(sf_conn, policy, sequence, policy_dir):
     context = ""
+    results_to_save = []
     
     for i, channel in enumerate(sequence):
         step_num = i + 1
@@ -152,41 +155,63 @@ def generate_interaction_content(sf_conn, policy, sequence, policy_dir):
         {SCHEMA_PROMPT}
         """
         
-        content = call_llm(sf_conn, prompt, MODELS["TRANSCRIPT"])
-        
-        if content:
-            if "```text" in content:
-                content = content.split("```text")[1].split("```")[0]
-            elif "```" in content:
-                content = content.split("```")[1].split("```")[0]
-
-            ext = ".toon" if channel == "Call" else ".txt"
-            file_path = os.path.join(policy_dir, f"{step_num}_{channel}{ext}")
-            with open(file_path, "w", encoding="utf-8") as f:
-                f.write(content.strip())
+        success = False
+        for attempt in range(3):
+            content = call_llm(sf_conn, prompt, MODELS["TRANSCRIPT"])
             
-            summary_prompt = f"Summarize this interaction in 1 or 2 short sentences:\n\n{content.strip()}"
-            summary = call_llm(sf_conn, summary_prompt, MODELS["SUMMARY"])
-            if summary:
-                context += f"Step {step_num} ({channel}): {summary.strip()}\n"
+            if content:
+                if "```text" in content:
+                    content = content.split("```text")[1].split("```")[0]
+                elif "```" in content:
+                    content = content.split("```")[1].split("```")[0]
+
+                ext = ".toon" if channel == "Call" else ".txt"
+                file_path = os.path.join(policy_dir, f"{step_num}_{channel}{ext}")
+                results_to_save.append((file_path, content.strip()))
+                
+                summary_prompt = f"Summarize this interaction in 1 or 2 short sentences:\n\n{content.strip()}"
+                summary = call_llm(sf_conn, summary_prompt, MODELS["SUMMARY"])
+                if summary:
+                    context += f"Step {step_num} ({channel}): {summary.strip()}\n"
+                else:
+                    context += f"Step {step_num} ({channel}) occurred.\n"
+                success = True
+                break
             else:
-                context += f"Step {step_num} ({channel}) occurred.\n"
-        else:
-            print(f"    [Content Generation Failed for step {step_num}]")
+                if attempt < 2:
+                    print(f"    [Retry {attempt+2}/3 for step {step_num}]")
+                    time.sleep(2)
+                    
+        if not success:
+            print(f"    [Content Generation Failed for step {step_num} after 3 attempts]")
+            return None
+            
+    return results_to_save
 
 def process_policy(index, policy, total_in_batch, output_dir, sf_conn):
     p_num = policy['policy_number']
     print(f"\nProcessing Policy {index + 1}/{total_in_batch}: {p_num}")
     
     policy_dir = os.path.join(output_dir, p_num)
-    os.makedirs(policy_dir, exist_ok=True)
     
     sequence = generate_interaction_sequence(sf_conn, policy)
     print(f"  [{p_num}] Sequence planned: {sequence}")
     
-    generate_interaction_content(sf_conn, policy, sequence, policy_dir)
+    results = generate_interaction_content(sf_conn, policy, sequence, policy_dir)
     
-    print(f"  [{p_num}] Saved files to {policy_dir}")
+    if results:
+        os.makedirs(policy_dir, exist_ok=True)
+        for file_path, content in results:
+            with open(file_path, "w", encoding="utf-8") as f:
+                f.write(content)
+        print(f"  [{p_num}] Saved files to {policy_dir}")
+    else:
+        print(f"  [{p_num}] Aborted to prevent inconsistencies.")
+        if os.path.exists(policy_dir):
+            try:
+                shutil.rmtree(policy_dir)
+            except Exception as e:
+                pass
 
 
 def main():
