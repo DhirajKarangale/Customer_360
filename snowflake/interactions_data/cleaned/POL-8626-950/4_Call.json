@@ -1,0 +1,29 @@
+{
+  "content": "Kavya Iyer called insurance agent Vikram Singh because she received a notification that her travel policy (TRV-001234) had expired. Vikram checked the system and confirmed the expiration was due to a technical glitch, assuring her that the policy can be reinstated. Kavya then asked about the cost of reinstatement.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Kavya Iyer",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "travel policy expiration",
+      "technical glitch",
+      "policy reinstatement",
+      "reinstatement cost"
+    ],
+    "action_items": [
+      "Provide the cost for reinstating the travel policy"
+    ]
+  }
+}

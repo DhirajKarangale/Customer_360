@@ -1,0 +1,27 @@
+{
+  "content": "Saanvi Pillai called insurance agent Anjali Desai to confirm the status of her health policy cancellation with DCoders. Anjali confirmed that the cancellation has been successfully processed and the policy is officially cancelled as of today, and that a confirmation email will be sent shortly.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:15:00",
+    "participants": {
+      "customer": {
+        "name": "Saanvi Pillai",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d5"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "health policy cancellation",
+      "policy confirmation"
+    ],
+    "action_items": [
+      "Check for confirmation email"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "content": "Customer Sneha Roy called insurance agent Anita Sharma at Trust Wealth Advisors to cancel her health policy (HP-883920) managed through DCoders due to a premium hike and poor cashless claim services. The agent processed the cancellation after identity verification and supervisor approval for a pro-rata refund of approximately 4,250 rupees, which will be credited within 5 to 7 business days. The agent confirmed that an automated confirmation email and cancellation endorsement letter will be sent to the customer within the hour.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-10-14T14:02:15",
+    "participants": {
+      "customer": {
+        "name": "Sneha Roy",
+        "id": "c18293fa-1122-49aa-8811-992837465012"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "99384756-3344-5566-7788-990011223344"
+        }
+      ]
+    },
+    "user_mood": "frustrated",
+    "topics": [
+      "Policy cancellation",
+      "Health insurance premium hike",
+      "Pro-rata refund",
+      "Cashless claims network issues"
+    ],
+    "action_items": [
+      "Process pro-rata refund of approximately 4,250 rupees within 5 to 7 business days",
+      "Send automated confirmation email, cancellation endorsement letter, and refund details to the customer within the next hour"
+    ]
+  }
+}

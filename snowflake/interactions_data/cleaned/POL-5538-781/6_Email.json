@@ -1,0 +1,25 @@
+{
+  "content": "Akanksha Bhatt emailed Suresh Deshmukh to verify if her life insurance policy (DC-123456) is active despite receiving a confirmation email. Suresh confirmed that the policy is indeed active and up to date.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-30T11:06:40",
+    "participants": {
+      "customer": {
+        "name": "Akanksha Bhatt",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Life Insurance Policy Activation",
+      "Policy Status Verification"
+    ],
+    "action_items": []
+  }
+}

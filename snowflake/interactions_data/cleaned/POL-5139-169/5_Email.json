@@ -1,0 +1,29 @@
+{
+  "content": "Customer Aaradhya Verma inquired about the coverage limits, exclusions, and procedures for alternative therapies regarding her health policy renewal. Agent Suresh Deshmukh responded by stating the coverage limit is \u20b950,000 per year, experimental therapies are excluded, a PCP or specialist referral is required, and provided an attached brochure with further details.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-28T11:06:40",
+    "participants": {
+      "customer": {
+        "name": "Aaradhya Verma",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Health Policy Renewal",
+      "Alternative Therapies Coverage",
+      "Coverage Limits",
+      "Referral Process"
+    ],
+    "action_items": [
+      "Review the attached alternative therapies brochure"
+    ]
+  }
+}

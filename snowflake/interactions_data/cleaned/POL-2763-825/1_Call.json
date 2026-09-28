@@ -1,0 +1,28 @@
+{
+  "content": "Customer Roshni Yadav called insurance agent Sunita Agarwal to cancel her auto policy (Policy ID: AP-001234). The agent located the policy in the system and proceeded to verify the customer's details, specifically asking to confirm the address on file before processing the cancellation.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Roshni Yadav",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "auto policy cancellation",
+      "policy verification"
+    ],
+    "action_items": [
+      "Confirm customer address on file",
+      "Proceed with auto policy cancellation"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "content": "Rohan Ahuja called Sunita Agarwal to confirm the cancellation of his health policy with DCoders. Sunita informed him that the policy was actually reinstated successfully on the 28th of the month, which Rohan was very pleased to hear. He thanked Sunita for her help, and the call ended cordially.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Rohan Ahuja",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "health policy status",
+      "policy reinstatement"
+    ],
+    "action_items": []
+  }
+}

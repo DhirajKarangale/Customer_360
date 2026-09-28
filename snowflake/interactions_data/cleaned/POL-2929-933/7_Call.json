@@ -1,0 +1,30 @@
+{
+  "content": "Kriti Mahajan called insurance agent Anita Sharma to check on her auto policy (AP-001234), discovering it had lapsed due to a missed payment. Anita explained that the policy can be reinstated with a back premium of $150. Kriti agreed to pay the amount by the end of the day, and Anita confirmed the policy will be fully active and updated documents sent via email once processed.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-26T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Kriti Mahajan",
+        "id": "3421cbee-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "relieved",
+    "topics": [
+      "auto policy expiration",
+      "policy reinstatement",
+      "missed payment",
+      "back premium"
+    ],
+    "action_items": [
+      "Customer to pay the $150 back premium by the end of the day",
+      "Agent to process payment and send updated policy documents via email"
+    ]
+  }
+}

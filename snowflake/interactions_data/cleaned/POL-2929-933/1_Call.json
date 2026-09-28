@@ -1,0 +1,28 @@
+{
+  "content": "Kriti Mahajan called Anita Sharma at Trust Wealth Advisors to inquire about her expired auto policy (AP-001234). Anita confirmed the policy expired last week due to a missed payment and explained that it can be reinstated upon payment of a $150 back premium, which Kriti agreed to pay.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Kriti Mahajan",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "auto policy expiration",
+      "policy reinstatement",
+      "back premium payment"
+    ],
+    "action_items": [
+      "Pay the $150 back premium to reinstate the auto policy"
+    ]
+  }
+}

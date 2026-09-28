@@ -1,0 +1,29 @@
+{
+  "content": "Aaradhya Verma called Suresh Deshmukh to discuss her expired health policy with DCoders and expressed concern over the 15% premium increase. Suresh offered a 5% discount for a two-year renewal term, which Aaradhya accepted. Aaradhya requested the updated renewal form.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Aaradhya Verma",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "health policy renewal",
+      "premium increase",
+      "discount options",
+      "two-year renewal"
+    ],
+    "action_items": [
+      "Send the updated renewal form to the customer"
+    ]
+  }
+}

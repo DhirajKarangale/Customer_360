@@ -1,0 +1,28 @@
+{
+  "content": "Customer Sai Kumar called regarding an auto policy expiring today (AP-001234) because he did not receive a renewal notice. The agent Neha Kapoor explained that the notice was likely sent to his spam folder. After discussing the renewal, the customer decided not to renew the policy, and the agent updated the status to expired.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Sai Kumar",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "auto policy expiration",
+      "renewal notice",
+      "policy cancellation"
+    ],
+    "action_items": [
+      "Update policy status to expired"
+    ]
+  }
+}

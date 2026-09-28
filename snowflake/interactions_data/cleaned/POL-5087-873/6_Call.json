@@ -1,0 +1,25 @@
+{
+  "content": "Vihaan Patel called insurance agent Anjali Desai to confirm the successful reinstatement of his health policy. Anjali confirmed that the policy was successfully reinstated from the date the payment and signed form were received.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Vihaan Patel",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "health policy reinstatement",
+      "policy status confirmation"
+    ],
+    "action_items": []
+  }
+}

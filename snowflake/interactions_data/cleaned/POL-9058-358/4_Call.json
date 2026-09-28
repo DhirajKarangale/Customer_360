@@ -1,0 +1,28 @@
+{
+  "content": "Ramesh Tiwari from Safe Shield Agency called Pooja Bhatia to follow up on her auto policy with DCoders. He informed her that the updated details have been received and the policy status is now pending. Pooja inquired about the policy document, and Ramesh advised she would receive it via email within 24 to 48 hours.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2024-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Pooja Bhatia",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d5"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "auto policy",
+      "policy status",
+      "policy document"
+    ],
+    "action_items": [
+      "Send policy document via email within 24 to 48 hours"
+    ]
+  }
+}

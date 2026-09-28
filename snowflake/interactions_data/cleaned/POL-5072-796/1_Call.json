@@ -1,0 +1,27 @@
+{
+  "content": "Anjali Desai from First Guard Brokers calls Saanvi Pillai to confirm her request to cancel her health policy with DCoders. Saanvi confirms she no longer needs the policy, and Anjali proceeds to process the cancellation while confirming a few final details.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Saanvi Pillai",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "policy cancellation",
+      "health insurance"
+    ],
+    "action_items": [
+      "Confirm remaining details to finalize the policy cancellation"
+    ]
+  }
+}

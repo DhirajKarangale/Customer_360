@@ -1,0 +1,28 @@
+{
+  "content": "Sai Kumar called to confirm the status of his home insurance policy. The insurance agent, Vikram Singh, checked the system and confirmed that the policy is currently active. Vikram also informed Sai that he will receive his policy documents in the mail within 7 to 10 business days.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Sai Kumar",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "policy status",
+      "home insurance",
+      "policy documents"
+    ],
+    "action_items": [
+      "Mail policy documents to customer within 7 to 10 business days"
+    ]
+  }
+}

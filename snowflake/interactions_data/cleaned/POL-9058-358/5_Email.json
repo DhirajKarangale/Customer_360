@@ -1,0 +1,28 @@
+{
+  "content": "Ramesh Tiwari informed Pooja Bhatia that her auto policy with DCoders is updated and currently marked as 'Pending', with the official policy document expected via email within 24 to 48 hours. Pooja acknowledged the update and thanked Ramesh for his assistance.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-29T10:06:40",
+    "participants": {
+      "customer": {
+        "name": "Pooja Bhatia",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Auto Policy Update",
+      "Policy Document"
+    ],
+    "action_items": [
+      "Customer to wait for policy document via email within 24-48 hours",
+      "Customer to reach out if any questions arise"
+    ]
+  }
+}

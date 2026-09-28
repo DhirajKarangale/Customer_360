@@ -1,0 +1,25 @@
+{
+  "content": "The customer, Roshni Yadav, called to confirm if her auto policy (AP-001234) had been successfully cancelled. The insurance agent, Sunita Agarwal, verified the customer's address and confirmed that the policy has indeed been cancelled per previous discussions. The customer expressed gratitude and relief.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Roshni Yadav",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "relieved",
+    "topics": [
+      "auto policy cancellation",
+      "policy status confirmation"
+    ],
+    "action_items": []
+  }
+}

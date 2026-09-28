@@ -1,0 +1,28 @@
+{
+  "content": "Insurance agent Ramesh Tiwari followed up with customer Pooja Bhatia regarding an auto policy update, requesting confirmation of the vehicle registration number and policy start date. Pooja responded promptly, providing her vehicle registration number (MH-12-GF-1234) and policy start date (01/04/2024).",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-28T10:05:00",
+    "participants": {
+      "customer": {
+        "name": "Pooja Bhatia",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Auto Policy Update",
+      "Vehicle Registration Number Confirmation",
+      "Policy Start Date"
+    ],
+    "action_items": [
+      "Proceed with the policy update using the provided vehicle registration number and policy start date"
+    ]
+  }
+}

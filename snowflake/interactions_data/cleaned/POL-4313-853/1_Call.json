@@ -1,0 +1,29 @@
+{
+  "content": "Kavya Iyer called Karan Joshi at DCoders to check the status of her health policy expiring today. Karan informed her that the payment has not been received and the policy was not on auto-pay as she thought. Since the policy is expiring, Karan offered to guide her through the process of canceling the current policy and reissuing a new one.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Kavya Iyer",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "confused",
+    "topics": [
+      "health policy",
+      "policy renewal",
+      "payment status",
+      "auto-pay"
+    ],
+    "action_items": [
+      "Cancel the expired policy and reissue a new one"
+    ]
+  }
+}

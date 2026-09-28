@@ -1,0 +1,28 @@
+{
+  "content": "Kavya Iyer followed up with insurance agent Anita Sharma regarding her life insurance policy. Anita informed her that the returned form has been processed and the policy is now active, with a confirmation email to be sent shortly.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Kavya Iyer",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "life insurance policy status",
+      "policy activation",
+      "form processing"
+    ],
+    "action_items": [
+      "Send confirmation email to the customer"
+    ]
+  }
+}

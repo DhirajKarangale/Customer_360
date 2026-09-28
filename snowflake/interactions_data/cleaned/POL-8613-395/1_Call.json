@@ -1,0 +1,27 @@
+{
+  "content": "Pooja Bhatia called Vikram Patel from Omni Insurance Group to cancel her health insurance policy (HP-001234) originally with DCoders. Vikram located the policy in the system and proceeded with the cancellation process.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Pooja Bhatia",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "policy cancellation",
+      "health insurance"
+    ],
+    "action_items": [
+      "Proceed with the health insurance policy cancellation for policy number HP-001234"
+    ]
+  }
+}

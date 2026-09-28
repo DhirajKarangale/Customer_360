@@ -1,0 +1,28 @@
+{
+  "content": "Aditi Mahajan called insurance agent Vikram Patel to check the status of her life insurance policy (LP-001234). Vikram checked the system and informed her that the policy is currently being processed and will be fully active by the end of the day.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Aditi Mahajan",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "life insurance policy",
+      "policy status",
+      "policy activation"
+    ],
+    "action_items": [
+      "Policy will be activated by the end of the day"
+    ]
+  }
+}

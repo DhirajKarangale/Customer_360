@@ -1,0 +1,27 @@
+{
+  "content": "Aaradhya Verma called insurance agent Suresh Deshmukh to inquire about the requirements and limitations for mental health and alternative therapies coverage. Suresh clarified that alternative therapies require a doctor's referral and mental health coverage requires an assessment with an empaneled psychologist, though he noted the policy document could be clearer.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:15:00",
+    "participants": {
+      "customer": {
+        "name": "Aaradhya Verma",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "mental health coverage",
+      "alternative therapies",
+      "policy requirements",
+      "insurance brochure"
+    ],
+    "action_items": []
+  }
+}

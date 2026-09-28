@@ -1,0 +1,28 @@
+{
+  "content": "The customer, Shaurya Joshi, called to inquire about his expired health policy. The insurance agent, Neha Kapoor, confirmed the expiration and presented two options: reinstating the previous policy or purchasing an upgraded policy with additional dental and vision coverage.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Shaurya Joshi",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "health policy expiration",
+      "policy reinstatement",
+      "upgraded policy options"
+    ],
+    "action_items": [
+      "Complete the policy reinstatement process or purchase a new policy"
+    ]
+  }
+}

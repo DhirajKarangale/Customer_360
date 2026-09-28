@@ -1,0 +1,29 @@
+{
+  "content": "Customer Shaurya Joshi called to inquire about his health policy, which he suspected had expired. Agent Neha Kapoor verified the policy (SH-123456) and confirmed it expired last month without a reminder sent. Neha offered options to either reinstate the old policy or switch to a new policy with additional dental and vision coverage. Shaurya expressed interest in the new policy and asked about the pricing details before the call concluded.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Shaurya Joshi",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "health policy expiration",
+      "policy reinstatement",
+      "new policy benefits",
+      "dental and vision coverage"
+    ],
+    "action_items": [
+      "Provide pricing details for the new policy with dental and vision coverage to the customer"
+    ]
+  }
+}

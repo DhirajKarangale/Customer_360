@@ -1,0 +1,27 @@
+{
+  "content": "Kriti Mahajan called insurance agent Anita Sharma to confirm the active status of her auto policy after paying a back premium of $150. Anita confirmed the policy is active and noted that updated documents were sent via email.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:15:00",
+    "participants": {
+      "customer": {
+        "name": "Kriti Mahajan",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "relieved",
+    "topics": [
+      "auto policy status",
+      "policy reinstatement",
+      "back premium payment",
+      "updated documents"
+    ],
+    "action_items": []
+  }
+}

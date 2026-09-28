@@ -1,0 +1,27 @@
+{
+  "content": "Sneha Roy called insurance agent Anita Sharma to confirm the cancellation status of her health policy HP-001234. Anita confirmed the policy is successfully cancelled and explained that the confirmation letter sent last week might have gone to her spam folder if not yet received.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Sneha Roy",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "relieved",
+    "topics": [
+      "policy cancellation",
+      "confirmation letter"
+    ],
+    "action_items": [
+      "Customer to check spam folder for the confirmation letter"
+    ]
+  }
+}

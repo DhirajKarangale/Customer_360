@@ -1,0 +1,29 @@
+{
+  "content": "Riya Mukherjee followed up on the unexpected expiration of her health policy (HP-123456) without prior notification. Anjali Desai apologized, confirmed a system issue caused the lack of renewal reminders, and provided a renewal application form and personalized quote to assist with the reinstatement.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-12-10T11:04:20",
+    "participants": {
+      "customer": {
+        "name": "Riya Mukherjee",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "frustrated",
+    "topics": [
+      "Health Policy Expiration",
+      "Policy Renewal",
+      "Notification System Issue"
+    ],
+    "action_items": [
+      "Review the renewal application form and personalized quote",
+      "Complete the renewal process"
+    ]
+  }
+}

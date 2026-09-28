@@ -1,0 +1,27 @@
+{
+  "content": "Anjali Desai confirmed to Saanvi Pillai that her health policy with DCoders has been successfully cancelled. Saanvi acknowledged the confirmation and asked for reassurance that she will not receive any further bills or notifications from DCoders.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-30T11:04:20",
+    "participants": {
+      "customer": {
+        "name": "Saanvi Pillai",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d7"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Cancellation of Health Policy",
+      "Billing confirmation"
+    ],
+    "action_items": [
+      "Confirm that the customer will not receive any further bills or notifications from DCoders"
+    ]
+  }
+}

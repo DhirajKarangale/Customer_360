@@ -1,0 +1,28 @@
+{
+  "content": "Reyansh Tiwari called Suresh Deshmukh to confirm if his $500 auto insurance payment was successfully processed and his policy is active. Suresh confirmed the payment went through, but mentioned there is an issue to discuss, leaving Reyansh concerned.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-10-03T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Reyansh Tiwari",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "auto insurance policy",
+      "payment confirmation",
+      "policy status"
+    ],
+    "action_items": [
+      "Discuss the policy issue identified by the agent"
+    ]
+  }
+}

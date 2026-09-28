@@ -1,0 +1,29 @@
+{
+  "content": "Ananya Nair called insurance agent Vikram Patel to proceed with the reinstatement of her auto insurance policy (number AN-001234). Vikram confirmed the policy details, informed her of a $50 lapse penalty, and stated that processing will take 24-48 hours.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-29T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Ananya Nair",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "auto policy reinstatement",
+      "policy lapse penalty",
+      "policy processing time"
+    ],
+    "action_items": [
+      "Confirm if the $50 penalty and 24-48 hour processing time are acceptable to the customer",
+      "Process the auto policy reinstatement"
+    ]
+  }
+}

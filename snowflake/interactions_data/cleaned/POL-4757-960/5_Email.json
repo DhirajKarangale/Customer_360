@@ -1,0 +1,29 @@
+{
+  "content": "Neha Kapoor followed up with Samar Ghosh regarding their expired health policy renewal, providing a revised quote with an additional 2% discount and an attached document. Samar acknowledged the discount but expressed ongoing concern about the overall premium increase, requesting a detailed breakdown of the changes and reasons behind the increase.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-30T11:04:20",
+    "participants": {
+      "customer": {
+        "name": "Samar Ghosh",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "Health policy renewal",
+      "Premium increase",
+      "Revised quote",
+      "Discount"
+    ],
+    "action_items": [
+      "Provide a detailed breakdown of the premium changes and reasons for the increase to the customer"
+    ]
+  }
+}

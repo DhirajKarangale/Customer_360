@@ -1,0 +1,28 @@
+{
+  "content": "Suhana Joshi called Neha Kapoor concerned that she received an email stating her travel policy TRV-001234 had expired. Neha investigated, apologized for an internal system error, confirmed the policy is actually active until the 10th of next month, and promised to send a confirmation email to update her records.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-10-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Suhana Joshi",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "frustrated",
+    "topics": [
+      "travel policy",
+      "policy expiration",
+      "system error"
+    ],
+    "action_items": [
+      "Send a confirmation email to update the customer's records showing the policy is active."
+    ]
+  }
+}

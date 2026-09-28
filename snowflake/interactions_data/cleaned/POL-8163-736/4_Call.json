@@ -1,0 +1,29 @@
+{
+  "content": "Vivaan Gupta called insurance agent Ravi Menon to follow up on the status of his health policy renewal application. Ravi confirmed that the application has been received and is currently awaiting review by the underwriting team. Ravi apologized for an earlier oversight regarding the expiration notice and informed Vivaan that he will receive an update and confirmation email within the next 7-10 business days once the policy is activated.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Vivaan Gupta",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "relieved",
+    "topics": [
+      "health policy renewal",
+      "application status",
+      "underwriting"
+    ],
+    "action_items": [
+      "Wait for underwriting review and policy update within 7-10 business days",
+      "Receive policy confirmation email upon activation"
+    ]
+  }
+}

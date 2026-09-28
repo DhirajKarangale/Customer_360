@@ -1,0 +1,27 @@
+{
+  "content": "Ramesh Tiwari from Safe Shield Agency calls Pooja Bhatia to confirm that her auto policy status is currently pending and that everything is set up. He informs her that she will receive the policy document via email within the next 24 hours.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2024-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Pooja Bhatia",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "relieved",
+    "topics": [
+      "auto policy status",
+      "policy document delivery"
+    ],
+    "action_items": [
+      "Receive policy document via email within 24 hours"
+    ]
+  }
+}

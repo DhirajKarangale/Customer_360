@@ -1,0 +1,25 @@
+{
+  "content": "Sai Kumar emailed Vikram Singh to confirm the receipt of his home policy documents for 1456 Oakwood Drive and noted that all details are correct. Vikram Singh replied acknowledging the confirmation and offered future assistance if needed.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-30T10:06:40",
+    "participants": {
+      "customer": {
+        "name": "Sai Kumar",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Home Policy Confirmation",
+      "Policy Documents"
+    ],
+    "action_items": []
+  }
+}

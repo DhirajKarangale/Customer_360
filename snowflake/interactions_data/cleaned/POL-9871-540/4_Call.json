@@ -1,0 +1,26 @@
+{
+  "content": "Suhana Joshi called insurance agent Neha Kapoor to confirm the active status and expiry date of her travel policy (TRV-001234). Neha confirmed that the policy is active and expires on the 10th of next month.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-10-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Suhana Joshi",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d5"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "travel policy",
+      "policy status",
+      "expiry date"
+    ],
+    "action_items": []
+  }
+}

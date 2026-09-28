@@ -1,0 +1,28 @@
+{
+  "content": "Atharv Pandey called insurance agent Vikram Patel to confirm if his payment for the Premium Care plan had been processed. Vikram verified that the payment was successful, confirmed that the policy is active again, and mentioned that a confirmation email has been sent.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Atharv Pandey",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "payment confirmation",
+      "policy status",
+      "Premium Care plan"
+    ],
+    "action_items": [
+      "Send confirmation email with policy details"
+    ]
+  }
+}

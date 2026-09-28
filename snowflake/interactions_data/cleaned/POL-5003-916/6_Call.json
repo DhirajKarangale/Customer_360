@@ -1,0 +1,28 @@
+{
+  "content": "Vedant Thakur called insurance agent Ramesh Tiwari regarding the renewal of his home policy HP-001234, expressing concern over the affordability of the $850 upfront premium. Ramesh offered a manageable payment plan of approximately $71 per month as an alternative.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Vedant Thakur",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d5"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "home policy renewal",
+      "premium affordability",
+      "payment plan"
+    ],
+    "action_items": [
+      "Confirm if the monthly payment plan of $71 works for the customer"
+    ]
+  }
+}

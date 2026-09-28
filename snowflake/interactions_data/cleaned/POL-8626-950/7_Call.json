@@ -1,0 +1,29 @@
+{
+  "content": "Kavya Iyer calls insurance agent Vikram Singh to confirm if her travel policy with DCoders is active after updating her payment information and paying the premium. Vikram checks the system and informs her that the policy is still showing as expired, prompting a frustrated reaction from Kavya who thought the issue was already resolved.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Kavya Iyer",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "frustrated",
+    "topics": [
+      "travel policy activation",
+      "premium payment",
+      "account status"
+    ],
+    "action_items": [
+      "Investigate why the policy is still showing as expired in the system",
+      "Resolve the policy activation issue for the customer"
+    ]
+  }
+}

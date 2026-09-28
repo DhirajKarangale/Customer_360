@@ -1,0 +1,28 @@
+{
+  "content": "Sai Kumar called insurance agent Vikram Patel to confirm the reinstatement of his home insurance policy (HP-001234). Vikram confirmed that the policy is successfully reinstated under the same terms and conditions and reminded Sai that the new expiration date is March 10th of next year. Sai thanked Vikram and noted the expiration date.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Sai Kumar",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "policy reinstatement",
+      "home insurance",
+      "policy expiration date"
+    ],
+    "action_items": [
+      "Customer to mark calendar for policy expiration on March 10th next year"
+    ]
+  }
+}

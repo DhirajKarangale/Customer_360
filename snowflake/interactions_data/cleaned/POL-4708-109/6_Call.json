@@ -1,0 +1,28 @@
+{
+  "content": "Ananya Nair follows up with insurance agent Sunita Agarwal regarding her expired health policy. Ananya asks if she can still pay the reinstatement fee and outstanding premium by the 25th. Sunita informs her that the payment deadline has already passed and the policy is officially expired, prompting Ananya to ask about her available options.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2024-10-25T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Ananya Nair",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "expired health policy",
+      "policy reinstatement",
+      "payment deadline"
+    ],
+    "action_items": [
+      "Discuss available options for the expired policy"
+    ]
+  }
+}

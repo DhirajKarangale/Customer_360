@@ -1,0 +1,28 @@
+{
+  "content": "Roshni Yadav writes to confirm the cancellation of her auto policy AP-001234 and inquires about the missing confirmation letter. Sunita Agarwal responds to confirm the successful cancellation, stating that the confirmation letter and refund details will be sent within 3 to 4 working days.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-30T11:04:20",
+    "participants": {
+      "customer": {
+        "name": "Roshni Yadav",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Auto policy cancellation",
+      "Confirmation letter",
+      "Refund details"
+    ],
+    "action_items": [
+      "Send confirmation letter and refund details to customer within 3-4 working days"
+    ]
+  }
+}

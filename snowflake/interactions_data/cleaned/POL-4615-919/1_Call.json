@@ -1,0 +1,27 @@
+{
+  "content": "Customer Rohan Ahuja called insurance agent Ramesh Tiwari regarding his auto insurance policy (AP-001234) with DCoders. The agent checked the policy status and informed the customer that the policy expired last month due to lack of timely renewal.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Rohan Ahuja",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "auto policy",
+      "policy status",
+      "policy expiration",
+      "policy renewal"
+    ],
+    "action_items": []
+  }
+}

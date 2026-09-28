@@ -1,0 +1,26 @@
+{
+  "content": "Rohan Deshmukh contacted insurance agent Anita Sharma to confirm that his home insurance policy status is active. Anita verified that the policy is active in the system and noted that confirmation documents were sent via email.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-27T10:05:00",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "policy status",
+      "home insurance",
+      "confirmation email"
+    ],
+    "action_items": []
+  }
+}

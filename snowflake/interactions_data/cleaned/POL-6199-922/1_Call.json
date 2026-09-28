@@ -1,0 +1,30 @@
+{
+  "content": "Customer Aarav Sharma called to check the status of his health policy (SH-123456). Agent Sunita Agarwal informed him that the policy is currently inactive due to an unpaid premium, and the payment notice likely went to his spam folder. The agent offered to help him make the payment over the phone to reactivate the policy, which the customer agreed to.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Aarav Sharma",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d5"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "policy status",
+      "inactive policy",
+      "missed payment notice",
+      "policy reactivation"
+    ],
+    "action_items": [
+      "Check email spam folder for the payment notice",
+      "Process the policy payment over the phone to reactivate the health policy"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "content": "Vikram Patel followed up with Atharv Pandey regarding health policy renewal options via email, attaching several plans as discussed previously. Atharv expressed interest in the 'Premium Care' plan and inquired about the next steps and required information to proceed with the renewal.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-12-10T10:45:00",
+    "participants": {
+      "customer": {
+        "name": "Atharv Pandey",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Health Policy Renewal",
+      "Renewal Options",
+      "Premium Care Plan"
+    ],
+    "action_items": [
+      "Provide next steps for renewing the policy",
+      "Inform customer of any additional information needed"
+    ]
+  }
+}

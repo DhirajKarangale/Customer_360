@@ -1,0 +1,26 @@
+{
+  "content": "Rohan Ahuja called Sunita Agarwal at Protect All Agency to check the status of his DCoders health insurance policy (HP-001234). Sunita verified the policy details and informed him that it had expired on the 10th of the current month.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Rohan Ahuja",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "health insurance policy",
+      "policy expiration",
+      "policy status check"
+    ],
+    "action_items": []
+  }
+}

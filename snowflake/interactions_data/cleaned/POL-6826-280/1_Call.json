@@ -1,0 +1,26 @@
+{
+  "content": "Riya Mukherjee called DCoders to check the status of her health policy (HP-001234). The insurance agent, Anjali Desai, checked the system and informed Riya that her policy expired on the 10th of the current month.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Riya Mukherjee",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "health policy",
+      "policy expiration",
+      "policy status"
+    ],
+    "action_items": []
+  }
+}

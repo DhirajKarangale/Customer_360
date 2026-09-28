@@ -1,0 +1,25 @@
+{
+  "content": "Kavya Iyer called insurance agent Vikram Patel to confirm if her insurance policy was active. Vikram checked the system and confirmed that the policy status has been successfully updated and is now active.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Kavya Iyer",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "policy status",
+      "policy activation confirmation"
+    ],
+    "action_items": []
+  }
+}

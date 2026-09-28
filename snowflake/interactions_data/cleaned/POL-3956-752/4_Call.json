@@ -1,0 +1,26 @@
+{
+  "content": "Customer Samar Ghosh called agent Ravi Menon to inquire about the renewal confirmation for their auto policy (AP-001234) after making a payment. The agent verified that the payment was processed successfully and explained there was a system delay, confirming the policy is now active with a brief lapse in coverage from the 26th to the 28th.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Samar Ghosh",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "auto policy renewal",
+      "payment confirmation",
+      "policy status"
+    ],
+    "action_items": []
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "content": "Samar Ghosh follows up with insurance agent Neha Kapoor regarding his health policy renewal and concerns over the premium increase. Neha offers an additional 2% discount (bringing the total to 7%), which is her maximum, and reminds Samar that his policy has already expired and he will lose coverage if he does not renew.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Samar Ghosh",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "hesitant",
+    "topics": [
+      "health policy renewal",
+      "premium increase",
+      "discounts",
+      "expired policy"
+    ],
+    "action_items": [
+      "Decide whether to renew the health policy with the new 7% total discount"
+    ]
+  }
+}

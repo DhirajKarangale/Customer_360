@@ -1,0 +1,29 @@
+{
+  "content": "Agent Ramesh Tiwari followed up with customer Rohan Ahuja regarding his lapsed auto policy with DCoders, providing a renewal application form and a brochure of alternative insurance plans. Rohan acknowledged receipt, stated he would review the documents, and promised to provide his decision by tomorrow.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-28T10:05:00",
+    "participants": {
+      "customer": {
+        "name": "Rohan Ahuja",
+        "id": "8a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Auto Policy Expiration",
+      "Policy Reinstatement",
+      "Insurance Renewal Options"
+    ],
+    "action_items": [
+      "Rohan Ahuja to review the attached renewal application form and auto insurance plans brochure",
+      "Rohan Ahuja to provide his decision by tomorrow"
+    ]
+  }
+}

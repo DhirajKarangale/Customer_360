@@ -1,0 +1,28 @@
+{
+  "content": "Anita Sharma from Trust Wealth Advisors assists customer Rohan Deshmukh with acquiring a new home insurance policy. Rohan confirms his property address as 1456 Oakwood Drive, and the agent proceeds to ask for details about the property.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "home insurance",
+      "new policy",
+      "property details"
+    ],
+    "action_items": [
+      "Provide details about the property"
+    ]
+  }
+}

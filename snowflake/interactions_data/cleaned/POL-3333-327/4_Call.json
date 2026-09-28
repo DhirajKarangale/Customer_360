@@ -1,0 +1,31 @@
+{
+  "content": "The customer, Reyansh Tiwari, called to discuss his auto insurance policy, which was cancelled due to two missed payments caused by bank issues. The insurance agent, Suresh Deshmukh, offered a reinstatement option through a payment plan. The customer agreed to pay $500 by the end of the week to reinstate the policy, and the agent agreed to send a confirmation email with the details.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Reyansh Tiwari",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "auto insurance policy",
+      "policy cancellation",
+      "missed payments",
+      "policy reinstatement",
+      "payment plan"
+    ],
+    "action_items": [
+      "Make a payment of $500 by the end of the week to reinstate the policy",
+      "Send a confirmation email with details to the customer"
+    ]
+  }
+}

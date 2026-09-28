@@ -1,0 +1,28 @@
+{
+  "content": "Sneha Roy called to confirm the cancellation of her health policy HP-001234. Anita Sharma confirmed the cancellation and apologized for the delayed confirmation letter, assuring her it will arrive within the next few days.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Sneha Roy",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "policy cancellation",
+      "confirmation letter"
+    ],
+    "action_items": [
+      "Agent to send cancellation confirmation letter within the next few days",
+      "Customer to follow up if the letter is not received"
+    ]
+  }
+}

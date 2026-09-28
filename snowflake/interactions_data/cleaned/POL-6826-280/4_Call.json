@@ -1,0 +1,28 @@
+{
+  "content": "Riya Mukherjee called insurance agent Anjali Desai to ask about renewing her expired health policy. Anjali informed her that the expired policy cannot be renewed, but offered a new policy with updated premiums and coverage. Riya agreed and requested the details to be sent for further discussion.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Riya Mukherjee",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "health policy renewal",
+      "expired policy",
+      "new policy offer"
+    ],
+    "action_items": [
+      "Send details of the new policy to the customer for further discussion"
+    ]
+  }
+}

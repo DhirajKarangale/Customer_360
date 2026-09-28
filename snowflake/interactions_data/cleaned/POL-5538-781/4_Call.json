@@ -1,0 +1,25 @@
+{
+  "content": "Akanksha Bhatt called Suresh Deshmukh to confirm if her insurance policy was active. Suresh verified the status and confirmed that the policy is active and a confirmation email was sent. Akanksha acknowledged receiving the email and expressed her gratitude, concluding the call.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:15:00",
+    "participants": {
+      "customer": {
+        "name": "Akanksha Bhatt",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "policy status",
+      "policy activation confirmation"
+    ],
+    "action_items": []
+  }
+}

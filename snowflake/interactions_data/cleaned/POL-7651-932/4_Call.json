@@ -1,0 +1,29 @@
+{
+  "content": "Shaurya Joshi calls insurance agent Neha Kapoor to discuss either reinstating his old health policy or upgrading to a new one with dental and vision coverage. Neha offers a one-time 5% discount if Shaurya upgrades within 48 hours, though the new policy will still cost about 10% more than his old one. The call concludes with Neha asking Shaurya to make a decision between reinstating the old policy or taking the discounted new one.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Shaurya Joshi",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "health policy reinstatement",
+      "policy upgrade",
+      "dental and vision coverage",
+      "premium discount"
+    ],
+    "action_items": [
+      "Shaurya to decide whether to reinstate the old policy or upgrade to the new one with the 5% discount within 48 hours"
+    ]
+  }
+}

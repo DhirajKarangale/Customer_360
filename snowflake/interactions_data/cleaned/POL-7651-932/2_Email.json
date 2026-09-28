@@ -1,0 +1,29 @@
+{
+  "content": "Shaurya Joshi follows up with insurance agent Neha Kapoor regarding his expired health policy, requesting a detailed comparison of reinstating the old policy versus upgrading to a new one with dental and vision coverage. Neha provides the requested comparison via an attached document, noting that the upgraded policy involves a 15% premium increase alongside additional benefits like a wellness program and higher critical illness coverage.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-28T10:06:40",
+    "participants": {
+      "customer": {
+        "name": "Shaurya Joshi",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Health policy expiration",
+      "Policy renewal options",
+      "Premium costs",
+      "Dental and vision coverage"
+    ],
+    "action_items": [
+      "Review the attached policy comparison document"
+    ]
+  }
+}

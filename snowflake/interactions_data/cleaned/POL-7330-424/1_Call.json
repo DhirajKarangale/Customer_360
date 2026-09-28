@@ -1,0 +1,28 @@
+{
+  "content": "Sneha Roy called Safe Step Insurance to check the status of her home policy (HP-001234) with DCoders. Agent Karan Joshi verified the policy and informed her that it had expired the previous week, then offered to discuss renewal options.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Sneha Roy",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "home policy expiration",
+      "policy status check",
+      "policy renewal"
+    ],
+    "action_items": [
+      "Discuss policy renewal options"
+    ]
+  }
+}

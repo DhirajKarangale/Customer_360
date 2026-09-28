@@ -1,0 +1,29 @@
+{
+  "content": "Insurance agent Suresh Deshmukh called customer Reyansh Tiwari to discuss the annual renewal of his auto policy. During the call, the agent informed the customer that the policy has been cancelled and expired due to two missed payments. The agent offered to discuss options for reinstating the policy.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Reyansh Tiwari",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "frustrated",
+    "topics": [
+      "auto policy renewal",
+      "missed payments",
+      "policy cancellation",
+      "policy reinstatement"
+    ],
+    "action_items": [
+      "Discuss policy reinstatement options"
+    ]
+  }
+}

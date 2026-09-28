@@ -1,0 +1,29 @@
+{
+  "content": "Reyansh Tiwari called insurance agent Ramesh Tiwari to follow up on reinstating his health policy with DCoders. They reviewed the payment plan terms, which involve a 50% upfront payment of 7,500 INR followed by two installments over the next two months. Reyansh concluded by asking if he can make the payment online or if an office visit is required.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Reyansh Tiwari",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "policy reinstatement",
+      "health insurance",
+      "payment plan",
+      "payment methods"
+    ],
+    "action_items": [
+      "Clarify online payment options for the customer"
+    ]
+  }
+}

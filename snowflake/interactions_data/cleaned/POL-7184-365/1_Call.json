@@ -1,0 +1,30 @@
+{
+  "content": "Anita Sharma from Trust Wealth Advisors calls Kavya Iyer to discuss her DCoders life insurance policy status. Anita informs Kavya that the policy is currently inactive and requires information updates to be reactivated. Kavya is surprised since she believes she paid premiums on time, but Anita reassures her that it is a minor issue and offers to guide her through the resolution process.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Kavya Iyer",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "surprised",
+    "topics": [
+      "Life insurance policy status",
+      "Inactive policy",
+      "Policy reactivation",
+      "Premium payments"
+    ],
+    "action_items": [
+      "Update information to reactivate the policy",
+      "Guide the customer through the resolution process"
+    ]
+  }
+}

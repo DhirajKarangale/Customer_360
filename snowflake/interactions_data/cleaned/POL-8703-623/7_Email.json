@@ -1,0 +1,29 @@
+{
+  "content": "Nandini Rajput emailed Vikram Singh to thank him for reinstating her auto policy and providing coverage details for her 2024 Honda Civic, but noted that the system still showed the status as expired. Vikram Singh responded and confirmed that he has updated the policy status to active in the system.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-30T10:45:00",
+    "participants": {
+      "customer": {
+        "name": "Nandini Rajput",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d7"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Auto Policy Expiration",
+      "Coverage Details",
+      "Policy Status Update",
+      "2024 Honda Civic"
+    ],
+    "action_items": [
+      "Verify the updated active policy status in the online account"
+    ]
+  }
+}

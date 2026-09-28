@@ -1,0 +1,29 @@
+{
+  "content": "Akanksha Bhatt spoke with insurance agent Suresh Deshmukh regarding a notification that her life insurance policy was inactive. Suresh identified that a missed payment caused the issue. Akanksha agreed to make the payment immediately, and Suresh assisted her with the payment process to restore the policy to active status.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Akanksha Bhatt",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "relieved",
+    "topics": [
+      "inactive policy",
+      "missed payment",
+      "policy reactivation"
+    ],
+    "action_items": [
+      "Make the missed payment",
+      "Update policy status to active"
+    ]
+  }
+}

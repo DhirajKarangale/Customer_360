@@ -1,0 +1,26 @@
+{
+  "content": "Sai Kumar called insurance agent Neha Kapoor to confirm that his auto policy status had been successfully updated to expired as per their previous discussion. Neha verified the system and confirmed that the update was completed.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Sai Kumar",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d5"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "auto policy",
+      "policy status update",
+      "policy expiration confirmation"
+    ],
+    "action_items": []
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "content": "Rahul Jain called insurance agent Sunita Agarwal to follow up on the status of his health insurance policy. Sunita informed him that the payments team reviewed his case and agreed to reinstate the policy, which Rahul acknowledged with appreciation.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:15:00",
+    "participants": {
+      "customer": {
+        "name": "Rahul Jain",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d5"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "health policy status",
+      "policy reinstatement"
+    ],
+    "action_items": []
+  }
+}

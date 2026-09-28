@@ -1,0 +1,24 @@
+{
+  "content": "Customer Kunal Mehta called insurance agent Ramesh Tiwari to confirm the status of his auto policy. Ramesh checked and confirmed that the policy is currently active. The customer expressed gratitude and stated there were no further questions.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-27T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Kunal Mehta",
+        "id": "3421f7d8-4a9f-4f3e-8f9a-5e9f7d8a4b2c"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "8a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "auto policy status confirmation"
+    ],
+    "action_items": []
+  }
+}

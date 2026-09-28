@@ -1,0 +1,27 @@
+{
+  "content": "Pooja Bhatia called insurance agent Vikram Patel to confirm the cancellation of her health policy HP-001234. Vikram verified the cancellation status in the system and confirmed that Pooja will receive her refund within 7 to 10 working days.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:15:00",
+    "participants": {
+      "customer": {
+        "name": "Pooja Bhatia",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "relieved",
+    "topics": [
+      "policy cancellation",
+      "refund status"
+    ],
+    "action_items": [
+      "Customer to receive refund within 7-10 working days"
+    ]
+  }
+}

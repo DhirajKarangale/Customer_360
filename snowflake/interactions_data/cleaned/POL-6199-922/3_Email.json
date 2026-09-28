@@ -1,0 +1,28 @@
+{
+  "content": "Sunita Agarwal sent the updated active health insurance policy documents (Policy Number: HP-001234) with DCoders to Aarav Sharma. Aarav reviewed the documents, confirmed they look good, and asked for final confirmation that the policy is active and covers medical emergencies.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-28T10:02:15",
+    "participants": {
+      "customer": {
+        "name": "Aarav Sharma",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c95"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d5"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "Health Policy Update",
+      "Policy Activation",
+      "Emergency Coverage"
+    ],
+    "action_items": [
+      "Confirm policy activation and medical emergency coverage to Aarav Sharma"
+    ]
+  }
+}

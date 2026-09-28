@@ -1,0 +1,29 @@
+{
+  "content": "Customer Sai Kumar called insurance agent Anjali Desai to inquire about reinstating his expired auto policy (AP-001234) due to non-payment. Anjali confirmed reinstatement is possible with a $250 reinstatement fee and a $75 late fee, bringing the new annual premium to $1,200. After a brief pause, Sai agreed to proceed with the payment, and the agent initiated the verification process by asking for the policy number and date of birth.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-26T10:00:00",
+    "participants": {
+      "customer": {
+        "name": "Sai Kumar",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "auto policy expiration",
+      "policy reinstatement",
+      "fees and premium"
+    ],
+    "action_items": [
+      "Confirm policy number and date of birth",
+      "Process the payment for policy reinstatement"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "content": "Kunal Mehta called insurance agent Ramesh Tiwari to confirm the status of his auto insurance policy for his Toyota Camry. Ramesh verified and confirmed that the policy is active and the customer is all set.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-27T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Kunal Mehta",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "auto policy status",
+      "policy confirmation"
+    ],
+    "action_items": []
+  }
+}

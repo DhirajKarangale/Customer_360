@@ -1,0 +1,29 @@
+{
+  "content": "Ramesh Tiwari from DCoders follows up with customer Rohan Ahuja regarding an auto policy quote. Rohan expresses concern over the unexpectedly high lapse fee for reinstating his expired policy. Ramesh explains that it is a standard fee but offers to check if there is any room for negotiation.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Rohan Ahuja",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "auto policy",
+      "quote follow-up",
+      "back premium",
+      "lapse fee"
+    ],
+    "action_items": [
+      "Check for potential negotiation on the lapse fee"
+    ]
+  }
+}

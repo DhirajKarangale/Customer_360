@@ -1,0 +1,29 @@
+{
+  "content": "Riya Mukherjee followed up regarding submitted application forms and documents. Anjali Desai initially noted they had not been received, prompting Riya to resend them. Anjali confirmed receipt of the documents and stated she will review them and provide a policy status update by tomorrow.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2024-09-26T14:50:00",
+    "participants": {
+      "customer": {
+        "name": "Riya Mukherjee",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d7"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "friendly",
+    "topics": [
+      "Application status",
+      "Document submission",
+      "Policy update"
+    ],
+    "action_items": [
+      "Agent to review the received documents",
+      "Agent to provide a policy status update by tomorrow"
+    ]
+  }
+}

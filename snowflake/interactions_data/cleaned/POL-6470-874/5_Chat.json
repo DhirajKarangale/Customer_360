@@ -1,0 +1,30 @@
+{
+  "content": "Rohan Deshmukh checks on the status of his home insurance policy application with agent Anita Sharma. Anita asks him to confirm his address, which Rohan provides as 123 Main Street, Apartment 4, Mumbai, Maharashtra. Anita confirms she is updating the details and that the policy should be active by the end of the day. Rohan requests a confirmation email once the policy is activated.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2024-09-26T14:50:00",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c97"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d7"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "home policy application status",
+      "address verification",
+      "policy activation confirmation"
+    ],
+    "action_items": [
+      "Update policy details with confirmed address",
+      "Activate home policy by the end of the day",
+      "Send confirmation email to customer once active"
+    ]
+  }
+}

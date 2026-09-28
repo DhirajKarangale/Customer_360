@@ -1,0 +1,28 @@
+{
+  "content": "Roshni Yadav called to confirm the cancellation of her auto policy AP-001234. Insurance agent Sunita Agarwal verified Roshni's address and confirmed that the policy has been successfully cancelled, noting that a confirmation letter and refund details will be sent within 3 to 4 working days.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Roshni Yadav",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "auto policy cancellation",
+      "policy confirmation",
+      "refund details"
+    ],
+    "action_items": [
+      "Send confirmation letter and refund details to the customer within 3-4 working days"
+    ]
+  }
+}

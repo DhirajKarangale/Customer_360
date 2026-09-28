@@ -1,0 +1,28 @@
+{
+  "content": "Sneha Roy called Anita Sharma at DCoders to inquire about the cancellation process for her health policy (HP-001234). Anita checked the system and confirmed that Sneha's cancellation request was already in process and would be effective at the end of the month.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Sneha Roy",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "health policy",
+      "cancellation process",
+      "policy status"
+    ],
+    "action_items": [
+      "Wait for the health policy cancellation to take effect at the end of the month"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "content": "Customer Sai Kumar called to inquire about purchasing a home insurance policy after recently moving into a new residence at 1456 Oakwood Drive. Insurance agent Vikram Singh assisted the customer, confirmed the property address, and began looking up the details.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Sai Kumar",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d5"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "home insurance policy",
+      "new home purchase",
+      "property address verification"
+    ],
+    "action_items": [
+      "Look up property details for 1456 Oakwood Drive"
+    ]
+  }
+}

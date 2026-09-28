@@ -1,0 +1,30 @@
+{
+  "content": "Ramesh Tiwari follows up with customer Rohan Ahuja regarding a revised auto policy quote. Rohan is satisfied with the premium but expresses concern about the lapse fee. Ramesh checks the system and offers an additional 5% discount on the lapse fee conditional on upfront payment. Rohan agrees to the deal and decides to proceed with the policy reinstatement.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Rohan Ahuja",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "auto policy",
+      "revised quote",
+      "lapse fee",
+      "policy reinstatement",
+      "upfront payment discount"
+    ],
+    "action_items": [
+      "Process policy reinstatement with an additional 5% discount on the lapse fee for upfront premium payment"
+    ]
+  }
+}

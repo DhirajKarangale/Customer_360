@@ -1,0 +1,27 @@
+{
+  "content": "Kavya Iyer called Suresh Deshmukh to confirm the active status of her insurance policy. Suresh confirmed that the policy is active and informed her that she would receive her documents shortly.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Kavya Iyer",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "policy status",
+      "policy documents"
+    ],
+    "action_items": [
+      "Send policy documents to the customer"
+    ]
+  }
+}

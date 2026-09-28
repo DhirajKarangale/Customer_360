@@ -1,0 +1,29 @@
+{
+  "content": "Ananya Nair called insurance agent Sunita Agarwal to follow up on her health insurance policy that expired on the 10th. Sunita confirmed that the policy can be reinstated within 30 days of expiry and stated the total amount due is \u20b915,500, which includes \u20b914,000 for the outstanding premium and a \u20b91,500 reinstatement fee.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:15:00",
+    "participants": {
+      "customer": {
+        "name": "Ananya Nair",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "policy reinstatement",
+      "health insurance",
+      "premium payment",
+      "outstanding amount"
+    ],
+    "action_items": [
+      "Pay the total amount due of \u20b915,500 within 30 days of expiry to reinstate the policy"
+    ]
+  }
+}
