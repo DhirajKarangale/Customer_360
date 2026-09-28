@@ -4,9 +4,10 @@ import json
 import snowflake.connector
 from dotenv import load_dotenv
 from sf_auth import get_snowflake_conn
+from llm_utils import call_llm, LLM_PROVIDER
 import concurrent.futures
 
-MAX_WORKERS = 4
+MAX_WORKERS = 5
 TEST_MODE = False
 OVERWRITE_EXISTING = False
 
@@ -22,18 +23,7 @@ load_dotenv(env_path)
 
 
 
-def call_cortex_llm(sf_conn, prompt, model_name):
-    cursor = sf_conn.cursor()
-    query = f"SELECT SNOWFLAKE.CORTEX.COMPLETE('{model_name}', %s)"
-    try:
-        cursor.execute(query, (prompt,))
-        result = cursor.fetchone()[0]
-        return result
-    except Exception as e:
-        print(f"Error calling Cortex: {e}")
-        return None
-    finally:
-        cursor.close()
+
 
 def clean_text_locally(raw_text):
     """
@@ -79,7 +69,7 @@ def semantic_clean_with_llm(sf_conn, text):
 
     Provide ONLY the cleaned text. Do NOT include markdown formatting blocks or any conversational filler.
     """
-    result = call_cortex_llm(sf_conn, prompt, MODELS["CLEANING"])
+    result = call_llm(sf_conn, prompt, MODELS["CLEANING"])
     if result:
         if "```" in result:
             result = result.split("```")[1]
@@ -140,7 +130,7 @@ def structure_with_llm(sf_conn, raw_text, cleaned_text, file_type):
     {cleaned_text}
     ---
     """
-    result = call_cortex_llm(sf_conn, prompt, MODELS["STRUCTURING"])
+    result = call_llm(sf_conn, prompt, MODELS["STRUCTURING"])
     if result:
         if "```json" in result:
             result = result.split("```json")[1].split("```")[0]
@@ -212,12 +202,14 @@ def main():
         print(f"Raw directory not found at {raw_dir}")
         return
 
-    print("Connecting to Snowflake...")
-    try:
-        sf_conn = get_snowflake_conn()
-    except Exception as e:
-        print(f"Could not connect to Snowflake: {e}")
-        return
+    sf_conn = None
+    if LLM_PROVIDER.lower() == "snowflake":
+        print("Connecting to Snowflake...")
+        try:
+            sf_conn = get_snowflake_conn()
+        except Exception as e:
+            print(f"Could not connect to Snowflake: {e}")
+            return
 
     print("Scanning raw directory for policy folders...")
     policy_folders = [f for f in os.listdir(raw_dir) if os.path.isdir(os.path.join(raw_dir, f))]
@@ -250,7 +242,8 @@ def main():
             except Exception as e:
                 print(f"Error processing a policy folder: {e}")
 
-    sf_conn.close()
+    if sf_conn:
+        sf_conn.close()
     print("Cleaning pipeline finished.")
 
 if __name__ == "__main__":

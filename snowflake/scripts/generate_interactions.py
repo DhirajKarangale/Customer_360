@@ -5,6 +5,7 @@ import psycopg2
 import snowflake.connector
 from dotenv import load_dotenv
 from sf_auth import get_snowflake_conn
+from llm_utils import call_llm, LLM_PROVIDER
 import concurrent.futures
 
 START_POLICY = 121
@@ -70,19 +71,6 @@ def fetch_all_policy_data():
     conn.close()
     return data
 
-def call_cortex_llm(sf_conn, prompt, model_name):
-    cursor = sf_conn.cursor()
-    
-    query = f"SELECT SNOWFLAKE.CORTEX.COMPLETE('{model_name}', %s)"
-    try:
-        cursor.execute(query, (prompt,))
-        result = cursor.fetchone()[0]
-        return result
-    except Exception as e:
-        print(f"Error calling Cortex: {e}")
-        return None
-    finally:
-        cursor.close()
 
 def generate_interaction_sequence(sf_conn, policy):
     num_interactions = random.randint(MIN_INTERACTIONS, MAX_INTERACTIONS)
@@ -95,7 +83,7 @@ def generate_interaction_sequence(sf_conn, policy):
     Correct format example: ["Call", "Email", "Chat", "Call", "Email"]
     """
     
-    result = call_cortex_llm(sf_conn, prompt, MODELS["SEQUENCE"])
+    result = call_llm(sf_conn, prompt, MODELS["SEQUENCE"])
     try:
         if result:
             if "```json" in result:
@@ -164,7 +152,7 @@ def generate_interaction_content(sf_conn, policy, sequence, policy_dir):
         {SCHEMA_PROMPT}
         """
         
-        content = call_cortex_llm(sf_conn, prompt, MODELS["TRANSCRIPT"])
+        content = call_llm(sf_conn, prompt, MODELS["TRANSCRIPT"])
         
         if content:
             if "```text" in content:
@@ -178,7 +166,7 @@ def generate_interaction_content(sf_conn, policy, sequence, policy_dir):
                 f.write(content.strip())
             
             summary_prompt = f"Summarize this interaction in 1 or 2 short sentences:\n\n{content.strip()}"
-            summary = call_cortex_llm(sf_conn, summary_prompt, MODELS["SUMMARY"])
+            summary = call_llm(sf_conn, summary_prompt, MODELS["SUMMARY"])
             if summary:
                 context += f"Step {step_num} ({channel}): {summary.strip()}\n"
             else:
@@ -206,12 +194,14 @@ def main():
     policies = fetch_all_policy_data()
     print(f"Found {len(policies)} policies.")
     
-    print("Connecting to Snowflake...")
-    try:
-        sf_conn = get_snowflake_conn()
-    except Exception as e:
-        print(f"Could not connect to Snowflake: {e}")
-        return
+    sf_conn = None
+    if LLM_PROVIDER.lower() == "snowflake":
+        print("Connecting to Snowflake...")
+        try:
+            sf_conn = get_snowflake_conn()
+        except Exception as e:
+            print(f"Could not connect to Snowflake: {e}")
+            return
 
     output_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "interactions_data", "raw")
     os.makedirs(output_dir, exist_ok=True)
@@ -233,7 +223,8 @@ def main():
             except Exception as e:
                 print(f"Error processing policy: {e}")
 
-    sf_conn.close()
+    if sf_conn:
+        sf_conn.close()
     print("\nData generation complete!")
 
 if __name__ == "__main__":

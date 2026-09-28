@@ -12,6 +12,7 @@ import traceback
 import snowflake.connector
 from dotenv import load_dotenv
 from sf_auth import get_snowflake_conn
+from llm_utils import call_llm, LLM_PROVIDER
 
 TEST_MODE = False
 OVERWRITE_EXISTING = False
@@ -28,58 +29,6 @@ env_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__
 if not os.path.exists(env_path):
     raise FileNotFoundError(f"Environment file not found at {env_path}")
 load_dotenv(env_path)
-
-CORTEX_CALL_COUNT = 0
-CURRENT_CONN = None
-
-def call_cortex_llm(sf_conn, prompt, model_name):
-    global CORTEX_CALL_COUNT, CURRENT_CONN
-    
-    # Initialize CURRENT_CONN with the one passed from main on first run
-    if CURRENT_CONN is None:
-        CURRENT_CONN = sf_conn
-        
-    CORTEX_CALL_COUNT += 1
-    
-    if CORTEX_CALL_COUNT % 7 == 0:
-        print(f"    [Auth] Reached {CORTEX_CALL_COUNT} LLM calls. Refreshing Snowflake connection...")
-        try:
-            CURRENT_CONN.close()
-        except Exception:
-            pass
-        CURRENT_CONN = get_snowflake_conn()
-
-    conn_to_use = CURRENT_CONN
-    cursor = conn_to_use.cursor()
-    query = f"SELECT SNOWFLAKE.CORTEX.COMPLETE('{model_name}', %s)"
-    try:
-        cursor.execute(query, (prompt,))
-        result = cursor.fetchone()[0]
-        return result
-    except Exception as e:
-        print(f"Error calling Cortex: {e}")
-        if "Session no longer exists" in str(e):
-            print("    [Auth] Session expired! Force refreshing connection and retrying...")
-            try:
-                conn_to_use.close()
-            except Exception:
-                pass
-            CURRENT_CONN = get_snowflake_conn()
-            conn_to_use = CURRENT_CONN
-            cursor = conn_to_use.cursor()
-            try:
-                cursor.execute(query, (prompt,))
-                result = cursor.fetchone()[0]
-                return result
-            except Exception as e2:
-                print(f"Retry failed: {e2}")
-                return None
-        return None
-    finally:
-        try:
-            cursor.close()
-        except Exception:
-            pass
 
 def clean_text_locally(raw_text):
     """
@@ -125,7 +74,7 @@ def semantic_clean_with_llm(sf_conn, text):
 
     Provide ONLY the cleaned text. Do NOT include markdown formatting blocks or any conversational filler.
     """
-    result = call_cortex_llm(sf_conn, prompt, MODELS["CLEANING"])
+    result = call_llm(sf_conn, prompt, MODELS["CLEANING"])
     if result:
         if "```" in result:
             result = result.split("```")[1]
@@ -186,7 +135,7 @@ def structure_with_llm(sf_conn, raw_text, cleaned_text, file_type):
     {cleaned_text}
     ---
     """
-    result = call_cortex_llm(sf_conn, prompt, MODELS["STRUCTURING"])
+    result = call_llm(sf_conn, prompt, MODELS["STRUCTURING"])
     if result:
         if "```json" in result:
             result = result.split("```json")[1].split("```")[0]
@@ -322,13 +271,15 @@ def main():
         play_error_sound()
         return
 
-    print("Connecting to Snowflake...")
-    try:
-        sf_conn = get_snowflake_conn()
-    except Exception as e:
-        print(f"Could not connect to Snowflake: {e}")
-        play_error_sound()
-        return
+    sf_conn = None
+    if LLM_PROVIDER.lower() == "snowflake":
+        print("Connecting to Snowflake...")
+        try:
+            sf_conn = get_snowflake_conn()
+        except Exception as e:
+            print(f"Could not connect to Snowflake: {e}")
+            play_error_sound()
+            return
 
     print("Scanning raw directory for policy folders...")
     policy_folders = [f for f in os.listdir(raw_dir) if os.path.isdir(os.path.join(raw_dir, f))]
@@ -375,7 +326,8 @@ def main():
             play_error_sound()
             break
 
-    sf_conn.close()
+    if sf_conn:
+        sf_conn.close()
     print("\nCleaning pipeline finished!")
     
     if pipeline_successful and total_to_process > 0:

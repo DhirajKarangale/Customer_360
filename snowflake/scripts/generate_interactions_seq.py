@@ -6,6 +6,7 @@ import psycopg2
 import snowflake.connector
 from dotenv import load_dotenv
 from sf_auth import get_snowflake_conn
+from llm_utils import call_llm, LLM_PROVIDER
 import time
 try:
     import winsound
@@ -80,58 +81,7 @@ def fetch_all_policy_data():
     conn.close()
     return data
 
-CORTEX_CALL_COUNT = 0
-CURRENT_CONN = None
 
-def call_cortex_llm(sf_conn, prompt, model_name):
-    global CORTEX_CALL_COUNT, CURRENT_CONN
-    
-    # Initialize CURRENT_CONN with the one passed from main on first run
-    if CURRENT_CONN is None:
-        CURRENT_CONN = sf_conn
-        
-    CORTEX_CALL_COUNT += 1
-    
-    if CORTEX_CALL_COUNT % 7 == 0:
-        print(f"    [Auth] Reached {CORTEX_CALL_COUNT} LLM calls. Refreshing Snowflake connection...")
-        try:
-            CURRENT_CONN.close()
-        except Exception:
-            pass
-        CURRENT_CONN = get_snowflake_conn()
-
-    conn_to_use = CURRENT_CONN
-    cursor = conn_to_use.cursor()
-    query = f"SELECT SNOWFLAKE.CORTEX.COMPLETE('{model_name}', %s)"
-    try:
-        cursor.execute(query, (prompt,))
-        result = cursor.fetchone()[0]
-        return result
-    except Exception as e:
-        print(f"Error calling Cortex: {e}")
-        if "Session no longer exists" in str(e):
-            print("    [Auth] Session expired! Force refreshing connection and retrying...")
-            try:
-                conn_to_use.close()
-            except Exception:
-                pass
-            CURRENT_CONN = get_snowflake_conn()
-            conn_to_use = CURRENT_CONN
-            cursor = conn_to_use.cursor()
-            try:
-                cursor.execute(query, (prompt,))
-                result = cursor.fetchone()[0]
-                return result
-            except Exception as e2:
-                print(f"Retry failed: {e2}")
-                raise e2
-        else:
-            raise e
-    finally:
-        try:
-            cursor.close()
-        except Exception:
-            pass
 
 def generate_interaction_sequence(sf_conn, policy):
     num_interactions = random.randint(MIN_INTERACTIONS, MAX_INTERACTIONS)
@@ -144,7 +94,7 @@ def generate_interaction_sequence(sf_conn, policy):
     Correct format example: ["Call", "Email", "Chat", "Call", "Email"]
     """
     
-    result = call_cortex_llm(sf_conn, prompt, MODELS["SEQUENCE"])
+    result = call_llm(sf_conn, prompt, MODELS["SEQUENCE"])
     try:
         if result:
             if "```json" in result:
@@ -214,7 +164,7 @@ def generate_interaction_content(sf_conn, policy, sequence, policy_dir):
         {SCHEMA_PROMPT}
         """
         
-        content = call_cortex_llm(sf_conn, prompt, MODELS["TRANSCRIPT"])
+        content = call_llm(sf_conn, prompt, MODELS["TRANSCRIPT"])
         
         if content:
             if "```text" in content:
@@ -228,7 +178,7 @@ def generate_interaction_content(sf_conn, policy, sequence, policy_dir):
                 f.write(content.strip())
             
             summary_prompt = f"Summarize this interaction in 1 or 2 short sentences:\n\n{content.strip()}"
-            summary = call_cortex_llm(sf_conn, summary_prompt, MODELS["SUMMARY"])
+            summary = call_llm(sf_conn, summary_prompt, MODELS["SUMMARY"])
             if summary:
                 context += f"Step {step_num} ({channel}): {summary.strip()}\n"
             else:
@@ -323,13 +273,15 @@ def main():
         
     print(f"Found {len(policies)} policies.")
     
-    print("Connecting to Snowflake...")
-    try:
-        sf_conn = get_snowflake_conn()
-    except Exception as e:
-        print(f"Could not connect to Snowflake: {e}")
-        play_error_sound()
-        return
+    sf_conn = None
+    if LLM_PROVIDER.lower() == "snowflake":
+        print("Connecting to Snowflake...")
+        try:
+            sf_conn = get_snowflake_conn()
+        except Exception as e:
+            print(f"Could not connect to Snowflake: {e}")
+            play_error_sound()
+            return
 
     output_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "interactions_data", "raw")
     os.makedirs(output_dir, exist_ok=True)
@@ -371,7 +323,8 @@ def main():
             play_error_sound()
             break
 
-    sf_conn.close()
+    if sf_conn:
+        sf_conn.close()
     print("\nData generation pipeline finished!")
     
     if pipeline_successful and total_to_process > 0:
