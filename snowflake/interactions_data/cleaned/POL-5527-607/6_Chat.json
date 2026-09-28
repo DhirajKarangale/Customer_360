@@ -1,0 +1,30 @@
+{
+  "content": "Vivaan asked Neha to clarify what is covered for trip cancellations due to medical emergencies, how to file a claim and what documents are needed, and whether his previous policy has expired. Neha confirmed 100% coverage for non\u2011pre\u2011existing medical conditions, outlined the claim filing requirements (doctor\u2019s report, cancellation proof, claim form), said she will email the form, and indicated the old policy is now expired.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2024-09-26T15:10:00",
+    "participants": {
+      "customer": {
+        "name": "Vivaan Gupta",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d5"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "trip cancellation coverage",
+      "medical emergency claim process",
+      "required documents",
+      "policy expiration"
+    ],
+    "action_items": [
+      "Neha to email the claim form to Vivaan",
+      "Vivaan to provide medical report, proof of cancellation, and completed claim form when filing a claim"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "content": "Roshni emailed Suresh to inquire about the status of her auto policy (DC-001234). Suresh responded that the policy is pending due to required documentation, and he will investigate and update it to active, keeping Roshni informed.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-28T11:04:20",
+    "participants": {
+      "customer": {
+        "name": "Roshni Yadav",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c97"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "inquisitive",
+    "topics": [
+      "auto policy status",
+      "pending status",
+      "required documentation"
+    ],
+    "action_items": [
+      "Insurance agent will investigate required documentation and update the policy to Active",
+      "Agent will inform the customer of progress"
+    ]
+  }
+}

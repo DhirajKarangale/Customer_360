@@ -1,0 +1,28 @@
+{
+  "content": "Customer called about his life insurance policy; agent confirmed the policy is active but the premium is overdue and will be cancelled if not paid within 30 days. Customer expressed concern and was advised to make the payment promptly.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Pranav Mishra",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "life insurance policy status",
+      "premium overdue",
+      "potential cancellation"
+    ],
+    "action_items": [
+      "Customer to pay the overdue premium within 30 days to avoid policy cancellation"
+    ]
+  }
+}

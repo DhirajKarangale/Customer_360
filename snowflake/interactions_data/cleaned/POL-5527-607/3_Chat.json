@@ -1,0 +1,28 @@
+{
+  "content": "Vivaan Gupta followed up on a travel policy quote, confirming he had sent details via email. Agent Neha Kapoor acknowledged receipt, asked for clarification on Vivaan's hypertension diagnosis and any recent complications. Vivaan said he was diagnosed five years ago, the condition is controlled with medication, and he has had no major complications or hospitalizations in the past two years. Neha will now prepare the travel policy quote.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2024-09-26T14:50:00",
+    "participants": {
+      "customer": {
+        "name": "Vivaan Gupta",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d5"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "travel policy quote",
+      "hypertension medical history"
+    ],
+    "action_items": [
+      "Neha Kapoor to prepare and send the travel policy quote to Vivaan Gupta",
+      "Vivaan Gupta to provide any additional medical information if required"
+    ]
+  }
+}

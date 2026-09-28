@@ -1,0 +1,30 @@
+{
+  "content": "Vivaan Gupta inquired about renewing his expired travel policy, sharing his plans to travel to the US and Europe over the next year and noting his controlled hypertension; Neha Kapoor requested confirmation of travel dates and destinations and indicated she will prepare a new quote considering his medical condition.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-27T10:05:00",
+    "participants": {
+      "customer": {
+        "name": "Vivaan Gupta",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c97"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d7"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "travel policy quote",
+      "travel dates and destinations",
+      "pre-existing medical condition",
+      "premium impact"
+    ],
+    "action_items": [
+      "Agent to prepare a new travel policy quote considering the customer's hypertension",
+      "Agent to inform the customer about any premium adjustments"
+    ]
+  }
+}

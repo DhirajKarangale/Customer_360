@@ -1,0 +1,28 @@
+{
+  "content": "Anita Sharma from Trust Wealth Advisors assisted Dev Chatterjee with activating his auto insurance policy. She confirmed the policy status and requested the vehicle's make and model to finalize the activation.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Dev Chatterjee",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "auto policy activation",
+      "vehicle information verification"
+    ],
+    "action_items": [
+      "Customer to provide vehicle make and model",
+      "Agent to finalize policy activation after receiving vehicle details"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "content": "Dev Chatterjee confirmed his auto policy is active; Anita Sharma verified activation, sent a confirmation email, and reviewed the policy's coverage (collision, comprehensive, liability), a $500 deductible, and a $120 monthly premium, offering further assistance if needed.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-27T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Dev Chatterjee",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "auto policy activation",
+      "coverage details",
+      "deductible",
+      "premium"
+    ],
+    "action_items": [
+      "confirmation email sent to customer"
+    ]
+  }
+}

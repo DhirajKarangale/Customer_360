@@ -1,0 +1,29 @@
+{
+  "content": "Roshni Yadav followed up on her auto policy (DC-001234) that was still pending despite having submitted the vehicle inspection report. Suresh Deshmukh responded, apologizing for the delay and confirming the policy is now active, with the policy documents to be emailed shortly.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-30T11:04:20",
+    "participants": {
+      "customer": {
+        "name": "Roshni Yadav",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "auto policy status",
+      "pending policy",
+      "vehicle inspection report",
+      "policy activation"
+    ],
+    "action_items": [
+      "Send policy documents to Roshni Yadav via email"
+    ]
+  }
+}

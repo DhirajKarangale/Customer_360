@@ -1,0 +1,26 @@
+{
+  "content": "Roshni Yadav called to confirm details of her auto policy (AP-001234). Agent Suresh Deshmukh verified the policy, stating it provides 5\u202flakh rupees coverage with a premium of 25,000 rupees per annum. Roshni only needed confirmation and ended the call with no further requests.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Roshni Yadav",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "auto policy",
+      "coverage amount",
+      "premium amount"
+    ],
+    "action_items": []
+  }
+}

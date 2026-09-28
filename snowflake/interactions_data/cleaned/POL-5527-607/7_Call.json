@@ -1,0 +1,32 @@
+{
+  "content": "Customer Vivaan called about his expired travel policy and requested a new quote. He asked about trip cancellation coverage for medical emergencies and whether his hypertension would affect the premium. Agent Neha confirmed the expiration, offered a new quote, pulled up the details, and agreed to provide clarification on the coverage and premium impact.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Vivaan Gupta",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d5"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "travel policy expiration",
+      "new quote",
+      "trip cancellation coverage",
+      "medical emergencies",
+      "health condition impact on premium"
+    ],
+    "action_items": [
+      "Agent to send detailed quote with trip cancellation coverage information",
+      "Agent to confirm whether hypertension affects the premium",
+      "Customer to review the new quote"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "content": "Neha Kapoor sent Vivaan Gupta a new travel policy quote (accounting for his hypertension) with an attached PDF. Vivaan thanked her and asked for clarification on coverage for trip cancellations due to medical emergencies.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-30T11:04:20",
+    "participants": {
+      "customer": {
+        "name": "Vivaan Gupta",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "travel policy quote",
+      "pre-existing medical condition (hypertension)",
+      "coverage for trip cancellations due to medical emergencies"
+    ],
+    "action_items": [
+      "Neha to clarify coverage for trip cancellations due to medical emergencies",
+      "Vivaan to review clarification and decide on policy purchase"
+    ]
+  }
+}

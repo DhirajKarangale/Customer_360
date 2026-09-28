@@ -1,0 +1,29 @@
+{
+  "content": "Roshni Yadav followed up with Suresh Deshmukh regarding her auto policy (AP-001234) still showing as 'Pending' despite submitting the vehicle inspection report, requesting it be updated to 'Active'. Suresh apologized for the delay, noted the report is still being processed, escalated the issue to the technical team, and promised to notify Roshni once the status changes to Active.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-30T11:04:20",
+    "participants": {
+      "customer": {
+        "name": "Roshni Yadav",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "auto policy status",
+      "vehicle inspection report",
+      "policy activation"
+    ],
+    "action_items": [
+      "Technical team to process vehicle inspection report",
+      "Notify customer when policy status changes to Active"
+    ]
+  }
+}

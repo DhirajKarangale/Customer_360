@@ -1,0 +1,33 @@
+{
+  "content": "Kiara Sen called about renewing her health policy after submitting the renewal form and paying the premium. Agent Vikram Patel confirmed the policy number but encountered a system error that left the policy status as expired. Vikram said he would escalate the issue and follow up with Kiara by the end of the day to ensure the renewal is completed.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Kiara Sen",
+        "id": "4f3a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "health policy renewal",
+      "premium payment",
+      "system error",
+      "policy status",
+      "escalation",
+      "follow-up"
+    ],
+    "action_items": [
+      "Escalate the system issue affecting policy status",
+      "Update the policy to reflect renewal",
+      "Follow up with Kiara by end of day to confirm update"
+    ]
+  }
+}

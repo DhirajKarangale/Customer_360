@@ -1,0 +1,29 @@
+{
+  "content": "Vihaan Patel called about health policy HP-001234, noting he hadn't received any update after making a payment. Ravi Menon checked and found the admin team was still processing the payment, apologized for the delay, and promised to escalate the issue to resolve it today. Vihaan asked whether he would receive a notification once the policy becomes active, and Ravi confirmed he would ensure a notification is sent.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Vihaan Patel",
+        "id": "3421f7d8-4a9f-4f3e-8f9a-5f4e3a7b1c6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "8a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "health policy payment status",
+      "admin processing delay",
+      "notification of activation"
+    ],
+    "action_items": [
+      "Escalate payment processing with admin team to resolve today",
+      "Confirm notification will be sent once the policy is active"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "content": "Vihaan Patel asked about the status of health policy HP-001234, noting that he had paid but the system still shows the policy as Expired. Ravi Menon apologized for the delay, said the issue was escalated to the admin team, and confirmed the status will be changed to Active by the end of the day, though it will temporarily appear as Expired due to the late payment. Ravi will send a confirmation once the update is complete.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-30T11:04:20",
+    "participants": {
+      "customer": {
+        "name": "Vihaan Patel",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "Health policy HP-001234 status",
+      "Payment after due date",
+      "Policy status update",
+      "Escalation to admin team"
+    ],
+    "action_items": [
+      "Admin team to change policy status to Active by end of day",
+      "Ravi to send confirmation email after update"
+    ]
+  }
+}

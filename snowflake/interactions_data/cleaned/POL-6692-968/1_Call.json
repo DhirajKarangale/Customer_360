@@ -1,0 +1,28 @@
+{
+  "content": "The customer, Vihaan Patel, called about his health policy (HP-001234) possibly expiring. The insurance agent, Ravi Menon, checked the policy status and confirmed it had expired on March 10th, apologizing for the inconvenience.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Vihaan Patel",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "health policy expiration",
+      "policy number verification",
+      "policy status"
+    ],
+    "action_items": [
+      "Customer to discuss renewal options for the expired health policy"
+    ]
+  }
+}

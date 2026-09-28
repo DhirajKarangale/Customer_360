@@ -1,0 +1,28 @@
+{
+  "content": "Customer Ananya Nair called about her auto policy (AP-001234) which had expired last month. The agent, Suresh Deshmukh, confirmed the expiration and was asked about reinstatement options.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Ananya Nair",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "frustrated",
+    "topics": [
+      "auto policy expiration",
+      "reinstatement options"
+    ],
+    "action_items": [
+      "Agent to explain reinstatement process and requirements",
+      "Customer to decide on proceeding with reinstatement"
+    ]
+  }
+}

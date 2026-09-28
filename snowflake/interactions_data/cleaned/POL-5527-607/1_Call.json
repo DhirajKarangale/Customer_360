@@ -1,0 +1,30 @@
+{
+  "content": "Customer Vivaan Gupta called about his expired travel policy TRV-001234, discovered it expired on March 10, and asked about options. Agent Neha Kapoor explained reinstatement or a new quote; Vivaan chose to get a new quote. The agent then requested his date of birth (12\u202fAugust\u202f1990) to begin the quoting process.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Vivaan Gupta",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "frustrated",
+    "topics": [
+      "expired travel policy",
+      "policy reinstatement",
+      "new quote request",
+      "date of birth verification"
+    ],
+    "action_items": [
+      "Agent to generate a new travel policy quote",
+      "Update customer information with date of birth"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "content": "Sunita Agarwal confirmed the cancellation of Rohan Ahuja's home policy, noting it will be processed in 3\u20135 business days with a refund for the unused premium. Rohan thanked her and asked for the expected refund date and whether he will receive documentation confirming the cancellation.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-29T10:06:40",
+    "participants": {
+      "customer": {
+        "name": "Rohan Ahuja",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d7"
+        }
+      ]
+    },
+    "user_mood": "appreciative",
+    "topics": [
+      "home policy cancellation",
+      "refund timeline",
+      "cancellation documentation"
+    ],
+    "action_items": [
+      "Sunita to process the cancellation within 3\u20135 business days and issue the refund",
+      "Sunita to provide Rohan with the expected refund date and confirmation documentation",
+      "Rohan to await refund and documentation"
+    ]
+  }
+}

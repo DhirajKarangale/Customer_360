@@ -1,0 +1,27 @@
+{
+  "content": "Aditi called about a notice that her health policy was about to expire. Ramesh checked her account and discovered missed premium payments for the past two quarters, which caused the issue.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Aditi Mahajan",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "health policy expiration",
+      "missed premium payments"
+    ],
+    "action_items": [
+      "Customer to settle missed premium payments"
+    ]
+  }
+}

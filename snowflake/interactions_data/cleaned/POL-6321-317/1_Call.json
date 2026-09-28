@@ -1,0 +1,30 @@
+{
+  "content": "Rohan Ahuja called to cancel his home policy HP-001234 because he is moving to a new house. Sunita Agarwal confirmed the cancellation can be processed, explained it will take 3\u20135 business days, and assured Rohan will receive a refund for the unused premium.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2023-03-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Rohan Ahuja",
+        "id": "4f6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "home policy cancellation",
+      "moving to new house",
+      "refund of unused premium",
+      "processing time"
+    ],
+    "action_items": [
+      "Process cancellation of policy HP-001234",
+      "Issue refund for unused premium within 3-5 business days"
+    ]
+  }
+}

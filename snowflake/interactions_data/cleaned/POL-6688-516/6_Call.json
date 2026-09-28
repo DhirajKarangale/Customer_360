@@ -1,0 +1,30 @@
+{
+  "content": "Ananya Nair called about auto policy AP-001234, learned it had expired due to a failed reinstatement payment, and asked about the $50 fee. Agent Suresh Deshmukh reprocessed the payment, reinstated the policy, and waived the fee. Ananya thanked him and expressed relief.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-26T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Ananya Nair",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "auto policy",
+      "policy expiration",
+      "reinstatement payment issue",
+      "fee waiver"
+    ],
+    "action_items": [
+      "Agent to reprocess payment to reinstate the policy",
+      "Waive the $50 reinstatement fee"
+    ]
+  }
+}

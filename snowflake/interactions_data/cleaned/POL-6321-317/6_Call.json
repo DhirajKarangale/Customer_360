@@ -1,0 +1,28 @@
+{
+  "content": "Rohan called to confirm that his home policy with DCoders had been cancelled; Sunita verified the cancellation and informed him that the refund for the unused premium has been processed and will arrive within 2\u20133 business days. Rohan thanked her for the assistance.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T14:10:00",
+    "participants": {
+      "customer": {
+        "name": "Rohan Ahuja",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d5"
+        }
+      ]
+    },
+    "user_mood": "relieved",
+    "topics": [
+      "policy cancellation",
+      "refund for unused premium",
+      "refund processing timeline"
+    ],
+    "action_items": [
+      "Refund to be received within 2\u20133 business days"
+    ]
+  }
+}

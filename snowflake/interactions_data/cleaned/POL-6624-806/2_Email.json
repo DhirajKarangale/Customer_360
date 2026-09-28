@@ -1,0 +1,29 @@
+{
+  "content": "Ramesh Tiwari sent Aditi Mahajan a reinstatement guide for her health policy that is about to expire due to missed premium payments. Aditi responded requesting clarification of the exact remaining balance she needs to pay after a partial payment.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-09-28T10:05:00",
+    "participants": {
+      "customer": {
+        "name": "Aditi Mahajan",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "health policy expiration",
+      "premium payments",
+      "policy reinstatement",
+      "outstanding amount clarification"
+    ],
+    "action_items": [
+      "Ramesh Tiwari to provide the exact remaining balance required to reinstate the policy"
+    ]
+  }
+}

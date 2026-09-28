@@ -1,0 +1,31 @@
+{
+  "content": "Pranav Mishra called about his life insurance policy being cancelled for non\u2011payment, saying he never received any reminders. Agent Neha Kapoor confirmed the cancellation, offered reinstatement, explained the overdue premium plus a reinstatement fee, and asked for payment. Pranav requested to call back later because he didn't have his payment details, and the agent agreed, noting the policy will stay cancelled until payment is made.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Pranav Mishra",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "frustrated",
+    "topics": [
+      "life insurance policy cancellation",
+      "non-payment of premium",
+      "policy reinstatement",
+      "payment method"
+    ],
+    "action_items": [
+      "Customer to provide payment information for reinstatement",
+      "Agent to process reinstatement upon receipt of payment",
+      "Customer may call back later to make payment"
+    ]
+  }
+}

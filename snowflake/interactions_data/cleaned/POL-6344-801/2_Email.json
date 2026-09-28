@@ -1,0 +1,30 @@
+{
+  "content": "The insurance agent notified the customer that his life insurance policy was cancelled on 01/10/2026 due to an overdue premium and attached a cancellation notice. The customer expressed shock and asked if the policy could be reinstated despite the missed payment.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-03-10T10:45:00",
+    "participants": {
+      "customer": {
+        "name": "Pranav Mishra",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "shocked",
+    "topics": [
+      "policy expiration",
+      "cancellation",
+      "overdue premium payment",
+      "reinstatement request"
+    ],
+    "action_items": [
+      "Agent to explain reinstatement possibilities and required steps",
+      "Provide instructions for payment to reactivate the policy"
+    ]
+  }
+}

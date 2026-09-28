@@ -1,0 +1,30 @@
+{
+  "content": "Roshni Yadav called to follow up on her auto policy, which remains pending. Agent Suresh Deshmukh explained the delay is due to the technical team still processing her vehicle inspection report and was asked for an estimated activation time.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:15:00",
+    "participants": {
+      "customer": {
+        "name": "Roshni Yadav",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "frustrated",
+    "topics": [
+      "auto policy status",
+      "pending policy",
+      "vehicle inspection report",
+      "estimated activation time"
+    ],
+    "action_items": [
+      "Agent to follow up with technical team on inspection report processing",
+      "Provide customer with an estimated activation date"
+    ]
+  }
+}

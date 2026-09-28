@@ -1,0 +1,28 @@
+{
+  "content": "Aditi Mahajan asked whether paying the remaining 15,000 would reactivate her health policy. Agent Ramesh Tiwari confirmed that payment today will reinstate the policy and restore coverage. Aditi thanked him and expressed relief.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:05:00",
+    "participants": {
+      "customer": {
+        "name": "Aditi Mahajan",
+        "id": "4a6a7028-a699-4de4-b932-41271ff311d6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "2a6a7028-a699-4de4-b932-41271ff311d5"
+        }
+      ]
+    },
+    "user_mood": "relieved",
+    "topics": [
+      "health policy reinstatement",
+      "outstanding payment",
+      "policy activation"
+    ],
+    "action_items": [
+      "Customer to pay the remaining 15,000 to reinstate the policy"
+    ]
+  }
+}
