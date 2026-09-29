@@ -1,0 +1,17 @@
+call_id: CALL-DC-001
+start_timestamp: 28/09/2026 T:09:15:00
+end_timestamp: 28/09/2026 T:09:20:45
+participants[2]{id,name,role}:
+  5f3c9a1e-8b2d-4e9a-9c3f-1a2b3c4d5e6f,Saanvi Pillai,customer
+  a7d4f6b2-3c9e-4a5b-8d1f-9e0b2c3d4f5a,Neha Kapoor,insurance agent
+messages[10]{user,text}:
+  user_2,"Hello, is this Saanvi? ... [00:00]"
+  user_1,"Hi... yeah, speaking. ... [00:05]"
+  user_2,"Great, I'm Neha from Shield Life Services. I wanted to talk about your health policy – the one that was supposed to end soon. Actually, the system shows it’s already Expired. ... [00:12]"
+  user_1,"Oh—really? I didn't realize that... [00:18]"
+  user_2,"Yes, the status is Expired as of today. We can discuss renewal or alternative options if you’d like. ... [00:24]"
+  user_1,"Umm, can I... get it renewed? I thought I still had coverage. ... [00:30]"
+  user_2,"Sure, we can look at renewal options. First, let me verify a few details... [00:36]"
+  user_1,"Okay, go ahead. ... [00:40]"
+  user_2,"Your policy number is HP-2023-0456, correct? ... [00:45]"
+  user_1,"Yes, that's right. ... [00:48]"

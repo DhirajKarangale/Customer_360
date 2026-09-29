@@ -1,0 +1,12 @@
+chat_id: 9f3b7c1e-4a2d-47b9-8e1f-6d5c9a2b7e4f
+participants[2]{id,name,role}:
+  a1d9f3e2-7c4b-4f2a-9b6e-3c8d5e9f1a2b,Rahul Jain,customer
+  b4e6c2d5-9f1a-4d8c-8a7b-2e3f6b9c0d1e,Ramesh Tiwari,insurance agent
+messages[7]{user,timestamp,text,media_url}:
+  user_1,01/10/2026 T09:15:12,"hey ramesh i just saw my policy status shows exipired *expired, is that correct?", 
+  user_2,01/10/2026 T09:15:45,"Hi Rahul! Let me check that for you.", 
+  user_2,01/10/2026 T09:16:30,"Thanks for waiting. Yes, policy AU-45219 expired on 30/09/2026. Since you had auto‑renew set, it should have been renewed but the payment didn't go through.", 
+  user_1,01/10/2026 T09:17:05,"oh no, what do i need to do now?", 
+  user_2,01/10/2026 T09:17:40,"We can reactivate instantly once the pending premium of ₹12,450 is paid. I’ll send a secure payment link.", 
+  user_2,01/10/2026 T09:18:02,"Here’s the link: https://pay.safe-shield.com/auto/AU-45219", 
+  user_1,01/10/2026 T09:18:45,"thanks, will do now. ping you once done.",

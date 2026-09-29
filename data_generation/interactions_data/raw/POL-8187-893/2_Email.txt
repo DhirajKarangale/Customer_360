@@ -1,0 +1,8 @@
+mail_id: a1b2c3d4-5678-90ab-cdef-1234567890ab
+subject: Health Policy Renewal – Your Action Needed
+participants[2]{id,name,email,role}:
+  5d3e8b9a-1c2f-4a6b-9f3e-7c8d9e0a1b2c,Riya Mukherjee,riya.m@dcoders.com,customer
+  a9f4c2d7-3e5b-44d1-8a6f-2b3c4d5e6f7g,Vikram Patel,vikram.p@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2026 T:09:15:00,"Dear Riya,\n\nI hope you’re well. As discussed on our call earlier today, I’ve prepared the renewal for your health policy (Policy No: HP-2024-5678) which had expired on 15/09/2026. Please click the secure link below to review the details and complete the renewal:\n\nhttps://secure.omniinsurance.com/renew/HP-2024-5678?token=abc123xyz\n\nThe renewal will reactivate coverage effective 01/10/2026. If you have any questions or need assistance, feel free to reply to this email or call me directly.\n\nBest regards,\nVikram Patel\nInsurance Agent, Omni Insurance Group\nvikram.p@dcoders.com",https://storage.omniinsurance.com/policies/HP-2024-5678_Summary.pdf
+  user_1,user_2,,28/09/2026 T:09:45:12,"Hi Vikram,\n\nThanks for sending the link. I’ve reviewed the terms and everything looks good. I’ll go ahead and complete the renewal now. Could you confirm that the deductible will remain at $500 as per my previous plan?\n\nAppreciate your help!\n\nRegards,\nRiya Mukherjee",

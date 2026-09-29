@@ -1,0 +1,44 @@
+call_id: CALL-TRV-2026-005
+start_timestamp: 15/10/2026 T:09:00:00
+end_timestamp: 15/10/2026 T:09:18:00
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Dhruv Kapoor,customer
+  f1e2d3c4-9876-54ba-dcfe-0987654321fe,Neha Kapoor,insurance agent
+messages[37]{user,text}:
+  user_1,Hey Neha, uh... it's Dhruv. Got a minute?
+  user_2,Hey Dhruv! Yeah, I can hear you. What's up?
+  user_1,So, I wanted to double‑check the COVID cancellation coverage for my October trip, just to be sure.
+  user_2,Sure thing, let me pull up your policy – one sec.
+  user_2,[hold music playing]
+  user_2,Thanks for waiting. I have your policy TRV‑DC‑2026‑10 open here.
+  user_1,Great. Does it still cover a full refund if the trip gets cancelled because of a new COVID variant?
+  user_2,Yes, it does. As long as you notify us at least 24 hours before departure, we’ll cover the non‑refundable expenses.
+  user_1,Umm… what about extensions? Like if the airline pushes the flight out by a few days?
+  user_2,We cover extensions up to 7 days, provided you let us know 24 hours in advance.
+  user_1,Okay, cool. I also wanted to ask about the claim form – do I still need to fill it out manually?
+  user_2,You can fill it out online, but we also have a PDF you can download and fax or email.
+  user_1,Got it. Could you resend the PDF? I think I misplaced the email.
+  user_2,Sure, I’ll send it right after we finish. Anything else on your mind?
+  user_1,Actually, I’m a bit nervous about the flight. My dog— [dog barks] —keeps whining whenever I pack.
+  user_2,Haha, I hear you. Traveling with pets can be stressful. Are you bringing your dog on the trip?
+  user_1,No, just leaving him at home. But I was wondering if the policy covers any pet‑related emergencies while I’m away.
+  user_2,Our travel policy doesn’t cover pet care, only your personal medical and trip expenses.
+  user_1,Ah, okay. Thanks for clarifying.
+  user_2,No problem. By the way, did you get the welcome email with the policy document?
+  user_1,I did, but the attachment didn’t open on my phone.
+  user_2,I’ll resend it in a mobile‑friendly format. Hold on a sec.
+  user_2,[hold music playing]
+  user_2,Sent! You should get an email from support@dcoders.com in a minute.
+  user_1,Got it, thanks. Let me just check… [typing] … yep, looks good.
+  user_2,Great! Anything else you need before we wrap up?
+  user_1,Actually, could you walk me through the exact steps to file a claim, just in case?
+  user_2,Sure – step one: gather your proof of booking, receipts, and the COVID test result if applicable.
+  user_2,Step two: fill out the claim form – you can use the PDF we just sent or the online portal.
+  user_2,Step three: upload the documents through the portal or email them to claims@dcoders.com.
+  user_2,Step four: we’ll review within 5‑7 business days and let you know the outcome.
+  user_1,Sounds straightforward. Do I need to sign anything physically?
+  user_2,No, an electronic signature is fine.
+  user_1,Alright, thanks a lot, Neha. I feel much more confident now.
+  user_2,Happy to help, Dhruv. Have a safe trip and enjoy the October weather!
+  user_1,Will do. Bye!
+  user_2,Bye!

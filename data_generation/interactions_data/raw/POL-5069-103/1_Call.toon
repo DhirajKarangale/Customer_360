@@ -1,0 +1,19 @@
+call_id: REC-DC-001A
+start_timestamp: 29/09/2026 T:09:15:00
+end_timestamp: 29/09/2026 T:09:20:30
+participants[2]{id,name,role}:
+  3f9a2d7e-1c4b-4a8f-9b3e-6d5c2a1e9f0b,Neha Chauhan,customer
+  a7c4e2b5-8d9f-4e3a-9c1d-2b6f7e8a0d3c,Karan Joshi,insurance agent
+messages[12]{user,text}:
+  user_1,Hello is this Karan?
+  user_2,Hi Neha this is Karan from Safe Step Insurance how can I help you today?
+  user_1,Uh yeah I wanted to check the status of my health policy.
+  user_2,Sure let me pull up your details [typing] can you confirm your policy number please?
+  user_1,Its HP-2026-0459.
+  user_2,Thanks checking okay I see it here the policy is currently pending activation.
+  user_1,Pending? I thought it should be active already.
+  user_2,Right I understand we had a paperwork hold-- I see the medical questionnaire wasnt submitted.
+  user_1,Oh I didnt realize that I can send it now. [sighs]
+  user_2,Great once we receive that we can move it to active status. Do you have a copy ready?
+  user_1,Yes I have it on my phone can I email it now?
+  user_2,Sure go ahead send it to docs@dcoders.com and I’ll update the system once received.

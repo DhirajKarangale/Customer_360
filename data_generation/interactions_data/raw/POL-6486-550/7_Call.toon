@@ -1,0 +1,15 @@
+call_id: a5f3c2e1-9b4d-4a6f-8c12-3e9f5b7d8a1c
+start_timestamp: 30/09/2026 T:11:15:00
+end_timestamp: 30/09/2026 T:11:18:30
+participants[2]{id,name,role}:
+  7d9f2a3b-1c4e-4f8b-9a6d-2e5c7b9f0a1b,Dev Chatterjee,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[8]{user,text}:
+  user_1,[00:00] Hello Suresh, umm... I just wanted to double‑check the status of my health policy.
+  user_2,[00:07] Hi Dev, sure thing. Let me pull it up… (typing) … Okay, I see it here – policy HP‑34219 expired on 15 Aug 2026.
+  user_1,[00:20] Right, so it’s still... inactive? I’m not ready to renew yet.
+  user_2,[00:27] Yes, it’s inactive. No auto‑reactivation – you’d need to start a renewal or a new plan whenever you’re ready.
+  user_1,[00:38] Got it… uh… could you resend the coverage summary PDF? I think I lost the last email.
+  user_2,[00:45] Absolutely, I’ll email it right after this call. Anything else you need?
+  user_1,[00:52] No, that’s all. I’ll review it and get back to you. Thanks.
+  user_2,[00:58] You’re welcome, Dev. Have a good day! [sighs]

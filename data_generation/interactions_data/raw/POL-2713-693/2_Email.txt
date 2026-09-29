@@ -1,0 +1,8 @@
+mail_id: 9f3b7c2a-5d1e-4a9b-8c2e-1f6d9b3a7c4e
+subject: Health Plus Policy Renewal – Action Required
+participants[2]{id,name,email,role}:
+  a1d4e9f2-3c7b-4f9a-9b6e-2d5c8a1f0b7c,Aditi Mahajan,aditi.mahajan@dcoders.com,customer
+  b7c3e2d5-9f1a-4b6c-8d2e-5a9f3c1e6b8d,Karan Joshi,karan.joshi@safestepinsurance.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,27/09/2026 T:09:15:00,"Dear Aditi,\n\nI hope you’re doing well. Following our conversation earlier today, I wanted to confirm that your Health Plus policy (Policy No: HP-123456) is set to expire on 05/10/2026.\n\nYou have two options moving forward:\n1. **Renew** the current plan for another year at the same premium.\n2. **Upgrade** to our Health Plus Plus plan, which includes additional benefits such as higher OPD coverage, tele‑consultation services, and a lower deductible.\n\nPlease find attached the renewal form for the current plan and a brochure outlining the upgraded option. Let me know which route you’d prefer, or if you’d like to discuss the details further.\n\nLooking forward to your response.\n\nBest regards,\nKaran Joshi\nInsurance Agent, Safe Step Insurance\nPhone: +1‑555‑0123\nEmail: karan.joshi@safestepinsurance.com",https://storage.safestepinsurance.com/docs/HealthPlus_Renewal_Form_ADITI_2026.pdf
+  user_1,user_2,,27/09/2026 T:10:02:15,"Hi Karan,\n\nThanks for the quick follow‑up and the documents. I’m interested in learning more about the Health Plus Plus upgrade—specifically the additional coverage limits and any changes to the premium.\n\nCould you please send me a detailed quote and let me know the steps to switch to the upgraded plan before the current policy expires?\n\nThanks,\nAditi Mahajan\nCustomer, DCoders",

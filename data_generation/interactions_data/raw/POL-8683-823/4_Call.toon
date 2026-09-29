@@ -1,0 +1,46 @@
+call_id: REC-DC-20260928-004
+start_timestamp: 28/09/2026 T:14:00:00
+end_timestamp: 28/09/2026 T:14:15:30
+participants[2]{id,name,role}:
+  9f3c2a1e-5b6d-4e2a-9c8f-1a2b3c4d5e6f,Riya Mukherjee,customer
+  d4e5f6a7-8b9c-0d1e-2f3a-4b5c6d7e8f9a,Vikram Singh,insurance agent
+messages[39]{user,text}:
+  user_2,Hi Riya, this is Vikram Singh from ProtectAll Agency at DCoders. Uh, can you hear me okay?
+  user_1,Hey... yeah I can hear you. Hi Vikram.
+  user_2,[00:01] Great. So, about your health policy that expired on 15 Sept 2026...
+  user_1,Right, I got the email with the quote. I was just wondering why the premium went up.
+  user_2,[00:02] Yeah, I explained earlier—medical inflation and the added maternity coverage. Let me pull up the breakdown again.
+  user_2,[typing] ...
+  user_2,[hold music] *soft instrumental playing*
+  user_2,[00:04] Thanks for holding. Okay, here's the cost breakdown: Base premium 4,200 INR, maternity rider 1,100 INR, admin fee 150 INR, total 5,450 INR per annum.
+  user_1,Hmm, that's quite a jump from last year—was it 4,200 total before?
+  user_2,Exactly, last year's total was 4,200. So about a 30% increase.
+  user_1,Umm... I was hoping to keep it lower. Is there any way to drop the maternity rider?
+  user_2,Sure, we can remove it. That would bring it down to around 4,350 INR.
+  user_1,That sounds better. But... I also wanted to know if I can keep the same network hospitals as before.
+  user_2,Yes, the network remains unchanged. All your preferred hospitals are still in the panel.
+  user_1,[dog barks in background] Oh sorry, my dog just barked.
+  user_2,No worries! Take your time.
+  user_1,Okay, so if I go with the reduced premium, what's the next step?
+  user_2,We'll send you a revised quote via email, and you can approve it online or over the phone.
+  user_1,Can I also set up a monthly instalment instead of paying annually?
+  user_2,Absolutely. We have monthly, quarterly, or semi‑annual options. Monthly would be 460 INR per month.
+  user_1,Alright, I think I'll go with monthly and drop the maternity rider.
+  user_2,Got it. Let me update the system.
+  user_2,[typing] ...
+  user_2,[hold music] *brief pause*
+  user_2,[00:10] All set. I've generated a new policy number: HP-2026-0459.
+  user_1,Thanks. Could you read back the key benefits one more time?
+  user_2,Sure—covers inpatient, OPD, day care procedures, and up to 5,000 INR per year for maternity if you ever add it later. No pre‑existing condition waiting period now.
+  user_1,Sounds good. I'll look for the email and confirm.
+  user_2,Perfect. The email should arrive in the next few minutes. Let me know if you don't see it.
+  user_1,Will do. Oh, and sorry, my son is crying—one sec.
+  user_2,[sighs] No problem, take your time.
+  user_1,[pause] ...okay, I'm back.
+  user_2,All right. Anything else I can help with?
+  user_1,Actually, can you tell me about the claim process if I need to hospitalise?
+  user_2,Sure thing. You can file a claim through our portal, upload bills, and we process within 48 hours. There's also a 24‑hour hotline for emergencies.
+  user_1,Great, thanks.
+  user_2,You're welcome, Riya. We'll follow up tomorrow to see if you received the email.
+  user_1,Okay, talk then. Bye.
+  user_2,Bye!

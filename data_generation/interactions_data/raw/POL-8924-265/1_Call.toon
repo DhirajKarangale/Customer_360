@@ -1,0 +1,46 @@
+call_id: CALL-DC-001
+start_timestamp: 28/09/2026 T:09:12:00
+end_timestamp: 28/09/2026 T:09:27:30
+participants[2]{id,name,role}:
+  a1f4c9e2-7b3d-41f9-9a2e-5d6b8c9f3e21,Reyansh Tiwari,customer
+  4b2d7f1a-9c6e-48a5-8d3f-2e1b6a7c4d58,Anjali Desai,insurance agent
+messages[30]{user,text}:
+  user_2,Hello, Reyansh! This is Anjali from First Guard Brokers, how are you doing today?
+  user_1,Uh, hi Anjali... I'm good, thanks. Just... uh... a bit rushed actually.
+  user_2,No worries, take your time. I see you called about your health policy, right?
+  user_1,Yeah, I was looking at my portal and it says... it says "Expired". I don't get it.
+  user_2,Okay, let me pull up your policy. Can you confirm your policy number please?
+  user_1,Sure... it's HP-2024-987654.
+  user_2,[typing] One sec, let me check… 
+  user_2,[hold music] *soft instrumental music playing*
+  user_2,Alright, I have it here. Looks like the policy indeed hit its end date on 15/08/2026.
+  user_1,[sighs] Oh man, I thought it was still active. I have a couple of appointments coming up.
+  user_2,Yeah, I get that. So we have a few options – we can renew, we can switch to a new plan, or we can let it lapse if you don’t need it.
+  user_1,Um, can we... can we maybe renew? What’s the process?
+  user_2,Sure thing. Normally we’d just extend the term for another year. But first we need to verify a few details – like your current address and any recent claims.
+  user_1,Okay, my address is still 45 Greenfield Lane, Apt 3B.
+  user_2,Got it… [typing] Updating your record now.
+  user_2,While I do that, any recent hospital visits or claim submissions we should note?
+  user_1,No, nothing major. Just a routine check‑up last month, but that was covered under OPD.
+  user_2,Alright, that’s good. *dog barks faintly in background* Let me just run the eligibility check.
+  user_2,[hold music] *music continues*
+  user_2,Okay, all clear. The renewal premium would be ₹12,500 per annum, same as last year, with a 5% loyalty discount applied.
+  user_1,Um… that's a bit higher than I expected. Any chance of a lower premium?
+  user_2,Well, we could look at a higher deductible option or maybe drop the maternity cover if you don’t need it.
+  user_1,Yeah, I don’t need maternity. And maybe a higher deductible… what would that look like?
+  user_2,If we raise the deductible to ₹10,000, the premium drops to about ₹11,200.
+  user_1,That sounds better. Can we go ahead with that?
+  user_2,Sure, just need your verbal consent to modify the policy terms.
+  user_1,Yes, I consent. Please go ahead.
+  user_2,Great. I'm processing the change now… [typing] 
+  user_2,[hold music] *music fades after a few seconds*
+  user_2,All set! Your policy is now renewed till 15/08/2027 with the higher deductible. You’ll get an updated policy document emailed to you shortly.
+  user_1,Awesome, thanks! Oh, and... sorry, I forgot to ask – what about the claim settlement time? I had a slow experience last year.
+  user_2,Right, we’ve actually improved our turnaround. For in‑network hospitals, claims are settled within 5‑7 business days now.
+  user_1,That’s good to hear. Anything else I should know?
+  user_2,Just a heads‑up – the new policy includes tele‑consultation coverage up to 8 visits per year, free of charge.
+  user_1,Nice! That’ll be useful. Thanks a lot, Anjali.
+  user_2,My pleasure, Reyansh. Anything else on your mind?
+  user_1,No, that’s all. Sorry for the long call.
+  user_2,No problem at all. Have a great day and stay safe!
+  user_1,You too! Bye.

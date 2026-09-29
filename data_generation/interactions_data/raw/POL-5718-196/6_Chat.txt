@@ -1,0 +1,13 @@
+chat_id: c9f3a2b1-7e4d-4c9a-9f2b-6d5e8a1c3f7b
+participants[2]{id,name,role}:
+  5d2e9c3a-1f4b-4d8e-9a2b-3c6f7d8e9a0b,Dev Chatterjee,customer
+  a7b3c9d2-4e5f-6a7b-8c9d-0e1f2a3b4c5d,Neha Kapoor,insurance agent
+messages[8]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T09:15:12,"hey neha, just checking if my HomeShield policy is active now? the old one was supposed to expire today", 
+  user_2,28/09/2026 T09:15:45,"Hey Dev! Yes, the new policy is live from 01/10/2026. The previous one officially expired on 30/09/2026. All set!", 
+  user_1,28/09/2026 T09:16:20,"great! can you send me a quick summary of the coverage? maybe a pdf?", 
+  user_2,28/09/2026 T09:17:02,"Sure thing, just uploaded the summary. Here you go:",https://storage.dcoders.com/docs/HomeShield_Summary_2026-2027.pdf
+  user_1,28/09/2026 T09:18:10,"got it, thx! also, will i get a reminder before next renewal? *renewal", 
+  user_2,28/09/2026 T09:18:45,"Absolutely, we’ll send a reminder 30 days before the next renewal date (30/09/2027). Anything else I can help with?", 
+  user_1,28/09/2026 T09:19:30,"that's all, cheers :)", 
+  user_2,28/09/2026 T09:20:00,"Happy to help! Have a great day, Dev.",

@@ -1,0 +1,13 @@
+chat_id: c6f9a2b4-3e1d-4c9a-8f7b-2d5e9a1c6b3e
+participants[2]{id,name,role}:
+  e3b9f1c2-7a4d-41f5-9c8e-5d2a6b9f0c1d,Kunal Mehta,customer
+  a7d4c9e5-2b6f-4c8a-9d1e-3f7b0a6e8d2f,Anita Sharma,insurance agent
+messages[8]{user,timestamp,text,media_url}:
+  user_1,30/09/2026 T09:15:12,"hey anita, got the email with bank details & checklist 👍",
+  user_2,30/09/2026 T09:15:45,"Great Kunal! Let me know if you need any help with the form.",
+  user_1,30/09/2026 T09:16:30,"will send the signed declration*declaration & valuation pdf tomorrow morning. any specific subject line for email?",
+  user_2,30/09/2026 T09:17:10,"Just use 'Home Policy Docs - Kunal Mehta' as subject, that helps us track.",
+  user_1,30/09/2026 T09:18:05,"got it. also, can i do the $850 bank transfer today? need the account number again.",
+  user_2,30/09/2026 T09:18:50,"Sure, here it is: Account No: 987654321, IFSC: DCOD0001234, Bank: DCoders Trust Bank. Let me know once done.",
+  user_1,30/09/2026 T09:20:12,"transfer done, sent a screenshot. pls confirm receipt.",https://storage.dcoders.com/uploads/transfer_screenshot_20260930.png
+  user_2,30/09/2026 T09:21:00,"Received the screenshot, thanks! Once we get the signed docs tomorrow, we'll move policy from Pending to Active.",

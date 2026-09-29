@@ -1,0 +1,8 @@
+mail_id: 9f3b2c1d-55aa-44bb-99cc-1234567890ab
+subject: Health Plus Plus Upgrade Confirmation & Next Steps
+participants[2]{id,name,email,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Aditi Mahajan,aditi.mahajan@dcoders.com,customer
+  e5f6g7h8-7777-8888-9999-0000aaaabbbb,Karan Joshi,karan.joshi@safe-step.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,12/09/2026 T:09:15:00,"Dear Aditi,\n\nThank you for signing the e‑signature form for the Health Plus Plus upgrade. I’ve attached the finalized policy document and the updated premium invoice for your reference.\n\nKey details:\n- New annual premium: ₹12,480 (12% increase over your current plan)\n- Deductible: unchanged at ₹5,000\n- Coverage limits: enhanced to ₹10 Lakhs in‑hospital and ₹2 Lakhs for outpatient services\n- Additional benefits: alternative‑therapy coverage, annual health check‑up, and tele‑medicine services\n- Effective date: 05/10/2026 (the day after your current policy expires)\n- Auto‑debit option: available; please confirm if you’d like us to set this up.\n\nPlease review the attached documents and let me know if you have any questions or if you’d like to proceed with the auto‑debit arrangement.\n\nBest regards,\nKaran Joshi\nSafe Step Insurance",https://storage.safe-step.com/docs/HealthPlusPlus_Policy_ADITI_2026.pdf
+  user_1,user_2,,12/09/2026 T:10:02:15,"Hi Karan,\n\nGot the documents, thanks. I’d like to go ahead with the auto‑debit option. Please let me know the next steps to set that up.\n\nThanks,\nAditi",

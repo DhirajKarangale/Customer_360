@@ -1,0 +1,21 @@
+call_id: REC-DC-001A
+start_timestamp: 28/09/2026 T:09:15:00
+end_timestamp: 28/09/2026 T:09:27:00
+participants[2]{id,name,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Reyansh Tiwari,customer
+  d4e5f6g7-7777-8888-9999-aaaaBBBBCCCC,Vikram Patel,insurance agent
+messages[14]{user,text}:
+  user_1,"Hey, uh, is this Vikram? ... [00:00]"
+  user_2,"Yes, speaking. Hi Reyansh, how can I help you today?"
+  user_1,"I was just checking on my health policy... I think it might be... expired? ... [00:15]"
+  user_2,"Let me pull that up. One sec... [typing]"
+  user_2,"Okay, I see policy #HC-2023-9876. It actually shows an expiration date of 15/09/2026. So yeah, it's just passed."
+  user_1,"Ah, okay. So... what does that mean for me? Can I still use it?"
+  user_2,"Once a health policy expires, you can't file new claims. You can renew, though—there's a renewal window up to 30 days after expiry."
+  user_1,"Umm, I didn't get any renewal notice. [sighs] I guess I missed it."
+  user_2,"No worries, we can still process a renewal. It'll just be a new term starting 01/10/2026, with a small lapse fee."
+  user_1,"Got it. What are the premiums now? I think they went up."
+  user_2,"The new annual premium is $1,250, up from $1,100 last year, due to the updated medical cost index."
+  user_1,"Alright... I need to think about it. Can you send me the renewal quote via email?"
+  user_2,"Sure thing, I'll email you the quote right after we hang up. Anything else?"
+  user_1,"No, that's all. Thanks, Vikram."

@@ -1,0 +1,19 @@
+call_id: REC-INS-005C
+start_timestamp: 30/09/2026 T:14:10:00
+end_timestamp: 30/09/2026 T:14:13:30
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Kiara Sen,customer
+  e5f6g7h8-1234-56ij-klmn-0987654321cd,Sunita Agarwal,insurance agent
+messages[12]{user,text}:
+  user_1,[00:00] Hi Sunita, it's Kiara. I just saw the cancellation confirmation—uh—can we talk about it quickly?
+  user_2,[00:07] Sure, Kiara. I’m here—yeah—what’s on your mind?
+  user_1,[00:12] I’m just a bit worried, you know, that the policy is now expired and I might need coverage soon… [sighs]
+  user_2,[00:18] I totally get that. The policy officially ended on 15 Sept 2026, so you’re not covered after that date.
+  user_1,[00:24] Right, and I was wondering—uh—if there’s any way to get a short‑term bridge coverage while I sort things out?
+  user_2,[00:31] We do have a 30‑day bridge rider. It’s a separate quote, about 8% higher than your previous premium, but it kicks in immediately.
+  user_1,[00:38] Oh, okay… 8% is still a lot for me right now. Could I maybe just get a quote and think about it?
+  user_2,[00:44] Absolutely. I’ll fire off an email right after this call with the details and a link to sign if you decide.
+  user_1,[00:50] Thanks. Also, just to confirm, there’s no outstanding balance, right?
+  user_2,[00:55] Correct—no premiums due, no penalties. Your account is clean.
+  user_1,[01:02] Great. I’ll review the bridge option and get back to you. Appreciate your help, Sunita.
+  user_2,[01:08] No problem at all, Kiara. Feel free to call back anytime. Take care!

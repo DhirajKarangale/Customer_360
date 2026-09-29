@@ -1,0 +1,23 @@
+call_id: a7c9e3f2-1b4d-4f9a-9c2e-6d5b7a8c9d0e
+start_timestamp: 28/09/2026 T:09:15:00
+end_timestamp: 28/09/2026 T:09:19:30
+participants[2]{id,name,role}:
+  a7c9e3f2-1b4d-4f9a-9c2e-6d5b7a8c9d0e,Akanksha Bhatt,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[16]{user,text}:
+  user_1,[00:00] Hello? Hi, is this Suresh? I’m calling about my health policy.
+  user_2,[00:05] Hi Akanksha, yes Suresh here from Secure Life Solutions. I can hear you, can you hear me?
+  user_1,[00:08] Yeah, I can hear you. Good morning.
+  user_2,[00:12] Great. So you wanted to check the status of your policy, right?
+  user_1,[00:15] Uh, yeah. I just got the welcome email and... umm... I want to make sure it’s active.
+  user_2,[00:20] Let me pull it up... [typing] ...Okay, I’ve got your policy number SH-2026-0457 here. It shows as Active.
+  user_1,[00:30] Perfect!—actually, I have a quick question about the coverage for outpatient procedures.
+  user_2,[00:35] Sure, go ahead.
+  user_1,[00:38] Does the plan cover OPD consultations and diagnostic tests like MRI? I have a scan scheduled next week.
+  user_2,[00:44] Yes, it does. OPD consultations are covered up to 80% after the deductible, and MRI is covered 70% after the limit. You’ll just need a pre‑authorization.
+  user_1,[00:55] Got it. How do I get that pre‑authorization? Do I need to call the hospital?
+  user_2,[01:00] You can either have the hospital submit the request electronically, or I can file it for you if you send me the doctor’s recommendation. Which do you prefer?
+  user_1,[01:05] I’ll ask the hospital to send it directly. Can you confirm the email address they should use?
+  user_2,[01:10] Absolutely, they can send it to preauth@securelifesolutions.com. Once we receive it, we’ll process it within 24‑48 hours. Anything else?
+  user_1,[01:15] No, that’s all. Thanks for the help! [sighs of relief]
+  user_2,[01:18] You’re welcome, Akanksha. Have a great day and stay healthy!

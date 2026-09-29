@@ -1,0 +1,35 @@
+call_id: CALL-20260928-07
+start_timestamp: 28/09/2026 T:10:15:00
+end_timestamp: 28/09/2026 T:10:33:00
+participants[2]{id,name,role}:
+  9f1c2a3b-7e4d-4f8a-9c2b-6d5e7f8a9b0c,Kavya Iyer,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[28]{user,text}:
+  user_1,Hello? ... can you hear me?
+  user_2,Hi Kavya, this is Suresh from Secure Life Solutions at DCoders. How can I help you today?
+  user_1,Umm... I wanted to double‑check that my life policy L‑2026‑0459 is now active. I paid the premium yesterday.
+  user_2,Let me pull that up… one sec.
+  user_2,[hold music]
+  user_2,Thanks for holding, Kavya. I see the payment was received at 09:58 today and the policy status changed to Active at 10:02.
+  user_1,Great! Also, I wanted to confirm that my mother, Anjali Iyer, is still the primary beneficiary.
+  user_2,Yes, Anjali Iyer is listed as primary. And your sister, Meera Iyer, is the secondary beneficiary as we updated.
+  user_1,Perfect. One thing—I noticed a small discrepancy in the address on the schedule. It shows 45 Oak St, but I moved to 78 Pine Ave.
+  user_2,Ah, sorry about that. Let me correct it. Could you confirm the full new address?
+  user_1,Sure, it's 78 Pine Avenue, Apt 3B, Bengaluru, Karnataka, 560001.
+  user_2,Got it. Updating now… [typing]
+  user_2,All set. The address has been updated in the system. You'll receive an updated schedule via email shortly.
+  user_1,Thanks. Also, I was wondering about the claim process in case something happens. Could you walk me through it again?
+  user_2,Sure thing. If you need to file a claim, you can log into our portal, go to “Claims”, fill the claim form, attach any required docs, and submit.
+  user_2,For a life policy, usually we need a death certificate and the ID of the beneficiary. Once submitted, we review within 3‑5 business days and payout follows.
+  user_1,Got it. Do I need to provide any medical reports?
+  user_2,No, not for a standard claim. Only the death certificate and ID.
+  user_1,[dog barks] Sorry, my dog just barked. One sec.
+  user_1,Okay, I'm back.
+  user_2,No worries. Anything else you need help with?
+  user_1,Actually, I wanted to know if there’s any way to set up automatic premium payments.
+  user_2,Yes, we can set up auto‑debit from your bank account. I can send you the enrollment form.
+  user_1,Please do. Also, could you send the updated policy PDF again? I misplaced the last one.
+  user_2,Sure, I’ll email it right after this call. Anything else?
+  user_1,That's all for now, thanks!
+  user_2,You’re welcome, Kavya. Have a great day!
+  user_2,[call ends]

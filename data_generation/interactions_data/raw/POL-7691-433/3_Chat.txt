@@ -1,0 +1,13 @@
+chat_id: c3d4e5f6-7890-12cd-ef01-3456789012cd
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Atharv Pandey,customer
+  b2c3d4e5-6789-01bc-def0-2345678901bc,Vikram Patel,insurance agent
+messages[8]{user,timestamp,text,media_url}:
+  user_1,30/09/2026 T10:02:15,"hey vikram, just saw the quote u sent. looks good but i have a q about the premiun*premium.", 
+  user_2,30/09/2026 T10:02:50,"hi atharv! happy to help. what’s your question?", 
+  user_1,30/09/2026 T10:03:12,"the $1250 seems a bit high compared to last year's $1150. any chance of a discnt*discount?", 
+  user_2,30/09/2026 T10:04:00,"i understand. we can offer a 5% loyalty discount, bringing it to $1187.50. does that work?", 
+  user_1,30/09/2026 T10:04:30,"thx! that’s better. can we go ahead and renew? i need the new policy doc*docs asap.", 
+  user_2,30/09/2026 T10:05:05,"sure thing. i’ll process the renewal now and email the updated policy. you’ll get it within the hour.", 
+  user_1,30/09/2026 T10:05:35,"awesome, thx! also, can you confirm the effective date? is it tday*today or tomorrow?", 
+  user_2,30/09/2026 T10:06:10,"the renewal will be effective today, 30/09/2026, right after the current policy expires at 11:59pm.",

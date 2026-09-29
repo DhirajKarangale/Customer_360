@@ -1,0 +1,14 @@
+chat_id: 3f9e2b1c-4d5a-6b7c-8d9e-0f1a2b3c4d5e
+participants[2]{id,name,role}:
+  9f1c2a3b-4d5e-6f78-90ab-cdef12345678,Aaradhya Verma,customer
+  a2b3c4d5-6e7f-8a9b-0c1d-2e3f4b5c6d7e,Anjali Desai,insurance agent
+messages[9]{user,timestamp,text,media_url}:
+  user_1,12/10/2026 T09:15:30,"hey anjali, i got your email about the 3‑month extension. can you send me the signing link?", 
+  user_2,12/10/2026 T09:16:10,"Hi Aaradhya! Sure, I just sent the link to your email. Let me know if you have any trouble.", 
+  user_1,12/10/2026 T09:16:45,"got it, but when i click it says 'page not found' *found* maybe something wrong?", 
+  user_2,12/10/2026 T09:17:20,"Oops, sorry about that! I think the link got corrupted. I’ll generate a new one right now.", 
+  user_1,12/10/2026 T09:18:05,"thanks! also can you confirm the discount is applied? 5% off the premiun right?", 
+  user_2,12/10/2026 T09:18:45,"Yes, the 5% discount is applied to the three‑month extension. The total comes to $1,140 (instead of $1,200).", 
+  user_1,12/10/2026 T09:19:30,"great, i’ll sign asap. do i need to do anything else for my upcomming surgery coverage?", 
+  user_2,12/10/2026 T09:20:10,"Once you sign, the coverage will be active immediately. No extra steps needed—just bring your policy number to the hospital.", 
+  user_1,12/10/2026 T09:20:45,"awesome, thanks for the help! :)",

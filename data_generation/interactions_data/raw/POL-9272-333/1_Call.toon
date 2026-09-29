@@ -1,0 +1,21 @@
+call_id: CALL-DC-20260928-001
+start_timestamp: 28/09/2026 T:09:15:00
+end_timestamp: 28/09/2026 T:09:18:50
+participants[2]{id,name,role}:
+  a3f9c2e1-5b6d-4f8a-9c12-3d7e9b0a1f2c,Sai Kumar,customer
+  d7e4b9f3-8c1a-4e2d-9b6f-5a0c3d7e8b9f,Ravi Menon,insurance agent
+messages[14]{user,text}:
+  user_1,[00:00] Hello? ... uh, hi, this is Sai Kumar. I was calling about my home insurance policy.
+  user_2,[00:05] Hi Sai, this is Ravi Menon from Secure Future Group. Yes, I can hear you. How can I help?
+  user_1,[00:12] Umm, I just got a notice that my policy is about to expire... I think it says expired already?
+  user_2,[00:18] Let me pull up your file... [typing] ... okay, I see the Home Policy #HF-2023-0456. It indeed expired on 15/08/2026.
+  user_1,[00:30] Oh, really? I... I thought it was still active. What does that mean for my house coverage?
+  user_2,[00:38] Since it's expired, the coverage stopped on the expiry date. If any incident happens now, it won't be covered unless you renew.
+  user_1,[00:45] Got it. Can I renew today? What’s the process? ... I’m a bit... worried.
+  user_2,[00:55] Sure, we can renew over the phone. I’ll need to confirm a few details and payment method.
+  user_1,[01:05] Okay, umm... my address is still 12 Green Lane, Bangalore. The bank account is same as before, but I’d prefer to use my credit card.
+  user_2,[01:15] Perfect. I’ll send you a renewal quote... [sighs] ... It’ll be $1,250 annual. Does that work?
+  user_1,[01:25] Yeah, that’s fine. Let’s go ahead.
+  user_2,[01:35] Great, I’ve processed the renewal. You’ll receive an email confirmation shortly. Anything else I can help with?
+  user_1,[01:45] No, that’s all. Thanks, Ravi.
+  user_2,[01:50] You’re welcome, Sai. Have a good day!

@@ -1,0 +1,20 @@
+call_id: REC-INS-0047
+start_timestamp: 30/09/2026 T:14:05:00
+end_timestamp: 30/09/2026 T:14:12:30
+participants[2]{id,name,role}:
+  a3f9c2d4-7b1e-4a9e-9f3b-2d5c8e1a7b6f,Vivaan Gupta,customer
+  d4e2b1a9-5c3f-4d8a-8e7b-9a1c0f6e3d2b,Anjali Desai,insurance agent
+messages[12]{user,text}:
+  user_1,Hey Anjali, it's Vivaan. Got a sec?
+  user_2,Yeah, hi Vivaan—sure thing. How can I help you today?
+  user_1,So I was looking at the home policy... I think the new limits are good, but I just noticed the renewal date is coming up fast.
+  user_2,Right, the policy is set to expire on 05/10/2026. We had that 30‑day free extension in place, remember?
+  user_1,Yeah, I remember. Uh, I’m actually thinking maybe I don’t want to renew this year. My plans are changing.
+  user_2,[sighs] I get that. Just to confirm, you’d like us to let the policy run its course and then let it lapse, no auto‑renew?
+  user_1,Exactly. I don’t need the coverage after the current term ends. Can we just close it out?
+  user_2,Sure, no problem. I’ll mark it as “will expire” on our end. You’ll still have the 30‑day extension, so it’ll stay active until 04/11/2026, then it’ll expire automatically.
+  user_1,Okay, sounds good. Will I get any final statement or something?
+  user_2,Yes, I’ll email you a final “policy expiration” notice with the exact end date and a summary of the coverage period. Anything else you need?
+  user_1,Uh, maybe just a quick recap of the discount I got? I don’t want any surprise charges.
+  user_2,Of course. The 10% bundle discount on your auto policy stays in effect until the home policy expires, so you won’t see any extra premium after 04/11. All set?
+  user_1,All set. Thanks, Anjali. Appreciate the help.

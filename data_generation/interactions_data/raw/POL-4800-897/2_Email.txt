@@ -1,0 +1,8 @@
+mail_id: 7f9c3a2e-5b1d-4e9a-8c2f-1a2b3c4d5e6f
+subject: Policy Cancellation Confirmation – Health Policy HP-123456
+participants[2]{id,name,email,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Kunal Mehta,kunal.mehta@dcoders.com,customer
+  e5f6g7h8-1234-56ij-90kl-0987654321cd,Ravi Menon,ravi.menon@securefuturegroup.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,02/10/2026 T:09:15:00,"Dear Kunal,\n\nAs discussed on our call earlier today, I have processed the cancellation of your health policy (Policy No: HP-123456) effective 30 September 2026. Since the policy is set to expire on that date and you have opted not to renew, there will be no prorated refund.\n\nPlease find attached the official cancellation confirmation for your records.\n\nIf you have any further questions or need assistance with future coverage options, feel free to reach out.\n\nBest regards,\nRavi Menon\nInsurance Agent\nSecure Future Group",https://storage.securefuturegroup.com/docs/Cancel_HP-123456_30092026.pdf
+  user_1,user_2,,02/10/2026 T:10:05:12,"Hi Ravi,\n\nThanks for the confirmation and the attached document. I’ve noted the cancellation details.\n\nRegards,\nKunal Mehta",

@@ -1,0 +1,8 @@
+mail_id: e3f9a2c4-7b1d-4e9a-9c3f-5d6e7f8a9b0c
+subject: Health Policy Renewal Quote – Action Required Within 7 Days
+participants[2]{id,name,email,role}:
+  1a2b3c4d-5e6f-7g8h-9i0j-111213141516,Vikram Patel,vikram.p@dcoders.com,insurance agent
+  9f8e7d6c-5b4a-3c2d-1e0f-212223242526,Rohan Deshmukh,rohan.d@dcoders.com,customer
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,28/09/2026 T:09:15:00,"Dear Rohan,\n\nThank you for speaking with me earlier today. As discussed, your current health policy (Policy No: HP-2024-56789) expired on 15/09/2026. We can renew it for another 12 months at the same premium of $1,200 per annum, provided payment is received within the next 7 days (by 05/10/2026).\n\nPlease find attached a detailed quote and the renewal form. Simply sign the form and return it to me via email or upload it through our portal.\n\nIf you have any questions or need to adjust coverage, let me know and I’ll be happy to assist.\n\nBest regards,\nVikram Patel\nInsurance Agent\nOmni Insurance Group\nPhone: +1-800-555-0199\nEmail: vikram.p@dcoders.com",https://storage.dcodelabs.com/renewals/HP-2024-56789_Quote_Renewal.pdf
+  user_2,user_1,,28/09/2026 T:10:02:00,"Hi Vikram,\n\nGot the quote – thanks for sending it over so quickly. I’ll review the details today and get the signed form back to you before the deadline.\n\nJust one quick question: does the renewal include the same outpatient specialist coverage we had before?\n\nThanks,\nRohan",

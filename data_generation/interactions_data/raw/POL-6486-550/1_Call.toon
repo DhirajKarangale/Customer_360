@@ -1,0 +1,19 @@
+call_id: a3f9c2d1-8b4e-4f6a-9c2e-1d3b5f6a7c8d
+start_timestamp: 29/09/2026 T:10:00:00
+end_timestamp: 29/09/2026 T:10:06:00
+participants[2]{id,name,role}:
+  5d2e9b1c-7a4f-4c3a-9f6e-2b1d8c7e9a0f,Dev Chatterjee,customer
+  9c1f3a5b-2e6d-48b9-8a1c-3d4e5f6b7c8d,Suresh Deshmukh,insurance agent
+messages[12]{user,text}:
+  user_1,[00:00] Hello? Umm... is this Suresh from Secure Life Solutions?
+  user_2,[00:05] Yes, hi Dev, this is Suresh. I can hear you, can you hear me?
+  user_1,[00:10] Yeah, yeah... I can hear you. Thanks. I was calling about my health policy.
+  user_2,[00:15] Sure, let me pull up your details. One sec... [typing]
+  user_2,[00:25] ...Okay, I see here your policy number is HL-45789 and it's... uh... expired as of 15/08/2026.
+  user_1,[00:30] Oh no, expired? I thought it was still active.
+  user_2,[00:35] Yeah, the system shows it lapsed. Did you get a renewal notice?
+  user_1,[00:40] I... I don’t think so. I guess I missed it.
+  user_2,[00:45] No worries, we can discuss renewal options. Or if you want to let it stay expired, that's fine too.
+  user_1,[00:50] Honestly, I’m not sure I need it anymore. I’ve been... [sighs] ...considering switching.
+  user_2,[00:55] I understand. If you decide to let it stay expired, we’ll close it in the system. If you want a new policy, I can quote you right now.
+  user_1,[01:00] Let’s... let’s keep it expired for now. I’ll think about it later. Thanks for confirming.

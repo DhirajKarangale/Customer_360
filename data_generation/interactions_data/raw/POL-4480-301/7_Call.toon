@@ -1,0 +1,21 @@
+call_id: REC-DC-007
+start_timestamp: 15/10/2026 T:14:05:12
+end_timestamp: 15/10/2026 T:14:09:45
+participants[2]{id,name,role}:
+  9f2c3a1b-7e5d-4b9a-9c1e-2f5d6a8b9c0d,Vihaan Patel,customer
+  d4e5f6a7-8b9c-0d1e-2f3a-4b5c6d7e8f9a,Neha Kapoor,insurance agent
+messages[14]{user,text}:
+  user_1,[00:00] Hi, um... this is Vihaan Patel. I'm calling about my auto policy. I think it's... it's about to expire? Actually I want to cancel it.
+  user_2,[00:10] Hello Vihaan, this is Neha from Shield Life Services. Sure, I can help. Can you confirm your policy number?
+  user_1,[00:18] Yeah, it's SH-112233. I... I just realized I won't be driving the car anymore.
+  user_2,[00:25] I see. So you want to terminate the coverage effective immediately, or let it run to the natural expiry date?
+  user_1,[00:32] I'd prefer to... uh... let it just expire. I don't want any further charges.
+  user_2,[00:40] Okay, I can put a cancellation request. That will set the policy status to 'Expired' on the current expiry date, which is 30 Sep 2027. Just to confirm, that's okay?
+  user_1,[00:48] Wait, 2027? I thought it was 2026. Did we... uh... did we renew again?
+  user_2,[00:55] Sorry, let me check. [typing] ... Yes, the policy we renewed on 1 Oct 2026 runs for 12 months, so it expires 30 Sep 2027. If you want it to expire now, I can process an early cancellation, but there might be a short‑rate penalty.
+  user_1,[01:05] I'd rather not pay anything extra. Can we just let it run out and I won't be billed?
+  user_2,[01:12] Since you have a saved Visa on file, we can set the renewal to not auto‑renew. The policy will stay active until 30 Sep 2027, then automatically become expired. No further premium will be charged after that date.
+  user_1,[01:20] Got it. So basically I'm done. Thanks for confirming.
+  user_2,[01:25] You're welcome, Vihaan. I'll send you an email summary with the cancellation note and the updated policy term. Anything else I can help with?
+  user_1,[01:30] No, that's all. Bye.
+  user_2,[01:32] Bye.

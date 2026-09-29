@@ -1,0 +1,13 @@
+chat_id: 9f3b7c2a-6d4e-41a9-8b2f-5e9c1d7a4e12
+participants[2]{id,name,role}:
+  a1c9e5f0-3b7d-4f2a-9c1e-2d6b8f7a9c01,Meera Chauhan,customer
+  d4e2b6a3-8f1c-4d9e-9a3b-7c5e2f1b8d34,Ravi Menon,insurance agent
+messages[8]{user,timestamp,text,media_url}:
+  user_1,01/10/2026 T10:15:30,"hi ravi, i*I got your email about the reinstatement fee. is the fee *mandatory? can i pay in parts?", 
+  user_2,01/10/2026 T10:16:05,"Hey Meera! Yes, the reinstatement fee is standard and must be paid to reactivate the policy. However, we can split the total ₹14,800 into 2 installments if that helps.", 
+  user_1,01/10/2026 T10:16:45,"oh ok thanks. how would the instalments work? do i*I need to sign again?", 
+  user_2,01/10/2026 T10:17:20,"We’ll need the signed reinstatement form you got in the email. Once we have that, you can pay ₹7,400 now and the remaining ₹7,400 after 30 days. No extra charge for splitting.", 
+  user_1,01/10/2026 T10:18:10,"got it. i*I’ll fill the form and send it back. can i email it or upload here?", 
+  user_2,01/10/2026 T10:18:45,"You can upload the scanned form right here in the chat, or email it to reinstatement@dcoders.com. Let me know which you prefer.", 
+  user_1,01/10/2026 T10:19:30,"i*I’ll upload now, thanks for the help!", 
+  user_2,01/10/2026 T10:22:05,"Got the form, Meera. We’ll process the first payment once you make the transfer. Let me know if you need the bank details.",

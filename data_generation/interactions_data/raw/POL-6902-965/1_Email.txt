@@ -1,0 +1,8 @@
+mail_id: 7f3a9c2e-5b1d-4e8a-9c3f-1d2b6f8e4a7b
+subject: Urgent: Auto Policy Expiration – Policy #AV-45231
+participants[2]{id,name,email,role}:
+  d9c4f1a2-7e3b-4a6d-8f9c-2b5e7d9a0c3e,Vedant Thakur,vedant.thakur@personalmail.com,customer
+  a6b2e5f9-3c4d-4f7a-9b1e-8d2c5f6a7b9c,Neha Kapoor,neha.kapoor@shieldlifeservices.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,28/09/2026 T:09:15:22,"Hi Neha,\n\nI just received a notice that my auto policy (Policy #AV-45231) has expired. I was under the impression it would be active until the end of the month. This is quite frustrating as I need coverage for an upcoming trip. Can you tell me why it expired early and what my options are for reinstating it?\n\nThanks,\nVedant", 
+  user_2,user_1,,28/09/2026 T:10:03:07,"Dear Vedant,\n\nI’m sorry to hear about the inconvenience caused by the unexpected expiration of your auto policy. After reviewing your account, I see that the policy reached its scheduled expiry on 15 September 2026, as per the original term you selected. There was no automatic renewal set up, which is why the coverage ceased on that date.\n\nTo get you back on the road without delay, we can:\n1. Reinstate the same policy retroactively for up to 30 days (subject to underwriting approval).\n2. Issue a new policy effective immediately, with a modest discount for loyalty.\n\nI’ve attached a renewal quote outlining both options. Please let me know which route you’d prefer, or if you have any other questions.\n\nBest regards,\nNeha Kapoor\nInsurance Agent – Shield Life Services\nPhone: +1‑800‑555‑0199\nEmail: neha.kapoor@shieldlifeservices.com",https://storage.dcodelife.com/docs/AutoPolicy_AV-45231_RenewalQuote_2026.pdf

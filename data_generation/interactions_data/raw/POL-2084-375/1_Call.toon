@@ -1,0 +1,25 @@
+call_id: CALL-DC-20260929-001
+start_timestamp: 29/09/2026 T:09:15:00
+end_timestamp: 29/09/2026 T:09:32:00
+participants[2]{id,name,role}:
+  a1f3c9e2-7b4d-4f2a-9c1e-5d6b8f7a9c10,Kavya Iyer,customer
+  d4e5f6a7-8b9c-0d1e-2f3a-4b5c6d7e8f90,Neha Kapoor,insurance agent
+messages[18]{user,text}:
+  user_1,[00:00] Hello? Hi, is this... uh... Neha? I’m calling about my health policy.
+  user_2,[00:05] Hey Kavya, good morning! Yeah, it’s Neha from Shield Life Services. How can I help you today?
+  user_1,[00:12] Yeah, um... I got an email saying my policy is... getting cancelled? I’m a bit confused.
+  user_2,[00:18] Oh, I see. Let me pull up your file… [typing] …Okay, I have it here. Your policy number is HP-459823, right?
+  user_1,[00:25] Yes, that’s the one. I didn’t expect it to be cancelled. What’s going on?
+  user_2,[00:30] Well… there were a few missed premium payments last quarter, and the system flagged it for cancellation. We sent a reminder on 10/09, but I don’t see a payment recorded.
+  user_1,[00:38] Ah… I think I missed that email. I’ve been swamped at work. Is there any way to reinstate it?
+  user_2,[00:44] We can definitely try. If we get the outstanding premium of $120 cleared today, we can halt the cancellation. Otherwise… the status will move to “Cancelled” by end of day tomorrow.
+  user_1,[00:52] Hmm… let me check my bank. [sighs] I think I can do a quick transfer now.
+  user_2,[00:58] Great! I’ll put the hold on the policy while you do that. Just let me know once it’s done.
+  user_1,[01:05] Okay, I just sent the payment. Should be there in a few minutes.
+  user_2,[01:12] Got it! I see the payment posted. I’ve re‑activated your coverage effective immediately. You’re all set.
+  user_1,[01:18] Thank you so much, Neha. I really appreciate the help.
+  user_2,[01:22] No problem at all, Kavya. Anything else I can assist with?
+  user_1,[01:27] Actually… can you confirm the next premium due date?
+  user_2,[01:32] Sure thing. Your next premium is due on 15/12/2026. I’ll also send you a confirmation email.
+  user_1,[01:38] Perfect. Thanks again. Bye.
+  user_2,[01:42] Bye, take care!

@@ -1,0 +1,15 @@
+chat_id: b7e3f9a2-5c4d-4b9e-8f1a-2d6c3e7b9a0f
+participants[2]{id,name,role}:
+  c1a9f4e2-7b3d-4f8a-9c2e-6b5d1f8a2c34,Isha Agarwal,customer
+  a2d3c5b6-9e8f-4a1b-8c7d-3f6e9b0d1c2f,Ravi Menon,insurance agent
+messages[10]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T10:15:02,"hey ravi, just wanted to double check that my auto‑pay is all set up? thx!", 
+  user_2,28/09/2026 T10:15:10,"Hey Isha! Yep, I see the auto‑pay enrollment for HC‑2026‑0456 is active. You’ll get the premium debited on 15 Oct.", 
+  user_1,28/09/2026 T10:15:45,"great! also, can you resend the link to the policy doc? lost it on my phone", 
+  user_2,28/09/2026 T10:15:55,"Sure thing, here’s the updated policy PDF:",https://storage.dcoders.com/policies/HC-2026-0456.pdf
+  user_1,28/09/2026 T10:16:20,"got it, thanks! one more thing – is there any way to get a discount if I bundle flood coverage? *bundle", 
+  user_2,28/09/2026 T10:16:35,"Good question! Adding flood coverage to your home policy gives a 5% discount on the combined premium. Let me know if you’d like me to add it.", 
+  user_1,28/09/2026 T10:16:50,"yeah, please add it. also, can you confirm the deductible stays at $500 for the new bundle?", 
+  user_2,28/09/2026 T10:17:05,"All set – flood coverage added, deductible remains $500 per claim. You’ll see the updated premium in your next statement.", 
+  user_1,28/09/2026 T10:17:30,"awesome, thx for the help! that's all i need for now.", 
+  user_2,28/09/2026 T10:17:45,"You’re welcome! Anytime you have questions, just ping me. Have a great day!",

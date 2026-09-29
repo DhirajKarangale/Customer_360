@@ -1,0 +1,8 @@
+mail_id: 9f3c2b1a-7d4e-4f9a-8c3e-2b6d9f5a7c1e
+subject: Home Policy Activation & Deductible Confirmation
+participants[2]{id,name,email,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Isha Agarwal,isha.agarwal@example.com,customer
+  d4c3b2a1-8765-09ba-fedc-0987654321ba,Ravi Menon,ravi.menon@securefuturegroup.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,02/10/2026 T:09:15:00,"Hi Ravi,\n\nThanks for the quick call earlier. I’ve just re‑uploaded the proof‑of‑residence document as requested. Could you please confirm that the home policy (Policy No: HC-2026-0456) is now active? Also, could you reconfirm the deductible amount we discussed? I’d like to have everything in writing before the policy goes live.\n\nBest regards,\nIsha Agarwal",
+  user_2,user_1,,02/10/2026 T:10:05:00,"Dear Isha,\n\nI’m pleased to inform you that we have received the proof‑of‑residence document and your home policy (Policy No: HC-2026-0456) is now active in our system. The deductible for this policy is $500 per claim, as we discussed.\n\nPlease find the updated policy document attached for your records.\n\nIf you have any further questions or need assistance, feel free to reach out.\n\nWarm regards,\nRavi Menon\nInsurance Agent\nSecure Future Group",https://storage.securefuturegroup.com/policies/HC-2026-0456.pdf

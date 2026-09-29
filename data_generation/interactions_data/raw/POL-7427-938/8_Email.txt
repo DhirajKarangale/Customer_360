@@ -1,0 +1,8 @@
+mail_id: a1b2c3d4-5678-90ab-cdef-1234567890ab
+subject: Updated Home Insurance Policy – Active Confirmation
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Kiara Sen,kiara.sen@dcoders.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Singh,vikram.s@protectall.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,29/09/2026 T:10:15:00,"Hi Kiara,\n\nI’m pleased to let you know that your home insurance policy is now active with all the recent updates applied. Below is a quick summary of the current coverage:\n\n• Personal‑property limit: $150,000\n   – Electronics sub‑limit: $5,000 (laptop covered)\n   – Smartwatch covered up to $2,000 (receipt on file)\n   – 55‑inch TV added under personal‑property (value covered as per receipt)\n• Monthly premium: $84.00 (reflects the $1,200 TV addition)\n\nThe revised policy document is attached for your records. Please review it at your convenience and let me know if you have any questions or need further assistance.\n\nThank you for choosing ProtectAll through DCoders. We’re here for you.\n\nBest regards,\nVikram Singh\nInsurance Agent, ProtectAll Agency",https://storage.protectall.com/policies/DCoders_Kiara_Sen_Home_2026_Rev.pdf
+  user_1,user_2,,29/09/2026 T:10:45:12,"Hi Vikram,\n\nThanks for the confirmation and the updated policy document. I’ve reviewed everything and everything looks good. I appreciate the quick handling of the TV and smartwatch additions.\n\nBest,\nKiara",

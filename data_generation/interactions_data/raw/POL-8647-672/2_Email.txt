@@ -1,0 +1,8 @@
+mail_id: 9f2c7b1e-3a4d-4f9b-8c6e-2d5a1b9c0e7f
+subject: Re: Confirmation of Auto Policy Renewal – Policy #AU-45219
+participants[2]{id,name,email,role}:
+  a1f3c9e2-7b44-4d9a-8c2f-1e5b6a9d3f0b,Rahul Jain,rahul.jain@example.com,customer
+  d4e6f8b1-2c3a-4e7d-9a1b-5c8d0e2f3a7c,Ramesh Tiwari,ramesh.tiwari@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,28/09/2026 T:09:15:30,"Hi Ramesh,\n\nThanks for the quick call earlier. Could you please send me the updated policy document and confirm the auto‑debit schedule for the renewal?\n\nPolicy Number: AU-45219\n\nRegards,\nRahul Jain",
+  user_2,user_1,,28/09/2026 T:10:05:12,"Dear Rahul,\n\nIt was a pleasure assisting you today. I’m happy to confirm that your auto policy (Policy No. AU-45219) has been successfully renewed and is now active until 31/08/2027. The annual premium of $1,150.00 will be deducted automatically on 01/09/2026 via the bank account ending in ****1234.\n\nPlease find attached the updated policy schedule for your records.\n\nIf you have any further questions, feel free to reach out.\n\nBest regards,\nRamesh Tiwari\nInsurance Agent, Safe Shield Agency\nDCoders\nramesh.tiwari@dcoders.com",https://storage.dcoders.com/policies/AU-45219_Renewed_2026.pdf

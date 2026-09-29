@@ -1,0 +1,15 @@
+chat_id: 7f9c2a1b-3d4e-4f6a-9b2c-1e5d8f9a0b2c
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Kiara Sen,customer
+  d4e5f6a7-89ab-cdef-0123-456789abcdef,Neha Kapoor,insurance agent
+messages[10]{user,timestamp,text,media_url}:
+  user_1,15/09/2026 T09:12:05,"hey neha, quick q: does my plan cover physio sessions after knee surgery?",
+  user_2,15/09/2026 T09:12:12,"Hi Kiara! Yes, it does. We cover up to 20 sessions per year with a 20% co‑pay.",
+  user_1,15/09/2026 T09:12:30,"great! do i need a doc from physio to claim?",
+  user_2,15/09/2026 T09:12:38,"You’ll need the physiotherapist’s treatment plan and receipts. I’ll send you a template.",https://storage.dcodelife.com/docs/Physio_Claim_Template.pdf
+  user_1,15/09/2026 T09:13:05,"thx! also, can i get a copy of my policy pdf again? lost the email.",
+  user_2,15/09/2026 T09:13:15,"Sure thing, here’s the latest policy doc.",https://storage.dcodelife.com/docs/Policy_Kiara_Sen_2026.pdf
+  user_1,15/09/2026 T09:13:25,"awesome, thx *thanks! :)",
+  user_2,15/09/2026 T09:13:30,"You’re welcome! Let me know if anything else comes up.",
+  user_1,15/09/2026 T09:13:45,"actually, i also need to add a dependent – my spouse. how do i do that?",
+  user_2,15/09/2026 T09:13:55,"You can add a spouse via the portal or I can submit the request for you. I’ll need her full name, DOB, and ID. Send them over when ready.",

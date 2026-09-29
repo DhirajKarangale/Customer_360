@@ -1,0 +1,9 @@
+mail_id: 7f3b9c2e-5d1a-4f8b-9c6e-2a1d4e7f9b0c
+subject: Confirmation of Home Insurance Renewal – Policy #HC-2026-7854
+participants[3]{id,name,email,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Sai Kumar,sai.kumar@example.com,customer
+  d7e8f9g0-7777-8888-9999-aaaa1111bbbb,Ravi Menon,ravi.menon@securefuture.com,insurance agent
+  9abcdeff-1234-5678-90ab-cdef12345678,Support Team,support@dcoders.com,customer support
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,user_3,02/09/2026 T:09:15:00,"Dear Sai,\n\nThank you for speaking with me earlier today. As discussed, we have successfully renewed your Home Insurance policy (Policy #HC-2026-7854) for the period 16 August 2026 to 15 August 2027 at a premium of $1,250.\n\nKey details:\n- Coverage Amount: $250,000\n- Effective Date: 16 August 2026\n- Expiry Date: 15 August 2027\n- Premium: $1,250 (paid in full)\n\nPlease find the updated policy document attached for your records. Should you have any questions or need further assistance, feel free to reply to this email or call us at 1800‑555‑1234.\n\nBest regards,\nRavi Menon\nInsurance Agent, Secure Future Group\nDCoders\nravi.menon@securefuture.com",https://storage.dcoders.com/policies/HC-2026-7854_Renewed.pdf
+  user_1,user_2,user_3,02/09/2026 T:10:02:12,"Hi Ravi,\n\nGot the renewal confirmation and the attached policy document – thank you for the quick turnaround. Everything looks good.\n\nI’ll keep the policy details handy and let you know if anything changes on my end.\n\nThanks again!\n\nBest,\nSai Kumar",

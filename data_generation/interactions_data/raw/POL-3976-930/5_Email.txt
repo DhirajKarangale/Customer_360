@@ -1,0 +1,8 @@
+mail_id: 7f8e9d0c-1b2a-3c4d-5e6f-7a8b9c0d1e2f
+subject: Auto Policy AU‑4589 – Renewal Confirmation & Documents
+participants[2]{id,name,email,role}:
+  1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d,Karan Joshi,karan.joshi@safestepinsurance.com,insurance agent
+  9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f,Vedant Thakur,vedant.thakur@dcoders.com,customer
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,05/10/2026 T:09:15:00,"Dear Vedant,\n\nThank you for completing the payment for your auto policy renewal (Policy No: AU‑4589). I’m pleased to confirm that your new coverage will be effective from 02 Oct 2026 and will remain in force until 30 Sep 2027.\n\nAttached you will find the updated policy schedule and a PDF of your insurance certificate for your records.\n\nIf you have any questions or need further assistance, please don’t hesitate to reach out.\n\nBest regards,\nKaran Joshi\nInsurance Agent | Safe Step Insurance\nPhone: +1‑555‑123‑4567\nEmail: karan.joshi@safestepinsurance.com",https://storage.safestepinsurance.com/policies/AU-4589_2026-2027.pdf
+  user_2,user_1,,05/10/2026 T:09:45:00,"Hi Karan,\n\nGot the policy documents – everything looks good. Thanks for the swift handling.\n\nRegards,\nVedant",

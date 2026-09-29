@@ -1,0 +1,37 @@
+call_id: CALL-20260929-1405-001
+start_timestamp: 29/09/2026 T:14:05:00
+end_timestamp: 29/09/2026 T:14:22:00
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Vivaan Gupta,customer
+  f9e8d7c6-5432-10fe-ba98-76543210fedc,Vikram Singh,insurance agent
+messages[30]{user,text}:
+  user_1,Hello is this ProtectAll I am Vivaan
+  user_2,Hi Vivaan this is Vikram speaking how can I help you today
+  user_1,Um I wanted to check the status of my life policy LC‑2026‑0456
+  user_2,Sure let me pull that up one moment
+  user_2,[hold music]
+  user_2,Alright I have the record here it shows pending right now
+  user_1,Yes I thought it might be pending I made the payment yesterday
+  user_2,Okay let me verify the payment
+  user_2,[typing]
+  user_2,Got it the payment of twelve hundred dollars cleared this morning
+  user_1,Great so can we activate it now
+  user_2,Absolutely I will switch the status to active right away
+  user_2,One sec while I update the system
+  user_2,[hold music]
+  user_2,[dog barks] 
+  user_2,All set the policy is now active
+  user_1,Thank you Thats a relief
+  user_2,You will also receive a confirmation email in a few minutes
+  user_1,Okay I will look out for that
+  user_2,Do you have any other questions about the policy
+  user_1,Actually I wanted to confirm the annual premium amount
+  user_2,The premium is twelve hundred dollars per year
+  user_1,Can we set up auto pay for that
+  user_2,Sure I will send you the auto pay link now
+  user_2,One moment let me copy the link
+  user_2,[typing]
+  user_2,Here is the link https://pay.protectall.com/autopay?policy=LC‑2026‑0456
+  user_1,Got it I will click that after we finish
+  user_2,Also I will email you the PDF copy of the policy
+  user_2,Anything else I can help with today

@@ -1,0 +1,14 @@
+chat_id: a3f9b2c4-7e1d-4a9b-9c3e-5d6f8a2b1c0d
+participants[2]{id,name,role}:
+  9f2e1d4b-8c33-4a7e-b5f2-1a9c6d3e7b5f,Samar Ghosh,customer
+  d4c7a9e2-3b1f-4d8c-9a6e-2f5b8c0d1e3a,Sunita Agarwal,insurance agent
+messages[9]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T10:02:15,"hey sunita, i just uploaded the receipt for the kitchen cabinets but not sure if it went through.", 
+  user_2,28/09/2026 T10:02:45,"Hi Samar! Let me check that for you. One moment please.", 
+  user_2,28/09/2026 T10:03:20,"I see the file, but the size is 6.2 MB which exceeds our 5 MB limit. Could you compress it or split it?", 
+  user_1,28/09/2026 T10:04:05,"oh sorry, i didn't realize that. How do i compress? any tool reccomend*recommend?", 
+  user_2,28/09/2026 T10:04:45,"No worries! You can use free tools like Smallpdf or WinZip. Just make sure each file is under 5 MB.", 
+  user_1,28/09/2026 T10:05:30,"got it, will do that now. also, can i see the status of my policy premium payment? i think it's due soon.", 
+  user_2,28/09/2026 T10:06:10,"Sure thing. Your next premium of $1,250 is due on 15 Oct 2026. You can pay via the portal, auto‑debit, or cheque.", 
+  user_1,28/09/2026 T10:07:00,"thanks! one last thing – if i need to make a claim later, can i do it through the same portal? any guide link?", 
+  user_2,28/09/2026 T10:07:45,"Absolutely. The portal handles claim submissions. Here’s the step‑by‑step guide.",https://storage.dcodelabs.com/guides/claim_process_home.pdf

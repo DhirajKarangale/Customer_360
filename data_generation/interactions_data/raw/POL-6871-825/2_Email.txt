@@ -1,0 +1,8 @@
+mail_id: 9f3c2a1b-7e4d-4f9a-9c12-5b6e8d7a9c3f
+subject: Re: Confirmation of Travel Policy Activation for October Trip
+participants[2]{id,name,email,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Dhruv Kapoor,dhruv.k@dcoders.com,customer
+  d4e5f6a7-8910-11bc-2def-234567890abc,Neha Kapoor,neha.k@shieldlife.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,02/10/2026 T:09:15:00,"Hi Neha,\n\nThanks for the call earlier. Could you please send me the official travel policy document for my upcoming October trip? I want to make sure everything is in order before I finalize my bookings.\n\nBest,\nDhruv Kapoor",
+  user_2,user_1,,02/10/2026 T:09:45:00,"Dear Dhruv,\n\nIt was a pleasure speaking with you today. I have attached the Travel Insurance Policy for your October trip. The policy is now active in our system under policy number TRV-DC-2026-10. Please review the document and let me know if you have any questions or need further assistance.\n\nSafe travels!\n\nWarm regards,\nNeha Kapoor\nInsurance Agent, Shield Life Services",https://storage.shieldlife.com/policies/Travel_DC-TRV-2026-10.pdf

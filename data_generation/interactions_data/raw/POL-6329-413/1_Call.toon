@@ -1,0 +1,23 @@
+call_id: REC-DC-001A
+start_timestamp: 29/09/2026 T:14:05:00
+end_timestamp: 29/09/2026 T:14:09:35
+participants[2]{id,name,role}:
+  7f3a9c2e-1b4d-4e9a-8c2f-5d6b9a7e3c11,Kunal Mehta,customer
+  d2c5e8f4-9a6b-4f1d-b8e2-3a7c9d0e5f22,Anita Sharma,insurance agent
+messages[16]{user,text}:
+  user_1,[00:00] Hello, um... is this Anita from Trust Wealth Advisors?
+  user_2,[00:05] Yes, hi Kunal! This is Anita, how can I help you today?
+  user_1,[00:12] I... I wanted to check on the home policy we talked about last week.
+  user_2,[00:18] Sure thing. Let me pull up your file. One sec... [typing]
+  user_2,[00:25] ...Okay, got it. Your policy is still in pending status, right?
+  user_1,[00:30] Yeah, that's what I heard. Is there anything I need to do to move it forward?
+  user_2,[00:35] Basically we just need the signed declaration and the latest property valuation. Have you got those?
+  user_1,[00:42] I have the valuation report, but I... I haven't signed the declaration yet. I was waiting for clarification on the deductible.
+  user_2,[00:50] Ah, got it. The deductible for the home policy is $1,200 per claim, with a $5,000 annual aggregate. Does that work for you?
+  user_1,[00:58] Yeah, that sounds okay. Just... just send me the declaration again, please.
+  user_2,[01:05] Sure, I'll email it right after this call. Anything else on your mind?
+  user_1,[01:12] Actually, one more thing. The policy premium— is it the $850 we discussed?
+  user_2,[01:18] Yes, $850 annually, payable in a lump sum or two installments. Which do you prefer?
+  user_1,[01:25] Let's do the lump sum, that'll be easier. I'll sign and send it back today.
+  user_2,[01:30] Great, I'll mark the status as pending until we receive the signed doc. Talk soon!
+  user_1,[01:35] Thanks, Anita. Talk later.

@@ -1,0 +1,8 @@
+mail_id: 7f3a9c2e-5b1d-4f8a-9c3e-2d6b7e9a1f4c
+subject: Confirmation of Auto‑Debit Setup & Request for Authorization Form
+participants[2]{id,name,email,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Kriti Mahajan,kriti.mahajan@dcoders.com,customer
+  f1e2d3c4-9876-54ba-dcba-0987654321fe,Suresh Deshmukh,suresh.d@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,28/09/2026 T:09:15:30,"Hi Suresh,\n\nI hope you’re well. Thank you for setting up the auto‑debit for my premium payments during our call yesterday. Could you please confirm that the auto‑debit is now active and let me know the next debit date? Also, I’d like to have a copy of the authorization form for my records.\n\nThanks,\nKriti Mahajan\nPolicy #: LC-2024-56789",
+  user_2,user_1,,28/09/2026 T:09:45:12,"Dear Kriti,\n\nThanks for your email. I’ve verified that the auto‑debit has been successfully enabled for your policy (LC‑2024‑56789). The next premium debit is scheduled for 15 October 2026. Please find attached the Auto‑Debit Authorization Form for your reference.\n\nIf you have any further questions, feel free to reach out.\n\nBest regards,\nSuresh Deshmukh\nInsurance Agent, Secure Life Solutions\nsuresh.d@dcoders.com\nPhone: +1‑555‑123‑4567",https://storage.dcoders.com/docs/AutoDebit_Authorization_KM_2026.pdf

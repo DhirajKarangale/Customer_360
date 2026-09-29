@@ -1,0 +1,15 @@
+call_id: REC-HEA-007
+start_timestamp: 28/09/2026 T:14:05:00
+end_timestamp: 28/09/2026 T:14:08:30
+participants[2]{id,name,role}:
+  9f1c2a7e-4b3d-41e9-8a6f-2d5c9e1b7a33,Reyansh Tiwari,customer
+  d4e5f6a9-8c12-4b5e-9d3f-7a8b9c0d1e2f,Anjali Desai,insurance agent
+messages[8]{user,text}:
+  user_1,[00:00] Hello, um, hi Anjali? This is Reyansh. I wanted to double‑check what happens when my policy hits 30 Sept 2027.
+  user_2,[00:10] Hi Reyansh, yes I’m here. So the current policy is set to expire on that date, and unless you request a renewal, it will just lapse.
+  user_1,[00:20] Okay… so if it lapses, do I need to do anything special? Like cancel it formally?
+  user_2,[00:30] No formal cancellation needed – the system will mark it as expired automatically. [sighs] Just make sure any pending claims are submitted before 90 days after the service date.
+  user_1,[00:45] Got it. And the premium – do I have to pay anything after the expiry?
+  user_2,[00:55] Once the expiry date passes, the monthly premium stops. If you decide to re‑enroll later, we’ll set up a new premium based on the rates at that time.
+  user_1,[01:10] One more thing – the tele‑consultation coverage, does that continue after expiration, or does it end same day?
+  user_2,[01:20] It ends the day the policy expires. After that you’d need a new plan for tele‑consults. Anything else I can help with?

@@ -1,0 +1,8 @@
+mail_id: 7f3a9c1e-5b2d-4e8a-9c3f-1d2b6e7f9a0c
+subject: Your Health Policy – Renewal Options & Next Steps
+participants[2]{id,name,email,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Aditi Mahajan,aditi.mahajan@example.com,customer
+  f9e8d7c6-5432-10fe-ba98-0987654321cd,Neha Kapoor,neha.kapoor@shieldlife.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,27/09/2026 T:10:15:00,"Dear Aditi,\n\nThank you for speaking with me earlier today regarding your health policy (Policy No: HP-452378) which is set to expire on 30/09/2026. As discussed, the current plan is being phased out and cannot be renewed. I have attached a comparison of three alternative health plans that are available through Shield Life Services and are compatible with DCoders' employee benefits.\n\nPlease review the attached document at your convenience. Let me know if you have any questions or would like to discuss which option best fits your needs.\n\nBest regards,\nNeha Kapoor\nInsurance Agent – Shield Life Services\nPhone: +1-555-0123\nEmail: neha.kapoor@shieldlife.com",https://storage.dcodelife.com/docs/Health_Options_Sept2026.pdf
+  user_1,user_2,,27/09/2026 T:15:42:00,"Hi Neha,\n\nI’ve looked over the options you sent. I’m concerned about the higher premium for the Comprehensive Plus plan – it’s significantly more than what I was paying before. Is there any way to keep the cost closer to my current level while still getting adequate coverage? Also, can you clarify the network hospitals for the Standard plan?\n\nThanks,\nAditi Mahajan",

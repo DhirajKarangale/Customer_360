@@ -1,0 +1,19 @@
+call_id: REC-DC-001A
+start_timestamp: 28/09/2026 T:09:15:00
+end_timestamp: 28/09/2026 T:09:20:00
+participants[2]{id,name,role}:
+  3f9a2d1e-7c4b-4e9a-9b3f-1a2d5c6e7f89,Ishaan Bose,customer
+  a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d,Ramesh Tiwari,insurance agent
+messages[12]{user,text}:
+  user_1,[00:00] Hello umm is this Ramesh I wanted to talk about my health policy
+  user_2,[00:05] Hi Ishaan yes Ramesh Tiwari from Safe Shield Agency how can I help you today
+  user_1,[00:10] Yeah I just got a notice that my policy is about to expire I think it's already expired
+  user_2,[00:15] Let me pull up your file [typing] Okay I see policy number HP-4521 It shows the end date was 15/09/2026 so it actually expired yesterday
+  user_1,[00:25] Oh no I didn't realize what does that mean for my coverage right now
+  user_2,[00:30] Basically you’re not covered for any new claims from today forward You can renew but there’s a small lapse
+  user_1,[00:35] Can I just renew today is there any penalty
+  user_2,[00:40] Yes you can renew instantly there will be a reinstatement fee of $25 and the premium will be adjusted retroactively for the gap
+  user_1,[00:45] Okay that sounds fine can you send me the renewal details I need to sign
+  user_2,[00:50] Sure I’ll email you the renewal form right after this call Anything else
+  user_1,[00:55] No that’s all thanks
+  user_2,[01:00] You’re welcome Ishaan take care

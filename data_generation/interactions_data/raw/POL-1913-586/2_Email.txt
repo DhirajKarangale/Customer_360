@@ -1,0 +1,8 @@
+mail_id: c3f9a1e2-7b4d-41c9-9f2a-6d8e9b5c4a12
+subject: Renewal Options for Your Health Policy (Policy No: HP-2024-9876)
+participants[2]{id,name,email,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Saanvi Pillai,saanvi.pillai@dcoders.com,customer
+  e7f8g9h0-7777-8888-9999-aaaaBBBBCCCC,Neha Kapoor,neha.kapoor@shieldlife.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2026 T:14:30:00,"Dear Saanvi,\n\nThank you for speaking with me earlier today. As discussed, your current health policy (Policy No: HP-2024-9876) expired on 30/08/2026. I have attached the renewal brochure that outlines the available plans, premium rates, and the benefits you will retain.\n\nPlease review the options at your convenience and let me know which one you would like to proceed with, or if you have any questions. We can also arrange a quick call to walk through the details.\n\nLooking forward to assisting you.\n\nWarm regards,\nNeha Kapoor\nInsurance Agent, Shield Life Services\nneha.kapoor@shieldlife.com",https://storage.shieldlife.com/docs/Health_Renewal_Brochure_HP2024_9876.pdf
+  user_1,user_2,,28/09/2026 T:15:05:00,"Hi Neha,\n\nI’m quite surprised that my policy has already expired; I was under the impression it would auto‑renew. I need to know the exact cost difference between the current plan and the new one you mentioned, and whether there’s any grace period to avoid a coverage gap.\n\nCould you also confirm the date by which I need to finalize the renewal to ensure continuous coverage?\n\nThanks,\nSaanvi Pillai",

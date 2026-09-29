@@ -1,0 +1,8 @@
+mail_id: a1b2c3d4-5678-90ab-cdef-1234567890ab
+subject: Home Insurance Policy Quote Request – Rohan Deshmukh
+participants[2]{id,name,email,role}:
+  9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f,Rohan Deshmukh,rohan.d@example.com,customer
+  1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d,Sunita Agarwal,sunita.agarwal@protectallagency.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,28/09/2026 T:09:15:32,"Hi Sunita,\n\nI hope you’re well. I am interested in getting a home insurance policy for my new house at 45 Oak Street, Bangalore. Could you please provide me with a quote and let me know what documents you need from my side?\n\nThanks,\nRohan", 
+  user_2,user_1,,28/09/2026 T:10:02:10,"Dear Rohan,\n\nThank you for reaching out. I’ve prepared a preliminary quote for your home at 45 Oak Street based on a sum insured of ₹30,00,000. The annual premium comes to ₹18,750 (including GST). To move forward, we’ll need a copy of the property deed, a recent utility bill for address verification, and a fire safety certificate if available.\n\nI have attached the draft policy document for your review. Once you confirm, we can finalize the details and set the policy status to Pending in our system.\n\nBest regards,\nSunita Agarwal\nInsurance Agent, Protect All Agency\nPhone: +91-98765-43210\nEmail: sunita.agarwal@protectallagency.com",https://storage.protectallagency.com/policies/DHOME_RohanDeshmukh_2026.pdf

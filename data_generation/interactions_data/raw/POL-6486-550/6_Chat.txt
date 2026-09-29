@@ -1,0 +1,11 @@
+chat_id: a3f9c1e2-7b4d-4f2a-9c3e-1d5b6a7c8d9e
+participants[2]{id,name,role}:
+  5d2f9a1b-8c3e-4b7a-9f1e-2d3c4b5a6e7f,Dev Chatterjee,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[6]{user,timestamp,text,media_url}:
+  user_1,30/09/2026 T09:15:12,"hey suresh, quick q: is my health policy still expired? i think it was 15 aug*August 2026.", 
+  user_2,30/09/2026 T09:15:18,"Hi Dev, yes the policy (HP‑34219) expired on 15 August 2026 and is currently inactive. Let me know if you need anything else.", 
+  user_1,30/09/2026 T09:15:24,"i was hoping maybe it could be reactivated automatically? re-activated*re‑activated", 
+  user_2,30/09/2026 T09:15:33,"Unfortunately we can’t auto‑reactivate an expired health plan. You’d need to submit a renewal application or choose a new policy. I can guide you through the steps.", 
+  user_1,30/09/2026 T09:15:40,"got it, thanks. could u resend the coverage summary pdf just in case? i might need it later.", 
+  user_2,30/09/2026 T09:15:48,"Sure thing, Dev. I've attached the coverage summary again. You’ll find it here:",https://storage.dcoders.com/docs/HP-34219_Coverage_Summary.pdf

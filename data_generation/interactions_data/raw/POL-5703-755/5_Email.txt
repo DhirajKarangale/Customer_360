@@ -1,0 +1,8 @@
+mail_id: 7f9c2e1b-4a6d-41f3-9b2e-8d5c3a7e9f01
+subject: Policy Cancellation Confirmation – Auto Policy #AG-2026-015
+participants[3]{id,name,email,role}:
+  1a2b3c4d-5678-90ab-cdef-1234567890ab,Sneha Roy,sneha.roy@dcoders.com,customer
+  9f8e7d6c-5432-10fe-bcba-0987654321fe,Anjali Desai,anjali.desai@firstguardbrokers.com,insurance agent
+  3d4c5b6a-1122-33dd-44ee-5566778899aa,DCoders Policy Team,policyteam@dcoders.com,insurer
+mails[1]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,user_3,21/09/2026 T:09:30:00,"Dear Sneha,\n\nI am writing to confirm that your auto insurance policy (Policy No: AG-2026-015) has been officially cancelled as per your request during our call on 20/09/2026. The policy will remain expired as of 15/08/2026 and no further premiums will be charged.\n\nPlease find attached the formal cancellation letter for your records. Should you wish to reactivate coverage in the future, simply contact us and we will be happy to assist.\n\nThank you for considering First Guard Brokers for your insurance needs.\n\nBest regards,\nAnjali Desai\nInsurance Agent, First Guard Brokers\nPhone: +91-98765-43210\nEmail: anjali.desai@firstguardbrokers.com",https://secure.dcodelabs.com/docs/PolicyCancellation_AG2026-015.pdf

@@ -1,0 +1,19 @@
+call_id: CALL-DC-001A
+start_timestamp: 28/09/2026 T:09:15:00
+end_timestamp: 28/09/2026 T:09:21:00
+participants[2]{id,name,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Kriti Mahajan,customer
+  d4e5f6g7-7777-8888-9999-aaaabbbbcccc,Karan Joshi,insurance agent
+messages[12]{user,text}:
+  user_1,[00:00] Hello? Hi um... is this Karan from Safe Step Insurance?
+  user_2,[00:05] Yes hi Kriti this is Karan I can hear you fine. How can I help you today?
+  user_1,[00:12] I was just checking on my auto policy the one for my Honda Civic I think it's about to expire?
+  user_2,[00:18] Right let me pull that up... [typing]... Yeah I see policy number AC-459823 expiry date was 15/09/2026 So it's already expired.
+  user_1,[00:27] Oh—oh really? I didn't realize I thought I had a month left.
+  user_2,[00:33] Yeah looks like it lapsed a couple weeks ago We can discuss renewal options if you like.
+  user_1,[00:40] Uh I... I'm not sure I want to renew right now My car... I might sell it soon.
+  user_2,[00:46] I understand Just so you know once the policy is expired there's a 30-day grace period where you can still reinstate but premiums may be higher.
+  user_1,[00:55] Hmm okay [sighs] Can you tell me the cost to reinstate?
+  user_2,[01:02] Sure the reinstatement premium would be about $1250 for the next 12 months given the lapse.
+  user_1,[01:10] That's a bit steep I think I'll hold off for now.
+  user_2,[01:15] No problem Kriti I'll send you an email with the details and you can decide later Anything else I can help with?

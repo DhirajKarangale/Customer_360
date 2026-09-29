@@ -1,0 +1,11 @@
+chat_id: a3f9c2e1-7b4d-4f8a-9c2e-1d5f6b8a9c3d
+participants[2]{id,name,role}:
+  d1c9a6b4-2f7e-4a5b-8c3d-9e0f1a2b3c4d,Kavya Iyer,customer
+  a5b6c7d8-9e0f-1a2b-3c4d-5e6f7a8b9c0d,Neha Kapoor,insurance agent
+messages[6]{user,timestamp,text,media_url}:
+  user_1,30/09/2026 T10:05:12,"hi neha, i think i want to cancelletion* cancellation of my health policy now. can u help?", 
+  user_2,30/09/2026 T10:05:45,"Hey Kavya! Sure thing, I’m on it. Just to confirm, you’re referring to policy HP-DC-2024-5678, right?", 
+  user_1,30/09/2026 T10:06:20,"yes, that’s the one. i already paid the last premium $120 on 01/12/2026.", 
+  user_2,30/09/2026 T10:07:05,"Thanks for confirming. Since the premium is paid, the policy is active till 15 December 2026. If you proceed with cancellation, the effective date will be 31/12/2026 and any refundable amount will be processed to your bank.", 
+  user_1,30/09/2026 T10:08:10,"ok thx. do i need to fill any form or sign anything? *any", 
+  user_2,30/09/2026 T10:09:00,"No extra forms needed, I’ll submit the cancellation request now. You’ll get a confirmation email shortly. Let me know if you need anything else!",

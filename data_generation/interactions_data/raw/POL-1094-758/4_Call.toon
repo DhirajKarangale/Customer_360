@@ -1,0 +1,40 @@
+call_id: REC-INS-004A
+start_timestamp: 05/10/2026 T:09:00:00
+end_timestamp: 05/10/2026 T:09:30:30
+participants[2]{id,name,role}:
+  7f9c2e1a-4b3d-4a9f-8e2c-1a2b3c4d5e6f,Kiara Sen,customer
+  d3a5b6c7-8e9f-0a1b-2c3d-4e5f6a7b8c9d,Vikram Singh,insurance agent
+messages[33]{user,text}:
+  user_1,[09:00] Hi, uh, this is Kiara Sen. I... I think my auto policy just expired? [dog barks]
+  user_2,[09:01] Good morning Kiara, this is Vikram Singh from ProtectAll Agency. Yes, I see the policy expired yesterday. How can I help?
+  user_1,[09:02] I got a call earlier... and I was told I could renew now. I... umm, I need to make sure I'm covered for my car.
+  user_2,[09:03] Sure thing. Let me pull up your file... one sec.
+  user_2,[09:04] (hold music) Please hold while I check the details.
+  user_1,[09:05] (typing) ... okay.
+  user_2,[09:06] Alright, I have your policy number SH-112233. It expired on 09/09/2026. We can renew for another year at $1,080.
+  user_1,[09:07] $1,080? That's... uh, same as before? I think that's fine.
+  user_2,[09:08] Yes, we offered you a discounted renewal. I can process it right now.
+  user_1,[09:09] Great. I just need to confirm the payment method. Can I use the same credit card on file?
+  user_2,[09:10] Let me verify... one moment.
+  user_2,[09:11] (hold music) ... (soft music) ...
+  user_2,[09:11] Looks like the card ending in 4242 is still active. Should I go ahead?
+  user_1,[09:12] Yes, please. And... uh, could you send the new policy docs to my email? It's kiara.sen@example.com.
+  user_2,[09:13] Absolutely. I'll email you the PDF right after we finish here.
+  user_1,[09:14] Thanks. By the way, how's the weather there? It's raining here.
+  user_2,[09:15] Oh, it's sunny in my part of town. Good day for a drive!
+  user_1,[09:16] Haha, nice. I hope I can get out of the house soon.
+  user_2,[09:17] Before we wrap, let me double-check the coverage limits. Your liability is $100,000 each person, $300,000 per accident, and comprehensive deductible $500.
+  user_1,[09:18] That sounds right. Anything else I should know?
+  user_2,[09:19] Just a heads-up: the renewal will be effective 10/01/2026 and will run until 09/30/2027.
+  user_1,[09:20] Got it. Oh, also... I have a question about adding a new driver, my brother. Is that possible now?
+  user_2,[09:21] Sure, we can add him. It will adjust the premium slightly. Do you want to add him now or later?
+  user_1,[09:22] Let's do it now. His name is Alex Sen, DOB 03/15/1995, license number D1234567.
+  user_2,[09:23] Thanks. Adding him will increase the premium by $120. So total will be $1,200.
+  user_1,[09:24] That's okay. Go ahead.
+  user_2,[09:25] Done. I've updated the policy. The new total is $1,200. I'll reflect that in the email.
+  user_1,[09:26] Perfect. Anything else I need to sign?
+  user_2,[09:27] Just the renewal agreement, which you'll get in the email. Once you sign and return, the policy is active.
+  user_1,[09:28] Great, thanks for your help, Vikram.
+  user_2,[09:29] My pleasure, Kiara. If you need anything else, feel free to call. Have a good day!
+  user_1,[09:30] You too. Bye.
+  user_2,[09:30

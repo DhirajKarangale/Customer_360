@@ -1,0 +1,22 @@
+call_id: REC-DC-004C
+start_timestamp: 28/09/2026 T:14:05:00
+end_timestamp: 28/09/2026 T:14:12:30
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Anvi Desai,customer
+  f1e2d3c4-8765-43ba-9cde-0987654321fe,Anita Sharma,insurance agent
+messages[15]{user,text}:
+  user_2,[00:00] Hi Anvi this is Anita Sharma from Trust Wealth Advisors at DCoders I’m calling about your health policy just wanted to check in after the email and chat we had.
+  user_1,[00:07] Oh hi Anita... yeah I got the email and the brochure Thanks for sending that.
+  user_2,[00:12] Great So I see the renewal form was attached Did you get a chance to look at it?
+  user_1,[00:18] I opened it yeah... but I’m still a bit fuzzy on the specialist‑visit coverage. Like do I need pre‑authorization for each consult?
+  user_2,[00:25] Right let me clarify—under the Comprehensive plan you’re covered for specialist visits after the first 30 days but each visit does require a pre‑authorization unless it’s an emergency. The pre‑auth can be done through our portal or by calling the provider line.
+  user_1,[00:35] Okay that helps. And the deadline to submit the renewal—what’s the cut‑off?
+  user_2,[00:40] The renewal deadline is 15 Oct 2026. If we get the signed form in by then the policy will reactivate retroactively to 1 Oct 2026. After that date it stays expired.
+  user_1,[00:48] Got it. I think I’m ready to go ahead. I just need to sign and send it back.
+  user_2,[00:53] Perfect. You can e‑sign the PDF and hit reply‑all or you can fax it to 1‑800‑555‑0199. Whatever’s easier.
+  user_1,[01:00] I’ll e‑sign and email it right after this call. One more thing—if I need to see a dermatologist do I have to wait for the pre‑auth?
+  user_2,[01:07] For dermatology same rule—pre‑auth is required unless it’s a direct referral from your primary doctor. The turnaround is usually 24‑48 hours.
+  user_1,[01:15] Okay thanks. I’ll send the form now. Appreciate your help.
+  user_2,[01:20] No problem Anvi. Once we receive the signed form I’ll update the system and you’ll get a confirmation email. Anything else I can help with?
+  user_1,[01:27] No that’s all. Talk soon.
+  user_2,[01:30] Thanks take care!

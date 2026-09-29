@@ -1,0 +1,8 @@
+mail_id: a3f9c2d4-7e1b-4f9a-9c3e-5b6d8f1a2c4e
+subject: Re: Cancellation Confirmation and Refund for Health Policy HP‑2024‑5678
+participants[2]{id,name,email,role}:
+  1b9e7f3a-2c4d-41a9-8f6e-3d5c9a7b0e12,Rohan Deshmukh,rohan.d@dcoders.com,customer
+  7c2d5e9f-4b8a-4c3f-9a1d-6e2f3b7c8d90,Karan Joshi,karan.j@safestepinsurance.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,30/09/2026 T:09:15:00,"Hi Karan,\n\nI hope you’re well. I wanted to check on the status of the prorated refund for my cancelled health policy (HP‑2024‑5678). I haven’t seen the credit on my card yet. Could you let me know if it’s been processed?\n\nThanks,\nRohan",
+  user_2,user_1,,30/09/2026 T:09:45:10,"Dear Rohan,\n\nThank you for reaching out. I’ve verified that the refund for your cancelled policy (HP‑2024‑5678) was processed on 24/09/2026 and should appear in your original payment method within the next 5‑7 business days. Occasionally, banks may take a couple of days to reflect the credit.\n\nIf you do not see the refund by 07/10/2026, please let me know and we’ll investigate further.\n\nBest regards,\nKaran Joshi\nInsurance Agent, Safe Step Insurance\n",

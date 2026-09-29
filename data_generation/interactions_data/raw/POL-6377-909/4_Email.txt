@@ -1,0 +1,8 @@
+mail_id: 9f3b7a12-4c1e-4d9a-8f6b-2e5c7d9a0b34
+subject: Policy Reinstatement Confirmation – Life Policy L-2026-0457
+participants[2]{id,name,email,role}:
+  a7d9e3f4-2b5c-41a9-9e8f-3c6d7b9a1e2f,Diya Menon,diya.menon@dcoders.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,suresh.d@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,30/09/2026 T:10:15:00,"Hi Suresh,\n\nI have signed the rider PDF as requested and attached it to this email. Please let me know if everything is in order and when the policy will be fully reinstated.\n\nThanks,\nDiya Menon",https://storage.dcoders.com/docs/Rider_Signed_DiyaMenon.pdf
+  user_2,user_1,,30/09/2026 T:11:05:00,"Dear Diya,\n\nThank you for sending back the signed rider. I have processed it and your life insurance policy (Policy No: L-2026-0457) is now reinstated as of today. Please find the updated policy document attached for your records.\n\nIf you have any further questions, feel free to reach out.\n\nBest regards,\nSuresh Deshmukh\nInsurance Agent, Secure Life Solutions\nDCoders",https://storage.dcoders.com/docs/Policy_Updated_DiyaMenon.pdf

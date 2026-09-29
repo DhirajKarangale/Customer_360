@@ -1,0 +1,23 @@
+call_id: REC-DC-001A
+start_timestamp: 28/09/2026 T:09:15:00
+end_timestamp: 28/09/2026 T:09:19:30
+participants[2]{id,name,role}:
+  9f3b2c7e-1a4d-4f9a-8c2e-6b5d9e2a1f33,Sneha Roy,customer
+  d7a9f4b2-5c6e-4a3d-9f1b-2e8c7d0a9b44,Vikram Patel,insurance agent
+messages[16]{user,text}:
+  user_2,[00:00] Good morning, this is Vikram Patel from Omni Insurance Group, calling from DCoders. Am I speaking with Sneha?
+  user_1,[00:05] Umm, yes, hi. This is Sneha.
+  user_2,[00:10] Thanks, Sneha. I wanted to discuss your health policy—policy number HP-4478—it's set to expire soon.
+  user_1,[00:15] Oh, really? I didn't realize that. When does it expire?
+  user_2,[00:20] It expires on 30/09/2026, so just a few days away.
+  user_1,[00:25] Ah, okay... I guess I need to decide whether to renew or let it lapse.
+  user_2,[00:30] Sure, we have a few options—renew as is, upgrade coverage, or let it go. Any preferences?
+  user_1,[00:35] Umm... I think I might want to keep the same coverage, but I'm not sure about the premium.
+  user_2,[00:40] Got it. Let me pull up the renewal quote—[typing]... Okay, the premium would be $210 per month, up from $190.
+  user_1,[00:45] That's a bit higher... can we maybe get a discount? --
+  user_2,[00:48] -- Yeah, we can check if any loyalty discount applies. One moment.
+  user_2,[00:55] [sighs] Looks like you qualify for a 5% discount, bringing it to $199.50.
+  user_1,[01:00] That's better. I think I'll go ahead with the renewal.
+  user_2,[01:05] Great! I'll send you the renewal documents via email. Anything else I can help with?
+  user_1,[01:10] No, that's all. Thanks, Vikram.
+  user_2,[01:12] You're welcome, Sneha. Have a good day!

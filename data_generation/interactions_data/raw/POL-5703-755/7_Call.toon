@@ -1,0 +1,37 @@
+call_id: REC-AG-2026-007
+start_timestamp: 30/09/2026 T:14:05:00
+end_timestamp: 30/09/2026 T:14:23:00
+participants[2]{id,name,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Sneha Roy,customer
+  d4c3b2a1-9999-8888-7777-666655554444,Anjali Desai,insurance agent
+messages[30]{user,text}:
+  user_1,Hello? Umm, hi, is this Anjali? I... I wanted to talk about my auto policy.
+  user_2,Hi Sneha, yes this is Anjali from First Guard Brokers. How can I help you today?
+  user_1,I got the email about the cancellation, and I... I was wondering if there's any way to reactivate it, maybe with a grace period?
+  user_2,Oh, I see. Let me pull up your policy—one sec—[typing]…
+  user_2,[hold music]
+  user_2,Alright, I have it here. Policy AG‑2026‑015 was cancelled effective 15 Aug 2026, as per your request.
+  user_1,Yeah, that's right. But I’m actually thinking maybe I made a mistake, I still need coverage for my car.
+  user_2,Umm, I understand. The policy is currently expired. We could issue a new quote, but there would be a short gap in coverage.
+  user_1,Is there any penalty for re‑instating? Like a late fee?
+  user_2,There’s no penalty per se, but the premium might be slightly higher because of the lapse. Let me check the rates—[typing]…
+  user_2,[hold music]
+  user_2,Okay, based on your vehicle—2022 Honda Civic, 5‑door, insured for ₹6,00,000—the new annual premium would be around ₹12,500 after discount.
+  user_1,Hmm, that's a bit more than before. Can I maybe go for a six‑month term?
+  user_2,Sure, we can do a six‑month policy. That would be half the annual rate, roughly ₹6,300.
+  user_1,Great. What about payment options? I prefer net banking.
+  user_2,We accept net banking, credit/debit cards, UPI, and also a direct debit. I can send you a secure payment link right now.
+  user_1,Okay, send it over. Also, I have a quick question—my dog was barking loudly while I was on the call earlier, sorry about the background noise.
+  user_2,No worries at all! [laughs] I actually have a cat meowing in the background here.
+  user_1,[dog barks] Sorry about that again.
+  user_2,All good. Let me just email you the link. One moment—[typing]…
+  user_2,[hold music]
+  user_2,Email sent. You should see a PDF attachment with the quote and a payment link.
+  user_1,Got it. Let me open… okay, looks fine. I’ll go ahead and pay now.
+  user_2,Perfect. Once the payment is processed, we’ll issue the new policy immediately and send you the certificate.
+  user_1,Sounds good. Oh, by the way, any chance I could keep the same policy number? It would be easier for my records.
+  user_2,Unfortunately once a policy is cancelled, we assign a new number. This one will be AG‑2026‑078.
+  user_1,Alright, that’s fine. Thanks for clarifying.
+  user_2,You’re welcome! Anything else I can help with?
+  user_1,No, that’s all. Appreciate your help, Anjali.
+  user_2,My pleasure. Have a great day, Sneha. Bye!

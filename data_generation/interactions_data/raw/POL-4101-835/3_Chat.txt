@@ -1,0 +1,11 @@
+chat_id: a3f9c2e1-5b4d-4f9a-8c2e-1d3b6f9e7a12
+participants[2]{id,name,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Diya Menon,customer
+  b2c3d4e5-7777-8888-9999-aaaabbbbcccc,Karan Joshi,insurance agent
+messages[6]{user,timestamp,text,media_url}:
+  user_1,06/10/2026 T10:15:12,"hi, i need help with my home policy renewal. it’s expiring 15 Oct. can i get a short grace‑perod *period extension or renew now? also, whats the premium diff for 30L coverage?",
+  user_2,06/10/2026 T10:15:20,"Hey Diya! Good morning 😊. I see your policy HP‑2024‑5678 expires on 15 Oct 2026. We can extend the grace period by 15 days, or you can renew today. The ₹30 L sum insured will cost an extra ₹1,200 per year over the ₹25 L plan.",
+  user_1,06/10/2026 T10:15:27,"thnaks! *thanks can i just keep the same coverage (25L) and renew today? i’m not sure about the extra cost.",
+  user_2,06/10/2026 T10:15:35,"Sure thing, we can process renewal for the same ₹25 L coverage right away. The annual premium will be ₹12,500 (same as before). I’ll send you the renewal confirmation shortly.",
+  user_1,06/10/2026 T10:15:45,"actually, i’ll let it expire. i’m moving out of the house soon. can you confirm the policy will be marked as expired on 15 Oct?",
+  user_2,06/10/2026 T10:15:53,"Got it, Diya. I’ll update the system to let the policy lapse on 15 Oct 2026. If you need any future coverage, just let us know. Thank you for being with us!",

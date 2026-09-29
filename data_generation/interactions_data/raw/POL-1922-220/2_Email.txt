@@ -1,0 +1,8 @@
+mail_id: 9f2c7e1a-4b3d-11e7-9f3b-2c9b0d5f6a12
+subject: Your Home Insurance Policy HC‑2026‑0459 is Now Active
+participants[2]{id,name,email,role}:
+  1a2b3c4d-1111-2222-3333-444455556666,Krishna Das,krishna.das@example.com,customer
+  7e8f9a0b-7777-8888-9999-aaaaabbbbbcc,Vikram Singh,vikram.singh@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2026 T:09:15:00,"Dear Krishna,\n\nI am pleased to inform you that your Home Insurance policy (Policy No: HC‑2026‑0459) has been activated as of today. Your coverage includes dwelling protection, personal property, and liability up to the limits outlined in the attached policy document.\n\nEffective Date: 28/09/2026\nPolicy Status: Active\n\nShould you have any questions or need further assistance, please do not hesitate to reach out.\n\nBest regards,\nVikram Singh\nInsurance Agent, ProtectAll Agency\nDCoders",https://dcoders.com/policies/HC-2026-0459.pdf
+  user_1,user_2,,28/09/2026 T:09:45:12,"Hi Vikram,\n\nThank you for the confirmation and the policy document. Could you please let me know the payment options and the due date for the first premium?\n\nThanks,\nKrishna",

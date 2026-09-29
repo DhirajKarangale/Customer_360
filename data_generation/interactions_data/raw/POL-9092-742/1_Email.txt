@@ -1,0 +1,7 @@
+mail_id: d8274f9a-84b2-4d23-b102-19eafb83c011
+subject: Urgent: Regarding DCoders Health Policy Expiry Status
+participants[2]{id,name,email,role}:
+  c1928374-56a1-43ef-b821-918273645012,Krishna Das,krishna.das@workmail.com,customer
+  a9283746-12b3-45cd-9e81-726354890123,Ramesh Tiwari,ramesh.tiwari@safeshieldagency.com,insurance agent
+mails[1]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,14/10/2024 T:11:30:22,"Dear Ramesh,\n\nI am writing to check the status of my DCoders corporate health insurance policy (Policy ID: DC-HLT-2023-8891). I noticed in the portal that it shows as active, but HR mentioned it was supposed to transition to expired at the end of last month.\n\nCould you please look into the system and ensure the target end status is correctly updated to 'Expired' as per my resignation terms? I want to make sure there's no overlapping coverage or billing issues with my new employer's plan.\n\nLooking forward to your prompt clarification.\n\nRegards,\nKrishna Das",

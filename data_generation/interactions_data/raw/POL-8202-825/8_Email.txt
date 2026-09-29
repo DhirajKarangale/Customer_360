@@ -1,0 +1,8 @@
+mail_id: e3f9c2a1-4b5d-4e9a-8c12-3f6d9b7a0c1e
+subject: Confirmation of Policy Expiry and Claim Window – Health Policy HP-2026-987654
+participants[2]{id,name,email,role}:
+  1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d,Tanvi Saxena,tanvi.saxena@dcoders.com,customer
+  9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f,Sunita Agarwal,sunita.agarwal@protectallagency.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,05/08/2027 T:09:15:00,"Dear Tanvi,\n\nAs discussed on our call today, your health policy (Policy No: HP-2026-987654) will lapse on 30 September 2027. You have a 15‑day post‑expiry claim window until 15 October 2027 for any services rendered up to the expiry date. Please find attached the final policy statement and a summary of the claim process.\n\nIf you need any assistance filing a claim within this window, feel free to reach out. We will also send you a reminder on 1 August 2027 as promised.\n\nThank you for choosing DCoders and Protect All Agency.\n\nBest regards,\nSunita Agarwal\nInsurance Agent\nProtect All Agency\nsunita.agarwal@protectallagency.com",https://storage.dcodelife.com/policies/HP-2026-987654_Final_Statement_2027.pdf
+  user_1,user_2,,05/08/2027 T:10:02:30,"Hi Sunita,\n\nThank you for the confirmation and the documents. I understand the claim window and will get in touch if I need to file any claims before 15 October. Please also let me know if there is any outstanding balance or final premium due.\n\nBest,\nTanvi",

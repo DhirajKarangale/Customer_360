@@ -1,0 +1,8 @@
+mail_id: 9f3b7c2e-8a4d-4f1a-b9e2-6d5c9e1a7f4b
+subject: Updated Deductible Change and Renewal Quote – Policy #AV-45231
+participants[2]{id,name,email,role}:
+  a1c9d4e2-7f3b-41b2-9e6f-3d2a5f8c9b01,Vedant Thakur,vedant.thakur@dcoders.com,customer
+  b2e7f1a9-4c6d-48e3-9b7a-5f1d2c3e8a04,Neha Kapoor,neha.kapoor@shieldlife.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,03/10/2026 T:09:15:42,"Hi Neha,\n\nThanks for the updated quote. I see the premium increase for the $750 deductible. Before I finalize, could you confirm the total annual premium and the effective date of the change? Also, could you please send me the revised policy documents?\n\nPolicy Number: AV-45231\n\nThanks,\nVedant", 
+  user_2,user_1,,03/10/2026 T:10:02:17,"Dear Vedant,\n\nThank you for your email. The revised annual premium, including the $15 administration fee, is $1,250. The deductible change to $750 will be effective immediately and will be reflected in the upcoming renewal on 15 September 2027.\n\nPlease find attached the updated policy schedule and the revised quote for your records.\n\nIf you have any further questions or need additional assistance, feel free to let me know.\n\nBest regards,\nNeha Kapoor\nInsurance Agent, Shield Life Services",https://storage.shieldlife.com/policies/AV-45231_RevisedQuote_2026.pdf

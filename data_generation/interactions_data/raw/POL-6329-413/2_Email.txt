@@ -1,0 +1,8 @@
+mail_id: 7c9f2e1b-4a6d-43b9-8f2e-1d5c9a7b3e0f
+subject: Home Insurance Policy – Declaration Form & Next Steps
+participants[2]{id,name,email,role}:
+  1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d,Kunal Mehta,kunal.mehta@dcoders.com,customer
+  9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f,Anita Sharma,anita.sharma@trustwealth.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2026 T:10:15:00,"Hi Kunal,\n\nThanks for speaking with me earlier today. As discussed, attached is the Home Insurance Declaration Form for your pending policy (Policy No.: H-DC-2026-0045). The key terms are:\n- Deductible: $1,200\n- Annual Premium: $850 (payable as a lump‑sum)\n\nPlease review, sign, and return the completed form along with your property valuation report. Once we receive the signed documents, I’ll update the policy status to ‘Pending’ and process your lump‑sum payment.\n\nFeel free to reach out if you have any questions.\n\nBest regards,\nAnita Sharma\nInsurance Agent, Trust Wealth Advisors",https://storage.trustwealth.com/forms/Declaration_Home_2026_001.pdf
+  user_1,user_2,,28/09/2026 T:11:02:30,"Hi Anita,\n\nI’ve received the declaration form – thank you. I’ll sign it and send it back together with the valuation report attached below. Once you have both documents, please go ahead with the lump‑sum payment setup.\n\nAppreciate your help!\n\nThanks,\nKunal Mehta\nDCoders",https://storage.dcodelabs.com/uploads/ValuationReport_KunalMehta_20260928.pdf

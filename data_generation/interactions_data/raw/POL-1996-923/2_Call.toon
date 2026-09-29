@@ -1,0 +1,24 @@
+call_id: REC-INS-002C
+start_timestamp: 02/10/2026 T:14:05:00
+end_timestamp: 02/10/2026 T:14:10:30
+participants[2]{id,name,role}:
+  a1f3c9d2-4b6e-4a9f-8c2d-1e5f9b7c0a12,Akanksha Bhatt,customer
+  9d7e2b5f-3c44-4d9a-9f6e-2a1b8c4d5e6f,Anita Sharma,insurance agent
+messages[17]{user,text}:
+  user_2,[00:00] Hello, Akanksha? This is Anita from Trust Wealth Advisors. Can you hear me okay?
+  user_1,[00:05] Uh, yeah... I can hear you. Hi Anita.
+  user_2,[00:10] Great. I just wanted to follow up on the health policy renewal we emailed you yesterday.
+  user_1,[00:15] Oh right, the one with the discounted premium... I saw the doc but... I have a couple of questions.
+  user_2,[00:20] Sure, go ahead.
+  user_1,[00:25] First, the premium is ₹11,875 for a year, right? That's a bit higher than I expected.
+  user_2,[00:30] Yeah, the base rate is... uh... after the discount it's ₹11,875. It's actually 12% lower than your previous renewal.
+  user_1,[00:35] Okay... and the coverage dates? Since my old policy expired on... was it 31st March?
+  user_2,[00:40] Exactly, it lapsed on 31/03/2026. The new policy will start from 01/04/2026 and run till 31/03/2027.
+  user_1,[00:45] Got it. And the payment methods? Can I do it via netbanking or do I need to send a cheque?
+  user_2,[00:50] You can do netbanking, UPI, or credit card. We’ll send you a payment link right after this call.
+  user_1,[00:55] Sounds good. One more thing... if I need to cancel later, what's the process?
+  user_2,[01:00] If you decide to cancel before the policy term ends, there's a 30‑day notice period and a small cancellation fee proportional to the remaining months.
+  user_1,[01:05] Alright, thanks. I'll go ahead and pay today.
+  user_2,[01:10] Perfect. I'll email the payment link now. Let me know once it's done and I'll activate the policy.
+  user_1,[01:15] Will do. Thanks for the help, Anita.
+  user_2,[01:20] You're welcome, Akanksha. Have a great day!

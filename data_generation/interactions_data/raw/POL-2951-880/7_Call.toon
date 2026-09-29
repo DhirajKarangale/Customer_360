@@ -1,0 +1,17 @@
+call_id: CALL-7-20260930-9f3b2a
+start_timestamp: 30/09/2026 T:10:05:00
+end_timestamp: 30/09/2026 T:10:10:15
+participants[2]{id,name,role}:
+  a1c9e8d2-4f7b-11ee-bf5a-0242ac130003,Anvi Desai,customer
+  b2d4f9a1-5a12-11ee-bf5a-0242ac130003,Ravi Menon,insurance agent
+messages[10]{user,text}:
+  user_1,[00:00] Hi Ravi, um... I got the settlement statement you sent, thanks.
+  user_2,[00:12] Hi Anvi, great—glad you received it. Any other questions?
+  user_1,[00:20] Yeah, just wanted to double‑check the refund—still ₹12,450, right?
+  user_2,[00:28] Yes, that's correct. The refund was initiated yesterday and should hit your bank in 10‑15 business days.
+  user_1,[00:35] Okay… I was wondering if there’s any paperwork I need to sign again?
+  user_2,[00:40] No, all docs are already in our system. The PDF we sent covers everything. [sighs] 
+  user_1,[00:45] Got it. Also, I’m thinking maybe a new policy later this year—any loyalty discount still valid?
+  user_2,[00:50] Absolutely—5% off the base premium for returning customers on any new health policy launched this year.
+  user_1,[00:55] Thanks, that’s helpful. One more thing—will I get an SMS confirmation once the refund is processed?
+  user_2,[01:00] Yes, you’ll receive a settlement SMS as soon as the amount is credited. Anything else I can help with?

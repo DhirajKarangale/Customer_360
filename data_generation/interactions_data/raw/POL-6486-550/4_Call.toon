@@ -1,0 +1,19 @@
+call_id: REC-INS-004A
+start_timestamp: 30/09/2026 T:14:15:00
+end_timestamp: 30/09/2026 T:14:19:30
+participants[2]{id,name,role}:
+  9f8c2e1b-7a4d-4b9a-9c3e-1d5f6a7b8c9d,Dev Chatterjee,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[12]{user,text}:
+  user_1,[00:00] Hello? Suresh? ... yeah, it's Dev. Can you hear me?
+  user_2,[00:05] Hi Dev, I can hear you. How are you today?
+  user_1,[00:10] I'm good, thanks. Uh, I wanted to check on my health policy status. I think it expired? ... can you confirm?
+  user_2,[00:15] Sure, let me pull that up. -- [typing] Okay, I see it here – policy #HP-34219, expired on 15 Aug 2026.
+  user_1,[00:25] Right, that's what I thought. I'm not ready to renew right now, just wanted to make sure it's still inactive.
+  user_2,[00:30] Absolutely, it's currently marked as expired and inactive. No premiums are being charged.
+  user_1,[00:35] Okay... I might look into other options later. Could you maybe send me a summary of what was covered before it expired?
+  user_2,[00:40] Of course, I can email you the coverage summary. Anything else you need?
+  user_1,[00:45] No, that's it for now. Thanks.
+  user_2,[00:50] You're welcome. Feel free to call back when you're ready to discuss renewal or a new plan. Have a good day.
+  user_1,[00:55] Thanks, you too. Bye.
+  user_2,[01:00] Bye.

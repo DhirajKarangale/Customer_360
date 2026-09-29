@@ -1,0 +1,9 @@
+mail_id: e7b9c1f2-4a3d-11ed-9abc-0242ac120002
+subject: Re: Pre‑Authorization Form for MRI – Akanksha Bhatt
+participants[3]{id,name,email,role}:
+  1a2b3c4d-1111-2222-3333-444455556666,Akanksha Bhatt,akanksha.bhatt@example.com,customer
+  2b3c4d5e-7777-8888-9999-aaaaabbbbbcc,Suresh Deshmukh,suresh.d@dcoders.com,insurance agent
+  3c4d5e6f-dddd-eeee-ffff-gggghhhhiiii,Priya Sharma,priya.s@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,user_3,29/09/2026 T:10:15:30,"Hi Suresh,\n\nPlease find attached the completed pre‑authorization form for my MRI scheduled on 05/10/2026. Let me know if any additional information is required.\n\nThanks,\nAkanksha",https://storage.dcoders.com/forms/preauth_mri_akanksha_2026.pdf
+  user_2,user_1,user_3,29/09/2026 T:12:05:45,"Dear Akanksha,\n\nThank you for sending the completed pre‑authorization form. We have received it and forwarded it to our medical review team. You can expect a confirmation within 48 hours. Meanwhile, please bring your ID and insurance card to the imaging center on the day of the MRI.\n\nIf you have any further questions, feel free to reach out.\n\nBest regards,\nSuresh Deshmukh\nInsurance Agent, Secure Life Solutions\nDCoders",

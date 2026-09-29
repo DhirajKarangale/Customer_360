@@ -1,0 +1,19 @@
+call_id: REC-DC-001A
+start_timestamp: 28/09/2026 T:10:15:00
+end_timestamp: 28/09/2026 T:10:19:00
+participants[2]{id,name,role}:
+  1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d,Aditya Singh,customer
+  9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f,Vikram Patel,insurance agent
+messages[12]{user,text}:
+  user_2,[00:00] Hi Aditya this is Vikram Patel from Omni Insurance Group calling about your home insurance policy. Can you hear me okay?
+  user_1,[00:10] Uh yeah I can hear you. Hi Vikram.
+  user_2,[00:20] Great I just wanted to confirm a few details so we can get your policy active today.
+  user_1,[00:25] Sure what do you need?
+  user_2,[00:30] Can you confirm the address of the property? It's 24/5 Green Valley Apartments Bangalore?
+  user_1,[00:40] Um-- actually it's 24/5 Green Valley but the street is uh 12th Main Road Bangalore 560001.
+  user_2,[00:50] Got it thanks. And the type of construction? Is it a concrete frame?
+  user_1,[00:55] Yes it's an RCC structure two BHK.
+  user_2,[01:05] Perfect. Let me pull up the quote. [typing] ... Looks good. The premium is INR twelve thousand five hundred per annum payable annually. Does that work for you?
+  user_1,[01:10] Yeah that's fine.
+  user_2,[01:15] Alright I'll go ahead and set the policy status to Active. You'll receive the policy documents via email shortly. Anything else you need?
+  user_1,[01:20] No that's all. Thanks!

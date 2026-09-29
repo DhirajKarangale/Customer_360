@@ -1,0 +1,8 @@
+mail_id: d9f8c2e1-4b6a-4f3e-9a2c-7d5e9b1c3f4a
+subject: Auto Policy Renewal Confirmation – Policy #AU-2026-4598
+participants[2]{id,name,email,role}:
+  3f2a1c9e-7d4b-41e8-9f3a-2c6b5d8e9f01,Sneha Roy,sneha.roy@dcoders.com,customer
+  a7b9c3d4-5e6f-4a8b-9c1d-3e4f5a6b7c8d,Anjali Desai,anjali.desai@firstguardbrokers.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,12/09/2026 T:09:15:00,"Dear Sneha,\n\nI’m pleased to inform you that your auto policy renewal has been finalized. Attached you’ll find the official policy document (Policy #AU-2026-4598) reflecting the $1,000 deductible and the effective date of 01/10/2026.\n\nYour first premium of $1,240.00 is scheduled to be debited automatically on 10/10/2026 as we discussed. If you have any questions or need further assistance, please don’t hesitate to reach out.\n\nThank you for choosing DCoders and First Guard Brokers.\n\nBest regards,\nAnjali Desai\nInsurance Agent, First Guard Brokers",https://storage.firstguardbrokers.com/policies/AU-2026-4598.pdf
+  user_1,user_2,,12/09/2026 T:09:45:00,"Hi Anjali,\n\nThank you for the policy document. I’ve reviewed it and everything looks good. I appreciate the quick turnaround.\n\nBest,\nSneha","""

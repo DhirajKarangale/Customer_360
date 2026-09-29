@@ -1,0 +1,8 @@
+mail_id: a3f9c2e4-7b1d-4f8a-9c3e-2d5b6a8f1e4c
+subject: Re: Auto Policy Expiration and Reinstatement Options
+participants[2]{id,name,email,role}:
+  9f2d4b1a-6c7e-4a9f-8b3d-1e2f3c4d5e6f,Kriti Mahajan,kriti.mahajan@dcoders.com,customer
+  2b7c9d3e-5f1a-4c8b-9e2d-3a4b5c6d7e8f,Karan Joshi,karan.j@saferstep.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,26/09/2026 T:09:15:22,"Hi Karan,\n\nThanks for the call earlier. I’m still undecided about renewing the auto policy. Could you please send me the official reinstatement form and any details about the $1,250 fee? Also, let me know the deadline for the 30‑day reinstatement window.\n\nBest,\nKriti",
+  user_2,user_1,,26/09/2026 T:10:02:07,"Hi Kriti,\n\nI’ve attached the reinstatement form you requested. As discussed, the policy expired on 15 Sep 2026, and you have until 15 Oct 2026 to reinstate it. The reinstatement fee is $1,250, which covers the back‑dated coverage for the 30‑day window.\n\nIf you decide to proceed, simply sign and return the form, and we’ll process the payment.\n\nPlease feel free to reach out if you have any other questions.\n\nBest regards,\nKaran Joshi\nInsurance Agent, Safe Step Insurance\nkaran.j@saferstep.com",https://storage.safe-step.com/forms/auto_reinstatement_form.pdf

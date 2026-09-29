@@ -1,0 +1,11 @@
+chat_id: 9f3b7e2a-5d4c-41a9-9e2b-8c6d9f1a2b34
+participants[2]{id,name,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Dev Chatterjee,customer
+  f7e8d9c0-7777-8888-9999-aaaaabbbbbcc,Suresh Deshmukh,insurance agent
+messages[6]{user,timestamp,text,media_url}:
+  user_1,01/10/2026 T09:15:02,"hey suresh, just checking on my health policy status. i think it might be exipired*expired already?", 
+  user_2,01/10/2026 T09:15:45,"Hi Dev! Yes, the policy expired on 15 Aug 2026. Let me know if you need anything else.", 
+  user_1,01/10/2026 T09:17:10,"got it, thx. i’m not ready to renew yet, maybe later this year.", 
+  user_2,01/10/2026 T09:18:00,"Sure thing. I’ll keep the policy marked as expired in our system. Feel free to reach out whenever you’re ready.", 
+  user_1,01/10/2026 T09:20:30,"actually, could you send me a summary of what coverage I had before it lapsed? just for reference.", 
+  user_2,01/10/2026 T09:21:15,"Absolutely, I’ll email you the policy summary shortly.",https://storage.securelifesolutions.com/docs/PolicySummary_DEV_2026.pdf

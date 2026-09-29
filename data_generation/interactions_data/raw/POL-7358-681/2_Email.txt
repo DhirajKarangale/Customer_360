@@ -1,0 +1,8 @@
+mail_id: e7b3c9f2-4a1d-4f9b-8c2e-1a9d5f6b7c8d
+subject: Cancellation Confirmation – Health Policy HP‑2024‑5678
+participants[2]{id,name,email,role}:
+  1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d,Rohan Deshmukh,rohan.d@dcoders.com,customer
+  9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f,Karan Joshi,karan.j@safestepinsurance.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,02/10/2026 T:09:15:30,"Hi Rohan,\n\nThank you for speaking with me earlier. This email confirms that your Health Policy (Policy No.: HP‑2024‑5678) has been cancelled as per your request.\n\nKey details:\n- Cancellation effective: within the next 24 hours.\n- A prorated refund will be processed and should reflect in your original payment method within 5‑7 business days.\n- You will receive a separate refund confirmation once the transaction is complete.\n\nIf you have any further questions or need assistance with future coverage options, please don’t hesitate to reach out.\n\nBest regards,\nKaran Joshi\nInsurance Agent | Safe Step Insurance\nPhone: +1‑800‑555‑0199\nEmail: karan.j@safestepinsurance.com", 
+  user_1,user_2,,02/10/2026 T:10:02:12,"Hello Karan,\n\nThanks for the quick confirmation. I appreciate the clear timeline for the refund. Please let me know if you need any additional information from my side.\n\nRegards,\nRohan Deshmukh\nSoftware Engineer, DCoders\nrohan.d@dcoders.com",

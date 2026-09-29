@@ -1,0 +1,8 @@
+mail_id: 7f3c9a1b-8d2e-4f9a-bc6e-2a5d9f7e1c4b
+subject: Renewal Invoice for Auto Policy AU‑4521
+participants[2]{id,name,email,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Rohan Deshmukh,rohan.d@dcoders.com,customer
+  e5f6g7h8-1234-56ij-klmn-7890opqrstu,Anjali Desai,anjali.d@firstguardbrokers.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,30/09/2026 T:09:15:00,"Dear Rohan,\n\nThank you for confirming your intent to renew your auto policy (Policy No: AU‑4521). As discussed, the renewal premium after applying the 5% safe‑driver discount is ₹11,875.\n\nPlease find the invoice attached. You can settle the payment via net banking, credit card, or UPI using the details in the invoice. Once payment is received, we will update the policy status to active.\n\nLet me know if you have any questions.\n\nBest regards,\nAnjali Desai\nInsurance Agent\nFirst Guard Brokers",https://storage.firstguardbrokers.com/invoices/INV-AU4521-2026-09-30.pdf
+  user_1,user_2,,30/09/2026 T:10:05:00,"Hi Anjali,\n\nGot the invoice, thanks. I will process the payment today via net banking and will let you know once it’s done.\n\nAppreciate your help.\n\nThanks,\nRohan",

@@ -1,0 +1,8 @@
+mail_id: email-20260928-001
+subject: Cancellation Request for Health Policy – Confirmation Needed
+participants[2]{id,name,email,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Anvi Desai,anvi.desai@dcoders.com,customer
+  d7e8f9g0-7777-8888-9999-aaaaabbbbbcc,Ravi Menon,ravi.menon@securefuturegroup.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,28/09/2026 T:09:15:30,"Hi Ravi,\n\nFollowing our phone conversation earlier today, I would like to proceed with the cancellation of my health policy (Policy No: HP-DC-2024-7890). Please confirm the next steps and let me know if any additional information is required from my side.\n\nThanks,\nAnvi Desai",
+  user_2,user_1,,28/09/2026 T:10:02:10,"Dear Anvi,\n\nI’m sorry to hear you’re discontinuing your coverage. As discussed, I have processed the cancellation of your health policy (HP-DC-2024-7890). The policy will be officially terminated as of 30/09/2026. You will receive a final statement and any applicable refunds within 7‑10 business days.\n\nPlease find the cancellation confirmation attached for your records. If you have any further questions or need assistance with future insurance needs, feel free to reach out.\n\nBest regards,\nRavi Menon\nSenior Insurance Advisor\nSecure Future Group",https://storage.securefuturegroup.com/docs/PolicyCancellation_Health_AnviDesai_2026.pdf

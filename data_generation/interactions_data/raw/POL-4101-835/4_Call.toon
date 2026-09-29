@@ -1,0 +1,19 @@
+call_id: REC-INS-004C
+start_timestamp: 12/10/2026 T:09:15:00
+end_timestamp: 12/10/2026 T:09:20:30
+participants[2]{id,name,role}:
+  5d9f3c2a-7b1e-4f9a-8c3e-2b6d9e5f1a4b,Diya Menon,customer
+  a3f8e1d4-9c2b-45d6-8f7a-0e3b6c9d2f1e,Karan Joshi,insurance agent
+messages[12]{user,text}:
+  user_1,"[00:00] Hi, umm... is this Karan? I got your call about my home policy."
+  user_2,"[00:05] Yes, hi Diya, this is Karan from Safe Step. How can I help you today?"
+  user_1,"[00:12] [sighs] I... I decided not to renew HP‑2024‑5678. I want it to just expire."
+  user_2,"[00:18] I see. Just to confirm, the policy is set to expire on 15 Oct 2026, right? --"
+  user_1,"[00:25] Yeah, that's right. I know the deadline was 8 Oct, but I... I think I'll let it lapse."
+  user_2,"[00:32] Understood. Once it expires, the coverage ends and you won't be protected for any incidents after 15 Oct. Are you sure you don't need any temporary coverage or a short grace period?"
+  user_1,"[00:40] No, I think that's fine. I have other arrangements. Can you please mark it as expired in the system?"
+  user_2,"[00:47] Sure thing. I'll go ahead and update the status to 'Expired'. You'll get a confirmation email shortly."
+  user_1,"[00:53] Thanks. Oh, and could you also send me a final statement of the policy? Just for my records."
+  user_2,"[01:00] Absolutely, I'll attach the final policy statement and the expiration notice. Anything else?"
+  user_1,"[01:07] No, that's all. Thanks for your help."
+  user_2,"[01:12] You're welcome, Diya. Have a good day!"

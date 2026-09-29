@@ -1,0 +1,14 @@
+chat_id: a8f3c9d2-6b1e-4f8a-9c2d-3e5f7a9b0c1d
+participants[2]{id,name,role}:
+  9f3b2a1c-7e44-4d9a-9c3f-1b2e5d6f8a90,Samar Ghosh,customer
+  d4c5e6f7-8a9b-4c0d-9e1f-2b3c4d5e6f7a,Sunita Agarwal,insurance agent
+messages[9]{user,timestamp,text,media_url}:
+  user_1,29/09/2026 T14:02:10,"hi sunita, thx for the email! got the policy doc.", 
+  user_2,29/09/2026 T14:02:45,"Hello Samar! Glad you received it. How can I assist you today?", 
+  user_1,29/09/2026 T14:03:12,"I was wondering about the claims process. can you explain? also any extra paperwork for my new kitchen cabinets?", 
+  user_2,29/09/2026 T14:04:00,"Sure thing! For a standard home claim you just need the claim form (attached) and photos of the damage. Since you upgraded the cabinets, we’ll need the invoice and a brief contractor *statement.", 
+  user_2,29/09/2026 T14:04:05,"Here’s the guide: https://storage.dcoders.com/docs/Home_Claim_Guide.pdf", 
+  user_1,29/09/2026 T14:04:40,"Got it. Do I need to submit the invoice before filing or after? thx!", 
+  user_2,29/09/2026 T14:05:20,"You can submit the invoice along with the claim form. Our team will review it and may request a copy of the receipt if needed.", 
+  user_1,29/09/2026 T14:05:55,"Great, thx a lot! I'll keep everything ready. Anything else i should *know?", 
+  user_2,29/09/2026 T14:06:30,"Just remember to report any incident within 48 hours. And keep the original documents safe. Let me know if you need anything else!",

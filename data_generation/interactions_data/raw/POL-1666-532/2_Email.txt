@@ -1,0 +1,8 @@
+mail_id: a1b2c3d4-5678-90ab-cdef-1234567890ab
+subject: Re: Travel Policy Expiry on 30/09/2026 – Next Steps
+participants[2]{id,name,email,role}:
+  9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f,Dev Chatterjee,dev.chatterjee@dcoders.com,customer
+  1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d,Anita Sharma,anita.sharma@trustwealth.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,02/10/2026 T:09:15:30,"Hi Anita,\n\nFollowing our phone conversation earlier today, could you please send me the written confirmation that my current travel policy will expire on 30/09/2026 and will be marked as Expired? Also, I would like to know the steps to purchase a new policy for next year, including any discounts for existing customers.\n\nThanks,\nDev", 
+  user_2,user_1,,02/10/2026 T:10:05:12,"Dear Dev,\n\nThank you for your email. As discussed, your current travel policy will automatically lapse on 30/09/2026 and will be recorded as Expired in our system. I have attached a PDF summary of the policy status for your records.\n\nRegarding a new policy for 2027, we can issue a fresh travel policy starting 01/10/2027. As a valued DCoders employee, you are eligible for a 5% loyalty discount on the premium. Please let me know if you would like me to prepare a quote or if you have any specific travel dates in mind.\n\nBest regards,\nAnita Sharma\nInsurance Agent\nTrust Wealth Advisors",https://storage.trustwealth.com/docs/TravelPolicy_Expiry_2026_DevChatterjee.pdf

@@ -1,0 +1,15 @@
+chat_id: c9f3b2e1-7a4d-4c8b-9e5f-2a6d7c8b9e10
+participants[2]{id,name,role}:
+  5d3f9a2b-1c4e-4b9a-8f2d-3e6c7a9b0c11,Aditi Mahajan,customer
+  a7b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d,Karan Joshi,insurance agent
+messages[10]{user,timestamp,text,media_url}:
+  user_1,29/09/2026 T09:15:02,"hey karan, i got ur email about the upgrade. can u send me more details on the coverage limits, premium changes and how i can switch before my policy ends?",
+  user_2,29/09/2026 T09:15:45,"Hey Aditi! Sure thing. Let me pull up the Health Plus Plus details for you.",
+  user_2,29/09/2026 T09:16:10,"The upgraded plan raises the **in‑patient** coverage limit from $250,000 to *$300,000* and the **out‑patient** limit from $30,000 to $40,000.",
+  user_2,29/09/2026 T09:16:35,"Premium goes up by about 12% – that’s an extra $45 per month (so $420 → $465).",
+  user_2,29/09/2026 T09:17:00,"To switch, you just need to sign the attached renewal form, choose the “Upgrade to Health Plus Plus” option, and send it back to me. I’ll process it before 05/10/2026.",
+  user_2,29/09/2026 T09:17:05,"Here’s the brochure with a full comparison chart:",https://storage.dcodelabs.com/docs/HealthPlusPlus_Brochure_2026.pdf
+  user_1,29/09/2026 T09:18:20,"thanks! also, does the upgraded plan cover alternative therapies like acupuncture? i read something about it but not sure.",
+  user_2,29/09/2026 T09:18:55,"Good question! Yes, we added *alternative therapy* coverage up to $2,000 per year (acupuncture, chiropractic, etc.).",
+  user_1,29/09/2026 T09:19:30,"great! i think i’ll go ahead. what’s the deadline to send the form back? i dont want it to lapse.",
+  user_2,29/09/2026 T09:20:05,"If we get the signed form by 04/10/2026, we’ll lock in the new rates and avoid any lapse. Let me know if you need any help filling it out!",

@@ -1,0 +1,17 @@
+call_id: REC-DC-0001
+start_timestamp: 28/09/2026 T:09:15:00
+end_timestamp: 28/09/2026 T:09:20:45
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Meera Chauhan,customer
+  f9e8d7c6-5432-10fe-ba98-76543210fedc,Ravi Menon,insurance agent
+messages[10]{user,text}:
+  user_2,Hello, Meera? This is Ravi from Secure Future Group, uh... how are you today? [00:00]
+  user_1,Hi Ravi... uh, I'm okay, thanks. I got a call earlier about my health policy.
+  user_2,Right, right, I wanted to discuss the status... [00:20] It's currently set to be cancelled as per your request.
+  user_1,Cancelled? Wait, I... I thought I was just... I mean, I wanted to pause it, not... [00:35]
+  user_2,I understand—let me pull up the details. [typing] ... Okay, I see the cancellation request was submitted on 15/09/2026.
+  user_1,Oh... I didn't realize it was final. Can we... can we reverse it? [01:00]
+  user_2,We can definitely look into reinstating, but there are some conditions—[01:15] there might be a re‑activation fee.
+  user_1,Umm, okay. What do I need to do? [01:30]
+  user_2,I'll send you an email with the steps and the fee details. Meanwhile, the policy will stay cancelled until we hear back.
+  user_1,Alright, thanks. Sorry for the confusion. [02:00]

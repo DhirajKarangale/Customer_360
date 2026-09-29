@@ -1,0 +1,11 @@
+chat_id: c7f9a2b3-1e4d-4c9a-9f2b-8d3e6f7a9b0c
+participants[2]{id,name,role}:
+  a3d9f1e2-5b6c-4d8a-9e1f-2c3b4d5e6f7a,Saanvi Pillai,customer
+  b4e2f3a4-6c7d-5e9b-0f2a-3d4e5f6a7b8c,Neha Kapoor,insurance agent
+messages[6]{user,timestamp,text,media_url}:
+  user_1,13/09/2026 T10:15:30,"hi neha, i just did the paymnt for the renewal (₹12,500)", 
+  user_2,13/09/2026 T10:15:45,"Hey Saanvi! Got it, thanks for the quick paymnt*payment. Let me verify.", 
+  user_2,13/09/2026 T10:16:05,"All set! Your payment is confirmed and the new policy is active. Here’s your updated certifcate*certificate.",https://storage.dcodelife.com/certificates/HP-2024-9876_certificate.pdf
+  user_1,13/09/2026 T10:16:20,"thx! can u also send the full policy doc? and confirm coverage start date", 
+  user_2,13/09/2026 T10:16:40,"Sure thing! Coverage starts from 15/09/2026. Attached is the full policy document.",https://storage.dcodelife.com/policies/HP-2024-9876_full.pdf
+  user_2,13/09/2026 T10:17:00,"Let me know if you need anything else or have more questions!",

@@ -1,0 +1,19 @@
+call_id: CALL-DC-20260928-001
+start_timestamp: 28/09/2026 T:14:05:00
+end_timestamp: 28/09/2026 T:14:12:00
+participants[2]{id,name,role}:
+  a3f9c2d1-8e4b-4a9f-9c2d-7b6e5f8a9c01,Aaradhya Verma,customer
+  d5e2b7a3-1c4f-4d8a-9b3e-2f6c1a7e5b02,Anjali Desai,insurance agent
+messages[12]{user,text}:
+  user_1,[00:00] Hi Anjali, it's Aaradhya. I just saw the email about my health policy... uh, it's showing expired. 
+  user_2,[00:07] Hey Aaradhya, yeah I got your email. So the policy actually ended on 31 Aug 2026. 
+  user_1,[00:12] Oh right, I missed that date. I was kinda hoping it would auto‑renew. 
+  user_2,[00:18] Unfortunately it doesn't auto‑renew. We have a few options – renewal for a full year, an upgrade with higher coverage, or a short‑term extension for three months. 
+  user_1,[00:25] Hmm... three months? I kinda need coverage ASAP because I have a surgery scheduled in October. 
+  user_2,[00:32] Got it. If you need immediate coverage, the short‑term extension kicks in right away, but it only lasts till Jan 2027. 
+  user_1,[00:38] Yeah, that could work. But, uh, what about the cost? 
+  user_2,[00:44] The extension is $120 per month, so about $360 total. The full renewal is $1,200 for the year, and an upgrade would be $1,500. [sighs] 
+  user_1,[00:52] That's... a bit steep for a short term. Is there any discount? 
+  user_2,[00:58] Let me check… [typing] ...Okay, I can give you a 5 % discount on the extension, brings it down to $114 per month. 
+  user_1,[01:05] Thanks, that helps. Can we go ahead and set it up now? 
+  user_2,[01:12] Sure thing. I’ll send you a link to sign the extension agreement, and once that’s done, your coverage will be active instantly.

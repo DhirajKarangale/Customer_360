@@ -1,0 +1,11 @@
+chat_id: 7f9c3a1b-5d4e-4b8a-9c2e-1a2b3c4d5e6f
+participants[2]{id,name,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Krishna Das,customer
+  d7e8f9a0-7777-8888-9999-aaaabbbbcccc,Vikram Singh,insurance agent
+messages[6]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T09:45:12,"hi vikram, thx*thanks for the email. can u tell me the payment options and when i need to pay first premium?",
+  user_2,28/09/2026 T09:45:58,"Hello Krishna! Happy to help 😊. You can pay via credit/debit card, net banking, or auto‑debit*auto-debit. The first premium of ₹12,500 is due by 15 Oct 2026.",
+  user_1,28/09/2026 T09:46:30,"Is there any discount if i do auto‑debit*auto-debit?",
+  user_2,28/09/2026 T09:47:05,"Yes, we offer a 5% discount on the premium for auto‑debit*auto-debit. That would bring it down to ₹11,875.",
+  user_1,28/09/2026 T09:47:45,"Great! cna*can you send me the payment link?",
+  user_2,28/09/2026 T09:48:20,"Sure, here’s the secure payment link: https://pay.dcodels.com/policy/HC-2026-0459. Let me know if you need anything else.",

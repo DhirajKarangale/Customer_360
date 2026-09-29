@@ -1,0 +1,9 @@
+mail_id: e7b3f9a2-4c1d-45e9-8a6b-2d5f9c1e8b3f
+subject: Re: Knee Surgery Claim Status and Reimbursement Timeline
+participants[3]{id,name,email,role}:
+  d4a9c3e1-7b2f-4a6d-9c3e-5f6b8a2d9c01,Kiara Sen,kiara.sen@dcoders.com,customer
+  a1b2c3d4-e5f6-7890-abcd-ef1234567890,Neha Kapoor,neha.kapoor@shieldlife.com,insurance agent
+  c9d8e7f6-5b4a-3210-9abc-def123456789,Arjun Mehta,arjun.mehta@dcoders.com,claims specialist
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,user_3,12/09/2026 T:09:15:00,"Hi Neha,\n\nI hope you’re well. I wanted to check on the status of my claim for the knee surgery I had on September 6, 2026. I submitted the claim form and the surgeon’s pre‑authorization letter on September 7, as per your instructions. Could you let me know if everything is in order and when I can expect the reimbursement to be processed?\n\nPolicy Number: HP-2024-0456\n\nThank you for your help.\n\nBest,\nKiara", 
+  user_2,user_1,user_3,12/09/2026 T:10:05:00,"Dear Kiara,\n\nThank you for reaching out. I have verified that your claim (Reference #: CLM-2026-0910) was received on September 7, 2026 and is currently under review. As mentioned earlier, claims are typically processed within 5‑7 business days once all required documents are in place. Assuming no additional information is needed, you should receive the reimbursement by September 21, 2026.\n\nI have attached the claim receipt for your records. Should the claims team require any further details, Arjun Mehta (cc’d) will contact you directly.\n\nPlease let me know if there’s anything else I can assist you with.\n\nWarm regards,\nNeha Kapoor\nInsurance Agent, Shield Life Services\nneha.kapoor@shieldlife.com",https://storage.dcodelife.com/claims/claim_receipt_KIARA2026_0906.pdf

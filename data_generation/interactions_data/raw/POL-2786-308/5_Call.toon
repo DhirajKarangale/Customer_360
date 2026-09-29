@@ -1,0 +1,20 @@
+call_id: CALL-20260928-005
+start_timestamp: 28/09/2026 T:14:05:12
+end_timestamp: 28/09/2026 T:14:08:45
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Isha Agarwal,customer
+  f1e2d3c4-9876-54ba-dcba-0987654321fe,Ravi Menon,insurance agent
+messages[12]{user,text}:
+  user_1,"[00:00] Hi Ravi, it's Isha. I wanted to confirm the auto‑pay is set up now?"
+  user_2,"[00:05] Hey Isha—yeah I just... uh... processed the enrollment. You should see the first premium pull on the 15th."
+  user_1,"[00:12] Great, thanks. Also, could you... um... remind me what the optional coverages cost again?"
+  user_2,"[00:18] Sure thing. Personal‑property add‑on is $75 per year, flood is $120, and earthquake is $95. You can pick any or all."
+  user_1,"[00:25] Okay... and if I wanted to add the earthquake, do I need to fill another form?"
+  user_2,"[00:30] No extra form, just click the link I sent in the email and select it. It'll update your policy instantly."
+  user_1,"[00:35] Got it. Oh—one more thing, the deductible we discussed was $500 per claim, right?"
+  user_2,"[00:40] Yep, $500 deductible for each claim. That's the standard for this plan."
+  user_1,"[00:45] Perfect. And the coverage limits for dwelling are still $300,000?"
+  user_2,"[00:48] Correct, $300k dwelling coverage, plus the optional add‑ons you choose."
+  user_1,"[00:52] Thanks Ravi, I think that's everything. I'll keep an eye on my email for the confirmation."
+  user_2,"[00:55] You're welcome! If anything else comes up, just give me a call. Have a good day."
+  user_1,"[01:00] Thanks, you too. Bye."

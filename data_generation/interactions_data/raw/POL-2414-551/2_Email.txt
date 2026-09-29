@@ -1,0 +1,8 @@
+mail_id: 9f3b2a1c-4d5e-6f78-9abc-def012345678
+subject: Your Health Policy Renewal – Payment Link Enclosed
+participants[2]{id,name,email,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Pranav Mishra,pranav.mishra@dcoders.com,customer
+  d4e5f6a7-8910-11ab-cdef-0987654321cd,Ravi Menon,ravi.menon@securefuturegroup.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2026 T:09:15:00,"Dear Pranav,\n\nThank you for speaking with me earlier today regarding your health policy renewal. As discussed, your policy (Policy No: HP-2024-DC-001) has been re‑activated and the monthly premium is $120. To complete the renewal, please use the secure payment link below:\n\nhttps://payments.securefuturegroup.com/pay?policy=HP-2024-DC-001&amount=120\n\nOnce the payment is processed, you will receive a confirmation email along with the updated policy document.\n\nIf you have any questions, feel free to reply to this email or call us at +1-800-555-0199.\n\nBest regards,\nRavi Menon\nInsurance Agent, Secure Future Group\nravi.menon@securefuturegroup.com",https://storage.securefuturegroup.com/policies/HP-2024-DC-001_Updated.pdf
+  user_1,user_2,,28/09/2026 T:10:02:30,"Hi Ravi,\n\nGot the payment link – thanks! I’ve just completed the $120 payment. Could you please confirm that the policy is active as of today and let me know when I can expect the updated policy document?\n\nThanks,\nPranav Mishra\nSoftware Engineer, DCoders\npranav.mishra@dcoders.com",

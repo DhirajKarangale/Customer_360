@@ -1,0 +1,13 @@
+chat_id: chat-6e8b4f9a-9c2d-1a2b-3c4d-5e6f7g8h9i0j
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Akanksha Bhatt,customer
+  e5f6g7h8-1234-56ij-klmn-0987654321cd,Anita Sharma,insurance agent
+messages[8]{user,timestamp,text,media_url}:
+  user_1,30/09/2026 T10:15:12,"hey Anita, got the renewal doc thx! just wanted to confirm the policy is now active till 31/03/2027 right?",
+  user_2,30/09/2026 T10:15:45,"Hi Akanksha! Yes, the policy is active from 01/04/2026 to 31/03/2027. 🎉 Let me know if you need anything else.",
+  user_1,30/09/2026 T10:16:30,"Great! Also can u tell me how to file a claim if i need to? I never did it before.",
+  user_2,30/09/2026 T10:17:10,"Sure thing. You can file a claim via our portal or the mobile app. Just upload the hospital bills, discharge summary and your ID. Here’s the guide:",https://storage.dcoders.com/docs/Health_Claim_Guide.pdf
+  user_1,30/09/2026 T10:18:05,"thanks! one more thing – the premium i paid was ₹11,875, right? I saw a small fee *fee on the receipt.",
+  user_2,30/09/2026 T10:18:45,"Yes, the premium is ₹11,875. The extra ₹50 is a transaction fee for UPI, which is standard. All good!",
+  user_1,30/09/2026 T10:19:30,"cool, thx for the help. I'll keep the docs safe. Have a good day! :)",
+  user_2,30/09/2026 T10:20:00,"You’re welcome! Have a great day too. Feel free to ping if you have any questions.",

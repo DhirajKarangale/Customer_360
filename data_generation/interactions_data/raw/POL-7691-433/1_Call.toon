@@ -1,0 +1,15 @@
+call_id: REC-DC-001A
+start_timestamp: 30/09/2026 T:09:10:00
+end_timestamp: 30/09/2026 T:09:12:30
+participants[2]{id,name,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Atharv Pandey,customer
+  d4e5f6g7-7777-8888-9999-aaaabbbbcccc,Vikram Patel,insurance agent
+messages[8]{user,text}:
+  user_1,[00:00] Hello, uh... is this Vikram from Omni Insurance?
+  user_2,[00:05] Yes, hi Atharv, this is Vikram Patel speaking. How can I help you today?
+  user_1,[00:12] I was just checking on my health policy... I think it’s... uh... about to expire? [sighs]
+  user_2,[00:18] Let me pull up your record... one sec... [typing] ...Okay, I see policy #HP-785412, it’s set to expire on 30/09/2026.
+  user_1,[00:30] Oh no, that’s today! I... I wasn’t aware. What happens now? 
+  user_2,[00:38] Once it hits the expiration date, the coverage stops unless you renew. We can start a renewal now if you like.
+  user_1,[00:45] Yeah, I guess I need to renew. Can you tell me the premium? 
+  user_2,[00:52] The renewal premium will be $1,250 annually, same benefits. I’ll send you the renewal quote via email.

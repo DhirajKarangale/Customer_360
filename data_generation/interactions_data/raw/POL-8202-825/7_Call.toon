@@ -1,0 +1,19 @@
+call_id: REC-DC-20270805-07
+start_timestamp: 05/08/2027 T:09:15:00
+end_timestamp: 05/08/2027 T:09:18:30
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Tanvi Saxena,customer
+  d4e5f6a7-89ab-0cde-f123-456789abcdef,Sunita Agarwal,insurance agent
+messages[12]{user,text}:
+  user_1,[00:00] Hi Sunita, this is Tanvi. I got your reminder about my health policy expiring on 30/09/2027.
+  user_2,[00:07] Hello Tanvi, good morning! Yes, I sent the reminder email and SMS. How can I help you today?
+  user_1,[00:15] Uh—actually I wanted to confirm the claim window after expiry. Is it still 15 days, ending 15/10/2027?
+  user_2,[00:22] Yes, that's correct. The 15‑day post‑expiry claim window remains in effect, so any claims for services up to 30/09/2027 must be filed by 15/10/2027.
+  user_1,[00:30] Got it. And... [sighs] I’m thinking maybe I won’t renew this year. My plans are changing.
+  user_2,[00:38] Oh, I see. —Would you like me to walk you through the non‑renewal process, or explore any other plan options that might suit your new situation?
+  user_1,[00:45] Maybe just the non‑renewal for now. I’ll decide later.
+  user_2,[00:50] Sure thing. To let the policy lapse, you don’t need to do anything; it will automatically expire on 30/09/2027. We’ll keep the claim window open until 15/10/2027 as discussed.
+  user_1,[00:58] Okay, and will I get any final statement or summary after it expires?
+  user_2,[01:05] Yes, we’ll email you a final policy closure statement and a summary of any pending claims after the claim window closes.
+  user_1,[01:12] Great, thank you. One more thing—could you resend the updated policy PDF just in case?
+  user_2,[01:18] Absolutely, I’m sending it right now to your email. Let me know if you need anything else.

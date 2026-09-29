@@ -1,0 +1,8 @@
+mail_id: 9f3b7c1a-5d4e-4a9b-b2c1-8e6f9d2a7c3e
+subject: Renewal Offer: Updated Health Policy & Short‑Term Rider Details
+participants[2]{id,name,email,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Reyansh Tiwari,reyansh.tiwari@example.com,customer
+  e7f8g9h0-7777-8888-9999-aaaaabbbbbcc,Vikram Patel,vikram.p@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,21/09/2026 T:09:15:00,"Dear Reyansh,\n\nFollowing our conversation earlier today, I have prepared the renewal package for your health policy (Policy No: HP-2026-0456). The policy will be reinstated effective 01/10/2026. The revised annual premium is $1,350.00. Additionally, you requested a short‑term rider that provides coverage for an extra three months (01/10/2026 – 31/12/2026) at an additional $120.00.\n\nThe original policy lapsed on 15/09/2026 at 23:59 GMT, so no claims can be processed for the period after that date.\n\nPlease find the detailed renewal quote and rider terms attached. Let me know if you would like me to proceed with issuing the new policy or if you have any questions.\n\nBest regards,\nVikram Patel\nInsurance Agent\nOmni Insurance Group\nvikram.p@dcoders.com",https://storage.dcodelabs.com/docs/HealthPolicy_Renewal_2026_Rev.pdf
+  user_1,user_2,,21/09/2026 T:10:05:30,"Hi Vikram,\n\nThanks for sending the renewal documents. The terms look good and I’m ready to move forward. Please let me know the preferred method for payment – I can use the secure link you shared earlier or a direct bank transfer.\n\nLooking forward to getting the new policy active.\n\nRegards,\nReyansh Tiwari",

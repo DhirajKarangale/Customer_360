@@ -1,0 +1,19 @@
+call_id: CALL-DC-20261005-001
+start_timestamp: 05/10/2026 T:14:15:00
+end_timestamp: 05/10/2026 T:14:18:30
+participants[2]{id,name,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Dev Chatterjee,customer
+  d4e5f6g7-7777-8888-9999-aaaaabbbbbcc,Anita Sharma,insurance agent
+messages[12]{user,text}:
+  user_1,[00:00] Hi Anita, it's Dev. I wanted to check if we can extend the travel policy that's ending on 30/09/2026.
+  user_2,[00:05] Hello Dev, umm... I’m sorry, but once the policy hits the expiry date it just lapses. We can’t extend it past the 30th.
+  user_1,[00:12] Oh—so it just... expires? No refund?
+  user_2,[00:15] Yeah, it will be marked “Expired” in the system, and there’s no cash back. [sighs] We can only issue a fresh policy for the next travel period.
+  user_1,[00:22] Got it. Would that be starting 01/10/2026 then?
+  user_2,[00:24] Exactly. I can send you a quote for a new 2026‑2027 travel plan, same coverage, same premium as before, if you like.
+  user_1,[00:30] That would be helpful. Can you also tell me if there’s any way to keep the same policy number? I kinda like the reference.
+  user_2,[00:33] Unfortunately the old number retires with the expired policy. The new one gets a fresh ID. I know it’s a hassle.
+  user_1,[00:40] Alright, I’ll review the quote. When would the new policy become active? Immediately on 01/10?
+  user_2,[00:43] Yes, as soon as you accept the quote and we get payment, it’ll be active from 01/10/2026. Anything else I can help with?
+  user_1,[00:48] No, that’s all. Thanks, Anita.
+  user_2,[00:50] You’re welcome, Dev. Have a great day!

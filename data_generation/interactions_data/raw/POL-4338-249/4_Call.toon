@@ -1,0 +1,20 @@
+call_id: REC-HP-20260928-04
+start_timestamp: 28/09/2026 T:15:02:10
+end_timestamp: 28/09/2026 T:15:07:45
+participants[2]{id,name,role}:
+  9f2c3a7b-1e44-4d9a-8b33-5c9e2d6f8a1b,Rahul Jain,customer
+  d4b8e6c2-7a5f-4c2e-9f1b-3a6d7e9c0b2f,Vikram Patel,insurance agent
+messages[13]{user,text}:
+  user_2,[00:00] Hello Rahul, this is Vikram from Omni Insurance. How are you today?
+  user_1,[00:05] Hi Vikram... uh, I'm good, thanks. You?
+  user_2,[00:10] I'm fine, thanks. Just wanted to confirm that we received your signed renewal form for the DCoders Comprehensive Health Plan HP‑45789.
+  user_1,[00:18] Yeah, I sent it over this morning. Did it come through okay?
+  user_2,[00:22] -- let me check... [typing] ... Yep, got it loud and clear. All set on our end.
+  user_1,[00:30] Great. So the policy will start on 01/10/2026, right? No gap?
+  user_2,[00:35] Correct, coverage kicks in from 01/10/2026, same as we discussed. The premium will be auto‑debit of ₹1,200 on the 1st of each month.
+  user_1,[00:42] Okay. I just want to make sure the auto‑debit will pull from my saved card ending 1234.
+  user_2,[00:47] Yes, that's the one we have on file. We'll process the first payment today, you should see the transaction shortly.
+  user_1,[00:55] Got it. Anything else I need to do?
+  user_2,[01:00] No, that's all. I'll email you the updated policy document and receipt. If you have any questions, just give us a call.
+  user_1,[01:07] Thanks, Vikram. Appreciate the help.
+  user_2,[01:10] You're welcome, Rahul. Have a good day! [sighs]

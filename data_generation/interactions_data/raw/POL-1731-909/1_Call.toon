@@ -1,0 +1,47 @@
+call_id: CALL-DC-20260929-001
+start_timestamp: 29/09/2026 T:09:00:00
+end_timestamp: 29/09/2026 T:09:15:00
+participants[2]{id,name,role}:
+  a1b2c3d4-e5f6-7a89-b0c1-d2e3f4g5h6i7,Rohan Deshmukh,customer
+  9j8k7l6m-5n4o-3p2q-r1s2-t3u4v5w6x7y8,Vikram Patel,insurance agent
+messages[40]{user,text}:
+  user_1,Umm... hi, is this Vikram from Omni? I wanted to talk about my life policy.
+  user_2,Hey Rohan, yeah Vikram Patel here, Omni Insurance Group. Sure, what's up with your policy?
+  user_1,[sighs] I just got a call that my policy might be cancelled? I'm kinda panicked.
+  user_2,Whoa, let's not jump. Can you give me your policy number so I can pull it up?
+  user_1,Yeah, it's LIF-2024-987654.
+  user_2,[typing] One sec, let me check…
+  user_2,[hold music] ...
+  user_2,Alright, I see it here. Status shows 'Active' right now.
+  user_1,Active? Then why did I get that call? Maybe a mistake?
+  user_2,Probably a system glitch. Sometimes our outbound system flags things incorrectly.
+  user_1,Okay, good. I also wanted to know if I can increase the sum assured.
+  user_2,Sure thing. We can adjust that. Do you have a target amount in mind?
+  user_1,Thinking about 15 lakh instead of 10 lakh.
+  user_2,Got it. Let me run the numbers…
+  user_2,[typing] …
+  user_2,Alright, bumping it to 15 lakh will raise your premium by about ₹1,200 per month.
+  user_1,Hmm, that's a bit higher than I expected.
+  user_2,We could also look at a longer term or maybe a different rider to balance cost.
+  user_1,Tell me about riders.
+  user_2,We have a critical illness rider, accidental death benefit, and a waiver of premium rider.
+  user_1,Accidental death sounds useful. How much extra would that be?
+  user_2,For a ₹5 lakh accidental death rider, it's roughly ₹300 extra per month.
+  user_1,Okay, maybe add that. Also, I need to update my address. It's changed.
+  user_2,Sure, what's the new address?
+  user_1,Flat 3B, Sunrise Apartments, 45 Park Street, Mumbai.
+  user_2,Got it. Updating now…
+  user_2,[typing] …
+  user_2,All set. Your policy now reflects the new address.
+  user_1,Great, thanks. One more thing – can I get a copy of the updated policy documents emailed to me?
+  user_2,Absolutely. Which email should I send it to?
+  user_1,rohan.deshmukh@example.com
+  user_2,Sending now…
+  user_2,[hold music] ...
+  user_2,Email sent. Let me know if you don't see it in a few minutes.
+  user_1,Will do. Oh, and by the way, how's the weather there?
+  user_2,It's raining a bit here in Bangalore, but nice enough. How about Mumbai?
+  user_1,Hot and humid as usual. [dog barks in background]
+  user_2,Haha, typical. Anything else I can help with?
+  user_1,No, that's all. Thanks for the help, Vikram.
+  user_2,My pleasure, Rohan. Have a great day!

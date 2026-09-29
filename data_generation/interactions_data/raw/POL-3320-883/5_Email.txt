@@ -1,0 +1,8 @@
+mail_id: a3f9c2d4-7e1b-4a6f-9c3d-2b5e8f0a1c7e
+subject: Your 3‑Month Auto Policy Quote and Documents
+participants[2]{id,name,email,role}:
+  1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d,Kriti Mahajan,kriti.mahajan@dcoders.com,customer
+  9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f,Karan Joshi,karan.joshi@saferstepinsurance.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,11/10/2026 T:09:15:30,"Hi Kriti,\n\nAs discussed on our call earlier today, please find attached the quote for a 3‑month auto insurance term covering your vehicle (Policy #AU-2026-345). The total premium for the 3‑month period is $345.00, payable upfront. The coverage includes liability, collision, and comprehensive protection.\n\nKey details:\n- Effective dates: 16 Oct 2026 – 15 Jan 2027\n- Premium: $345.00 (due by 18 Oct 2026)\n- Payment methods: credit card, bank transfer, or online portal\n- Cancellation: You may cancel anytime with a 10‑day notice; a prorated refund will be issued.\n\nPlease review the attached PDF and let me know if you’d like to proceed or have any questions. I can also set up the payment link for you.\n\nBest regards,\nKaran Joshi\nInsurance Agent\nSafe Step Insurance\nPhone: +1‑555‑123‑4567\nEmail: karan.joshi@saferstepinsurance.com",https://storage.dcoders.com/docs/AutoPolicy_3Month_Quote_Kriti_Mahajan.pdf
+  user_1,user_2,,11/10/2026 T:10:02:45,"Hi Karan,\n\nThanks for sending over the quote. I’ve reviewed the document and the terms look good. Please go ahead and set up the payment link so I can finalize the policy.\n\nAlso, could you confirm the exact coverage limits for collision and comprehensive?\n\nThanks,\nKriti Mahajan",

@@ -1,0 +1,39 @@
+call_id: REC-DC-20260928-04
+start_timestamp: 28/09/2026 T:14:00:00
+end_timestamp: 28/09/2026 T:14:13:00
+participants[2]{id,name,role}:
+  a1f3c9e2-7b4d-4e2a-9c3f-5d6b8e9f1a2b,Ishaan Bose,customer
+  d4e5f6a7-8b9c-1d2e-3f4a-5b6c7d8e9f0a,Sunita Agarwal,insurance agent
+messages[32]{user,text}:
+  user_1,Hey Sunita, it's Ishaan. Got your email and the payment link. I wanted to talk through a few things before I click.
+  user_2,Sure Ishaan, happy to help. Give me a sec, let me pull up your policy. ...
+  user_2,[hold music]
+  user_2,Thanks for waiting. I see your current Health Plus plan expires on 30/09/2026. Are you looking to renew the same or upgrade?
+  user_1,I was thinking about the Comprehensive Care Plan you mentioned in chat. The premium is higher, can you break it down again?
+  user_2,Absolutely. The standard renewal would be $350 per month, while the upgraded Comprehensive Care is $425. That's an extra $75 for added dental, vision, and tele‑health.
+  user_1,Umm, okay. And the 5% early‑renewal discount still applies if I pay before 15 Sept, right?
+  user_2,Yes, that brings it down to $403.75 for the Comprehensive plan. For the standard, it'd be $332.50.
+  user_1,Got it. Also, I noticed a small admin fee of $10 on the link. Is that correct?
+  user_2,That $10 is the processing fee for online payments. It’s standard across all plans.
+  user_1,[dog barks in background] Sorry, my dog just jumped on the couch.
+  user_2,No worries! (laughs) He looks friendly.
+  user_1,So, if I go with the upgraded plan, do I need any additional documents?
+  user_2,Just a signed renewal form. I can email it now, and you can e‑sign. Also need a recent proof of address, like a utility bill.
+  user_1,Alright, I have a PDF of my latest electricity bill handy.
+  user_2,Great. I’ll attach it to an email right after this call.
+  user_2,[typing]
+  user_2,Okay, email sent. Let me know when you receive it.
+  user_1,Got it, thanks. One more thing – the payment link expires in 48 hours. If I miss it, will I lose the discount?
+  user_2,If the link expires, we can generate a new one, but the early‑renewal discount is only valid until 15 Sept. After that, regular rates apply.
+  user_1,Understood. I think I’ll go ahead and pay now.
+  user_2,Sure thing. I’ll stay on the line while you complete the secure payment.
+  user_2,[hold music]
+  user_2,All set, I see the payment of $403.75 processed. Your policy is now renewed and will be active from 01/10/2026.
+  user_1,Awesome! Thanks for walking me through everything.
+  user_2,My pleasure. Anything else I can help with? Maybe travel coverage?
+  user_1,Actually, yeah. I travel a lot for work. Do you have any add‑ons for international coverage?
+  user_2,We have a Global Traveller Rider for $25 extra per month, covers emergency medical abroad.
+  user_1,Sounds good. Can we add that now?
+  user_2,Absolutely. I’ll send you the rider details and a separate payment link. Anything else before we wrap up?
+  user_1,No, that’s all. Appreciate your help, Sunita.
+  user_2,You’re welcome, Ishaan. Have a great day! Bye.

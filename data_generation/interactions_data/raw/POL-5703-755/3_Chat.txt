@@ -1,0 +1,12 @@
+chat_id: 9f3b7c1e-4a2d-41e9-8d6f-2b5c9e7a1f34
+participants[2]{id,name,role}:
+  a1c9d8e2-5f4b-4a3e-9c7d-6e2f1b3c4d5e,Sneha Roy,customer
+  b2d3f4a5-6e7c-8d9f-0a1b-2c3d4e5f6a7b,Anjali Desai,insurance agent
+messages[7]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T09:12:05,"hey Anjali, thx for the quote earlier. can u send me the final premium? also want to know payment options.", 
+  user_2,28/09/2026 T09:12:45,"Hi Sneha! Sure thing. Let me pull the numbers.", 
+  user_2,28/09/2026 T09:13:30,"Based on the vehicle details you gave (2022 Honda Civic, 4-door, 15000km), the annual premium comes to ₹12,450.*premium", 
+  user_1,28/09/2026 T09:14:10,"got it. is there any discount if i pay annually vs monthly? also any cash back?", 
+  user_2,28/09/2026 T09:15:00,"Yes, paying the full year upfront gives you a 5% discount, bringing it down to ₹11,828. Also we have a no-claim bonus of 10% if you had no claims last year.", 
+  user_1,28/09/2026 T09:16:20,"cool! i think i’ll go with annual payment. how do i make the payment? can i do netbanking or uPI?", 
+  user_2,28/09/2026 T09:18:05,"You can pay via netbanking, UPI, credit/debit card, or even cheque. Here’s the link: https://pay.firstguard.com/securelink/abcd1234. Let me know once you’ve completed it.",

@@ -1,0 +1,14 @@
+chat_id: 7f3a9c2e-5b1d-4e8a-9c6f-2d4b7a1e9c0f
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Sneha Roy,customer
+  d4c3b2a1-8765-09ba-fedc-0987654321ba,Anjali Desai,insurance agent
+messages[9]{user,timestamp,text,media_url}:
+  user_1,29/09/2026 T09:12:03,"hey anjali, got your email about the cancel lol", 
+  user_2,29/09/2026 T09:12:45,"Hi Sneha, yes I sent the cancellation confirmation earlier today. Is there anything else I can help with?", 
+  user_1,29/09/2026 T09:13:30,"actually i need the pdf again, i cant find it in my inbox", 
+  user_2,29/09/2026 T09:14:10,"Sure, I’ll resend it right away. One moment please.", 
+  user_2,29/09/2026 T09:14:45,"Here’s the link to download the cancellation letter: https://storage.dcodelabs.com/docs/Cancel_AG-2026-015.pdf",https://storage.dcodelabs.com/docs/Cancel_AG-2026-015.pdf
+  user_1,29/09/2026 T09:15:20,"thx! also, any outstanding balance i should settle? ", 
+  user_2,29/09/2026 T09:16:02,"There are no pending dues. Since the policy was cancelled effective 15 Aug 2026, the account is settled.", 
+  user_1,29/09/2026 T09:16:45,"good 2 know. if i want to get a new policy later, can i use same vehicle info? ", 
+  user_2,29/09/2026 T09:17:30,"Absolutely! You can reuse the same vehicle details when you’re ready. Just reach out and we’ll set up a fresh quote. Have a great day!",

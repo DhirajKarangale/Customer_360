@@ -1,0 +1,23 @@
+call_id: REC-INS-005A
+start_timestamp: 05/10/2026 T:09:15:00
+end_timestamp: 05/10/2026 T:09:21:00
+participants[2]{id,name,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Kiara Sen,customer
+  e7f8g9h0-7777-8888-9999-aaaabbbbcccc,Neha Kapoor,insurance agent
+messages[16]{user,text}:
+  user_1,[00:00] Hi Neha, it's Kiara. I just wanted to double‑check the status of my health policy before my surgery next week.
+  user_2,[00:05] Hey Kiara, sure thing. Let me pull up your file… one sec.
+  user_1,[00:12] ... thanks.
+  user_2,[00:15] Okay, I see here the policy was set to expire on 30 Sept 2026, but we processed the renewal on 28 Sept, so it's active now.
+  user_1,[00:22] Great… I was worried it might have lapsed. Does the renewal cover the upcoming knee surgery on the 12th?
+  user_2,[00:27] Yes, the renewed plan includes full coverage for inpatient procedures, including your knee arthroscopy. You'll just need the claim form we emailed.
+  user_1,[00:33] Got it. Do I need to submit anything else? Like the surgeon’s pre‑auth letter?
+  user_2,[00:38] Ideally you attach the pre‑authorization and any recent diagnostic reports. It speeds up the claim, but the claim form alone will get you started.
+  user_1,[00:44] Okay… and the premium? I remember you mentioned a lower‑premium option. Is that the one I'm on now?
+  user_2,[00:49] Right, we switched you to the “Essential Health Plus” plan. Your monthly premium is $112, down from $138.
+  user_1,[00:55] Perfect. How do I pay? Can I do it over the phone?
+  user_2,[01:00] Absolutely, I can take the payment now. Do you have a card handy?
+  user_1,[01:05] Yeah, let me grab it… umm… okay, card number is 4111 1111 1111 1111, expiry 08/28, CVV 123.
+  user_2,[01:12] Thanks, processing… [typing]… all set. You’ll get a confirmation email shortly.
+  user_1,[01:18] Awesome, thank you so much, Neha. I feel a lot better now.
+  user_2,[01:22] My pleasure, Kiara. If you need anything else, just give us a call. Take care and good luck with the surgery.

@@ -1,0 +1,43 @@
+call_id: REC-DC-2026-004
+start_timestamp: 30/09/2026 T:09:00:00
+end_timestamp: 30/09/2026 T:09:15:00
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Akanksha Bhatt,customer
+  f9e8d7c6-5432-10fe-dcba-0987654321fe,Anjali Desai,insurance agent
+messages[36]{user,text}:
+  user_2,Hello is this Ms Bhatt I hope you can hear me
+  user_1,Yes speaking hi
+  user_2,Great this is Anjali from First Guard Brokers calling about your DCoders home policy renewal
+  user_1,Oh right I got your email earlier
+  user_2,Just wanted to confirm the expiry date and go over the bundle options we sent
+  user_1,Sure uh when does it actually end
+  user_2,Your current home policy #H‑4521 expires on 30/10/2026
+  user_1,Got it and the motor options
+  user_2,We have two motor plans Plan A covers up to ₹10 Lakhs with a 5% deductible Plan B up to ₹20 Lakhs with a 3% deductible Both get a 10% discount when bundled with home
+  user_1,Hmm I need to check my car's value can you hold
+  user_2,Sure I’ll place you on hold for a sec
+  user_2,[hold music]
+  user_2,[typing]
+  user_2,Okay thanks for waiting
+  user_1,Sorry about that my dog just barked
+  user_2,No worries! So which plan sounds better for you
+  user_1,I think Plan B might be overkill but I'm not sure
+  user_2,We can also customise the deductible if you like
+  user_1,Umm could you tell me the premium difference
+  user_2,Sure with the 4% increase on home alone it's ₹12 000 per year Adding Plan A brings it to ₹15 500 Plan B to ₹17 800 after the 10% bundle discount
+  user_1,Okay that's a bit higher than I expected
+  user_2,I understand we could also look at a no claim bonus if you haven't filed any claims
+  user_1,I haven't filed any so that would help
+  user_2,That would shave off another 5% on the combined premium
+  user_1,Great so what would the final amount be
+  user_2,Let me run the numbers [typing]
+  user_2,[hold music]
+  user_2,All set With Plan A and the no claim bonus you'd pay around ₹14 700 yearly With Plan B about ₹16 800
+  user_1,Hmm maybe I’ll go with Plan A then
+  user_2,Perfect I’ll send you the updated quote by email right after this call
+  user_1,Thanks Anjali Oh one more thing can I still pay in monthly installments
+  user_2,Yes we offer monthly quarterly or annual payments Monthly would be ₹1 225 after discount
+  user_1,Alright let's do monthly then
+  user_2,Got it I’ll set that up and you’ll receive a confirmation email shortly
+  user_1,Thanks a lot Bye
+  user_2,Thank you Ms Bhatt Have a great day

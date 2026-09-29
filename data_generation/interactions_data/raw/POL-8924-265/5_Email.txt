@@ -1,0 +1,8 @@
+mail_id: a7c9f2e4-5b1d-4a8f-9c3e-2d6f7b9a0c1d
+subject: Re: Confirmation of Health Policy Details and Cancellation Procedure
+participants[2]{id,name,email,role}:
+  1f4e9a23-7c8b-4d5e-9a1b-3f6c2d7e8b9a,Reyansh Tiwari,reyansh.t@dcoders.com,customer
+  3b2d5c6e-9f1a-4b8c-8d2e-5a7f9c0e1d2b,Anjali Desai,anjali.d@firstguardbrokers.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,21/09/2026 T:09:15:30,"Hi Anjali,\n\nThanks for the detailed call earlier. Could you please send me a written confirmation of the policy’s end date (30 Sept 2027), the $2,500 deductible, the $150 monthly premium, and the steps required if I ever need to cancel the policy? I’d also appreciate a copy of the latest policy document for my records.\n\nBest,\nReyansh", 
+  user_2,user_1,,21/09/2026 T:10:02:45,"Dear Reyansh,\n\nHappy to help. As discussed, your health policy is active until 30 Sept 2027, with a $2,500 deductible and a $150 monthly premium. Should you wish to cancel, please submit a written request via email at least 30 days before the intended cancellation date; we’ll process it and provide a confirmation within 5 business days. I’ve attached the renewed policy PDF for your reference.\n\nIf you have any further questions, feel free to reach out.\n\nWarm regards,\nAnjali Desai\nInsurance Agent, First Guard Brokers",https://storage.firstguardbrokers.com/policies/DCoders_HealthPolicy_Renewed_2027.pdf

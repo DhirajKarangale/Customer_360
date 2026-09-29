@@ -1,0 +1,8 @@
+mail_id: e7b9c1a2-4f3d-11e9-8646-0242ac120002
+subject: Your Home Insurance Policy HC-2026-0456 – Activation Confirmation & Documents
+participants[2]{id,name,email,role}:
+  1a2b3c4d-1111-2222-3333-444455556666,Rahul Jain,rahul.jain@dcoders.com,customer
+  7e8f9a0b-aaaa-bbbb-cccc-ddddeeefffff,Sunita Agarwal,sunita.agarwal@protectall.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,30/09/2026 T:09:15:23,"Hi Sunita,\n\nThanks for the call earlier. Could you please send me the finalized policy document for my home insurance (HC-2026-0456) now that it's active?\n\nBest,\nRahul",
+  user_2,user_1,,30/09/2026 T:09:46:10,"Dear Rahul,\n\nI’m pleased to let you know that your Home Insurance policy HC-2026-0456 is now active as of today. Please find the official policy document attached for your records. The coverage includes the recent kitchen renovation under the extended water‑damage clause.\n\nIf you have any further questions, feel free to reach out.\n\nWarm regards,\nSunita Agarwal\nProtect All Agency",https://storage.protectall.com/policies/HC-2026-0456_PolicyDocument.pdf

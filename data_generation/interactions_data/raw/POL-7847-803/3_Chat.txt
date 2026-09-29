@@ -1,0 +1,11 @@
+chat_id: 7f3a9c2e-4b1d-4f9a-8c2e-1d5b6a7c9e0f
+participants[2]{id,name,role}:
+  9a1b2c3d-4e5f-6789-abcd-ef0123456789,Aditi Mahajan,customer
+  d4e5f6a7-b8c9-0d1e-f2g3-h4i5j6k7l8m9,Suresh Deshmukh,insurance agent
+messages[6]{user,timestamp,text,media_url}:
+  user_1,30/09/2026 T09:12:15,"hi suresh, any update on my refund? i was told it would be postd *posted soon.", 
+  user_2,30/09/2026 T09:12:45,"Hi Aditi! Let me check that for you 😊", 
+  user_2,30/09/2026 T09:13:10,"Good news! The $1,200 refund was processed on 27/09/2026 and should hit your account within 2‑3 business days.", 
+  user_1,30/09/2026 T09:13:40,"great thx *thanks! can you confirm the transaction id? also i want to make sure it's posted to my *card* not my bank? actually my card.", 
+  user_2,30/09/2026 T09:14:20,"Sure thing. The transaction reference is REF-20260927-1200. It’s being credited to the same card ending in 1234 that we have on file.", 
+  user_2,30/09/2026 T09:15:30,"You’re welcome! If you don’t see it by 01/10/2026, just ping me and I’ll investigate further. Have a great day!",

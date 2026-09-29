@@ -1,0 +1,16 @@
+call_id: REC-INS-007C
+start_timestamp: 15/10/2026 T:14:05:00
+end_timestamp: 15/10/2026 T:14:09:30
+participants[2]{id,name,role}:
+  4f8b2a1e-9c3d-4e7a-b5f1-2d6c9e7a1b34,Sneha Roy,customer
+  a1d3f9c4-6b5e-41f2-8c7d-3e9a0b5d8f12,Anjali Desai,insurance agent
+messages[9]{user,text}:
+  user_1,[00:00] Hi, uh, Anjali? Is this a good time?
+  user_2,[00:10] Hey Sneha, yeah, I’m here. I just got your chat about cancelling, right?
+  user_1,[00:20] Yeah, I... I need to make sure the policy is fully cancelled and the refund will be processed.
+  user_2,[00:35] Sure thing, let me pull it up... [typing] Okay, I see it here. The cancellation is effective immediately, and we’ll issue a prorated refund for the unused portion. It should hit your account within five business days.
+  user_1,[00:45] Got it. Will there be any fees?
+  user_2,[01:00] No, there’s no cancellation fee since you’re within the free‑cancellation window. Just the standard prorated amount.
+  user_1,[01:10] Alright, thanks. Could you also send me a confirmation email with the refund details?
+  user_2,[01:20] Absolutely, I’ll send that right after we hang up. Anything else I can help with?
+  user_1,[01:30] No, that’s all. Thanks.

@@ -1,0 +1,19 @@
+call_id: 7f3e9a1c-5b2d-4c8f-a9e1-0d2b6f4c9a3e
+start_timestamp: 28/09/2026 T:09:15:00
+end_timestamp: 28/09/2026 T:09:22:00
+participants[2]{id,name,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Riya Mukherjee,customer
+  d4c3b2a1-9999-8888-7777-666655554444,Vikram Patel,insurance agent
+messages[12]{user,text}:
+  user_1,[00:00] Hello, uh... is this Vikram from Omni Insurance?
+  user_2,[00:04] Yes, hi Riya! This is Vikram, how can I help you today?
+  user_1,[00:08] I... I was looking at my health policy, the one... the SH-2024... I think it's about to end?
+  user_2,[00:12] Let me pull it up... [typing] ... okay, I see it here. Your policy actually expired on 30/08/2026.
+  user_1,[00:18] Oh no, really? I didn't realize... [sighs] What does that mean for me now?
+  user_2,[00:22] It means you’re no longer covered for new claims. You can renew or switch to a new plan.
+  user_1,[00:27] Can I still get coverage for... like, an upcoming doctor appointment next week?
+  user_2,[00:31] Unfortunately, once expired, any new services aren’t covered unless you renew first.
+  user_1,[00:35] Hmm... okay. What’s the renewal process? Is it quick?
+  user_2,[00:39] Yeah, we can do it over the phone. I’ll need a few details—your DOB, address, and payment method.
+  user_1,[00:44] Sure, my DOB is 12/05/1990, address is 45 Greenfield Lane, Bangalore.
+  user_2,[00:48] Got it. I’ll send you a renewal link via email after this call. Anything else?

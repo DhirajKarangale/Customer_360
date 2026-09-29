@@ -1,0 +1,8 @@
+mail_id: 7f3a9c2e-5b1d-4e8a-9c3f-2d6b7e9f1a4c
+subject: Your New Balanced Care Health Policy – Documents & Next Steps
+participants[2]{id,name,email,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Aditi Mahajan,aditi.mahajan@dcoders.com,customer
+  e5f6g7h8-1234-56ij-90kl-0987654321cd,Neha Kapoor,neha.kapoor@shieldlife.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2026 T:09:15:00,"Dear Aditi,\n\nThank you for speaking with me earlier. As discussed, we have switched your health coverage to the Balanced Care plan (₹4,850/month) effective 1 Oct 2026. Your previous policy will be marked expired as of that date.\n\nAttached you will find a bundled zip containing:\n1. The Balanced Care policy document.\n2. The enrollment form (please sign and return).\n3. A quick FAQ guide.\n\nPlease review the documents and send back the signed enrollment form by 28 Sep 2026 to ensure there is no lapse in coverage.\n\nIf you have any questions, feel free to reply to this email or call me directly.\n\nWarm regards,\nNeha Kapoor\nInsurance Agent, Shield Life Services\nneha.kapoor@shieldlife.com",https://storage.shieldlife.com/bundles/Balanced_Care_Docs_2026.zip
+  user_1,user_2,,28/09/2026 T:10:05:00,"Hi Neha,\n\nGot the documents, thank you. I have signed the enrollment form and attached it here. Please confirm receipt and let me know if anything else is needed.\n\nBest,\nAditi Mahajan",https://storage.dcodelabs.com/uploads/Aditi_Balanced_Care_Enrollment_Signed.pdf

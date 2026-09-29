@@ -1,0 +1,12 @@
+chat_id: 9f3b7c21-4d9e-4a6b-8c2f-1a2b3c4d5e6f
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Kiara Sen,customer
+  d4e5f6g7-8901-23hi-jklm-4567890nopqr,Vikram Singh,insurance agent
+messages[7]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T09:15:12,"hi, i just got the email about the new personal property limit. can u confirm it's active?",""
+  user_2,28/09/2026 T09:15:45,"Hello Kiara! Yes, the increase to $150,000 is now actived*active as of 28 Sep 2026. Let me know if you need anything else.",""
+  user_1,28/09/2026 T09:16:20,"thx*thanks! also, does this cover any new electronics i bought last month?",""
+  user_2,28/09/2026 T09:17:05,"Good question. The personal‑property coverage includes electronics up to $5,000 total, as long as they’re listed on the schedule. If you purchased something after the policy effective date, just send me the receipt and we’ll add it.",""
+  user_1,28/09/2026 T09:18:00,"got it. I have a new laptop worth $1,200 bought 15 Sep. I’ll send the receipt.",""
+  user_2,28/09/2026 T09:18:35,"Perfect, just attach it here or email it to me. Once received, I’ll update the schedule. Anything else?",""
+  user_1,28/09/2026 T09:19:10,"that's all for now, thx*thanks for the help!",""

@@ -1,0 +1,27 @@
+call_id: CALL-DC-20260928-001
+start_timestamp: 28/09/2026 T:09:15:00
+end_timestamp: 28/09/2026 T:09:32:00
+participants[2]{id,name,role}:
+  9f2c4a1e-7b3d-4e9a-9f12-3b5d6e8c9a01,Kavya Iyer,customer
+  d3a7f9b2-5c6e-4f1a-8b2c-7e9d0f1a2b3c,Suresh Deshmukh,insurance agent
+messages[35]{user,text}:
+  user_1,Hello? Is this Suresh? I uh have a call about my life policy.
+  user_2,Hi Kavya this is Suresh from Secure Life Solutions at DCoders I can hear you can you hear me?
+  user_1,Yeah I can hear you I was just checking on the status of my policy I think it's supposed to be active now.
+  user_2,Sure let me pull up your details Can you please confirm your policy number?
+  user_1,Um it's L-2026-0459.
+  user_2,One moment please [typing] Okay I have it here Looks like the policy is currently in "Pending Activation".
+  user_1,Oh I thought it was already active I paid the premium last week.
+  user_2,Let me see sometimes there’s a processing lag Did you receive a confirmation email?
+  user_1,Uh I think I got one but I haven't checked it yet Hold on [background noise: dog barks] yeah I see an email titled "Policy Activation Pending".
+  user_2,Alright can you open that email and read the last line for me?
+  user_1,Okay um it says "Your policy will be activated within 48 hours pending verification".
+  user_2,Got it So the system is still verifying your documents Did you upload the ID proof?
+  user_1,Yes I uploaded my passport and address proof when I signed up.
+  user_2,Let me check the attachment status [hold music] still showing as "Received".
+  user_1,[sighs] Great So what do we need to do to speed this up?
+  user_2,Usually it’s automatic but sometimes the verification team needs a manual review I can flag it for priority.
+  user_1,Would that be okay? I have a loan that’s tied to the policy activation.
+  user_2,Absolutely I’ll place a note One sec while I do that [typing] Done you should get an activation confirmation within the next few hours.
+  user_1,Thanks! While we’re on it can you also confirm the beneficiary details? I want to make sure my mother is listed.
+  user_2,Sure thing let me pull that up [typing]

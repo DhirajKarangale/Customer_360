@@ -1,0 +1,17 @@
+call_id: REC-DC-001A
+start_timestamp: 29/09/2026 T:14:05:00
+end_timestamp: 29/09/2026 T:14:12:30
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Kiara Sen,customer
+  f1e2d3c4-9876-54ba-dcba-0987654321fe,Vikram Singh,insurance agent
+messages[10]{user,text}:
+  user_1,[00:00] Hello? Umm... is this Vikram from ProtectAll? I have a question about my auto policy.
+  user_2,[00:05] Hi Kiara, yes this is Vikram Singh, from ProtectAll Agency, how can I help you today?
+  user_1,[00:10] Yeah, I was just checking... I think my policy is about to expire? I got a notice but... I'm not sure what to do.
+  user_2,[00:15] Let me pull up your details... [typing] ... Okay, I see policy number AC-45789, auto coverage for your 2022 sedan. The end date is 28/09/2026, so it actually expired yesterday.
+  user_1,[00:25] Oh... expired? I didn't realize. [sighs] What happens now? Do I have to... pay a penalty?
+  user_2,[00:30] Since it's expired, the coverage stopped on the 28th. You can either renew for another year or we could discuss a short‑term extension if you need immediate coverage.
+  user_1,[00:38] I need to keep it running, I have a trip next week. Can we do a quick renewal? What's the premium?
+  user_2,[00:45] Sure, we can renew today. The premium for a standard renewal is $1,200 annually, but we have a loyalty discount of 10%, so it'll be $1,080. Payment can be processed now.
+  user_1,[00:55] Okay, let me... uh... I think I'll go ahead. Can you send me the renewal docs via email?
+  user_2,[01:02] Absolutely, I'll email you the renewal agreement right after this call. Anything else I can help with?

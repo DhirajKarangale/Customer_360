@@ -1,0 +1,19 @@
+call_id: REC-INS-004A
+start_timestamp: 15/10/2026 T:14:05:00
+end_timestamp: 15/10/2026 T:14:12:00
+participants[2]{id,name,role}:
+  d3f9a1c2-7b4e-4a9d-9f2e-1c2b5e6f8a90,Tanvi Saxena,customer
+  a5b2c3d4-8e9f-0a1b-2c3d-4e5f6a7b8c9d,Sunita Agarwal,insurance agent
+messages[12]{user,text}:
+  user_1,[00:00] Hello? Um, hi Sunita? Can you hear me?
+  user_2,[00:05] Yes, hi Tanvi, I can hear you fine. How can I help you today?
+  user_1,[00:12] So, I was just checking... my policy is set to expire on 30/09/2027, right? And I read about a 15‑day claim window after expiry.
+  user_2,[00:18] That's correct. After 30/09/2027 you’ll have until 15/10/2027 to submit any claims for services rendered before the expiry date.
+  user_1,[00:25] Uh—what about a service I had on 30/09/2027 itself? Is that covered under the new window?
+  user_2,[00:30] Yes, any claim for a service on the last day is still eligible, as long as you file within those 15 days.
+  user_1,[00:38] Got it. And just to confirm, after that window the policy will be considered fully expired, right? I mean, no coverage at all.
+  user_2,[00:45] Exactly. After 15/10/2027 the coverage ends, and you’d need to renew again if you want continued protection.
+  user_1,[00:52] Okay, thanks. I think I’ll look into renewal options a bit earlier next year.
+  user_2,[00:58] Sounds good. I’ll set a reminder to reach out in August. Anything else?
+  user_1,[01:02] No, that's all. Thanks for the clarification.
+  user_2,[01:05] You’re welcome! Have a great day.

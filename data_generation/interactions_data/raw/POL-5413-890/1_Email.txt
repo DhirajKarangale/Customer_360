@@ -1,0 +1,7 @@
+mail_id: e7b9c2f1-9a4d-4e2b-8c3f-1d5a6b7c8d9e
+subject: Urgent: Auto Policy Expiration Notice – Assistance Required
+participants[2]{id,name,email,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Akanksha Bhatt,akanksha.bhatt@dcoders.com,customer
+  d4e5f6a7-89ab-cdef-0123-456789abcdef,Karan Joshi,karan.joshi@saferstep.com,insurance agent
+mails[1]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,01/10/2026 T:09:15:00,"Hi Karan,\n\nI just noticed that my auto policy (Policy No: AP-123456) has expired as of today. I need to know what options I have to get coverage reinstated or purchase a new policy. Could you please guide me on the next steps and any potential penalties?\n\nThanks,\nAkanksha Bhatt",

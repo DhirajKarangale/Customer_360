@@ -1,0 +1,16 @@
+chat_id: c3f9a1b2-4d6e-11e9-8a3b-0242ac130003
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Kriti Mahajan,customer
+  b2c3d4e5-6789-01bc-def0-234567890abc,Suresh Deshmukh,insurance agent
+messages[11]{user,timestamp,text,media_url}:
+  user_1,12/10/2026 T09:15:02,"hey suresh, can u send me the latest policy document? I need it for my loan applcation*application*.", 
+  user_2,12/10/2026 T09:15:45,"Sure Kriti, just a sec. I'll attach the PDF.", 
+  user_2,12/10/2026 T09:16:10,"Policy document attached.",https://storage.dcoders.com/docs/Policy_LC-2024-56789_2026.pdf
+  user_1,12/10/2026 T09:18:05,"thx! also, can i add my husband Raj as a primary*primary* beneficiary? Right now Ananya is secondary.", 
+  user_2,12/10/2026 T09:18:55,"Got it. We'll make Raj the primary and keep Ananya as secondary. Give me a minute to update.", 
+  user_2,12/10/2026 T09:20:12,"All set! I've updated the beneficiary list. You'll receive a confirmation email shortly.", 
+  user_1,12/10/2026 T09:21:30,"cna*can* you also confirm the policy end date? I think it's 2028 but want to be sure.", 
+  user_2,12/10/2026 T09:22:05,"The policy term ends on 31 Dec 2028. It's still active.", 
+  user_1,12/10/2026 T09:23:10,"awesome, thanks! one last thing – coud*could* you send me a summary of my coverage? maybe a PDF.", 
+  user_2,12/10/2026 T09:23:45,"Sure thing, here's the coverage summary.",https://storage.dcoders.com/docs/Coverage_Summary_LC-2024-56789_2026.pdf
+  user_1,12/10/2026 T09:24:20,"got it, thx*thanks* a lot! :)",

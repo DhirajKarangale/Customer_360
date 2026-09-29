@@ -1,0 +1,15 @@
+chat_id: 9f3b2c7e-4a1d-45e9-8d6f-2b7c9a1e5d4f
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Reyansh Tiwari,customer
+  d4c3b2a1-8765-09ba-fedc-0987654321fe,Karan Joshi,insurance agent
+messages[10]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T10:05:12,"hey karan, i got your email about the auto renewal. thx!", 
+  user_2,28/09/2026 T10:05:25,"Hi Reyansh! Glad you saw it. Any questions on the Standard vs Enhanced options?", 
+  user_1,28/09/2026 T10:06:00,"yeah, actually i was wondering what the differece (*difference) is in terms of coverage between the two.", 
+  user_2,28/09/2026 T10:06:20,"Sure thing. The Standard plan covers liability, collision up to $25k, and comprehensive up to $15k. The Enhanced adds roadside assistance, rental car reimbursement, and higher limits: liability $50k, collision $40k, comprehensive $30k.", 
+  user_1,28/09/2026 T10:07:05,"got it. the price jump is $250 more. is that the final price? also can i get a discount if i bundle with home?", 
+  user_2,28/09/2026 T10:07:30,"The $1,450 for Enhanced is the base premium. If you bundle with a home policy we can apply a 10% multi‑policy discount, bringing it down to about $1,305. I’ll send an updated quote PDF.", 
+  user_2,28/09/2026 T10:07:36,"Here’s the updated quote with the bundle discount.",https://storage.dcoders.com/quotes/auto_AU-45789_Enhanced_Bundle.pdf
+  user_1,28/09/2026 T10:08:10,"thanks! i think i’ll go with the Enhanced bundle. can we finalize it now?", 
+  user_2,28/09/2026 T10:08:30,"Absolutely. I’ll process the renewal and send you the confirmation email shortly. Expect it within the next hour.", 
+  user_1,28/09/2026 T10:09:00,"awesome, thx for the help :)",

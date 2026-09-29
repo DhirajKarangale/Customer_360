@@ -1,0 +1,8 @@
+mail_id: 9f3c7b2e-5d4a-4f9a-8c2e-1a6b9d3e7f01
+subject: Home Insurance Policy Activation – Documents Attached
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Rahul Jain,rahul.jain@dcoders.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Sunita Agarwal,sunita.agarwal@protectall.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,28/09/2026 T:09:15:00,"Hi Sunita,\n\nPlease find attached the required documents for my home insurance activation: the property tax receipt and the latest utility bill. I have also included a brief summary of the recent kitchen renovation (new cabinets and countertops installed on 15 Aug 2026) which may affect coverage.\n\nKindly proceed with activating the policy. Let me know if anything else is needed.\n\nThanks,\nRahul Jain",https://storage.protectall.com/uploads/rahul_jain_home_docs_28092026.zip
+  user_2,user_1,,28/09/2026 T:10:45:00,"Dear Rahul,\n\nThank you for sending the documents. I have reviewed the property tax receipt and utility bill, and noted the kitchen renovation details. Your Home Insurance Policy (Policy No: HC-2026-0456) will be activated within the next 24‑48 hours. You should receive a confirmation email once the status changes to Active.\n\nIf you have any further questions, feel free to reach out.\n\nBest regards,\nSunita Agarwal\nInsurance Agent, Protect All Agency",

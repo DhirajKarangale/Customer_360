@@ -1,0 +1,21 @@
+call_id: a2f3c9e1-7b4d-4a2e-9c1f-5d6e8b9a0c12
+start_timestamp: 28/09/2026 T:14:02:10
+end_timestamp: 28/09/2026 T:14:07:45
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Meera Chauhan,customer
+  f1e2d3c4-5678-90ab-cdef-0987654321fe,Ravi Menon,insurance agent
+messages[14]{user,text}:
+  user_1,[00:00] Hello, is this Ravi? I just... uh... I got an email about my travel policy.
+  user_2,[00:05] Hi Meera, yes this is Ravi speaking, how can I help you today?
+  user_1,[00:10] I... umm... I saw my travel policy TRV‑2024‑0789 is expired and I have a trip in October, can it still cover me?
+  user_2,[00:15] I'm really sorry, but once a travel policy expires it can't provide coverage retroactively. We would need to issue a new policy.
+  user_1,[00:20] Oh, I see... so... could I get a new one that starts right before my trip? I leave on 10 Oct 2026.
+  user_2,[00:25] Absolutely, we can set the effective date to 10 Oct 2026, same as your departure. The premium would be $145 for the 30‑day coverage.
+  user_1,[00:30] $145, okay. What do I need to do to activate it? I need it fast.
+  user_2,[00:35] I’ll send you a secure renewal link via email right after this call. You just fill the online form, upload a copy of your passport and itinerary, then choose a payment method.
+  user_1,[00:40] Got it. Can I pay by credit card? Or maybe PayPal? I’m traveling soon.
+  user_2,[00:45] Both work. Card, bank transfer, or PayPal – whichever you prefer. Once payment clears, the policy is active instantly.
+  user_1,[00:50] Great. And once it’s active, will I get a policy document emailed?
+  user_2,[00:55] Yes, you’ll receive a PDF confirmation and the policy number within minutes. Anything else I can help with?
+  user_1,[01:00] No, that’s all. Thanks for the help, Ravi.
+  user_2,[01:05] You’re welcome, Meera. Have a safe trip!

@@ -1,0 +1,8 @@
+mail_id: a7f3c9e2-4b1d-48f7-9a2c-6d5e9b3f1c2d
+subject: Re: Refund of $80 for Cancelled Auto Policy – Confirmation
+participants[2]{id,name,email,role}:
+  9f2c1e4b-7a6d-4b3f-8c9e-1a2b3c4d5e6f,Pooja Bhatia,pooja.bhatia@dcoders.com,customer
+  d3b9a6f1-2c4e-4a8b-9d7e-5f6a7b8c9d0e,Karan Joshi,karan.joshi@safestepinsurance.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,03/10/2026 T:09:15:30,"Hi Karan,\n\nThanks for confirming the cancellation. Could you let me know the exact date I should expect the $80 refund in my bank account? I want to make sure I have the funds for upcoming expenses.\n\nBest,\nPooja",
+  user_2,user_1,,03/10/2026 T:09:45:10,"Hi Pooja,\n\nYou’re welcome! As mentioned earlier, the prorated refund of $80 will be deposited via direct deposit by 04/10/2026 (Tuesday). You should see the credit in your account by the end of the business day on that date. I’ve also attached a short refund confirmation slip for your records.\n\nIf you have any further questions, feel free to reach out.\n\nKind regards,\nKaran Joshi\nInsurance Agent\nSafe Step Insurance",https://storage.safestepinsurance.com/refunds/REFUND-2026-000123.pdf

@@ -1,0 +1,8 @@
+mail_id: 9f3b2c7e-1a4d-4f8b-9e2c-6b5d9e7a1c3f
+subject: Re: Travel Policy TRV‑2024‑0789 – Renewal Request
+participants[2]{id,name,email,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Meera Chauhan,meera.chauhan@dcoders.com,customer
+  d4c3b2a1-8765-09ba-fedc-0987654321ba,Ravi Menon,ravi.menon@securefuturegroup.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,15/10/2026 T:09:12:45,"Hi Ravi,\n\nThank you for the quick clarification on my expired travel policy (TRV‑2024‑0789). I would like to move forward with a new policy covering my October 2026 trip. Could you please send me the renewal form link and let me know the accepted payment methods (credit card, bank transfer, etc.)?\n\nLooking forward to your reply.\n\nBest regards,\nMeera Chauhan",
+  user_2,user_1,,15/10/2026 T:09:45:30,"Dear Meera,\n\nI’m glad to help you secure coverage for your upcoming October trip. Please use the following secure link to complete the renewal form and upload the required documents (passport copy and itinerary):\nhttps://securefuturegroup.com/renewal/TRV-2024-0789\n\nOnce you submit the form, you can pay the premium of $145.00 via any of these methods:\n- Credit/Debit Card (Visa, MasterCard, Amex)\n- Bank Transfer (details in the attached PDF)\n- PayPal\n\nI have attached the policy summary and payment instructions for your reference.\n\nIf you have any questions while filling out the form, feel free to reply to this email or call me directly.\n\nWarm regards,\nRavi Menon\nInsurance Agent, Secure Future Group\nravi.menon@securefuturegroup.com\n+1 (555) 321‑6789",https://storage.securefuturegroup.com/docs/TRV-2024-0789_Policy_Summary.pdf

@@ -1,0 +1,8 @@
+mail_id: 9f3c7a2b-5d4e-41a9-9b6f-2e8c1d4f7a12
+subject: Re: Auto Policy Reactivation Confirmation and Updated Documents
+participants[2]{id,name,email,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Meera Chauhan,meera.chauhan@example.com,customer
+  d4e5f6g7-8910-11aa-bbcc-223344556677,Anita Sharma,anita.sharma@trustwealthadvisors.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,05/10/2026 T:09:15:30,"Hi Anita,\n\nThank you for sending the proof of insurance earlier. Could you please confirm that my auto policy is now active and send me the updated policy document for my records?\n\nPolicy Number: AU-2026-0456\n\nBest,\nMeera",
+  user_2,user_1,,05/10/2026 T:09:45:12,"Dear Meera,\n\nI’m happy to confirm that your auto policy has been reactivated effective 01/10/2026. Please find attached the updated policy declaration page reflecting the new term and premium.\n\nIf you have any further questions, feel free to reach out.\n\nWarm regards,\nAnita Sharma\nTrust Wealth Advisors\nDCoders",https://storage.dcoders.com/policies/AU-2026-0456_Updated.pdf

@@ -1,0 +1,8 @@
+mail_id: 7f9c2e1b-4a3d-4f9b-8c12-5e6d9b7a3c01
+subject: Cancellation Summary for Your Auto Policy – Policy #AU-2026-0456
+participants[2]{id,name,email,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Vihaan Patel,vihaan.patel@dcoders.com,customer
+  d4c3b2a1-8765-09ba-fedc-0987654321ba,Neha Kapoor,neha.kapoor@shieldlifeservices.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,12/10/2026 T:09:15:00,"Dear Vihaan,\n\nThank you for speaking with me earlier regarding the cancellation of your auto policy (Policy #AU-2026-0456). As discussed, the policy will remain active until its current expiration date of 30 Sep 2027. No further renewal premiums will be charged, and you will not incur any cancellation fees. Your coverage, including the $5‑per‑month roadside‑assistance rider, will continue uninterrupted until that date.\n\nFor your records, I have attached a cancellation summary that outlines the key details.\n\nIf you have any further questions or need assistance in the future, please don’t hesitate to reach out.\n\nBest regards,\nNeha Kapoor\nInsurance Agent, Shield Life Services",https://storage.shieldlife.com/docs/CancellationSummary_AU2026_0456.pdf
+  user_1,user_2,,12/10/2026 T:09:45:00,"Hi Neha,\n\nGot it – thanks for the confirmation and the attached summary. I’m happy with the arrangement.\n\nRegards,\nVihaan Patel","""

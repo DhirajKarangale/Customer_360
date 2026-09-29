@@ -1,0 +1,20 @@
+call_id: REC-DC-0001
+start_timestamp: 28/09/2026 T:14:05:00
+end_timestamp: 28/09/2026 T:14:09:30
+participants[2]{id,name,role}:
+  d3f9a2c1-5b4e-4a9d-8f2c-1e6b7c9d0a12,Riya Mukherjee,customer
+  a7e4b3f9-2c1d-44f8-9a6e-3d5f8c2b7e91,Vikram Singh,insurance agent
+messages[13]{user,text}:
+  user_2,Hello, may I speak with Riya Mukherjee? [00:00]
+  user_1,Yes, this is Riya. Who's calling? [00:05]
+  user_2,Hi Riya, I'm Vikram Singh from ProtectAll Agency at DCoders. How are you today? [00:10]
+  user_1,I'm good, thanks... umm... a bit busy actually. [00:15]
+  user_2,I understand. I'll keep it brief. I wanted to discuss your health policy – it’s set to expire soon. [00:20]
+  user_1,Expire? Oh, really? I thought it was still active. [00:25]
+  user_2,Yes, the policy end date was 15/09/2026, so as of today it's expired. [00:30] [sighs]
+  user_1,That's... disappointing. I wasn't aware. What are my options now? [00:35]
+  user_2,We can either renew it for another year, or you could switch to a newer plan that offers more coverage. -- I can send you the details right after this call. [00:40]
+  user_1,Okay, please send me the renewal info. Also, can I get a brief summary of what's covered? [00:45]
+  user_2,Sure thing. I'll email you the renewal quote and a summary of the current coverage. Expect it within the next few minutes. Anything else I can help with? [00:50]
+  user_1,No, that's all. Thanks for the heads up. [00:55]
+  user_2,You're welcome, Riya. Have a good day! [01:00]

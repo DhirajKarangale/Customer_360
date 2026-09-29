@@ -1,0 +1,21 @@
+call_id: CALL-HP-2024-9876-07
+start_timestamp: 12/09/2026 T:10:15:00
+end_timestamp: 12/09/2026 T:10:18:30
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Saanvi Pillai,customer
+  e5f6g7h8-1234-56ij-klmn-0987654321cd,Neha Kapoor,insurance agent
+messages[14]{user,text}:
+  user_1,[00:00] Hello? Hi Neha, it's Saanvi.
+  user_2,Hi Saanvi, good morning! Yes, I can hear you. How are you doing today?
+  user_1,I'm good, thanks... uh, just wanted to confirm that you got my payment.
+  user_2,Let me just pull up your file... [typing]... okay, I see the ₹12,500 payment cleared on 13 Sep.
+  user_1,Great! So the new policy is active from 15 Sep, right? -- just checking.
+  user_2,Yes, exactly. Coverage started 15 Sep 2026. You'll get the certificate in your email.
+  user_1,I did get the email with the PDF, but... umm, the policy number on the certificate shows HP‑2024‑9876‑R1. Is that normal?
+  user_2,Yes, that's the renewed version. The '-R1' indicates renewal. All the benefits are the same, just the premium updated.
+  user_1,[sighs] Okay, thanks. One more thing—if I need to make any claim, do I use the same portal as before?
+  user_2,Absolutely, same portal. Just log in with your existing credentials. If you need a new password, we can reset it.
+  user_1,Got it. And if I have any questions later, can I just call you directly?
+  user_2,Sure thing, you can reach me at this number or email me. Anything else for now?
+  user_1,No, that's all. Thanks for your help!
+  user_2,You're welcome! Have a great day, Saanvi.

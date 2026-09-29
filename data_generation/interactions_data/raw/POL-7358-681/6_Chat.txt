@@ -1,0 +1,13 @@
+chat_id: c9f5b2e1-8a3d-4f9c-9d2b-7e6c4a1d5f8b
+participants[2]{id,name,role}:
+  1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d,Rohan Deshmukh,customer
+  9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f,Karan Joshi,insurance agent
+messages[8]{user,timestamp,text,media_url}:
+  user_1,08/10/2026 T09:12:05,"hey karan, i still haven't see the refund in my account. any update?", 
+  user_2,08/10/2026 T09:12:27,"Hi Rohan! Let me check that for you. One sec...", 
+  user_2,08/10/2026 T09:13:12,"Thanks for waiting. I see the refund of $123.45 was processed on 24 Sep and should've hit your bank by now.", 
+  user_1,08/10/2026 T09:13:45,"huh, i checked my bank app and nothing. maybe it's still pending?", 
+  user_2,08/10/2026 T09:14:10,"Sometimes banks take up to 3 business days after the processing date. Since today is 8 Oct, it might still be in transit.", 
+  user_1,08/10/2026 T09:14:38,"ok thx *thanks, I'll keep an eye on it. can you send me a reference number?", 
+  user_2,08/10/2026 T09:15:05,"Sure! The transaction reference is REF-2026-HP5678-001. Let me know if you need anything else.", 
+  user_1,08/10/2026 T09:15:30,"got it. appreciate the help :)",

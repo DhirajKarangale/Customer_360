@@ -1,0 +1,8 @@
+mail_id: 9f8e7d6c-1234-5678-9abc-def012345678
+subject: Home Insurance Policy – Final Documents for Review (Pending)
+participants[2]{id,name,email,role}:
+  1a2b3c4d-1111-2222-3333-444455556666,Rohan Deshmukh,rohan.d@dcoders.com,customer
+  7e8f9a0b-7777-8888-9999-aaaabbbbcccc,Sunita Agarwal,sunita.agarwal@protectallagency.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,04/10/2026 T:09:15:00,"Dear Rohan,\n\nI hope you are well. I have attached the final Home Insurance Policy document for your new house (Sum Insured: ₹30,00,000, Annual Premium: ₹18,750, Deductible: ₹5,000). The policy is currently in a Pending status in our system and will be activated once we receive the signed copy.\n\nPlease review the attached PDF and let me know if you have any questions. If everything looks good, kindly sign the last page and return the scanned copy to me at your earliest convenience.\n\nThank you for choosing DCoders and Protect All Agency for your home insurance needs.\n\nBest regards,\nSunita Agarwal\nInsurance Agent, Protect All Agency\nsunita.agarwal@protectallagency.com",https://storage.protectallagency.com/policies/DCO-HOME-2026-ROHAN.pdf
+  user_1,user_2,,04/10/2026 T:10:02:30,"Hi Sunita,\n\nThank you for sending over the policy document. I have reviewed it and everything looks fine. I will sign the last page and email the scanned copy back to you by this evening.\n\nBest,\nRohan Deshmukh\nrohan.d@dcoders.com",

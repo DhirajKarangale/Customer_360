@@ -1,0 +1,13 @@
+chat_id: 7f3a9c2e-5b1d-4a8f-9c3e-2d7f6b9e1a4d
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Meera Chauhan,customer
+  d4e5f6g7-8901-23hi-jk45-67890lmnopqr,Anita Sharma,insurance agent
+messages[8]{user,timestamp,text,media_url}:
+  user_1,15/09/2026 T09:12:30,"hi Anita, thx for the call earlier. can u send me the proof of insurance? need it for car rental.",
+  user_2,15/09/2026 T09:12:55,"Sure Meera! I’ll pull the docu*document now, one sec.",
+  user_2,15/09/2026 T09:13:05,"Here’s the PDF.",https://storage.dcoders.com/policies/SH-112233_renewed.pdf
+  user_1,15/09/2026 T09:13:30,"Got it! Actually the policy number looks off. Should be SH-112233? I see 11223*112233.",
+  user_2,15/09/2026 T09:13:55,"Apologies for that. The correct policy number is SH-112233. I’ll resend the file with the proper header.",
+  user_2,15/09/2026 T09:14:10,"Corrected version attached.",https://storage.dcoders.com/policies/SH-112233_corrected.pdf
+  user_1,15/09/2026 T09:14:35,"Thanks! Also, can you confirm the coverage start date? I think it should be 01/10/2026.",
+  user_2,15/09/2026 T09:15:00,"Yes, coverage re‑started on 01/10/2026 after payment. Let me know if you need anything else!"

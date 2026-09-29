@@ -1,0 +1,19 @@
+call_id: REC-INS-005A
+start_timestamp: 30/09/2026 T:14:10:00
+end_timestamp: 30/09/2026 T:14:14:00
+participants[2]{id,name,role}:
+  9f2c7a1b-8b3e-4d5f-a9c1-2e6f7d8b9c0d,Meera Chauhan,customer
+  d4e5f6a7-1b2c-3d4e-5f6a-7b8c9d0e1f2a,Anita Sharma,insurance agent
+messages[12]{user,text}:
+  user_1,"[00:00] Hi Anita it's Meera. I just got the updated policy doc thanks."
+  user_2,"[00:10] Hi Meera! Glad you got it. Anything else I can help with today?"
+  user_1,"[00:20] Yeah I was looking at the coverage dates... It says start 01/10/2026 ends 01/10/2027 right?"
+  user_2,"[00:30] That's correct. It's a 12‑month term."
+  user_1,"[00:45] I noticed the premium is $1,150. I was wondering if there’s any way to lower it further maybe add a safe driver discount? I haven't had any accidents."
+  user_2,"[00:55] Let me check... [typing] ... Yes we can apply a safe driver discount of $50 bringing it down to $1,100."
+  user_1,"[01:10] Oh that's great! Could you also confirm the deductible? I think it's $500."
+  user_2,"[01:20] Yes the deductible is $500 per claim."
+  user_1,"[01:30] Perfect. One more thing—can I get a digital copy of the insurance card sent to my email? I need it for the rental car."
+  user_2,"[01:40] Absolutely I'll email it right after we hang up. Anything else?"
+  user_1,"[01:50] No that's all. Thanks for your help!"
+  user_2,"[01:55] You're welcome! Have a great day."

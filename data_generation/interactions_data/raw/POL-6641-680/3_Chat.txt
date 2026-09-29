@@ -1,0 +1,13 @@
+chat_id: c7f9a1b2-3d4e-5f6a-7b8c-9d0e1f2a3b4c
+participants[2]{id,name,role}:
+  4f2c9a7e-1b23-4d5f-8a9b-0c1d2e3f4b5a,Ishaan Bose,customer
+  a3b2c1d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d,Sunita Agarwal,insurance agent
+messages[8]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T10:02:15,"hey sunita, got the brochure thx! quick q: why is the premium up by 12%? I saw a premiumm*premium increase.", 
+  user_2,28/09/2026 T10:02:45,"Hi Ishaan! Glad you received it. The rise reflects updated medical inflation rates and the extra coverage in the Comprehensive Care Plan.", 
+  user_1,28/09/2026 T10:03:10,"makes sense. is there any early‑renewal discount if i switch now? I read about a 5% off maybe?", 
+  user_2,28/09/2026 T10:03:55,"Yes! If you renew before 15/09 you lock in a 5% discount on the new plan's base premium. I’m attaching a short summary.",https://storage.dcoders.com/docs/EarlyRenewal_Discount_Summary.pdf
+  user_1,28/09/2026 T10:04:30,"cool, can i also keep the current plan without upgrade? what's the cost then*cost?", 
+  user_2,28/09/2026 T10:05:10,"Sure, the standard renewal would be $1,200 per year, versus $1,320 for the upgraded plan after the discount.", 
+  user_1,28/09/2026 T10:05:45,"got it. i think I'll go with the upgrade. how do i pay? can i do it via bank transfer?", 
+  user_2,28/09/2026 T10:06:20,"Absolutely, I’ll send you a secure payment link. Once you confirm, we’ll process the renewal and extend coverage beyond 30/09/2026.",https://payment.dcoders.com/securelink/checkout?policy=HEALTH-2026-ISH001

@@ -1,0 +1,8 @@
+mail_id: e7c9a1b2-3f4d-5e6f-7a8b-9c0d1e2f3a4b
+subject: Health Policy Renewal – Payment Link & Documents
+participants[2]{id,name,email,role}:
+  1a2b3c4d-5678-90ab-cdef-1234567890ab,Akanksha Bhatt,akanksha.bhatt@dcoders.com,customer
+  9f8e7d6c-5b4a-3210-9c8b-7a6f5e4d3c2b,Anita Sharma,anita.sharma@trustwealth.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2026 T:09:15:30,"Dear Akanksha,\n\nIt was a pleasure speaking with you earlier today. As discussed, we have prepared your health policy renewal for the period 01/04/2026 to 31/03/2027 at a discounted annual premium of ₹11,875.\n\nTo activate the renewed policy, please complete the payment using the link below within the next 48 hours:\n\nhttps://payments.trustwealth.com/payments/renewal/HP-2026-AKB-001\n\nThe link supports net‑banking, UPI, and credit/debit cards. Once the payment is confirmed, your policy will be re‑instated immediately.\n\nI have also attached the renewal document for your records.\n\nIf you have any questions or need assistance with the payment, feel free to reply to this email or call me directly.\n\nWarm regards,\nAnita Sharma\nInsurance Agent, Trust Wealth Advisors\nPhone: +91‑98765‑43210\nEmail: anita.sharma@trustwealth.com",https://storage.trustwealth.com/docs/HealthPolicyRenewal_AKB_2026.pdf
+  user_1,user_2,,28/09/2026 T:10:02:12,"Hi Anita,\n\nThank you for the quick follow‑up and for sending the payment link. I have reviewed the renewal document and everything looks good.\n\nI will complete the payment within the next hour and will let you know once it’s done.\n\nThanks again for your help!\n\nBest,\nAkanksha Bhatt",

@@ -1,0 +1,21 @@
+call_id: REC-DC-001A
+start_timestamp: 28/09/2026 T:09:15:00
+end_timestamp: 28/09/2026 T:09:19:00
+participants[2]{id,name,role}:
+  a5d3f8c2-9b4e-4f1a-8c2e-7f9b6a1d3c4e,Rahul Jain,customer
+  3b6e2d5f-1c9a-4b8e-9f3a-2d5c7e9b0a1f,Vikram Patel,insurance agent
+messages[14]{user,text}:
+  user_2,[00:00] Hello Rahul can you hear me
+  user_1,[00:05] Yeah I can hear you Vikram
+  user_2,[00:07] Great thanks I’m calling about your health policy
+  user_1,[00:10] Oh right which one is that
+  user_2,[00:12] It’s the DCoders Comprehensive Health Plan number HP-45789
+  user_1,[00:15] Yeah I remember that one
+  user_2,[00:18] I’m sorry to say the policy has reached its expiry date as of today
+  user_1,[00:22] Oh no [sighs] I didn’t realize it was ending
+  user_2,[00:26] No problem I can walk you through renewal options or let you know about a new plan
+  user_1,[00:30] I think I’d like to renew maybe
+  user_2,[00:34] Okay let me pull up the details [typing] …
+  user_2,[00:38] The renewal premium will be 1200 rupees per month and coverage stays the same
+  user_1,[00:42] That sounds okay um can you send me the renewal form
+  user_2,[00:46] Sure I’ll email it right after this call

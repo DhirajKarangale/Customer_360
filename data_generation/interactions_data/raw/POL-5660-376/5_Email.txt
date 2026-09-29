@@ -1,0 +1,9 @@
+mail_id: a1b2c3d4-5678-90ab-cdef-1234567890ab
+subject: Confirmation of Health Policy Renewal – HP‑4478 (Effective 1 Oct 2026)
+participants[3]{id,name,email,role}:
+  9f8e7d6c-1a2b-3c4d-5e6f-7a8b9c0d1e2f,Sneha Roy,sneha.roy@dcoders.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,vikram.p@dcoders.com,insurance agent
+  4b5c6d7e-8f90-1a2b-3c4d-5e6f7a8b9c0d,Policy Admin,policy.admin@omniinsurance.com,admin
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,user_3,13/09/2026 T:09:15:30,"Dear Sneha,\n\nI hope you’re well. I’m writing to confirm that your existing health policy (HP‑4478) officially expired on 30 Sep 2026 and has been seamlessly renewed for a new term starting 1 Oct 2026.\n\nKey details of the renewed policy:\n- Monthly premium: $199.50 (inclusive of the 5 % loyalty discount)\n- Policy term: 1 Oct 2026 – 30 Sep 2027\n- Coverage remains unchanged.\n\nNo further action is required on your part; the renewal is auto‑processed. For your records, I have attached the updated policy document.\n\nIf you have any questions or need assistance, please feel free to reach out.\n\nBest regards,\nVikram Patel\nInsurance Agent, Omni Insurance Group\nvikram.p@dcoders.com",https://storage.omniinsurance.com/docs/HP-4478_Renewal_2026.pdf
+  user_1,user_2,user_3,13/09/2026 T:10:02:10,"Hi Vikram,\n\nThank you for the confirmation and for sending over the renewed policy document. I’ve reviewed the details and everything looks good.\n\nI appreciate the smooth renewal process.\n\nBest,\nSneha Roy",

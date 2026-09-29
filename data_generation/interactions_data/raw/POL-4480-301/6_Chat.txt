@@ -1,0 +1,15 @@
+chat_id: d3f9c8a2-7b4e-4c9a-9e2f-1a2b3c4d5e6f
+participants[2]{id,name,role}:
+  f1a2b3c4-5678-90ab-cdef-1234567890ab,Vihaan Patel,customer
+  e9d8c7b6-5432-10fe-dcba-0987654321fe,Neha Kapoor,insurance agent
+messages[10]{user,timestamp,text,media_url}:
+  user_1,01/10/2026 T09:15:02,"hey neha, just saw my auto policy says expired??",
+  user_2,01/10/2026 T09:15:45,"Hi Vihaan! Let me check that for you. One sec...",
+  user_1,01/10/2026 T09:17:10,"thanks! i*I need to know if i*I can still drive or what",
+  user_2,01/10/2026 T09:18:05,"According to our system the policy expired at 11:59 PM on 30 Sept 2026. Since it’s now 9 am on 1 Oct, you’re technically un‑covered until we get a new policy in place.",
+  user_1,01/10/2026 T09:19:30,"oh nooo... can i*I get a quickk*quick renewal? same coverage + roadside assistance",
+  user_2,01/10/2026 T09:20:15,"Sure thing! I’ll set up a 12‑month renewal effective 1 Oct 2026. Premium will be $1,210 (same as before). I’ll also keep the $5‑per‑month roadside‑assistance rider.",
+  user_1,01/10/2026 T09:21:00,"great, thx! can you send me the updated docs? and confirm payment method is still the card on fil*file.",
+  user_2,01/10/2026 T09:22:10,"Done! I’ve emailed you the new policy PDF and the payment will be charged to the Visa ending 1234 on 1 Oct. Let me know if you need anything else.",
+  user_1,01/10/2026 T09:23:05,"got it, thanks 🙏",
+  user_2,01/10/2026 T09:24:00,"You’re welcome! Drive safe and remember the roadside‑assistance hotline is 24/7.",

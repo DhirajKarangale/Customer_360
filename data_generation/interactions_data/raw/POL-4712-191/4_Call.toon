@@ -1,0 +1,21 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:14:15:00
+end_timestamp: 28/09/2026 T:14:18:45
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Meera Chauhan,customer
+  f1e2d3c4-9876-54ba-dcba-0987654321fe,Ravi Menon,insurance agent
+messages[14]{user,text}:
+  user_1,[00:00] Hi Ravi, it's Meera. I got your email about the reinstatement... umm, I still have some concerns.
+  user_2,[00:10] Hey Meera, yes I sent that. So... the policy is cancelled right now, and we can bring it back.
+  user_1,[00:20] Yeah, I saw that. The total ₹14,800 – is that all I have to pay? And the fee... can we maybe...?
+  user_2,[00:30] The ₹12,300 is the premium for the current coverage period, and the ₹2,500 is the reinstatement fee. Both are required to reactivate.
+  user_1,[00:45] -- but is the reinstatement fee mandatory? I mean, can we waive it if I pay the premium only?
+  user_2,[01:00] I'm sorry, the fee is standard policy – we can't waive it. However, we can split the total into two installments of ₹7,400 each.
+  user_1,[01:15] Two installments, okay... that sounds better. When would the first payment be due?
+  user_2,[01:25] First installment due within 5 business days, second by the end of the next month. Once we get the first, we’ll reactivate immediately.
+  user_1,[01:40] Got it. And the form you mentioned – I need to sign and upload it, right? Do I need to print it?
+  user_2,[01:50] Yes, print, sign, scan or take a clear photo, then upload via the portal or email back to me.
+  user_1,[02:00] [sighs] Okay, I’ll do that today. Just to confirm, after I upload, you’ll process the first payment and reactivate?
+  user_2,[02:10] Exactly. Once I receive the signed form and the first ₹7,400, I’ll update the system and you’ll get a confirmation email.
+  user_1,[02:20] Great, thanks. I’ll send the form shortly.
+  user_2,[02:30] Perfect. If you hit any snags, just give me a call or drop a message. Talk soon!

@@ -1,0 +1,9 @@
+mail_id: e3f7c9a2-9b1e-4d3f-a6c2-5f8e7d9b0c1d
+subject: Confirmation of Auto Policy Cancellation and Refund
+participants[3]{id,name,email,role}:
+  1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d,Pooja Bhatia,pooja.bhatia@dcoders.com,customer
+  9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f,Karan Joshi,karan.joshi@safestepinsurance.com,insurance agent
+  a1b2c3d4-e5f6-7890-abcd-ef1234567890,Finance Team,finance@safestepinsurance.com,finance
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,user_3,01/10/2026 T:09:15:00,"Hi Pooja,\n\nI wanted to follow up on our recent conversation and confirm that your auto policy (Policy No: AU-2026-4598) has been cancelled effective 30/09/2026. As discussed, we have waived the $45 cancellation fee and processed a prorated refund of $80, which will be deposited directly into the bank account you provided. You should see the funds within 3‑5 business days.\n\nIf you have any further questions or need assistance with future insurance needs, feel free to reach out.\n\nBest regards,\nKaran Joshi\nInsurance Agent, Safe Step Insurance",
+  user_1,user_2,,01/10/2026 T:10:02:00,"Hi Karan,\n\nThank you for the confirmation. I appreciate the waiver of the cancellation fee and the quick refund. Could you let me know the exact date by which the $80 will appear in my account?\n\nThanks again,\nPooja Bhatia",

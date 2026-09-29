@@ -1,0 +1,11 @@
+chat_id: a1b2c3d4-5678-90ab-cdef-1234567890ab
+participants[2]{id,name,role}:
+  9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f,Reyansh Tiwari,customer
+  d4c3b2a1-0f9e-8d7c-6b5a-4c3d2e1f0a9b,Vikram Patel,insurance agent
+messages[6]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T10:15:00,"hey vikram, thx*thanks for the quote. terms look good. can u send me how to pay?",
+  user_2,28/09/2026 T10:15:07,"Hi Reyansh! Glad the terms work for you. You can pay via the link below or through net banking. Let me know which you prefer.",
+  user_1,28/09/2026 T10:15:15,"i think link is easier. pls*please share.",
+  user_2,28/09/2026 T10:15:22,"Sure thing. Here’s the secure payment portal: https://pay.omniins.com/renewal/HR-2026-REY. Use policy number HR-2026-REY and the premium $1,250 plus $50 lapse fee. You can also pay by cheque if you’d rather.",https://pay.omniins.com/renewal/HR-2026-REY
+  user_1,28/09/2026 T10:15:30,"got it, thx*thanks! will do it today.",
+  user_2,28/09/2026 T10:15:45,"Great! Once payment is confirmed, I’ll update the system and send you the new policy document. Let me know if you need anything else."

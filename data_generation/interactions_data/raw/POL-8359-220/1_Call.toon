@@ -1,0 +1,21 @@
+call_id: REC-DC-001A
+start_timestamp: 28/09/2026 T:10:15:00
+end_timestamp: 28/09/2026 T:10:20:12
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Akanksha Bhatt,customer
+  f1e2d3c4-9876-54ba-dcba-0987654321fe,Anjali Desai,insurance agent
+messages[14]{user,text}:
+  user_2,[00:00] Hello, may I speak with Akanksha Bhatt, please?
+  user_1,[00:05] Yes, this is... uh... Akanksha.
+  user_2,[00:10] Hi Akanksha, I'm Anjali Desai from First Guard Brokers, calling about your home insurance policy with DCoders.
+  user_1,[00:15] Oh, um... okay. What’s this regarding?
+  user_2,[00:20] I see your policy is set to expire on 30/09/2026. I wanted to check if you'd like to renew or discuss options.
+  user_1,[00:25] Hmm, I... I wasn’t really sure. I’ve been thinking maybe I don’t need it... but...
+  user_2,[00:30] I understand. Let me pull up the details... [typing] ...Your current coverage includes fire, theft, natural disasters, etc. If you let it lapse, you’d be uncovered.
+  user_1,[00:40] Yeah, I know. It’s just... the premium went up a bit last year.
+  user_2,[00:45] The renewal premium this year would be ₹12,500 per annum, which is a 5% increase. We do have a discount if you bundle with a motor policy.
+  user_1,[00:55] -- Oh, I see. Can you... can you send me the quote?
+  user_2,[01:00] Sure, I’ll email you the renewal quote right after this call. Anything else you’d like to discuss?
+  user_1,[01:05] No, that’s all. Thanks. [sighs]
+  user_2,[01:10] Thank you, Akanksha. Have a good day! [smiles]
+  user_1,[01:12] Bye.

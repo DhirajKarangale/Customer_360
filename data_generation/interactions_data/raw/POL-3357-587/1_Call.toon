@@ -1,0 +1,21 @@
+call_id: CALL-20260929-001
+start_timestamp: 29/09/2026 T:10:05:00
+end_timestamp: 29/09/2026 T:10:12:00
+participants[2]{id,name,role}:
+  9f1c2d3e-4b5a-6c7d-8e9f-0a1b2c3d4e5f,Samar Ghosh,customer
+  a2b3c4d5-6e7f-8a9b-0c1d-2e3f4b5c6d7e,Sunita Agarwal,insurance agent
+messages[14]{user,text}:
+  user_1,[00:00] Hello? Um, hi, is this Sunita?
+  user_2,[00:03] Hi Samar, yes this is Sunita from Protect All Agency, can you hear me okay?
+  user_1,[00:07] Yeah, I can hear you. Sorry, I was just... [typing] looking for my policy number.
+  user_2,[00:12] No problem, take your time.
+  user_1,[00:20] Got it. It's H-2026-0459.
+  user_2,[00:23] Thanks. So this is regarding your home insurance policy, correct?
+  user_1,[00:27] Yes, I just moved into a new flat in Sector 5, and I wanted to make sure the policy is active.
+  user_2,[00:32] Absolutely, we have the paperwork ready. Just need to confirm a few details—like the property address and any recent renovations?
+  user_1,[00:38] The address is 12B, Greenview Apartments, Sector 5, Kolkata. No renovations yet, just the standard... um... kitchen cabinets installed last month.
+  user_2,[00:45] Got it. Kitchen cabinets are covered under the standard contents, so you're good. Also, do you have a security system installed?
+  user_1,[00:51] Yeah, we have a basic alarm system, installed by SafeHome.
+  user_2,[00:55] Perfect. With that, the policy will be active from today. I'll send you a confirmation email shortly. Anything else I can help with?
+  user_1,[01:02] No, that's all. Thanks!
+  user_2,[01:05] You're welcome! Have a great day.

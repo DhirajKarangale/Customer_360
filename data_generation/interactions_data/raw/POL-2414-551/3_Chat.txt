@@ -1,0 +1,12 @@
+chat_id: 9f3b2c7e-8a1d-4f5b-9c2e-6d7a9b0c1e4f
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Pranav Mishra,customer
+  d4c3b2a1-8765-09ba-fedc-0987654321fe,Ravi Menon,insurance agent
+messages[7]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T10:15:02,"hey ravi, i just made the paymnt *payment for the health policy. can u confirm it's active now?", 
+  user_2,28/09/2026 T10:15:45,"hi pranav! let me check…", 
+  user_2,28/09/2026 T10:16:12,"got it, payment of $120 received. your policy is now re‑activated as of today.", 
+  user_1,28/09/2026 T10:16:45,"thx! could u send me the updated policy doc? need to keep it for records.", 
+  user_2,28/09/2026 T10:17:05,"sure thing, here's the latest doc.",https://storage.dcoders.com/policies/HealthPolicy_PRANAV_2026.pdf
+  user_1,28/09/2026 T10:17:30,"got it, looks good. thx! *thanks for the quick help :)", 
+  user_2,28/09/2026 T10:18:00,"anytime! let me know if you need anything else.",

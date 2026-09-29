@@ -1,0 +1,11 @@
+chat_id: a1b2c3d4-5678-90ab-cdef-1234567890ab
+participants[2]{id,name,role}:
+  9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f,Neha Chauhan,customer
+  1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d,Karan Joshi,insurance agent
+messages[6]{user,timestamp,text,media_url}:
+  user_1,30/09/2026 T09:15:12,"hi karan, just got the email. is my policy really activte*active now?", 
+  user_2,30/09/2026 T09:15:45,"Hey Neha! Yes, your health policy is now active. 🎉 You can view the policy here:",https://storage.dcodelabs.com/policies/health/HP-987654.pdf
+  user_1,30/09/2026 T09:16:30,"Great! I have a dental cleaning scheduled next week. does it cover that?", 
+  user_2,30/09/2026 T09:17:05,"Dental cleanings are covered under preventive care up to ₹2,000 per year. Since you’re within limits, you’re good to go.", 
+  user_1,30/09/2026 T09:18:10,"Thanks! Also, how do I file a claim if I need to? any portal?", 
+  user_2,30/09/2026 T09:18:55,"You can submit claims via our online portal: https://portal.dcodelabs.com/claims. I’ve also attached a quick‑start guide.",https://storage.dcodelabs.com/guides/Claim_Guide.pdf

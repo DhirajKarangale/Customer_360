@@ -1,0 +1,18 @@
+call_id: CALL-20260928-001
+start_timestamp: 28/09/2026 T:09:15:00
+end_timestamp: 28/09/2026 T:09:26:00
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Akanksha Bhatt,customer
+  d4c3b2a1-8765-09ba-fedc-0987654321ba,Suresh Deshmukh,insurance agent
+messages[11]{user,text}:
+  user_1,Hello Suresh, uh... I got your email about the pre‑auth. Just wanted to check if it's approved yet? [00:00]
+  user_2,Hi Akanksha, let me pull it up... one sec. [00:05]
+  user_2,[typing]... Okay, I see it here. The form looks good. We just need a final review, should be done by tomorrow. [00:15]
+  user_1,Oh great! So... do I need to do anything else? Like maybe a signed consent? [00:20]
+  user_2,Yes, we need your signature on the consent page—it's already on the PDF you sent. Just sign and send back, or you can sign digitally in the portal. [00:30]
+  user_1,Uh, I think I can do the digital one. How do I access the portal? [00:38]
+  user_2,Sure, just go to https://portal.dcoders.com, log in with your policy number SH‑112233, then under 'Pre‑Auth' you’ll see a 'Sign' button. Let me email you the direct link. [00:45]
+  user_1,Thanks, Suresh. I'll sign it now. And... one more thing—what about the co‑pay for the MRI? Is that still 10% after the deductible? [00:55]
+  user_2,Yes, exactly. After the ₹2,000 deductible, you’ll pay 10% of the MRI cost. The co‑pay is collected at the imaging center. Anything else? [01:05]
+  user_1,No, that’s all. Thanks for the help. [01:10]
+  user_2,You’re welcome! Call us if you need anything else. Have a good day. [01:12]

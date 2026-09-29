@@ -1,0 +1,8 @@
+mail_id: 3f7e9a1b-2c3d-4e5f-6a7b-8c9d0e1f2a3b
+subject: Confirmation of Policy Expiration – HP‑2024‑5678
+participants[2]{id,name,email,role}:
+  9c1a2b3d-5e6f-7a8b-9c0d-1e2f3a4b5c6d,Diya Menon,diya.menon@dcoders.com,customer
+  d4e5f6a7-b8c9-0d1e-2f3a-4b5c6d7e8f9a,Karan Joshi,karan.joshi@safestep.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,11/10/2026 T:09:15:00,"Dear Diya,\n\nAs discussed on our call today, we have processed the termination of your home policy HP‑2024‑5678 effective 15 Oct 2026. Please find attached the final policy statement for your records. Should you need any assistance in the future, feel free to reach out.\n\nBest regards,\nKaran Joshi\nInsurance Agent\nSafe Step Insurance",https://storage.safestep.com/policies/HP-2024-5678_FinalStatement.pdf
+  user_1,user_2,,11/10/2026 T:10:05:30,"Hi Karan,\n\nThank you for confirming. I appreciate the prompt handling. Please keep the statement on file. I’ll consider Safe Step for any future needs.\n\nRegards,\nDiya",

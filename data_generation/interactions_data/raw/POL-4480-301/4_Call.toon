@@ -1,0 +1,21 @@
+call_id: REC-INS-004A
+start_timestamp: 28/09/2026 T:14:05:12
+end_timestamp: 28/09/2026 T:14:12:45
+participants[2]{id,name,role}:
+  d3f9a2c4-6b7e-41d2-9f3e-2a5c8b7d9e01,Vihaan Patel,customer
+  a9c4e5f7-2d3b-48a1-9c6f-5e7b1a2d3c44,Neha Kapoor,insurance agent
+messages[14]{user,text}:
+  user_1,[00:00] Uh, hi Neha? This is Vihaan Patel. I just... I noticed my auto policy says it expired today?
+  user_2,[00:10] Hey Vihaan, yeah I see that. Let me pull up your file—just a sec—[typing]—yeah, the policy number SH-2024-5678 did indeed reach its end date on 30 Sept 2026.
+  user_1,[00:25] So... it's officially expired? I was hoping maybe there was a grace period.
+  user_2,[00:30] Unfortunately not. Once we hit the expiry date, the coverage lapses. You won’t be covered for any incidents after midnight.
+  user_1,[00:40] Oh—okay. I guess I need to sort a new policy then. Can I keep the same vehicle details?
+  user_2,[00:45] Absolutely, we can set up a fresh renewal or a brand‑new policy with the same VIN. Anything specific you want to change? Like the roadside‑assistance rider?
+  user_1,[00:55] Actually, I liked that rider. Can we keep it on the new policy?
+  user_2,[01:00] Sure thing, we’ll add the $5‑per‑month rider again. It'll be effective from the new start date.
+  user_1,[01:10] And the premium? I don’t want a huge jump.
+  user_2,[01:12] Let me run a quick quote—[sighs]—looks like it’ll be $1,210 annually, which is only about $10 more than before.
+  user_1,[01:20] That’s fine. Can we go ahead and set the new policy to start 01 Oct 2026?
+  user_2,[01:22] Done. I’ve processed the renewal, sent you a confirmation email, and the old policy is now marked as Expired in our system. Anything else I can help with?
+  user_1,[01:30] No, that’s all. Thanks for the help.
+  user_2,[01:32] You’re welcome! Have a great day.

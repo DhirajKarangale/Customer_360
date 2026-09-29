@@ -1,0 +1,21 @@
+call_id: REC-DC-004A
+start_timestamp: 30/10/2026 T:09:05:00
+end_timestamp: 30/10/2026 T:09:12:45
+participants[2]{id,name,role}:
+  1e8b7c9a-5d3f-4a2b-9c1e-7f4d6b8a2c33,Kriti Mahajan,customer
+  9f2a1c4d-8b6e-4c9f-a5d3-2e1b7c9f0d44,Karan Joshi,insurance agent
+messages[14]{user,text}:
+  user_1,[00:00] Hello, um... is this Karan?
+  user_2,[00:05] Yes, hi Kriti, this is Karan from Safe Step Insurance, how can I help you today?
+  user_1,[00:12] I got your email with the new quote, uh, I was wondering if we could go over the numbers again.
+  user_2,[00:18] Sure thing, let me pull it up... [typing] Okay, the new annual premium would be $1,380 for the same coverage, with a $500 deductible.
+  user_1,[00:30] $1,380? That's a bit higher than I expected... maybe because the car's... uh... I’m planning to sell it soon.
+  user_2,[00:38] I understand. If you’re selling, we could also look at a short‑term policy or just keep the liability coverage only.
+  user_1,[00:45] Actually, I might keep the car for another month. Could we get a 30‑day extension or something?
+  user_2,[00:52] Unfortunately the reinstatement window closed, but we can issue a fresh policy effective today. It would be a full‑year term unless you want a 3‑month term.
+  user_1,[01:00] A 3‑month term sounds better. What would that cost?
+  user_2,[01:07] For a 3‑month term, the prorated premium comes to $345, same deductible, same coverage limits.
+  user_1,[01:15] Okay, that seems reasonable. Can you go ahead and set that up? I’ll need the confirmation email.
+  user_2,[01:22] Absolutely, I’ll process it now and send you the policy documents to your email. Expect it in the next few minutes. Anything else?
+  user_1,[01:30] No, that’s all. Thanks for your help.
+  user_2,[01:35] You’re welcome! Have a great day, Kriti.

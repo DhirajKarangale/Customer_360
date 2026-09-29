@@ -1,0 +1,13 @@
+chat_id: 7f3a9c2e-5b1d-4e8a-9c6f-2d4b7e1a9c0f
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Reyansh Tiwari,customer
+  d4e5f6g7-8901-23hi-jk45-67890lmnopqr,Karan Joshi,insurance agent
+messages[8]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T09:12:15,"hey karan, got the email with payment link but it says expired? can u help?*link",
+  user_2,28/09/2026 T09:13:20,"Hi Reyansh! Sorry about that, the link should be good for 7 days. Let me generate a fresh one.",
+  user_1,28/09/2026 T09:14:05,"thx! also can u send a pdf of the policy summary? want to review before paying.",
+  user_2,28/09/2026 T09:15:10,"Sure thing, here's the policy summary.",https://storage.dcodelabs.com/policies/AU-45789_Summary.pdf
+  user_1,28/09/2026 T09:16:00,"got it, looks good. can u confirm the coverage start date? i think it should be 01/10/2026.",
+  user_2,28/09/2026 T09:16:45,"Yes, the renewed coverage starts 01/10/2026 and runs till 30/09/2027.",
+  user_1,28/09/2026 T09:17:20,"awesome, i’ll do the payment now.",
+  user_2,28/09/2026 T09:18:05,"Great! Here’s the new payment link, valid for 7 days: https://pay.safe-step.com/xyz123. Let me know once done.",

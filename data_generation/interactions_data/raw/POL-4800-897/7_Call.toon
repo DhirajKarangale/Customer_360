@@ -1,0 +1,37 @@
+call_id: REC-DC-20261015-07
+start_timestamp: 15/10/2026 T:14:05:00
+end_timestamp: 15/10/2026 T:14:23:00
+participants[2]{id,name,role}:
+  9f3b2a7c-1e4d-4f9a-8b2c-6d5e7f9a1b2c,Kunal Mehta,customer
+  d4c8e9f0-2b3a-45c7-9d8e-0a1b2c3d4e5f,Ravi Menon,insurance agent
+messages[30]{user,text}:
+  user_1,Hey Ravi, it's Kunal. Got a sec?
+  user_2,Hey Kunal, yeah sure. How can I help you today?
+  user_1,Umm... I just wanted to double‑check that my health policy HP‑123456 is fully cancelled as we discussed.
+  user_2,Yes, that's correct. It was set to expire on 30 September 2026 and we processed the cancellation effective that date.
+  user_1,Great. And there are no pending premiums or fees, right?
+  user_2,No outstanding premiums, no fees. All settled.
+  user_1,Cool. I also need that cancellation confirmation PDF again, I think I lost the email.
+  user_2,Sure, let me pull that up for you. One moment...
+  user_2,[hold music]
+  user_2,Thanks for holding. I've just re‑sent the PDF to your email, Kunal. You should see it in a minute.
+  user_1,Got it, thanks. While we're at it, can you also send me the claim‑history summary? I might need it for my new employer.
+  user_2,Absolutely, I'll attach that as well. Anything else?
+  user_1,Actually, I was wondering about the waiting period if I enroll in a new plan with you. Is it still 30 days?
+  user_2,Normally yes, 30‑day waiting period for pre‑existing conditions. But since your previous policy just expired, we can waive it for a group plan through your new employer.
+  user_1,Ah, that's good. My new job offers a group health plan starting next month. Can I switch over without a gap?
+  user_2,You can definitely overlap. If you enroll in the group plan now, coverage starts on the first day of the next month, no gap.
+  user_1,Perfect. One more thing – any chance of getting a discount if I bundle a dental rider?
+  user_2,We do have a 5% bundle discount for adding dental or vision to a fresh health policy. I can quote you the numbers.
+  user_1,Yeah, send me the quote. Also, is there any paperwork I need to fill out now?
+  user_2,I'll email you a short enrollment form and the quote PDF. Just sign and return.
+  user_1,[typing] ... okay, I see the email coming through.
+  user_2,Great. Let me know if you run into any issues uploading the signed form.
+  user_1,Will do. By the way, I heard there might be a small processing fee for the new policy. Is that true?
+  user_2,There’s a standard admin fee of $25, but it's waived if you enroll through your employer’s portal.
+  user_1,Got it, thanks for clarifying.
+  user_2,No problem. Anything else on your mind?
+  user_1,Just a quick personal thing – how’s the weather there? I heard it’s raining in Bangalore.
+  user_2,Haha, yeah it’s monsoon season. Got a bit of a drizzle outside my window.
+  user_1,Nice, hope it clears up soon. Alright, I think that covers everything.
+  user_2,Alright, Kunal. I'll follow up with the email and you’re all set. Have a great day!

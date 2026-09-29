@@ -1,0 +1,9 @@
+mail_id: 7f9c2e1b-4a6d-48b9-9f3e-2d5c6a7b8c9d
+subject: Your Auto Policy Reinstated – Policy No. AG-2026-078
+participants[3]{id,name,email,role}:
+  1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d,Sneha Roy,sneha.roy@dcoders.com,customer
+  2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e,Anjali Desai,anjali.desai@firstguard.com,insurance agent
+  3c4d5e6f-7a8b-9c0d-1e2f-3a4b5c6d7e8f,Vikram Patel,vikram.patel@dcoders.com,policy team
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,user_3,12/09/2026 T:10:15:30,"Dear Sneha,\n\nWe are pleased to confirm that your auto insurance policy has been reinstated successfully. The new policy number is AG-2026-078, effective from 12 September 2026. Your vehicle details are as follows:\n- Make & Model: Toyota Corolla 2020\n- Registration: MH12AB1234\n- Chassis No.: XYZ1234567890\n\nThe annual premium of ₹11,828 (including the 5% discount) has been received via net‑banking on 11 September 2026. Your coverage includes third‑party liability, own‑damage, and personal accident.\n\nPlease find attached the official policy document and the payment receipt for your records.\n\nIf you have any questions or need further assistance, feel free to reach out.\n\nBest regards,\nAnjali Desai\nInsurance Agent, First Guard Brokers\nPhone: +91-9876543210\nEmail: anjali.desai@firstguard.com",https://storage.firstguard.com/policies/AG-2026-078.pdf
+  user_1,user_2,user_3,12/09/2026 T:10:45:12,"Hi Anjali,\n\nThank you for the quick reinstatement and for sending over the documents. I have reviewed the policy and everything looks good. I appreciate your help.\n\nBest,\nSneha",

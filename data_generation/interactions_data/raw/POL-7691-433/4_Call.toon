@@ -1,0 +1,13 @@
+call_id: REC-INS-004C
+start_timestamp: 30/09/2026 T:09:15:00
+end_timestamp: 30/09/2026 T:09:20:00
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Atharv Pandey,customer
+  d4c3b2a1-8765-09ba-fedc-0987654321fe,Vikram Patel,insurance agent
+messages[6]{user,text}:
+  user_2,Hi Atharv, this is Vikram Patel from Omni Insurance, calling about your health policy HP‑785412. I just wanted to confirm that the renewal went through. [00:00]
+  user_1,Hey Vikram… uh, actually I was thinking maybe I don’t need to renew right now. The policy is set to expire today, right? [00:30]
+  user_2,Yes, the original policy was expiring today, but we sent you the updated quote with the 5% loyalty discount. If you don’t want to proceed, we can let it lapse. [01:10]
+  user_1,Yeah, I guess I’ll let it lapse. I’m switching to another provider. Can you confirm the cancellation? [02:00]
+  user_2,Sure, I’ll mark the policy as expired in our system. It’ll be effective as of today, 30/09/2026. You’ll receive a confirmation email shortly. Sorry to see you go—[sighs]—let us know if anything changes. [03:20]
+  user_1,Thanks, Vikram. Appreciate the help. [04:45]

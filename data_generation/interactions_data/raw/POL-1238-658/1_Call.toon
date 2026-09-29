@@ -1,0 +1,23 @@
+call_id: CALL-DC-001A
+start_timestamp: 28/09/2026 T:09:15:00
+end_timestamp: 28/09/2026 T:09:18:45
+participants[2]{id,name,role}:
+  a1f3c9e2-7b44-41d9-9a2e-5d6b8f3c9d01,Saanvi Pillai,customer
+  4b9e2d7a-3c5f-4a1b-8f6e-2d9c1a7e4b33,Anita Sharma,insurance agent
+messages[14]{user,text}:
+  user_1,[00:00] Hi Anita, this is Saanvi. Um... I wanted to talk about my life policy.
+  user_2,[00:05] Hi Saanvi, good morning! Sure, I’m here. Can you hear me okay?
+  user_1,[00:07] Yeah, I can hear you. Thanks. I... I’m a bit concerned about the status.
+  user_2,[00:12] Absolutely, let me pull up your file. One sec… [typing] …Okay, I’ve got it.
+  user_1,[00:20] Great. So, is the policy still active? I’ve seen some emails...
+  user_2,[00:23] Yes, it’s active. No changes on our end. The target end status is ‘Active’.
+  user_1,[00:28] Oh, good. I was just wondering if there’s any upcoming premium due date I should note.
+  user_2,[00:32] Let me check… [sighs] Your next premium is due on 15/11/2026.
+  user_1,[00:38] Got it. And, um, are there any riders I could add? Like critical illness?
+  user_2,[00:42] We do have a critical illness rider. It’s an extra 0.8% of the base premium.
+  user_1,[00:46] Hmm, okay. I’ll need to think about that. Can you send me the details via email?
+  user_2,[00:50] Sure thing. I’ll email you the rider brochure right after this call.
+  user_1,[00:55] Thanks, Anita. Also, just to confirm, the beneficiary is still my husband, right?
+  user_2,[00:58] Yes, your beneficiary is listed as Rajesh Pillai. Anything else you need?
+  user_1,[01:02] No, that’s all for now. Appreciate your help. Talk soon.
+  user_2,[01:04] You’re welcome, Saanvi. Have a great day!

@@ -1,0 +1,8 @@
+mail_id: 9f7c3a1b-8d4e-4b6a-9c2f-5e7b9d1a2c3f
+subject: Re: Cancellation Confirmation and Refund Details for Health Policy HP-DC-2024-7890
+participants[2]{id,name,email,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Anvi Desai,anvi.desai@dcoders.com,customer
+  d4c3b2a1-8765-09ba-fedc-0987654321ba,Ravi Menon,ravi.menon@securefuture.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,02/10/2026 T:10:15:00,"Dear Anvi,\n\nI hope you’re well. As discussed, your Health Policy HP-DC-2024-7890 has been officially cancelled effective 30 Sept 2026. The prepaid premium of ₹12,450 will be refunded to your bank account within the next 10‑15 business days. Please find attached the final settlement statement for your records.\n\nShould you have any further questions or wish to explore a new policy with the 5 % loyalty discount, feel free to reach out.\n\nBest regards,\nRavi Menon\nSenior Insurance Advisor\nSecure Future Group\nravi.menon@securefuture.com",https://storage.securefuture.com/docs/Settlement_HP-DC-2024-7890_02Oct2026.pdf
+  user_1,user_2,,02/10/2026 T:10:45:00,"Hi Ravi,\n\nThank you for the confirmation and the settlement statement. I’ll keep an eye on my account for the refund. I’ll also consider the loyalty discount when I’m ready for a new policy.\n\nBest,\nAnvi Desai",

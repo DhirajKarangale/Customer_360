@@ -1,0 +1,16 @@
+call_id: REC-DC-001
+start_timestamp: 28/09/2026 T:09:15:00
+end_timestamp: 28/09/2026 T:09:20:00
+participants[2]{id,name,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Aditi Mahajan,customer
+  d7e8f9a0-7777-8888-9999-aaaaabbbbbcc,Neha Kapoor,insurance agent
+messages[9]{user,text}:
+  user_1,[00:00] Hello? Umm... hi, is this Neha from Shield Life Services? I have a question about my health policy.
+  user_2,[00:05] Hi Aditi, yes this is Neha. I can hear you. How can I help you today?
+  user_1,[00:12] So, I noticed my policy is about to expire... I think it says 'Expired' soon? I'm a bit confused.
+  user_2,[00:18] Yeah, let me check that. [typing] ... Okay, I see your policy number  HLP-2023-0456, it's set to expire on 30/09/2026.
+  user_1,[00:30] Oh... okay. I was hoping maybe we could extend or renew?
+  user_2,[00:35] Unfortunately, the current product line is being phased out, so we can't renew the exact same plan.
+  user_1,[00:40] Ah, that's... disappointing. What are my options then?
+  user_2,[00:45] We can look at alternative health plans that suit your needs. I can email you the details. Is that okay?
+  user_1,[00:50] Yeah, fine. [sighs] Send me whatever you have.

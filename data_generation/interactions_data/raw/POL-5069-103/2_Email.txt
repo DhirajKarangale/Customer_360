@@ -1,0 +1,8 @@
+mail_id: a3f9c2e1-7b4d-4f9a-8c2e-1d5f6b9e3a7c
+subject: Health Policy Activation – Questionnaire Submission
+participants[2]{id,name,email,role}:
+  1e7b9c4a-3f2d-41a8-9e6b-5d2c8f7a9b01,Neha Chauhan,neha.chauhan@dcoders.com,customer
+  4c6d8e2f-9a1b-44e3-8f7d-2b3c6a5d9e12,Karan Joshi,karan.joshi@safestepinsurance.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,01/10/2026 T:09:15:00,"Hi Karan,\n\nAs discussed on the call, please find attached the completed medical questionnaire for my health policy. Let me know if anything else is needed.\n\nThanks,\nNeha Chauhan\nCustomer, DCoders",https://storage.dcoders.com/docs/Neha_Health_QR_2026.pdf
+  user_2,user_1,,01/10/2026 T:10:05:00,"Dear Neha,\n\nThank you for sending the completed questionnaire. I have uploaded it to your file and the policy is now active in our system. You should receive a confirmation email shortly, and you can view the policy documents in your portal.\n\nIf you have any further questions, feel free to reach out.\n\nBest regards,\nKaran Joshi\nInsurance Agent, Safe Step Insurance",

@@ -1,0 +1,19 @@
+call_id: REC-DC-008
+start_timestamp: 20/09/2026 T:14:05:00
+end_timestamp: 20/09/2026 T:14:09:30
+participants[2]{id,name,role}:
+  9f2c1a7e-3b4d-41f9-8a6e-5d2c9f3b7a12,Kiara Sen,customer
+  d4e5b6c7-8f9a-4b0c-9d1e-2f3a4b5c6d7e,Neha Kapoor,insurance agent
+messages[12]{user,text}:
+  user_1,[00:00] Hi Neha I'm calling again about my health policy
+  user_2,[00:05] Hello Kiara sure I have your file open
+  user_1,[00:10] I just wanted to double check the policy is still set to expire on 30 September 2026
+  user_2,[00:15] Yes that's correct the renewal we did covers you until that date
+  user_1,[00:20] After my knee surgery I might need another extension maybe next year
+  user_2,[00:25] We can look at a new term starting 1 October 2026 um I can send you the options
+  user_1,[00:30] That would be great could you also confirm the claim for the surgery is already paid
+  user_2,[00:35] The claim was settled on 21 September 2026 the payment was transferred to your bank
+  user_1,[00:40] Oh good thanks I saw the deposit yeah
+  user_2,[00:45] I'll email you the renewal quote and a quick guide on how to add a dependent if you wish
+  user_1,[00:50] Thanks Neha I appreciate the help
+  user_2,[00:55] You're welcome Kiara have a smooth recovery and call if you need anything else

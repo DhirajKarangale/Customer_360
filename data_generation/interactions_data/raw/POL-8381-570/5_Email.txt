@@ -1,0 +1,8 @@
+mail_id: 9f2c8b3e-7a1d-4f5b-9c2e-6d8a1f3b9c4d
+subject: Re: Life Policy LC-2026-0456 – Beneficiary Details and Next Steps
+participants[2]{id,name,email,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Vivaan Gupta,vivaan.g@dcoders.com,customer
+  d4e5f6a7-89ab-cdef-0123-456789abcdef,Vikram Singh,vikram.s@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,03/10/2026 T:09:15:00,"Hi Vikram,\n\nThanks for activating my policy (LC-2026-0456). I would like to add my sister, Ananya Gupta, as the primary beneficiary and set my parents as secondary. Could you guide me on the process and let me know if there’s anything I need to submit? Also, please confirm the next premium due date.\n\nBest,\nVivaan", 
+  user_2,user_1,,03/10/2026 T:09:45:00,"Dear Vivaan,\n\nCongratulations again on your policy activation. I’ve attached the Beneficiary Nomination Form for you to complete. Please fill in the details for your primary and secondary beneficiaries and return the signed form to us at your earliest convenience. Once we receive it, we’ll update the records accordingly.\n\nRegarding the premium, the next payment of $1,200 is due on 15/11/2026. You can continue using the auto‑pay link previously provided.\n\nIf you have any questions, feel free to reach out.\n\nBest regards,\nVikram Singh\nInsurance Agent, ProtectAll Agency\nDCoders",https://storage.dcoders.com/docs/Beneficiary_Form_LC-2026-0456.pdf

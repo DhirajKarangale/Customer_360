@@ -1,0 +1,8 @@
+mail_id: 7f3a9c12-4b6e-4d9f-8c2a-5e9b7d1a2f33
+subject: Renewal Quote for Your Health Policy – Action Required
+participants[2]{id,name,email,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Reyansh Tiwari,reyansh.tiwari@example.com,customer
+  d4c3b2a1-7777-8888-9999-aaaaabbbbbcc,Vikram Patel,vikram.p@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,16/09/2026 T:09:15:00,"Dear Reyansh,\n\nFollowing our recent conversation, please find attached the renewal quote for your health policy (Policy No: HP-2025-987654). The new term will commence on 01/10/2026 with an annual premium of $1,250 plus a lapse fee of $50. To keep your coverage active, please confirm acceptance and complete the payment within the next 30 days.\n\nYou can review the detailed quote in the attached PDF. If you have any questions or need further assistance, feel free to reach out.\n\nBest regards,\nVikram Patel\nOmni Insurance Group\nvikram.p@dcoders.com",https://storage.dcodelabs.com/quotes/HP-2025-987654_Renewal_Quote_16092026.pdf
+  user_1,user_2,,16/09/2026 T:10:02:00,"Hi Vikram,\n\nThanks for sending the quote. The terms look good. Please go ahead and process the renewal. Let me know the next steps for payment.\n\nRegards,\nReyansh Tiwari",

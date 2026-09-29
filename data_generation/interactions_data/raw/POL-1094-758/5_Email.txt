@@ -1,0 +1,8 @@
+mail_id: f1234567-89ab-cdef-0123-456789abcdef
+subject: Updated Auto Policy – Added Driver & New Premium
+participants[2]{id,name,email,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Kiara Sen,kiara.sen@dcoders.com,customer
+  e7f8g9h0-7777-8888-9999-aaaaabbbbbcc,Vikram Singh,vikram.s@protectall.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,12/10/2026 T:09:15:30,"Dear Kiara,\n\nThank you for speaking with me earlier today. As discussed, we have updated your auto policy to include your brother, Rajesh Sen, as an additional driver. The premium for the renewed term is now $1,200, effective 01/10/2026, and the policy will remain active through 30/09/2027.\n\nPlease find attached the updated policy documents and proof of insurance for your records. Let me know if you have any questions or need further assistance.\n\nBest regards,\nVikram Singh\nInsurance Agent, ProtectAll Agency\nvikram.s@protectall.com",https://storage.protectall.com/policies/AutoPolicy_AU-2026-0456_Updated.pdf
+  user_1,user_2,,12/10/2026 T:10:02:12,"Hi Vikram,\n\nI’ve received the updated policy documents and proof of insurance. Everything looks good. Thank you for the quick turnaround.\n\nBest,\nKiara","""

@@ -1,0 +1,9 @@
+mail_id: 9f3b2c7e-1a4d-4f9b-8e2a-6d5c9e1b7a4f
+subject: Renewal Form for DCoders Comprehensive Health Plan (HP‑45789)
+participants[3]{id,name,email,role}:
+  a12f9c34-7b8e-41d2-9a6f-3c2d5e8b9f01,Rahul Jain,rahul.jain@dcoders.com,customer
+  d4e5f6a7-8b9c-4d1e-9f0a-2b3c4d5e6f78,Vikram Patel,vikram.p@dcoders.com,insurance agent
+  b7c8d9e0-1f2a-3b4c-5d6e-7f8a9b0c1d2e,Policy Administration,policy.admin@dcoders.com,internal
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,user_3,28/09/2026 T:09:15:00,"Dear Rahul,\n\nThank you for speaking with me earlier. As discussed, your DCoders Comprehensive Health Plan (Policy No. HP‑45789) has been renewed at a monthly premium of ₹1,200 effective from 01/10/2026. Please find attached the renewal form for your signature. Once signed, you can return it via email or upload it through our portal.\n\nIf you have any questions regarding the payment options or coverage details, feel free to reach out.\n\nBest regards,\nVikram Patel\nInsurance Agent\nOmni Insurance Group\nvikram.p@dcoders.com",https://storage.dcodelife.com/forms/renewal_HP-45789_2026.pdf
+  user_1,user_2,,28/09/2026 T:10:05:00,"Hi Vikram,\n\nGot the renewal form, thank you. I’ll review and sign it today. Could you also confirm the accepted modes of payment for the monthly premium? I prefer auto‑debit, but need the bank details.\n\nThanks,\nRahul Jain",

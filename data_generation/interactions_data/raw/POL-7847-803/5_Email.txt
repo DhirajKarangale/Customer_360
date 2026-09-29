@@ -1,0 +1,8 @@
+mail_id: 7f9c2a1e-4b3d-41f9-9e6a-8d2f5c3b7e91
+subject: Refund Processed – Auto Policy AU‑2019‑HC Cancellation Confirmation
+participants[2]{id,name,email,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Aditi Mahajan,aditi.mahajan@example.com,customer
+  d4c3b2a1-8765-09ba-fedc-0987654321ba,Suresh Deshmukh,suresh.d@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,30/09/2026 T:09:15:30,"Dear Aditi,\n\nI’m writing to let you know that the $1,200 refund for your cancelled auto policy (Policy No: AU-2019-HC) has been successfully posted to your card ending 1234 on 27 Sept 2026. The transaction reference is REF‑20260927‑1200.\n\nPlease find the official refund receipt attached for your records. If you have any further questions or notice any discrepancy, feel free to reach out.\n\nThank you for choosing DCoders. We wish you all the best.\n\nBest regards,\nSuresh Deshmukh\nInsurance Agent\nSecure Life Solutions\nsuresh.d@dcoders.com\nPhone: +1‑555‑123‑4567",https://storage.dcoders.com/refunds/REF-20260927-1200.pdf
+  user_1,user_2,,30/09/2026 T:10:02:12,"Hi Suresh,\n\nThank you for the confirmation and the receipt. I’ve received the refund on my card. All good on my end.\n\nBest,\nAditi Mahajan",

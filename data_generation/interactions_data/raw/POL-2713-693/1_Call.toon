@@ -1,0 +1,21 @@
+call_id: 7f3e9a2b-8c4d-4e1f-a9b2-3d5f6c7e8a9b
+start_timestamp: 29/09/2026 T:10:15:00
+end_timestamp: 29/09/2026 T:10:18:30
+participants[2]{id,name,role}:
+  d3f9a1c2-7b4e-4a9e-9c1f-5f2b6c8d9e0a,Aditi Mahajan,customer
+  9b2c3d4e-5f6a-7b8c-9d0e-1f2a3b4c5d6e,Karan Joshi,insurance agent
+messages[14]{user,text}:
+  user_1,[00:00] Hello? Uh... is this Karan?
+  user_2,Hi Aditi, yes this is Karan from Safe Step Insurance. Can you hear me okay?
+  user_1,Yeah, I can hear you. [sighs] I was just checking my policy status.
+  user_2,Right, let me pull it up… [typing] Okay, I see you have the Health Plus plan, policy number HP-447822.
+  user_1,Great… So, um—what’s the current status? I think it’s close to expiry?
+  user_2,You’re correct. It’s set to expire on 05/10/2026. After that it will automatically move to “Expired” in our system.
+  user_1,Oh—so does that mean I’ll lose coverage immediately after the 5th?
+  user_2,Yes, once the expiry date passes you won’t have active coverage unless you renew or switch to a new plan.
+  user_1,Hmm… I was hoping to keep it a bit longer. Is there a way to extend it? -- I need to know the options.
+  user_2,We can definitely renew for another year, or you could upgrade to the Premium Health plan which gives a longer grace period. It’ll just be a quick paperwork update.
+  user_1,Okay, that sounds good. Can you send me the renewal details? Maybe email me the forms?
+  user_2,Sure thing, I’ll email you the renewal quote and the form right after this call. Anything else on your mind?
+  user_1,No, that’s all. Thanks for the help, Karan. [sighs of relief]
+  user_2,You’re welcome, Aditi. Have a good day!

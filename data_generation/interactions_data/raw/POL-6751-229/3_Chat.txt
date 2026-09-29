@@ -1,0 +1,13 @@
+chat_id: 9f3c2a1b-7e4d-4b9a-8c2f-1d5e6f7a8b9c
+participants[2]{id,name,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Rohan Deshmukh,customer
+  d4e5f6g7-7777-8888-9999-aaaabbbbcccc,Vikram Patel,insurance agent
+messages[8]{user,timestamp,text,media_url}:
+  user_2,28/09/2026 T10:15:02,"Hi Rohan, good morning! Just wanted to let you know your health policy has exipired*expired yesterday. I can set up a 1‑yr renewal at the same rate if you’re ok.", 
+  user_1,28/09/2026 T10:15:45,"hey vikram, thx for the heads up. is the same outpatient specialist coverage still included?", 
+  user_2,28/09/2026 T10:16:30,"Yes, the outpatient specialist (OPD) coverage stays the same – same network, same limits. Any other ques*questions?", 
+  user_1,28/09/2026 T10:18:12,"i’ll need to check my payment method. what’s the premium amount for the renewal?", 
+  user_2,28/09/2026 T10:19:05,"The premium is $1,250 for the next 12 months, due within 7 days. I’ll also send you the renewal form.", 
+  user_1,28/09/2026 T10:20:20,"great, i’ll try to pay asap. could u send the payment link pls*please?", 
+  user_2,28/09/2026 T10:21:05,"Sure thing, here's the secure payment link: https://pay.omniins.com/renew/ABC12345. I’ve also attached the signed renewal form for you to review.",https://storage.omniins.com/forms/Renewal_Form_Rohan_2026.pdf
+  user_1,28/09/2026 T10:22:30,"got it, thx! i’ll sign and pay by friday.",

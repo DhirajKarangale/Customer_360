@@ -1,0 +1,12 @@
+chat_id: 7f3a9c2e-1b4d-4e8a-9c2f-5d6b7e9a1c34
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Akanksha Bhatt,customer
+  d4c3b2a1-8765-09ba-fedc-0987654321fe,Karan Joshi,insurance agent
+messages[7]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T09:15:02,"hi karan, just got the payment link, can u confirm it's for the reinstatment*reinstatement?", 
+  user_2,28/09/2026 T09:15:45,"Hey Akanksha! Yes, that link is for the same‑day reinstatement of policy AP‑123456. The fee is $152.75.", 
+  user_1,28/09/2026 T09:16:10,"thanks! I just paid. can you check if it's reflected?", 
+  user_2,28/09/2026 T09:16:45,"Got it, let me check... *checking* Done! Your policy is now active again. I’ve also attached the updated policy document.",https://storage.dcodelabs.com/policies/AP-123456_Updated_2026.pdf
+  user_1,28/09/2026 T09:17:05,"great! thx :) also, will my deductible stay the same?", 
+  user_2,28/09/2026 T09:17:30,"Yes, the deductible remains unchanged at $500. Let me know if you need anything else.", 
+  user_1,28/09/2026 T09:18:00,"that's all, thx again!",

@@ -1,0 +1,8 @@
+call_id: REC-INS-004A
+start_timestamp: 28/09/2026 T:14:05:00
+end_timestamp: 28/09/2026 T:14:22:00
+participants[2]{id,name,role}:
+  9b2e7d5f-3c1a-4b8e-9f6d-2a5c9e7d8b0f,Ravi Menon,insurance agent
+  a5d3f9c2-1b4e-4f9a-8c2d-6e9f3b7a1c4e,Pranav Mishra,customer
+messages[32]{user,text}:
+  user_1,Hello Pranav, this is Ravi from Secure Future Group at

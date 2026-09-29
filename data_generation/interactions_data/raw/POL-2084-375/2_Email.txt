@@ -1,0 +1,8 @@
+mail_id: 9f2c7b1e-4a3d-41f9-8d6e-2b5c9e7a1f4d
+subject: Re: Health Policy Reinstatement Confirmation
+participants[2]{id,name,email,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Kavya Iyer,kavya.iyer@dcoders.com,customer
+  d4c3b2a1-8765-09ba-fedc-0987654321ba,Neha Kapoor,neha.kapoor@shieldlife.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,21/09/2026 T:09:15:30,"Hi Neha,\n\nThank you for the call earlier. Could you please send me a written confirmation that my health policy (Policy No: HP-DC-2024-5678) has been reinstated and that the next premium of $120 is due on 15 December 2026? Also, I’d like to know if there are any further actions needed on my side.\n\nThanks,\nKavya",""
+  user_2,user_1,,21/09/2026 T:09:45:10,"Dear Kavya,\n\nI’m pleased to confirm that your health policy HP-DC-2024-5678 has been reinstated as of today. The next premium of $120 is due on 15 December 2026. No further action is required on your part.\n\nIf you have any questions, feel free to reach out.\n\nBest regards,\nNeha Kapoor\nCustomer Service Representative\nShield Life Services",""

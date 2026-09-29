@@ -1,0 +1,13 @@
+chat_id: c8f9a2d3-4b1e-4c9a-9f6e-2d5b7c8e9f01
+participants[2]{id,name,role}:
+  d4f5c6a7-89ab-4cde-f012-3456789abcde,Vihaan Patel,customer
+  e1f2g3h4-56ij-7klm-8nop-qrstuvwx1234,Neha Kapoor,insurance agent
+messages[8]{user,timestamp,text,media_url}:
+  user_1,01/10/2026 T09:15:30,"hey, got your email about the renewal. thx!", 
+  user_2,01/10/2026 T09:15:45,"Hi Vihaan! Happy to help. What can I assist you with today?", 
+  user_1,01/10/2026 T09:16:10,"can u tell me what the roadside‑assistance rider actually covers? like tow distance, fuel, lockout etc.", 
+  user_2,01/10/2026 T09:16:45,"Sure thing! The rider gives you up to 100 km of towing per incident, up to $50 for emergency fuel, and lock‑out assistance (including key replacement) up to $30. It also covers battery jump‑start and tire change. Here’s the full brochure for more details.",https://storage.dcodelife.com/docs/Roadside_Assistance_Rider.pdf
+  user_1,01/10/2026 T09:17:20,"thanks! also, when does my policy actually end? i think you said 30 sept 2026? *Sept", 
+  user_2,01/10/2026 T09:17:55,"Your current auto policy is set to expire on 30 Sept 2026. If you don’t renew before that date, the coverage will lapse. We can set a reminder for you if you’d like.", 
+  user_1,01/10/2026 T09:18:30,"cool, i might renew later. can i cancle before expiry if i want? *cancel", 
+  user_2,01/10/2026 T09:19:05,"Absolutely, you can cancel anytime before the renewal date with no penalty. Just let us know and we’ll handle the paperwork.",

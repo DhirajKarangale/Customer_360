@@ -1,0 +1,17 @@
+call_id: REC-INS-002C
+start_timestamp: 28/09/2026 T:14:05:00
+end_timestamp: 28/09/2026 T:14:09:30
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Rohan Deshmukh,customer
+  f1e2d3c4-9876-54ba-dcba-0987654321fe,Sunita Agarwal,insurance agent
+messages[10]{user,text}:
+  user_1,[00:00] Hello Sunita this is Rohan I got your email about the home‑insurance quote
+  user_2,[00:07] Hi Rohan thanks for calling Yeah I sent over the preliminary premium ₹18750 per year for a ₹30 lakh sum insured
+  user_1,[00:15] Right umm I have the documents you asked for I have the property deed and a recent electricity bill The fire‑safety certificate I’m still waiting on that
+  user_2,[00:25] No problem we can go ahead with the deed and the bill and just flag the fire‑safety as pending The system will mark the policy as Pending until we get it
+  user_1,[00:35] Great Should I email them now or...
+  user_2,[00:38] Yeah you can attach them to this email thread I’ll upload them on our portal as soon as I receive them
+  user_1,[00:45] Okay I had a quick question about the deductible what’s the deductible for fire damage
+  user_2,[00:52] Ah the fire deductible is ₹5000 it’s the same across the board for all perils
+  user_1,[01:00] Got it thanks I’ll send the files right away Anything else you need from me at this point
+  user_2,[01:07] That’s all for now Once we have the fire‑safety certificate we’ll finalize and issue the policy Talk soon

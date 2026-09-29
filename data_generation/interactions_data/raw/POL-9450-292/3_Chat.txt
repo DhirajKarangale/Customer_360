@@ -1,0 +1,14 @@
+chat_id: 9f2b7c1e-4d3a-41f9-8a2e-6c9f5b0d4e7a
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Kiara Sen,customer
+  4f9e2b1c-3a6d-4f8b-9c2e-7d5a6b8c9e0f,Neha Kapoor,insurance agent
+messages[9]{user,timestamp,text,media_url}:
+  user_1,29/09/2026 T10:15:02,"hey neha, just checked my portal and it says my old health policy is expired 😕",
+  user_2,29/09/2026 T10:15:45,"hi kiara! yep, the previous plan (policy #HL-2024-987) did expire on 30 Sep 2026. but we set up the new one during our call, so you’re covered.",
+  user_1,29/09/2026 T10:16:20,"oh ok thx! can you send me the new policy doc? I need to share it with the hospital.",
+  user_2,29/09/2026 T10:16:55,"sure thing, just uploaded it. here’s the PDF.",https://storage.dcodelife.com/docs/Policy_HL-2026-001.pdf
+  user_1,29/09/2026 T10:17:30,"got it, thanks! also, what’s the process for claim after my knee surgery next week? any forms i need now?",
+  user_2,29/09/2026 T10:18:10,"you’ll need the claim form (attached) plus the hospital’s discharge summary and itemized bills. we can start the upload in the portal or I can email you the form.",https://storage.dcodelife.com/forms/Claim_Form_HL_2026.pdf
+  user_1,29/09/2026 T10:18:45,"pls email me the form, i’m not great with the portal *great",
+  user_2,29/09/2026 T10:19:20,"sending now! check your inbox shortly.",
+  user_1,29/09/2026 T10:20:05,"thanks neha, feeling better already 😊",

@@ -1,0 +1,11 @@
+chat_id: 9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Rahul Jain,customer
+  f1e2d3c4-9876-54ba-dcba-0987654321fe,Sunita Agarwal,insurance agent
+messages[6]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T10:15:02,"hi sunita, just wanted to check if my home policy HC-2026-0456 is active yet? I sent the docs (property tax reciept*receipt and utility bill) last night.", 
+  user_2,28/09/2026 T10:15:15,"Hi Rahul! I’ve just processed them. Your policy will be active within the next hour. I’ll send you a confirmation shortly.", 
+  user_1,28/09/2026 T10:16:05,"thanks! also, will the kitchen reno be covered for any water damage?", 
+  user_2,28/09/2026 T10:16:20,"Yes, the renovation is covered under the extended coverage clause. We’ll need to add the new kitchen value – I’ll update the sum insured and send the endorsement.", 
+  user_1,28/09/2026 T10:16:45,"great, thx! can you send me the endorsement pdf here?", 
+  user_2,28/09/2026 T10:16:50,"Sure, here’s the endorsement document.",https://storage.dcoders.com/docs/HC-2026-0456_Endorsement.pdf

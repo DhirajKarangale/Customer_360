@@ -1,0 +1,8 @@
+mail_id: a4f9c2e1-7b3d-4f9a-8c2e-1d5f9a2b6c3d
+subject: Re: Health Policy Renewal – Confirmation and Activation
+participants[2]{id,name,email,role}:
+  3d9e5b1a-2c4f-44a7-9f6b-8e2d7c3a5b9f,Rohan Deshmukh,rohan.d@dcoders.com,customer
+  7f2a1c9e-5b6d-41e3-8a9c-3d4e6f7b8c1a,Vikram Patel,vikram.p@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,05/10/2026 T:09:15:00,"Hi Vikram,\n\nI have attached the signed renewal form and the payment receipt for the $1,250 premium. Please let me know once everything is processed.\n\nThanks,\nRohan",https://storage.dcodelabs.com/renewals/ROHAN_DESHMUKH_HealthPolicy_Signed.pdf
+  user_2,user_1,,05/10/2026 T:11:30:00,"Dear Rohan,\n\nThank you for sending the signed renewal form and payment receipt. I have reviewed and processed them. Your health policy is now active effective today, 05/10/2026, and you will receive the updated policy document shortly.\n\nIf you have any further questions, feel free to reach out.\n\nBest regards,\nVikram Patel\nInsurance Agent\nOmni Insurance Group\nvikram.p@dcoders.com",

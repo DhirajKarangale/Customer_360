@@ -1,0 +1,23 @@
+call_id: REC-DC-001
+start_timestamp: 29/09/2026 T:14:05:00
+end_timestamp: 29/09/2026 T:14:30:00
+participants[2]{id,name,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Diya Menon,customer
+  5e6f7a8b-1234-5678-9abc-def012345678,Karan Joshi,insurance agent
+messages[41]{user,text}:
+  user_2,Hello this is Karan Joshi from Safe Step Insurance how can I help you today
+  user_1,Uh hi Karan this is Diya Menon I wanted to talk about my home policy
+  user_2,Sure thing Diya can you confirm your policy number for me
+  user_1,Yeah it's let me check it's HP-2024-5678
+  user_2,Got it thanks give me a sec to pull it up
+  user_2,[typing]
+  user_2,Alright I have it here I see the policy is set to expire on 15/10/2026
+  user_1,Oh that's right I was wondering if I could renew it or maybe cancel
+  user_2,We can definitely look at renewal options Are you thinking of continuing coverage
+  user_1,Honestly I'm not sure the house we might be moving soon
+  user_2,I see let me just put you on a brief hold while I check the renewal terms
+  user_2,[hold music]
+  user_2,[background noise - faint dog barks]
+  user_2,Thanks for holding Diya
+  user_2,So we have a few renewal packages Standard renewal keeps the same coverage or you can adjust the sum insured
+  user_1,Umm what's the

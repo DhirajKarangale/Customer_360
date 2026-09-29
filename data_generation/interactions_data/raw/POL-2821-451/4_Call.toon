@@ -1,0 +1,17 @@
+call_id: REC-DC-004A
+start_timestamp: 28/09/2026 T:15:12:00
+end_timestamp: 28/09/2026 T:15:16:30
+participants[2]{id,name,role}:
+  a3f9d2c1-7b4e-41a9-9e3f-5d2c8b7e9a12,Aditi Mahajan,customer
+  9c4b6e8f-2d5a-48f1-bc33-1e7f9d4a6c57,Neha Kapoor,insurance agent
+messages[8]{user,text}:
+  user_1,[00:00] Hello, Neha? This is Aditi. I just got the email about my health policy expiring…
+  user_2,[00:05] Hi Aditi, yes I’m here. I see the policy is set to expire on 30/09/2026, and unfortunately it can’t be renewed—it's being phased out.
+  user_1,[00:12] Oh… okay. So what happens on the expiry date? Do we just lose coverage?
+  user_2,[00:15] Yeah, basically the coverage will lapse on that day. You’ll be out of protection unless you switch to another plan before then.
+  user_1,[00:20] I’m a bit worried about the gap. Can we switch right now? I mean, I want to avoid any lapse.
+  user_2,[00:24] Absolutely, we can process the switch today. I’ll pull up the “Balanced Care” plan we discussed in chat—₹4,850 per month—and get the enrollment form over to you.
+  user_1,[00:30] Great, thanks. And just to confirm, once I enroll in Balanced Care, the old policy will be marked as expired automatically, right?
+  user_2,[00:35] Yes, once the new plan is active, the old one will be flagged as “Expired” in the system. I’ll also send you a confirmation email with the effective date—should be 01/10/2026, right after the current one ends. Anything else you need?
+  user_1,[00:42] No, that covers it. I’ll look out for the email and the form. Thanks for walking me through this, Neha.  
+  user_2,[00:45] You’re welcome, Aditi. Feel free to call back if you have any questions while filling the form. Have a good day!

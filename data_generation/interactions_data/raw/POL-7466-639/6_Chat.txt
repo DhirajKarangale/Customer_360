@@ -1,0 +1,13 @@
+chat_id: 9f3b2c1e-7a4d-4e8f-9c2b-1d5f6a7b8c9d
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Reyansh Tiwari,customer
+  d4c3b2a1-8765-09ba-fedc-0987654321fe,Ravi Menon,insurance agent
+messages[8]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T14:02:10,"hey ravi, just wanted to double check that my auto policy is now marked expired? thx *thanks", 
+  user_2,28/09/2026 T14:02:45,"Hi Reyansh! Yes, the policy is now officially expired as of today. 🎉", 
+  user_1,28/09/2026 T14:05:02,"cool! also, can u send me a quote for a new car? i’m looking at a 2027 sedan.", 
+  user_2,28/09/2026 T14:06:30,"Sure thing. I’ll need a few details – make, model, year, and your zip. Could you share that?", 
+  user_1,28/09/2026 T14:07:15,"i’m thinking a 2027 honda accord, zip 94107. any loyalty discounts u can throw in? *discounts", 
+  user_2,28/09/2026 T14:09:00,"Got it. Since you’ve been with us 3 years, we can apply a 5% loyalty discount on the premium. I’ll draft a quote and email it by EOD.", 
+  user_1,28/09/2026 T14:09:45,"thanks! also, just confirm the $480 refund hit my account yet? I haven’t seen it.", 
+  user_2,28/09/2026 T14:11:20,"The $480 prorated refund was posted on 05/10/2026 and should appear on your statement by now. If you don’t see it, let me know and we’ll investigate.",

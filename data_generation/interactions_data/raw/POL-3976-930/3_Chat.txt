@@ -1,0 +1,13 @@
+chat_id: a1b2c3d4-5678-90ab-cdef-1234567890ab
+participants[2]{id,name,role}:
+  9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f,Vedant Thakur,customer
+  d4c3b2a1-0f9e-8d7c-6b5a-4c3d2e1f0a9b,Karan Joshi,insurance agent
+messages[8]{user,timestamp,text,media_url}:
+  user_1,01/10/2026 T09:15:02,"hey karan, got ur email about the renewal. can u confirm the start date? i think it's tomorow*tomorrow.", 
+  user_2,01/10/2026 T09:15:10,"Hi Vedant! Yes, the policy will start tomorrow, 02 Oct 2026.", 
+  user_1,01/10/2026 T09:15:20,"great! also, how do i pay the $1,250? can i do card or bank transfer?", 
+  user_2,01/10/2026 T09:15:35,"You can pay via credit card on our portal or direct bank transfer. Which do you prefer?", 
+  user_1,01/10/2026 T09:15:45,"i'll use credit card, thx.", 
+  user_2,01/10/2026 T09:16:05,"Sure, I’ll send you the payment link. One sec...", 
+  user_2,01/10/2026 T09:16:20,"Here’s the link: https://payments.safestep.com/pay/AU-4589", 
+  user_1,01/10/2026 T09:16:45,"got it, will pay now. thx for the quick help!",

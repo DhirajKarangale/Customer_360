@@ -1,0 +1,7 @@
+mail_id: mail-dc-884102-02
+subject: Document Verification Follow-up: Life Insurance Policy Activation (DCoders / Safe Shield Agency)
+participants[2]{id,name,email,role}:
+  cust-rd-001,Rohan Deshmukh,rohan.deshmukh@gmail.com,customer
+  agent-rt-002,Ramesh Tiwari,ramesh.tiwari@safeshieldagency.com,insurance agent
+mails[1]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2026 T:11:15:22,"Dear Rohan,\n\nIt was a pleasure speaking with you earlier regarding the document verification for your life insurance policy via DCoders. As discussed on our call, please find attached the verified income proof and address verification PDF that we reviewed together.\n\nCould you please review and reply to this email confirming that these are the final documents? Once you confirm, I will push the verification status through our portal so that your policy status updates from pending to 'Active' in the DCoders system by end of day.\n\nThank you for your time and cooperation.\n\nBest regards,\nRamesh Tiwari\nSafe Shield Agency\n(Authorized Partner for DCoders)",https://storage.safeshieldagency.com/docs/Rohan_Deshmukh_Life_Policy_Verification_Docs.pdf

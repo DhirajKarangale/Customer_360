@@ -1,0 +1,14 @@
+chat_id: c8f3a9d2-7b4e-41c9-9e2a-5d6f9b0c8e12
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Rohan Deshmukh,customer
+  b2c3d4e5-6789-01bc-def0-2345678901bc,Vikram Patel,insurance agent
+messages[9]{user,timestamp,text,media_url}:
+  user_1,29/09/2026 T10:05:12,"hey vikram, just checking if my policy is still active??*active", 
+  user_2,29/09/2026 T10:05:45,"Hi Rohan! 😊 Yes, your life policy is active. The recent updates (₹15 lakh SA + ₹5 lakh AD rider) are all reflected.", 
+  user_1,29/09/2026 T10:07:03,"thanks! can u send me the latest policy doc*document again? I kinda misplaced the email.", 
+  user_2,29/09/2026 T10:07:20,"Sure thing, uploading now.", 
+  user_2,29/09/2026 T10:07:22,"Here’s the revised policy PDF.",https://storage.dcodelife.com/docs/Policy_Rohan_2026.pdf
+  user_1,29/09/2026 T10:08:01,"got it, thx! also, when is the next premium due?", 
+  user_2,29/09/2026 T10:08:30,"Your next premium is due on 15 Oct 2026. We’ll send a reminder a week before.", 
+  user_1,29/09/2026 T10:09:10,"awesome, thx for the heads‑up. any other changes i should know?", 
+  user_2,29/09/2026 T10:09:45,"All set for now. If you need anything else just ping me!",

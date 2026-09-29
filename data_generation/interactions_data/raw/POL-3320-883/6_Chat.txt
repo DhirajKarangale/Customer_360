@@ -1,0 +1,11 @@
+chat_id: 9f3b7c2a-5d4e-4a9b-bc12-8e6f1d3a7c9e
+participants[2]{id,name,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Kriti Mahajan,customer
+  e7f8g9h0-7777-8888-9999-aaaaabbbbbcc,Karan Joshi,insurance agent
+messages[6]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T09:15:00,"hey karan, could u send me the paymnt *payment link? also, can you confirm the collsion *collision and comprehensive coverage limits? thx",
+  user_2,28/09/2026 T09:15:10,"Hi Kriti! Sure thing. The collision limit is $25,000 and the comprehensive limit is $20,000. I’ll send you the secure payment link shortly. 😊",
+  user_1,28/09/2026 T09:15:25,"got it, any other docs i need to fill out?",
+  user_2,28/09/2026 T09:15:38,"No extra paperwork, just review the quote, sign electronically, and complete the payment.",
+  user_1,28/09/2026 T09:15:55,"ok thx *thanks!",
+  user_2,28/09/2026 T09:16:02,"Here’s the payment link: https://payments.safestepinsurance.com/pay?policy=AU-2026-345",https://payments.safestepinsurance.com/pay?policy=AU-2026-345

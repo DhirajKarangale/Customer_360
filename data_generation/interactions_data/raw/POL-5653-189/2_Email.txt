@@ -1,0 +1,8 @@
+mail_id: 7f3a9c2e-1b4d-4f9a-8c6e-2d5f9b0a1c3d
+subject: Renewal Form for Your Health Policy (HP-2026-0456)
+participants[2]{id,name,email,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Ishaan Bose,ishaan.bose@dcoders.com,customer
+  d4e5f6g7-8910-11aa-bbcc-223344556677,Ramesh Tiwari,ramesh.tiwari@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2026 T:09:15:00,"Dear Ishaan,\n\nThank you for speaking with me earlier regarding your Health policy (Policy No: HP-2026-0456) which expired on 15/09/2026. As discussed, you can reinstate the policy immediately by paying a $25 reinstatement fee, which will provide retroactive coverage from the expiry date.\n\nPlease find attached the renewal form. Kindly complete the required sections, sign, and return the form to me at your earliest convenience. Once we receive the completed form and the reinstatement fee, we will reactivate your coverage.\n\nIf you have any questions or need assistance with the form, feel free to reach out.\n\nBest regards,\nRamesh Tiwari\nInsurance Agent\nSafe Shield Agency\nramesh.tiwari@dcoders.com",https://storage.dcodelabs.com/forms/renewal_HP-2026-0456.pdf
+  user_1,user_2,,28/09/2026 T:10:05:30,"Hi Ramesh,\n\nI’ve received the renewal form, thank you. I’ll fill it out today. Could you let me know the preferred method for paying the $25 reinstatement fee? Also, is there a deadline for submitting the form to avoid any gaps in coverage?\n\nThanks,\nIshaan Bose\nCustomer\nishaan.bose@dcoders.com",

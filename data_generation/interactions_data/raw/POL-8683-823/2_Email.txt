@@ -1,0 +1,8 @@
+mail_id: a7f3c9e2-5d4b-41f2-9a6e-3b2d8f0c9e12
+subject: Your Health Policy Renewal Quote – Policy #HP-456789
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Riya Mukherjee,riya.mukherjee@dcoders.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Singh,vikram.singh@protectall.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2026 T:09:15:00,"Hi Riya,\n\nIt was a pleasure speaking with you earlier today. As discussed, your current health policy (Policy #HP-456789) expired on 15 Sept 2026. I’ve prepared a renewal quote for you, along with a concise coverage summary that highlights any changes for the upcoming year.\n\nPlease find the documents attached. If you have any questions or would like to adjust the coverage, just let me know and I’ll be happy to help.\n\nBest regards,\nVikram Singh\nInsurance Agent – ProtectAll Agency\nvikram.singh@protectall.com\n+1‑555‑0123",https://storage.protectall.com/docs/HP-456789_Renewal_Quote_2026.pdf
+  user_1,user_2,,28/09/2026 T:10:05:30,"Hi Vikram,\n\nThank you for the quick follow‑up and for sending the renewal documents. I’ll review the quote today. One quick question – I noticed the premium has increased compared to last year. Could you explain what’s driving the change?\n\nThanks again,\nRiya Mukherjee\nriya.mukherjee@dcoders.com",

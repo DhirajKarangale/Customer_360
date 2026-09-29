@@ -1,0 +1,13 @@
+chat_id: 7f8a9c12-34ab-45cd-89ef-1234567890ab
+participants[2]{id,name,role}:
+  a5d3f6b2-1c4e-4a9b-8f2d-7e5c9a1b2c3d,Kavya Iyer,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[8]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T15:30:12,"hey suresh, can you tell me how to file a cliam*claim for my life policy L‑2026‑0459? i want to be sure i do it right.", 
+  user_2,28/09/2026 T15:30:45,"Hi Kavya! Absolutely, happy to help. Here’s a quick rundown:\n1. Fill out the Claim Form (I’ll send you the PDF).\n2. Attach the death certificate and any required ID.\n3. Submit the documents to us via email or our portal.\n4. Our team will review and process within 7‑10 business days.", 
+  user_1,28/09/2026 T15:31:10,"thanks! could you resend the claim form pdf? also, is my mother still listed as the primary beneficary*beneficiary?", 
+  user_2,28/09/2026 T15:31:12,"Sure thing, here’s the form: https://storage.dcoders.com/docs/Claim_Form_L2026-0459.pdf. And yes, your mother is still the primary beneficiary; we also added your sister as secondary per your last update.", https://storage.dcoders.com/docs/Claim_Form_L2026-0459.pdf
+  user_1,28/09/2026 T15:31:45,"great, appreciate it. what's the typical payoutt*payout timeline once everything's approved?", 
+  user_2,28/09/2026 T15:32:10,"Once the claim is approved, the payout is usually processed within 3‑5 business days. We’ll notify you via email and the amount will be transferred to the designated bank account.", 
+  user_1,28/09/2026 T15:32:40,"got it. do i need any other doccuments*documents from my side before filing?", 
+  user_2,28/09/2026 T15:33:05,"No additional documents are needed beyond the claim form, death certificate, and ID proof. If anything else is required, I’ll let you know right away. Feel free to reach out if you have more questions!",

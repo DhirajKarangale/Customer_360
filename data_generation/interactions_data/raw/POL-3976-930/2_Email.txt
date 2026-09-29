@@ -1,0 +1,8 @@
+mail_id: 9f3b7c2a-1e4d-4f9a-8c3b-2d5e9a6f7b8c
+subject: Renewal Confirmation – Auto Policy AU‑4589
+participants[2]{id,name,email,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Vedant Thakur,vedant.thakur@dcoders.com,customer
+  d4e5f6a7-8910-1121-3141-5161718191a2,Karan Joshi,karan.joshi@safestepinsurance.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2026 T09:15:30,"Hi Vedant,\n\nThanks for speaking with me earlier today. As discussed, we have processed the renewal of your auto policy (Policy No: AU‑4589) which will now be valid until 30/09/2027. The annual premium is $1,250, payable by 05/10/2026. Please find the renewed policy document attached.\n\nIf you have any questions or need assistance with the payment, feel free to reply to this email or call me directly.\n\nBest regards,\nKaran Joshi\nInsurance Agent\nSafe Step Insurance\nPhone: +1-800-555-0199\nEmail: karan.joshi@safestepinsurance.com",https://storage.safestepinsurance.com/policies/AU-4589_Renewed_2026.pdf
+  user_1,user_2,,28/09/2026 T10:02:12,"Hi Karan,\n\nGot the renewal document – thank you. I just wanted to confirm that the coverage will be active starting tomorrow (29/09/2026) as the previous policy expires on 28/09/2026. Also, could you let me know the preferred method for the premium payment? I can do online transfer or credit card.\n\nThanks,\nVedant Thakur\nDCoders\nPhone: +91-9876543210\nEmail: vedant.thakur@dcoders.com",

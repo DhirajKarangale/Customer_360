@@ -1,0 +1,8 @@
+mail_id: a7f3c9d2-8b4e-4a1f-9c2d-6e5b7a9f0c1d
+subject: Your Health Policy Renewal Confirmation – Policy No. HP-2026-001
+participants[2]{id,name,email,role}:
+  5d2e9a3c-1f4b-4c9a-8e2f-7c5b9d2a6f3e,Akanksha Bhatt,akanksha.bhatt@example.com,customer
+  9c4f7d2e-3a5b-41c9-9e8d-2b6a4e7c9d0f,Anita Sharma,anita.sharma@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,05/10/2026 T:09:15:00,"Dear Akanksha,\n\nThank you for your payment of ₹11,875. Your health policy (Policy No: HP-2026-001) is now active from 01/04/2026 to 31/03/2027.\n\nPlease find the updated policy document attached for your records.\n\nIf you have any questions or need further assistance, feel free to reach out.\n\nWarm regards,\nAnita Sharma\nInsurance Agent, Trust Wealth Advisors\nDCoders",https://storage.dcoders.com/policies/HP-2026-001_Renewed.pdf
+  user_1,user_2,,05/10/2026 T:09:45:00,"Hi Anita,\n\nGot the document, everything looks good. Thanks for the swift renewal.\n\nBest,\nAkanksha",

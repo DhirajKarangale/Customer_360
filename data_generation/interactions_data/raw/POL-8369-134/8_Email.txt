@@ -1,0 +1,9 @@
+mail_id: a1b2c3d4-5678-90ab-cdef-1234567890ab
+subject: Updated Home Insurance Policy – Active Confirmation (HC‑AD‑2026‑001)
+participants[3]{id,name,email,role}:
+  a9f1c2d3-4b5e-6f78-9a0b-c1d2e3f45678,Aditya Singh,aditya.singh@dcoders.com,customer
+  b2c3d4e5-6f7a-8b9c-0d1e-f2a3b4c5d6e7,Vikram Patel,vikram.p@dcoders.com,insurance agent
+  c3d4e5f6-7a8b-9c0d-1e2f-3a4b5c6d7e8f,Priya Mehta,priya.m@dcoders.com,policy admin
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,user_3,12/09/2026 T:10:15:00,"Dear Aditya,\n\nI hope you’re well. Please find attached the final version of your Home Insurance policy (Policy No. HC‑AD‑2026‑001) with the corrected address and the Flood‑Damage Rider included. The policy is now active in our system, and the coverage is effective from 01/10/2026.\n\nIf you have any further questions or need assistance, feel free to reach out.\n\nBest regards,\nVikram Patel\nOmni Insurance Group\nPhone: +91‑80‑1234‑5678\nEmail: vikram.p@dcoders.com",https://storage.dcodelabs.com/policies/HC-AD-2026-001_Updated.pdf
+  user_1,user_2,user_3,12/09/2026 T:10:45:00,"Hi Vikram,\n\nThank you for sending the updated policy document. I have reviewed it and everything looks correct, including the address. I appreciate the swift handling. Please consider the policy fully active on my end as well.\n\nThanks again,\nAditya Singh\nDCoders",

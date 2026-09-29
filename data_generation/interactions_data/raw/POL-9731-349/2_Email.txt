@@ -1,0 +1,8 @@
+mail_id: e7b9c1f2-4a3d-11e9-8b6c-0242ac130003
+subject: Re: Health Policy Pending – Document Submission
+participants[2]{id,name,email,role}:
+  3f9d8a2b-7c4e-4f1a-9b2e-6d5c8f1a2b3c,Sneha Roy,sneha.roy@dcoders.com,customer
+  a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d,Anita Sharma,anita.sharma@trustwealth.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,30/09/2026 T:09:15:20,"Hi Anita,\n\nThanks for the call earlier. I’ve attached the required documents – my recent blood test report, the signed surgery declaration, and a copy of my ID. Please let me know if anything else is needed.\n\nBest regards,\nSneha Roy",https://portal.dcoders.com/uploads/2026/09/30/Sneha_Roy_Documents.zip
+  user_2,user_1,,30/09/2026 T:10:05:45,"Dear Sneha,\n\nThank you for sending the documents. I have received the blood test report, the signed declaration, and your ID copy. I will forward them to our underwriting team today. The policy should be activated within 2‑3 business days, and you’ll receive a confirmation email once the status changes from ‘Pending’ to ‘Active’.\n\nIf you have any further questions, feel free to reach out.\n\nWarm regards,\nAnita Sharma\nTrust Wealth Advisors\nPhone: +1 (555) 123‑4567\nEmail: anita.sharma@trustwealth.com",

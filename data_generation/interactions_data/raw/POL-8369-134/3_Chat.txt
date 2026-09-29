@@ -1,0 +1,12 @@
+chat_id: 9f2c7e1b-4a6d-4b9f-8d3e-1c5a9b7e2f34
+participants[2]{id,name,role}:
+  a3d9f8c2-7b1e-41a4-9c2e-5f6d8b3e9a01,Aditya Singh,customer
+  5e2b1c4d-9f6a-48d3-8a7b-2c4e1f7d9b55,Vikram Patel,insurance agent
+messages[7]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T09:15:12,"hey vikram, got the policy doc u sent, thx*thanks",
+  user_2,28/09/2026 T09:15:45,"Hi Aditya! Glad you got it. Let me know if you have any q's*questions.", 
+  user_1,28/09/2026 T09:16:30,"actually i noticed a typo in the address line 2 – it says 'Bangalore' but i live in 'Bengaluru'. can we fix that?", 
+  user_2,28/09/2026 T09:17:10,"Sure thing, I’ll correct that and resend the updated doc. Sorry for the oversight.", 
+  user_2,28/09/2026 T09:18:02,"Here’s the revised policy (HC‑AD‑2026‑001 rev2).",https://storage.dcodelabs.com/policies/HC-AD-2026-001_rev2.pdf
+  user_1,28/09/2026 T09:18:45,"got it, thanks! also, can you tell me how the claim process works if there’s water damage? :)", 
+  user_2,28/09/2026 T09:20:05,"Absolutely! In case of water damage, just log into our portal, upload photos and the claim form. Our team reviews within 48h. If you need help, ping me.",

@@ -1,0 +1,8 @@
+mail_id: e3f7a9b2-1c4d-4f8a-9b2e-6d5c7f8a9b10
+subject: Updated Home Policy Documents & Garage Endorsement
+participants[2]{id,name,email,role}:
+  c1a2b3d4-5678-90ab-cdef-1234567890ab,Sai Kumar,sai.kumar@example.com,customer
+  d2e3f4a5-6789-01bc-def0-2345678901bc,Ravi Menon,ravi.menon@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,21/09/2026 T:09:15:30,"Dear Sai,\n\nThank you for confirming the details during our call today. Please find attached the endorsement form for adding garage coverage to your home policy (Policy #HC-2026-7854) as well as the updated policy schedule reflecting your new address.\n\nThe endorsement incurs a $150 premium, which has already been processed on your account.\n\nKindly review, sign the endorsement, and return the scanned copy at your earliest convenience. If you have any questions, feel free to reach out.\n\nBest regards,\nRavi Menon\nInsurance Agent\nSecure Future Group\nDCoders",https://storage.dcoders.com/docs/HC-2026-7854_Endorsement_Garage.pdf
+  user_1,user_2,,21/09/2026 T:10:02:45,"Hi Ravi,\n\nGot the endorsement form and the updated policy document – everything looks good. I’ll sign and send it back by tomorrow.\n\nThanks for the quick turnaround!\n\nRegards,\nSai Kumar",

@@ -1,0 +1,19 @@
+call_id: CALL-DC-20260928-001
+start_timestamp: 28/09/2026 T:09:15:00
+end_timestamp: 28/09/2026 T:09:20:00
+participants[2]{id,name,role}:
+  7f3a9c2e-5b1d-4f8a-9c2e-1a2b3c4d5e6f,Samar Ghosh,customer
+  d4b9e0f1-2c3d-4a5b-8c9d-0e1f2a3b4c5d,Sunita Agarwal,insurance agent
+messages[12]{user,text}:
+  user_1,[00:00] Hello, umm... is this Sunita from Protect All Agency?
+  user_2,Hi Samar, yes this is Sunita. How can I help you today?
+  user_1,[00:15] I was calling about my life policy with DCoders. I think it's supposed to be active now, but I'm not seeing it in the portal.
+  user_2,Let me check that for you... [typing] Give me a sec.
+  user_2,[00:45] Okay, I see the policy number SH-123456. It shows as pending activation.
+  user_1,Pending? I was told it would be active right after I signed the docs.
+  user_2,Yeah, sometimes there’s a short processing window. I’ll push it through now.
+  user_2,[01:30] All set, Samar. Your policy status is now Active.
+  user_1,Great! Thank you. Can you also confirm the sum assured and the premium amount?
+  user_2,Sure, the sum assured is 10 lakh rupees and the annual premium is 12,500 INR, effective from 01/10/2026.
+  user_1,Got it. Thanks for the help. Bye.
+  user_2,You’re welcome! Have a good day. Bye.

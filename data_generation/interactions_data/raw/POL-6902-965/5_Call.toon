@@ -1,0 +1,22 @@
+call_id: CALL-9f3a2b1c-8d4e-4f7a-9c12-5b6e7d8f9a0b
+start_timestamp: 15/10/2026 T:09:12:00
+end_timestamp: 15/10/2026 T:09:18:30
+participants[2]{id,name,role}:
+  9a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d,Vedant Thakur,customer
+  d4e5f6a7-b8c9-0d1e-2f3a-4b5c6d7e8f9a,Neha Kapoor,insurance agent
+messages[15]{user,text}:
+  user_1,[00:00] Hi Neha, it's Ved... uh, Vedant Thakur. I got your email about the deductible change.
+  user_2,[00:05] Hey Vedant, good morning! Yes, I saw that. Just to confirm, your policy #AV‑45231 is active now after reinstatement.
+  user_1,[00:12] Right, thanks. So, I was wondering if we could lower the deductible from $1,000 to $500. Is that possible before the renewal in September 2027?
+  user_2,[00:18] Let me pull up your policy... [typing] ...yeah, we can adjust it. It will increase your premium a bit.
+  user_1,[00:25] Uh, how much are we talking about? I don't want a huge jump.
+  user_2,[00:30] Okay, with $500 deductible, the annual premium goes from $1,200 to about $1,350. That's an extra $150.
+  user_1,[00:38] Hmm... that's a bit higher than I expected. Any way to keep it lower? Maybe a $750 deductible?
+  user_2,[00:45] For $750, the premium would be $1,275. So that's $75 extra over the current $1,200.
+  user_1,[00:52] That sounds more reasonable. Can we go ahead with $750 then?
+  user_2,[00:58] Sure thing. I’ll update the policy now. [sighs] It'll take a couple minutes.
+  user_2,[01:10] All set. I've changed the deductible to $750 and sent a revised quote to your email. You should see it shortly.
+  user_1,[01:15] Got it, thanks! One more thing—if I decide later to go back to $1,000 before renewal, is that allowed?
+  user_2,[01:20] Yes, you can adjust the deductible anytime before the renewal date. Just give me a call or we can do it online.
+  user_1,[01:25] Great, thanks for the help. Bye.
+  user_2,[01:26] You're welcome! Have a good day. Bye.

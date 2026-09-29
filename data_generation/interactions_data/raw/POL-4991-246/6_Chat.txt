@@ -1,0 +1,13 @@
+chat_id: chk-dc-006-rd
+participants[2]{id,name,role}:
+  c14f828a-1122-49bb-9211-1a92bf071c12,Rohan Deshmukh,customer
+  d55e9012-3344-48ee-a122-9b08cf192834,Ramesh Tiwari,insurance agent
+messages[8]{user,timestamp,text,media_url}:
+  user_1,02/10/2026 T11:15:22,"Hi Ramesh, got the welcome kit and policy bond via email. Thanks a lot for sorting everything out!",
+  user_2,02/10/2026 T11:16:05,"Hello Rohan! You're very welcome. I'm glad everything came through smoothly for your DCoders life policy.",
+  user_1,02/10/2026 T11:17:10,"Quick question though - do I need to keep physical copies anywhere or is digital enough for claims later?",
+  user_2,02/10/2026 T11:18:40,"Digital copies are completely valid and accepted across all our network hospitals. But keeping a printed copy of the premium receipt handy is *always a good idea.",
+  user_1,02/10/2026 T11:19:15,"Makes sense. I'll print out the receipt just in case.",
+  user_2,02/10/2026 T11:20:02,"Perfect. By the way, your policy status is now fully active in our system, so you're all set.",
+  user_1,02/10/2026 T11:20:30,"Awesome, really appreciate your help over the last couple of days Ramesh. Great service!",
+  user_2,02/10/2026 T11:21:12,"Thank you Rohan! It was a pleasure assisting you. Have a wonderful rest of your week!",https://storage.dcoders.com/docs/Active_Policy_Summary_DC.pdf

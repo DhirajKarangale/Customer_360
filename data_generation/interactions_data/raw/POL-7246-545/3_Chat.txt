@@ -1,0 +1,13 @@
+chat_id: e3b9c8f2-7a12-4d5e-9c3b-1f2a6b7c9d0e
+participants[2]{id,name,role}:
+  a1f4c9e2-3b7d-41a9-8e2f-5d6b9c0a1e3f,Kavya Iyer,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[8]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T10:02:15,"hi suresh, got your email about activation. thx*thanks! can u send me the pdf again? i want to save it.", 
+  user_2,28/09/2026 T10:02:45,"Hey Kavya! Sure thing, here's the updated schedule.",https://storage.dcoders.com/policies/L-2026-0459_Schedule_20260928.pdf
+  user_1,28/09/2026 T10:03:10,"got it, thx*thanks. also, just double checking – my mom is still listed as beneficiary right? (she's the primary).", 
+  user_2,28/09/2026 T10:04:00,"Yes, I confirmed – Mrs. Iyer is set as primary beneficiary. Let me know if you need any changes.", 
+  user_1,28/09/2026 T10:05:20,"actually, i want to add my sister as secondary beneficiary. can we do that now?*please", 
+  user_2,28/09/2026 T10:07:05,"Sure, I can update that. Please provide her full name and date of birth.", 
+  user_1,28/09/2026 T10:08:30,"her name is Ananya Iyer, DOB 15/03/1992.", 
+  user_2,28/09/2026 T10:10:00,"All set! Added Ananya as secondary beneficiary. Updated schedule attached.",https://storage.dcoders.com/policies/L-2026-0459_Schedule_Updated_20260928.pdf

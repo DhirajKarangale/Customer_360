@@ -1,0 +1,17 @@
+call_id: REC-INS-004C
+start_timestamp: 02/10/2026 T:09:15:00
+end_timestamp: 02/10/2026 T:09:20:30
+participants[2]{id,name,role}:
+  5d3e9a1b-8f4c-4a2b-9c6d-1e2f3b4c5d6e,Pooja Bhatia,customer
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Karan Joshi,insurance agent
+messages[10]{user,text}:
+  user_2,Hey Pooja, this is Karan from Safe Step Insurance, can you hear me okay? [00:00]
+  user_1,Yeah, I can hear you... uh, hi Karan.
+  user_2,Great. Just wanted to check if you got the email confirming your auto policy cancellation and the $80 refund?
+  user_1,Uh, I did get the email, but I’m still not sure when exactly the money will hit my account.
+  user_2,Right, as I mentioned earlier, the direct deposit should be processed by 04/10/2026. You’ll see it in your bank by then.
+  user_1,[sighs] Okay, thanks. And just to be clear, there’s no cancellation fee left on my end, right?
+  user_2,Correct, the $45 fee was waived, so nothing more to pay.
+  user_1,Alright, perfect. Anything else I need to do?
+  user_2,Nope, all set. If you need anything, just give us a call. Have a good day!
+  user_1,Thanks, you too. Bye.

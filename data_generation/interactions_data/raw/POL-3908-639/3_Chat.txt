@@ -1,0 +1,15 @@
+chat_id: a1b2c3d4-5678-90ab-cdef-1234567890ab
+participants[2]{id,name,role}:
+  4f9a2c1e-7b3d-4e9a-8f2c-1d5b6a7c8e9f,Vivaan Gupta,customer
+  a3d5e6f7-8b9c-0d1e-2f3a-4b5c6d7e8f9a,Anjali Desai,insurance agent
+messages[10]{user,timestamp,text,media_url}:
+  user_1,15/09/2026 T10:05:12,"hey, got your email about the home policy changes. just wanted to confrim*confirm everything is set.", 
+  user_2,15/09/2026 T10:05:45,"Hi Vivaan! Yes, the lower personal‑property limit, 30‑day free extension and the 10% bundle discount are all applied. I’ll go ahead and activate the policy now.", 
+  user_1,15/09/2026 T10:06:20,"awesome, thx! also, can you send me a quick summmary*summary of the new limits?", 
+  user_2,15/09/2026 T10:06:58,"Sure thing! Here’s a brief overview:\n- Home Coverage: $250,000\n- Personal‑Property Limit: $30,000 (reduced from $40,000)\n- Extension: 30‑day free extension (expires 30/10/2026)\n- Bundle Discount: 10% off your auto policy premium\nLet me know if anything looks off.", 
+  user_1,15/09/2026 T10:07:30,"looks good. one more thing – will the policy auto‑renew after the extension or do i*I need to do anything?", 
+  user_2,15/09/2026 T10:08:05,"The policy will automatically renew after the extension unless you request a cancellation. I’ll set a reminder to notify you 15 days before renewal.", 
+  user_1,15/09/2026 T10:08:45,"got it, thanks! can you also update my contact email to vivaan.g@newmail.com? I typed wrong earlier.", 
+  user_2,15/09/2026 T10:09:15,"Done! Your contact email is now vivaan.g@newmail.com. Anything else I can help with?", 
+  user_1,15/09/2026 T10:09:45,"nope, all set. appreciate the help 😊", 
+  user_2,15/09/2026 T10:10:20,"Happy to help, Vivaan! Your home policy is now active and will expire on 30/10/2026 unless renewed. Have a great day!",

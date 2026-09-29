@@ -1,0 +1,15 @@
+chat_id: chk-dc-88392-lif
+participants[2]{id,name,role}:
+  c1a2b3c4-d5e6-7890-abcd-ef0123456789,Rohan Deshmukh,customer
+  f9e8d7c6-b5a4-3210-fedc-ba9876543210,Ramesh Tiwari,insurance agent
+messages[10]{user,timestamp,text,media_url}:
+  user_2,28/05/2026 T11:15:20,"Hi Rohan, received your email confirmation. Just looking over the attached verification doc now.",
+  user_1,28/05/2026 T11:16:05,"hello ramesh. yeah I checked it too. everything looks correct on page 2 *page 3.",
+  user_2,28/05/2026 T11:17:12,"Great catch, yes, page 3 has the final nominee breakdown. Thanks for verifying that quickly.",
+  user_1,28/05/2026 T11:18:00,"np. so does this mean the policy status will go live today?",
+  user_2,28/05/2026 T11:19:30,"Yes absolutely! I am logging into the DCoders portal right now to update everything.",
+  user_2,28/05/2026 T11:21:45,"Just pushing the final verification stamp into the system database...",
+  user_1,28/05/2026 T11:22:10,"awesome, let me know once its done.",
+  user_2,28/05/2026 T11:24:50,"All set, Rohan! The system status for your life policy is now officially Active. Here is the confirmation receipt.",https://storage.safeshield.com/receipts/life_policy_active_rohan.pdf
+  user_1,28/05/2026 T11:25:30,"got it, downloading the receipt now. thanks for sorting this out so smoothly!",
+  user_2,28/05/2026 T11:26:10,"Happy to help! Have a great rest of your day. Reach out if you need anything else."

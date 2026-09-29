@@ -1,0 +1,15 @@
+call_id: REC-INS-004A
+start_timestamp: 03/10/2026 T:09:15:00
+end_timestamp: 03/10/2026 T:09:20:00
+participants[2]{id,name,role}:
+  d1e2f3a4-b5c6-7d8e-9f0a-b1c2d3e4f5a6,Vedant Thakur,customer
+  a1b2c3d4-e5f6-7a8b-9c0d-e1f2a3b4c5d6,Karan Joshi,insurance agent
+messages[8]{user,text}:
+  user_1,[00:00] Hey Karan, it's Ved... I just got the email and the payment link, uh thanks.
+  user_2,[00:12] Hi Vedant, glad you got it. Just confirming the policy will start tomorrow, 02 Oct 2026, right?
+  user_1,[00:25] Yeah, uh... I think so. I just wanted to double‑check because my old policy AU‑4589 is set to expire in two days.
+  user_2,[00:38] That's correct. The old one will auto‑expire on 01 Oct and the new coverage kicks in 02 Oct. No gap.
+  user_1,[00:52] Great. And the payment— I used the credit‑card link, got the receipt. Should I do anything else?
+  user_2,[01:05] No, that's all. We'll see the payment clear by tomorrow. I'll send you a confirmation email after it's processed.
+  user_1,[01:20] Okay, perfect. Thanks for the quick help. [sighs of relief]
+  user_2,[01:30] You're welcome! If you need anything, just give us a call. Have a good day!

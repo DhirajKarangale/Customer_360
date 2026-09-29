@@ -1,0 +1,13 @@
+chat_id: f9b3c1e2-7a4d-4f8b-9c2e-1d5a6b7c8d9e
+participants[2]{id,name,role}:
+  4d2f9a1b-8c33-4e7a-9b5d-6f2c3d4e5f6a,Akanksha Bhatt,customer
+  a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d,Karan Joshi,insurance agent
+messages[8]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T10:15:30,"hey karan, can u send me the proof of insur*insurance for my auto policy AP-123456? need it for my loan.", 
+  user_2,28/09/2026 T10:16:05,"Hi Akanksha! Sure thing, sorry for the wait. Here’s the PDF of your proof of insurance: https://storage.dcodelabs.com/docs/AP-123456_Proof.pdf",https://storage.dcodelabs.com/docs/AP-123456_Proof.pdf
+  user_1,28/09/2026 T10:16:45,"thanks! also, how do i file a claim if i get into an accident? any form i need fill*fill out?", 
+  user_2,28/09/2026 T10:17:20,"You can file a claim 24/7 via our portal or the app. Just log in, click ‘File a Claim’, upload photos and police report, and we’ll handle the rest. No extra forms needed.", 
+  user_1,28/09/2026 T10:18:00,"got it. about the roadside assistance rider, what exactly does it cover? like tow*tows or fuel?", 
+  user_2,28/09/2026 T10:18:40,"The rider gives you up to 5 towing trips per year, 24‑hour lockout assistance, fuel delivery up to $50, and battery jump‑start. All at no extra cost beyond the monthly $12.", 
+  user_1,28/09/2026 T10:19:10,"cool thx! *thanks", 
+  user_2,28/09/2026 T10:19:45,"Happy to help! Let me know if you need anything else. Have a safe drive!",

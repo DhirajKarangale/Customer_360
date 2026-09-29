@@ -1,0 +1,20 @@
+call_id: REC-INS-004A
+start_timestamp: 29/09/2026 T:14:05:00
+end_timestamp: 29/09/2026 T:14:12:00
+participants[2]{id,name,role}:
+  7f3a9c2e-1b4d-4e8a-9f2c-5d6b7e8a9c01,Aditi Mahajan,customer
+  d2c4b1f7-8e9a-4f3b-9c6d-2a1e5f7b3d44,Karan Joshi,insurance agent
+messages[12]{user,text}:
+  user_2,[00:00] Hi Aditi, good afternoon—this is Karan from Safe Step Insurance. Can you hear me okay?
+  user_1,[00:05] Yeah, I can hear you. Hi Karan. [sighs] I’m still on the fence about the upgrade.
+  user_2,[00:10] No problem, I’ll keep it short. Just to recap, your current Health Plus plan expires on 05/10/2026. The Health Plus Plus upgrade adds higher coverage limits, alternative‑therapy benefits, and the premium goes up by about 12%—so roughly ₹12,000 extra per year.
+  user_1,[00:18] Right, right… And the premium payment—can I do it via auto‑debit? I’m not great with writing checks.
+  user_2,[00:22] Absolutely, we can set up auto‑debit from your linked bank account. I’ll send you the electronic form, you just need to sign digitally. Does that work?
+  user_1,[00:27] Yeah, that works. Actually—can we lock in the same deductible as before? I don’t want that to change.
+  user_2,[00:33] Yes, the deductible stays at ₹5,000, same as your current plan. The only change is the higher sum insured and the extra therapies.
+  user_1,[00:38] Okay, great. So I’m good to go—just need to sign now?
+  user_2,[00:42] If you’re ready, I’ll walk you through the e‑signature. Just say “I consent” and I’ll email the link right away.
+  user_1,[00:45] I consent. -- let’s do it.
+  user_2,[00:48] Got it. I’m sending the renewal form to your email now. Once you sign, the new Health Plus Plus policy will become effective on 06/10/2026, right after the current one expires—so there’s no gap in coverage.
+  user_1,[00:55] Perfect, thank you. I’ll sign and send it back before the 04 Oct deadline.
+  user_2,[01:00] Excellent. If you have any questions after reviewing, just give me a call or drop an email. Thanks for choosing Safe Step, Aditi. Have a great day!

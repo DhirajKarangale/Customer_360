@@ -1,0 +1,8 @@
+mail_id: 9f3b2c1e-7a4d-4f9b-8c2e-1d5f6a9b0c3d
+subject: Auto Policy Renewal Confirmation – Policy #SL-2026-98765
+participants[2]{id,name,email,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Vihaan Patel,vihaan.patel@dcoders.com,customer
+  d4c3b2a1-8765-09fe-dcba-0987654321fe,Neha Kapoor,neha.kapoor@shieldlife.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,25/09/2026 T:10:45:12,"Dear Vihaan,\n\nThank you for speaking with me earlier. I'm pleased to confirm that your auto policy (Policy No. SL-2026-98765) has been successfully renewed through 30 September 2027. Your premium for the upcoming term is $1,200.00 annually, which includes the added $5 per month roadside assistance rider.\n\nYour payment method on file (Visa ending in 1234) has been charged for the first installment.\n\nPlease find the updated policy documents attached for your records.\n\nIf you have any questions, feel free to reach out.\n\nBest regards,\nNeha Kapoor\nInsurance Agent\nShield Life Services",https://storage.shieldlife.com/policies/SL-2026-98765.pdf
+  user_1,user_2,,25/09/2026 T:11:08:45,"Hi Neha,\n\nGot the email and the attached policy document – thank you. Everything looks good. Could you also confirm the coverage limits for the roadside assistance rider?\n\nThanks,\nVihaan Patel",

@@ -1,0 +1,9 @@
+mail_id: d4e5f6a7-8901-23de-f012-4567890123de
+subject: Updated Health Policy with Spouse Dependent Added
+participants[3]{id,name,email,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Rohan Deshmukh,rohan.d@dcoders.com,customer
+  b2c3d4e5-6789-01bc-def0-2345678901bc,Vikram Patel,vikram.p@dcoders.com,insurance agent
+  c3d4e5f6-7890-12cd-ef01-3456789012cd,Policy Admin,policyadmin@dcoders.com,admin
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,user_3,12/10/2026 T:09:15:00,"Dear Rohan,\n\nI hope you’re well. Following our recent call, I have processed the addition of your spouse, Priya Deshmukh, as a dependent on your health policy (Policy No: HP-2026-0456). To finalize, please provide her date of birth, Social Security Number, and a copy of a government‑issued ID.\n\nI have attached the updated policy document reflecting the dependent addition for your records.\n\nLet me know if you have any questions.\n\nBest regards,\nVikram Patel\nInsurance Agent\nOmni Insurance Group\nvikram.p@dcoders.com",https://storage.dcoders.com/policies/HP-2026-0456_Updated.pdf
+  user_1,user_2,,12/10/2026 T:10:05:00,"Hi Vikram,\n\nThank you for the update. Please find below the details for my spouse:\n- Full Name: Priya Deshmukh\n- Date of Birth: 15/03/1992\n- SSN: 123‑45‑6789\n\nI have also attached a scanned copy of her passport as proof of identity.\n\nThanks for your assistance.\n\nRegards,\nRohan Deshmukh\nrohan.d@dcoders.com",https://storage.dcoders.com/docs/Priya_Deshmukh_Passport.pdf

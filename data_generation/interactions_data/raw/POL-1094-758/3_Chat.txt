@@ -1,0 +1,10 @@
+chat_id: c3a9f2d1-7e4b-4c9a-9f3b-2d6e8b5c1a7f
+participants[2]{id,name,role}:
+  5f2e8c1a-9b3d-4a6f-8e2c-1d4b7f9a0c3e,Kiara Sen,customer
+  9d4b7e2f-3c1a-4f8b-9a6d-5e2c1b8d7f0a,Vikram Singh,insurance agent
+messages[5]{user,timestamp,text,media_url}:
+  user_1,03/10/2026 T09:15:12,"hey vikram, i just signed the renewal doc and attached it. plz*please confirm you got it.", 
+  user_2,03/10/2026 T09:15:45,"Hi Kiara! Got it, thanks. Let me open the file.", 
+  user_2,03/10/2026 T09:16:10,"File looks good. Your policy is now actve*active as of 01/10/2026 and will be in effect until 30/09/2027. Anything else I can help with?", 
+  user_1,03/10/2026 T09:16:35,"Thanks! Also, could you send me the proof of insurance? I need it for the car registration.", 
+  user_2,03/10/2026 T09:17:02,"Sure thing, sending it now.",https://storage.dcoders.com/docs/Proof_of_Insurance_Kiara.pdf

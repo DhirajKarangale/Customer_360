@@ -1,0 +1,8 @@
+mail_id: d3f4e5a6-7890-1234-bcde-56789f0abcde
+subject: Cancellation Confirmation and Claim History Summary for Policy HP-123456
+participants[2]{id,name,email,role}:
+  1a2b3c4d-5678-90ab-cdef-1234567890ab,Kunal Mehta,kunal.mehta@dcoders.com,customer
+  9f8e7d6c-5432-10fe-dcba-0987654321fe,Ravi Menon,ravi.menon@securefuturegroup.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,02/10/2026 T:10:15:00,"Dear Kunal,\n\nAs discussed, please find attached the official cancellation confirmation for your health policy HP-123456, effective 30 September 2026, along with a summary of your claim history up to the cancellation date. There are no outstanding premiums, and you are free to apply for a new policy at any time.\n\nIf you have any further questions, feel free to reach out.\n\nBest regards,\nRavi Menon\nInsurance Agent\nSecure Future Group\n\n---\nThis email and any attachments are confidential.",https://storage.securefuturegroup.com/docs/HP-123456_Cancellation_ClaimSummary_2026.zip
+  user_1,user_2,,02/10/2026 T:10:45:00,"Hi Ravi,\n\nThank you for the prompt email and the documents. I appreciate the clarification.\n\nBest,\nKunal Mehta",

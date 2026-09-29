@@ -1,0 +1,12 @@
+chat_id: 9f3b7c1e-4a2d-11ee-8c9a-0242ac130003
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Sneha Roy,customer
+  d4c3b2a1-8765-09ba-fedc-0987654321ba,Anjali Desai,insurance agent
+messages[7]{user,timestamp,text,media_url}:
+  user_1,15/10/2026 T09:12:30,"hey anjali, i just sold my car, can we cancle the policy? i dont need it anymore", 
+  user_2,15/10/2026 T09:12:38,"Hi Sneha! Sorry to hear about the sale. Just to confirm, you’d like to *cancel the policy, right?", 
+  user_1,15/10/2026 T09:13:02,"yes, please. I want to cancel it effective today.", 
+  user_2,15/10/2026 T09:13:15,"Got it. I’m processing the cancellation now. The policy will be marked as Expired as of 15/10/2026. Do you have any questions about refunds?", 
+  user_1,15/10/2026 T09:13:27,"Will i get a refund for the premium i already paid for the year?", 
+  user_2,15/10/2026 T09:13:45,"Since the policy was active from 01/10/2026, we’ll calculate a prorated refund for the unused months. You should see the credit in your bank within 5 business days.", 
+  user_1,15/10/2026 T09:14:02,"Thanks, anjali. Appreciate the quick help!",

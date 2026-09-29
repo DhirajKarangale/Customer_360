@@ -1,0 +1,22 @@
+call_id: REC-INS-20260928-002
+start_timestamp: 28/09/2026 T:14:10:00
+end_timestamp: 28/09/2026 T:14:14:30
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Diya Menon,customer
+  f9e8d7c6-5432-10fe-ba98-0987654321fe,Suresh Deshmukh,insurance agent
+messages[15]{user,text}:
+  user_1,[00:00] Hi Suresh, it's Diya. I got your email about the cancellation.
+  user_2,[00:05] Hello Diya, yes I sent that earlier. How can I help you today?
+  user_1,[00:12] Umm... I was a bit confused, I thought my payments were up to date. [sighs]
+  user_2,[00:18] I understand, it's frustrating. The system shows a missed premium of $150 for last month, and we also didn't get the signed rider form.
+  user_1,[00:26] Oh— I must have missed that. I was waiting for the rider to be mailed to me. Did you send it?
+  user_2,[00:33] We mailed it on 12th Sep, but it looks like it never came back signed. I can email you a PDF again if that helps.
+  user_1,[00:40] Yeah, that would be great. Also, can I just pay the $150 now over the phone?
+  user_2,[00:46] Sure thing. I can take the payment now. Do you have a credit card handy?
+  user_1,[00:52] Yeah, I have it right here. One sec— [typing]
+  user_2,[00:58] No rush, take your time.
+  user_1,[01:10] Okay, I’m ready. The card number is 4111 1111 1111 1111, expiry 08/28, CVV 123. [pause]
+  user_2,[01:20] Got it, processing... [typing] All set, Diya. The $150 has been applied and your policy is reinstated pending the signed rider. Please sign the PDF I’ll send and email it back.
+  user_1,[01:30] Got it, I’ll sign and send it today. Thanks for sorting this out.
+  user_2,[01:35] You’re welcome! If you have any other questions, feel free to call. Have a good day.
+  user_1,[01:38] Thanks, you too. Bye.

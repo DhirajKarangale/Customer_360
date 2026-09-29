@@ -1,0 +1,13 @@
+chat_id: c9f1a2b3-4d5e-6f7a-8b9c-0d1e2f3a4b5c
+participants[2]{id,name,role}:
+  e7c9f0a1-23b4-4d5e-9f6a-8b7c6d5e4f3a,Krishna Das,customer
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Vikram Singh,insurance agent
+messages[8]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T10:15:20,"hi vikram, i decided to go with the auto‑debit option. can u confirm it's set up?",
+  user_2,28/09/2026 T10:15:45,"Hey Krishna! 👍 Absolutely, I’ve just set up the aut0‑debit *auto for policy HC‑2026‑0459. You’ll see the ₹11,875 deducted on 15 Oct 2026.",
+  user_1,28/09/2026 T10:16:10,"great! could you send me a receipt or proof of the setup?",
+  user_2,28/09/2026 T10:16:35,"Sure thing! Here’s the payment receipt. Let me know if anything looks off.",https://storage.dcodelabs.com/receipts/HC-2026-0459_Receipt_20260928.pdf
+  user_1,28/09/2026 T10:17:05,"thanks, got it. just a quick q – will i get a reminder before the deduction?",
+  user_2,28/09/2026 T10:17:30,"Yes, we send a reminder 3 days prior. You’ll get an email and an sms on 12 Oct.",
+  user_1,28/09/2026 T10:18:00,"awesome, thx for the help!",
+  user_2,28/09/2026 T10:18:20,"You’re welcome! If you need anything else just ping me. Have a great day!",

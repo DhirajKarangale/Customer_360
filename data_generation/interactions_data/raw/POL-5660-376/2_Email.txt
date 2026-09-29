@@ -1,0 +1,8 @@
+mail_id: 9f3b7e21-4c8a-4d9f-9a6b-2e5f1c8d7a4b
+subject: Your Health Policy HP‑4478 Renewal Confirmation & Updated Terms
+participants[2]{id,name,email,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Sneha Roy,sneha.roy@personalmail.com,customer
+  d4e5f6a7-89ab-0cde-f123-456789abcdef,Vikram Patel,vikram.patel@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,26/09/2026 T:09:15:00,"Dear Sneha,\n\nThank you for speaking with me earlier today. I’m pleased to confirm that your Health Policy (HP‑4478) has been renewed effective 01/10/2026 with the 5 % loyalty discount applied. Your new monthly premium is $199.50, and the policy will remain active until 30 Sep 2027.\n\nAttached is the updated policy document for your records. Please review it and let me know if you have any questions.\n\nBest regards,\nVikram Patel\nOmni Insurance Group\nvikram.patel@dcoders.com",https://storage.dcodelabs.com/policies/HP-4478_Renewed_2026.pdf
+  user_1,user_2,,26/09/2026 T:10:02:30,"Hi Vikram,\n\nGot the renewal confirmation and the attached document – everything looks good. Thank you for the quick turnaround and the discount.\n\nBest,\nSneha",

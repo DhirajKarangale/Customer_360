@@ -1,0 +1,15 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:14:05:00
+end_timestamp: 28/09/2026 T:14:12:00
+participants[2]{id,name,role}:
+  9f2c1a7b-5d4e-4a9b-8c12-3e9f5b6d7a1c,Samar Ghosh,customer
+  d3e4f5a6-7b8c-4d0e-9f2a-3b4c5d6e7f8a,Sunita Agarwal,insurance agent
+messages[8]{user,text}:
+  user_1,[00:00] Hi Sunita, it's Samar. Umm I just wanted to double‑check that the auto‑debit is set up correctly...?
+  user_2,[00:10] Sure thing, Samar. Let me pull up your account... one moment... [typing]... Okay, I see the auto‑debit for ₹12,500 scheduled on 31 Oct 2026.
+  user_1,[00:25] Great, thanks. Also, could you explain how the claim process works if something happens? I'm a bit nervous.
+  user_2,[00:35] Absolutely. In case of a claim, you just need to submit the claim form along with a death certificate... uh, plus any supporting documents. We process within 15 days.
+  user_1,[00:50] Uh, do I need to inform the bank beforehand or... --?
+  user_2,[01:00] No, the bank doesn't need to be informed. Our system will pull the premium automatically. Just make sure your contact details are up‑to‑date.
+  user_1,[01:10] Got it. One more thing—my policy number is LC‑2026‑00123, right? I want to confirm.
+  user_2,[01:15] Yes, that's correct. Policy LC‑2026‑00123 is active, sum assured ₹10 lakh, premium ₹12,500. Anything else? [sighs]

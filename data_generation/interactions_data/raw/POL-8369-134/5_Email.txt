@@ -1,0 +1,9 @@
+mail_id: 7f3a9c2b-8d4e-41f2-bc5e-9a6d5f1e2c3b
+subject: Invoice for Flood‑Damage Rider & Updated Home Policy (HC‑AD‑2026‑001)
+participants[3]{id,name,email,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Aditya Singh,aditya.singh@dcoders.com,customer
+  e5f6g7h8-1234-56ij-klmn-7890opqrstu1,Vikram Patel,vikram.p@dcoders.com,insurance agent
+  z9y8x7w6-5432-10vu-tsrq-0987ponmlkji,Priya Mehta,priyaa.m@dcoders.com,policy admin
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,user_3,25/09/2026 T:10:15:00,"Dear Aditya,\n\nI hope you’re doing well. Following our recent call, I have attached the updated Home Insurance policy (HC‑AD‑2026‑001) reflecting the added Flood‑Damage Rider. The rider incurs an additional premium of INR 2,300 per annum, which will be invoiced separately.\n\nYou can view and download the invoice here: https://storage.dcodels.com/invoices/INV-2026-00457.pdf\n\nPlease review the attached policy document at your convenience. If everything looks good, simply reply to this email confirming receipt, and we’ll proceed with the payment schedule.\n\nThank you for choosing Omni Insurance Group. Should you have any questions, feel free to reach out.\n\nBest regards,\nVikram Patel\nInsurance Agent, Omni Insurance Group\nvikram.p@dcoders.com",https://storage.dcodels.com/policies/HC-AD-2026-001_Updated.pdf
+  user_1,user_2,user_3,25/09/2026 T:11:02:00,"Hi Vikram,\n\nThanks for the prompt update and for sending over the revised policy and invoice link. I’ve downloaded the documents and everything looks correct.\n\nI’ll arrange the payment for the additional INR 2,300 within the next few days.\n\nAppreciate your assistance!\n\nRegards,\nAditya Singh",

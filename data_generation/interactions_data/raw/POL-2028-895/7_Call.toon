@@ -1,0 +1,19 @@
+call_id: REC-INS-007A
+start_timestamp: 12/10/2026 T:14:05:00
+end_timestamp: 12/10/2026 T:14:09:30
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Reyansh Tiwari,customer
+  e5f6g7h8-1234-56ij-klmn-0987654321cd,Vikram Patel,insurance agent
+messages[12]{user,text}:
+  user_1,"[00:00] Hey uh this is Reyansh. I'm calling about my health policy. I think it expired on 15/09/2026? Can you confirm?"
+  user_2,"[00:15] Hi Reyansh this is Vikram Patel from Omni Insurance Group. Let me pull up your file... [typing] Yeah I see here the policy lapsed on 15 September 2026."
+  user_1,"[00:30] Ah okay so what does that mean for me now? Can I still file a claim for something that happened before the lapse?"
+  user_2,"[00:45] Unfortunately once a policy is expired we can't process any new claims. Claims that were incurred before the lapse need to have been submitted while the policy was active."
+  user_1,"[01:00] Got it. So can I renew it? I missed the 30‑day renewal window right?"
+  user_2,"[01:15] Yeah the renewal window closed on 15/10/2026. Since we're past that we'd need to issue a fresh new policy. That means a new underwriting process and a fresh premium—currently $1,350 for the next year."
+  user_1,"[01:30] Hmm I see. Is there any way to get a short‑term cover until I can get the new policy approved? I have some upcoming appointments."
+  user_2,"[01:45] We do have a short‑term health rider you can add for up to three months at $120. It’ll give you basic coverage for emergencies. I can email you the details if you'd like."
+  user_1,"[02:00] Yeah please send that over. And also can you confirm the exact date the current policy expired? I need it for my records."
+  user_2,"[02:15] Sure thing—policy expired on 15 September 2026 at 11:59 PM. I’ll send the short‑term rider quote and the expiration confirmation email right after this call."
+  user_1,"[02:30] Thanks Vikram. I’ll review and get back to you."
+  user_2,"[02:45] No problem. Let me know if you have any other questions. Have a good day!"

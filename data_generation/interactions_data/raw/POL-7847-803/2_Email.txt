@@ -1,0 +1,8 @@
+mail_id: 9f3b2c1e-7a4d-4f9b-9c8e-2d5f6a7b8c9d
+subject: Confirmation of Auto Policy Cancellation – Policy #AU-2019-HC
+participants[2]{id,name,email,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Aditi Mahajan,aditi.mahajan@dcoders.com,customer
+  e5f6g7h8-1234-56ij-789k-lmnopqrstuv,Suresh Deshmukh,suresh.d@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,27/09/2026 T:10:15:00,"Dear Aditi,\n\nThank you for speaking with me earlier today. As discussed, we have processed the cancellation of your auto policy for the 2019 Honda Civic (Policy Number: AU-2019-HC). Since you are within the 30‑day cooling‑off period, the policy has been fully cancelled and a full refund of $1,200.00 will be issued to the original payment method within 5‑7 business days.\n\nAttached is the official cancellation confirmation for your records.\n\nIf you have any further questions or need assistance with future coverage, please feel free to reach out.\n\nWarm regards,\nSuresh Deshmukh\nInsurance Agent, Secure Life Solutions\nsuresh.d@dcoders.com\n+1 (555) 123‑4567",https://storage.dcoders.com/docs/Cancellation_AU-2019-HC_27Sep2026.pdf
+  user_1,user_2,,27/09/2026 T:11:02:30,"Hi Suresh,\n\nGot it, thank you for the quick turnaround. Please let me know once the refund has been posted.\n\nBest,\nAditi",

@@ -1,0 +1,21 @@
+call_id: REC-INS-004D
+start_timestamp: 28/09/2026 T:11:15:00
+end_timestamp: 28/09/2026 T:11:20:00
+participants[2]{id,name,role}:
+  9f8c2a1b-3e4d-4b9a-9c1f-2d5e6f7a8b9c,Saanvi Pillai,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anita Sharma,insurance agent
+messages[14]{user,text}:
+  user_1,[00:00] Hello? Hi Anita, it's Saanvi. I just got your email about the Critical‑Illness Rider.
+  user_2,[00:04] Hi Saanvi! Yes, I sent that earlier today. Did you get a chance to look at it?
+  user_1,[00:08] Umm... yeah, I skimmed through. The extra premium is about $45 per month, right? [typing]
+  user_2,[00:12] That's correct. It would be added to your next premium due on 15 Nov 2026.
+  user_1,[00:16] Great. So I want to go ahead and add the rider. Also, can we double‑check the beneficiary? I think it's still my husband, Rajesh.
+  user_2,[00:20] Sure thing. Let me pull up your policy… [pause] …Yes, the current beneficiary is Rajesh Pillai, DOB 12/03/1978.
+  user_1,[00:25] Perfect. No change needed there. And… uh, will the rider affect the sum assured?
+  user_2,[00:30] Good question— the rider adds an additional cover of $50,000 on top of your base sum assured. Your overall coverage will be $250,000 now.
+  user_1,[00:35] Got it. And the payment method stays the same? My auto‑debit from my checking account?
+  user_2,[00:38] Yes, we’ll keep the same auto‑debit. I’ll just need your verbal consent to bind the rider.
+  user_1,[00:42] I consent. Please go ahead.
+  user_2,[00:45] All set! I’ve updated the system. You’ll see the rider reflected in your next statement and I’ll send a confirmation email shortly. Anything else I can help with?
+  user_1,[00:50] No, that’s all. Thanks a lot!
+  user_2,[00:52] You’re welcome! Have a great day, Saanvi.

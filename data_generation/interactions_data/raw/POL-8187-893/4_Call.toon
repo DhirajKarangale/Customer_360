@@ -1,0 +1,17 @@
+call_id: CALL-20260928-001
+start_timestamp: 28/09/2026 T:14:05:00
+end_timestamp: 28/09/2026 T:14:10:30
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Riya Mukherjee,customer
+  f1e2d3c4-5678-90ab-cdef-0987654321fe,Vikram Patel,insurance agent
+messages[10]{user,text}:
+  user_1,"Hi Vikram, uh... I got your email with the link. Just wanted to double‑check the deductible—still $500, right? [00:15]"
+  user_2,"Hey Riya, yes—[sighs] the deductible stays at $500, same as before. The renewal is straightforward."
+  user_1,"Okay, great. I’ll go ahead and fill it out now. Can you stay on the line while I click? [00:45]"
+  user_2,"Sure, take your time. Let me know if anything looks off."
+  user_1,"Um... the page is loading... [typing] ...All right, I see the summary, looks good. I’m about to sign."
+  user_2,"Perfect. Once you submit, I’ll get a confirmation on my end and send you the updated policy PDF."
+  user_1,"Done! I just hit submit. Did you get the notification? [01:30]"
+  user_2,"Yes, I see it now—your policy is renewed, effective today. I’ll email you the new certificate."
+  user_1,"Thanks a lot, Vikram. I appreciate the help."
+  user_2,"You’re welcome! If you need anything else, just give us a call. Have a good day!"

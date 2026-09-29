@@ -1,0 +1,8 @@
+mail_id: 9f3b7c1e-4a2d-11ee-bf4b-0242ac130002
+subject: Reinstatement Confirmation for Auto Policy AP‑123456
+participants[2]{id,name,email,role}:
+  a1d9f8c4-7e33-4b2a-9c1e-5f6d8a9b2c01,Akanksha Bhatt,akanksha.bhatt@dcoders.com,customer
+  b2e4f7d9-9c44-4d5f-8a2b-1e3c6f7d8e02,Karan Joshi,karan.joshi@safestepinsurance.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2026 T:15:30:12,"Dear Akanksha,\n\nI’m pleased to confirm that your auto policy (AP‑123456) has been successfully reinstated as of today. The $152.75 reinstatement fee has been processed and your coverage is active without any changes to your deductible or limits.\n\nYou can view the updated policy documents and receipt here: https://storage.safestepinsurance.com/docs/AP123456_Reinstatement_2026.pdf\n\nIf you have any further questions or need assistance with anything else, please don’t hesitate to reach out.\n\nBest regards,\nKaran Joshi\nInsurance Agent\nSafe Step Insurance\nPhone: +1-555-0123",https://storage.safestepinsurance.com/docs/AP123456_Reinstatement_2026.pdf
+  user_1,user_2,,28/09/2026 T:16:05:45,"Hi Karan,\n\nThank you for the quick turnaround and the confirmation. I’ve reviewed the receipt and everything looks good.\n\nI appreciate your help!\n\nThanks,\nAkanksha",

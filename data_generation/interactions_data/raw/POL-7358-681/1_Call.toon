@@ -1,0 +1,20 @@
+call_id: REC-DC-001A
+start_timestamp: 28/09/2026 T:09:10:00
+end_timestamp: 28/09/2026 T:09:13:30
+participants[2]{id,name,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Rohan Deshmukh,customer
+  3e9f1a2b-5c4d-6e7f-8a9b-0c1d2e3f4a5b,Karan Joshi,insurance agent
+messages[13]{user,text}:
+  user_1,[00:00] Hello, umm... is this Karan from Safe Step?
+  user_2,[00:04] Yes, speaking. Hi Rohan, how can I help you today?
+  user_1,[00:08] I... I wanted to talk about my health policy. I think I need to cancel it.
+  user_2,[00:12] Oh, I see. Let me pull up your details... [typing] ...okay, I have your policy here. Can I ask why you're looking to cancel?
+  user_1,[00:20] Well, uh, I just switched jobs and the new employer offers a plan, so I don't really need this one.
+  user_2,[00:27] Got it. Just to confirm, the policy number is... [sighs] ...HP-2024-5678, right?
+  user_1,[00:33] Yeah, that's the one.
+  user_2,[00:36] Alright, I’ll go ahead and start the cancellation process. It’ll take... um... about 24 hours to reflect in the system.
+  user_1,[00:44] Okay, thanks. Will I get any refund for the remaining premium?
+  user_2,[00:48] Since you’re cancelling mid‑term, we’ll calculate a prorated refund. You should see it in your bank within 5‑7 business days.
+  user_1,[00:55] Great, thanks. Anything else I need to do?
+  user_2,[01:00] Just a quick confirmation email will be sent. If you have any questions, feel free to call back. Have a good day!
+  user_1,[01:03] Thanks, you too. Bye.

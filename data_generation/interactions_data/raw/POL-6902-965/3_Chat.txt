@@ -1,0 +1,11 @@
+chat_id: 9f3b7c21-8d4a-4e2f-9a6b-1c5d9e7f2b34
+participants[2]{id,name,role}:
+  a12f9c3e-7b5d-41e8-9c3f-5d6e8b2a1c9d,Vedant Thakur,customer
+  b34d8e7f-2c1a-4f9b-8d6e-3a9c5d0f7e2a,Neha Kapoor,insurance agent
+messages[6]{user,timestamp,text,media_url}:
+  user_1,30/09/2026 T09:12:05,"hey neha, just checking on my auto policy #AV‑45231. i think it was exipired *expired yesterday?", 
+  user_2,30/09/2026 T09:12:20,"good morning Ved! yes the policy ended on Sep 15. we reinstated it earlier today, so it’s active now. here's the receipt.",https://storage.dcoders.com/docs/Receipt_AV45231_2026.pdf
+  user_1,30/09/2026 T09:12:45,"thanks! can u also send me the updated policy doc? need it for my loan.", 
+  user_2,30/09/2026 T09:13:05,"sure thing, attaching the updated policy. let me know if anything else.",https://storage.dcoders.com/docs/Policy_AV45231_Updated_2026.pdf
+  user_1,30/09/2026 T09:13:30,"got it, looks good. one q: if i want to change the deductable *deductible later, how does that work?", 
+  user_2,30/09/2026 T09:13:55,"you can adjust the deductible anytime before renewal. just drop me a note and I’ll send a quote. happy to help!",

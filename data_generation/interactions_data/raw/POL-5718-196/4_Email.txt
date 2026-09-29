@@ -1,0 +1,8 @@
+mail_id: 7f3a9c2e-5b1d-4f8a-9c6e-2d4b7e9f1a3c
+subject: HomeShield Policy Renewal – Confirmation & Documents
+participants[2]{id,name,email,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Dev Chatterjee,dev.chatterjee@dcoders.com,customer
+  e7f8g9h0-7777-8888-9999-aaaaabbbbbcc,Neha Kapoor,neha.kapoor@shieldlifeservices.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,30/09/2026 T:10:15:00,"Hi Dev,\n\nThank you for completing the payment for your HomeShield policy renewal. Your new annual premium is $1,250 after the 5 % loyalty discount. The policy will be active from 01/10/2026 to 30/09/2027, ensuring continuous coverage with no gap.\n\nYou can download the renewed policy document here. Please let me know if you need any further assistance.\n\nBest regards,\nNeha Kapoor\nInsurance Agent\nShield Life Services\nneha.kapoor@shieldlifeservices.com",https://storage.shieldlife.com/policies/HomeShield_Renewed_DevChatterjee_2026.pdf
+  user_1,user_2,,30/09/2026 T:11:02:13,"Hi Neha,\n\nGot the renewal document, thanks. Just confirming that the coverage will start immediately on 01/10/2026 and that I’m all set.\n\nRegards,\nDev Chatterjee\nDCoders\ndev.chatterjee@dcoders.com",

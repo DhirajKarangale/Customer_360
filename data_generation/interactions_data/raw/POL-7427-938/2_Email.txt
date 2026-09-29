@@ -1,0 +1,8 @@
+mail_id: f0e1d2c3-b4a5-6789-0abc-def123456789
+subject: Your Updated Home Insurance Policy – Confirmation & Documents
+participants[2]{id,name,email,role}:
+  d3f1c9a2-7b4e-4a1f-9c8e-2b5d6f7a8c9d,Kiara Sen,kiara.sen@dcoders.com,customer
+  a9b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d,Vikram Singh,vikram.s@protectall.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2026 T:09:15:00,"Dear Kiara,\n\nThank you for speaking with me today. As discussed, we have increased the personal‑property coverage limit on your home insurance policy to $150,000. This adjustment adds $12 per month to your premium, and the updated policy became active on 28 Sep 2026.\n\nPlease find attached the updated policy schedule for your records.\n\nIf you have any questions or need further assistance, feel free to reply to this email or call us directly.\n\nBest regards,\nVikram Singh\nProtectAll Agency\nPhone: +1‑800‑555‑0199",https://storage.dcodelabs.com/policies/DCoders_HomePolicy_KiaraSen_2026.pdf
+  user_1,user_2,,28/09/2026 T:10:02:00,"Hi Vikram,\n\nGot the updated policy document – looks good. Thanks for the quick update!\n\nBest,\nKiara",

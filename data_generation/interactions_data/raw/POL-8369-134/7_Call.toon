@@ -1,0 +1,15 @@
+call_id: REC-INS-007C
+start_timestamp: 15/10/2026 T:14:05:00
+end_timestamp: 15/10/2026 T:14:09:00
+participants[2]{id,name,role}:
+  9f2c1a3e-7b4d-4f9a-8e2c-1d5f6b7a9c01,Aditya Singh,customer
+  d3e8f0b2-5c6a-41d9-9a3b-2e4c5d6f7a88,Vikram Patel,insurance agent
+messages[8]{user,text}:
+  user_1,[00:00]Hi Vikram, uh... I just wanted to check if you got the payment I made for the flood rider.
+  user_2,[00:30]Yeah, let me... uh... see here— [typing] … okay, I see the INR 2,300 cleared today.
+  user_1,[01:10]Great! So the policy is now fully active with the rider?
+  user_2,[01:45]Exactly, the system shows the rider attached. Your policy number HC‑AD‑2026‑001 is now active with Flood‑Damage Rider. Anything else?
+  user_1,[02:20]Um, actually I noticed the address still shows the old one on the PDF I have. Can you...?
+  user_2,[02:55]Oh sorry about that— I must have missed updating it. Give me a sec… [sighs] … done, I’ve re‑issued the policy with the corrected address.
+  user_1,[03:30]Thanks! Could you email it again? I’ll just double‑check.
+  user_2,[04:00]Sure thing, sending it right now. You should get it in a minute. Anything else you need?

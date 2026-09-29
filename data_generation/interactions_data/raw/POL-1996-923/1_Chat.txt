@@ -1,0 +1,14 @@
+chat_id: 7f9c3a1e-4b2d-41f8-9e6a-2d5f8c9b1a3e
+participants[2]{id,name,role}:
+  a3d9f6c2-7e4b-4a1f-9c3d-5e6b8f0a2d1e,Akanksha Bhatt,customer
+  d5e2b7a9-3c4f-48d1-8f2a-9b7c6e5d4a3f,Anita Sharma,insurance agent
+messages[9]{user,timestamp,text,media_url}:
+  user_1,01/10/2026 T09:15:12,"hey, i was checking my health policy and i think it's about to end??",
+  user_2,01/10/2026 T09:15:45,"Hi Akanksha! Let me pull up your details.",
+  user_2,01/10/2026 T09:16:10,"Okay, I see that your policy (Policy No: HP-4521) actually expired on 30/09/2026.",
+  user_1,01/10/2026 T09:16:45,"oh nooo, i didn't realize that. any options to renew?",
+  user_2,01/10/2026 T09:17:20,"Sure! We can renew it for another year. There’s a small premium increase due to recent changes.",
+  user_1,01/10/2026 T09:18:05,"what's the new premium? also can i get a discount? i’ve been a loyal custumer (*customer).",
+  user_2,01/10/2026 T09:18:45,"The new annual premium is ₹12,500. Since you’re a loyal member, I can apply a 5% discount, bringing it to ₹11,875.",
+  user_1,01/10/2026 T09:19:20,"great, let's do it. can you send me the renewal docs?",
+  user_2,01/10/2026 T09:20:00,"Sure thing! Please find the renewal form attached.",https://storage.dcoders.com/docs/Renewal_HP-4521_2027.pdf

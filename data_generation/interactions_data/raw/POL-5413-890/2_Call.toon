@@ -1,0 +1,22 @@
+call_id: CALL-DC-20260928-002
+start_timestamp: 28/09/2026 T:10:15:00
+end_timestamp: 28/09/2026 T:10:20:00
+participants[2]{id,name,role}:
+  9f3e1a7b-4c2d-4f9a-8b1e-6d5c9e2a7f01,Akanksha Bhatt,customer
+  2b6d8c4e-7a9f-41d3-9e2b-3f5a1c8d0e44,Karan Joshi,insurance agent
+messages[14]{user,text}:
+  user_1,[00:00] Hi Karan, this is Akanksha. I just saw that my auto policy AP‑123456 expired today… uh… can you help?
+  user_2,[00:05] Hey Akanksha, yeah I see it here – it’s marked expired as of today. Sorry to hear that. What’s on your mind?
+  user_1,[00:09] I’m kinda panicking… I need to be on the road tomorrow. So, uh… can I reinstate it? Or do I need a brand‑new policy?
+  user_2,[00:13] Yeah, we have a reinstatement option, but there’s a 30‑day window and a reinstatement fee – usually about 10 % of the premium. After that, it’s a fresh quote.
+  user_1,[00:18] 30 days? I need it today… Is there any way to get coverage back right now? Like an instant reinstatement?
+  user_2,[00:22] We can do a same‑day reinstatement if you pay the fee and there’s no lapse in payment history. It’ll be effective within an hour after we process the payment.
+  user_1,[00:27] Okay… what about the penalty? Is it just the fee or something else?
+  user_2,[00:31] The fee covers the administrative cost and a small surcharge because the policy lapsed. No extra penalty beyond that, unless there were any claims pending at the time of lapse.
+  user_1,[00:35] Got it. And if I decide to just get a new policy instead… would that be more expensive?
+  user_2,[00:40] Typically a brand‑new policy could be a bit higher because you lose the “no‑claims” discount you had. But we can run a quick quote now if you like.
+  user_1,[00:44] Yeah, let’s do that… I’m also wondering about my deductible – does that change if I reinstate?
+  user_2,[00:48] No, the deductible stays the same if you reinstate. If you go fresh, we’ll set it based on the coverage you pick – same options as before.
+  user_1,[00:53] Alright… I think I’ll go with reinstatement. Can you send me the payment link now? I’m ready to pay.
+  user_2,[00:57] Sure thing. I’ll email you the link and also read it out – the total comes to $152.75 including the reinstatement surcharge. You can pay via credit card or net‑banking.
+  user_1,[01:02] Thanks, Karan. I’ll complete it in a minute. Appreciate your help. [sighs]

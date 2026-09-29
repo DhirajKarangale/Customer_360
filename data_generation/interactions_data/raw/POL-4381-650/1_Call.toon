@@ -1,0 +1,23 @@
+call_id: REC-DC-20260928-001
+start_timestamp: 28/09/2026 T:09:15:00
+end_timestamp: 28/09/2026 T:09:23:12
+participants[2]{id,name,role}:
+  3f9a6c2b-7e4d-41b2-9c3e-5d6f8a2b1c4d,Anvi Desai,customer
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Anita Sharma,insurance agent
+messages[16]{user,text}:
+  user_2,[00:00] Good morning, Anvi. This is Anita Sharma from Trust Wealth Advisors, how can I help you today?
+  user_1,[00:05] Umm... hi Anita. I just got an email saying my health policy is... expired. I didn't expect that.
+  user_2,[00:10] Oh, I see. Let me pull up your record... [typing]
+  user_1,[00:12] Okay, thanks.
+  user_2,[00:20] Alright, I have it here. Your policy number is HP-2024-987654, and indeed the coverage ended on 30/08/2026.
+  user_1,[00:25] That's... surprising. I thought it was still active. Did I miss a renewal notice?
+  user_2,[00:30] We did send a renewal reminder on 15/07/2026, but I don't see a response on the system. Maybe it got lost?
+  user_1,[00:35] Hmm, I don't recall getting that. Could you... could you resend it?
+  user_2,[00:40] Sure thing. I'll email you the renewal brochure right after this call. Also, we can process a quick renewal now if you like.
+  user_1,[00:45] Actually, I need to think about it. My health situation... I might need a different plan.
+  user_2,[00:50] I understand. We have a few options: a standard renewal, an upgraded comprehensive plan, or a basic essential plan. I can walk you through them.
+  user_1,[00:55] Okay, could you give me a quick rundown? I'm a bit pressed for time.
+  user_2,[01:00] Sure. The standard renewal keeps the same coverage for another year at $1,200 annually. The comprehensive adds dental and vision for $1,500. The essential is $900 but with higher deductibles.
+  user_1,[01:05] Thanks, Anita. Let me check my finances and get back to you tomorrow.
+  user_2,[01:10] No problem. I'll follow up with an email and a link to the policy details. Have a good day, Anvi.
+  user_1,[01:12] You too, bye.

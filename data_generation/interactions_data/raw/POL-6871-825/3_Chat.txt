@@ -1,0 +1,11 @@
+chat_id: 9f3b2c1a-7d4e-4a9f-8b6c-1e2f3d4b5a6c
+participants[2]{id,name,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Dhruv Kapoor,customer
+  d4e5f6g7-7777-8888-9999-aaaabbbbcccc,Neha Kapoor,insurance agent
+messages[6]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T10:05:12,"hey neha, thx for sending the doc earlier. quick q: does the policy cover trip cancellation if i need to cancel due to covid?", 
+  user_2,28/09/2026 T10:05:45,"Hi Dhruv! 😊 Yes, the TRV‑DC‑2026‑10 policy includes trip cancellation coverage up to $2,000 for reasons like covid, medical emergencies, or severe weather.", 
+  user_1,28/09/2026 T10:06:10,"great! also, can i get the claim form? need it ready just in case.", 
+  user_2,28/09/2026 T10:06:40,"Sure thing, sending it now.",https://storage.dcodelife.com/docs/Claim_Form_TRV-DC-2026-10.pdf
+  user_1,28/09/2026 T10:07:05,"got it, thx! one more thing—if i need to extend my stay by 3 days, does the policy automatically cover the extra nights?", 
+  user_2,28/09/2026 T10:07:45,"Yes, any extension up to 7 days is covered as long as you inform us at least 24 hrs before the original return date. I’ll note the extension for you. *covered",
