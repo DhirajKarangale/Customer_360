@@ -20,10 +20,9 @@ def get_customer_repo(conn: psycopg2.extensions.connection = Depends(get_db_conn
     return CustomerRepository(conn)
 
 def get_auth_service(
-    agent_repo: AgentRepository = Depends(get_agent_repo),
-    customer_repo: CustomerRepository = Depends(get_customer_repo)
+    agent_repo: AgentRepository = Depends(get_agent_repo)
 ) -> AuthService:
-    return AuthService(agent_repo, customer_repo)
+    return AuthService(agent_repo)
 
 def get_agent_service(agent_repo: AgentRepository = Depends(get_agent_repo)) -> AgentService:
     return AgentService(agent_repo)

@@ -1,36 +1,38 @@
 from fastapi import HTTPException, status
-from server.schemas.auth import LoginRequest, LoginResponse
+from server.schemas.auth import LoginRequest
+from server.schemas.agent import AgentResponse
 from server.db.repositories.agent_repo import AgentRepository
-from server.db.repositories.customer_repo import CustomerRepository
 import hashlib
 
 class AuthService:
-    def __init__(self, agent_repo: AgentRepository, customer_repo: CustomerRepository):
+    def __init__(self, agent_repo: AgentRepository):
         self.agent_repo = agent_repo
-        self.customer_repo = customer_repo
 
-    def authenticate_agent(self, login_data: LoginRequest) -> LoginResponse:
-        # Check agent first
-        user = self.agent_repo.get_agent_by_email(login_data.email)
-        user_type = "agent"
+    def authenticate_agent(self, login_data: LoginRequest) -> AgentResponse:
+        error_msg = "Invalid email or password. Please double-check your credentials and try again."
         
-        # If not found, check customer
-        if not user:
-            user = self.customer_repo.get_customer_by_email(login_data.email)
-            user_type = "customer"
-            
-        if not user:
-            raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid credentials")
+        agent = self.agent_repo.get_agent_by_email(login_data.email)
         
-        db_password = user.get("PASSWORD") or user.get("password")
+        if not agent:
+            raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail=error_msg)
+        
+        db_password = agent.get("PASSWORD") or agent.get("password")
         
         if db_password is None:
-            raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid credentials")
+            raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail=error_msg)
             
         hashed_input = hashlib.sha256(login_data.password.encode('utf-8')).hexdigest()
         
         if hashed_input != db_password:
-            raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid credentials")
+            raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail=error_msg)
         
-        user_id = str(user.get("ID") or user.get("id"))
-        return LoginResponse(agent_id=user_id, message=f"Login successful as {user_type}")
+        agent_data = AgentResponse(
+            id=str(agent.get("ID") or agent.get("id")),
+            name=agent.get("NAME") or agent.get("name"),
+            email=agent.get("EMAIL") or agent.get("email"),
+            phone_number=agent.get("PHONE_NUMBER") or agent.get("phone_number"),
+            agency_name=agent.get("AGENCY_NAME") or agent.get("agency_name"),
+            license_number=agent.get("LICENSE_NUMBER") or agent.get("license_number"),
+        )
+        
+        return agent_data
