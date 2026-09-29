@@ -11,6 +11,7 @@ SF_PASSCODE = os.getenv('SNOWFLAKE_PASSCODE')
 SF_WAREHOUSE = os.getenv('SNOWFLAKE_WAREHOUSE')
 SF_DATABASE = os.getenv('SNOWFLAKE_DATABASE')
 SF_SCHEMA = os.getenv('SNOWFLAKE_SCHEMA')
+PRIVATE_KEY_PATH = os.getenv('SNOWFLAKE_PRIVATE_KEY_PATH')
 _GLOBAL_SF_CONN = None
 
 def get_snowflake_conn(force_refresh=False):
@@ -28,7 +29,18 @@ def get_snowflake_conn(force_refresh=False):
             pass
     import sys
     try:
-        conn = snowflake.connector.connect(user=SF_USER, password=SF_PASSWORD, account=SF_ACCOUNT, passcode=SF_PASSCODE)
+        connect_kwargs = {
+            "user": SF_USER,
+            "account": SF_ACCOUNT,
+        }
+        if SF_PASSWORD:
+            connect_kwargs["password"] = SF_PASSWORD
+        if SF_PASSCODE:
+            connect_kwargs["passcode"] = SF_PASSCODE
+        if PRIVATE_KEY_PATH:
+            connect_kwargs["private_key_file"] = PRIVATE_KEY_PATH
+        
+        conn = snowflake.connector.connect(**connect_kwargs)
     except Exception as e:
         error_str = str(e).lower()
         if 'mfa' in error_str or 'auth' in error_str or 'passcode' in error_str or ('incorrect username or password' in error_str) or ('too many failed' in error_str) or ('locked' in error_str) or ('connection is closed' in error_str):
