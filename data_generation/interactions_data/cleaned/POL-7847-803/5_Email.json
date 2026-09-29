@@ -1,0 +1,26 @@
+{
+  "content": "Insurance agent Suresh Deshmukh emailed customer Aditi Mahajan to confirm that a $1,200 refund for her cancelled auto policy (AU-2019-HC) was processed to her card ending in 1234 on September 27, 2026, providing transaction reference REF-20260927-1200 and a receipt. Aditi replied confirming receipt of the funds and that everything is correct.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-30T09:15:30",
+    "participants": {
+      "customer": {
+        "name": "Aditi Mahajan",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "d4c3b2a1-8765-09ba-fedc-0987654321ba"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Refund Processed",
+      "Auto Policy Cancellation",
+      "Policy Receipt"
+    ],
+    "action_items": []
+  }
+}

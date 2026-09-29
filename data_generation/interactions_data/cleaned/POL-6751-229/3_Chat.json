@@ -1,0 +1,30 @@
+{
+  "content": "Vikram Patel informed Rohan Deshmukh that his health policy expired yesterday and offered a 1-year renewal at the same rate. Rohan confirmed that outpatient specialist coverage is included, inquired about the premium ($1,250), and requested a payment link. Vikram provided the secure payment link and renewal form, and Rohan confirmed he will sign and complete the payment by Friday.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T10:15:02",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "d4e5f6g7-7777-8888-9999-aaaabbbbcccc"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "health policy renewal",
+      "outpatient specialist coverage",
+      "premium amount",
+      "payment"
+    ],
+    "action_items": [
+      "Review and sign the renewal form",
+      "Complete the payment by Friday"
+    ]
+  }
+}

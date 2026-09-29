@@ -1,0 +1,26 @@
+{
+  "content": "Insurance agent Karan Joshi confirms to customer Akanksha Bhatt that auto policy AP-123456 has been successfully reinstated after processing the $152.75 fee, with coverage remaining active without changes. Akanksha reviews the documents and confirms everything is correct.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T15:30:12",
+    "participants": {
+      "customer": {
+        "name": "Akanksha Bhatt",
+        "id": "a1d9f8c4-7e33-4b2a-9c1e-5f6d8a9b2c01"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "b2e4f7d9-9c44-4d5f-8a2b-1e3c6f7d8e02"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Auto Policy Reinstatement",
+      "Policy Confirmation",
+      "Reinstatement Fee"
+    ],
+    "action_items": []
+  }
+}

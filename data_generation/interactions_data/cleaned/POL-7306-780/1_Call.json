@@ -1,0 +1,30 @@
+{
+  "content": "Anita Sharma from Trust Wealth Advisors calls Pooja Bhatia to discuss the upcoming expiration of her health policy (HP-4521) on 30/09/2026. They discuss renewal options, including an 8% rate increase on the current plan, a lower-premium plan with a \u20b910,000 deductible, and a 3-month short-term extension. Pooja is unsure about higher premiums and asks Anita to email the comparison sheet and renewal form to pooja.bhatia@example.com for review.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T10:05:00",
+    "participants": {
+      "customer": {
+        "name": "Pooja Bhatia",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "e7f8g9h0-7777-8888-9999-aaaabbbbcccc"
+        }
+      ]
+    },
+    "user_mood": "unsure",
+    "topics": [
+      "health policy expiration",
+      "policy renewal options",
+      "premium increase",
+      "deductibles",
+      "short-term extension"
+    ],
+    "action_items": [
+      "Email the comparison sheet and renewal form to pooja.bhatia@example.com"
+    ]
+  }
+}

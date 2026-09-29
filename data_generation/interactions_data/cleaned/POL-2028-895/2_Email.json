@@ -1,0 +1,29 @@
+{
+  "content": "Insurance agent Vikram Patel sent the health policy renewal quote (Policy No: HP-2025-987654) to customer Reyansh Tiwari, detailing an annual premium of $1,250 and a $50 lapse fee for the term starting October 1, 2026. Reyansh accepted the terms, requested to proceed with the renewal, and asked for payment instructions.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-16T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Reyansh Tiwari",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "d4c3b2a1-7777-8888-9999-aaaaabbbbbcc"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "Health policy renewal",
+      "Renewal quote",
+      "Premium payment"
+    ],
+    "action_items": [
+      "Process the policy renewal",
+      "Provide payment instructions to the customer"
+    ]
+  }
+}

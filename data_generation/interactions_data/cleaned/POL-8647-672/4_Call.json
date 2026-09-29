@@ -1,0 +1,30 @@
+{
+  "content": "Rahul Jain contacted insurance agent Ramesh Tiwari regarding a failed payment transaction of \u20b912,450 for his car insurance policy (AU-45219). Ramesh confirmed the portal still shows 'Expired' due to the pending payment and agreed to generate and send a fresh secure payment link via email and WhatsApp. Once paid, the policy status will automatically update to 'Active' with a renewal date until 04/10/2027.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Rahul Jain",
+        "id": "9f1c2d3e-4b5a-6c7d-8e9f-0a1b2c3d4e5f"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "a2b3c4d5-6e7f-8a9b-0c1d-2e3f4a5b6c7d"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "payment failure",
+      "policy status",
+      "policy renewal",
+      "car insurance"
+    ],
+    "action_items": [
+      "Ramesh to send a new secure payment link to customer's email and WhatsApp",
+      "Rahul to complete the payment using the new link"
+    ]
+  }
+}

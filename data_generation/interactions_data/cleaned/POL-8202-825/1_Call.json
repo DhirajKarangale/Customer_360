@@ -1,0 +1,29 @@
+{
+  "content": "Customer Tanvi Saxena contacted insurance agent Sunita Agarwal to discuss her expiring health policy. Sunita confirmed the policy expires on 30/09/2026, explained the grace period rules for past claims, and successfully processed the policy renewal immediately as the customer had her payment details ready.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Tanvi Saxena",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "f7e8d9c0-7777-8888-9999-aaaabbbbcccc"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "health policy expiry",
+      "grace period for claims",
+      "policy renewal"
+    ],
+    "action_items": [
+      "Process policy renewal payment",
+      "Send renewal confirmation email"
+    ]
+  }
+}

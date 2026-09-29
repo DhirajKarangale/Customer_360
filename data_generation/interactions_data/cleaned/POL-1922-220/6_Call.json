@@ -1,0 +1,32 @@
+{
+  "content": "Vikram Singh (insurance agent) confirmed to Krishna Das (customer) that Home Insurance policy HC-2026-0459 is active with an auto-debit of \u20b911,875 scheduled for 15 Oct 2026, and that a reminder will be sent on 12 Oct 2026. Vikram also confirmed that payment receipt #REC-2026-011875 has been emailed and agreed to resend a PDF copy of the policy document.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Krishna Das",
+        "id": "a3f9c2d1-7e4b-4a1f-9b2e-5d6f8c9a0b12"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "5d2e1b8f-3c4a-49f7-8e2d-1a6b9c3d4e5f"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "Home Insurance policy status",
+      "Auto-debit payment",
+      "Payment receipt",
+      "Reminder notification",
+      "Policy document copy"
+    ],
+    "action_items": [
+      "Send payment receipt #REC-2026-011875",
+      "Send auto-debit reminder on 12 Oct 2026",
+      "Resend PDF copy of the policy document"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "content": "Ramesh Tiwari from Safe Shield Agency sent an email to customer Rohan Deshmukh confirming the successful activation of his DCoders life insurance policy (Policy Number: DC-LIFE-884920). The email includes the official policy bond, premium receipt, and the final welcome kit as attachments, following the verification of nominee details and documents.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T11:15:30",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "d4b21915-1842-4f93-8b7a-904128f6e102"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "7a1c8340-5e29-4391-b4f2-1082be73fa91"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Policy Activation",
+      "Welcome Kit",
+      "Insurance Policy"
+    ],
+    "action_items": [
+      "Review the attached official policy bond, premium receipt, and final welcome kit"
+    ]
+  }
+}

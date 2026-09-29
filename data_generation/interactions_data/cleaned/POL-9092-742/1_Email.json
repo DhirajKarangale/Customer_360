@@ -1,0 +1,29 @@
+{
+  "content": "Krishna Das contacted agent Ramesh Tiwari to check the status of their DCoders corporate health insurance policy (Policy ID: DC-HLT-2023-8891). Although the portal shows it as active, HR stated it should have expired at the end of last month according to resignation terms. Krishna requested Ramesh to update the system status to 'Expired' to prevent overlapping coverage or billing issues with a new employer's plan.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2024-10-14T11:30:22",
+    "participants": {
+      "customer": {
+        "name": "Krishna Das",
+        "id": "c1928374-56a1-43ef-b821-918273645012"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "a9283746-12b3-45cd-9e81-726354890123"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "Health Policy Expiry Status",
+      "Corporate Insurance Transition",
+      "Overlapping Coverage"
+    ],
+    "action_items": [
+      "Check the system status of policy DC-HLT-2023-8891",
+      "Ensure the target end status is updated to 'Expired'"
+    ]
+  }
+}

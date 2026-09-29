@@ -1,0 +1,30 @@
+{
+  "content": "Meera Chauhan contacted insurance agent Anita Sharma to inquire about filing an insurance claim, receiving a step-by-step PDF guide. She also successfully added her sister as an additional driver by providing her license number (D1234567) and date of birth (12/05/1995), which will increase her premium by $30 per month starting on the next billing cycle on 01/11/2026.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-02-10T09:15:12",
+    "participants": {
+      "customer": {
+        "name": "Meera Chauhan",
+        "id": "a12f5c9e-3b4d-4e7a-8c9f-6b2d1e4f7c3a"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "d4b8e7f2-9c1a-4f6d-8b3e-2a5c9d0e1f6b"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "insurance claim",
+      "claim guide PDF",
+      "add additional driver",
+      "premium increase"
+    ],
+    "action_items": [
+      "Review the claim guide PDF",
+      "Prepare for the updated premium of $30/month starting 01/11/2026"
+    ]
+  }
+}

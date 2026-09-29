@@ -1,0 +1,32 @@
+{
+  "content": "Rohan Deshmukh called insurance agent Sunita Agarwal to check the activation status of his home insurance policy after paying the premium. Sunita explained that the policy is currently pending review of his fire-safety certificate by the underwriting team, which can take up to 24 hours. She agreed to flag the review as urgent. Additionally, Sunita promised to email the policy terms and PDF within 10 minutes and provided instructions on how to file a claim using the 24/7 hotline.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:05:12",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "d4c3b2a1-8765-09ba-fedc-0987654321ba"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "policy activation",
+      "payment confirmation",
+      "fire-safety certificate verification",
+      "policy documents",
+      "claims process"
+    ],
+    "action_items": [
+      "Sunita to flag the underwriting review as urgent",
+      "Sunita to email the final policy PDF with the cover page highlighted within 10 minutes",
+      "Rohan to wait for the email and policy activation status"
+    ]
+  }
+}

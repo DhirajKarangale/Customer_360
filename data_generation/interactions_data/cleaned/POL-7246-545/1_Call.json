@@ -1,0 +1,30 @@
+{
+  "content": "Kavya Iyer called Suresh Deshmukh to check the status of her life insurance policy (L-2026-0459) after paying the premium last week. Suresh informed her that the policy is in \"Pending Activation\" due to pending document verification. Because Kavya has a loan contingent on the activation, Suresh agreed to flag the file for priority manual review, noting that she should receive activation confirmation within a few hours. Additionally, Kavya requested to confirm her beneficiary details to ensure her mother is listed.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Kavya Iyer",
+        "id": "9f2c4a1e-7b3d-4e9a-9f12-3b5d6e8c9a01"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "d3a7f9b2-5c6e-4f1a-8b2c-7e9d0f1a2b3c"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "policy status",
+      "policy activation",
+      "document verification",
+      "beneficiary details"
+    ],
+    "action_items": [
+      "Flag policy for priority manual review",
+      "Confirm beneficiary details for the customer's mother"
+    ]
+  }
+}

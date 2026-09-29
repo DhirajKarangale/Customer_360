@@ -1,0 +1,25 @@
+{
+  "content": "Pooja Bhatia confirmed receipt of a $80 refund and requested a cancellation receipt for her records. Karan Joshi provided the cancellation confirmation document via a shared link, and the interaction concluded successfully.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-30T09:15:12",
+    "participants": {
+      "customer": {
+        "name": "Pooja Bhatia",
+        "id": "4f9c2a1e-3b6d-4e9a-9c12-5f2b6d8e9a01"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "a7d3c9f4-2e5b-41c3-8b7f-6d4e9a0c3b2f"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "refund confirmation",
+      "cancellation receipt"
+    ],
+    "action_items": []
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "content": "Sunita Agarwal emailed Tanvi Saxena confirming that health policy HP-2026-987654 will lapse on September 30, 2027, and outlining a 15-day post-expiry claim window until October 15, 2027. Tanvi acknowledged receipt of the documents, confirmed her understanding of the claim window, and asked if there is any outstanding balance or final premium due.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2027-05-08T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Tanvi Saxena",
+        "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "policy expiry",
+      "claim window",
+      "health policy",
+      "outstanding balance"
+    ],
+    "action_items": [
+      "Check for outstanding balance or final premium due",
+      "Send reminder on 1 August 2027"
+    ]
+  }
+}

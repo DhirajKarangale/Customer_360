@@ -1,0 +1,28 @@
+{
+  "content": "The customer, Dev Chatterjee, inquired about the status of his expired health policy (HP-34219) and whether it could be reactivated automatically. The insurance agent, Suresh Deshmukh, informed him that auto-reactivation is not possible and that a renewal application or a new policy is required. The customer then requested the coverage summary PDF, which the agent successfully resent.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-30T09:15:12",
+    "participants": {
+      "customer": {
+        "name": "Dev Chatterjee",
+        "id": "5d2f9a1b-8c3e-4b7a-9f1e-2d3c4b5a6e7f"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "policy expiration",
+      "policy reactivation",
+      "coverage summary"
+    ],
+    "action_items": [
+      "Submit a renewal application or choose a new policy"
+    ]
+  }
+}

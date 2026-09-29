@@ -1,0 +1,28 @@
+{
+  "content": "Anjali Desai sent the updated auto policy document (AU-4521-R1) to Rohan Deshmukh following their earlier call, noting the previous policy is expired and the new one is active until 31/08/2027. Rohan reviewed the document, confirmed everything looks good, and thanked her for the assistance.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-30T10:15:00",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "d4e5f6a7-89ab-0cde-f123-456789abcdef"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Updated auto policy document",
+      "Policy renewal",
+      "Policy AU-4521-R1"
+    ],
+    "action_items": [
+      "Rohan Deshmukh to keep the updated policy document on file"
+    ]
+  }
+}

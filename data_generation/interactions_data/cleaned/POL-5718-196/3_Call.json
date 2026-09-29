@@ -1,0 +1,31 @@
+{
+  "content": "Dev Chatterjee called insurance agent Neha Kapoor to discuss his policy renewal. He confirmed the $1,250 premium with the 5% loyalty discount was acceptable and inquired about policy continuity, which Neha assured would be seamless with no coverage gap. Dev requested a secure credit card payment link, which Neha sent via email and SMS. Dev confirmed no further assistance was needed.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T10:15:00",
+    "participants": {
+      "customer": {
+        "name": "Dev Chatterjee",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "f1e2d3c4-8765-43ba-9cde-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "policy renewal",
+      "premium payment",
+      "coverage continuity",
+      "payment methods"
+    ],
+    "action_items": [
+      "Send secure credit card payment link via email and SMS",
+      "Complete payment via the link",
+      "Receive confirmation receipt and updated policy document"
+    ]
+  }
+}

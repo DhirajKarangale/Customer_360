@@ -1,0 +1,29 @@
+{
+  "content": "Insurance agent Vikram Patel emailed customer Atharv Pandey following a earlier phone call to provide the renewal quote for Health Policy HP-785412, which expires today. The annual premium is $1,250, effective from September 30, 2026. The agent invited the customer to reply or call to process the renewal and avoid a lapse in coverage.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-27T09:45:00",
+    "participants": {
+      "customer": {
+        "name": "Atharv Pandey",
+        "id": "9f2c1a3e-5b6d-4e9a-8c2f-1a2b3c4d5e6f"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "a7d9f0b2-3c4e-4f5a-9b6c-7d8e9f0a1b2c"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "policy renewal",
+      "health insurance",
+      "premium quote"
+    ],
+    "action_items": [
+      "Review the attached renewal quote",
+      "Reply to the email or call the agent to proceed with the renewal"
+    ]
+  }
+}

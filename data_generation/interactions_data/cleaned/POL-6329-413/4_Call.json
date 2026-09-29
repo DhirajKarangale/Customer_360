@@ -1,0 +1,32 @@
+{
+  "content": "Kunal Mehta called insurance agent Anita Sharma to confirm that he will submit the signed declaration form and property valuation report as a single PDF tomorrow morning. They discussed formatting requirements for the valuation report, and Anita agreed to email the bank transfer account details for the $850 premium along with a document checklist. Anita also confirmed that the policy status will change from Pending to Active once the documents are verified.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T14:10:00",
+    "participants": {
+      "customer": {
+        "name": "Kunal Mehta",
+        "id": "9f2c3a7e-5b1d-4f8a-9c2e-1d4b6f7a9c01"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "d4e8b9c2-3a7f-44c5-8f6a-2b5e9d0f3a77"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "home policy",
+      "declaration form",
+      "property valuation report",
+      "premium payment",
+      "policy status"
+    ],
+    "action_items": [
+      "Kunal to send signed declaration form and property valuation report tomorrow morning",
+      "Anita to email bank account details and document checklist",
+      "Anita to verify documents and update policy status to Active"
+    ]
+  }
+}

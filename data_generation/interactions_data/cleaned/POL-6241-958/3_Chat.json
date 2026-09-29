@@ -1,0 +1,30 @@
+{
+  "content": "Customer Kriti Mahajan reviewed her beneficiary list, confirmed the policy end date (December 31, 2028), updated her residential address, and requested a policy coverage summary from insurance agent Suresh Deshmukh.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T09:15:02",
+    "participants": {
+      "customer": {
+        "name": "Kriti Mahajan",
+        "id": "9f1c2e5b-7a3d-4f9b-8c2e-1a9d6b5c7e3f"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "a2b4c6d8-9e0f-1a2b-3c4d-5e6f7a8b9c0d"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Beneficiary list",
+      "Policy end date",
+      "Address update",
+      "Policy coverage summary"
+    ],
+    "action_items": [
+      "Send address update confirmation email to the customer",
+      "Provide policy coverage summary document"
+    ]
+  }
+}

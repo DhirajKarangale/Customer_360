@@ -1,0 +1,32 @@
+{
+  "content": "Insurance agent Neha Kapoor emailed customer Saanvi Pillai regarding the expiration of her health policy (Policy No: HP-2024-9876) on August 30, 2026, attaching a renewal brochure with available plans. Saanvi expressed surprise that the policy did not auto-renew and requested information on cost differences between plans, grace periods to avoid coverage gaps, and the final deadline for continuous coverage.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T14:30:00",
+    "participants": {
+      "customer": {
+        "name": "Saanvi Pillai",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "e7f8g9h0-7777-8888-9999-aaaaBBBBCCCC"
+        }
+      ]
+    },
+    "user_mood": "surprised",
+    "topics": [
+      "health policy renewal",
+      "policy expiration",
+      "premium rates",
+      "grace period",
+      "coverage gap"
+    ],
+    "action_items": [
+      "Provide exact cost difference between current plan and new plan",
+      "Confirm if there is a grace period to avoid a coverage gap",
+      "Confirm the final date to finalize renewal for continuous coverage"
+    ]
+  }
+}

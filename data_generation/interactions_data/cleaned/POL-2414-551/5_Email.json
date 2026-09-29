@@ -1,0 +1,28 @@
+{
+  "content": "Ravi Menon confirmed to customer Pranav Mishra that health policy HP-2026-0456 was successfully renewed as of 27 September 2026 with a monthly premium of $120. The updated policy document was attached to the email.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T10:15:00",
+    "participants": {
+      "customer": {
+        "name": "Pranav Mishra",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "e5f6g7h8-7777-8888-9999-aaaabbbbcccc"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "health policy renewal",
+      "policy confirmation",
+      "premium payment"
+    ],
+    "action_items": [
+      "Review the attached updated policy document"
+    ]
+  }
+}

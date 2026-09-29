@@ -1,0 +1,28 @@
+{
+  "content": "Kavya Iyer called Suresh Deshmukh at Secure Life Solutions to verify if her policy (L-2026-0459) was active. Suresh confirmed it has been active since 09:58 today. Kavya also inquired about the premium due date for next year and requested the policy PDF to be resent. Suresh confirmed the next premium is due on 01/09/2027 and agreed to email the PDF immediately after the call.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T10:15:00",
+    "participants": {
+      "customer": {
+        "name": "Kavya Iyer",
+        "id": "a3f9c2d1-7b4e-4f1a-9c8d-2e5b6a9f1c3e"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "policy status",
+      "premium due date",
+      "policy document resend"
+    ],
+    "action_items": [
+      "Resend policy PDF to Kavya Iyer's email"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "content": "Kriti Mahajan called insurance agent Suresh Deshmukh to check the status of her life insurance policy, which was confirmed as active. She requested a resend of her recent statement due to not receiving it in March and successfully added her sister, Ananya Mahajan, as a secondary beneficiary.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Kriti Mahajan",
+        "id": "9f3b2c7e-1a4d-4f9b-8c2e-5d6a9b0e7f12"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "policy status",
+      "statement resend",
+      "beneficiary update"
+    ],
+    "action_items": [
+      "Resend the last statement to the customer's email",
+      "Send a confirmation email for the beneficiary update"
+    ]
+  }
+}

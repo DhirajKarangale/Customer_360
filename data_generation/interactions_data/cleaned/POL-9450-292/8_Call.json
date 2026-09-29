@@ -1,0 +1,30 @@
+{
+  "content": "Kiara Sen called insurance agent Neha Kapoor to confirm her health policy expiration date (30 September 2026) and verify that her knee surgery claim had been paid. Neha confirmed the claim was settled and payment transferred, and agreed to email renewal options for a new term starting 1 October 2026, along with a guide on adding a dependent.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-20T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Kiara Sen",
+        "id": "9f2c1a7e-3b4d-41f9-8a6e-5d2c9f3b7a12"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "d4e5b6c7-8f9a-4b0c-9d1e-2f3a4b5c6d7e"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "health policy expiration",
+      "surgery claim payment",
+      "policy renewal options",
+      "adding a dependent"
+    ],
+    "action_items": [
+      "Email renewal quote and options starting 1 October 2026",
+      "Send guide on how to add a dependent"
+    ]
+  }
+}

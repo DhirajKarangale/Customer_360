@@ -1,0 +1,31 @@
+{
+  "content": "Vikram Patel confirms the life insurance policy (LD-2026-ROHAN) has been updated with a \u20b915 lakh sum assured, a \u20b95 lakh accidental-death rider, and a new address, attaching the revised document. Rohan Deshmukh reviews and approves the document, and requests a direct payment link to pay the upcoming premium due on 15 October 2026.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-30T09:30:00",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "e5f6g7h8-7777-8888-9999-aaaabbbbcccc"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "Life insurance policy update",
+      "Sum assured increase",
+      "Accidental-death rider",
+      "Address update",
+      "Premium payment"
+    ],
+    "action_items": [
+      "Provide direct payment link for premium due on 15 Oct 2026",
+      "Pay upcoming premium"
+    ]
+  }
+}

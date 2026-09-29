@@ -1,0 +1,28 @@
+{
+  "content": "Anjali Desai from First Guard Brokers called Akanksha Bhatt to discuss the upcoming expiration of her home insurance policy with DCoders on 30/09/2026. They discussed the renewal premium of \u20b912,500 per annum (a 5% increase), potential bundling discounts with a motor policy, and the risks of letting coverage lapse. The customer requested a formal quote.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T10:15:00",
+    "participants": {
+      "customer": {
+        "name": "Akanksha Bhatt",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "f1e2d3c4-9876-54ba-dcba-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "hesitant",
+    "topics": [
+      "home insurance policy renewal",
+      "premium increase",
+      "bundling discount"
+    ],
+    "action_items": [
+      "Email the renewal quote to the customer"
+    ]
+  }
+}

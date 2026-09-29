@@ -1,0 +1,29 @@
+{
+  "content": "The customer, Aditya Singh, called the insurance agent, Vikram Patel, to confirm the receipt of his INR 2,300 payment for the flood-damage rider. The agent confirmed the payment and that policy HC-AD-2026-001 is now active with the rider. Additionally, the customer requested an address update on the policy document, which the agent completed and re-emailed to the customer during the call.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-10-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Aditya Singh",
+        "id": "9f2c1a3e-7b4d-4f9a-8e2c-1d5f6b7a9c01"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "d3e8f0b2-5c6a-41d9-9a3b-2e4c5d6f7a88"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "payment confirmation",
+      "flood rider",
+      "policy activation",
+      "address update"
+    ],
+    "action_items": [
+      "Email the reissued policy document with the corrected address to the customer"
+    ]
+  }
+}

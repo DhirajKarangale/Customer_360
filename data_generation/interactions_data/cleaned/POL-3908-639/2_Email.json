@@ -1,0 +1,31 @@
+{
+  "content": "Anjali Desai emailed Vivaan Gupta with the updated home insurance policy (Policy No: HC-2026-0456) reflecting a reduced personal-property limit of $25,000, a complimentary 30-day extension, and a 10% bundle discount on home and auto policies. Vivaan reviewed the documents, confirmed everything looked fine, and asked Anjali to finalize the changes and notify him once fully active.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T10:30:00",
+    "participants": {
+      "customer": {
+        "name": "Vivaan Gupta",
+        "id": "9f8e7d6c-1234-5678-90ab-cdef12345678"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "2a3b4c5d-6789-0123-4567-89abcdef0123"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Home insurance policy update",
+      "Personal-property coverage limit",
+      "Complimentary extension",
+      "Bundle discount"
+    ],
+    "action_items": [
+      "Finalize the changes to the policy",
+      "Apply the bundle discount",
+      "Notify the customer once the policy is fully active"
+    ]
+  }
+}

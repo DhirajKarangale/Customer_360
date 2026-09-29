@@ -1,0 +1,29 @@
+{
+  "content": "Meera Chauhan inquired about the status of her travel policy (Policy #TRV-2024-0789), which is currently listed as expired. Since she has an upcoming trip in early October, she is seeking information on how to obtain coverage or renew the policy.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-27T09:15:30",
+    "participants": {
+      "customer": {
+        "name": "Meera Chauhan",
+        "id": "9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "Travel Policy Expiration",
+      "Policy Renewal",
+      "Trip Coverage"
+    ],
+    "action_items": [
+      "Provide information on policy renewal options",
+      "Confirm if coverage can be obtained for the early October trip"
+    ]
+  }
+}

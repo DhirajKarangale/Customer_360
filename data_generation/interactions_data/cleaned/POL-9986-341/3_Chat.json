@@ -1,0 +1,29 @@
+{
+  "content": "Rohan Deshmukh contacted insurance agent Sunita Agarwal to check the status of his home insurance policy. Sunita informed him that the policy was pending receipt of a fire-safety certificate. Rohan uploaded the certificate during the chat, and Sunita confirmed receipt, stating she would move the policy to 'Under Review' and have the final version ready by tomorrow. Sunita also confirmed that the deductible remains \u20b95,000.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T10:12:05",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "a12f9b34-7c8d-41e2-9a5b-3d6e9f0c1b2a"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "d4e5f6a7-8b9c-0d1e-2f3a-4b5c6d7e8f9a"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "home insurance policy status",
+      "fire-safety certificate",
+      "policy deductible"
+    ],
+    "action_items": [
+      "Agent to move policy status to 'Under Review'",
+      "Agent to finalize the policy and send the final document by tomorrow"
+    ]
+  }
+}

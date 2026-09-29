@@ -1,0 +1,29 @@
+{
+  "content": "Kavya Iyer contacted insurance agent Neha Kapoor to cancel her health insurance policy (HP-DC-2024-5678). Neha confirmed the policy details, explained that the cancellation effective date would be 31/12/2026 with any refundable amount processed to her bank, and informed her that no additional forms are required as she will handle the submission.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-30T10:05:12",
+    "participants": {
+      "customer": {
+        "name": "Kavya Iyer",
+        "id": "d1c9a6b4-2f7e-4a5b-8c3d-9e0f1a2b3c4d"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "a5b6c7d8-9e0f-1a2b-3c4d-5e6f7a8b9c0d"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "policy cancellation",
+      "health insurance",
+      "premium refund"
+    ],
+    "action_items": [
+      "Submit the cancellation request",
+      "Send a confirmation email to the customer"
+    ]
+  }
+}

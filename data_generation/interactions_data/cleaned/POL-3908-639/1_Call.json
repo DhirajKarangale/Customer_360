@@ -1,0 +1,31 @@
+{
+  "content": "Customer Vivaan Gupta called agent Anjali Desai regarding his upcoming home insurance policy expiration. They discussed coverage options for his older home, recent kitchen renovations, and new electronics. Anjali checked his account and confirmed he qualifies for a 10% multi-policy discount by bundling with his existing auto policy. Anjali granted a 30-day policy extension to 30/10/2026, reduced personal property coverage to $30k, kept the deductible unchanged ($500 wind/hail, $1,000 other), and applied the bundle discount, resulting in a new annual premium of $1,080.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-29T14:00:00",
+    "participants": {
+      "customer": {
+        "name": "Vivaan Gupta",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "d7e8f9a0-7777-8888-9999-aaaaBBBBCCCC"
+        }
+      ]
+    },
+    "user_mood": "confused",
+    "topics": [
+      "home insurance policy expiration",
+      "coverage options",
+      "renovations",
+      "multi-policy bundle discount",
+      "policy extension",
+      "deductibles"
+    ],
+    "action_items": [
+      "Sign the renewal confirmation email sent by the agent"
+    ]
+  }
+}

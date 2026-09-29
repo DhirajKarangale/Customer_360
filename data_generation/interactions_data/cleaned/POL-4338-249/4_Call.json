@@ -1,0 +1,29 @@
+{
+  "content": "Vikram Patel from Omni Insurance called Rahul Jain to confirm the receipt of the signed renewal form for the DCoders Comprehensive Health Plan HP-45789. They confirmed that coverage will begin on 01/10/2026 without any gaps, and verified that the monthly auto-debit of \u20b91,200 will be charged to the customer's saved card ending in 1234. Vikram agreed to email the updated policy document and receipt.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T15:02:10",
+    "participants": {
+      "customer": {
+        "name": "Rahul Jain",
+        "id": "9f2c3a7b-1e44-4d9a-8b33-5c9e2d6f8a1b"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "d4b8e6c2-7a5f-4c2e-9f1b-3a6d7e9c0b2f"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "policy renewal",
+      "health plan coverage",
+      "auto-debit payment"
+    ],
+    "action_items": [
+      "Process the first payment today",
+      "Email the updated policy document and receipt to the customer"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "content": "Rahul Jain inquired about the status of the \u20b94,500 refund for his cancelled auto policy AU-45219. Ramesh Tiwari confirmed that the refund was processed on 10/10/2026 and should reflect in his account within 1-2 business days, attaching the refund receipt for his records.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-10-12T09:15:20",
+    "participants": {
+      "customer": {
+        "name": "Rahul Jain",
+        "id": "1a2b3c4d-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "5e6f7g8h-7777-8888-9999-aaaabbbbcccc"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "refund status",
+      "cancelled auto policy",
+      "policy AU-45219"
+    ],
+    "action_items": [
+      "Check bank account for the \u20b94,500 refund within 1-2 business days",
+      "Review attached refund receipt"
+    ]
+  }
+}

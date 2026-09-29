@@ -1,0 +1,32 @@
+{
+  "content": "Aditi Mahajan calls insurance agent Neha Kapoor because her current health policy is expiring on 30/09/2026 and cannot be renewed due to being phased out. Concerned about a coverage gap, Aditi agrees to switch to the 'Balanced Care' plan at \u20b94,850 per month. Neha confirms she will send the enrollment form and a confirmation email, with the new policy becoming effective on 01/10/2026.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T15:12:00",
+    "participants": {
+      "customer": {
+        "name": "Aditi Mahajan",
+        "id": "a3f9d2c1-7b4e-41a9-9e3f-5d2c8b7e9a12"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "9c4b6e8f-2d5a-48f1-bc33-1e7f9d4a6c57"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "policy expiration",
+      "policy renewal",
+      "coverage gap",
+      "Balanced Care plan",
+      "policy switch"
+    ],
+    "action_items": [
+      "Neha to send the enrollment form for the Balanced Care plan to Aditi",
+      "Neha to send a confirmation email with the effective date of 01/10/2026",
+      "Aditi to fill out the enrollment form"
+    ]
+  }
+}

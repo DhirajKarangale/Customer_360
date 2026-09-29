@@ -1,0 +1,34 @@
+{
+  "content": "Customer Kunal Mehta calls insurance agent Ravi Menon to confirm the cancellation and zero-balance status of his previous health policy (HP-123456) and requests a re-sent cancellation confirmation and claim-history summary. They also discuss transitioning to a new group health plan through his new employer without a coverage gap, waiving the waiting period, bundling a dental rider with a 5% discount, and avoiding the $25 admin fee by enrolling through the employer portal. The agent agrees to email the enrollment form and quote.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-10-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Kunal Mehta",
+        "id": "9f3b2a7c-1e4d-4f9a-8b2c-6d5e7f9a1b2c"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "d4c8e9f0-2b3a-45c7-9d8e-0a1b2c3d4e5f"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "policy cancellation",
+      "claim history summary",
+      "new group health plan",
+      "waiting period waiver",
+      "dental rider bundle discount",
+      "administrative fee"
+    ],
+    "action_items": [
+      "Re-send cancellation confirmation PDF",
+      "Send claim-history summary",
+      "Send dental rider quote and short enrollment form via email",
+      "Customer to sign and return the enrollment form"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "content": "Sunita Agarwal from Protect All Agency called Rahul Jain to discuss activating his home insurance policy with DCoders. They reviewed the required documentation (latest property tax receipt and recent utility bill) which Rahul agreed to email by tonight. Rahul also updated the agent about a recent home renovation involving a new kitchen and flooring, which may affect the sum insured. Sunita confirmed the policy will go live within 24-48 hours after receiving the documents.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Rahul Jain",
+        "id": "7f3c9a12-5b4e-4d8a-9e1f-2b6d8c7f9a01"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "d2e5b4f9-8c3a-41b2-9f6e-3a7c1d5e8b44"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Home insurance policy activation",
+      "Required documents",
+      "Property renovation details",
+      "Policy activation timeline"
+    ],
+    "action_items": [
+      "Rahul Jain to email property tax receipt and utility bill by tonight",
+      "Sunita Agarwal to update policy notes with the kitchen renovation and process documents within 24-48 hours once received"
+    ]
+  }
+}

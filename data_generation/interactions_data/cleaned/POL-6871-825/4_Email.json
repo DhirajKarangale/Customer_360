@@ -1,0 +1,31 @@
+{
+  "content": "Customer Dhruv Kapoor inquired about the claim procedure and required documents for a COVID-19-related trip cancellation under his travel insurance policy (TRV-DC-2026-10). Insurance agent Neha Kapoor confirmed the policy's coverage, provided step-by-step instructions for submitting the claim via the secure portal or email along with the necessary documentation, and stated that the processing time takes 5-7 business days.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-03-10T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Dhruv Kapoor",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "f1e2d3c4-9876-54ba-dcba-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Travel Insurance Claim",
+      "COVID-19 Trip Cancellation",
+      "Claim Procedure",
+      "Policy TRV-DC-2026-10"
+    ],
+    "action_items": [
+      "Complete the attached Travel Claim Form",
+      "Attach cancellation notice and supporting medical/quarantine documents",
+      "Submit completed form via portal or reply email"
+    ]
+  }
+}

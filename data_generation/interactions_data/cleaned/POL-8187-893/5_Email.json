@@ -1,0 +1,26 @@
+{
+  "content": "Vikram Patel confirmed the successful renewal of Riya Mukherjee's health policy (HP-2026-0456) with a $500 deductible and provided the updated policy certificate. Riya acknowledged receipt and confirmed that the details are correct.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-27T15:30:00",
+    "participants": {
+      "customer": {
+        "name": "Riya Mukherjee",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "d4e5f6g7-8910-11aa-bbcc-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Health Policy Renewal",
+      "Policy Certificate",
+      "Deductible"
+    ],
+    "action_items": []
+  }
+}

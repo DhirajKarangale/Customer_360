@@ -1,0 +1,26 @@
+{
+  "content": "Anjali Desai confirmed the finalization of Sneha Roy's auto policy renewal (Policy #AU-2026-4598) with a $1,000 deductible, an effective date of 01/10/2026, and an automatic premium debit of $1,240.00 scheduled for 10/10/2026, attaching the official document. Sneha reviewed the document, confirmed everything looks good, and thanked Anjali for the quick turnaround.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-12T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Sneha Roy",
+        "id": "3f2a1c9e-7d4b-41e8-9f3a-2c6b5d8e9f01"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "a7b9c3d4-5e6f-4a8b-9c1d-3e4f5a6b7c8d"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Auto Policy Renewal",
+      "Policy Document",
+      "Premium Payment"
+    ],
+    "action_items": []
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "content": "Vihaan Patel called to cancel his auto insurance policy (SH-112233) because he is no longer driving. He initially thought the policy expired in 2026, but the agent, Neha Kapoor, clarified that it was recently renewed until 30 September 2027. To avoid early cancellation penalties, Vihaan agreed to disable auto-renewal so the policy will remain active until its natural expiration date without further billing. Neha confirmed she would send an email summary of the changes.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-10-15T14:05:12",
+    "participants": {
+      "customer": {
+        "name": "Vihaan Patel",
+        "id": "9f2c3a1b-7e5d-4b9a-9c1e-2f5d6a8b9c0d"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "d4e5f6a7-8b9c-0d1e-2f3a-4b5c6d7e8f9a"
+        }
+      ]
+    },
+    "user_mood": "confused",
+    "topics": [
+      "auto policy cancellation",
+      "policy renewal",
+      "billing",
+      "expiration date"
+    ],
+    "action_items": [
+      "Disable auto-renewal for policy SH-112233",
+      "Send an email summary containing cancellation notes and updated policy terms to the customer"
+    ]
+  }
+}

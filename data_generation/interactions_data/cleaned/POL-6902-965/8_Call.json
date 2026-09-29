@@ -1,0 +1,30 @@
+{
+  "content": "Vedant Thakur called insurance agent Neha Kapoor to cancel his auto insurance policy (#AV-45231) because he sold his car. Neha explained the cancellation process, noting an effective cancellation date of today, a $20 cancellation fee, and a prorated refund of approximately $450 to be issued to his card on file. Vedant agreed to proceed, and Neha confirmed the policy status would update to expired and an email confirmation with a refund receipt would be sent.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-29T14:05:12",
+    "participants": {
+      "customer": {
+        "name": "Vedant Thakur",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "f1e2d3c4-8765-43ba-dcfe-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "auto policy cancellation",
+      "prorated refund",
+      "cancellation fee"
+    ],
+    "action_items": [
+      "Process policy cancellation effective today",
+      "Issue prorated refund of approximately $450 to the card on file",
+      "Send email confirmation and refund receipt to the customer"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "content": "Customer Reyansh Tiwari called insurance agent Anjali Desai to verify policy details. They discussed the policy expiration date (30 September 2027), the $2,500 deductible, $150 monthly premium, and how claims work prior to meeting the deductible. The agent confirmed that tele-consultation covers mental health specialists and explained the cancellation process (30-day notice for a prorated refund). The agent also reminded the customer to keep documents accessible and submit claims within 90 days.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-10-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Reyansh Tiwari",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "f7e8d9c0-7777-8888-9999-aaaabbbbcccc"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "policy expiration date",
+      "deductible and premium",
+      "claims process",
+      "tele-consultation and mental health",
+      "policy cancellation"
+    ],
+    "action_items": [
+      "Keep policy documents accessible",
+      "Submit any claims within 90 days"
+    ]
+  }
+}

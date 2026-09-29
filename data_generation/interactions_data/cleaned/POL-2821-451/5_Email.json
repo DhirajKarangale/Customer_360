@@ -1,0 +1,28 @@
+{
+  "content": "Neha Kapoor from Shield Life Services emailed Aditi Mahajan regarding the switch to the Balanced Care health plan (\u20b94,850/month) effective October 1, 2026, providing the policy documents, FAQ, and an enrollment form to sign. Aditi Mahajan replied confirming receipt, attached the signed enrollment form, and asked for confirmation.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Aditi Mahajan",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "e5f6g7h8-1234-56ij-90kl-0987654321cd"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Balanced Care health policy",
+      "policy documents",
+      "enrollment form"
+    ],
+    "action_items": [
+      "Confirm receipt of the signed enrollment form"
+    ]
+  }
+}

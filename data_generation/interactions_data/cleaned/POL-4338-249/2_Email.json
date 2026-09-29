@@ -1,0 +1,31 @@
+{
+  "content": "Vikram Patel sent the renewal form for the DCoders Comprehensive Health Plan (Policy No. HP-45789) to Rahul Jain with a monthly premium of \u20b91,200 effective from 01/10/2026. Rahul confirmed receipt, stated he will review and sign the form today, and inquired about accepted payment methods and bank details for setting up auto-debit.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Rahul Jain",
+        "id": "a12f9c34-7b8e-41d2-9a6f-3c2d5e8b9f01"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "d4e5f6a7-8b9c-4d1e-9f0a-2b3c4d5e6f78"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Health Plan Renewal",
+      "Policy HP-45789",
+      "Renewal Form",
+      "Payment Options",
+      "Auto-debit"
+    ],
+    "action_items": [
+      "Customer to review and sign the renewal form and return it via email or portal upload",
+      "Agent to confirm accepted payment methods and provide bank details for auto-debit"
+    ]
+  }
+}

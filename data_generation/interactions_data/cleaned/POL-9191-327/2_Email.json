@@ -1,0 +1,31 @@
+{
+  "content": "Insurance agent Karan Joshi sent a renewal quote for auto policy #AU-45789 to customer Reyansh Tiwari, following up on an expired policy from September 21, 2026. Two options were provided: Standard Coverage ($1,200/year) and Enhanced Coverage ($1,450/year), both keeping the $500 deductible with an effective start date of October 1, 2026. The customer is asked to review the attached PDF quote and select an option or request adjustments.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T10:15:00",
+    "participants": {
+      "customer": {
+        "name": "Reyansh Tiwari",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "d4c3b2a1-8765-09ba-fedc-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Auto Policy Renewal",
+      "Renewal Quote",
+      "Standard Coverage",
+      "Enhanced Coverage"
+    ],
+    "action_items": [
+      "Review the attached renewal quote PDF",
+      "Select a preferred coverage option or request adjustments",
+      "Reply to the email or call the agent"
+    ]
+  }
+}

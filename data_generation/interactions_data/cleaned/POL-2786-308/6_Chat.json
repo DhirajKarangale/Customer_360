@@ -1,0 +1,31 @@
+{
+  "content": "Isha Agarwal chatted with insurance agent Ravi Menon to confirm her auto-pay setup for policy HC-2026-0456 (set for October 15) and requested a resend of the policy document link. She also inquired about bundling flood coverage, which Ravi confirmed provides a 5% discount. Isha requested to add the flood coverage while keeping the deductible at $500, which Ravi successfully processed.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T10:15:02",
+    "participants": {
+      "customer": {
+        "name": "Isha Agarwal",
+        "id": "c1a9f4e2-7b3d-4f8a-9c2e-6b5d1f8a2c34"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "a2d3c5b6-9e8f-4a1b-8c7d-3f6e9b0d1c2f"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "auto-pay",
+      "policy document",
+      "flood coverage",
+      "bundling discount",
+      "deductible"
+    ],
+    "action_items": [
+      "Add flood coverage to policy HC-2026-0456",
+      "Debit premium on October 15 via auto-pay"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "content": "Diya Menon submitted the signed rider PDF for her life insurance policy (L-2026-0457) to Suresh Deshmukh. Suresh confirmed receipt, processed the document, and successfully reinstated the policy, providing the updated policy document to the customer.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-30T10:15:00",
+    "participants": {
+      "customer": {
+        "name": "Diya Menon",
+        "id": "a7d9e3f4-2b5c-41a9-9e8f-3c6d7b9a1e2f"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "Policy Reinstatement",
+      "Life Insurance",
+      "Signed Rider Document"
+    ],
+    "action_items": [
+      "Review updated policy document"
+    ]
+  }
+}

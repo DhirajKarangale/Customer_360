@@ -1,0 +1,28 @@
+{
+  "content": "Vikram Patel (insurance agent) sent the updated Home Insurance policy (HC-AD-2026-001) with the newly added Flood-Damage Rider, including an invoice link for the additional annual premium of INR 2,300. Aditya Singh (customer) confirmed receipt, verified the documents, and stated he will arrange the payment within the next few days.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-25T10:15:00",
+    "participants": {
+      "customer": {
+        "name": "Aditya Singh",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "e5f6g7h8-1234-56ij-klmn-7890opqrstu1"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "Home Insurance policy update",
+      "Flood-Damage Rider",
+      "Invoice and premium payment"
+    ],
+    "action_items": [
+      "Aditya Singh to arrange payment for the additional INR 2,300 within the next few days"
+    ]
+  }
+}

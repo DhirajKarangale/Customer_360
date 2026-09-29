@@ -1,0 +1,30 @@
+{
+  "content": "Meera Chauhan called Anita Sharma at Trust Wealth Advisors to reinstate her expired auto policy. Anita offered two options: reactivating the old term or starting a fresh 12-month term. Meera opted for a new 12-month term. After discussing discounts, Anita applied a safe-driver discount, bringing the total premium to $1,150. Anita confirmed Meera's address (45 Greenfield Ave, Bangalore) and VIN (1HGCM82633A004352), processed the payment using the card on file, and successfully activated the policy.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:15:00",
+    "participants": {
+      "customer": {
+        "name": "Meera Chauhan",
+        "id": "9f3b7c1a-5d4e-4a9f-8b2c-1e6f7a9d3c4e"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "d2a6e8f5-1b3c-47d2-9f8a-6c5b2e1f9a0b"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "auto policy expiration",
+      "policy reinstatement",
+      "new 12-month term",
+      "discounts and premiums",
+      "payment processing"
+    ],
+    "action_items": [
+      "Send policy confirmation email to the customer"
+    ]
+  }
+}

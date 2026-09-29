@@ -1,0 +1,31 @@
+{
+  "content": "Customer Isha Agarwal confirms policy activation and requests the policy number (HC-2026-0456). She also inquires about the first premium due date ($1,200 due on 15 October 2026), sets up auto-pay via a provided link, and asks about standard dwelling coverage.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T10:05:12",
+    "participants": {
+      "customer": {
+        "name": "Isha Agarwal",
+        "id": "3d9f2a5b-7c4e-41b2-9e8f-2a6d5c1b8e44"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "8e4b6c1d-9f3a-44d7-a2b1-5c9e7f2a3d11"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "policy activation",
+      "policy number",
+      "premium payment due date",
+      "auto-pay",
+      "dwelling coverage"
+    ],
+    "action_items": [
+      "Send auto-pay setup link to customer",
+      "Send email reminder for premium payment"
+    ]
+  }
+}

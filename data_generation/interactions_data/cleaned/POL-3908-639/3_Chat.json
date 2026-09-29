@@ -1,0 +1,32 @@
+{
+  "content": "Vivaan Gupta confirmed home insurance policy updates with Anjali Desai, including a $250,000 home coverage, a $30,000 personal-property limit, a 30-day free extension expiring 30/10/2026, and a 10% auto policy bundle discount. Anjali activated the policy, confirmed it will auto-renew with a 15-day prior reminder, and updated Vivaan's contact email to vivaan.g@newmail.com.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-15T10:05:12",
+    "participants": {
+      "customer": {
+        "name": "Vivaan Gupta",
+        "id": "4f9a2c1e-7b3d-4e9a-8f2c-1d5b6a7c8e9f"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "a3d5e6f7-8b9c-0d1e-2f3a-4b5c6d7e8f9a"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "home policy changes",
+      "personal-property limit",
+      "bundle discount",
+      "policy auto-renewal",
+      "update contact email"
+    ],
+    "action_items": [
+      "Activate the home insurance policy",
+      "Set a reminder to notify customer 15 days before policy renewal",
+      "Update customer contact email to vivaan.g@newmail.com"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "content": "Kiara Sen called Sunita Agarwal to discuss her recent policy cancellation and inquire about short-term bridge coverage. Sunita explained a 30-day bridge rider option that is 8% higher in premium and offered to email the quote and details. Kiara confirmed her account has no outstanding balance and stated she will review the bridge option and follow up.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T14:10:00",
+    "participants": {
+      "customer": {
+        "name": "Kiara Sen",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "e5f6g7h8-1234-56ij-klmn-0987654321cd"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "policy cancellation",
+      "short-term bridge coverage",
+      "account balance"
+    ],
+    "action_items": [
+      "Sunita Agarwal to email the bridge coverage quote and signature link to Kiara",
+      "Kiara Sen to review the bridge option"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "content": "Anita Sharma from Trust Wealth Advisors calls Pooja Bhatia to remind her about the upcoming expiration of her health policy HP-4521. The renewal deadline is October 12, and Anita clarifies that there is no grace period and failure to submit the form will result in the policy lapsing. Pooja confirms she will submit the form today, and Anita agrees to resend it to pooja.bhatia@example.com.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-05-10T14:10:12",
+    "participants": {
+      "customer": {
+        "name": "Pooja Bhatia",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "f9e8d7c6-5432-10fe-dcba-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "health policy renewal",
+      "expiration deadline",
+      "policy lapse"
+    ],
+    "action_items": [
+      "Pooja Bhatia to submit the signed renewal form today",
+      "Anita Sharma to resend the renewal form via email"
+    ]
+  }
+}

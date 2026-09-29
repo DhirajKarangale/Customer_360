@@ -1,0 +1,29 @@
+{
+  "content": "Meera Chauhan speaks with insurance agent Ravi Menon regarding the status of her health policy, which is scheduled for cancellation. Meera clarifies that she intended to pause the policy rather than cancel it. Ravi explains that the cancellation was requested on 15/09/2026 and informs her that the policy can potentially be reinstated subject to conditions and a re-activation fee. Ravi agrees to email her the necessary steps and details.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Meera Chauhan",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "f9e8d7c6-5432-10fe-ba98-76543210fedc"
+        }
+      ]
+    },
+    "user_mood": "confused",
+    "topics": [
+      "Health policy status",
+      "Policy cancellation vs. pause",
+      "Policy reinstatement and fees"
+    ],
+    "action_items": [
+      "Agent to send an email with reinstatement steps and fee details",
+      "Customer to review email and respond regarding policy reinstatement"
+    ]
+  }
+}

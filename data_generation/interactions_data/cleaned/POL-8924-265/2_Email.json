@@ -1,0 +1,30 @@
+{
+  "content": "Reyansh Tiwari requested updated policy documents and confirmation of his new deductible and premium details following a previous call. Anjali Desai replied with the attached renewed health policy (HP-2024-5678), confirming an active status until 30/09/2027, a $2,500 deductible, a $150 monthly premium, and included benefits such as tele-consultation coverage and expedited claim settlements.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T09:15:30",
+    "participants": {
+      "customer": {
+        "name": "Reyansh Tiwari",
+        "id": "1d9e7a3b-5c4f-4b2a-9f8e-2a6d7c9b0e11"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "4b2f6c8d-9a1e-4d3b-8c7f-1e5a3b9d4f22"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "Health Policy Renewal",
+      "Policy Documents",
+      "Deductible and Premium Details",
+      "Tele-consultation Coverage",
+      "Claim Settlement"
+    ],
+    "action_items": [
+      "Review the attached renewed health policy document"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "content": "Customer Diya Menon called agent Karan Joshi to discuss her home insurance policy (HP-2024-5678) which is set to expire on 15/10/2026. She is unsure whether to renew or cancel because she might be moving soon. The agent reviewed renewal packages, offering either standard renewal or an adjustment to the sum insured, before the call was cut off mid-conversation.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-29T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Diya Menon",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "5e6f7a8b-1234-5678-9abc-def012345678"
+        }
+      ]
+    },
+    "user_mood": "uncertain",
+    "topics": [
+      "home insurance policy",
+      "policy expiration",
+      "renewal options",
+      "potential relocation"
+    ],
+    "action_items": [
+      "Review home policy renewal packages and discuss coverage options"
+    ]
+  }
+}

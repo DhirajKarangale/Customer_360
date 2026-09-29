@@ -1,0 +1,32 @@
+{
+  "content": "Karan Joshi sent a renewal quote for home policy HP-2024-5678 (expiring 15 Oct 2026) with two options: keeping the sum insured at \u20b925,00,000 or increasing it to \u20b930,00,000 for an extra \u20b91,200/year. Diya Menon expressed concern about the tight timeline due to upcoming November renovations, asking about grace period extensions and clarification on the premium difference for the higher sum insured.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-20T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Diya Menon",
+        "id": "9f2d8c1e-3b6a-41e9-9a5f-2d7c4b6e9f01"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "4a7b3c9d-5e2f-48b1-a6d4-1f8e2c3b7a55"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "Home Policy Renewal",
+      "Sum Insured Options",
+      "Policy Expiry",
+      "Grace Period Extension",
+      "Renovation Coverage"
+    ],
+    "action_items": [
+      "Clarify premium difference for the higher sum insured option",
+      "Advise on grace period extension or immediate renewal",
+      "Confirm preferred renewal option by 08 October 2026"
+    ]
+  }
+}

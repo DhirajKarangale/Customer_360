@@ -1,0 +1,29 @@
+{
+  "content": "The customer, Dev Chatterjee, called insurance agent Suresh Deshmukh to inquire about his health policy. The agent informed him that the policy (HL-45789) had lapsed and expired on 15/08/2026. The customer expressed surprise and mentioned he might be considering switching providers. Ultimately, the customer decided to keep the policy expired for now and think about his options later.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-29T10:00:00",
+    "participants": {
+      "customer": {
+        "name": "Dev Chatterjee",
+        "id": "5d2e9b1c-7a4f-4c3a-9f6e-2b1d8c7e9a0f"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "9c1f3a5b-2e6d-48b9-8a1c-3d4e5f6b7c8d"
+        }
+      ]
+    },
+    "user_mood": "uncertain",
+    "topics": [
+      "health policy status",
+      "policy expiration",
+      "policy renewal",
+      "switching providers"
+    ],
+    "action_items": [
+      "Keep the policy expired in the system as requested by the customer"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "content": "Akanksha Bhatt called insurance agent Suresh Deshmukh to check the status of her pre-authorization. Suresh confirmed the form is in final review and will be completed by tomorrow. He instructed Akanksha to sign the consent form digitally via the portal (https://portal.dcoders.com) and clarified that the MRI co-pay is 10% after the \u20b92,000 deductible, payable at the imaging center.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Akanksha Bhatt",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "d4c3b2a1-8765-09ba-fedc-0987654321ba"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "pre-authorization status",
+      "consent form signature",
+      "portal access",
+      "MRI co-pay and deductible"
+    ],
+    "action_items": [
+      "Suresh to email the direct portal link to Akanksha",
+      "Akanksha to sign the consent form digitally in the portal"
+    ]
+  }
+}

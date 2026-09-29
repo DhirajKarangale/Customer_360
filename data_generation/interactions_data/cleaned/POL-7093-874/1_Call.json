@@ -1,0 +1,29 @@
+{
+  "content": "Samar Ghosh called Sunita Agarwal to inquire about a pending life insurance policy (SH-123456) not showing as active in the portal. Sunita successfully processed the activation during the call, confirmed the policy is now active, and verified the sum assured of 1,000,000 INR and an annual premium of 12,500 INR effective from October 1, 2026.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Samar Ghosh",
+        "id": "7f3a9c2e-5b1d-4f8a-9c2e-1a2b3c4d5e6f"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "d4b9e0f1-2c3d-4a5b-8c9d-0e1f2a3b4c5d"
+        }
+      ]
+    },
+    "user_mood": "confused",
+    "topics": [
+      "policy activation",
+      "policy status",
+      "sum assured",
+      "premium amount"
+    ],
+    "action_items": [
+      "Process policy activation (completed during call)"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "content": "Reyansh Tiwari called insurance agent Ravi Menon to inquire about his auto insurance policy (2026-AUTO-4598) which was set to expire on 15/10/2026. After discussing options, Reyansh decided to cancel the policy because he is selling his vehicle. Ravi verified his date of birth and VIN, successfully processed the cancellation, and informed the customer that he is eligible for a prorated refund for the remaining months, which will be credited to his original payment method within 5 to 7 business days. A confirmation email will also be sent.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Reyansh Tiwari",
+        "id": "9f3c1a2b-7e4d-41b9-9c2f-6a5d8e7b9c10"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "d2b5e6f8-3c1a-4f9d-a2b7-5c6e9d1f3a44"
+        }
+      ]
+    },
+    "user_mood": "polite",
+    "topics": [
+      "auto insurance policy",
+      "policy cancellation",
+      "selling vehicle",
+      "prorated refund"
+    ],
+    "action_items": [
+      "Send a confirmation email regarding the policy cancellation",
+      "Process the prorated refund to the customer's original payment method within 5-7 business days"
+    ]
+  }
+}

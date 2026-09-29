@@ -1,0 +1,31 @@
+{
+  "content": "Dev Chatterjee called insurance agent Neha Kapoor to discuss the renewal of his HomeShield policy, which has an annual premium of $1,250 with a 5% loyalty discount. They discussed payment timing to ensure coverage starts on 01/10/2026 without a gap. Neha sent a secure payment link via email and SMS, but Dev encountered an issue where the CVV field incorrectly requested 4 digits instead of 3. Neha corrected the error and sent a new payment link.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Dev Chatterjee",
+        "id": "1a2b3c4d-5e6f-7a8b-9c0d-ef1234567890"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "9f8e7d6c-5b4a-3c2d-1e0f-9876543210ab"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "HomeShield policy renewal",
+      "annual premium",
+      "payment timing",
+      "coverage start date",
+      "payment link error"
+    ],
+    "action_items": [
+      "Neha Kapoor to send a corrected payment link",
+      "Dev Chatterjee to complete the payment using the new link"
+    ]
+  }
+}

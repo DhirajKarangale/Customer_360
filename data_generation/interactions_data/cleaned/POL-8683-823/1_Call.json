@@ -1,0 +1,29 @@
+{
+  "content": "Vikram Singh from ProtectAll Agency called Riya Mukherjee to inform her that her health policy had expired on 15/09/2026. Riya was unaware and expressed disappointment. Vikram explained her options: renewing the current policy or switching to a newer plan with more coverage. Riya requested renewal information and a coverage summary, which Vikram agreed to email immediately.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Riya Mukherjee",
+        "id": "d3f9a2c1-5b4e-4a9d-8f2c-1e6b7c9d0a12"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "a7e4b3f9-2c1d-44f8-9a6e-3d5f8c2b7e91"
+        }
+      ]
+    },
+    "user_mood": "disappointed",
+    "topics": [
+      "health policy expiration",
+      "policy renewal",
+      "coverage options"
+    ],
+    "action_items": [
+      "Email renewal quote to customer",
+      "Email summary of current coverage to customer"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "content": "Meera Chauhan called to inquire about her expired travel policy (TRV-2024-0789) for an upcoming trip on 10 October 2026. Agent Ravi Menon informed her that expired policies cannot provide retroactive coverage and assisted her with issuing a new 30-day policy for $145. Ravi explained the activation process, which involves completing an online form, uploading passport and itinerary documents via a secure link he will email, and making a payment by credit card or PayPal, after which the policy will be instantly active and a PDF document sent.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:02:10",
+    "participants": {
+      "customer": {
+        "name": "Meera Chauhan",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "f1e2d3c4-5678-90ab-cdef-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "expired travel policy",
+      "new policy issuance",
+      "premium payment",
+      "policy activation"
+    ],
+    "action_items": [
+      "Ravi to send a secure renewal/payment link via email",
+      "Meera to fill out the online form and upload passport and itinerary",
+      "Meera to complete payment via credit card, PayPal, or bank transfer"
+    ]
+  }
+}

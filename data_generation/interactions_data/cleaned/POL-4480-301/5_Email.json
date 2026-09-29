@@ -1,0 +1,28 @@
+{
+  "content": "Insurance agent Neha Kapoor sent an auto policy renewal confirmation (Policy #AU-2026-4590) to customer Vihaan Patel, detailing the effective dates, annual premium of $1,210.00, payment method, and roadside-assistance rider along with the policy document attachment. Vihaan reviewed the documents, confirmed everything was correct, and approved proceeding with the scheduled payment.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Vihaan Patel",
+        "id": "9b2d5f4e-7c3a-41f9-8e2a-6d5c9b1f0a12"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "Auto Policy Renewal",
+      "Policy Confirmation",
+      "Payment Processing"
+    ],
+    "action_items": [
+      "Proceed with the scheduled payment"
+    ]
+  }
+}

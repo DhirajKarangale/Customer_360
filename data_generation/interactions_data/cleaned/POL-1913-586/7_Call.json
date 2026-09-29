@@ -1,0 +1,27 @@
+{
+  "content": "Saanvi Pillai called insurance agent Neha Kapoor to confirm the receipt of her \u20b912,500 payment and the start date of her renewed policy (15 September 2026). Neha confirmed the payment and explained that the '-R1' suffix in the policy number indicates a renewal with an updated premium while maintaining the same benefits. Neha also confirmed that claims should be filed through the same existing online portal and offered her direct contact details for future queries.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-12T10:15:00",
+    "participants": {
+      "customer": {
+        "name": "Saanvi Pillai",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "e5f6g7h8-1234-56ij-klmn-0987654321cd"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Payment confirmation",
+      "Policy renewal",
+      "Policy number formatting",
+      "Claims process"
+    ],
+    "action_items": []
+  }
+}

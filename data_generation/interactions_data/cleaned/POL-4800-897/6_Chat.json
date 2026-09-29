@@ -1,0 +1,29 @@
+{
+  "content": "Kunal Mehta inquired about starting a new health plan after his old one expired and asked about reducing the standard 30-day waiting period. Ravi Menon explained that individual plans have a fixed 30-day waiting period unless covered by an employer group plan. Additionally, Kunal requested and received his claim-history summary and the latest health-plan brochure, and stated he would review them and follow up.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T10:15:02",
+    "participants": {
+      "customer": {
+        "name": "Kunal Mehta",
+        "id": "9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "health plan enrollment",
+      "waiting period",
+      "claim-history summary",
+      "health plan brochure"
+    ],
+    "action_items": [
+      "Kunal Mehta to review the claim-history summary and the new health plan brochure"
+    ]
+  }
+}

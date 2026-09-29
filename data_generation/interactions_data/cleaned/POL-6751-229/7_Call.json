@@ -1,0 +1,29 @@
+{
+  "content": "Vikram Patel from Omni Insurance follows up with customer Rohan Deshmukh regarding the updated policy document. Rohan asks about the claim process for outpatient specialist visits, confirming that documents can be uploaded to the portal or emailed, and that no pre-authorization is needed for in-network specialists. He also inquires about adding a spouse as a dependent, and decides to wait for open enrollment after learning about the waiting period and underwriting requirements.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "9f2c1a7b-4e5d-4b9a-8c33-1d2f9e6b5a7c"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "d4e5f6a7-8b9c-4d10-9e11-2f3a4b5c6d7e"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "policy follow-up",
+      "outpatient claims process",
+      "pre-authorization",
+      "adding dependents"
+    ],
+    "action_items": [
+      "Customer to wait for open enrollment to add spouse as a dependent"
+    ]
+  }
+}

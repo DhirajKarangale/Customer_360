@@ -1,0 +1,31 @@
+{
+  "content": "Sneha Roy called Anita Sharma at Trust Wealth Advisors to inquire about the pending status of her health policy (HP-2026-0456). Anita explained that they are waiting for her latest blood test results, a signed declaration of no major surgeries in the past year, and a copy of her ID. Sneha agreed to submit these documents via the portal or email today, and Anita confirmed the policy will be active within 2-3 business days after review.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-29T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Sneha Roy",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "d4e5f6g7-8901-23hi-jk45-67890lmnopqr"
+        }
+      ]
+    },
+    "user_mood": "confused",
+    "topics": [
+      "Health policy status",
+      "Pending documents",
+      "Policy activation"
+    ],
+    "action_items": [
+      "Submit latest blood test results",
+      "Submit signed declaration regarding no major surgeries in the last year",
+      "Submit a copy of ID",
+      "Review and update policy status within 2-3 business days once documents are received"
+    ]
+  }
+}

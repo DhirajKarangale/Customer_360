@@ -1,0 +1,30 @@
+{
+  "content": "Akanksha Bhatt followed up regarding her health policy coverage for OPD consultations and MRI scans. Insurance agent Suresh Deshmukh confirmed policy coverage, detailed the applicable co-pay (\u20b9500 per OPD visit) and deductible (\u20b92,000 annual deductible with a 10% MRI cost share), and provided the required pre-authorization form along with submission instructions.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-02-10T08:45:12",
+    "participants": {
+      "customer": {
+        "name": "Akanksha Bhatt",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "OPD coverage",
+      "MRI scan coverage",
+      "Pre-Authorization Form",
+      "Co-pay and deductible"
+    ],
+    "action_items": [
+      "Fill out the attached Pre-Authorization Form",
+      "Submit the completed form to the hospital via email or fax at 1800-555-0199"
+    ]
+  }
+}

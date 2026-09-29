@@ -1,0 +1,30 @@
+{
+  "content": "Sneha Roy contacted insurance agent Anjali Desai to confirm the immediate cancellation of her policy and the processing of her prorated refund. Anjali confirmed there are no cancellation fees due to the free-cancellation window, stated the refund will arrive within five business days, and agreed to send a confirmation email with the details.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-10-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Sneha Roy",
+        "id": "4f8b2a1e-9c3d-4e7a-b5f1-2d6c9e7a1b34"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "a1d3f9c4-6b5e-41f2-8c7d-3e9a0b5d8f12"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "policy cancellation",
+      "refund",
+      "fees",
+      "confirmation email"
+    ],
+    "action_items": [
+      "Issue a prorated refund to the customer within five business days",
+      "Send a confirmation email containing the refund details to the customer"
+    ]
+  }
+}

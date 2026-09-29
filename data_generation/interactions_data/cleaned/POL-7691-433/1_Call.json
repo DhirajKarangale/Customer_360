@@ -1,0 +1,28 @@
+{
+  "content": "Atharv Pandey calls insurance agent Vikram Patel to check on his health policy (#HP-785412), realizing it expires today. Vikram confirms the expiration date, explains that coverage stops without renewal, and provides the annual renewal premium of $1,250. Vikram agrees to send the renewal quote via email.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T09:10:00",
+    "participants": {
+      "customer": {
+        "name": "Atharv Pandey",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "d4e5f6g7-7777-8888-9999-aaaabbbbcccc"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "health policy expiration",
+      "policy renewal",
+      "premium amount"
+    ],
+    "action_items": [
+      "Send renewal quote via email"
+    ]
+  }
+}

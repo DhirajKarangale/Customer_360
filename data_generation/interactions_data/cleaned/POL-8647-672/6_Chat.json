@@ -1,0 +1,31 @@
+{
+  "content": "Rahul Jain contacted agent Ramesh Tiwari regarding policy AU-45219 showing as expired. Rahul confirmed he sold his car and wanted to cancel the policy permanently. Ramesh processed the cancellation, provided the receipt, and confirmed Rahul is eligible for a prorated refund of \u20b94,500 to be credited within 5-7 business days.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T09:15:02",
+    "participants": {
+      "customer": {
+        "name": "Rahul Jain",
+        "id": "9f2c1a8b-7e34-4d5b-9a1f-3c6e9b2d4f01"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "d3a4b5c6-8f9e-4a2b-9c1d-7e6f5a4b3c2d"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "policy cancellation",
+      "policy status",
+      "car sale",
+      "prorated refund"
+    ],
+    "action_items": [
+      "Process policy cancellation",
+      "Send cancellation confirmation PDF",
+      "Credit prorated refund of \u20b94,500 to customer bank account within 5-7 business days"
+    ]
+  }
+}

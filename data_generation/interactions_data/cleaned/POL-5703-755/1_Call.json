@@ -1,0 +1,29 @@
+{
+  "content": "Sneha Roy called to check on her auto policy, which she discovered had expired on 15/08/2026. Anjali Desai from First Guard Brokers assisted her, collected the vehicle details (2019 Honda Civic, registration ABC-1234, no claims), and agreed to initiate the renewal process and send a quote by the end of the day.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Sneha Roy",
+        "id": "3f9a1c2e-5b4d-4e9a-8f2c-1a2b3c4d5e6f"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai (First Guard Brokers)",
+          "id": "7d8e9f0a-b1c2-3d4e-5f6a-7b8c9d0e1f2a"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "Auto policy expiration",
+      "Policy renewal",
+      "Vehicle details and claims history"
+    ],
+    "action_items": [
+      "Agent to start the renewal process",
+      "Agent to send a quote by the end of the day"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "content": "Sneha Roy and insurance agent Vikram Patel discuss the upcoming expiration and renewal of health policy HP-4478 on September 30, 2026. Vikram confirms that the renewal documents have been sent with a 5% loyalty discount applied, resulting in a new monthly premium of $199.50. Sneha agrees to the terms and confirms no further action or signature is required, as the electronic signature via email is sufficient.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-05-09T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Sneha Roy",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "f9e8d7c6-5432-10fe-dcba-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "relieved",
+    "topics": [
+      "policy renewal",
+      "health policy HP-4478",
+      "loyalty discount",
+      "premium details"
+    ],
+    "action_items": [
+      "Vikram Patel to update the system regarding the policy renewal"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "content": "Meera Chauhan inquired about using her expired travel policy (TRV-2024-0789) for an upcoming October 2026 trip. Agent Ravi Menon informed her that the policy cannot be reactivated, but offered to issue a new one effective October 10, 2026. Ravi instructed Meera to complete the online renewal form, pay the premium, and upload a copy of her passport and trip itinerary.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T10:15:02",
+    "participants": {
+      "customer": {
+        "name": "Meera Chauhan",
+        "id": "d9f1a2b3-4c5d-6e7f-8a9b-0c1d2e3f4a5b"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "travel policy renewal",
+      "expired policy",
+      "policy reactivation",
+      "required documents"
+    ],
+    "action_items": [
+      "Fill out the online renewal form at https://securefuturegroup.com/travel/renew",
+      "Pay the premium for the new policy",
+      "Upload a copy of the passport and trip itinerary"
+    ]
+  }
+}

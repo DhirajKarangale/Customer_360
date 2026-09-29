@@ -1,0 +1,31 @@
+{
+  "content": "Saanvi Pillai contacted insurance agent Neha Kapoor to confirm the policy renewal payment of \u20b912,500. Neha verified the payment, confirmed that the policy is active, and provided the updated certificate. Saanvi then requested the full policy document and confirmation of the coverage start date, which Neha provided, stating the coverage begins on 15/09/2026.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-13T10:15:30",
+    "participants": {
+      "customer": {
+        "name": "Saanvi Pillai",
+        "id": "a3d9f1e2-5b6c-4d8a-9e1f-2c3b4d5e6f7a"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "b4e2f3a4-6c7d-5e9b-0f2a-3d4e5f6a7b8c"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "policy renewal",
+      "payment confirmation",
+      "policy certificate",
+      "coverage start date"
+    ],
+    "action_items": [
+      "Send updated certificate",
+      "Send full policy document",
+      "Confirm coverage start date"
+    ]
+  }
+}

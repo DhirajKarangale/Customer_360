@@ -1,0 +1,31 @@
+{
+  "content": "Ishaan Bose inquired about a 12% premium increase on his health insurance, which Sunita Agarwal explained was due to medical inflation and comprehensive coverage. Ishaan asked about early-renewal discounts and was informed he could get 5% off if renewing before 15/09. After comparing the standard renewal ($1,200/year) with the upgraded plan ($1,320/year with discount), Ishaan decided to proceed with the upgrade. Sunita agreed to send a secure payment link to complete the transaction.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T10:02:15",
+    "participants": {
+      "customer": {
+        "name": "Ishaan Bose",
+        "id": "4f2c9a7e-1b23-4d5f-8a9b-0c1d2e3f4b5a"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "a3b2c1d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Premium Increase",
+      "Comprehensive Care Plan",
+      "Early-Renewal Discount",
+      "Plan Upgrade",
+      "Payment"
+    ],
+    "action_items": [
+      "Send early-renewal discount summary document",
+      "Send secure payment link for the upgraded plan"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "content": "Ravi Menon confirmed the cancellation of Reyansh Tiwari's auto insurance policy (AU-2026-789012) and attached a confirmation document. Reyansh acknowledged the message and requested the exact refund amount, expected credit date, and confirmation of zero outstanding balances.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T09:15:30",
+    "participants": {
+      "customer": {
+        "name": "Reyansh Tiwari",
+        "id": "1a2b3c4d-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "5e6f7g8h-7777-8888-9999-aaaabbbbcccc"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Auto Policy Cancellation",
+      "Refund Details",
+      "Account Balance"
+    ],
+    "action_items": [
+      "Provide the exact refund amount",
+      "Confirm the expected credit date",
+      "Confirm no outstanding balances on the account"
+    ]
+  }
+}

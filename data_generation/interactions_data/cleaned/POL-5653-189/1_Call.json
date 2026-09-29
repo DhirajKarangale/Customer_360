@@ -1,0 +1,28 @@
+{
+  "content": "Ishaan Bose called Ramesh Tiwari to discuss his expired health policy (HP-4521). Ramesh informed him that the policy expired yesterday and he is currently not covered for new claims. Ishaan agreed to renew immediately, accepting a $25 reinstatement fee and retroactive premium adjustment. Ramesh will email the renewal form right after the call.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Ishaan Bose",
+        "id": "3f9a2d1e-7c4b-4e9a-9b3f-1a2d5c6e7f89"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "policy expiration",
+      "health policy renewal",
+      "reinstatement fee"
+    ],
+    "action_items": [
+      "Email the renewal form to the customer"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "content": "Kiara Sen contacted insurance agent Vikram Singh to add her new 55-inch smart TV to her personal-property coverage. Vikram confirmed the addition under a $2,500 electronics sub-limit, which increased her monthly premium by $1,200 after receiving the purchase receipt. Kiara also inquired about the claims process, and Vikram provided a guide detailing that claims can be filed via the portal or chat using an incident report, photos, and the receipt.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-30T09:15:12",
+    "participants": {
+      "customer": {
+        "name": "Kiara Sen",
+        "id": "9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "2d3c4b5a-6e7f-8a9b-0c1d-2e3f4a5b6c7d"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "policy update",
+      "personal property coverage",
+      "adding electronics",
+      "claims process"
+    ],
+    "action_items": [
+      "Send purchase receipt for the TV",
+      "Review the updated policy document",
+      "Review the claim process guide"
+    ]
+  }
+}

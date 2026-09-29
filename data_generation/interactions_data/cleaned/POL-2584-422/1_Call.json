@@ -1,0 +1,29 @@
+{
+  "content": "Customer Pooja Bhatia called to confirm the cancellation of her auto insurance policy (AUTO-4598) because she is planning to sell her car. The agent, Karan Joshi, verified the details, waived the $45 cancellation fee due to her good claim history with no claims in the past three years, and arranged a prorated refund of $80 via direct deposit. The cancellation was successfully processed with an effective date of 30/09/2026, and a confirmation email was sent.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-29T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Pooja Bhatia",
+        "id": "9f3b1c2e-7a4d-4f9a-9c2b-1e6d5a8f3b7c"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "d4a7e9b2-3c5f-4a1e-8b9d-2f6c8e7d9a0b"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Auto policy cancellation",
+      "Cancellation fees waiver",
+      "Prepaid premium refund"
+    ],
+    "action_items": [
+      "Send a confirmation email for the policy cancellation",
+      "Issue a direct deposit refund of $80 to the bank account on file"
+    ]
+  }
+}

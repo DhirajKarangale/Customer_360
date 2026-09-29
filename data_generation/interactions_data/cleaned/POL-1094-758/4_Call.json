@@ -1,0 +1,30 @@
+{
+  "content": "Customer Kiara Sen called to renew her expired auto insurance policy (SH-112233). Agent Vikram Singh processed the renewal for $1,080 using the credit card on file ending in 4242. The customer also requested to add a new driver, her brother Alex Sen, which increased the total premium to $1,200. The agent confirmed coverage details, explained that the renewal is effective from 10/01/2026 to 09/30/2027, and agreed to email the policy documents and renewal agreement for signature.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-05-10T09:00:00",
+    "participants": {
+      "customer": {
+        "name": "Kiara Sen",
+        "id": "7f9c2e1a-4b3d-4a9f-8e2c-1a2b3c4d5e6f"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "d3a5b6c7-8e9f-0a1b-2c3d-4e5f6a7b8c9d"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "policy renewal",
+      "payment verification",
+      "adding a driver",
+      "coverage limits"
+    ],
+    "action_items": [
+      "Email the new policy documents and renewal agreement to kiara.sen@example.com",
+      "Customer needs to sign and return the renewal agreement"
+    ]
+  }
+}

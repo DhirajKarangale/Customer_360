@@ -1,0 +1,29 @@
+{
+  "content": "Meera Chauhan confirms her travel policy TRV-2024-0789 renewal payment with agent Ravi Menon and requests the final policy document and instructions for adding her spouse as a co-traveler. Ravi Menon provides the policy document link and detailed step-by-step instructions to add the spouse along with the $30 additional premium requirement.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-12-10T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Meera Chauhan",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "d4c3b2a1-8765-09ba-fedc-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "Travel Policy Renewal",
+      "Policy Document",
+      "Adding Co-Traveler"
+    ],
+    "action_items": [
+      "Download the renewed policy document",
+      "Log in to the portal to add spouse as a co-traveler and pay the $30 additional premium"
+    ]
+  }
+}

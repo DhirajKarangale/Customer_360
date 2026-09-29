@@ -1,0 +1,28 @@
+{
+  "content": "Vikram Patel confirms to Reyansh Tiwari that his Health Policy (Policy #HP-2026-015) has been successfully renewed effective October 1, 2026, following a payment of $1,300 (including a $50 lapse fee). Reyansh acknowledges receipt of the renewal documents and confirmation number, confirming everything looks correct.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-21T10:15:30",
+    "participants": {
+      "customer": {
+        "name": "Reyansh Tiwari",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "d7e8f9a0-7777-8888-9999-aaaabbbbcccc"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Health Policy Renewal",
+      "Payment Confirmation",
+      "Policy Terms and Documents"
+    ],
+    "action_items": [
+      "Review the attached policy schedule and terms PDF"
+    ]
+  }
+}

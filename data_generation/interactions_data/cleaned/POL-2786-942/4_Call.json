@@ -1,0 +1,30 @@
+{
+  "content": "Rohan Deshmukh called insurance agent Anjali Desai to confirm details about his newly renewed policy document (policy number AU-4521-R1). Anjali confirmed that the old policy is expired and that his active coverage extends until 31/08/2027. Rohan also inquired if any physical signature was needed, and Anjali clarified that the existing electronic signature on file is sufficient, requiring no further action.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-29T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "d3f4a9c2-7b1e-4c9a-8f5e-2b6d9c3e1a44"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "a9b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "policy renewal",
+      "policy number change",
+      "policy expiration",
+      "coverage period",
+      "e-signature"
+    ],
+    "action_items": [
+      "Rohan to keep the PDF policy document for his records"
+    ]
+  }
+}

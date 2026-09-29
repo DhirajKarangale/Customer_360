@@ -1,0 +1,30 @@
+{
+  "content": "Vikram Singh from ProtectAll Agency called customer Kiara Sen to confirm updates to her DCoders home insurance policy (H-2026-0459) following the addition of a 55-inch 4K television valued at $1,200. Vikram verified the TV's serial number and receipt, added it to her personal property coverage, and confirmed the smartwatch sub-limit. The updates increased her monthly premium by $12, bringing the new total to $84 per month under a $150,000 personal property limit. The policy status was successfully updated to active.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:00:00",
+    "participants": {
+      "customer": {
+        "name": "Kiara Sen",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "f9e8d7c6-5432-10fe-dcba-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "Home insurance policy update",
+      "Television coverage",
+      "Smartwatch electronics sub-limit",
+      "Monthly premium adjustment"
+    ],
+    "action_items": [
+      "Policy status set to Active",
+      "Premium updated to $84 per month"
+    ]
+  }
+}

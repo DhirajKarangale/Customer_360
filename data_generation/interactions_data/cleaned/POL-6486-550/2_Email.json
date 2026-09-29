@@ -1,0 +1,28 @@
+{
+  "content": "Suresh Deshmukh followed up with Dev Chatterjee to confirm that Dev's health policy (HL-2026-0457) expired on 15 August 2026 and would remain in its expired state while Dev explores other options. Dev confirmed this understanding and stated he will reach out when ready to renew or consider a new plan.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-20T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Dev Chatterjee",
+        "id": "a1c9f8e2-7b3d-4f6a-9c1e-2d5b6a7e9f01"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "b3d2e5f7-9a4c-4b8e-8d2f-3c6a7b9e0d12"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Health policy expiration",
+      "Policy status update",
+      "Policy renewal options"
+    ],
+    "action_items": [
+      "Customer to reach out if they decide to reactivate the policy or need a new plan"
+    ]
+  }
+}

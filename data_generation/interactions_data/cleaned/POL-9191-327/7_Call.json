@@ -1,0 +1,30 @@
+{
+  "content": "Customer Reyansh Tiwari called to cancel the auto insurance policy renewal (AU-45789) as he decided to go with a different insurer. Agent Karan Joshi confirmed the policy will lapse and agreed to update the system for cancellation. The agent also agreed to email a final policy summary PDF and cancellation notice, and explained the reinstatement process requiring a fresh application if needed in the future.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-10-15T10:15:30",
+    "participants": {
+      "customer": {
+        "name": "Reyansh Tiwari",
+        "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "policy cancellation",
+      "auto insurance renewal",
+      "policy expiration",
+      "reinstatement process"
+    ],
+    "action_items": [
+      "Update system to reflect policy cancellation",
+      "Email policy-summary PDF and cancellation notice to the customer"
+    ]
+  }
+}

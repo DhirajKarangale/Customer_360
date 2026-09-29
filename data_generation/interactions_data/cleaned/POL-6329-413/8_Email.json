@@ -1,0 +1,31 @@
+{
+  "content": "Kunal Mehta submitted the signed home insurance declaration form, property valuation report, and $850 bank transfer confirmation. Anita Sharma confirmed receipt and stated that the documents are under review, after which the policy status will be updated from Pending to Active.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-30T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Kunal Mehta",
+        "id": "1c2d3e4f-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "9f8e7d6c-5432-10fe-dcba-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Home Insurance Policy",
+      "Declaration Form",
+      "Property Valuation Report",
+      "Payment Confirmation"
+    ],
+    "action_items": [
+      "Review the submitted documents and payment confirmation",
+      "Update policy status from Pending to Active upon successful verification",
+      "Send the final policy document to the customer"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "content": "Reyansh Tiwari contacted insurance agent Ravi Menon to inquire about the exact refund amount and deposit timeline for his cancelled auto policy. Ravi confirmed a prorated refund of $480.00 will be credited to his Visa within 7-10 business days (by 05/10/2026), confirmed there are no pending balances, and stated an email confirmation will be sent once processed.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T09:15:12",
+    "participants": {
+      "customer": {
+        "name": "Reyansh Tiwari",
+        "id": "9f2c1e7b-3a44-4d9f-8b2a-6e5d9c1f3a7e"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "d4b6e8f2-1c5a-47b9-9d3e-0a2f7c9e5b1d"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "auto policy cancellation",
+      "refund amount",
+      "refund timeline",
+      "pending balances"
+    ],
+    "action_items": [
+      "Process prorated refund of $480.00 to customer's Visa",
+      "Send email confirmation once refund is posted"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "content": "Ramesh Tiwari sent the renewal form and instructions for reinstating Ishaan Bose's expired health policy (HP-2026-0456) for a $25 fee, offering retroactive coverage. Ishaan confirmed receipt, stated he will fill it out today, and asked about the preferred payment method for the fee and any submission deadlines.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Ishaan Bose",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "d4e5f6g7-8910-11aa-bbcc-223344556677"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Health policy renewal",
+      "Reinstatement fee",
+      "Policy expiration",
+      "Continuous coverage"
+    ],
+    "action_items": [
+      "Complete and sign the renewal form",
+      "Pay the $25 reinstatement fee",
+      "Provide preferred payment method details",
+      "Clarify submission deadline for the form"
+    ]
+  }
+}

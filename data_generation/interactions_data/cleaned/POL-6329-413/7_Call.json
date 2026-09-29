@@ -1,0 +1,31 @@
+{
+  "content": "Kunal Mehta called insurance agent Anita Sharma to check the status of his home policy, which is currently pending due to a missing signed declaration and valuation report. Kunal confirmed he will email the documents tomorrow morning as a single PDF under 5 MB, and will pay the $850 premium via bank transfer today. Anita agreed to resend the bank details and a checklist via email and stated the policy will be activated within a few hours of document verification.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-29T10:15:00",
+    "participants": {
+      "customer": {
+        "name": "Kunal Mehta",
+        "id": "9f3c2a1b-8e4d-4a9b-9c1f-5d2e6b7c8a90"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "d2e5f6a7-3b9c-4d8e-9f1a-2b3c4d5e6f70"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "home policy status",
+      "valuation report and declaration form",
+      "premium payment",
+      "bank transfer details"
+    ],
+    "action_items": [
+      "Kunal to email the signed declaration and valuation report as a single PDF tomorrow morning",
+      "Kunal to complete the $850 bank transfer today",
+      "Anita to email the bank details and checklist after the call"
+    ]
+  }
+}

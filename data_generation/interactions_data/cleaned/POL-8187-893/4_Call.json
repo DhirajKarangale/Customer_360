@@ -1,0 +1,28 @@
+{
+  "content": "Riya Mukherjee called Vikram Patel to confirm her insurance deductible remains $500 before completing her policy renewal. With Vikram on the line, Riya successfully submitted the renewal form online. Vikram confirmed receipt of the submission, stated the policy is effective immediately, and agreed to email the updated policy PDF certificate.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Riya Mukherjee",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "f1e2d3c4-5678-90ab-cdef-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "policy renewal",
+      "deductible",
+      "insurance policy"
+    ],
+    "action_items": [
+      "Vikram Patel to email the updated policy PDF certificate to Riya Mukherjee"
+    ]
+  }
+}

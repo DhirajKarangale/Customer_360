@@ -1,0 +1,30 @@
+{
+  "content": "The customer, Dev Chatterjee, called to inquire about extending or canceling his travel policy (TRV-2024-9876) which is set to expire on 30/09/2026. The agent, Anita Sharma, informed him that product rules do not allow renewal after the expiry date and the policy will automatically lapse. The customer expressed disappointment regarding not being able to get a refund for unused months, and the agent explained that the policy must remain active until its expiration date, suggesting setting up a new travel plan for next year.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T10:15:00",
+    "participants": {
+      "customer": {
+        "name": "Dev Chatterjee",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "f7e8d9c0-7777-8888-9999-aaaabbbbcccc"
+        }
+      ]
+    },
+    "user_mood": "disappointed",
+    "topics": [
+      "travel policy expiration",
+      "policy extension",
+      "policy cancellation",
+      "refunds"
+    ],
+    "action_items": [
+      "Allow the current policy to run out until expiry on 30/09/2026",
+      "Consider setting up a new travel plan for next year"
+    ]
+  }
+}

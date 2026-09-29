@@ -1,0 +1,28 @@
+{
+  "content": "Kiara Sen submitted her signed policy renewal document to Vikram Singh. Vikram confirmed receipt, verified the file, and confirmed the policy is active from October 1, 2026, to September 30, 2027. Kiara requested the proof of insurance for car registration, and Vikram agreed to send it.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-10-03T09:15:12",
+    "participants": {
+      "customer": {
+        "name": "Kiara Sen",
+        "id": "5f2e8c1a-9b3d-4a6f-8e2c-1d4b7f9a0c3e"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "9d4b7e2f-3c1a-4f8b-9a6d-5e2c1b8d7f0a"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "policy renewal",
+      "proof of insurance",
+      "policy activation"
+    ],
+    "action_items": [
+      "Send proof of insurance document to the customer"
+    ]
+  }
+}

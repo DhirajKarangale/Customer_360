@@ -1,0 +1,31 @@
+{
+  "content": "Ravi Menon emailed Meera Chauhan regarding the reinstatement of her cancelled health policy (Policy #HP-DC-2026-0045), detailing that it requires clearing an outstanding premium of \u20b912,300 and a \u20b92,500 reinstatement fee (total \u20b914,800), along with submitting a signed Reinstatement Form. Meera replied asking if the reinstatement fee is mandatory despite paying the full premium and whether she can split the payment into two installments.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T11:15:00",
+    "participants": {
+      "customer": {
+        "name": "Meera Chauhan",
+        "id": "9f1c2a3b-4d5e-6f78-9abc-def012345678"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "a2b3c4d5-6e7f-8a9b-0c1d-2e3f456789ab"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Policy Reinstatement",
+      "Outstanding Premium",
+      "Reinstatement Fee",
+      "Payment Installments"
+    ],
+    "action_items": [
+      "Clarify if the reinstatement fee is mandatory",
+      "Confirm if payment can be split into two installments",
+      "Await customer's signed form and payment"
+    ]
+  }
+}

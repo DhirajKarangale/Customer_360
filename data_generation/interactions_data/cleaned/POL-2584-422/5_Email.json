@@ -1,0 +1,28 @@
+{
+  "content": "Pooja Bhatia inquired about the exact deposit date for her $80 cancelled auto policy refund. Karan Joshi confirmed that the prorated refund will be deposited by 04/10/2026 and provided a refund confirmation slip attachment.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-03-10T09:15:30",
+    "participants": {
+      "customer": {
+        "name": "Pooja Bhatia",
+        "id": "9f2c1e4b-7a6d-4b3f-8c9e-1a2b3c4d5e6f"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "d3b9a6f1-2c4e-4a8b-9d7e-5f6a7b8c9d0e"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Auto Policy Cancellation",
+      "Refund Status"
+    ],
+    "action_items": [
+      "Deposit $80 refund by 04/10/2026",
+      "Customer to check bank account for credit by end of business day on 04/10/2026"
+    ]
+  }
+}

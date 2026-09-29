@@ -1,0 +1,31 @@
+{
+  "content": "Aditi Mahajan called Suresh Deshmukh to verify the cancellation of her auto policy (AU-2019-HC) and the status of her refund. Suresh confirmed the cancellation, stated the refund was sent on September 27, 2026, and will appear on card ending 1234 within 2-3 business days. He also advised her to shred the physical insurance card, assured her that the cancellation will not affect her credit score, and promised to send a final confirmation email.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T09:12:30",
+    "participants": {
+      "customer": {
+        "name": "Aditi Mahajan",
+        "id": "9f3b2a1e-7c4d-4e9a-9b1f-2d5c6f8a7b01"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "d4e5f6a7-8b9c-0d1e-2f3a-4b5c6d7e8f90"
+        }
+      ]
+    },
+    "user_mood": "relieved",
+    "topics": [
+      "policy cancellation",
+      "refund status",
+      "credit score impact",
+      "return of physical card"
+    ],
+    "action_items": [
+      "Customer to check for refund by 1 October 2026",
+      "Customer to shred the physical insurance card",
+      "Agent to send a final confirmation email"
+    ]
+  }
+}

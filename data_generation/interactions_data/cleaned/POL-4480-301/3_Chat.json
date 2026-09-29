@@ -1,0 +1,30 @@
+{
+  "content": "Vihaan Patel inquired about the details of the roadside assistance rider (towing, fuel, lockout services, jump-starts, and tire changes) and received a brochure link. He also confirmed his policy expiration date of September 30, 2026, and asked about cancellation policies, learning he can cancel anytime before renewal without penalty.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-01-10T09:15:30",
+    "participants": {
+      "customer": {
+        "name": "Vihaan Patel",
+        "id": "d4f5c6a7-89ab-4cde-f012-3456789abcde"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "e1f2g3h4-56ij-7klm-8nop-qrstuvwx1234"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "policy renewal",
+      "roadside assistance rider",
+      "policy expiration date",
+      "policy cancellation"
+    ],
+    "action_items": [
+      "Review roadside assistance brochure",
+      "Consider policy renewal before September 30, 2026"
+    ]
+  }
+}

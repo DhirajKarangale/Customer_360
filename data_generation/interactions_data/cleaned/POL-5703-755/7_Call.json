@@ -1,0 +1,32 @@
+{
+  "content": "Sneha Roy called insurance agent Anjali Desai to inquire about reactivating her recently cancelled auto policy (AG-2026-015). Since the policy is fully expired, Anjali explained that a new quote would be generated. They discussed a six-month term policy for Sneha's 2022 Honda Civic with a premium of roughly \u20b96,300. Anjali sent a secure payment link via email, informing Sneha that a new policy number (AG-2026-078) would be assigned. Sneha agreed to proceed with the payment.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Sneha Roy",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "d4c3b2a1-9999-8888-7777-666655554444"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "auto policy reactivation",
+      "policy quote",
+      "premium rates",
+      "six-month term",
+      "payment options"
+    ],
+    "action_items": [
+      "Agent sent secure payment link and quote PDF via email",
+      "Customer to complete payment via net banking",
+      "Agent to issue new policy certificate (AG-2026-078) once payment is processed"
+    ]
+  }
+}

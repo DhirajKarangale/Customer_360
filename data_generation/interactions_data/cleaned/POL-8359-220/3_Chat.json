@@ -1,0 +1,29 @@
+{
+  "content": "Akanksha Bhatt inquired about her home insurance policy (H-4521) expiration date, which Anjali Desai confirmed is October 30, 2026. Akanksha also expressed interest in a motor insurance policy bundle. Anjali provided details for the Comprehensive and Third-Party Liability plans, explaining a 10% bundling discount that makes the combined premium \u20b915,750 per year. Akanksha requested the details in a PDF, which Anjali sent as an attachment.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T10:15:12",
+    "participants": {
+      "customer": {
+        "name": "Akanksha Bhatt",
+        "id": "3d9f1a2b-5c6e-4f7a-8b9c-0d1e2f3a4b5c"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "7e8f9a0b-1c2d-3e4f-5a6b-7c8d9e0f1a2b"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Home insurance policy expiry",
+      "Motor insurance policy bundle",
+      "Discount details",
+      "PDF summary"
+    ],
+    "action_items": [
+      "Send PDF summary of the Home and Motor bundle details to the customer"
+    ]
+  }
+}

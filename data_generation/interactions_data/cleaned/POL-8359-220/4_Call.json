@@ -1,0 +1,31 @@
+{
+  "content": "Anjali Desai from First Guard Brokers called Akanksha Bhatt to discuss the upcoming renewal of her home policy (#H-4521, expiring 30/10/2026) and offer bundled motor insurance options. Ms. Bhatt inquired about Plan A and Plan B motor options, discussed deductibles, and applied a No Claim Bonus for an additional 5% discount. Ultimately, Ms. Bhatt selected Plan A with monthly installment payments of \u20b91,225 (totaling approximately \u20b914,700 yearly), and the agent agreed to send the updated quote and confirmation email.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T09:00:00",
+    "participants": {
+      "customer": {
+        "name": "Akanksha Bhatt",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "f9e8d7c6-5432-10fe-dcba-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "home policy renewal",
+      "motor insurance bundle",
+      "No Claim Bonus",
+      "payment installments"
+    ],
+    "action_items": [
+      "Send updated quote by email",
+      "Set up monthly installment payment plan",
+      "Send confirmation email"
+    ]
+  }
+}

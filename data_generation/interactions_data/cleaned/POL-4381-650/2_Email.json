@@ -1,0 +1,32 @@
+{
+  "content": "Anita Sharma sent health policy renewal details (Policy No: HP-452789) offering Standard, Comprehensive, and Essential plans along with a renewal notice document. Anvi Desai reviewed the options, expressed interest in the Comprehensive plan, and asked clarifying questions regarding specialist visit coverage, the pre-authorization process, and the deadline to confirm the renewal.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-25T14:30:12",
+    "participants": {
+      "customer": {
+        "name": "Anvi Desai",
+        "id": "9f8c2a1b-7e4d-4b3a-9c1e-5d6f7a8b9c0d"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "d3e4f5a6-1b2c-3d4e-5f6a-7b8c9d0e1f2a"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Health policy renewal",
+      "Policy options",
+      "Specialist coverage",
+      "Pre-authorization process",
+      "Renewal deadline"
+    ],
+    "action_items": [
+      "Clarify specialist visits coverage",
+      "Clarify pre-authorization process",
+      "Provide deadline to confirm renewal"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "content": "Aditi Mahajan called insurance agent Karan Joshi to check the status of her Health Plus plan (HP-447822) and learned it expires on 05/10/2026. Karan explained that coverage ends upon expiry unless renewed. Aditi expressed interest in extending her coverage, and Karan offered to renew her current plan or upgrade to the Premium Health plan. The call concluded with Karan agreeing to email the renewal quote and forms to Aditi.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-29T10:15:00",
+    "participants": {
+      "customer": {
+        "name": "Aditi Mahajan",
+        "id": "d3f9a1c2-7b4e-4a9e-9c1f-5f2b6c8d9e0a"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "9b2c3d4e-5f6a-7b8c-9d0e-1f2a3b4c5d6e"
+        }
+      ]
+    },
+    "user_mood": "relieved",
+    "topics": [
+      "policy status",
+      "policy expiry",
+      "policy renewal",
+      "plan upgrade"
+    ],
+    "action_items": [
+      "Email renewal quote and forms to the customer"
+    ]
+  }
+}

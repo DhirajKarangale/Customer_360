@@ -1,0 +1,32 @@
+{
+  "content": "Customer Vivaan Gupta contacted insurance agent Vikram Singh to confirm policy details (LC-2026-0456), specifically verifying the $1,200 yearly premium. The agent confirmed the amount, provided an auto-pay setup link, sent a PDF copy of the policy document, and explained the claims process while providing a claims guide.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-30T10:15:12",
+    "participants": {
+      "customer": {
+        "name": "Vivaan Gupta",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "d4c3b2a1-8765-09ba-fedc-0987654321ba"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "policy clarification",
+      "premium amount",
+      "auto-pay",
+      "policy document",
+      "claims process"
+    ],
+    "action_items": [
+      "Set up auto-pay using the provided link",
+      "Review the PDF policy document",
+      "Review the claim guide"
+    ]
+  }
+}

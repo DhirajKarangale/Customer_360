@@ -1,0 +1,27 @@
+{
+  "content": "Aditi Mahajan confirmed she sent the signed form for her new Balanced Care plan. Neha Kapoor confirmed receipt, noted the new plan becomes active on 01/10/2026 with no coverage gap, and provided the final policy document via link, which Aditi reviewed and accepted.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T09:12:30",
+    "participants": {
+      "customer": {
+        "name": "Aditi Mahajan",
+        "id": "1a2b3c4d-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "d4c3b2a1-8765-09ba-fedc-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Balanced Care plan",
+      "signed form",
+      "policy document",
+      "coverage dates"
+    ],
+    "action_items": []
+  }
+}

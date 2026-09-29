@@ -1,0 +1,28 @@
+{
+  "content": "Vedant Thakur contacted insurance agent Karan Joshi to verify if his new auto policy was live following the expiration of his old policy. Karan confirmed that the new policy (AU-4589) is active as of October 2, 2026. Vedant requested the policy number again since he misplaced the email, and Karan provided the policy number and agreed to resend the certificate.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-10-03T09:15:10",
+    "participants": {
+      "customer": {
+        "name": "Vedant Thakur",
+        "id": "4f2e1c9b-8a12-4d3f-b9e7-6c5d4f2a1b3c"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "9b8c7d6e-5f4a-3b2c-1d0e-9f8e7d6c5b4a"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "policy status",
+      "policy renewal",
+      "policy number request"
+    ],
+    "action_items": [
+      "Resend the insurance policy certificate to the customer"
+    ]
+  }
+}

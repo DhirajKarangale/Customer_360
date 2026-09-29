@@ -1,0 +1,30 @@
+{
+  "content": "Customer Vihaan Patel called insurance agent Neha Kapoor because his auto policy (SH-2024-5678) expired. After learning there is no grace period, Vihaan decided to set up a new policy retaining the same vehicle details and roadside assistance rider. Neha processed the new annual policy at $1,210 starting October 1, 2026, and sent a confirmation email.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:05:12",
+    "participants": {
+      "customer": {
+        "name": "Vihaan Patel",
+        "id": "d3f9a2c4-6b7e-41d2-9f3e-2a5c8b7d9e01"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "a9c4e5f7-2d3b-48a1-9c6f-5e7b1a2d3c44"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "policy expiration",
+      "policy renewal",
+      "auto insurance premium",
+      "roadside assistance rider"
+    ],
+    "action_items": [
+      "New policy started for October 1, 2026",
+      "Confirmation email sent to customer"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "content": "Neha Chauhan called Karan Joshi from Safe Step Insurance to check the status of her health policy (HP-2026-0459). Karan informed her that the policy is pending activation due to a missing medical questionnaire. Neha stated she has the questionnaire on her phone and will email it to docs@dcoders.com for activation.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-29T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Neha Chauhan",
+        "id": "3f9a2d7e-1c4b-4a8f-9b3e-6d5c2a1e9f0b"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "a7c4e2b5-8d9f-4e3a-9c1d-2b6f7e8a0d3c"
+        }
+      ]
+    },
+    "user_mood": "confused",
+    "topics": [
+      "health policy status",
+      "policy activation",
+      "missing paperwork",
+      "medical questionnaire"
+    ],
+    "action_items": [
+      "Neha Chauhan to email the medical questionnaire to docs@dcoders.com",
+      "Karan Joshi to update the system and activate the policy once the document is received"
+    ]
+  }
+}

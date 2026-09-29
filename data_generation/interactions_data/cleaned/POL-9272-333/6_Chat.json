@@ -1,0 +1,30 @@
+{
+  "content": "Sai Kumar confirmed the upload of the signed garage endorsement form, which Ravi Menon verified and processed to update the policy. They also discussed the policy expiration date of 15 August 2027 and confirmed that a renewal reminder will be sent 30 days prior to expiration.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T09:15:12",
+    "participants": {
+      "customer": {
+        "name": "Sai Kumar",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "b2c3d4e5-6789-01bc-def2-2345678901bc"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "garage endorsement form",
+      "policy update",
+      "policy expiration",
+      "renewal reminder"
+    ],
+    "action_items": [
+      "Update the policy with the signed garage endorsement form",
+      "Send a renewal reminder 30 days prior to 15 August 2027"
+    ]
+  }
+}

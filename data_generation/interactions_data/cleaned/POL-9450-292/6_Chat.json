@@ -1,0 +1,31 @@
+{
+  "content": "Kiara Sen inquired about physiotherapy coverage after knee surgery and was informed that up to 20 sessions per year are covered with a 20% co-pay. Neha Kapoor agreed to send a physio claim template and a copy of the policy PDF. Kiara also asked how to add her spouse as a dependent, and Neha provided the options to use the portal or send the required details for assistance.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-15T09:12:05",
+    "participants": {
+      "customer": {
+        "name": "Kiara Sen",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "d4e5f6a7-89ab-cdef-0123-456789abcdef"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "physiotherapy coverage",
+      "claim requirements",
+      "policy document",
+      "adding a dependent"
+    ],
+    "action_items": [
+      "Neha to send physio claim template",
+      "Neha to send policy PDF",
+      "Kiara to provide spouse's full name, DOB, and ID to add as a dependent"
+    ]
+  }
+}

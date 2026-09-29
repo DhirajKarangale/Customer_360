@@ -1,0 +1,28 @@
+{
+  "content": "Reyansh Tiwari called Vikram Patel to verify his policy renewal payment of $1,300, which included a non-refundable lapse fee. Vikram confirmed the payment went through, verified that health coverage will restart on October 1st, 2026, and stated that new policy documents will be emailed today with no further forms required.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Reyansh Tiwari",
+        "id": "a3f9c1e2-7b4d-4f9a-9d2e-5c6b8a1f2d3e"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "5d2e7b9c-1a4f-4c3d-8e9f-0b7c6d5e4f1a"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "renewal payment",
+      "policy activation",
+      "lapse fee"
+    ],
+    "action_items": [
+      "Email the PDF policy documents and confirmation number to the customer"
+    ]
+  }
+}

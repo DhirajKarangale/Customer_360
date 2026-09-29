@@ -1,0 +1,32 @@
+{
+  "content": "Rahul Jain checked the status of his home policy HC-2026-0456 after submitting required documents. Sunita Agarwal confirmed the policy will be active within an hour. They also discussed kitchen renovation water damage coverage, and Sunita agreed to update the sum insured and send the endorsement PDF.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T10:15:02",
+    "participants": {
+      "customer": {
+        "name": "Rahul Jain",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "f1e2d3c4-9876-54ba-dcba-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "policy status",
+      "home insurance",
+      "document verification",
+      "kitchen renovation coverage",
+      "water damage"
+    ],
+    "action_items": [
+      "Send policy activation confirmation",
+      "Update sum insured for the kitchen value",
+      "Send endorsement PDF"
+    ]
+  }
+}

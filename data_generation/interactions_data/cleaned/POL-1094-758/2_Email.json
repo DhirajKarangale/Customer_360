@@ -1,0 +1,28 @@
+{
+  "content": "Vikram Singh sent Kiara Sen her auto policy renewal documents with a new premium of $1,080, effective October 1, 2026. Kiara confirmed receipt, stated the terms look good, and promised to sign and return the PDF by tomorrow.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T15:30:00",
+    "participants": {
+      "customer": {
+        "name": "Kiara Sen",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Auto Policy Renewal",
+      "Policy Documents",
+      "Premium Payment"
+    ],
+    "action_items": [
+      "Kiara Sen to sign and return the auto policy renewal PDF by tomorrow"
+    ]
+  }
+}

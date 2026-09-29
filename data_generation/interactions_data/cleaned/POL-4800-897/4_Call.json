@@ -1,0 +1,30 @@
+{
+  "content": "Kunal Mehta called insurance agent Ravi Menon to confirm the complete cancellation of his health policy HP-123456 and verified that there are no pending premiums or waiting periods for starting a new plan next month. Kunal also requested a resend of the cancellation confirmation and a claim history summary for his new employer, which Ravi agreed to email him immediately after the call.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-10-01T11:15:00",
+    "participants": {
+      "customer": {
+        "name": "Kunal Mehta",
+        "id": "d4f7a9c2-3b1e-4f6a-9c2e-1a5b6c7d8e9f"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "policy cancellation",
+      "new health plan",
+      "waiting period",
+      "claim history summary"
+    ],
+    "action_items": [
+      "Send cancellation confirmation email",
+      "Attach claim summary to an email and send to the customer"
+    ]
+  }
+}

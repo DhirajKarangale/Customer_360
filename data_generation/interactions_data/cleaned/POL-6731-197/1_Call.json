@@ -1,0 +1,30 @@
+{
+  "content": "Anjali Desai from First Guard Brokers calls Sneha Roy to inform her that her auto policy with DCoders recently expired. They discuss renewal options and vehicle details (2020 Honda Civic). Sneha agrees to review the renewal quote, and Anjali promises to email the documents and quote by 09:55 to avoid any lapse fees.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Sneha Roy",
+        "id": "3e1f9b2a-7c4d-4a8e-9f23-5d6b7c8d9e0f"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "a2b5c6d7-8e9f-4a1b-9c2d-3e4f5a6b7c8d"
+        }
+      ]
+    },
+    "user_mood": "confused",
+    "topics": [
+      "auto policy expiration",
+      "policy renewal",
+      "renewal quote",
+      "lapse fee"
+    ],
+    "action_items": [
+      "Send the renewal quote and documents via email by 09:55",
+      "Sneha to check her budget regarding the renewal"
+    ]
+  }
+}

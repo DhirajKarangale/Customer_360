@@ -1,0 +1,28 @@
+{
+  "content": "Anjali Desai from First Guard Brokers sent an email to customer Sneha Roy confirming the official cancellation of her auto insurance policy (Policy No: AG-2026-015) as requested during their previous call on 20/09/2026. The policy remains expired as of 15/08/2026, no further premiums will be charged, and a formal cancellation letter is attached for her records.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-21T09:30:00",
+    "participants": {
+      "customer": {
+        "name": "Sneha Roy",
+        "id": "1a2b3c4d-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "9f8e7d6c-5432-10fe-bcba-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Policy Cancellation",
+      "Auto Policy",
+      "Cancellation Confirmation"
+    ],
+    "action_items": [
+      "Review the attached formal cancellation letter"
+    ]
+  }
+}

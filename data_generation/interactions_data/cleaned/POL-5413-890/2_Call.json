@@ -1,0 +1,32 @@
+{
+  "content": "Customer Akanksha Bhatt contacted agent Karan Joshi because her auto policy (AP-123456) expired on the day of the call. She inquired about reinstatement options versus getting a new policy to ensure coverage for the next day. The agent explained the 30-day reinstatement window, fees, and that same-day reinstatement takes effect within an hour of payment. After discussing deductibles and potential loss of no-claims discounts for a new policy, the customer opted to reinstate her existing policy. The agent provided a payment link for the total amount of $152.75.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T10:15:00",
+    "participants": {
+      "customer": {
+        "name": "Akanksha Bhatt",
+        "id": "9f3e1a7b-4c2d-4f9a-8b1e-6d5c9e2a7f01"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "2b6d8c4e-7a9f-41d3-9e2b-3f5a1c8d0e44"
+        }
+      ]
+    },
+    "user_mood": "anxious",
+    "topics": [
+      "policy expiration",
+      "policy reinstatement",
+      "same-day coverage",
+      "reinstatement fee",
+      "auto policy"
+    ],
+    "action_items": [
+      "Agent to email payment link to the customer",
+      "Customer to complete the $152.75 payment via credit card or net-banking",
+      "Agent to process same-day policy reinstatement upon payment"
+    ]
+  }
+}

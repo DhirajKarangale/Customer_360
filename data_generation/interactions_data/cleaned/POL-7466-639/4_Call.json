@@ -1,0 +1,30 @@
+{
+  "content": "Reyansh Tiwari called insurance agent Ravi Menon to confirm the status of his policy cancellation and $480 prorated refund, which is expected to post by 10/05/2026. Ravi confirmed the account balance is zero and the policy is expired. They also discussed the process for obtaining a new policy and quote in the future.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-05-05T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Reyansh Tiwari",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "e5f6g7h8-1234-56ij-klmn-0987654321cd"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "policy cancellation",
+      "prorated refund",
+      "account balance",
+      "future policy quotes"
+    ],
+    "action_items": [
+      "Send email receipt once refund posts by 10/05/2026",
+      "Customer will reach out if they need a new policy in the future"
+    ]
+  }
+}

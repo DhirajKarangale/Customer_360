@@ -1,0 +1,31 @@
+{
+  "content": "Neha Chauhan checks the status of her newly activated health insurance policy with Karan Joshi. She inquires about dental cleaning coverage, which Karan confirms is covered up to \u20b92,000 per year under preventive care. Finally, Neha asks about the claims process, and Karan provides the online portal link along with a quick-start guide.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-30T09:15:12",
+    "participants": {
+      "customer": {
+        "name": "Neha Chauhan",
+        "id": "9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "policy activation",
+      "dental coverage",
+      "preventive care",
+      "claims process"
+    ],
+    "action_items": [
+      "View the policy document via the provided link",
+      "Submit any future claims via the online portal: https://portal.dcodelabs.com/claims",
+      "Review the attached quick-start guide for claims"
+    ]
+  }
+}

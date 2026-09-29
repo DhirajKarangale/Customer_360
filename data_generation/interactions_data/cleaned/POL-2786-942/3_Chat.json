@@ -1,0 +1,29 @@
+{
+  "content": "Rohan Deshmukh contacted insurance agent Anjali Desai to confirm the net banking payment of \u20b911,875 for invoice AU-4521. Anjali confirmed receipt of the payment and stated that the policy is now active until 31/08/2027. Anjali also agreed to send the updated policy document shortly, and no further actions were required.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-30T09:15:12",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "b2c3d4e5-6789-01ab-cdef-2345678901bc"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "payment confirmation",
+      "invoice AU-4521",
+      "policy activation",
+      "policy document"
+    ],
+    "action_items": [
+      "Send updated policy document to the customer"
+    ]
+  }
+}

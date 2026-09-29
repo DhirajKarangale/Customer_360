@@ -1,0 +1,32 @@
+{
+  "content": "Vikram Singh from ProtectAll Agency calls customer Riya Mukherjee to discuss her expired health policy and the 30% premium increase due to medical inflation and maternity coverage. Riya requests to remove the maternity rider, bringing the annual cost down to 4,350 INR, and opts for a monthly payment plan of 460 INR. Vikram updates the system with a new policy number (HP-2026-0459), reviews key policy benefits, and explains the hospitalisation claim process. Vikram will follow up the next day to confirm receipt of the revised quote email.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:00:00",
+    "participants": {
+      "customer": {
+        "name": "Riya Mukherjee",
+        "id": "9f3c2a1e-5b6d-4e2a-9c8f-1a2b3c4d5e6f"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "d4e5f6a7-8b9c-0d1e-2f3a-4b5c6d7e8f9a"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Health policy renewal",
+      "Premium increase",
+      "Maternity rider removal",
+      "Monthly installment options",
+      "Claim process"
+    ],
+    "action_items": [
+      "Send revised quote via email",
+      "Customer to review and confirm email quote",
+      "Agent to follow up tomorrow regarding email receipt"
+    ]
+  }
+}

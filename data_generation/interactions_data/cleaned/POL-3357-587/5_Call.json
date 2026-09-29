@@ -1,0 +1,31 @@
+{
+  "content": "Samar Ghosh called Sunita Agarwal to clarify claim paperwork requirements. Sunita confirmed that a clear scanned copy of the proof of payment is acceptable and that all documents, including cabinet photos under 5 MB, can be uploaded through the portal's Claims Upload section. Additionally, Samar inquired about the billing cycle, and Sunita informed him that the next premium due date and auto-debit will occur on 15 October 2026. Samar stated he would compile and upload the documents today.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-29T14:10:00",
+    "participants": {
+      "customer": {
+        "name": "Samar Ghosh",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "f9e8d7c6-5432-10fe-dcba-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "claim paperwork",
+      "proof of payment",
+      "portal document upload",
+      "cabinet photos",
+      "billing cycle",
+      "premium due date"
+    ],
+    "action_items": [
+      "Samar to compile documents and upload them through the portal today"
+    ]
+  }
+}

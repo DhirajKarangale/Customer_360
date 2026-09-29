@@ -1,0 +1,30 @@
+{
+  "content": "Sneha Roy called insurance agent Anita Sharma to check the status of her health insurance policy. Anita confirmed that the policy is currently pending underwriting review, which will take 2-3 business days, and verified that all necessary documents including the ID copy, signed declaration, and blood test report have been received. Anita also clarified that the policy will become active once underwriting is finalized by the end of the third business day.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-29T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Sneha Roy",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "d4c3b2a1-8765-09ba-fedc-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "health policy status",
+      "underwriting review",
+      "required documents",
+      "policy activation timeline"
+    ],
+    "action_items": [
+      "Wait 2-3 business days for underwriting to complete",
+      "Monitor the portal for policy activation"
+    ]
+  }
+}

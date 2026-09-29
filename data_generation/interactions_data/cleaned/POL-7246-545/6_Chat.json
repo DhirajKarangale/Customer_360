@@ -1,0 +1,30 @@
+{
+  "content": "Kavya Iyer inquired about the process for filing a claim for her life insurance policy (L-2026-0459). Suresh Deshmukh provided the steps (claim form, death certificate, and ID submission), shared the claim form PDF link, confirmed the primary and secondary beneficiaries, and explained that review takes 7-10 business days with payouts processed in 3-5 business days after approval.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T15:30:12",
+    "participants": {
+      "customer": {
+        "name": "Kavya Iyer",
+        "id": "a5d3f6b2-1c4e-4a9b-8f2d-7e5c9a1b2c3d"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Life insurance claim",
+      "Policy beneficiaries",
+      "Payout timeline",
+      "Required documents"
+    ],
+    "action_items": [
+      "Fill out and submit the claim form along with death certificate and ID proof",
+      "Wait for claim review and processing"
+    ]
+  }
+}

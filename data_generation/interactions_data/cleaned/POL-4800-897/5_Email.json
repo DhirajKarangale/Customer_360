@@ -1,0 +1,26 @@
+{
+  "content": "Ravi Menon sent Kunal Mehta the official cancellation confirmation for health policy HP-123456 (effective September 30, 2026) along with a claim history summary and confirmation of no outstanding premiums. Kunal acknowledged receipt and thanked Ravi for the prompt response.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-02-10T10:15:00",
+    "participants": {
+      "customer": {
+        "name": "Kunal Mehta",
+        "id": "1a2b3c4d-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "9f8e7d6c-5432-10fe-dcba-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "policy cancellation",
+      "claim history summary",
+      "health policy HP-123456"
+    ],
+    "action_items": []
+  }
+}

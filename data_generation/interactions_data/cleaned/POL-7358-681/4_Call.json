@@ -1,0 +1,28 @@
+{
+  "content": "Rohan Deshmukh called insurance agent Karan Joshi to confirm the cancellation of his health policy (HP-2024-5678) due to a job change. Karan verified that the cancellation was processed on 24/09/2026 and informed Rohan that a prorated refund will be issued to his original payment method within 5-7 business days using his existing bank details, requiring no further document submission.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "e7f8g9h0-7777-8888-9999-aaaabbbbcccc"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "health policy cancellation",
+      "refund status",
+      "job change"
+    ],
+    "action_items": [
+      "Process and credit prorated refund to original payment method within 5-7 business days"
+    ]
+  }
+}

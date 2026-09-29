@@ -1,0 +1,29 @@
+{
+  "content": "Aditi Mahajan contacted insurance agent Karan Joshi to set up auto-debit for her new Health Plus Plus plan. Karan provided the e-mandate form and requested a cancelled cheque or bank statement. Aditi successfully uploaded the required document in JPG format, and Karan confirmed the auto-debit setup with the first premium of \u20b912,480 scheduled for October 5, 2026.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-01-10T09:15:12",
+    "participants": {
+      "customer": {
+        "name": "Aditi Mahajan",
+        "id": "3d9f2a1c-5e44-4b8a-9c2f-7a1e6b9d3f4e"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "7c2b1e8f-9d33-4a6f-8b1c-2f5e9c0a7d3b"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "auto-debit setup",
+      "Health Plus Plus plan",
+      "premium payment"
+    ],
+    "action_items": [
+      "Activate auto-debit by October 3, 2026",
+      "Debit first premium of \u20b912,480 on October 5, 2026"
+    ]
+  }
+}

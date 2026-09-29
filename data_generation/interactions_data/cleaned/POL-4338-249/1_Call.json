@@ -1,0 +1,28 @@
+{
+  "content": "Vikram Patel called Rahul Jain to inform him that his DCoders Comprehensive Health Plan (HP-45789) expired today. Rahul expressed surprise but decided to renew the policy. Vikram informed him that the renewal premium is 1,200 rupees per month with unchanged coverage, and agreed to email the renewal form right after the call.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Rahul Jain",
+        "id": "a5d3f8c2-9b4e-4f1a-8c2e-7f9b6a1d3c4e"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "3b6e2d5f-1c9a-4b8e-9f3a-2d5c7e9b0a1f"
+        }
+      ]
+    },
+    "user_mood": "surprised",
+    "topics": [
+      "health policy expiry",
+      "policy renewal",
+      "renewal premium"
+    ],
+    "action_items": [
+      "Email the renewal form to the customer"
+    ]
+  }
+}

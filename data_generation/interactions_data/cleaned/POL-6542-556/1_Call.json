@@ -1,0 +1,30 @@
+{
+  "content": "Akanksha Bhatt called Suresh Deshmukh from Secure Life Solutions to verify the active status of her health policy (SH-2026-0457). She also inquired about outpatient (OPD) and MRI scan coverage. Suresh confirmed the policy status is active, explained the coverage percentages and deductible rules for outpatient procedures, and instructed her that the hospital can send the required pre-authorization request to preauth@securelifesolutions.com.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Akanksha Bhatt",
+        "id": "a7c9e3f2-1b4d-4f9a-9c2e-6d5b7a8c9d0e"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "relieved",
+    "topics": [
+      "Policy Status",
+      "Health Insurance Coverage",
+      "Outpatient Procedures",
+      "MRI Scan Coverage",
+      "Pre-authorization"
+    ],
+    "action_items": [
+      "Hospital to submit pre-authorization request electronically to preauth@securelifesolutions.com"
+    ]
+  }
+}

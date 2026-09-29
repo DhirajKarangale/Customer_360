@@ -1,0 +1,28 @@
+{
+  "content": "Aditi Mahajan called Neha Kapoor at Shield Life Services to inquire about renewing her health policy (HLP-2023-0456), which expires on September 30, 2026. Neha informed her that the current product line is being phased out and cannot be renewed, but offered to email details of alternative health plans.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Aditi Mahajan",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "d7e8f9a0-7777-8888-9999-aaaaabbbbbcc"
+        }
+      ]
+    },
+    "user_mood": "disappointed",
+    "topics": [
+      "policy expiration",
+      "policy renewal",
+      "alternative health plans"
+    ],
+    "action_items": [
+      "Agent to email details of alternative health plans to the customer"
+    ]
+  }
+}

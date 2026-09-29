@@ -1,0 +1,29 @@
+{
+  "content": "Neha Chauhan submitted her completed medical questionnaire for her health policy activation. Karan Joshi confirmed receipt, uploaded the document, and informed her that the policy is now active and accessible via the portal.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-01-10T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Neha Chauhan",
+        "id": "1e7b9c4a-3f2d-41a8-9e6b-5d2c8f7a9b01"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "4c6d8e2f-9a1b-44e3-8f7d-2b3c6a5d9e12"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "Health Policy Activation",
+      "Medical Questionnaire",
+      "Policy Documents"
+    ],
+    "action_items": [
+      "Customer to receive confirmation email",
+      "Customer to view policy documents in portal"
+    ]
+  }
+}
