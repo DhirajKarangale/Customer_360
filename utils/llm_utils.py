@@ -13,86 +13,132 @@ GEMINI_MODEL_INDEX = 0
 GROQ_MODEL_INDEX = 0
 CORTEX_CALL_COUNT = 0
 
-def _get_snowflake_llm(model_name):
+LLM_PROVIDERS_LIST = ['gemini', 'groq', 'snowflake']
 
-    def call_snowflake(prompt) -> str:
-        if hasattr(prompt, 'to_string'):
-            prompt_str = prompt.to_string()
-        elif isinstance(prompt, list) and len(prompt) > 0 and hasattr(prompt[0], 'content'):
-            prompt_str = prompt[0].content
-        elif hasattr(prompt, 'content'):
-            prompt_str = prompt.content
-        else:
-            prompt_str = str(prompt)
-        global CORTEX_CALL_COUNT
-        conn_to_use = get_snowflake_conn()
-        CORTEX_CALL_COUNT += 1
-        if CORTEX_CALL_COUNT % 7 == 0:
-            print(f'    [Auth] Reached {CORTEX_CALL_COUNT} LLM calls. Refreshing Snowflake connection...')
+def _parse_keys(env_var_name: str) -> list:
+    val = os.getenv(env_var_name, '')
+    cleaned = val.replace('\n', ',').replace('"', '').replace("'", "")
+    return [k.strip() for k in cleaned.split(',') if k.strip()]
+
+def _call_snowflake_direct(prompt_str: str, model_name: str) -> str:
+    global CORTEX_CALL_COUNT
+    conn_to_use = get_snowflake_conn()
+    CORTEX_CALL_COUNT += 1
+    if CORTEX_CALL_COUNT % 7 == 0:
+        print(f'    [Auth] Reached {CORTEX_CALL_COUNT} LLM calls. Refreshing Snowflake connection...')
+        conn_to_use = get_snowflake_conn(force_refresh=True)
+    cursor = conn_to_use.cursor()
+    query = f"SELECT SNOWFLAKE.CORTEX.COMPLETE('{model_name}', %s)"
+    try:
+        cursor.execute(query, (prompt_str,))
+        result = cursor.fetchone()[0]
+        return result
+    except Exception as e:
+        print(f'Error calling Cortex: {e}')
+        if 'Session no longer exists' in str(e):
+            print('    [Auth] Session expired! Force refreshing connection and retrying...')
             conn_to_use = get_snowflake_conn(force_refresh=True)
-        cursor = conn_to_use.cursor()
-        query = f"SELECT SNOWFLAKE.CORTEX.COMPLETE('{model_name}', %s)"
-        try:
-            cursor.execute(query, (prompt_str,))
-            result = cursor.fetchone()[0]
-            return result
-        except Exception as e:
-            print(f'Error calling Cortex: {e}')
-            if 'Session no longer exists' in str(e):
-                print('    [Auth] Session expired! Force refreshing connection and retrying...')
-                conn_to_use = get_snowflake_conn(force_refresh=True)
-                cursor = conn_to_use.cursor()
-                try:
-                    cursor.execute(query, (prompt_str,))
-                    result = cursor.fetchone()[0]
-                    return result
-                except Exception as e2:
-                    print(f'Retry failed: {e2}')
-                    return None
-            else:
-                return None
-        finally:
+            cursor = conn_to_use.cursor()
             try:
-                cursor.close()
-            except Exception:
-                pass
-    return RunnableLambda(call_snowflake)
+                cursor.execute(query, (prompt_str,))
+                result = cursor.fetchone()[0]
+                return result
+            except Exception as e2:
+                print(f'Retry failed: {e2}')
+                return None
+        raise e
+    finally:
+        try:
+            cursor.close()
+        except Exception:
+            pass
 
-def _get_gemini_llm(model_name=None):
-    try:
-        gemini_model = GEMINI_MODELS[GEMINI_MODEL_INDEX]
-    except IndexError:
-        gemini_model = GEMINI_MODELS[0]
-    api_key = os.getenv('GEMINI_API_KEY')
-    if not api_key:
-        print('GEMINI_API_KEY not found in environment variables.')
-        return None
-    return ChatGoogleGenerativeAI(model=gemini_model, google_api_key=api_key)
-
-def _get_groq_llm(model_name=None):
-    try:
-        groq_model = GROQ_MODELS[GROQ_MODEL_INDEX]
-    except IndexError:
-        groq_model = GROQ_MODELS[0]
-    api_key = os.getenv('GROQ_API_KEY')
-    if not api_key:
-        print('GROQ_API_KEY not found in environment variables.')
-        return None
-    return ChatGroq(model_name=groq_model, groq_api_key=api_key)
-
-def get_llm(model_key):
-    if model_key not in SNOWFLAKE_MODELS:
-        raise ValueError(f"Model key '{model_key}' not found in SNOWFLAKE_MODELS.")
-    if LLM_PROVIDER.lower() == 'snowflake':
-        actual_model = SNOWFLAKE_MODELS[model_key]
-        return _get_snowflake_llm(actual_model)
-    elif LLM_PROVIDER.lower() == 'gemini':
-        return _get_gemini_llm(model_key)
-    elif LLM_PROVIDER.lower() == 'groq':
-        return _get_groq_llm(model_key)
+def _extract_prompt_str(prompt) -> str:
+    if hasattr(prompt, 'to_string'):
+        return prompt.to_string()
+    elif isinstance(prompt, list) and len(prompt) > 0 and hasattr(prompt[0], 'content'):
+        return prompt[0].content
+    elif hasattr(prompt, 'content'):
+        return prompt.content
     else:
-        print(f'Unknown LLM provider: {LLM_PROVIDER}')
-        return None
+        return str(prompt)
+
+def _unified_llm_call(prompt_str: str, model_key: str) -> str:
+    for provider in LLM_PROVIDERS_LIST:
+        print(f"Using LLM Provider: {provider}")
+        
+        if provider == 'gemini':
+            keys = _parse_keys('GEMINI_API_KEY')
+            if not keys:
+                print("No Gemini keys found, skipping.")
+                continue
+            
+            try:
+                model_name = GEMINI_MODELS[GEMINI_MODEL_INDEX]
+            except IndexError:
+                model_name = GEMINI_MODELS[0]
+                
+            total_keys = len(keys)
+            for idx, key in enumerate(keys, 1):
+                print(f"Trying Gemini key {idx}/{total_keys}")
+                try:
+                    llm = ChatGoogleGenerativeAI(model=model_name, google_api_key=key)
+                    response = llm.invoke(prompt_str)
+                    if isinstance(response.content, list):
+                        return "".join([part.get("text", "") for part in response.content if isinstance(part, dict) and "text" in part])
+                    return str(response.content)
+                except Exception as e:
+                    print(f"Error with Gemini key {idx}/{total_keys}: {e}")
+            
+        elif provider == 'groq':
+            keys = _parse_keys('GROQ_API_KEY')
+            if not keys:
+                print("No Groq keys found, skipping.")
+                continue
+                
+            try:
+                model_name = GROQ_MODELS[GROQ_MODEL_INDEX]
+            except IndexError:
+                model_name = GROQ_MODELS[0]
+                
+            total_keys = len(keys)
+            for idx, key in enumerate(keys, 1):
+                print(f"Trying Groq key {idx}/{total_keys}")
+                try:
+                    llm = ChatGroq(model_name=model_name, groq_api_key=key)
+                    response = llm.invoke(prompt_str)
+                    return response.content
+                except Exception as e:
+                    print(f"Error with Groq key {idx}/{total_keys}: {e}")
+            
+        elif provider == 'snowflake':
+            actual_model = SNOWFLAKE_MODELS.get(model_key)
+            if not actual_model:
+                print(f"Model key '{model_key}' not found in SNOWFLAKE_MODELS.")
+                continue
+            
+            print(f"Trying Snowflake model: {actual_model}")
+            try:
+                result = _call_snowflake_direct(prompt_str, actual_model)
+                if result is not None:
+                    return result
+            except Exception as e:
+                print(f"Snowflake error: {e}")
+                
+    raise Exception("All LLM providers and keys failed.")
+
+def get_llm(model_key: str, strictly_snowflake: bool = False):
+    def llm_executor(prompt):
+        prompt_str = _extract_prompt_str(prompt)
+        if strictly_snowflake:
+            actual_model = SNOWFLAKE_MODELS.get(model_key)
+            if not actual_model:
+                raise ValueError(f"Model key '{model_key}' not found in SNOWFLAKE_MODELS.")
+            return _call_snowflake_direct(prompt_str, actual_model)
+        else:
+            return _unified_llm_call(prompt_str, model_key)
+            
+    return RunnableLambda(llm_executor)
 
 def get_snowflake_embedding(text: str, model_key: str, dimension: int) -> list[float]:
     if model_key not in SNOWFLAKE_MODELS:
