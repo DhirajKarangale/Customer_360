@@ -72,7 +72,7 @@ class EmbeddingManager:
                 user=os.getenv("SNOWFLAKE_USER"),
                 password=os.getenv("SNOWFLAKE_PASSWORD"),
                 account=os.getenv("SNOWFLAKE_ACCOUNT"),
-                passcode="546119"
+                passcode="853380"
             )
         except Exception as e:
             error_str = str(e).lower()
