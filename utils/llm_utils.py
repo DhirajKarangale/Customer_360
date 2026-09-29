@@ -4,6 +4,7 @@ from langchain_core.runnables import RunnableLambda
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_groq import ChatGroq
 from utils.sf_auth import get_snowflake_conn
+
 LLM_PROVIDER = 'gemini'
 SNOWFLAKE_MODELS = {'SEQUENCE': 'llama3.1-8b', 'TRANSCRIPT': 'llama3.1-70b', 'SUMMARY': 'llama3.1-8b', 'CLEANING': 'llama3.1-70b', 'STRUCTURING': 'llama3.1-70b', 'EMBEDDING': 'snowflake-arctic-embed-l-v2.0'}
 GEMINI_MODELS = ['gemini-3.5-flash-lite', 'gemini-3.1-pro-preview', 'gemini-3.5-flash', 'gemini-3.6-flash', 'gemini-3.7-flash', 'gemini-3.8-flash']

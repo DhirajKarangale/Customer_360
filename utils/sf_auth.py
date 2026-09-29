@@ -7,6 +7,7 @@ if os.path.exists(env_path):
 SF_USER = os.getenv('SNOWFLAKE_USER')
 SF_PASSWORD = os.getenv('SNOWFLAKE_PASSWORD')
 SF_ACCOUNT = os.getenv('SNOWFLAKE_ACCOUNT')
+SF_PASSCODE = os.getenv('SNOWFLAKE_PASSCODE')
 SF_WAREHOUSE = os.getenv('SNOWFLAKE_WAREHOUSE')
 SF_DATABASE = os.getenv('SNOWFLAKE_DATABASE')
 SF_SCHEMA = os.getenv('SNOWFLAKE_SCHEMA')
@@ -27,7 +28,7 @@ def get_snowflake_conn(force_refresh=False):
             pass
     import sys
     try:
-        conn = snowflake.connector.connect(user=SF_USER, password=SF_PASSWORD, account=SF_ACCOUNT)
+        conn = snowflake.connector.connect(user=SF_USER, password=SF_PASSWORD, account=SF_ACCOUNT, passcode=SF_PASSCODE)
     except Exception as e:
         error_str = str(e).lower()
         if 'mfa' in error_str or 'auth' in error_str or 'passcode' in error_str or ('incorrect username or password' in error_str) or ('too many failed' in error_str) or ('locked' in error_str) or ('connection is closed' in error_str):
