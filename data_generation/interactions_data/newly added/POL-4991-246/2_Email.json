@@ -1,0 +1,29 @@
+{
+  "content": "Ramesh Tiwari from Safe Shield Agency sent a follow-up email to customer Rohan Deshmukh with the attached verified income and address documents for his life insurance policy. Ramesh requested Rohan to confirm the documents so he can update the policy status to 'Active' in the DCoders system by the end of the day.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T11:15:22",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "cust-rd-001"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "agent-rt-002"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Document Verification",
+      "Life Insurance Policy Activation",
+      "DCoders System"
+    ],
+    "action_items": [
+      "Review the attached income and address verification PDF",
+      "Reply to the email confirming the final documents"
+    ]
+  }
+}

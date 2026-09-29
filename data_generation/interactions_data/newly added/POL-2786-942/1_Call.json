@@ -1,0 +1,30 @@
+{
+  "content": "Rohan Deshmukh contacted insurance agent Anjali Desai to discuss his auto insurance policy (AU-4521), which had expired on 15/09/2026. After learning about the standard renewal cost of \u20b912,500 and inquiring about discounts, Rohan qualified for a 5% safe driver discount, lowering the total to \u20b911,875. Rohan decided to proceed with the renewal, and Anjali agreed to send the renewal invoice via email.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-29T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "a3f9c2e1-7b4d-4a9f-9d2e-5f6b8c1d2e3f"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "d4e5f6a7-8b9c-0d1e-2f3a-4b5c6d7e8f9a"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "auto policy expiration",
+      "policy renewal",
+      "premium cost",
+      "safe driver discount"
+    ],
+    "action_items": [
+      "Anjali will send the renewal invoice via email",
+      "Rohan will complete the payment upon receiving the invoice"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "content": "Rohan Deshmukh contacted insurance agent Vikram Patel to check the status of his life insurance policy. Vikram confirmed the policy is active with recent updates of \u20b915 lakh Sum Assured and a \u20b95 lakh Accidental Death rider. Rohan requested a copy of the latest policy document, which Vikram successfully sent as a PDF. Rohan also inquired about his next premium due date, and Vikram informed him it is due on 15 October 2026. No further changes or issues were reported.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-29T10:05:12",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "b2c3d4e5-6789-01bc-def0-2345678901bc"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "policy status",
+      "policy document",
+      "premium due date",
+      "riders"
+    ],
+    "action_items": [
+      "Send reminder for premium due a week before 15 October 2026"
+    ]
+  }
+}

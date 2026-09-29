@@ -1,0 +1,30 @@
+{
+  "content": "Isha Agarwal called Ravi Menon from Secure Future Group to check on the activation status of her home policy (#HC-2026-0456). Ravi informed her that the policy was pending due to a missing proof of residence document. Isha provided the document file name (Isha_Agarwal_ResidenceProof_Sept2026.pdf) during the call, which Ravi attached to the policy, noting it will be active within 24 hours. Isha also inquired about the deductible amount before the call concluded.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T09:00:00",
+    "participants": {
+      "customer": {
+        "name": "Isha Agarwal",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "d4c3b2a1-7777-8888-9999-aaaabbbbcccc"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "home policy activation",
+      "proof of residence",
+      "policy status",
+      "deductible amount"
+    ],
+    "action_items": [
+      "Review and activate policy within 24 hours",
+      "Provide the deductible amount to the customer"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "content": "Customer Ishaan Bose calls insurance agent Sunita Agarwal to discuss renewing his Health Plus plan and upgrading to the Comprehensive Care Plan. Sunita breaks down the pricing ($425/month, reduced to $403.75 with the 5% early-renewal discount) and confirms the $10 processing fee. Ishaan successfully processes the payment for the renewed policy starting 01/10/2026. He also inquires about document requirements (signed renewal form and utility bill) and subsequently requests the addition of the Global Traveller Rider for international coverage ($25/month), for which Sunita agrees to send details and a separate payment link.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:00:00",
+    "participants": {
+      "customer": {
+        "name": "Ishaan Bose",
+        "id": "a1f3c9e2-7b4d-4e2a-9c3f-5d6b8e9f1a2b"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "d4e5f6a7-8b9c-1d2e-3f4a-5b6c7d8e9f0a"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Policy Renewal",
+      "Comprehensive Care Plan Upgrade",
+      "Early-Renewal Discount",
+      "Payment Processing",
+      "Global Traveller Rider"
+    ],
+    "action_items": [
+      "Agent to email signed renewal form and instructions for proof of address",
+      "Customer to provide signed renewal form and electricity bill",
+      "Agent to send Global Traveller Rider details and separate payment link"
+    ]
+  }
+}

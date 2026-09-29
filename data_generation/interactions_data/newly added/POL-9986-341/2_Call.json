@@ -1,0 +1,31 @@
+{
+  "content": "Rohan Deshmukh called insurance agent Sunita Agarwal to discuss his home insurance quote of \u20b918,750 per year for a \u20b930 lakh sum insured. Rohan has the property deed and electricity bill ready but is still waiting on the fire-safety certificate. Sunita agreed to proceed with the available documents and flag the certificate as pending. Rohan also inquired about the deductible, which Sunita confirmed is \u20b95,000 for fire damage and all other perils. Rohan will email the documents immediately.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "f1e2d3c4-9876-54ba-dcba-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Home insurance quote",
+      "Required documents",
+      "Policy status",
+      "Deductibles"
+    ],
+    "action_items": [
+      "Rohan to email the property deed and electricity bill",
+      "Sunita to upload documents to the portal",
+      "Rohan to provide the pending fire-safety certificate"
+    ]
+  }
+}

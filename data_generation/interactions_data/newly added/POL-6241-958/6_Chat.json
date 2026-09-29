@@ -1,0 +1,33 @@
+{
+  "content": "Kriti Mahajan chatted with insurance agent Suresh Deshmukh to request the latest policy document for a loan application, update her primary beneficiary to her husband Raj while keeping Ananya as secondary, confirm the policy end date (December 31, 2028), and obtain a summary of her coverage via PDF.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-12-10T09:15:02",
+    "participants": {
+      "customer": {
+        "name": "Kriti Mahajan",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "b2c3d4e5-6789-01bc-def0-234567890abc"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "policy document",
+      "loan application",
+      "beneficiary update",
+      "policy end date",
+      "coverage summary"
+    ],
+    "action_items": [
+      "Send latest policy document PDF",
+      "Update primary beneficiary to Raj and secondary to Ananya",
+      "Send confirmation email for beneficiary update",
+      "Send coverage summary PDF"
+    ]
+  }
+}

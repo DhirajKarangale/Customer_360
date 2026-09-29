@@ -1,0 +1,28 @@
+{
+  "content": "Tanvi Saxena inquired about the 15-day post-expiry claim window, confirming with insurance agent Sunita Agarwal that services rendered on the policy expiry date (30/09/2026) are covered if filed within 15 days, and that services from 01/10/2026 onward fall under the renewed policy. Sunita also provided a digital copy of the updated policy via chat.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T10:15:02",
+    "participants": {
+      "customer": {
+        "name": "Tanvi Saxena",
+        "id": "3f9e2b1c-4d5f-6a7b-8c9d-0e1f2a3b4c5d"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "d4c3b2a1-0e9f-8d7c-6b5a-4f3e2d1c0b9a"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "claim window",
+      "policy renewal",
+      "policy document"
+    ],
+    "action_items": [
+      "Customer to review the digital copy of the updated policy provided via link"
+    ]
+  }
+}

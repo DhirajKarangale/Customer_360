@@ -1,0 +1,30 @@
+{
+  "content": "Meera Chauhan contacted insurance agent Ravi Menon to inquire about paying the policy reinstatement fee in installments. Ravi confirmed the \u20b914,800 fee can be split into two \u20b97,400 payments over 30 days without extra charges. Meera agreed to fill out and upload the signed reinstatement form directly in the chat, which Ravi successfully received.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-10-01T10:15:30",
+    "participants": {
+      "customer": {
+        "name": "Meera Chauhan",
+        "id": "a1c9e5f0-3b7d-4f2a-9c1e-2d6b8f7a9c01"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "d4e2b6a3-8f1c-4d9e-9a3b-7c5e2f1b8d34"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "reinstatement fee",
+      "installment payment",
+      "policy reactivation",
+      "reinstatement form"
+    ],
+    "action_items": [
+      "Process the first payment transfer",
+      "Provide bank details if requested"
+    ]
+  }
+}

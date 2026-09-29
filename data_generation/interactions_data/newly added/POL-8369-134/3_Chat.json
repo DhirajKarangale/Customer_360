@@ -1,0 +1,29 @@
+{
+  "content": "Aditya Singh contacted insurance agent Vikram Patel to report a typo in his policy document's address (changing 'Bangalore' to 'Bengaluru'). Vikram corrected the error, sent the revised document, and also explained the claims process for water damage, which requires logging into the portal, uploading photos, and submitting a claim form for review within 48 hours.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T09:15:12",
+    "participants": {
+      "customer": {
+        "name": "Aditya Singh",
+        "id": "a3d9f8c2-7b1e-41a4-9c2e-5f6d8b3e9a01"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "5e2b1c4d-9f6a-48d3-8a7b-2c4e1f7d9b55"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "policy correction",
+      "address typo",
+      "claims process",
+      "water damage"
+    ],
+    "action_items": [
+      "Review the revised policy document (HC-AD-2026-001 rev2)"
+    ]
+  }
+}

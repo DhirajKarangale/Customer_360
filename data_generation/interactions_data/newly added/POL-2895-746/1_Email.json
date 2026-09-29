@@ -1,0 +1,29 @@
+{
+  "content": "Meera Chauhan emailed Anita Sharma regarding the expiration of her auto insurance policy (Policy No: DC-AUTO-2024-7890) and inquired about renewal steps to avoid a coverage lapse. Anita Sharma replied, apologizing for the inconvenience, clarifying that the policy was not set to auto-renew, and providing an attached renewal quote with options for reactivating coverage.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-01-10T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Meera Chauhan",
+        "id": "1d9f8c4a-2e7b-44a1-9f3c-6b5e2d7a9c01"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "9b3e7d5f-4c2a-48f9-9a6b-1e3d8c7f0b22"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "Auto Policy Expiration",
+      "Policy Renewal",
+      "Coverage Lapse"
+    ],
+    "action_items": [
+      "Review the attached renewal quote",
+      "Select a renewal or reactivation option and inform the agent"
+    ]
+  }
+}

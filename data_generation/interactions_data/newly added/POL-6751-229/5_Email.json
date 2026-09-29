@@ -1,0 +1,28 @@
+{
+  "content": "Rohan Deshmukh submitted the signed health policy renewal form and payment receipt for the $1,250 premium. Vikram Patel confirmed that the documents were processed and that the health policy is active effective 05/10/2026, with updated policy documents to be sent shortly.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-05-10T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "3d9e5b1a-2c4f-44a7-9f6b-8e2d7c3a5b9f"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "7f2a1c9e-5b6d-41e3-8a9c-3d4e6f7b8c1a"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Health Policy Renewal",
+      "Payment Receipt",
+      "Policy Activation"
+    ],
+    "action_items": [
+      "Send the updated policy document to the customer"
+    ]
+  }
+}

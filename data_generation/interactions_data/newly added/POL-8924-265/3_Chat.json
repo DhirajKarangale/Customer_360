@@ -1,0 +1,29 @@
+{
+  "content": "Reyansh Tiwari contacted insurance agent Anjali Desai regarding his policy renewal. He asked how to file a claim, confirmed the details of his new $2,500 deductible and $150/month premium, and inquired about tele-consultation coverage for specialists like dermatologists. Anjali confirmed the claim process, explained the premium adjustment, verified specialist coverage for tele-consultations, and provided the updated policy PDF.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-12-10T09:15:10",
+    "participants": {
+      "customer": {
+        "name": "Reyansh Tiwari",
+        "id": "9d2f7a1c-5e3b-4a9d-bc11-2f8e6d4c7b90"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "3e4b9c2d-7a1f-48d3-9e5f-1c2a3b4d5e6f"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "claims filing",
+      "policy renewal",
+      "deductible and premium",
+      "tele-consultation coverage"
+    ],
+    "action_items": [
+      "Review the updated policy PDF sent by the agent"
+    ]
+  }
+}

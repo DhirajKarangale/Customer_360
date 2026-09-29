@@ -1,0 +1,26 @@
+{
+  "content": "Vikram Singh emailed Kiara Sen to confirm the increase of her home insurance personal-property coverage limit to $150,000, which adds $12 per month to her premium and became active on September 28, 2026. The updated policy schedule was attached. Kiara replied confirming receipt and expressing satisfaction with the quick update.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Kiara Sen",
+        "id": "d3f1c9a2-7b4e-4a1f-9c8e-2b5d6f7a8c9d"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "a9b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Home Insurance Policy",
+      "Coverage Limit Increase",
+      "Premium Adjustment"
+    ],
+    "action_items": []
+  }
+}

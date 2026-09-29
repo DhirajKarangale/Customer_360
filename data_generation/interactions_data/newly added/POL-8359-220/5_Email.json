@@ -1,0 +1,30 @@
+{
+  "content": "Anjali Desai sent the renewed Home Insurance policy documents (Policy #H-4521, Plan A) to Akanksha Bhatt with an annual premium of INR 12,480 payable in monthly installments starting November 5, 2025, including a 10% bundling discount. Akanksha acknowledged receipt, confirmed the terms are acceptable, and asked for clarification on the exact debit date for the first installment and the auto-debit setup method.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-10-05T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Akanksha Bhatt",
+        "id": "1e2d3c4b-5a6f-7b8c-9d0e-1f2a3b4c5d6e"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "9b8a7c6d-5e4f-3d2c-1b0a-9e8f7d6c5b4a"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "Home Insurance Renewal",
+      "Policy #H-4521",
+      "Payment Schedule",
+      "Auto-debit setup"
+    ],
+    "action_items": [
+      "Clarify the exact debit date for the first monthly installment",
+      "Provide instructions on the preferred method for setting up auto-debit"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "content": "Customer Vedant Thakur contacted insurance agent Neha Kapoor to discuss lowering his policy deductible. After reviewing the cost options ($500 vs $750 deductible), the customer opted for a $750 deductible, which increases the annual premium by $75 to $1,275. The agent successfully updated the policy and emailed the revised quote, while also confirming that future deductible adjustments can be made before the September 2027 renewal.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-10-15T09:12:00",
+    "participants": {
+      "customer": {
+        "name": "Vedant Thakur",
+        "id": "9a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "d4e5f6a7-b8c9-0d1e-2f3a-4b5c6d7e8f9a"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "deductible change",
+      "policy premium",
+      "policy AV-45231"
+    ],
+    "action_items": [
+      "Check email for the revised quote with the $750 deductible"
+    ]
+  }
+}

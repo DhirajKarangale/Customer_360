@@ -1,0 +1,30 @@
+{
+  "content": "Customer Kiara Sen called agent Vikram Singh to inquire about her auto policy status, discovering it expired the previous day (September 28, 2026). Needing active coverage for an upcoming trip next week, the customer agreed to a annual renewal with a 10% loyalty discount for a total of $1,080. The agent confirmed payment processing and agreed to email the renewal agreement.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-29T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Kiara Sen",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "f1e2d3c4-9876-54ba-dcba-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "auto policy expiration",
+      "policy renewal",
+      "premium and discounts",
+      "payment processing"
+    ],
+    "action_items": [
+      "Process the policy renewal payment",
+      "Email the renewal agreement to the customer"
+    ]
+  }
+}

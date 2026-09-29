@@ -1,0 +1,30 @@
+{
+  "content": "Sneha Roy discussed her auto insurance renewal quote with insurance agent Anjali Desai. Sneha requested to increase her deductible to $1,000, which resulted in a new annual premium of $1,250. Anjali provided the revised quote and informed her that the policy will take effect on 01/10/2026 pending signed documents. Sneha confirmed she will e-sign and return the documents today.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T10:02:15",
+    "participants": {
+      "customer": {
+        "name": "Sneha Roy",
+        "id": "9f2b1c4a-3e5d-4f6a-9b8c-1d2e3f4a5b6c"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "d4c3b2a1-5f6e-4d8c-9b0a-1c2d3e4f5a6b"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "policy renewal",
+      "deductible adjustment",
+      "premium",
+      "effective date"
+    ],
+    "action_items": [
+      "Anjali Desai to send updated documents for e-signing",
+      "Sneha Roy to sign and return the documents today"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "content": "Karan Joshi from Safe Step Insurance emailed Aditi Mahajan to confirm the successful upgrade of her Health Plus Plus policy (HP-PLUS-PLUS-2026-00123) and the activation of the auto-debit arrangement starting October 5, 2026. The email details the policy's \u20b912 Lakhs sum insured, \u20b912,480 annual premium, unchanged \u20b95,000 deductible, and new coverage highlights, while providing the policy schedule and terms via an attached PDF.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-21T09:15:30",
+    "participants": {
+      "customer": {
+        "name": "Aditi Mahajan",
+        "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Health Plus Plus policy upgrade",
+      "Auto-debit setup",
+      "Policy documentation",
+      "Coverage details"
+    ],
+    "action_items": [
+      "Review the attached policy schedule, terms and conditions, and auto-debit mandate confirmation"
+    ]
+  }
+}

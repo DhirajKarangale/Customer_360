@@ -1,0 +1,29 @@
+{
+  "content": "The customer, Krishna Das, inquired about payment options and the due date for the first premium. The insurance agent, Vikram Singh, explained the payment methods, stated the first premium of \u20b912,500 is due by 15 October 2026, and highlighted a 5% discount for choosing auto-debit (reducing it to \u20b911,875). The agent then provided the secure payment link upon request.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T09:45:12",
+    "participants": {
+      "customer": {
+        "name": "Krishna Das",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "d7e8f9a0-7777-8888-9999-aaaabbbbcccc"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "payment options",
+      "first premium due date",
+      "auto-debit discount",
+      "payment link"
+    ],
+    "action_items": [
+      "Customer to complete the premium payment using the provided secure link."
+    ]
+  }
+}

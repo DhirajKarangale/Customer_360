@@ -1,0 +1,30 @@
+{
+  "content": "Vedant Thakur called Neha Kapoor to discuss his expired auto policy (#AV-45231). Neha explained the 30-day reinstatement process, which involves paying backdated premiums and a $15 admin fee without any penalties. They also discussed a new quote with a loyalty discount, and after adjusting the deductible to $500 to lower the annual premium to $1,130, Vedant opted to process the reinstatement immediately using the credit card on file.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T10:15:00",
+    "participants": {
+      "customer": {
+        "name": "Vedant Thakur",
+        "id": "7f9c2a1b-4e3d-4b9a-9c1e-2d5f6a7b8c9d"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "d3e5f6a7-8b9c-1d2e-3f4a-5b6c7d8e9f0a"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "policy expiration",
+      "policy reinstatement",
+      "auto policy quote",
+      "deductible adjustment"
+    ],
+    "action_items": [
+      "Process policy reinstatement using the credit card on file",
+      "Send a confirmation email to the customer"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "content": "Insurance agent Vikram Singh confirmed to customer Vivaan Gupta that life policy LC-2026-0456 has been updated to Active status and provided the official policy document via attachment. The customer confirmed receipt and expressed satisfaction with the assistance.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-26T15:30:00",
+    "participants": {
+      "customer": {
+        "name": "Vivaan Gupta",
+        "id": "9f2b6c1e-5d4a-4e8b-9a3c-1d7f0e2b6c8a"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "3c7e9a2b-1f5d-4b6c-8e9f-0a2d3c4b5e6f"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Policy Activation",
+      "Life Policy",
+      "Policy Document"
+    ],
+    "action_items": []
+  }
+}

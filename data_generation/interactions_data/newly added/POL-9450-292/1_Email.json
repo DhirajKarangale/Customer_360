@@ -1,0 +1,31 @@
+{
+  "content": "Kiara Sen contacted insurance agent Neha Kapoor regarding the upcoming expiration of her health policy (HP-453219) on September 30, 2026, expressing concern due to a scheduled surgery in early October. Neha confirmed the expiration date and provided two options: renewing the existing policy for another 12 months or switching to a new plan with enhanced benefits. Neha also attached a renewal brochure with instructions to complete the process online or via phone.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-29T09:15:23",
+    "participants": {
+      "customer": {
+        "name": "Kiara Sen",
+        "id": "1e7b9c4a-3d5f-4a2b-9f6e-8c0d1a2b3c4d"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "9f2e1d3c-4b5a-6c7d-8e9f-0a1b2c3d4e5f"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "Policy Expiration",
+      "Health Policy Renewal",
+      "Surgery Coverage",
+      "Insurance Plan Comparison"
+    ],
+    "action_items": [
+      "Review the attached renewal brochure",
+      "Choose between renewing the existing policy or switching to a new plan",
+      "Complete the renewal process online or via phone before the end of the month"
+    ]
+  }
+}

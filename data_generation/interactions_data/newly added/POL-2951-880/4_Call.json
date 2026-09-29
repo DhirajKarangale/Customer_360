@@ -1,0 +1,31 @@
+{
+  "content": "Customer Anvi Desai called insurance agent Ravi Menon to confirm the cancellation of her health policy (HP-DC-2024-7890) effective September 30, 2026. They discussed the refund timeline of 10-15 business days for the prepaid premium, confirmed that no additional signatures were required, and discussed the delivery of the final settlement statement via email and SMS.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Anvi Desai",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "d4c3b2a1-8765-09ba-fedc-0987654321ba"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "policy cancellation",
+      "refund",
+      "health policy",
+      "final settlement statement"
+    ],
+    "action_items": [
+      "Process refund of prepaid premium within 10-15 business days",
+      "Send final settlement statement by email today",
+      "Send a short summary SMS to the customer"
+    ]
+  }
+}

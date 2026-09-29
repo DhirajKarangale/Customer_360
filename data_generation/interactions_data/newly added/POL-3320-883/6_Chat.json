@@ -1,0 +1,31 @@
+{
+  "content": "Kriti Mahajan reached out to Karan Joshi to request the payment link and confirm the coverage limits for collision ($25,000) and comprehensive ($20,000). Karan confirmed the limits and stated that no additional paperwork is required other than reviewing, electronically signing the quote, and making the payment. Karan then provided the secure payment link.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Kriti Mahajan",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "e7f8g9h0-7777-8888-9999-aaaaabbbbbcc"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "payment link",
+      "collision coverage limit",
+      "comprehensive coverage limit",
+      "insurance quote"
+    ],
+    "action_items": [
+      "Review the quote",
+      "Sign electronically",
+      "Complete the payment using the provided link"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "content": "Meera Chauhan contacted insurance agent Ravi Menon because her travel policy (TRV-2024-0789) had expired and she has an upcoming trip on October 12th, 2026. Ravi explained that the old policy cannot be renewed retroactively, but they can issue a new travel policy starting on October 10th, 2026, to cover the trip, while carrying over her previous claims history. Ravi agreed to email the application form for electronic signature and payment.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Meera Chauhan",
+        "id": "9f3b2c1e-7a4d-4e9b-8c2a-5d6f9b0a1c2d"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "d2e7a9f4-3c5b-41f2-9e8c-0b7a6d4e9f1a"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "travel policy expiration",
+      "new policy issuance",
+      "policy effective date",
+      "claims history"
+    ],
+    "action_items": [
+      "Ravi to email the renewal/application form to Meera",
+      "Meera to sign the form electronically and complete payment",
+      "Ravi to activate the new policy upon receiving the signed form and payment"
+    ]
+  }
+}

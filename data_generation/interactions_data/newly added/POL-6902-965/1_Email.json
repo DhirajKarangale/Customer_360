@@ -1,0 +1,28 @@
+{
+  "content": "Customer Vedant Thakur contacted agent Neha Kapoor expressing frustration that his auto policy (Policy #AV-45231) expired early on September 15, 2026, due to lack of automatic renewal. He requested options for reinstatement for an upcoming trip. The agent explained the cause of expiration and provided a renewal quote outlining two options: retroactive reinstatement for up to 30 days subject to underwriting approval, or a new policy effective immediately with a loyalty discount.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T09:15:22",
+    "participants": {
+      "customer": {
+        "name": "Vedant Thakur",
+        "id": "d9c4f1a2-7e3b-4a6d-8f9c-2b5e7d9a0c3e"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "a6b2e5f9-3c4d-4f7a-9b1e-8d2c5f6a7b9c"
+        }
+      ]
+    },
+    "user_mood": "frustrated",
+    "topics": [
+      "Auto Policy Expiration",
+      "Policy Reinstatement",
+      "Renewal Quote"
+    ],
+    "action_items": [
+      "Customer to review the attached renewal quote and choose between retroactive reinstatement or issuing a new policy."
+    ]
+  }
+}

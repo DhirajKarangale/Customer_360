@@ -1,0 +1,29 @@
+{
+  "content": "Sneha Roy contacted insurance agent Anjali Desai to request a resend of her policy cancellation confirmation PDF, which was promptly provided via a download link. Sneha also inquired about any outstanding balances and was informed that her account is fully settled with no pending dues. Finally, she asked about reusing vehicle information for a future policy, and the agent confirmed that the same details can be used for a fresh quote later.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-29T09:12:03",
+    "participants": {
+      "customer": {
+        "name": "Sneha Roy",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "d4c3b2a1-8765-09ba-fedc-0987654321ba"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "policy cancellation",
+      "cancellation document request",
+      "outstanding balance",
+      "future policy vehicle information"
+    ],
+    "action_items": [
+      "Customer to download the cancellation letter PDF via the provided link"
+    ]
+  }
+}

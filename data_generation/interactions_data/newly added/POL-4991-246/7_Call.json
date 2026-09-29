@@ -1,0 +1,27 @@
+{
+  "content": "Ramesh Tiwari from Safe Shield Agency calls Rohan Deshmukh to confirm that everything is resolved with his DCoders life insurance policy after receiving the welcome kit and bond. Rohan confirms he has printed the receipt and inquires if the policy status is fully active. Ramesh confirms that the policy status is active following yesterday's nominee details update. Rohan expresses relief and thanks Ramesh for his assistance.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-02-10T15:10:00",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "c94812aa-789a-4bc1-b123-918237410091"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "4b8912cc-1234-4ef8-89ab-781923049812"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Life insurance policy status",
+      "Welcome kit and bond",
+      "Printed receipt",
+      "Nominee details"
+    ],
+    "action_items": []
+  }
+}

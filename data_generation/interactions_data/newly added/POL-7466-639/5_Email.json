@@ -1,0 +1,31 @@
+{
+  "content": "Ravi Menon confirmed to Reyansh Tiwari that his auto policy cancellation has been processed, including a prorated refund of $480.00 expected by 05/10/2026, and attached the official receipt. Reyansh acknowledged the confirmation, thanked Ravi, and requested a preliminary quote and loyalty discount information for a potential future auto policy.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Reyansh Tiwari",
+        "id": "1e3b9a7c-4d5f-4c2a-9e8b-6f7d2a1c3b5e"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "9f2d6c3b-8a1e-4b7f-9c2d-5e6a7b8c9d0e"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Auto policy cancellation",
+      "Refund confirmation",
+      "Refund receipt",
+      "Future policy quote",
+      "Loyalty discounts"
+    ],
+    "action_items": [
+      "Prepare a preliminary quote for a new auto policy when requested",
+      "Provide information on eligible loyalty discounts"
+    ]
+  }
+}

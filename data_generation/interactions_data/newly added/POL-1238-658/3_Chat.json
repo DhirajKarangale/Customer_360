@@ -1,0 +1,31 @@
+{
+  "content": "Saanvi Pillai contacted insurance agent Anita Sharma to request the critical-illness rider PDF brochure, which Anita promptly resent. Saanvi inquired about the monthly premium increase from $45 to $48, which Anita clarified included additional coverage benefits. Saanvi decided to proceed with adding the rider and requested to update her beneficiary to her sister, Maya Patel (DOB: 12/03/1992). Anita confirmed the requests and asked for a confirmation reply, which Saanvi provided. Anita also confirmed that the next premium due date remains November 15, 2026, and promised to send a final confirmation email.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T10:15:30",
+    "participants": {
+      "customer": {
+        "name": "Saanvi Pillai",
+        "id": "9f2c1e4b-8d5a-4b7c-a9e3-6f2d3c4b5a6d"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "critical-illness rider",
+      "premium amount",
+      "beneficiary update",
+      "next due date"
+    ],
+    "action_items": [
+      "Process the rider addition",
+      "Update the beneficiary to Maya Patel",
+      "Send a confirmation email to the customer"
+    ]
+  }
+}

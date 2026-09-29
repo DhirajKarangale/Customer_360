@@ -1,0 +1,30 @@
+{
+  "content": "Krishna Das confirmed the setup of the auto-debit option for policy HC-2026-0459 with insurance agent Vikram Singh. Vikram confirmed the \u20b911,875 deduction date of 15 October 2026, provided the payment receipt, and informed Krishna that reminders will be sent via email and SMS three days prior on 12 October.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T10:15:20",
+    "participants": {
+      "customer": {
+        "name": "Krishna Das",
+        "id": "e7c9f0a1-23b4-4d5e-9f6a-8b7c6d5e4f3a"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "auto-debit setup",
+      "policy HC-2026-0459",
+      "payment receipt",
+      "deduction reminder"
+    ],
+    "action_items": [
+      "Monitor for auto-debit deduction on 15 October 2026",
+      "Expect reminder email and SMS on 12 October 2026"
+    ]
+  }
+}

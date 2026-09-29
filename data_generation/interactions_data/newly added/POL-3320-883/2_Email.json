@@ -1,0 +1,31 @@
+{
+  "content": "Kriti Mahajan inquired about renewing her expired auto policy, asking for the official reinstatement form, details on the $1,250 reinstatement fee, and confirmation of the 30-day reinstatement window deadline. Karan Joshi responded by sending the requested form, confirming the policy expired on 15 September 2026, and stating the deadline to reinstate with back-dated coverage is 15 October 2026.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-26T09:15:22",
+    "participants": {
+      "customer": {
+        "name": "Kriti Mahajan",
+        "id": "9f2d4b1a-6c7e-4a9f-8b3d-1e2f3c4d5e6f"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "2b7c9d3e-5f1a-4c8b-9e2d-3a4b5c6d7e8f"
+        }
+      ]
+    },
+    "user_mood": "undecided",
+    "topics": [
+      "Auto Policy Expiration",
+      "Reinstatement Options",
+      "Reinstatement Fee",
+      "Reinstatement Deadline"
+    ],
+    "action_items": [
+      "Review reinstatement form and details",
+      "Sign and return the reinstatement form if proceeding",
+      "Process the $1,250 payment upon form submission"
+    ]
+  }
+}

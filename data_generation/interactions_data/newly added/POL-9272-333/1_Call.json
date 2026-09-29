@@ -1,0 +1,28 @@
+{
+  "content": "Sai Kumar called to inquire about his home insurance policy (Policy #HF-2023-0456) after noticing an expiration notice. The agent, Ravi Menon, informed him that the policy had expired on 15/08/2026. Sai expressed concern and decided to renew the policy immediately over the phone using his credit card for the $1,250 annual premium. Ravi processed the renewal and confirmed that an email confirmation would be sent.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Sai Kumar",
+        "id": "a3f9c2e1-5b6d-4f8a-9c12-3d7e9b0a1f2c"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "d7e4b9f3-8c1a-4e2d-9b6f-5a0c3d7e8b9f"
+        }
+      ]
+    },
+    "user_mood": "worried",
+    "topics": [
+      "home insurance policy expiration",
+      "policy renewal",
+      "payment methods"
+    ],
+    "action_items": [
+      "Send renewal quote and email confirmation to the customer"
+    ]
+  }
+}

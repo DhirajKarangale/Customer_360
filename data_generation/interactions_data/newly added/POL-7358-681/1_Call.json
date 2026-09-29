@@ -1,0 +1,30 @@
+{
+  "content": "Customer Rohan Deshmukh called insurance agent Karan Joshi to cancel his health insurance policy (HP-2024-5678) because his new employer provides coverage. The agent initiated the cancellation, confirmed it will take 24 hours to reflect, and explained that a prorated refund will be issued to the customer's bank account within 5 to 7 business days. A confirmation email will also be sent.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T09:10:00",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "3e9f1a2b-5c4d-6e7f-8a9b-0c1d2e3f4a5b"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "policy cancellation",
+      "health insurance",
+      "prorated refund"
+    ],
+    "action_items": [
+      "Process policy cancellation within 24 hours",
+      "Calculate and issue prorated refund within 5-7 business days",
+      "Send a confirmation email to the customer"
+    ]
+  }
+}

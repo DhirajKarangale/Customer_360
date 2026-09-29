@@ -1,0 +1,29 @@
+{
+  "content": "Reyansh Tiwari called insurance agent Vikram Patel to check the status of his health policy (#HC-2023-9876). Vikram informed him that the policy expired on 15/09/2026. Vikram explained that while new claims cannot be filed during this lapsed state, the policy can be renewed within a 30-day window with a small lapse fee and a new term starting 01/10/2026. The new annual premium is $1,250 (up from $1,100). Reyansh requested the renewal quote to be sent via email before making a final decision.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Reyansh Tiwari",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "d4e5f6g7-7777-8888-9999-aaaaBBBBCCCC"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "health policy expiration",
+      "policy renewal",
+      "premium increase",
+      "lapse fee"
+    ],
+    "action_items": [
+      "Send renewal quote via email to the customer"
+    ]
+  }
+}

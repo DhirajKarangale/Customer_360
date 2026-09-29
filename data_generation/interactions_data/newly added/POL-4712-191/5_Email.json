@@ -1,0 +1,31 @@
+{
+  "content": "Ravi Menon contacted Meera Chauhan regarding the reinstatement of her cancelled health policy (HP-DC-2024-5678), detailing a total due of \u20b914,800 which can be split into two installments of \u20b97,400. Ravi provided the reinstatement form and payment link. Meera confirmed she will sign and upload the form and pay the first installment of \u20b97,400 today, requesting confirmation upon processing.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-01-10T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Meera Chauhan",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "d4e5f6g7-7777-8888-9999-aaaaabbbbbcc"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "health policy reinstatement",
+      "premium payment",
+      "installment options",
+      "reinstatement form"
+    ],
+    "action_items": [
+      "Sign and upload the reinstatement form by the evening",
+      "Pay the first installment of \u20b97,400",
+      "Agent to confirm payment receipt and process policy reinstatement"
+    ]
+  }
+}

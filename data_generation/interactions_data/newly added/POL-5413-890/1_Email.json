@@ -1,0 +1,30 @@
+{
+  "content": "Akanksha Bhatt reached out to insurance agent Karan Joshi regarding her auto policy (Policy No: AP-123456) which expired today. She requested guidance on options to reinstate coverage or purchase a new policy, along with information on next steps and potential penalties.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-01-10T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Akanksha Bhatt",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "d4e5f6a7-89ab-cdef-0123-456789abcdef"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "Auto Policy Expiration",
+      "Policy Reinstatement",
+      "New Policy Purchase",
+      "Penalties"
+    ],
+    "action_items": [
+      "Guide the customer on options for policy reinstatement or purchasing a new policy",
+      "Inform the customer about next steps and potential penalties"
+    ]
+  }
+}

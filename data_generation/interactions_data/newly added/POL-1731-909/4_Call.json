@@ -1,0 +1,31 @@
+{
+  "content": "Rohan Deshmukh called insurance agent Vikram Patel regarding a notification about potential policy cancellation. Vikram confirmed it was a system glitch and that Rohan's life policy remains active. They verified the sum assured increase to \u20b915 lakh with a \u20b95 lakh accidental-death rider, updated Rohan's address to Sector 12, Pune, and confirmed that the revised policy document has been emailed. Vikram also reminded Rohan that the next premium is due on October 15, 2026.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-29T14:05:12",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "f1e2d3c4-5678-90ab-cdef-0987654321ba"
+        }
+      ]
+    },
+    "user_mood": "relieved",
+    "topics": [
+      "policy cancellation notification",
+      "policy status",
+      "sum assured update",
+      "address change",
+      "premium due date"
+    ],
+    "action_items": [
+      "Mark premium due date of 15 Oct 2026 in calendar",
+      "Review renewal notice a month prior to renewal"
+    ]
+  }
+}

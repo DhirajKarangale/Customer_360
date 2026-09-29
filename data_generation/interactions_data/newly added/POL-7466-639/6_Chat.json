@@ -1,0 +1,30 @@
+{
+  "content": "The customer confirmed their auto policy has expired and requested a new car insurance quote for a 2027 Honda Accord (ZIP 94107). The agent applied a 5% loyalty discount and agreed to email the quote by the end of the day. Additionally, the customer inquired about a $480 refund, which the agent confirmed was posted on 05/10/2026.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T14:02:10",
+    "participants": {
+      "customer": {
+        "name": "Reyansh Tiwari",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "d4c3b2a1-8765-09ba-fedc-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "policy expiration",
+      "new car insurance quote",
+      "loyalty discount",
+      "refund status"
+    ],
+    "action_items": [
+      "Draft and email a new insurance quote for a 2027 Honda Accord with a 5% loyalty discount by EOD",
+      "Investigate refund status if the customer still cannot find the $480 on their statement"
+    ]
+  }
+}

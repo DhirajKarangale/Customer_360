@@ -1,0 +1,32 @@
+{
+  "content": "Reyansh Tiwari called Vikram Patel from Omni Insurance Group to inquire about his expired health policy (which lapsed on September 15, 2026). Since the 30-day renewal window closed on October 15, 2026, a new policy with underwriting and a $1,350 annual premium is required. Vikram offered a 3-month short-term emergency coverage rider for $120. Vikram agreed to email the short-term rider quote and exact policy expiration details (September 15, 2026 at 11:59 PM) to the customer.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-12-10T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Reyansh Tiwari",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "e5f6g7h8-1234-56ij-klmn-0987654321cd"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "policy expiration",
+      "claims processing",
+      "policy renewal",
+      "short-term health rider",
+      "underwriting"
+    ],
+    "action_items": [
+      "Vikram to email the short-term rider quote to the customer",
+      "Vikram to email the exact policy expiration confirmation to the customer",
+      "Reyansh to review the information and follow up"
+    ]
+  }
+}

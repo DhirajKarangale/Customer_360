@@ -1,0 +1,30 @@
+{
+  "content": "Samar Ghosh contacted the insurance agent Sunita Agarwal after receiving his policy document to inquire about the claims process and the required paperwork for newly upgraded kitchen cabinets. Sunita explained that standard claims require a claim form and photos of the damage, while the cabinet upgrade requires an invoice and a contractor statement. She also provided a claims guide link, advised that invoices can be submitted with the claim, and reminded Samar to report any incidents within 48 hours.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-29T14:02:10",
+    "participants": {
+      "customer": {
+        "name": "Samar Ghosh",
+        "id": "9f3b2a1c-7e44-4d9a-9c3f-1b2e5d6f8a90"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "d4c5e6f7-8a9b-4c0d-9e1f-2b3c4d5e6f7a"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "claims process",
+      "home insurance",
+      "kitchen cabinet upgrade paperwork",
+      "policy document"
+    ],
+    "action_items": [
+      "Keep claim form, photos of damage, invoice, and contractor statement ready for future claims",
+      "Report any incident within 48 hours"
+    ]
+  }
+}

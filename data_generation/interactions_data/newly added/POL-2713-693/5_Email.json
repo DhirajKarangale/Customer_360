@@ -1,0 +1,29 @@
+{
+  "content": "Karan Joshi sent the finalized Health Plus Plus policy document and updated premium invoice to Aditi Mahajan, detailing the new annual premium, coverage limits, and benefits effective 05/10/2026. Aditi confirmed receipt of the documents and expressed her desire to proceed with the auto-debit option, requesting the next steps to set it up.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-12T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Aditi Mahajan",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "e5f6g7h8-7777-8888-9999-0000aaaabbbb"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Health Plus Plus upgrade",
+      "policy document",
+      "premium invoice",
+      "auto-debit setup"
+    ],
+    "action_items": [
+      "Provide next steps to set up the auto-debit arrangement for Aditi Mahajan"
+    ]
+  }
+}

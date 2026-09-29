@@ -1,0 +1,33 @@
+{
+  "content": "Tanvi Saxena called insurance agent Sunita Agarwal to discuss her upcoming health policy expiration on 30/09/2027. She confirmed the 15-day post-expiry claim window ending on 15/10/2027, expressed her intention not to renew the policy this year due to changing plans, and inquired about the non-renewal process. Sunita explained that the policy will lapse automatically and confirmed she will send a final closure statement after the claim window. Finally, Tanvi requested and was promised an updated policy PDF via email.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2027-08-05T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Tanvi Saxena",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "d4e5f6a7-89ab-0cde-f123-456789abcdef"
+        }
+      ]
+    },
+    "user_mood": "hesitant",
+    "topics": [
+      "policy expiration",
+      "claim window",
+      "policy non-renewal",
+      "policy closure statement",
+      "updated policy PDF"
+    ],
+    "action_items": [
+      "Allow policy to automatically expire on 30/09/2027",
+      "Keep claim window open until 15/10/2027",
+      "Send final policy closure statement and pending claims summary after the claim window",
+      "Resend the updated policy PDF via email to the customer"
+    ]
+  }
+}

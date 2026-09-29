@@ -1,0 +1,31 @@
+{
+  "content": "Aditi Mahajan inquired about upgrading her health insurance to the Health Plus Plus plan with agent Karan Joshi. Karan provided details on increased coverage limits (in-patient up to $300,000, out-patient up to $40,000), premium changes (an increase of $45/month to $465), and alternative therapy coverage ($2,000/year). Aditi decided to proceed with the upgrade and confirmed the deadline to submit the signed renewal form is 04/10/2026 to prevent policy lapse.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-29T09:15:02",
+    "participants": {
+      "customer": {
+        "name": "Aditi Mahajan",
+        "id": "5d3f9a2b-1c4e-4b9a-8f2d-3e6c7a9b0c11"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "a7b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "policy upgrade",
+      "coverage limits",
+      "premium changes",
+      "alternative therapies",
+      "renewal process"
+    ],
+    "action_items": [
+      "Sign and return the renewal form by 04/10/2026",
+      "Process the policy upgrade before 05/10/2026"
+    ]
+  }
+}

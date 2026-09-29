@@ -1,0 +1,30 @@
+{
+  "content": "Customer Diya Menon called insurance agent Suresh Deshmukh regarding a policy cancellation notice. The customer was confused about her payment status, but the agent clarified there was a missed $150 premium for last month and a missing signed rider form. Diya paid the $150 premium over the phone to reinstate the policy and agreed to sign and return the PDF copy of the rider form emailed by the agent.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:10:00",
+    "participants": {
+      "customer": {
+        "name": "Diya Menon",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "f9e8d7c6-5432-10fe-ba98-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "confused",
+    "topics": [
+      "policy cancellation",
+      "missed premium payment",
+      "rider form",
+      "policy reinstatement"
+    ],
+    "action_items": [
+      "Agent to email PDF copy of the rider form to the customer",
+      "Customer to sign and email back the rider form today"
+    ]
+  }
+}

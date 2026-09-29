@@ -1,0 +1,26 @@
+{
+  "content": "Customer Dev Chatterjee checked on the active status of his HomeShield policy, confirming that the new policy is live and the old one expires on 30/09/2026. The agent Neha Kapoor provided a PDF summary of the coverage and confirmed that a renewal reminder will be sent 30 days prior to the next renewal date.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T09:15:12",
+    "participants": {
+      "customer": {
+        "name": "Dev Chatterjee",
+        "id": "5d2e9c3a-1f4b-4d8e-9a2b-3c6f7d8e9a0b"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "a7b3c9d2-4e5f-6a7b-8c9d-0e1f2a3b4c5d"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "HomeShield policy status",
+      "policy coverage summary",
+      "policy renewal reminder"
+    ],
+    "action_items": []
+  }
+}

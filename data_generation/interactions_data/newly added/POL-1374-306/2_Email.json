@@ -1,0 +1,29 @@
+{
+  "content": "Rahul Jain submitted required documents (property tax receipt, utility bill, and kitchen renovation details) for home insurance activation. Sunita Agarwal confirmed receipt and stated that Policy No: HC-2026-0456 will be activated within 24-48 hours.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Rahul Jain",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Home Insurance Policy Activation",
+      "Document Submission",
+      "Kitchen Renovation"
+    ],
+    "action_items": [
+      "Activate home insurance policy within 24-48 hours",
+      "Send confirmation email to customer once status changes to active"
+    ]
+  }
+}

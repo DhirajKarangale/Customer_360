@@ -1,0 +1,30 @@
+{
+  "content": "Rohan Deshmukh contacted Karan Joshi at Safe Step Insurance to inquire about a missing refund of $123.45 for a cancelled health policy, which was processed on September 24 under reference REF-2026-HP5678-001 but had not yet appeared in the customer's bank account after two weeks. Karan verified that the transaction was completed on the company's end and opened a bank trace request, issuing ticket number TCK-2026-00987, with an expected update within 24 to 48 hours.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T10:15:00",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "5f3a9c2e-1b4d-4f8a-9c3e-2d7b6a9e5c01"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "a8d2f6b4-7c9e-41d3-8f5a-3e2c1b0d9f44"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "health policy refund",
+      "delayed bank transfer",
+      "transaction trace"
+    ],
+    "action_items": [
+      "Agent to email reference and ticket number TCK-2026-00987 to the customer",
+      "Bank to respond to the trace query within 24-48 hours",
+      "Customer to follow up if no update is received by tomorrow"
+    ]
+  }
+}

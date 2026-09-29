@@ -1,0 +1,29 @@
+{
+  "content": "Akanksha Bhatt called Karan Joshi to complete her policy reinstatement payment after resolving a browser cache issue. The payment of $155.25 (including a $2.50 processing fee) was successfully processed with confirmation number REIN-20260928-001, reactivating policy AP-123456. Additionally, Akanksha requested to add a roadside assistance rider for $12 per month, which Karan successfully attached to her policy.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Akanksha Bhatt",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "e5f6g7h8-1234-56ij-klmn-0987654321cd"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "policy reinstatement",
+      "payment processing",
+      "roadside assistance rider"
+    ],
+    "action_items": [
+      "Add roadside assistance rider to policy AP-123456 for an extra $12 per month",
+      "Reflect updated premium on the customer's next bill"
+    ]
+  }
+}

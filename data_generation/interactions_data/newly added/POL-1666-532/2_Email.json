@@ -1,0 +1,29 @@
+{
+  "content": "Customer Dev Chatterjee requested written confirmation regarding the expiration of his current travel policy on 30/09/2026 and inquired about purchasing a new policy for next year with existing customer discounts. Insurance agent Anita Sharma confirmed the policy expiration, provided a PDF summary of the status, and offered a 5% loyalty discount for a new policy starting 01/10/2027, asking for specific travel dates or a quote confirmation.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-10-02T09:15:30",
+    "participants": {
+      "customer": {
+        "name": "Dev Chatterjee",
+        "id": "9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Travel Policy Expiry",
+      "Policy Renewal",
+      "Loyalty Discount"
+    ],
+    "action_items": [
+      "Customer to provide specific travel dates or request a quote for the new policy",
+      "Agent to prepare a quote if requested"
+    ]
+  }
+}

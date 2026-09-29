@@ -1,0 +1,30 @@
+{
+  "content": "Kriti Mahajan contacted insurance agent Karan Joshi to ask about reinstating her auto insurance policy past the October 15th deadline. Karan explained that automatic reinstatement is not possible after the 30-day window closes and that a new application and policy would be required. Understanding this, Kriti requested a new quote for an auto policy, which Karan agreed to email along with the application form.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-10-20T09:12:30",
+    "participants": {
+      "customer": {
+        "name": "Kriti Mahajan",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "d4e5f6g7-7777-8888-9999-aaaabbbbcccc"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "policy reinstatement",
+      "deadline extension",
+      "new auto insurance policy quote",
+      "application form"
+    ],
+    "action_items": [
+      "Send a new auto policy quote to the customer via email",
+      "Send the new application form to the customer via email"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "content": "Customer Diya Menon informed insurance agent Karan Joshi that she has decided not to renew her home policy (HP-2024-5678) and wants it to expire on October 15, 2026. The agent confirmed the expiration details and alternative arrangements, agreed to update the system status to 'Expired', and promised to send a confirmation email along with a final policy statement for her records.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-10-12T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Diya Menon",
+        "id": "5d9f3c2a-7b1e-4f9a-8c3e-2b6d9e5f1a4b"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "a3f8e1d4-9c2b-45d6-8f7a-0e3b6c9d2f1e"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "policy non-renewal",
+      "policy expiration",
+      "final statement"
+    ],
+    "action_items": [
+      "Mark policy HP-2024-5678 as 'Expired' in the system",
+      "Send confirmation email to the customer",
+      "Attach final policy statement and expiration notice"
+    ]
+  }
+}

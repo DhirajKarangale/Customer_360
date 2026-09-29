@@ -1,0 +1,29 @@
+{
+  "content": "Diya Menon inquired about renewing her home insurance policy (HP-2024-5678) expiring on October 15, 2026, and asked about the premium difference for upgrading to 30 Lakhs coverage. Initially considering a renewal for the existing 25 Lakhs coverage at \u20b912,500, she ultimately decided to let the policy lapse on October 15 as she is moving out of the house. The agent, Karan Joshi, confirmed he would update the system to let the policy expire.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-10-06T10:15:12",
+    "participants": {
+      "customer": {
+        "name": "Diya Menon",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "b2c3d4e5-7777-8888-9999-aaaabbbbcccc"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "home policy renewal",
+      "policy expiration",
+      "coverage amount",
+      "premium details"
+    ],
+    "action_items": [
+      "Update the system to let the policy lapse on 15 Oct 2026"
+    ]
+  }
+}

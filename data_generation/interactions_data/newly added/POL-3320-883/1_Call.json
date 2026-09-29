@@ -1,0 +1,28 @@
+{
+  "content": "Kriti Mahajan called insurance agent Karan Joshi to inquire about her Honda Civic auto policy, discovering that it had expired on September 15, 2026. Karan explained the 30-day grace period and quoted a reinstatement cost of $1,250 for the next 12 months. Kriti felt the price was too high since she might sell her car soon and decided to hold off on renewing for now. Karan agreed to send the details via email.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Kriti Mahajan",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "d4e5f6g7-7777-8888-9999-aaaabbbbcccc"
+        }
+      ]
+    },
+    "user_mood": "hesitant",
+    "topics": [
+      "auto policy expiration",
+      "policy reinstatement",
+      "policy renewal options"
+    ],
+    "action_items": [
+      "Karan Joshi will send an email with policy reinstatement details to Kriti Mahajan."
+    ]
+  }
+}

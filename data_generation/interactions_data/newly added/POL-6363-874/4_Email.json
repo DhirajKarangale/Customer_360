@@ -1,0 +1,31 @@
+{
+  "content": "Meera Chauhan expresses her desire to proceed with a new travel insurance policy (TRV\u20112024\u20110789) for her October 2026 trip and requests the renewal form link and accepted payment methods. Ravi Menon responds by providing the secure renewal link, lists the required documents (passport copy and itinerary), details the $145.00 premium payment options (credit card, bank transfer, PayPal), and attaches the policy summary.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-10-15T09:12:45",
+    "participants": {
+      "customer": {
+        "name": "Meera Chauhan",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "d4c3b2a1-8765-09ba-fedc-0987654321ba"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Travel Policy Renewal",
+      "Policy TRV-2024-0789",
+      "Payment Methods",
+      "Required Documents"
+    ],
+    "action_items": [
+      "Complete the renewal form via the secure link",
+      "Upload passport copy and itinerary",
+      "Pay the $145.00 premium using credit card, bank transfer, or PayPal"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "content": "Samar Ghosh contacted insurance agent Sunita Agarwal to verify the upload of a kitchen cabinet receipt. Sunita informed him that the 6.2 MB file exceeds the 5 MB limit and recommended using compression tools like Smallpdf. Samar also inquired about his upcoming policy premium ($1,250 due on 15 Oct 2026) and asked about the claim submission process, for which Sunita provided a guide link via the portal.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T10:02:15",
+    "participants": {
+      "customer": {
+        "name": "Samar Ghosh",
+        "id": "9f2e1d4b-8c33-4a7e-b5f2-1a9c6d3e7b5f"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "d4c7a9e2-3b1f-4d8c-9a6e-2f5b8c0d1e3a"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "document upload",
+      "file size limit",
+      "policy premium payment",
+      "claims process"
+    ],
+    "action_items": [
+      "Compress the kitchen cabinet receipt file to under 5 MB and re-upload",
+      "Pay policy premium of $1,250 by 15 Oct 2026",
+      "Review the claims process guide PDF"
+    ]
+  }
+}

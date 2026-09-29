@@ -1,0 +1,26 @@
+{
+  "content": "Anjali Desai from First Guard Brokers emails Sneha Roy to confirm the successful reinstatement of her auto insurance policy (AG-2026-078) effective September 12, 2026, for her Toyota Corolla, following the receipt of her annual premium payment. Sneha replies to confirm she has reviewed the documents and everything is correct.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-12T10:15:30",
+    "participants": {
+      "customer": {
+        "name": "Sneha Roy",
+        "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Auto Policy Reinstatement",
+      "Policy Document",
+      "Payment Confirmation"
+    ],
+    "action_items": []
+  }
+}

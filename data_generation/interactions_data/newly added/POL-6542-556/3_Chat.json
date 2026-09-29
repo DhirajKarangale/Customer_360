@@ -1,0 +1,30 @@
+{
+  "content": "Akanksha Bhatt reached out to insurance agent Suresh Deshmukh with questions about her pre-authorization form and co-pay details. Suresh clarified that the \u20b9500 co-pay applies per OPD visit and explained the deductible and coinsurance terms for the MRI. Akanksha confirmed she would upload the completed pre-authorization form directly in the chat.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T10:15:30",
+    "participants": {
+      "customer": {
+        "name": "Akanksha Bhatt",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "d4c3b2a1-8765-09ba-fedc-0987654321ba"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "pre-authorization form",
+      "OPD co-pay",
+      "deductible",
+      "MRI coverage",
+      "document submission"
+    ],
+    "action_items": [
+      "Upload the completed pre-authorization form PDF to the chat"
+    ]
+  }
+}

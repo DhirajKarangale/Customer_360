@@ -1,0 +1,26 @@
+{
+  "content": "Vikram Patel confirms to customer Sneha Roy that her health policy (HP-4478) has been successfully auto-renewed for the term 1 October 2026 to 30 September 2027 with a monthly premium of $199.50. Sneha acknowledges and approves the renewal details with no further action required.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-13T09:15:30",
+    "participants": {
+      "customer": {
+        "name": "Sneha Roy",
+        "id": "9f8e7d6c-1a2b-3c4d-5e6f-7a8b9c0d1e2f"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "health policy renewal",
+      "policy premium",
+      "policy coverage"
+    ],
+    "action_items": []
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "content": "Anita Sharma from Trust Wealth Advisors calls customer Anvi Desai to discuss health policy renewal. Anvi inquires about specialist-visit coverage and pre-authorization requirements (which apply unless it's an emergency or a direct primary doctor referral, with a 24-48 hour turnaround). Anita explains the renewal deadline of 15 October 2026 for retroactive activation to 1 October 2026, and the submission methods (e-sign and email or fax). Anvi confirms she will e-sign and email the renewal form right after the call.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Anvi Desai",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "f1e2d3c4-8765-43ba-9cde-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "health policy renewal",
+      "specialist-visit coverage",
+      "pre-authorization",
+      "renewal deadline"
+    ],
+    "action_items": [
+      "Customer to e-sign and email the renewal form",
+      "Agent to update the system and send confirmation email upon receiving the signed form"
+    ]
+  }
+}

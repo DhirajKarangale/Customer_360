@@ -1,0 +1,29 @@
+{
+  "content": "Vivaan Gupta inquires about adding a primary and secondary beneficiary to his recently activated life insurance policy (LC-2026-0456) and asks for the next premium due date. Vikram Singh provides the Beneficiary Nomination Form for completion, confirms the next premium of $1,200 is due on 15/11/2026, and reminds him of the auto-pay option.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-03-10T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Vivaan Gupta",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "d4e5f6a7-89ab-cdef-0123-456789abcdef"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Beneficiary Details",
+      "Policy Activation",
+      "Premium Due Date"
+    ],
+    "action_items": [
+      "Fill out and return the signed Beneficiary Nomination Form",
+      "Make the next premium payment of $1,200 by 15/11/2026"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "content": "Vivaan Gupta contacts insurance agent Vikram Singh to confirm beneficiary updates, which have been successfully processed with the sister as primary and parents as secondary, and the updated policy document is provided. Vivaan also confirms the next premium due date of November 15, 2026, and requests assistance with setting up auto-pay, for which Vikram provides a secure setup link.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-10-02T09:15:12",
+    "participants": {
+      "customer": {
+        "name": "Vivaan Gupta",
+        "id": "5d2f9a3c-8b44-4e2a-9c6f-3d7e9a1b2c4d"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "beneficiary changes",
+      "policy document",
+      "premium due date",
+      "auto-pay setup"
+    ],
+    "action_items": [
+      "Customer to complete auto-pay setup using the provided secure link"
+    ]
+  }
+}

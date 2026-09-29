@@ -1,0 +1,29 @@
+{
+  "content": "Vikram Patel sent a health policy renewal package (Policy No: HP-2026-0456) to customer Reyansh Tiwari with an annual premium of $1,350.00 and an optional short-term rider costing $120.00 for an extra three months, noting the previous policy lapsed on September 15, 2026. Reyansh Tiwari accepted the terms and asked for the preferred payment method to proceed with activation.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-21T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Reyansh Tiwari",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "e7f8g9h0-7777-8888-9999-aaaaabbbbbcc"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Health Policy Renewal",
+      "Short-Term Rider",
+      "Policy Premium",
+      "Payment Method"
+    ],
+    "action_items": [
+      "Provide preferred payment method for policy activation"
+    ]
+  }
+}

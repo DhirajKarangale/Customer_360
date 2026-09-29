@@ -1,0 +1,29 @@
+{
+  "content": "Kavya Iyer contacted Suresh Deshmukh to request the policy schedule PDF and confirm her mother as the primary beneficiary. She then requested to add her sister, Ananya Iyer (DOB 15/03/1992), as the secondary beneficiary. Suresh successfully updated the beneficiary details and provided the newly updated policy schedule.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T10:02:15",
+    "participants": {
+      "customer": {
+        "name": "Kavya Iyer",
+        "id": "a1f4c9e2-3b7d-41a9-8e2f-5d6b9c0a1e3f"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "policy schedule",
+      "beneficiary update",
+      "policy activation"
+    ],
+    "action_items": [
+      "Add Ananya Iyer as secondary beneficiary",
+      "Send updated policy schedule PDF"
+    ]
+  }
+}

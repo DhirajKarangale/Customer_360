@@ -1,0 +1,32 @@
+{
+  "content": "Neha Kapoor sent a HomeShield policy renewal offer to Dev Chatterjee with a 5% loyalty discount, setting the annual premium at $1,250, and requested a signed renewal document. Dev Chatterjee confirmed the terms are acceptable and asked for the payment link, the policy duration after payment, and whether credit card payments are accepted.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Dev Chatterjee",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "HomeShield policy renewal",
+      "loyalty discount",
+      "annual premium",
+      "payment methods",
+      "policy duration"
+    ],
+    "action_items": [
+      "Provide payment link to the customer",
+      "Clarify policy activation duration after payment",
+      "Confirm if credit card payments are accepted"
+    ]
+  }
+}

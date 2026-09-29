@@ -1,0 +1,27 @@
+{
+  "content": "Krishna Das spoke with insurance agent Vikram Singh to confirm and activate their home insurance policy (policy number HC-2026-0459) under DCoders. Vikram processed the activation, and Krishna was informed that a confirmation email would be sent shortly.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Krishna Das",
+        "id": "9f1e2c3b-4d5a-6b7c-8d9e-0f1a2b3c4d5e"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "a2b3c4d5-e6f7-8901-2345-6789abcdef01"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "home insurance policy",
+      "policy activation"
+    ],
+    "action_items": [
+      "Send confirmation email to the customer regarding the activated policy"
+    ]
+  }
+}

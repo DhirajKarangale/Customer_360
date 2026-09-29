@@ -1,0 +1,28 @@
+{
+  "content": "Anvi Desai called insurance agent Ravi Menon to cancel her health policy (SH-452378) due to high premiums. Ravi confirmed the cancellation request, processed it immediately, and informed her that a confirmation email would be sent shortly.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T10:15:00",
+    "participants": {
+      "customer": {
+        "name": "Anvi Desai",
+        "id": "a3d9f2c4-7e1b-44a5-9c3e-2b6f8d1e5a7b"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "5b6e8d9f-2c4a-41f3-8b7d-9e3a0c1d4f6e"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "health policy cancellation",
+      "high premiums",
+      "policy status update"
+    ],
+    "action_items": [
+      "Send a policy cancellation confirmation email to the customer"
+    ]
+  }
+}

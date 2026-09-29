@@ -1,0 +1,29 @@
+{
+  "content": "Riya Mukherjee called Vikram Patel to check on her health policy (SH-2024). Vikram informed her that the policy expired on 30/08/2026 and she is currently not covered for new claims. Riya provided her date of birth and address to start the renewal process, and Vikram agreed to send her a renewal link via email.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Riya Mukherjee",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "d4c3b2a1-9999-8888-7777-666655554444"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "policy expiration",
+      "health insurance",
+      "policy renewal",
+      "coverage claims"
+    ],
+    "action_items": [
+      "Send renewal link via email to the customer"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "content": "Karan Joshi from Safe Step Insurance emailed Diya Menon to confirm the processing of the termination for her home policy (HP-2024-5678) effective October 15, 2026, and attached the final policy statement. Diya acknowledged the confirmation, expressed appreciation for the prompt service, and requested the statement be kept on file.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-11-10T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Diya Menon",
+        "id": "9c1a2b3d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "d4e5f6a7-b8c9-0d1e-2f3a-4b5c6d7e8f9a"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "policy expiration",
+      "policy termination",
+      "home policy"
+    ],
+    "action_items": [
+      "Keep the final policy statement on file"
+    ]
+  }
+}

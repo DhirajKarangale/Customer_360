@@ -1,0 +1,29 @@
+{
+  "content": "Customer Samar Ghosh initiated a life insurance claim for policy LC-2026-00123 and requested the necessary claim form, document requirements, and submission address. Insurance agent Sunita Agarwal responded by providing the claim form, a document checklist, submission instructions (via email or post), and noted that processing takes 15 business days.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-02-10T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Samar Ghosh",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "d4e5f6a7-8901-23bc-45de-67890fghij12"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Claim Process",
+      "Required Documents",
+      "Life Insurance Policy LC-2026-00123"
+    ],
+    "action_items": [
+      "Customer to complete and submit the claim form along with required documents via email or post",
+      "Insurance agency to process the claim within 15 business days upon receipt"
+    ]
+  }
+}

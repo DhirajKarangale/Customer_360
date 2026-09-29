@@ -1,0 +1,28 @@
+{
+  "content": "Krishna Das called Ramesh Tiwari at Safe Shield Agency to resolve an issue regarding his old DCoders corporate health policy, which was still showing as 'Active' in the backend system despite a PDF confirmation, causing errors for his new employer's insurance. Ramesh manually overrode the system status to 'Expired' during the call, successfully resolving the issue to the customer's satisfaction.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-10-14T15:30:00",
+    "participants": {
+      "customer": {
+        "name": "Krishna Das",
+        "id": "c1a2b3c4-d5e6-7f8a-9b0c-1d2e3f4a5b6c"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "f9e8d7c6-b5a4-3f2e-1d0c-9b8a7f6e5d4c"
+        }
+      ]
+    },
+    "user_mood": "relieved",
+    "topics": [
+      "corporate health policy",
+      "policy status update",
+      "insurance duplication flags"
+    ],
+    "action_items": [
+      "Manually update policy status from Active to Expired in the main repository"
+    ]
+  }
+}

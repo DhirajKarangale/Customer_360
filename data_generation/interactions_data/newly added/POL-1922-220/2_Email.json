@@ -1,0 +1,30 @@
+{
+  "content": "Insurance agent Vikram Singh informed customer Krishna Das that Home Insurance policy HC-2026-0459 is now active, providing details on coverage and attaching the policy document. Krishna acknowledged receipt and requested information regarding available payment options and the first premium due date.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Krishna Das",
+        "id": "1a2b3c4d-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "7e8f9a0b-7777-8888-9999-aaaaabbbbbcc"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Home Insurance Policy Activation",
+      "Policy Coverage",
+      "Payment Options",
+      "Premium Due Date"
+    ],
+    "action_items": [
+      "Provide payment options to the customer",
+      "Inform the customer of the first premium due date"
+    ]
+  }
+}

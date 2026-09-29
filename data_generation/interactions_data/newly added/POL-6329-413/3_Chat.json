@@ -1,0 +1,31 @@
+{
+  "content": "Kunal Mehta confirmed receipt of the declaration form with Anita Sharma. They discussed the submission format for the valuation report (single PDF preferred) and payment options for the $850 premium, with Anita confirming bank transfer is acceptable and offering to send account details. Kunal plans to submit the signed form and valuation report by tomorrow afternoon, while the policy remains pending.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-29T10:15:30",
+    "participants": {
+      "customer": {
+        "name": "Kunal Mehta",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "e7f8g9h0-7777-8888-9999-aaaabbbbcccc"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Declaration form",
+      "Valuation report",
+      "Lump-sum payment",
+      "Policy status"
+    ],
+    "action_items": [
+      "Kunal to sign and send the declaration form and valuation report as a PDF by tomorrow afternoon",
+      "Anita to send bank account details in a follow-up email",
+      "Anita to process the $850 premium upon receiving documents"
+    ]
+  }
+}

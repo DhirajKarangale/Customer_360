@@ -1,0 +1,29 @@
+{
+  "content": "Neha Kapoor from Shield Life Services contacts customer Saanvi Pillai to inform her that her health policy (HP-2023-0456) has expired as of today. Saanvi is surprised by this and expresses a desire to renew her coverage, prompting the agent to begin the verification process for renewal options.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Saanvi Pillai",
+        "id": "5f3c9a1e-8b2d-4e9a-9c3f-1a2b3c4d5e6f"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "a7d4f6b2-3c9e-4a5b-8d1f-9e0b2c3d4f5a"
+        }
+      ]
+    },
+    "user_mood": "confused",
+    "topics": [
+      "Health policy expiration",
+      "Policy renewal",
+      "Policy verification"
+    ],
+    "action_items": [
+      "Verify customer details for policy renewal",
+      "Discuss renewal and alternative options"
+    ]
+  }
+}

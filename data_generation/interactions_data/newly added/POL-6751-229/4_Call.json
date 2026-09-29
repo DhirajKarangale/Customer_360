@@ -1,0 +1,30 @@
+{
+  "content": "Vikram Patel from Omni Insurance called Rohan Deshmukh to discuss his health policy renewal. They reviewed the annual premium of $1,250, which includes outpatient specialist coverage. Rohan confirmed he received the quote and payment link, plans to use his credit card, and will complete the signed form and payment by next Friday. Vikram clarified that the policy will reactivate instantly once the payment is processed.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T10:15:00",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "7f3a9c2e-1b4d-4f9a-8c2e-5d6b9e7a1c33"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "d2e5b8f4-9a1c-4b6e-93fa-2c8d7f0a4b55"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "health policy renewal",
+      "premium quote",
+      "outpatient specialist coverage",
+      "payment methods",
+      "policy activation"
+    ],
+    "action_items": [
+      "Rohan to submit signed form and credit card payment by next Friday"
+    ]
+  }
+}

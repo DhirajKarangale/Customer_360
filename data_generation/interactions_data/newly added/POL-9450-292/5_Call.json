@@ -1,0 +1,32 @@
+{
+  "content": "Kiara Sen called insurance agent Neha Kapoor to verify the status of her health policy ahead of her upcoming knee surgery. Neha confirmed the policy was successfully renewed on September 28, 2026, and is active under the 'Essential Health Plus' plan with a reduced monthly premium of $112. Neha confirmed that the policy covers the knee surgery and advised Kiara to submit the emailed claim form along with pre-authorization and diagnostic reports. Kiara successfully made her monthly payment over the phone during the call.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-10-05T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Kiara Sen",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "e7f8g9h0-7777-8888-9999-aaaabbbbcccc"
+        }
+      ]
+    },
+    "user_mood": "relieved",
+    "topics": [
+      "policy status",
+      "renewal",
+      "surgery coverage",
+      "premium",
+      "payment processing"
+    ],
+    "action_items": [
+      "Submit the claim form for knee surgery",
+      "Attach pre-authorization letter and diagnostic reports",
+      "Check email for payment confirmation"
+    ]
+  }
+}

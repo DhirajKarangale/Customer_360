@@ -1,0 +1,33 @@
+{
+  "content": "Rahul Jain called insurance agent Ramesh Tiwari regarding confusion over an expired policy notice and a cancellation fee. Ramesh verified that policy DC-AUTO-4578 is active until 30/09/2026 and clarified that the cancellation fee notice was likely spam. Rahul confirmed his details and vehicle information, and decided to renew the auto policy with the same coverage. Ramesh applied a no-claim bonus and safe driver discount, reducing the annual premium to $1,080. Rahul set up auto-debit for payment, and Ramesh successfully renewed the policy through 28/09/2027.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T09:00:00",
+    "participants": {
+      "customer": {
+        "name": "Rahul Jain",
+        "id": "9f3b2c1e-7a4d-4e9a-9b6f-2d5c8f1a7e3b"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "d4a6e9b2-5c1f-4b8a-8e2d-9f7c3a6b5d1f"
+        }
+      ]
+    },
+    "user_mood": "confused",
+    "topics": [
+      "policy expiration",
+      "cancellation fee",
+      "email verification",
+      "policy renewal",
+      "discounts",
+      "payment setup"
+    ],
+    "action_items": [
+      "Check email for verification link",
+      "Renew auto policy (completed)",
+      "Set up auto-debit payment (completed)"
+    ]
+  }
+}

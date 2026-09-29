@@ -1,0 +1,28 @@
+{
+  "content": "Vivaan Gupta called insurance agent Vikram Singh to check the status of his recently applied life policy (LC-2026-0456). Vikram verified the policy was in 'Pending Activation', confirmed receipt of Vivaan's morning payment transaction, and successfully updated the policy status to Active. Vivaan was informed he would receive a confirmation email shortly.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-29T10:15:00",
+    "participants": {
+      "customer": {
+        "name": "Vivaan Gupta",
+        "id": "a3f9c2e1-7b4d-4f9a-8d2e-5b6c9d1e2f34"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "d4e8b7a2-1c5f-4a3b-9e6f-2d1c8b9a0f57"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "life policy status",
+      "policy activation",
+      "premium payment"
+    ],
+    "action_items": [
+      "Send confirmation email to customer regarding policy activation"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "content": "Ramesh Tiwari from Safe Shield Agency calls Rohan Deshmukh to confirm receipt of the DCoders life insurance policy confirmation and verify that the nominee setup is correct. Ramesh informs Rohan that the policy status is now fully active, no further physical documents are required, and a physical welcome kit will arrive in 4 to 5 working days. Rohan expresses relief and confirms he has no further questions.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:15:00",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "c4f82a11-893b-4c2d-98e1-512bc90a1201"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "d7831bc9-4412-4ee2-b911-3091ab7287cc"
+        }
+      ]
+    },
+    "user_mood": "relieved",
+    "topics": [
+      "policy confirmation",
+      "nominee setup",
+      "policy status active",
+      "welcome kit"
+    ],
+    "action_items": [
+      "Wait for the physical welcome kit to arrive within 4 to 5 working days"
+    ]
+  }
+}

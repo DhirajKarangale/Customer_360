@@ -1,0 +1,29 @@
+{
+  "content": "Kiara Sen contacted insurance agent Vikram Singh to confirm that her new personal property limit of $150,000 was active. She also inquired about coverage for newly purchased electronics, specifically a $1,200 laptop bought on September 15. Vikram confirmed that electronics are covered up to $5,000 if listed on the schedule, and instructed Kiara to send the laptop's receipt so it could be added. Kiara agreed to send the receipt and concluded the chat.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T09:15:12",
+    "participants": {
+      "customer": {
+        "name": "Kiara Sen",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "d4e5f6g7-8901-23hi-jklm-4567890nopqr"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "personal property limit",
+      "electronics coverage",
+      "policy schedule update"
+    ],
+    "action_items": [
+      "Kiara Sen to send the receipt for the new $1,200 laptop",
+      "Vikram Singh to update the policy schedule once the receipt is received"
+    ]
+  }
+}

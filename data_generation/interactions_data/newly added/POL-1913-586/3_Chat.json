@@ -1,0 +1,29 @@
+{
+  "content": "Saanvi Pillai inquired about the cost difference for her policy renewal (HP-2024-9876) compared to her current plan. Neha Kapoor informed her that the new premium is \u20b912,500 (\u20b91,200 higher). Saanvi also asked about the grace period and renewal deadline to avoid a coverage gap, and Neha provided the details along with the payment link and quote PDF.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T10:05:12",
+    "participants": {
+      "customer": {
+        "name": "Saanvi Pillai",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "f1e2d3c4-9876-54ba-dcba-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "policy renewal",
+      "premium cost",
+      "grace period",
+      "payment link"
+    ],
+    "action_items": [
+      "Customer to complete renewal by 14/09/2026 using the provided payment link"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "content": "Customer Rohan Deshmukh called insurance agent Vikram Patel to check on a potential policy cancellation notice. The agent confirmed the policy status is active, attributing the notice to a system glitch. The customer also requested to increase the sum assured from \u20b910 lakh to \u20b915 lakh, added an accidental death benefit rider for \u20b9300 per month, updated his residential address, and requested updated policy documents to be emailed to him.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-29T09:00:00",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "a1b2c3d4-e5f6-7a89-b0c1-d2e3f4g5h6i7"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "9j8k7l6m-5n4o-3p2q-r1s2-t3u4v5w6x7y8"
+        }
+      ]
+    },
+    "user_mood": "anxious",
+    "topics": [
+      "policy cancellation concern",
+      "sum assured increase",
+      "insurance riders",
+      "address update",
+      "policy documents"
+    ],
+    "action_items": [
+      "Email updated policy documents to rohan.deshmukh@example.com"
+    ]
+  }
+}

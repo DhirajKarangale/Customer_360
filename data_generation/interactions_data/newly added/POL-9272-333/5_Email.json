@@ -1,0 +1,29 @@
+{
+  "content": "Ravi Menon sent the updated home policy documents and garage endorsement form (incurring a $150 premium) to Sai Kumar following their call. Sai Kumar confirmed the details are correct and agreed to sign and return the document by tomorrow.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-21T09:15:30",
+    "participants": {
+      "customer": {
+        "name": "Sai Kumar",
+        "id": "c1a2b3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "d2e3f4a5-6789-01bc-def0-2345678901bc"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Home Policy Update",
+      "Garage Endorsement",
+      "Policy Address Change",
+      "Premium Processing"
+    ],
+    "action_items": [
+      "Customer to sign and return the garage endorsement form by tomorrow"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "content": "Samar Ghosh confirmed the annual premium due date (31 October 2026) with agent Sunita Agarwal, requested and received an auto-debit enrollment link, and reported a typo on page 2 of the policy document, which the agent promptly corrected and uploaded.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T10:15:12",
+    "participants": {
+      "customer": {
+        "name": "Samar Ghosh",
+        "id": "d9f1a2b3-44c5-4e8a-9f6d-2c3e5f7a9b0c"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "5e6d7c8b-11a2-4f9b-8e3d-0a1b2c3d4e5f"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "premium due date",
+      "auto-debit setup",
+      "policy document typo correction"
+    ],
+    "action_items": [
+      "Customer to complete the auto-debit enrollment link",
+      "Review the corrected policy document"
+    ]
+  }
+}

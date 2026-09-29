@@ -1,0 +1,30 @@
+{
+  "content": "Vikram Patel from Omni Insurance Group called Rohan Deshmukh to discuss the expiration of his health policy (HP-2023-0456) on September 30, 2026. They discussed renewal options versus exploring a new plan. Rohan expressed a preference for keeping his current plan and avoiding a 5% rate increase. Vikram offered to lock in the current rate for a one-year renewal if payment is made within 7 days. Rohan requested that the renewal details be sent via email for him to consider.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-10-15T09:12:00",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "3f9c2a7e-1b4d-4e6f-9a12-5d8b6c9e0f1a"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "d4b8e9f3-2c7a-4f5b-8d3e-6a1c9b2d3e4f"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "health policy expiration",
+      "policy renewal options",
+      "premium rates",
+      "rate lock offer"
+    ],
+    "action_items": [
+      "Vikram Patel to email the renewal quote and form to Rohan Deshmukh",
+      "Rohan Deshmukh to review renewal details and consider payment within 7 days to lock the current rate"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "content": "Meera Chauhan called insurance agent Anita Sharma to confirm her policy coverage dates (Oct 1, 2026 to Oct 1, 2027) and deductible ($500). She inquired about lowering her $1,150 premium, and Anita applied a $50 safe driver discount, reducing it to $1,100. Meera also requested a digital copy of her insurance card for a rental car, which Anita agreed to email immediately.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T14:10:00",
+    "participants": {
+      "customer": {
+        "name": "Meera Chauhan",
+        "id": "9f2c7a1b-8b3e-4d5f-a9c1-2e6f7d8b9c0d"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "d4e5f6a7-1b2c-3d4e-5f6a-7b8c9d0e1f2a"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "policy coverage dates",
+      "premium reduction",
+      "safe driver discount",
+      "deductible confirmation",
+      "digital insurance card"
+    ],
+    "action_items": [
+      "Email a digital copy of the insurance card to the customer"
+    ]
+  }
+}

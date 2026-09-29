@@ -1,0 +1,32 @@
+{
+  "content": "Ishaan Bose called Ramesh Tiwari to confirm how to pay the $25 policy reinstatement fee. Ramesh explained that payment can be made via credit card or PayPal through the secure portal link provided. Ramesh confirmed the policy will be active within minutes of payment, providing retroactive coverage to 15/09/2026 for Ishaan's doctor appointment tomorrow. Ishaan was instructed to sign and return the existing form by 30/09/2026 without needing extra documents, and will receive an automated receipt via the portal and email.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-01-10T09:12:00",
+    "participants": {
+      "customer": {
+        "name": "Ishaan Bose",
+        "id": "d4f9a6b2-1c3e-4a7f-9b2e-6c8d5f1a2b3c"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "a7c3e9d4-5b6f-4d8a-9c1e-2f3b4a5c6d7e"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "policy reinstatement fee",
+      "payment methods",
+      "coverage activation",
+      "paperwork requirements",
+      "payment receipt"
+    ],
+    "action_items": [
+      "Pay the $25 reinstatement fee via credit card or PayPal on the secure portal",
+      "Sign and return the reinstatement form by 30/09/2026",
+      "Make the payment right after the call"
+    ]
+  }
+}

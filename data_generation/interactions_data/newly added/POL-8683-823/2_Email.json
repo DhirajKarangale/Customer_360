@@ -1,0 +1,30 @@
+{
+  "content": "Insurance agent Vikram Singh sent Riya Mukherjee the renewal quote and coverage summary for her expired health policy (#HP-456789). Riya acknowledged receipt, stated she would review the documents today, and asked for an explanation regarding the premium increase compared to last year.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Riya Mukherjee",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Health Policy Renewal",
+      "Renewal Quote",
+      "Premium Increase",
+      "Policy Coverage"
+    ],
+    "action_items": [
+      "Customer to review the renewal quote",
+      "Agent to explain the reasons for the premium increase"
+    ]
+  }
+}

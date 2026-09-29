@@ -1,0 +1,30 @@
+{
+  "content": "Aaradhya Verma called insurance agent Anjali Desai to confirm that her three-month policy extension (running from September 1 to November 30, 2026) is active after signing the document. They also discussed the pre-authorization process for an upcoming knee surgery, which Aaradhya can submit through the portal while Anjali forwards it to the hospital admin.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Aaradhya Verma",
+        "id": "9f1b2c3d-4e5f-6789-abcd-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "d4e5f6a7-89ab-1c2d-3e4f-56789abcde12"
+        }
+      ]
+    },
+    "user_mood": "relieved",
+    "topics": [
+      "Policy extension confirmation",
+      "Coverage dates",
+      "Knee surgery pre-authorization"
+    ],
+    "action_items": [
+      "Submit pre-authorization request through the portal",
+      "Forward pre-authorization request to the hospital admin",
+      "Keep the signed document on file"
+    ]
+  }
+}

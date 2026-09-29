@@ -1,0 +1,30 @@
+{
+  "content": "Vikram Patel from Omni Insurance Group called Aditya Singh to confirm property details for his home insurance policy activation. They verified the correct address (24/5 Green Valley, 12th Main Road, Bangalore 560001) and construction type (RCC structure, 2 BHK). Aditya agreed to the annual premium of INR 12,500, and Vikram confirmed he would set the policy status to active and send the documents via email.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T10:15:00",
+    "participants": {
+      "customer": {
+        "name": "Aditya Singh",
+        "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "home insurance policy activation",
+      "property address confirmation",
+      "construction type verification",
+      "premium payment"
+    ],
+    "action_items": [
+      "Update policy status to active",
+      "Send policy documents via email to the customer"
+    ]
+  }
+}

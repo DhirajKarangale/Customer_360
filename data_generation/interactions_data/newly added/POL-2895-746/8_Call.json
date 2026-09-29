@@ -1,0 +1,31 @@
+{
+  "content": "Customer Meera Chauhan called insurance agent Anita Sharma to update her auto policy (AU-2026-0456). She increased her liability limit from $100k to $300k (adding $120/year) and lowered her deductible to $250 (adding $80/year). She also added her sister's 2022 Honda Civic and her sister as an additional driver ($30/month surcharge), bringing the new monthly premium to $112.50. The agent confirmed the changes and stated an e-signature link would be sent via email.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Meera Chauhan",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "e7f8g9h0-7777-8888-9999-aaaabbbbcccc"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "auto policy renewal",
+      "liability limit adjustment",
+      "deductible change",
+      "adding a vehicle",
+      "adding an additional driver",
+      "premium calculation"
+    ],
+    "action_items": [
+      "Send e-signature link to the customer via email"
+    ]
+  }
+}

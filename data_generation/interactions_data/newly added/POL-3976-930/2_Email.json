@@ -1,0 +1,29 @@
+{
+  "content": "Karan Joshi from Safe Step Insurance emailed Vedant Thakur confirming the renewal of auto policy AU-4589, valid until September 30, 2027, with an annual premium of $1,250 due by October 5, 2026. Vedant acknowledged receipt of the document, requested confirmation on the continuous coverage starting September 29, 2026, and inquired about the preferred payment methods (online transfer or credit card).",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T09:15:30",
+    "participants": {
+      "customer": {
+        "name": "Vedant Thakur",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "d4e5f6a7-8910-1121-3141-5161718191a2"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Auto Policy Renewal",
+      "Policy Coverage Dates",
+      "Premium Payment"
+    ],
+    "action_items": [
+      "Confirm coverage start date for 29/09/2026",
+      "Provide preferred payment method details for the $1,250 premium"
+    ]
+  }
+}

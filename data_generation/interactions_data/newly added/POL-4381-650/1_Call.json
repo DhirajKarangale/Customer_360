@@ -1,0 +1,29 @@
+{
+  "content": "The customer, Anvi Desai, called after discovering her health policy expired on August 30, 2026. Agent Anita Sharma confirmed the expiration and reviewed three plan options with the customer: standard renewal ($1,200/year), comprehensive plan with dental and vision ($1,500/year), and a basic essential plan ($900/year with higher deductibles). Anvi requested time to review her finances and consider her options, promising to follow up the next day.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Anvi Desai",
+        "id": "3f9a6c2b-7e4d-41b2-9c3e-5d6f8a2b1c4d"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+        }
+      ]
+    },
+    "user_mood": "surprised",
+    "topics": [
+      "policy expiration",
+      "health insurance renewal",
+      "plan options and pricing"
+    ],
+    "action_items": [
+      "Agent to email the renewal brochure and policy details link",
+      "Customer to review finances and follow up tomorrow"
+    ]
+  }
+}

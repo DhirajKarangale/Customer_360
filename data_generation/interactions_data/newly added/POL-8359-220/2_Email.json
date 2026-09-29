@@ -1,0 +1,32 @@
+{
+  "content": "Anjali Desai sent a home insurance renewal quote for Policy #H-4521 with a 4% premium increase to INR 12,350, and offered a 10% bundling discount with motor insurance for a total of INR 11,115. Akanksha Bhatt expressed concern over the expiry date and premium increase, requested confirmation of the exact expiry date, and asked for details and cost summaries regarding the motor insurance bundling options.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-25T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Akanksha Bhatt",
+        "id": "a1c9e2d4-7b5f-4d3a-8f1e-6b2c9d5e0f12"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "b2d4f6a8-9c1e-4e7b-8a2d-3f5b6c7d8e9f"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "Home Insurance Renewal",
+      "Policy Premium Increase",
+      "Bundling Discount",
+      "Motor Insurance Options",
+      "Policy Expiry Date"
+    ],
+    "action_items": [
+      "Confirm exact policy expiry date",
+      "Explain how the motor insurance bundling discount works",
+      "Provide a summary of motor policy options and associated costs"
+    ]
+  }
+}

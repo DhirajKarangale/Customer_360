@@ -1,0 +1,26 @@
+{
+  "content": "Akanksha Bhatt requested the proof of insurance for her auto policy (AP-123456) for a loan, which Karan Joshi provided via PDF link. Akanksha also inquired about the claims process, learning she can file 24/7 through the portal or app by uploading photos and a police report without extra forms. Finally, she asked about the coverage details of the roadside assistance rider, which Karan confirmed includes up to 5 towing trips, lockout assistance, fuel delivery up to $50, and battery jump-starts for $12 a month.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T10:15:30",
+    "participants": {
+      "customer": {
+        "name": "Akanksha Bhatt",
+        "id": "4d2f9a1b-8c33-4e7a-9b5d-6f2c3d4e5f6a"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "proof of insurance",
+      "auto policy claims",
+      "roadside assistance coverage"
+    ],
+    "action_items": []
+  }
+}

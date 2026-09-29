@@ -1,0 +1,30 @@
+{
+  "content": "Customer Diya Menon inquired about the unexpected cancellation of her life insurance policy (LP-452789). Agent Suresh Deshmukh responded that the cancellation was due to an overdue premium of $150.00 from September 15, 2026, and a missing signed rider document. To reinstate the policy, the customer needs to pay the overdue premium and submit the signed rider document provided in the agent's email.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-01-10T09:15:30",
+    "participants": {
+      "customer": {
+        "name": "Diya Menon",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "d4e5f6a7-8910-11c2-d3e4-56789abcde01"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "life insurance policy cancellation",
+      "overdue premium payment",
+      "missing rider document",
+      "policy reinstatement"
+    ],
+    "action_items": [
+      "Process the overdue premium payment of $150.00",
+      "Sign and submit the rider document form"
+    ]
+  }
+}

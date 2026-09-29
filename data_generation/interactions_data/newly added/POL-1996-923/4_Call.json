@@ -1,0 +1,32 @@
+{
+  "content": "Anita Sharma from Trust Wealth Advisors called Akanksha Bhatt to discuss her health policy renewal (Policy No: SH-2026-0456). Akanksha inquired about cancellation terms, day-care procedure coverage, and payment methods. After clarifying the details, Akanksha successfully made the payment of \u20b911,875 via UPI. Anita confirmed the payment, activated the policy effective from 01/04/2026, and resent the policy document in PDF format.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-29T14:10:00",
+    "participants": {
+      "customer": {
+        "name": "Akanksha Bhatt",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "e5f6g7h8-1234-56ij-klmn-0987654321cd"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Health policy renewal",
+      "Cancellation policy",
+      "Coverage details",
+      "Payment processing"
+    ],
+    "action_items": [
+      "Send payment link via email",
+      "Process UPI payment of \u20b911,875",
+      "Verify payment and activate policy",
+      "Resend policy document in PDF format"
+    ]
+  }
+}

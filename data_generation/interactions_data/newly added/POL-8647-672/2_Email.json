@@ -1,0 +1,29 @@
+{
+  "content": "Rahul Jain requested the updated policy document and auto-debit schedule confirmation for his auto insurance policy (AU-45219). Ramesh Tiwari confirmed the successful renewal of the policy active until 31/08/2027, noted the automatic premium deduction of $1,150.00 scheduled for 01/09/2026, and provided the attached policy schedule.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T09:15:30",
+    "participants": {
+      "customer": {
+        "name": "Rahul Jain",
+        "id": "a1f3c9e2-7b44-4d9a-8c2f-1e5b6a9d3f0b"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "d4e6f8b1-2c3a-4e7d-9a1b-5c8d0e2f3a7c"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Auto Policy Renewal",
+      "Policy Document",
+      "Auto-debit Schedule",
+      "Premium Payment"
+    ],
+    "action_items": [
+      "Review the attached updated policy schedule"
+    ]
+  }
+}

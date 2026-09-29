@@ -1,0 +1,28 @@
+{
+  "content": "Suresh Deshmukh from Secure Life Solutions calls Aditya Singh to discuss the upcoming expiration of his health policy on 15/10/2026. Aditya is hesitant and unsure if he wants to renew. After Suresh explains the loss of inpatient, outpatient, and pre-existing condition benefits upon expiration, Aditya expresses concern and asks for a summary of lost coverage. Suresh offers to email him the renewal quotes as a next step.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-29T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Aditya Singh",
+        "id": "a3f9c2d4-7e1b-4a9f-8c3e-2d5f9b6a1c7e"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "5d2b8f9a-3c4d-41e2-9a6f-8b7c0e2d3f9b"
+        }
+      ]
+    },
+    "user_mood": "unsure",
+    "topics": [
+      "health policy renewal",
+      "policy expiration",
+      "coverage benefits"
+    ],
+    "action_items": [
+      "Email renewal quotes to the customer"
+    ]
+  }
+}

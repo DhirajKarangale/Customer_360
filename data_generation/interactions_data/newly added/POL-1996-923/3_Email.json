@@ -1,0 +1,29 @@
+{
+  "content": "Anita Sharma sent the health policy renewal details and payment link for the period of 01/04/2026 to 31/03/2027 with a discounted annual premium of \u20b911,875. Akanksha Bhatt reviewed the documents, confirmed they look correct, and stated she would complete the payment within the next hour.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T09:15:30",
+    "participants": {
+      "customer": {
+        "name": "Akanksha Bhatt",
+        "id": "1a2b3c4d-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "9f8e7d6c-5b4a-3210-9c8b-7a6f5e4d3c2b"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Health Policy Renewal",
+      "Payment Link",
+      "Renewal Documents"
+    ],
+    "action_items": [
+      "Complete the payment using the provided link within 48 hours",
+      "Notify Anita once the payment is done"
+    ]
+  }
+}

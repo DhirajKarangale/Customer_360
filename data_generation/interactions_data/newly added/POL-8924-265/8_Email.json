@@ -1,0 +1,30 @@
+{
+  "content": "Customer Reyansh Tiwari inquired about the expiration status of his health policy, which lapsed on September 30, 2027. Insurance agent Anjali Desai confirmed the policy has lapsed without requiring formal cancellation, outlined the process for pending and past claims (must be submitted within 90 days), and provided information on starting a new plan if coverage is desired.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2027-10-05T09:15:30",
+    "participants": {
+      "customer": {
+        "name": "Reyansh Tiwari",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "f7e8d9c0-7777-8888-9999-aaaaabbbbbcc"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "policy expiration",
+      "lapsed policy",
+      "pending claims",
+      "health insurance"
+    ],
+    "action_items": [
+      "Submit any claims for services rendered before the expiry date within 90 days of the service date",
+      "Discuss a new coverage plan if the customer wishes to restart coverage"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "content": "Samar Ghosh requested confirmation of the sum assured, premium details, and official policy document for life policy LC-2026-00123. Sunita Agarwal confirmed the policy is active with a sum assured of \u20b910 lakh and an annual premium of \u20b912,500, and provided the attached policy schedule.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-02-10T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Samar Ghosh",
+        "id": "4d9e2b7c-3f1a-4c9e-8a6d-2b5f7c1e9a34"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "9b6f3a1d-5e2c-4d8b-9c7f-1a2e3d4b5c6f"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "Life Policy Activation",
+      "Policy Document",
+      "Sum Assured",
+      "Premium Details"
+    ],
+    "action_items": [
+      "Review the attached policy schedule for policy LC-2026-00123"
+    ]
+  }
+}

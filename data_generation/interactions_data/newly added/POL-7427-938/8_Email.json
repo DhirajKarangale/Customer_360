@@ -1,0 +1,27 @@
+{
+  "content": "Insurance agent Vikram Singh confirmed to customer Kiara Sen that her home insurance policy is now active with all recent updates applied, including a personal property limit of $150,000, electronics sub-limits, and the addition of a smartwatch and 55-inch TV, bringing the monthly premium to $84.00. The revised policy document was attached. Kiara reviewed the document, confirmed everything looks correct, and expressed appreciation for the prompt service.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-29T10:15:00",
+    "participants": {
+      "customer": {
+        "name": "Kiara Sen",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Home Insurance Policy",
+      "Policy Activation",
+      "Coverage Updates",
+      "Premium"
+    ],
+    "action_items": []
+  }
+}

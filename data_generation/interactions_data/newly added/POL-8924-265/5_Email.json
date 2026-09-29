@@ -1,0 +1,30 @@
+{
+  "content": "Reyansh Tiwari requested written confirmation of his health policy details, including the end date of 30 September 2027, the $2,500 deductible, the $150 monthly premium, the cancellation procedure, and a copy of the latest policy document. Anjali Desai provided the requested details, outlined the cancellation requirement (written request via email at least 30 days prior), and attached the renewed policy PDF.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-21T09:15:30",
+    "participants": {
+      "customer": {
+        "name": "Reyansh Tiwari",
+        "id": "1f4e9a23-7c8b-4d5e-9a1b-3f6c2d7e8b9a"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "3b2d5c6e-9f1a-4b8c-8d2e-5a7f9c0e1d2b"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Health policy details",
+      "Policy cancellation procedure",
+      "Policy document request",
+      "Deductible and premium confirmation"
+    ],
+    "action_items": [
+      "Review the attached renewed policy PDF",
+      "Submit a written request via email at least 30 days prior if cancellation is desired"
+    ]
+  }
+}

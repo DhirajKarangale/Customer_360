@@ -1,0 +1,30 @@
+{
+  "content": "Meera Chauhan contacted Ravi Menon to confirm her $145 card payment for the policy renewal and verify that her coverage starts on 10 October 2026 before her trip. Ravi confirmed the payment was approved, verified the start date, and provided a receipt and policy PDF. He also explained how Meera can add her spouse as a traveler via the portal for an additional $30 and provided a step-by-step guide.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T10:05:12",
+    "participants": {
+      "customer": {
+        "name": "Meera Chauhan",
+        "id": "1c2d3e4f-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "9f8e7d6c-5432-1b0a-9c8d-abcdef123456"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "policy renewal",
+      "payment confirmation",
+      "coverage start date",
+      "adding a co-traveler"
+    ],
+    "action_items": [
+      "Send receipt and policy PDF",
+      "Send step-by-step guide for adding a spouse"
+    ]
+  }
+}

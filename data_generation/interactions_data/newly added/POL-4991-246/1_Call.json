@@ -1,0 +1,29 @@
+{
+  "content": "Ramesh Tiwari from Safe Shield Agency calls customer Rohan Deshmukh regarding his pending life insurance term plan document verification. Ramesh explains that the previous bank statement upload was corrupted on the portal and offers to guide Rohan through re-verifying or uploading the PDF. Rohan locates the document on his desktop and asks for instructions to proceed.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2024-10-14T11:05:22",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "c4f82a1b-773e-4911-8201-98bc874a1122"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "d88a1e42-1209-4bf7-a982-11bc90812345"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Life insurance term plan",
+      "Document verification",
+      "Corrupted portal upload",
+      "Bank statements"
+    ],
+    "action_items": [
+      "Ramesh to guide Rohan through verifying or uploading the bank statement PDF over the call"
+    ]
+  }
+}

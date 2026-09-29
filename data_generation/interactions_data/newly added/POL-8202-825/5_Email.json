@@ -1,0 +1,28 @@
+{
+  "content": "Tanvi Saxena inquired whether the 15-day post-expiry claim window covers services performed on 30/09/2026. Sunita Agarwal confirmed that services rendered up to and including 30/09/2026 are covered, provided the claim is submitted by 15/10/2026, and provided an updated policy document attachment.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-10-04T09:15:30",
+    "participants": {
+      "customer": {
+        "name": "Tanvi Saxena",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "f1e2d3c4-9876-54ba-dcba-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "claim window",
+      "policy renewal",
+      "service coverage dates"
+    ],
+    "action_items": [
+      "Review the attached updated policy document"
+    ]
+  }
+}

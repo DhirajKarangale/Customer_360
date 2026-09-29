@@ -1,0 +1,30 @@
+{
+  "content": "Karan Joshi emailed Aditi Mahajan regarding the upcoming expiration of her Health Plus policy on 05/10/2026, offering options to either renew the current plan or upgrade to the Health Plus Plus plan. Aditi responded expressing interest in the upgrade, requesting a detailed quote for coverage limits and premium changes, along with instructions on how to switch before expiration.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-27T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Aditi Mahajan",
+        "id": "a1d4e9f2-3c7b-4f9a-9b6e-2d5c8a1f0b7c"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "b7c3e2d5-9f1a-4b6c-8d2e-5a9f3c1e6b8d"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Health Plus Policy Renewal",
+      "Health Plus Plus Upgrade",
+      "Policy Expiration",
+      "Premium and Coverage Limits"
+    ],
+    "action_items": [
+      "Provide a detailed quote for the Health Plus Plus upgrade",
+      "Outline the steps required to switch to the upgraded plan"
+    ]
+  }
+}

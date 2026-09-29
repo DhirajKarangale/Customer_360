@@ -1,0 +1,28 @@
+{
+  "content": "Ravi Menon emailed Kunal Mehta to confirm the cancellation of his health policy (HP-123456) effective 30 September 2026, noting that no prorated refund is applicable as the policy is expiring and not being renewed. An official cancellation document was attached. Kunal acknowledged receipt and noted the cancellation details.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-02-10T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Kunal Mehta",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "e5f6g7h8-1234-56ij-90kl-0987654321cd"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Policy Cancellation",
+      "Health Policy HP-123456",
+      "Refund Status"
+    ],
+    "action_items": [
+      "Review attached cancellation confirmation document"
+    ]
+  }
+}

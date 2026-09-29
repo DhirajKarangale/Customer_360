@@ -1,0 +1,29 @@
+{
+  "content": "Vedant Thakur followed up regarding his reinstated auto policy (#AV-45231) to inquire about the next renewal date (which is September 15, 2027) and whether he could lower his deductible to $250 immediately. Neha Kapoor confirmed that the deductible can be changed at any time and offered to update it upon request, while also providing the updated policy document attachment.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-02-10T09:15:30",
+    "participants": {
+      "customer": {
+        "name": "Vedant Thakur",
+        "id": "9f3c2a1b-7e4d-4b9a-9c8f-1a2b3c4d5e6f"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "d4e5f6a7-b8c9-0d1e-2f3a-4b5c6d7e8f90"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Auto Policy Reinstatement",
+      "Renewal Date",
+      "Deductible Adjustment"
+    ],
+    "action_items": [
+      "Customer to decide if they want to proceed with lowering the deductible to $250",
+      "Agent to send a revised quote if the customer requests the deductible change"
+    ]
+  }
+}
