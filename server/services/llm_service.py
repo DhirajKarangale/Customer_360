@@ -54,6 +54,11 @@ Answer:"""
                 "context": context,
                 "user_input": request.query
             })
+            
+            # 5. Aggressively clean up any stubborn formatting
+            import re
+            response = response.replace("*", "").replace("#", "").replace("`", "").replace("\n", " ").replace("\\n", " ")
+            response = re.sub(' +', ' ', response).strip()
 
             return LLMResponse(message=response)
         except Exception as e:
