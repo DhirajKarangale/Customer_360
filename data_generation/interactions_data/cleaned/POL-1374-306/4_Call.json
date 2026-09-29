@@ -1,0 +1,29 @@
+{
+  "content": "Rahul Jain calls insurance agent Sunita Agarwal to confirm that his home policy HC-2026-0456 is fully set up following his recent kitchen remodel. Sunita confirms that the kitchen renovations are covered under the extended water-damage clause and that the auto-debit for the premium is already established. Sunita successfully activates the policy during the call and informs Rahul that a confirmation email will be sent shortly.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Rahul Jain",
+        "id": "1a2b3c4d-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "9f8e7d6c-5432-10fe-ba98-0987654321cd"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "home policy activation",
+      "kitchen remodel coverage",
+      "water-damage clause",
+      "premium payment"
+    ],
+    "action_items": [
+      "Send policy confirmation email to the customer"
+    ]
+  }
+}

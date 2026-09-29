@@ -1,0 +1,26 @@
+{
+  "content": "Kavya Iyer requested a written confirmation regarding the reinstatement of her health policy (HP-DC-2024-5678) and verification of the next premium due date ($120 on 15 December 2026), as well as any required actions. Neha Kapoor confirmed the policy reinstatement, verified the premium details, and assured her that no further action is needed.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-21T09:15:30",
+    "participants": {
+      "customer": {
+        "name": "Kavya Iyer",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "d4c3b2a1-8765-09ba-fedc-0987654321ba"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "Health Policy Reinstatement",
+      "Premium Due Date",
+      "Policy Confirmation"
+    ],
+    "action_items": []
+  }
+}

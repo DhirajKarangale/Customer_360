@@ -1,0 +1,31 @@
+{
+  "content": "Customer Vivaan Gupta called agent Vikram Singh to check the status of his life insurance policy (LC-2026-0456). After verifying that yesterday's $1,200 payment had cleared, the agent successfully activated the policy. The agent also confirmed the annual premium amount, provided an autopay setup link, and promised to email both a confirmation and a PDF copy of the policy.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-29T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Vivaan Gupta",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "f9e8d7c6-5432-10fe-ba98-76543210fedc"
+        }
+      ]
+    },
+    "user_mood": "relieved",
+    "topics": [
+      "policy status",
+      "payment verification",
+      "policy activation",
+      "annual premium",
+      "autopay setup"
+    ],
+    "action_items": [
+      "Customer to use the autopay link to set up automatic payments",
+      "Agent to send confirmation email and PDF copy of the policy"
+    ]
+  }
+}

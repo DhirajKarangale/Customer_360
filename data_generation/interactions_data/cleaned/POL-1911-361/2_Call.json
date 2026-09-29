@@ -1,0 +1,30 @@
+{
+  "content": "Aaradhya Verma called insurance agent Anjali Desai to address her expired health policy. Aaradhya missed the expiration date of August 31, 2026, and needed immediate coverage due to a scheduled surgery in October. Anjali presented options including a full-year renewal, an upgrade, and a three-month short-term extension. Aaradhya opted for the three-month extension, and Anjali applied a 5% discount, reducing the cost to $114 per month. Anjali agreed to send a link to sign the extension agreement so coverage would become active immediately.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Aaradhya Verma",
+        "id": "a3f9c2d1-8e4b-4a9f-9c2d-7b6e5f8a9c01"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "d5e2b7a3-1c4f-4d8a-9b3e-2f6c1a7e5b02"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Health policy expiration",
+      "Policy renewal options",
+      "Short-term extension",
+      "Discount"
+    ],
+    "action_items": [
+      "Anjali will send a link to sign the short-term extension agreement.",
+      "Aaradhya will sign the agreement to activate coverage."
+    ]
+  }
+}

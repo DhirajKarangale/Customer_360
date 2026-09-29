@@ -1,0 +1,27 @@
+{
+  "content": "Customer Kiara Sen wrote to cancel the renewal of her health policy due to a premium increase and asthma coverage limitations. Insurance agent Sunita Agarwal confirmed that the cancellation has been processed and the policy expired as of 15 September 2026 with no further premiums due.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-22T09:15:30",
+    "participants": {
+      "customer": {
+        "name": "Kiara Sen",
+        "id": "1d9e8b7a-3c4f-4a2b-9d6e-0f1c2b3d4e5f"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "6a5b4c3d-2e1f-4d8a-9b0c-7e6f5d4c3b2a"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Health policy renewal",
+      "Cancellation request",
+      "Premium increase",
+      "Coverage limitations"
+    ],
+    "action_items": []
+  }
+}

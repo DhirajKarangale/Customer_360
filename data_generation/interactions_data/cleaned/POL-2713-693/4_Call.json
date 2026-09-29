@@ -1,0 +1,31 @@
+{
+  "content": "Aditi Mahajan spoke with Karan Joshi from Safe Step Insurance to discuss upgrading her health insurance plan. Although initially undecided, Aditi agreed to upgrade from her current Health Plus plan to the Health Plus Plus plan, which includes a 12% premium increase, higher coverage limits, and alternative therapy benefits while keeping the \u20b95,000 deductible unchanged. Aditi provided verbal consent for the upgrade, set up auto-debit for payments, and agreed to digitally sign and return the renewal form emailed by Karan before the October 4 deadline to ensure coverage starts seamlessly on October 6, 2026.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-29T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Aditi Mahajan",
+        "id": "7f3a9c2e-1b4d-4e8a-9f2c-5d6b7e8a9c01"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "d2c4b1f7-8e9a-4f3b-9c6d-2a1e5f7b3d44"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Health Plus Plus upgrade",
+      "Policy renewal",
+      "Premium payment and auto-debit",
+      "Deductible details",
+      "Electronic signature"
+    ],
+    "action_items": [
+      "Karan Joshi to email the electronic renewal form and e-signature link to Aditi Mahajan",
+      "Aditi Mahajan to sign and return the renewal form before the October 4 deadline"
+    ]
+  }
+}

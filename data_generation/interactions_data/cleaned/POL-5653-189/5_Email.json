@@ -1,0 +1,26 @@
+{
+  "content": "Ishaan Bose confirmed payment of the $25 health policy reinstatement fee and requested a receipt and policy activation confirmation. Ramesh Tiwari acknowledged receipt of the payment, provided the attached receipt (Receipt_HP-2026-0456.pdf), and confirmed that health policy HP-2026-0456 has been retroactively reinstated and is now active.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-25T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Ishaan Bose",
+        "id": "1e4b9c3a-7d2f-41a8-9f6e-2c5d8a9b0e1f"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "5d3a6f8b-2c4e-44b9-8a1d-9e7f3c2b6a5d"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "Health Policy Reinstatement",
+      "Payment Confirmation",
+      "Receipt"
+    ],
+    "action_items": []
+  }
+}

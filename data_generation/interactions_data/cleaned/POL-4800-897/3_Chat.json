@@ -1,0 +1,30 @@
+{
+  "content": "Kunal Mehta checked with insurance agent Ravi Menon to confirm the cancellation and expiration of policy HP-123456 as of 30 September 2026. Ravi confirmed the expiration, provided the final statement link, assured Kunal that there are no pending premiums or future billings, and explained that Kunal can re-apply for a new policy in the future.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-01-10T09:15:10",
+    "participants": {
+      "customer": {
+        "name": "Kunal Mehta",
+        "id": "9f8a1c2b-3d4e-5f6a-7b8c-9d0e1f2a3b4c"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "e2d3c4b5-6a7b-8c9d-0e1f-2a3b4c5d6e7f"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "policy cancellation",
+      "policy expiry",
+      "final statement",
+      "re-applying for coverage",
+      "pending premiums"
+    ],
+    "action_items": [
+      "Review the final statement attached by the agent"
+    ]
+  }
+}

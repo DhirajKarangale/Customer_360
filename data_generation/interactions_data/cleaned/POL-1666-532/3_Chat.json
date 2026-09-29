@@ -1,0 +1,30 @@
+{
+  "content": "The customer, Dev Chatterjee, inquired about extending his travel insurance policy expiring on 30/09/2026. The agent, Anita Sharma, informed him that the policy cannot be extended and will lapse without a refund, but offered to issue a new travel policy starting 01/10/2026. The customer agreed to review the provided quote and details.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T10:15:20",
+    "participants": {
+      "customer": {
+        "name": "Dev Chatterjee",
+        "id": "d4e5f6a7-b8c9-0d1e-2f3a-4b5c6d7e8f90"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d"
+        }
+      ]
+    },
+    "user_mood": "frustrated",
+    "topics": [
+      "policy expiration",
+      "policy extension",
+      "refund",
+      "new travel policy quote"
+    ],
+    "action_items": [
+      "Customer to review the new travel policy quote and terms",
+      "Agent to await customer's confirmation for the new policy"
+    ]
+  }
+}

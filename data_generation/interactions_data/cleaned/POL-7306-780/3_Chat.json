@@ -1,0 +1,31 @@
+{
+  "content": "Pooja Bhatia inquired about how a higher deductible on the low-premium renewal plan affects routine visit costs. Anita Sharma explained the $1,200 deductible structure, copays, and the October 15, 2026 deadline for form submission. Pooja decided to go with the standard plan instead and requested the renewal form to be resent, which Anita successfully did.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T10:15:12",
+    "participants": {
+      "customer": {
+        "name": "Pooja Bhatia",
+        "id": "a1d9f2e4-3c7b-41a9-8f6e-5b2c9d8e7f01"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "b3e4c5d6-7f8a-49b2-9c0d-1e2f3a4b5c6d"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "policy renewal",
+      "deductibles",
+      "routine visits",
+      "copays",
+      "standard plan"
+    ],
+    "action_items": [
+      "Submit the renewal form by October 15, 2026",
+      "Resend the renewal form to the customer's email"
+    ]
+  }
+}

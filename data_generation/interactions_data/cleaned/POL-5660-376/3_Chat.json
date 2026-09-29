@@ -1,0 +1,28 @@
+{
+  "content": "Sneha Roy reviewed her renewal document with agent Vikram Patel. She confirmed the monthly premium is $199.50 after a 5% loyalty discount and clarified that her current policy term expires on 30 September 2026. Vikram confirmed he will send a renewal reminder in August.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-02-10T09:15:02",
+    "participants": {
+      "customer": {
+        "name": "Sneha Roy",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "f0e1d2c3-4567-89ab-cdef-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "policy renewal",
+      "premium verification",
+      "policy expiration date"
+    ],
+    "action_items": [
+      "Agent to send a policy renewal reminder in August"
+    ]
+  }
+}

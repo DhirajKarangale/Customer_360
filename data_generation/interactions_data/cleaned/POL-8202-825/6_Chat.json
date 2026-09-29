@@ -1,0 +1,30 @@
+{
+  "content": "Tanvi Saxena inquired about the 15-day claim window following her policy expiration on 30/09/2027, which Sunita Agarwal confirmed would apply until 15/10/2027. Tanvi also requested a policy renewal reminder in August 2027 and a copy of the updated policy PDF, which Sunita agreed to provide and successfully sent.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-10-05T09:12:30",
+    "participants": {
+      "customer": {
+        "name": "Tanvi Saxena",
+        "id": "d3f9e2b1-4c6a-44f2-9a8b-5e7d9c0f1a23"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "7b2e5f9c-1a3d-48b7-9e2f-6c4d8a0b9e55"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "policy expiration",
+      "claim window",
+      "policy reminder",
+      "policy document"
+    ],
+    "action_items": [
+      "Set a reminder for early August 2027 to send an email and SMS renewal notification",
+      "Resend the updated policy PDF"
+    ]
+  }
+}

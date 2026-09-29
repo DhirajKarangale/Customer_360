@@ -1,0 +1,28 @@
+{
+  "content": "Vikram Singh (insurance agent) confirmed the addition of Kiara Sen's laptop to her home policy's personal property coverage ($150,000 total limit with a $5,000 electronics sub-limit) and sent the revised policy. Kiara then provided the purchase receipt for her smartwatch. Vikram confirmed receipt of the smartwatch document, noting it is now covered up to $2,000, leaving the home policy fully active with all updates.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-30T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Kiara Sen",
+        "id": "1e7d9b3a-4c5f-11ee-b9d1-0242ac120002"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "9b2f6a7c-8d3e-11ee-8c9a-0242ac130003"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "Home Policy Update",
+      "Personal Property Coverage",
+      "Electronics Sub-limit",
+      "Smartwatch Addition",
+      "Laptop Coverage"
+    ],
+    "action_items": []
+  }
+}

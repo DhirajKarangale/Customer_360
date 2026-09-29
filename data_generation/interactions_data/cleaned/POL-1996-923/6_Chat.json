@@ -1,0 +1,30 @@
+{
+  "content": "Akanksha Bhatt contacted insurance agent Anita Sharma to confirm her policy renewal dates (active until 31/03/2027), inquire about the claims filing process (provided via portal/app with a guide link), and verify her paid premium of \u20b911,875 alongside a standard UPI transaction fee.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-30T10:15:12",
+    "participants": {
+      "customer": {
+        "name": "Akanksha Bhatt",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "e5f6g7h8-1234-56ij-klmn-0987654321cd"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "policy renewal",
+      "claim filing",
+      "premium payment",
+      "transaction fee"
+    ],
+    "action_items": [
+      "Keep documents safe",
+      "Review the Health Claim Guide PDF"
+    ]
+  }
+}

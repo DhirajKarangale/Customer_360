@@ -1,0 +1,31 @@
+{
+  "content": "Sunita Agarwal sent a renewal quote PDF for Kiara Sen's expired health policy (Policy #HS-789012) following a previous discussion. Kiara reviewed the quote and emailed back with questions regarding a 12% premium increase, confirmation on pre-existing condition coverage, and the deadline for signing the renewal to avoid a coverage lapse.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-01-10T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Kiara Sen",
+        "id": "3f2d9c1a-7e44-4b9a-9c2e-5f8b6a1d3c4e"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "9b8e7d4c-2a6f-4c3d-9f1b-0e7a5d9c6b8f"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Health policy renewal",
+      "Premium increase",
+      "Pre-existing condition coverage",
+      "Renewal deadline"
+    ],
+    "action_items": [
+      "Explain factors contributing to the 12% premium increase",
+      "Confirm if pre-existing condition coverage has changed",
+      "Provide the deadline for signing the renewal to prevent coverage lapse"
+    ]
+  }
+}

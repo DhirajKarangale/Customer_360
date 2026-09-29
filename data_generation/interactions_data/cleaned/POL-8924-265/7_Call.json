@@ -1,0 +1,30 @@
+{
+  "content": "Reyansh Tiwari called insurance agent Anjali Desai to inquire about the expiration process of his policy ending on September 30, 2027. Anjali clarified that the policy lapses automatically without needing formal cancellation, monthly premiums cease, and pending claims must be submitted within 90 days of the service date. Additionally, she confirmed that tele-consultation coverage ends on the exact expiration day of the policy.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Reyansh Tiwari",
+        "id": "9f1c2a7e-4b3d-41e9-8a6f-2d5c9e1b7a33"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "d4e5f6a9-8c12-4b5e-9d3f-7a8b9c0d1e2f"
+        }
+      ]
+    },
+    "user_mood": "curious",
+    "topics": [
+      "policy expiration",
+      "policy renewal",
+      "premium payments",
+      "pending claims",
+      "tele-consultation coverage"
+    ],
+    "action_items": [
+      "Submit any pending claims within 90 days of the service date"
+    ]
+  }
+}

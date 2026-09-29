@@ -1,0 +1,29 @@
+{
+  "content": "Pooja Bhatia inquired about the timeline for her $80 refund. Karan Joshi informed her that the funds will arrive by 04/10/2026 (3-5 business days) and explained she will receive an email confirmation and can check her online portal.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-29T09:12:15",
+    "participants": {
+      "customer": {
+        "name": "Pooja Bhatia",
+        "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "refund",
+      "account credit timeline",
+      "payment notification"
+    ],
+    "action_items": [
+      "Process $80 refund for the customer",
+      "Send email confirmation once processed"
+    ]
+  }
+}

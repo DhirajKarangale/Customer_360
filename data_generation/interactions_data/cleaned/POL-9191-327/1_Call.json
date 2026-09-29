@@ -1,0 +1,28 @@
+{
+  "content": "Reyansh Tiwari spoke with insurance agent Karan Joshi regarding his auto policy (#AU-987654). Karan informed him that the policy expired on 15/09/2026. Reyansh asked for his options and requested a renewal quote so he could consult his finance team.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Reyansh Tiwari",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "d4c3b2a1-9999-8888-7777-666655554444"
+        }
+      ]
+    },
+    "user_mood": "confused",
+    "topics": [
+      "auto policy expiration",
+      "policy renewal",
+      "coverage options"
+    ],
+    "action_items": [
+      "Send the renewal quote to the customer"
+    ]
+  }
+}

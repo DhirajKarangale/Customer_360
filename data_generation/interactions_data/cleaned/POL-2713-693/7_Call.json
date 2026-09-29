@@ -1,0 +1,32 @@
+{
+  "content": "Karan Joshi from Safe Step Insurance called Aditi Mahajan to confirm the auto-debit setup and e-mandate for her Health Plus Plus plan upgrade. They discussed the first premium of \u20b912,480 to be debited on 05/10/2026, the seamless policy renewal with no coverage gap, increased coverage limits of \u20b912 Lakhs, and the deductible staying at \u20b95,000. Karan agreed to email the updated policy document immediately after the call and provided a recap of the annual payment schedule.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-20T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Aditi Mahajan",
+        "id": "3f9b2c1e-7a4d-4f9a-9c3e-2b5d6e8f0a1b"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "d2e5b7c3-9f1a-44b2-8d6e-5c3a9f0b7c4d"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Auto-debit setup",
+      "Health Plus Plus plan",
+      "Policy upgrade",
+      "Premium payment",
+      "Coverage limits"
+    ],
+    "action_items": [
+      "Send updated policy document via email",
+      "Debit first premium of \u20b912,480 on 05/10/2026",
+      "Send a payment reminder one week prior to the annual debit date"
+    ]
+  }
+}

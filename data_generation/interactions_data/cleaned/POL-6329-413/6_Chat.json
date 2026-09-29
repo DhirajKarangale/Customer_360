@@ -1,0 +1,30 @@
+{
+  "content": "Kunal Mehta confirmed receipt of bank details and checklist from Anita Sharma. Kunal inquired about the email subject line for sending the signed declaration and valuation PDF tomorrow morning, and Anita instructed him to use 'Home Policy Docs - Kunal Mehta'. Kunal also requested the bank account details to complete the $850 transfer today, performed the transfer, and shared the screenshot. Anita confirmed receipt of the screenshot and stated the policy will be activated upon receipt of the signed documents tomorrow.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-30T09:15:12",
+    "participants": {
+      "customer": {
+        "name": "Kunal Mehta",
+        "id": "e3b9f1c2-7a4d-41f5-9c8e-5d2a6b9f0c1d"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "a7d4c9e5-2b6f-4c8a-9d1e-3f7b0a6e8d2f"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Bank Details",
+      "Policy Documentation",
+      "Payment Transfer",
+      "Policy Activation"
+    ],
+    "action_items": [
+      "Kunal to send the signed declaration and valuation PDF tomorrow morning with the subject 'Home Policy Docs - Kunal Mehta'",
+      "Anita to update policy status from Pending to Active upon receiving the signed documents"
+    ]
+  }
+}

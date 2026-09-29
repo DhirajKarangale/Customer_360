@@ -1,0 +1,28 @@
+{
+  "content": "Dhruv Kapoor requested the official travel policy document for his upcoming October trip. Neha Kapoor, the insurance agent, confirmed that the travel insurance policy is now active under policy number TRV-DC-2026-10 and sent the document via email attachment.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-10-02T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Dhruv Kapoor",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "d4e5f6a7-8910-11bc-2def-234567890abc"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Travel Policy",
+      "Policy Activation",
+      "Policy Document"
+    ],
+    "action_items": [
+      "Review the attached travel insurance policy document"
+    ]
+  }
+}

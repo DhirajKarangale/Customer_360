@@ -1,0 +1,29 @@
+{
+  "content": "Kiara Sen calls Sunita Agarwal from Protect All Agency to discuss her expired health policy (H-34219), which lapsed on 15/09/2026. Kiara expresses disappointment as she needed it for upcoming eye surgery. Sunita guides her through the renewal process, collects necessary personal and medical details, and agrees to email a renewal quote for electronic signature.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Kiara Sen",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "f1e2d3c4-9876-54ba-dcba-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "Health insurance policy expiration",
+      "Policy renewal",
+      "Upcoming eye surgery coverage"
+    ],
+    "action_items": [
+      "Sunita to send a renewal quote via email",
+      "Kiara to review and sign the renewal quote electronically"
+    ]
+  }
+}

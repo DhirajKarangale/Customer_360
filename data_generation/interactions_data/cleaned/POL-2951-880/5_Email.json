@@ -1,0 +1,28 @@
+{
+  "content": "Anvi Desai requested the final settlement statement and refund timeline for her cancelled health policy (HP-DC-2024-7890). Ravi Menon confirmed the policy cancellation effective September 30, 2026, stated that a refund of \u20b912,450 will be credited within 10-15 business days, and attached the settlement statement.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-12-10T09:15:30",
+    "participants": {
+      "customer": {
+        "name": "Anvi Desai",
+        "id": "4b7e1a9c-3d2f-4c8b-9a6e-2f5d7c8b9e0a"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "a1c9f3e2-5b6d-4e7a-8f9c-1d2e3f4a5b6c"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "policy cancellation",
+      "settlement statement",
+      "premium refund"
+    ],
+    "action_items": [
+      "Process prepaid premium refund of \u20b912,450 to customer's bank account within 10-15 business days"
+    ]
+  }
+}

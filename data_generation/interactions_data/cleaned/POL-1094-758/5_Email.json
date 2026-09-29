@@ -1,0 +1,27 @@
+{
+  "content": "Vikram Singh sent the updated auto policy documents to Kiara Sen, confirming the addition of her brother, Rajesh Sen, as an additional driver and a new annual premium of $1,200 effective from 01/10/2026 to 30/09/2027. Kiara confirmed receipt and stated that everything looks good.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-10-12T09:15:30",
+    "participants": {
+      "customer": {
+        "name": "Kiara Sen",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "e7f8g9h0-7777-8888-9999-aaaaabbbbbcc"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Auto Policy Update",
+      "Additional Driver",
+      "Policy Premium",
+      "Proof of Insurance"
+    ],
+    "action_items": []
+  }
+}

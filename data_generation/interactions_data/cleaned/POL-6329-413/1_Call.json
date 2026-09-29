@@ -1,0 +1,32 @@
+{
+  "content": "Kunal Mehta called insurance agent Anita Sharma to check on the status of his home insurance policy, which is currently pending. Anita explained that they need the signed declaration and latest property valuation. Kunal had questions about the deductible ($1,200 per claim with a $5,000 annual aggregate) and confirmed the premium is $850 annually to be paid in a lump sum. Anita agreed to re-email the declaration, and Kunal promised to sign and return it today.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-29T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Kunal Mehta",
+        "id": "7f3a9c2e-1b4d-4e9a-8c2f-5d6b9a7e3c11"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "d2c5e8f4-9a6b-4f1d-b8e2-3a7c9d0e5f22"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "home insurance policy status",
+      "policy deductible",
+      "property valuation",
+      "signed declaration",
+      "policy premium"
+    ],
+    "action_items": [
+      "Anita Sharma to email the declaration document to the customer",
+      "Kunal Mehta to sign the declaration and send it back today",
+      "Kunal Mehta to provide the property valuation report"
+    ]
+  }
+}

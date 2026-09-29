@@ -1,0 +1,28 @@
+{
+  "content": "Customer Samar Ghosh called agent Sunita Agarwal to confirm his auto-debit setup and policy details. Sunita verified that the auto-debit of \u20b912,500 is scheduled for October 31, 2026, and confirmed the active policy number LC-2026-00123 with a sum assured of \u20b910 lakh. Additionally, Sunita explained the claim process, noting that a claim form, death certificate, and supporting documents are required and processed within 15 days, and clarified that the bank does not need to be informed regarding the auto-debit.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Samar Ghosh",
+        "id": "9f2c1a7b-5d4e-4a9b-8c12-3e9f5b6d7a1c"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "d3e4f5a6-7b8c-4d0e-9f2a-3b4c5d6e7f8a"
+        }
+      ]
+    },
+    "user_mood": "anxious",
+    "topics": [
+      "auto-debit setup",
+      "claim process",
+      "policy details"
+    ],
+    "action_items": [
+      "Ensure contact details are up to date"
+    ]
+  }
+}

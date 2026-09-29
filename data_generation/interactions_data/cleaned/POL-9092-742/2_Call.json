@@ -1,0 +1,29 @@
+{
+  "content": "Krishna Das called Ramesh Tiwari from Safe Shield Agency regarding his DCoders corporate health insurance policy. Although he left the company last month, the portal still showed the policy as active, creating potential duplication issues with his new employer. Ramesh manually overrode the policy status to 'expired' and agreed to email a confirmation letter immediately to satisfy the customer's urgent onboarding requirements.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:15:00",
+    "participants": {
+      "customer": {
+        "name": "Krishna Das",
+        "id": "c4f82a11-9932-470e-a3fc-799eaf739c91"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "9b2e5f10-1234-48de-8811-34e8f7911b12"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "corporate health insurance",
+      "policy expiration",
+      "status override",
+      "onboarding clearance"
+    ],
+    "action_items": [
+      "Email the policy expiration confirmation letter to the customer"
+    ]
+  }
+}

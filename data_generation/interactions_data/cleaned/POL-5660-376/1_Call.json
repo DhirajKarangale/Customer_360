@@ -1,0 +1,29 @@
+{
+  "content": "Vikram Patel from Omni Insurance Group called Sneha Roy to discuss the upcoming expiration of her health policy (HP-4478) on September 30, 2026. Sneha initially expressed concern over the increased premium of $210 per month (up from $190). Vikram checked and applied a 5% loyalty discount, reducing the new monthly premium to $199.50. Sneha agreed to proceed with the renewal, and Vikram confirmed he would send the renewal documents via email.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Sneha Roy",
+        "id": "9f3b2c7e-1a4d-4f9a-8c2e-6b5d9e2a1f33"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "d7a9f4b2-5c6e-4a3d-9f1b-2e8c7d0a9b44"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Health policy renewal",
+      "Policy expiration",
+      "Premium pricing",
+      "Loyalty discount"
+    ],
+    "action_items": [
+      "Send renewal documents via email to the customer"
+    ]
+  }
+}

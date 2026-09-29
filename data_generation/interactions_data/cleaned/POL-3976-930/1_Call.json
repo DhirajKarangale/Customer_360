@@ -1,0 +1,28 @@
+{
+  "content": "Karan Joshi from Safe Step Insurance called Vedant Thakur to verify account details (date of birth and vehicle registration number) ahead of his auto policy (Policy #AU-4589) expiring on September 30, 2026. Upon realizing the policy was expiring in a couple of days, the customer decided to keep it active and requested to process the renewal during the call.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Vedant Thakur",
+        "id": "d3f9a1c4-7e2b-4a9d-8f6e-2b5c1e7a9d3f"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "a6b2f8e9-3c4d-5f7a-9b1c-8d2e3f4a5b6c"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Policy Expiry",
+      "Account Verification",
+      "Policy Renewal"
+    ],
+    "action_items": [
+      "Process the auto policy renewal today"
+    ]
+  }
+}

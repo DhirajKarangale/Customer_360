@@ -1,0 +1,29 @@
+{
+  "content": "Customer Sneha Roy contacted agent Anjali Desai to cancel her car insurance policy due to selling her vehicle. Anjali processed the cancellation effective immediately and confirmed that a prorated refund for the unused period would be credited to the customer's bank account within five business days.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-10-15T09:12:30",
+    "participants": {
+      "customer": {
+        "name": "Sneha Roy",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "d4c3b2a1-8765-09ba-fedc-0987654321ba"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "policy cancellation",
+      "car sale",
+      "prorated refund"
+    ],
+    "action_items": [
+      "Process policy cancellation effective 15/10/2026",
+      "Calculate and issue prorated refund to customer's bank account within 5 business days"
+    ]
+  }
+}

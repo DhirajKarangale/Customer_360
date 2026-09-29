@@ -1,0 +1,30 @@
+{
+  "content": "Anjali Desai sent a renewal quote for Sneha Roy's auto policy (Policy No: DG-2024-5678) with a 12-month premium of $1,250.00. Sneha reviewed the quote, expressed satisfaction with the coverage, and inquired about increasing her deductible to $1,000 to lower the premium, as well as confirming the effective date of the renewed policy.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-27T09:30:45",
+    "participants": {
+      "customer": {
+        "name": "Sneha Roy",
+        "id": "1c9e5b7a-3f2d-4a6b-8c1e-9d2f3b4c5d6e"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "7a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Auto Policy Renewal",
+      "Premium Quote",
+      "Deductible Adjustment",
+      "Policy Effective Date"
+    ],
+    "action_items": [
+      "Provide information on increasing the deductible to $1,000 and its impact on the premium",
+      "Confirm the effective date of the renewed policy"
+    ]
+  }
+}

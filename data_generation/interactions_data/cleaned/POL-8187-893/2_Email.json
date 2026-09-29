@@ -1,0 +1,29 @@
+{
+  "content": "Vikram Patel sent Riya Mukherjee a health policy renewal link (Policy No: HP-2024-5678) following a previous call to reactivate coverage effective October 1, 2026. Riya reviewed the terms, confirmed they looked good, and asked Vikram to verify if the deductible remains at $500.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Riya Mukherjee",
+        "id": "5d3e8b9a-1c2f-4a6b-9f3e-7c8d9e0a1b2c"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "a9f4c2d7-3e5b-44d1-8a6f-2b3c4d5e6f7g"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Health Policy Renewal",
+      "Policy Coverage",
+      "Deductible Confirmation"
+    ],
+    "action_items": [
+      "Complete the policy renewal via the secure link",
+      "Confirm that the deductible remains at $500"
+    ]
+  }
+}

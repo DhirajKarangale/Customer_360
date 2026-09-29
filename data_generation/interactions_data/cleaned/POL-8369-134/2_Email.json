@@ -1,0 +1,27 @@
+{
+  "content": "Insurance agent Vikram Patel sent the active Home Insurance Policy document (Policy No: HC-AD-2026-001, annual premium INR 12,500) to customer Aditya Singh. Aditya confirmed receipt of the documents and stated that all details are correct.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Aditya Singh",
+        "id": "d4e5f6a7-b8c9-4d10-9e11-f2a3b4c5d6e7"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Home Insurance Policy",
+      "Policy Documents",
+      "Policy Activation",
+      "Annual Premium"
+    ],
+    "action_items": []
+  }
+}

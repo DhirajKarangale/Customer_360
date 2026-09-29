@@ -1,0 +1,28 @@
+{
+  "content": "Karan Joshi from Safe Step Insurance confirms auto policy cancellation details and an $80 refund with customer Pooja Bhatia. Pooja inquires about the exact deposit timeline, which Karan confirms will be by 04/10/2026. Karan also reassures Pooja that the $45 cancellation fee has been waived, leaving no remaining balance.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-02-10T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Pooja Bhatia",
+        "id": "5d3e9a1b-8f4c-4a2b-9c6d-1e2f3b4c5d6e"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "auto policy cancellation",
+      "refund",
+      "cancellation fee waiver"
+    ],
+    "action_items": [
+      "Wait for direct deposit refund by 04/10/2026"
+    ]
+  }
+}

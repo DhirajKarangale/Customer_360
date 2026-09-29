@@ -1,0 +1,33 @@
+{
+  "content": "Akanksha Bhatt submitted the completed pre-authorization form for her upcoming MRI scheduled on 05/10/2026. Suresh Deshmukh acknowledged receipt, forwarded it to the medical review team, and informed her that confirmation will be provided within 48 hours along with instructions to bring her ID and insurance card to the imaging center.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-29T10:15:30",
+    "participants": {
+      "customer": {
+        "name": "Akanksha Bhatt",
+        "id": "1a2b3c4d-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "2b3c4d5e-7777-8888-9999-aaaaabbbbbcc"
+        },
+        {
+          "name": "Priya Sharma",
+          "id": "3c4d5e6f-dddd-eeee-ffff-gggghhhhiiii"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Pre-Authorization Form",
+      "MRI",
+      "Medical Review"
+    ],
+    "action_items": [
+      "Wait for confirmation from the medical review team within 48 hours",
+      "Bring ID and insurance card to the imaging center on the day of the procedure"
+    ]
+  }
+}

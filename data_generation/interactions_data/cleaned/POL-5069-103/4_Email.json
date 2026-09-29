@@ -1,0 +1,29 @@
+{
+  "content": "Karan Joshi (Insurance Agent) emailed Neha Chauhan (Customer) confirming that her health policy is active, detailing the dental cleaning coverage of up to \u20b92,000 per year, and providing a Claim Filing Guide via attachment and online portal. Neha acknowledged receipt and confirmed she reviewed the guide for future use.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T10:15:00",
+    "participants": {
+      "customer": {
+        "name": "Neha Chauhan",
+        "id": "1d9f2c4b-8a7e-4b3a-9f6c-2e5d7a1b3c4d"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "3b6e7f8a-2c5d-4e9f-a1b2-3c4d5e6f7a8b"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Health Policy",
+      "Dental Coverage",
+      "Claim Filing Guide"
+    ],
+    "action_items": [
+      "Keep the Claim Filing Guide handy for future claims",
+      "Reach out to agent if assistance is needed for uploading documents"
+    ]
+  }
+}

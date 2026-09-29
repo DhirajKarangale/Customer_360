@@ -1,0 +1,29 @@
+{
+  "content": "Neha Kapoor sent a confirmation email regarding the cancellation of Vihaan Patel's auto policy (Policy #AU-2026-0456), confirming it will remain active until September 30, 2027, with no renewal premiums or cancellation fees, and roadside assistance intact. Vihaan acknowledged and confirmed satisfaction with the arrangement.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-12-10T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Vihaan Patel",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "d4c3b2a1-8765-09ba-fedc-0987654321ba"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Auto Policy Cancellation",
+      "Policy Expiration",
+      "Roadside Assistance Rider",
+      "Cancellation Fees"
+    ],
+    "action_items": [
+      "Review the attached cancellation summary document"
+    ]
+  }
+}

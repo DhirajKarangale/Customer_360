@@ -1,0 +1,29 @@
+{
+  "content": "Kavya Iyer requested the final policy schedule for policy L\u20112026\u20110459 reflecting her recently updated address and beneficiary changes (mother Meera Iyer as primary, sister Ananya Iyer as secondary). Suresh Deshmukh confirmed the updates, stated the policy is active, and provided the final policy schedule document via attachment.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-29T10:12:34",
+    "participants": {
+      "customer": {
+        "name": "Kavya Iyer",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "d7e8f9a0-7777-8888-9999-aaaaabbbbbcc"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "policy schedule",
+      "address update",
+      "beneficiary changes",
+      "policy L\u20112026\u20110459"
+    ],
+    "action_items": [
+      "Review the attached final policy schedule document for records"
+    ]
+  }
+}

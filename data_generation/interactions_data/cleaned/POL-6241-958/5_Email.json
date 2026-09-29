@@ -1,0 +1,29 @@
+{
+  "content": "Kriti Mahajan emailed insurance agent Suresh Deshmukh to confirm the activation of auto-debit for policy LC-2024-56789, ask for the next debit date, and request a copy of the authorization form. Suresh confirmed the auto-debit is successfully enabled, stated the next debit date is 15 October 2026, and provided the attached authorization form.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T09:15:30",
+    "participants": {
+      "customer": {
+        "name": "Kriti Mahajan",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "f1e2d3c4-9876-54ba-dcba-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "auto-debit setup",
+      "premium payment",
+      "authorization form",
+      "policy LC-2024-56789"
+    ],
+    "action_items": [
+      "Customer to review the attached Auto-Debit Authorization Form for records"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "content": "Rohan Deshmukh contacted insurance agent Vikram Patel regarding policy renewal. Vikram sent the updated policy document PDF. Rohan then inquired about the waiting period for pre-existing conditions, and Vikram confirmed there is a 90-day waiting period.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-10-12T09:15:02",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "d4c3b2a1-8765-09ba-fedc-0987654321ba"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Policy Renewal",
+      "Policy Document",
+      "Pre-existing Conditions",
+      "Waiting Period"
+    ],
+    "action_items": [
+      "Review the updated policy document terms"
+    ]
+  }
+}

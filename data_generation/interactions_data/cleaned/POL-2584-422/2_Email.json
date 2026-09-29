@@ -1,0 +1,28 @@
+{
+  "content": "Karan Joshi confirms to customer Pooja Bhatia that her auto policy has been cancelled effective September 30, 2026. The $45 cancellation fee was waived, and an $80 prorated refund was processed. Pooja replied thanking him and asked for the exact deposit date.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-01-10T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Pooja Bhatia",
+        "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "Auto Policy Cancellation",
+      "Fee Waiver",
+      "Prorated Refund"
+    ],
+    "action_items": [
+      "Provide the exact deposit date for the $80 refund to the customer"
+    ]
+  }
+}

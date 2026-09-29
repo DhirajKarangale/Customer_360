@@ -1,0 +1,30 @@
+{
+  "content": "Anjali Desai sent a renewal quote for Sneha Roy's auto insurance policy (Policy No: AU-2026-015) totaling $1,240 per annum and requested vehicle details. Sneha replied with her Toyota Corolla's details (make, model, year, registration number, and odometer reading) and requested confirmation of the final premium along with available payment options.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-08-16T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Sneha Roy",
+        "id": "9f2c1a7b-4d3e-4b9a-8f2e-1a2b3c4d5e6f"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "a3b4c5d6-7e8f-9a0b-1c2d-3e4f5g6h7i8j"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Auto insurance policy renewal",
+      "Renewal quote",
+      "Vehicle details",
+      "Payment options"
+    ],
+    "action_items": [
+      "Confirm final premium based on provided vehicle details",
+      "Provide available payment options to the customer"
+    ]
+  }
+}

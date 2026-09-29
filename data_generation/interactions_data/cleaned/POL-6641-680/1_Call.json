@@ -1,0 +1,28 @@
+{
+  "content": "Ishaan Bose called Sunita Agarwal at Protect All Agency to inquire about his health policy expiration date of 30/09/2026 and the consequences of expiration. Sunita explained that coverage ends on that date unless renewed or switched to a new plan. Ishaan requested the renewal brochure to review with his employer before making a decision.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:05:12",
+    "participants": {
+      "customer": {
+        "name": "Ishaan Bose",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "f1e2d3c4-5678-90ab-cdef-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "confused",
+    "topics": [
+      "policy expiration",
+      "health insurance",
+      "policy renewal"
+    ],
+    "action_items": [
+      "Email the renewal brochure to the customer"
+    ]
+  }
+}

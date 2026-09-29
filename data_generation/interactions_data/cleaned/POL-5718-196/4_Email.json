@@ -1,0 +1,27 @@
+{
+  "content": "Neha Kapoor confirmed to Dev Chatterjee that his HomeShield policy renewal payment of $1,250 (after a 5% loyalty discount) was received, providing the policy document and coverage dates from 01/10/2026 to 30/09/2027. Dev confirmed receipt of the document and verified that his coverage starts immediately.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-30T10:15:00",
+    "participants": {
+      "customer": {
+        "name": "Dev Chatterjee",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "e7f8g9h0-7777-8888-9999-aaaaabbbbbcc"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "HomeShield policy renewal",
+      "payment confirmation",
+      "premium and loyalty discount",
+      "policy documents"
+    ],
+    "action_items": []
+  }
+}

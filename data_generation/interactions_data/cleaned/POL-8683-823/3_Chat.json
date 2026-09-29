@@ -1,0 +1,31 @@
+{
+  "content": "Riya Mukherjee inquired about the higher health policy renewal premium, which Vikram Singh explained was due to medical inflation and requested maternity coverage. Vikram provided a detailed cost breakdown totaling $8,200 per annum and outlined monthly, quarterly, and annual payment options. Riya requested a day to consider the options and asked about the acceptance deadline, which Vikram noted is October 15, 2026.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T10:12:05",
+    "participants": {
+      "customer": {
+        "name": "Riya Mukherjee",
+        "id": "1a2b3c4d-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "9f8e7d6c-5b4a-3210-9c8b-7a6f5e4d3c2b"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "policy renewal quote",
+      "premium breakdown",
+      "maternity coverage",
+      "payment options",
+      "renewal deadline"
+    ],
+    "action_items": [
+      "Riya to consider the renewal quote and payment options",
+      "Riya to provide acceptance or follow up by October 15, 2026"
+    ]
+  }
+}

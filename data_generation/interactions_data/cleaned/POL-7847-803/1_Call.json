@@ -1,0 +1,29 @@
+{
+  "content": "Aditi Mahajan called insurance agent Suresh Deshmukh to cancel her auto policy for her 2019 Honda Civic because she is moving to another city. Since the policy is within the 30-day cooling period, Suresh confirmed that a full refund would be processed. Suresh initiated the cancellation and informed Aditi she would receive a confirmation email within 5 to 10 minutes.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-10-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Aditi Mahajan",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "d4c3b2a1-8765-09ba-fedc-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "auto policy cancellation",
+      "moving",
+      "refund"
+    ],
+    "action_items": [
+      "Initiate policy cancellation",
+      "Send confirmation email to customer within 5-10 minutes"
+    ]
+  }
+}

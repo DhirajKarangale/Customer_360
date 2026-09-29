@@ -1,0 +1,30 @@
+{
+  "content": "Dev Chatterjee called insurance agent Anita Sharma to inquire about extending his travel policy ending on 30/09/2026. Anita informed him that expired policies cannot be extended and result in a lapse with no refund, but offered to issue a new policy for the next period. Dev asked about keeping the same policy number and activation details, and Anita explained that a new ID would be assigned and the new policy would activate upon quote acceptance and payment starting 01/10/2026.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-10-05T14:15:00",
+    "participants": {
+      "customer": {
+        "name": "Dev Chatterjee",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "d4e5f6g7-7777-8888-9999-aaaaabbbbbcc"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "travel policy extension",
+      "policy expiry",
+      "policy renewal",
+      "new quote"
+    ],
+    "action_items": [
+      "Anita Sharma to send a quote for a new travel plan",
+      "Dev Chatterjee to review the new quote"
+    ]
+  }
+}

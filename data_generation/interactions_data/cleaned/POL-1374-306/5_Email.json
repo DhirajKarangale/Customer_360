@@ -1,0 +1,29 @@
+{
+  "content": "Rahul Jain requested the finalized policy document for his active home insurance policy (HC-2026-0456). Sunita Agarwal confirmed the policy activation, noting that coverage includes the recent kitchen renovation under the extended water-damage clause, and provided the official policy document via attachment.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-30T09:15:23",
+    "participants": {
+      "customer": {
+        "name": "Rahul Jain",
+        "id": "1a2b3c4d-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "7e8f9a0b-aaaa-bbbb-cccc-ddddeeefffff"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "Home Insurance Policy",
+      "Policy Activation",
+      "Policy Documents",
+      "Kitchen Renovation Coverage"
+    ],
+    "action_items": [
+      "Review the attached home insurance policy document HC-2026-0456"
+    ]
+  }
+}

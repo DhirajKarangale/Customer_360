@@ -1,0 +1,28 @@
+{
+  "content": "Rohan Deshmukh confirms receipt of his welcome kit and policy bond for his DCoders life policy with agent Ramesh Tiwari. Rohan asks if digital copies are sufficient for claims, and Ramesh confirms they are valid at network hospitals while recommending a printed copy of the premium receipt. Ramesh also confirms the policy is fully active.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-02-10T11:15:22",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "c14f828a-1122-49bb-9211-1a92bf071c12"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "d55e9012-3344-48ee-a122-9b08cf192834"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Welcome kit and policy bond",
+      "Digital vs physical copies for claims",
+      "Policy active status"
+    ],
+    "action_items": [
+      "Print out the premium receipt for records"
+    ]
+  }
+}

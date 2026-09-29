@@ -1,0 +1,29 @@
+{
+  "content": "Karan Joshi sent the final paperwork and payment link for Kriti Mahajan's 3-month auto insurance policy (AU-2026-345), which includes $25,000 collision and $20,000 comprehensive coverage for a total premium of $345 spanning from October 21, 2026, to January 20, 2027.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-10-20T11:02:00",
+    "participants": {
+      "customer": {
+        "name": "Kriti Mahajan",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "e7f8g9h0-7777-8888-9999-aaaabbbbcccc"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "auto insurance quote",
+      "policy activation",
+      "payment link",
+      "coverage confirmation"
+    ],
+    "action_items": [
+      "Complete the payment using the secure link to activate the policy"
+    ]
+  }
+}

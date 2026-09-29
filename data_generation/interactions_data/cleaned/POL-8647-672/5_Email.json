@@ -1,0 +1,29 @@
+{
+  "content": "Rahul Jain completed the payment for his auto policy renewal (AU-45219) and requested confirmation of payment, policy activation, and the updated policy document. Ramesh Tiwari confirmed receipt of the payment of \u20b912,450, verified that the policy is active, noted the next auto-debit date as 01/11/2026, and provided the updated policy schedule attachment.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-05-10T09:15:30",
+    "participants": {
+      "customer": {
+        "name": "Rahul Jain",
+        "id": "9f8e7d6c-4b3a-11e6-8c9f-0242ac130003"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "Auto Policy Renewal",
+      "Payment Confirmation",
+      "Policy Activation",
+      "Updated Policy Document"
+    ],
+    "action_items": [
+      "Review the attached updated policy schedule"
+    ]
+  }
+}

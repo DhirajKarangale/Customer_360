@@ -1,0 +1,30 @@
+{
+  "content": "Dhruv Kapoor inquired about trip cancellation coverage for COVID-19 under policy TRV-DC-2026-10, requested the claim form, and asked about coverage for extending his stay by 3 days. Neha Kapoor confirmed that trip cancellation is covered up to $2,000, provided the claim form, and confirmed that extensions up to 7 days are covered if notified 24 hours in advance.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T10:05:12",
+    "participants": {
+      "customer": {
+        "name": "Dhruv Kapoor",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "d4e5f6g7-7777-8888-9999-aaaabbbbcccc"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Trip cancellation coverage",
+      "COVID-19 policy coverage",
+      "Claim form",
+      "Trip extension"
+    ],
+    "action_items": [
+      "Send the claim form to the customer",
+      "Note the potential 3-day trip extension"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "content": "Saanvi Pillai called insurance agent Anita Sharma to check the status of her life insurance policy. Anita confirmed the policy is active, stated the next premium due date is 15/11/2026, discussed the option of adding a critical illness rider for an extra 0.8% of the base premium, and verified that Rajesh Pillai remains the listed beneficiary. Anita agreed to email the critical illness rider brochure to Saanvi after the call.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Saanvi Pillai",
+        "id": "a1f3c9e2-7b44-41d9-9a2e-5d6b8f3c9d01"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "4b9e2d7a-3c5f-4a1b-8f6e-2d9c1a7e4b33"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "policy status",
+      "premium due date",
+      "critical illness rider",
+      "beneficiary confirmation"
+    ],
+    "action_items": [
+      "Email the critical illness rider brochure to the customer"
+    ]
+  }
+}

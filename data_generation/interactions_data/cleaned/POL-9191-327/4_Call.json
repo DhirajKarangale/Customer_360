@@ -1,0 +1,30 @@
+{
+  "content": "Reyansh Tiwari discusses his policy renewal with insurance agent Karan Joshi. He confirms acceptance of the Enhanced bundle for $1,305, verifies that liability limits remain at $100k/$300k, and requests a secure email link to process his payment after the call.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Reyansh Tiwari",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "f9e8d7c6-5432-10fe-dcba-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "policy renewal",
+      "Enhanced bundle coverage",
+      "liability limits",
+      "payment processing"
+    ],
+    "action_items": [
+      "Karan Joshi to email a secure payment link to the customer",
+      "Reyansh Tiwari to complete the payment via the secure link after the call"
+    ]
+  }
+}

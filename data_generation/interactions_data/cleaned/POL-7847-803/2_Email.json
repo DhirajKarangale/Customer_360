@@ -1,0 +1,29 @@
+{
+  "content": "Suresh Deshmukh confirmed to Aditi Mahajan that her auto policy for the 2019 Honda Civic (Policy #AU-2019-HC) has been successfully cancelled within the 30-day cooling-off period. A full refund of $1,200.00 will be issued to her original payment method within 5-7 business days, and the cancellation confirmation document was attached. Aditi acknowledged the update and requested notification once the refund is posted.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-27T10:15:00",
+    "participants": {
+      "customer": {
+        "name": "Aditi Mahajan",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "e5f6g7h8-1234-56ij-789k-lmnopqrstuv"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "Auto Policy Cancellation",
+      "Refund",
+      "Cooling-off Period"
+    ],
+    "action_items": [
+      "Process and post the $1,200.00 refund to the customer's original payment method",
+      "Notify the customer once the refund has been posted"
+    ]
+  }
+}

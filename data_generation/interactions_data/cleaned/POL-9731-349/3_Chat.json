@@ -1,0 +1,29 @@
+{
+  "content": "Sneha Roy inquired about the pending status of her health policy with Anita Sharma. Anita confirmed that underwriting is reviewing her documents and the policy will be active in 2-3 business days. No further action is required from the customer. Additionally, Sneha requested a replacement policy summary PDF, which Anita provided via a shared link.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-30T09:12:05",
+    "participants": {
+      "customer": {
+        "name": "Sneha Roy",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "f1e2d3c4-9876-54ba-dcba-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "health policy status",
+      "underwriting review",
+      "policy summary document"
+    ],
+    "action_items": [
+      "Agent to notify customer once the policy is active",
+      "Agent sent the policy summary PDF link"
+    ]
+  }
+}

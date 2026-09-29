@@ -1,0 +1,30 @@
+{
+  "content": "Samar Ghosh confirmed the upload of the kitchen cabinet upgrade claim paperwork (invoice, photos, contractor statement, and proof of payment) to the portal and inquired about the next steps and review duration. Sunita Agarwal acknowledged receipt, forwarded the documents to the Claims Team, and stated that a preliminary decision will be provided within 5-7 business days.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-30T09:15:20",
+    "participants": {
+      "customer": {
+        "name": "Samar Ghosh",
+        "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Kitchen Cabinet Upgrade",
+      "Claim Documentation",
+      "Document Submission",
+      "Review Timeline"
+    ],
+    "action_items": [
+      "Claims Team to review documents and provide a preliminary decision within 5-7 business days",
+      "Customer to retain original receipts"
+    ]
+  }
+}

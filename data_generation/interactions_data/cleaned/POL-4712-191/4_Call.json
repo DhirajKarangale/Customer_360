@@ -1,0 +1,32 @@
+{
+  "content": "Meera Chauhan discussed policy reinstatement with insurance agent Ravi Menon. The total due is \u20b914,800, consisting of \u20b912,300 for the premium and a \u20b92,500 non-waivable reinstatement fee. Ravi agreed to split the payment into two installments of \u20b97,400 each. Meera will pay the first installment and submit the signed reinstatement form today to reactivate the policy.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:15:00",
+    "participants": {
+      "customer": {
+        "name": "Meera Chauhan",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "f1e2d3c4-9876-54ba-dcba-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "policy reinstatement",
+      "premium payment",
+      "reinstatement fee",
+      "installment options",
+      "signed form submission"
+    ],
+    "action_items": [
+      "Meera to print, sign, and upload the reinstatement form",
+      "Meera to make the first installment payment of \u20b97,400 within 5 business days",
+      "Ravi to update the system and send a confirmation email upon receiving the form and first payment"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "content": "Krishna Das contacted agent Ramesh Tiwari regarding the DCoders health policy update, noting that the portal still showed it as active. Ramesh explained that the batch synchronization runs hourly and the status would update to expired by noon. Krishna confirmed receipt of the policy expiry confirmation PDF and mentioned he had already forwarded it to his new employer's HR department.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T11:15:20",
+    "participants": {
+      "customer": {
+        "name": "Krishna Das",
+        "id": "cust-7721"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "agent-3312"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "health policy update",
+      "policy expiry status",
+      "portal synchronization",
+      "confirmation letter"
+    ],
+    "action_items": []
+  }
+}

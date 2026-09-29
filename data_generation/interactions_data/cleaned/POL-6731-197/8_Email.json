@@ -1,0 +1,28 @@
+{
+  "content": "Anjali Desai confirmed the immediate cancellation of Sneha Roy's auto insurance policy (Policy #AU-123456) and noted that a prorated refund will be issued to her bank account within five business days. An official cancellation confirmation letter was attached to the email. Sneha acknowledged receipt and expressed appreciation for the prompt assistance.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T15:30:00",
+    "participants": {
+      "customer": {
+        "name": "Sneha Roy",
+        "id": "a3d9f6e2-7c4b-41f2-9a8e-5b2c3d7f9e01"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "b5e8c1d4-2f6a-48b9-9d3e-1a7f4c6b8d02"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Auto Policy Cancellation",
+      "Policy Refund",
+      "Cancellation Confirmation"
+    ],
+    "action_items": [
+      "Process prorated refund within five business days"
+    ]
+  }
+}

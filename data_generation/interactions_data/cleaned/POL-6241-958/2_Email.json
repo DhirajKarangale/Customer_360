@@ -1,0 +1,28 @@
+{
+  "content": "Insurance agent Suresh Deshmukh emailed customer Kriti Mahajan to confirm that her life insurance policy (LC-2024-5789) is active and to provide the requested policy statement as an attachment. He also confirmed the addition of her sister, Ananya Mahajan, as a secondary beneficiary. Kriti replied acknowledging receipt and confirming that everything looks correct.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Kriti Mahajan",
+        "id": "1a2b3c4d-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "9f8e7d6c-5432-10fe-ba98-0987654321cd"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Policy Status",
+      "Policy Statement",
+      "Beneficiary Update"
+    ],
+    "action_items": [
+      "Send formal beneficiary confirmation to the customer"
+    ]
+  }
+}

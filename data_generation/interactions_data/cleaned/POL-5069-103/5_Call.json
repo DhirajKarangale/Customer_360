@@ -1,0 +1,27 @@
+{
+  "content": "Karan Joshi from Safe Step Insurance called Neha Chauhan to check if she has any questions now that her health policy is active. Neha indicated that she does have a question.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T14:00:00",
+    "participants": {
+      "customer": {
+        "name": "Neha Chauhan",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "f9e8d7c6-5432-10fe-ba98-0987654321cd"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "health policy activation",
+      "policy check-in"
+    ],
+    "action_items": [
+      "Address customer's questions regarding the active health policy"
+    ]
+  }
+}

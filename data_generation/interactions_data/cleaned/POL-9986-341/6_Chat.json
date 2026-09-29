@@ -1,0 +1,29 @@
+{
+  "content": "Rohan Deshmukh shared the signed policy PDF with agent Sunita Agarwal. Sunita verified the signature, uploaded it, and provided a payment link for the \u20b918,750 premium. After Rohan encountered a payment gateway error, Sunita generated a fresh link. Rohan successfully completed the payment, and Sunita confirmed she would update him once the policy status changes from Pending to Active.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T09:12:05",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "9f8e7d6c-1a2b-3c4d-5e6f-7a8b9c0d1e2f"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "d4c3b2a1-0f9e-8d7c-6b5a-4e3d2c1b0a9f"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "policy submission",
+      "signed PDF",
+      "premium payment",
+      "payment gateway error"
+    ],
+    "action_items": [
+      "Sunita to confirm payment and update the policy status from Pending to Active"
+    ]
+  }
+}

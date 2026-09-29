@@ -1,0 +1,32 @@
+{
+  "content": "Customer Vihaan Patel called insurance agent Neha Kapoor to check on his auto policy expiration. Neha confirmed the policy is active until 30/09/2026. Vihaan decided to renew his policy for another 12 months with the current $500 deductible plan using his credit card ending in 1234. Additionally, he requested to add a roadside assistance rider for $5 per month, bringing the total updated premium to $120. Neha processed both requests and confirmed updated policy documents would be emailed.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-26T09:00:00",
+    "participants": {
+      "customer": {
+        "name": "Vihaan Patel",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "e5f6g7h8-1234-56ij-klmn-0987654321cd"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "auto policy expiration",
+      "policy renewal",
+      "deductible options",
+      "roadside assistance rider",
+      "payment confirmation"
+    ],
+    "action_items": [
+      "Process auto policy renewal for 12 months",
+      "Add roadside assistance rider for $5/month",
+      "Send confirmation email with updated policy documents and total premium details"
+    ]
+  }
+}

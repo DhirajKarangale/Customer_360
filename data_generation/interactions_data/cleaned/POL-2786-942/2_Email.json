@@ -1,0 +1,29 @@
+{
+  "content": "Anjali Desai sent the renewal invoice for auto policy AU-4521 to Rohan Deshmukh, with a discounted premium of \u20b911,875 after a 5% safe-driver discount. Rohan acknowledged receipt and confirmed he will process the payment today via net banking.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-30T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "e5f6g7h8-1234-56ij-klmn-7890opqrstu"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Auto Policy Renewal",
+      "Renewal Invoice",
+      "Premium Payment"
+    ],
+    "action_items": [
+      "Process payment via net banking",
+      "Update policy status to active upon payment receipt"
+    ]
+  }
+}

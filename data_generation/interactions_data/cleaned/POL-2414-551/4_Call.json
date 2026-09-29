@@ -1,0 +1,25 @@
+{
+  "content": "Ravi Menon from Secure Future Group initiates a call with customer Pranav Mishra to discuss insurance services.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Pranav Mishra",
+        "id": "a5d3f9c2-1b4e-4f9a-8c2d-6e9f3b7a1c4e"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "9b2e7d5f-3c1a-4b8e-9f6d-2a5c9e7d8b0f"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "insurance services",
+      "policy introduction"
+    ],
+    "action_items": []
+  }
+}

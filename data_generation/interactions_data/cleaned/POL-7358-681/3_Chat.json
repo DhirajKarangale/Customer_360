@@ -1,0 +1,28 @@
+{
+  "content": "Rohan Deshmukh contacted insurance agent Karan Joshi to check on the cancellation status of his health policy (HP-2024-5678). Karan confirmed that the policy was cancelled as of yesterday with the 24-hour effective date applied. Rohan inquired about the prorated refund, and Karan confirmed it is being processed and will be credited to his bank account within 5 to 7 business days using the bank details already on file, requiring no additional documents.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T09:15:02",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "b2c3d4e5-6789-0abc-def1-234567890abc"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "policy cancellation",
+      "refund status",
+      "health insurance"
+    ],
+    "action_items": [
+      "Wait for the prorated refund to be auto-credited to the bank account within 5-7 business days"
+    ]
+  }
+}

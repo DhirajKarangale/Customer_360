@@ -1,0 +1,31 @@
+{
+  "content": "Sai Kumar called insurance agent Ravi Menon to verify the renewal of his home insurance policy (#HC-2026-7854) and confirm payment. During the call, Sai requested to add garage coverage (increasing the annual premium by $150 to a total of $1,400 with a $500 deductible) and updated his mailing address to 1234 Elm Street, Apt 5B, Springfield. Ravi processed the endorsement, confirmed the automatic payment details, and emailed the endorsement form to the customer.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Sai Kumar",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "f1e2d3c4-9876-54ba-dcba-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "home insurance renewal",
+      "payment verification",
+      "garage coverage endorsement",
+      "deductible",
+      "address update"
+    ],
+    "action_items": [
+      "Customer to review the emailed garage coverage endorsement form",
+      "System to automatically charge the $150 endorsement payment on 15 August 2026 to the card ending in 1234"
+    ]
+  }
+}

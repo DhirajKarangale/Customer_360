@@ -1,0 +1,32 @@
+{
+  "content": "Customer Sai Kumar called insurance agent Ravi Menon to address an expired home insurance policy (#HC-2026-7854). The customer opted to renew the policy with the same coverage plus a garage addition, bringing the total to $1,400 for the year. During the call, the customer's address was updated from 45 Oak Street Apt 3B to 78 Pine Lane Unit 5, and the payment was processed over the phone.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2027-08-20T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Sai Kumar",
+        "id": "9f2c1a7e-3b4d-4f9a-8c2e-1a5d6b9e7c4f"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "2d5e9b3c-6a1f-4d2b-9e8f-3c7a5d9b2e1a"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "policy renewal",
+      "expired policy",
+      "coverage update",
+      "address update",
+      "payment processing"
+    ],
+    "action_items": [
+      "Process the $1,400 payment for policy renewal",
+      "Send a confirmation email to the customer",
+      "Send a renewal reminder 30 days before August 15, 2028"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "content": "Insurance agent Anita Sharma sent an email to customer Saanvi Pillai detailing the Critical Illness Rider for her existing Life Policy (LC-2024-78901). The email outlines the rider features including coverage for 15 illnesses, a sum insured of \u20b95,00,000, an additional annual premium of \u20b97,200, a 90-day waiting period, and instructions to proceed by replying 'Accept Rider'. It also confirms Mr. Arjun Pillai as the current beneficiary.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T09:30:00",
+    "participants": {
+      "customer": {
+        "name": "Saanvi Pillai",
+        "id": "a1c9e7f4-2b3d-4f6a-9c8e-5d7b2a1f0c44"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "4b2d8e9a-6f1c-4e3b-8a7d-9c0f3b2e1d55"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Critical Illness Rider",
+      "Life Policy",
+      "Insurance Premium",
+      "Beneficiary Confirmation"
+    ],
+    "action_items": [
+      "Review the attached Rider Summary PDF",
+      "Reply with 'Accept Rider' and confirm desired sum insured if wishing to proceed",
+      "Confirm if any changes are required to the current beneficiary"
+    ]
+  }
+}

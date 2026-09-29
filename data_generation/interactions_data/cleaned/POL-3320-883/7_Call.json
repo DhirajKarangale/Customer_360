@@ -1,0 +1,30 @@
+{
+  "content": "Kriti Mahajan called insurance agent Karan Joshi to get assistance with the payment link for her $345 three-month term premium. She confirmed that there are no hidden fees, verified her collision ($25,000) and comprehensive ($20,000) coverage limits, and asked about coverage activation timing, which Karan confirmed takes effect within minutes after payment processing.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-10-20T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Kriti Mahajan",
+        "id": "c9f1e2b4-7a3d-41f9-9b2e-5d6c8a1f2b3c"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "a4d9e6f7-2b5c-48d1-9a0e-3c7b6d5e8f9a"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "payment link",
+      "premium amount",
+      "coverage limits",
+      "policy start time"
+    ],
+    "action_items": [
+      "Customer will proceed with making the payment",
+      "Agent will send a confirmation email once payment processes"
+    ]
+  }
+}

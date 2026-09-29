@@ -1,0 +1,29 @@
+{
+  "content": "Kavya Iyer emailed insurance agent Suresh Deshmukh to confirm the activation status of her life policy L-2026-0459 following a previous call and her premium payment on September 24. Suresh Deshmukh replied confirming that the policy was successfully activated at 09:58 on September 28, provided the updated policy schedule attachment, and verified that Mrs. Anjali Iyer is listed as the beneficiary.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Kavya Iyer",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "d4c3b2a1-8765-09fe-dcba-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Life Policy Activation",
+      "Premium Payment",
+      "Policy Schedule",
+      "Beneficiary Details"
+    ],
+    "action_items": [
+      "Review the attached updated policy schedule"
+    ]
+  }
+}

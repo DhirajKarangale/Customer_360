@@ -1,0 +1,29 @@
+{
+  "content": "Karan Joshi confirms to Rohan Deshmukh that Health Policy HP-2024-5678 has been cancelled, with a prorated refund to be processed within 5-7 business days. Rohan acknowledges the confirmation and offers to provide any additional information if needed.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-02-10T09:15:30",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "Policy Cancellation",
+      "Health Policy HP-2024-5678",
+      "Prorated Refund"
+    ],
+    "action_items": [
+      "Process prorated refund within 5-7 business days",
+      "Send separate refund confirmation transaction"
+    ]
+  }
+}

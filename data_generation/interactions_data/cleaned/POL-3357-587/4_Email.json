@@ -1,0 +1,30 @@
+{
+  "content": "Samar Ghosh reached out to insurance agent Sunita Agarwal to inquire about the required documentation for covering a recent kitchen cabinet upgrade under home insurance policy H-2026-0459. Sunita replied with a list of required items, including a completed Home Improvement Claim Form, original contractor invoice, photographs, a contractor's written statement, and proof of payment.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-30T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Samar Ghosh",
+        "id": "1a2b3c4d-5e6f-7a8b-9c0d-ef1234567890"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "9f8e7d6c-5b4a-3c2d-1e0f-9876543210ab"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Home Insurance",
+      "Claims Process",
+      "Kitchen Cabinet Upgrade",
+      "Policy Documentation"
+    ],
+    "action_items": [
+      "Gather required documents including claim form, invoice, photographs, contractor statement, and proof of payment",
+      "Submit completed documents through the secure portal or reply via email"
+    ]
+  }
+}

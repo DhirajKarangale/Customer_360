@@ -1,0 +1,26 @@
+{
+  "content": "Neha Kapoor from Shield Life Services confirmed receipt of the customer's renewal payment of \u20b912,500 for health policy HP-2024-9876-R1, with coverage active from 15 September 2026. The updated policy certificate and renewed policy documents were provided as attachments. Saanvi Pillai acknowledged receipt and confirmed that all documents were correct.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-27T10:15:00",
+    "participants": {
+      "customer": {
+        "name": "Saanvi Pillai",
+        "id": "9f1b2c3d-4e5f-6789-abcd-ef0123456789"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "d4e5f6a7-89ab-0cde-f123-456789abcd01"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Health Policy Renewal",
+      "Payment Confirmation",
+      "Policy Certificate"
+    ],
+    "action_items": []
+  }
+}

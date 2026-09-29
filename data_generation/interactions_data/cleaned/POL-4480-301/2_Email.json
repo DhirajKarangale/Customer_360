@@ -1,0 +1,29 @@
+{
+  "content": "Neha Kapoor confirmed the successful renewal of Vihaan Patel's auto policy (SL-2026-98765) through September 30, 2027, with an annual premium of $1,200.00 including a roadside assistance rider. Vihaan acknowledged receipt of the documents and asked for confirmation of the roadside assistance coverage limits.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-25T10:45:12",
+    "participants": {
+      "customer": {
+        "name": "Vihaan Patel",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "d4c3b2a1-8765-09fe-dcba-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "Auto Policy Renewal",
+      "Policy Documents",
+      "Roadside Assistance Coverage Limits",
+      "Payment"
+    ],
+    "action_items": [
+      "Confirm the coverage limits for the roadside assistance rider"
+    ]
+  }
+}

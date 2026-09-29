@@ -1,0 +1,30 @@
+{
+  "content": "Customer Kunal Mehta called to discuss the upcoming expiration of his health policy (#HP-3421). He initially inquired about renewal options but decided to let the policy lapse because he is starting a new job with employer-provided health benefits. The agent, Ravi Menon, confirmed that the policy will be marked as expired effective 30/09/2026, informed him that there is no prorated refund for the annual term, and agreed to send a confirmation email.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Kunal Mehta",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "d4e5f6g7-8910-11aa-bbcc-223344556677"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "health policy expiration",
+      "policy renewal",
+      "policy cancellation",
+      "refund inquiry"
+    ],
+    "action_items": [
+      "Process policy expiration effective 30/09/2026",
+      "Send a confirmation email to the customer"
+    ]
+  }
+}

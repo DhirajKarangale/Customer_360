@@ -1,0 +1,31 @@
+{
+  "content": "Kiara Sen discussed her policy renewal quote with insurance agent Sunita Agarwal. Kiara inquired about a 12% premium increase and pre-existing condition (asthma) coverage after her policy lapsed. Sunita explained the medical inflation, the waiting period reset, and offered a 5% annual payment discount along with an asthma waiver if a physician report is provided. Ultimately, Kiara decided not to proceed with the renewal due to the cost and waiting period, and Sunita agreed to process the cancellation.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-30T09:15:02",
+    "participants": {
+      "customer": {
+        "name": "Kiara Sen",
+        "id": "08205bbe-3423-470e-a3fc-799eaf739c96"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "disappointed",
+    "topics": [
+      "policy renewal",
+      "premium increase",
+      "pre-existing conditions",
+      "waiting period",
+      "policy cancellation"
+    ],
+    "action_items": [
+      "Process policy cancellation",
+      "Send cancellation confirmation email"
+    ]
+  }
+}

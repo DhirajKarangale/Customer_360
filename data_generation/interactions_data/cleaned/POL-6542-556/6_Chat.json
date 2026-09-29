@@ -1,0 +1,31 @@
+{
+  "content": "Akanksha Bhatt successfully uploaded the signed consent form for her MRI. Suresh Deshmukh confirmed that the MRI pre-authorization is approved, explained the deductible and co-pay terms, and advised that a confirmation email will be sent. Suresh also arranged for Priya from network operations to provide a list of network hospitals and a booking link.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T10:15:02",
+    "participants": {
+      "customer": {
+        "name": "Akanksha Bhatt",
+        "id": "9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "MRI pre-authorization",
+      "Consent form upload",
+      "Co-pay and deductible",
+      "Network hospitals"
+    ],
+    "action_items": [
+      "Customer to receive confirmation email within the next hour",
+      "Customer to bring ID and insurance card to the imaging center",
+      "Priya from network ops to share network hospital list and booking link"
+    ]
+  }
+}

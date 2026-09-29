@@ -1,0 +1,30 @@
+{
+  "content": "Kiara Sen confirmed her health policy renewal and inquired about the necessary medical reports and turnaround time for claim approval regarding her upcoming knee surgery on September 12, 2026. Neha Kapoor confirmed the policy renewal (active until September 30, 2027) and advised that while the claim form is sufficient, attaching a pre-authorization letter and recent diagnostic reports like an MRI is recommended. She noted that claim reviews typically take 5-7 business days.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-04T10:15:30",
+    "participants": {
+      "customer": {
+        "name": "Kiara Sen",
+        "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Health Policy Renewal",
+      "Surgery Claim Process",
+      "Required Medical Reports",
+      "Claim Approval Turnaround Time"
+    ],
+    "action_items": [
+      "Customer to submit claim form along with pre-authorization letter and recent diagnostic reports (MRI)",
+      "Agent to review and process the claim upon submission within 5-7 business days"
+    ]
+  }
+}

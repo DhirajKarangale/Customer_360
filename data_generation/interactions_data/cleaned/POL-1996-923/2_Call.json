@@ -1,0 +1,32 @@
+{
+  "content": "Akanksha Bhatt discussed her health policy renewal with insurance agent Anita Sharma. Akanksha inquired about the discounted annual premium of \u20b911,875, the coverage dates (April 1, 2026, to March 31, 2027), available payment methods (netbanking, UPI, credit card), and the cancellation policy. Akanksha confirmed she would make the payment today, and Anita agreed to send a secure payment link and activate the policy upon completion.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-02-10T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Akanksha Bhatt",
+        "id": "a1f3c9d2-4b6e-4a9f-8c2d-1e5f9b7c0a12"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "9d7e2b5f-3c44-4d9a-9f6e-2a1b8c4d5e6f"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Health policy renewal",
+      "Premium pricing",
+      "Coverage dates",
+      "Payment methods",
+      "Cancellation policy"
+    ],
+    "action_items": [
+      "Anita Sharma to email the payment link to the customer",
+      "Akanksha Bhatt to complete the policy payment today",
+      "Anita Sharma to activate the policy upon payment confirmation"
+    ]
+  }
+}

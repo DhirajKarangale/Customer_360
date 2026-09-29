@@ -1,0 +1,28 @@
+{
+  "content": "Vikram Patel confirmed to Rohan Deshmukh that his Life Insurance policy (LI-2026-0456) is active, resolving a system glitch cancellation notice. Vikram also confirmed that the Sum Assured has been increased to \u20b915,00,000, an Accidental-Death Rider of \u20b95,00,000 has been added, and the residential address has been updated. Rohan acknowledged receipt of the revised policy documents and confirmed everything is correct.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T10:05:00",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "1e7b9c4a-3f22-4d6a-9f8b-0a5c2e7d9f01"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "9c4f2a1b-8e73-4b5d-9c6a-3d7e9f0b2a84"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Life Insurance Policy",
+      "Policy Activation",
+      "Sum Assured Increase",
+      "Accidental-Death Rider",
+      "Address Update"
+    ],
+    "action_items": []
+  }
+}

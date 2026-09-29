@@ -1,0 +1,30 @@
+{
+  "content": "Sunita Agarwal sent an email to Samar Ghosh confirming the activation of Home Insurance policy H-2026-0459 with specified coverage details, including a discount for an alarm system and coverage for new kitchen cabinets. Samar replied confirming receipt of the policy document, asking about the claims filing process and if further documentation is needed for the kitchen cabinet upgrade.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T10:15:00",
+    "participants": {
+      "customer": {
+        "name": "Samar Ghosh",
+        "id": "d3f8c2a1-9e4b-4f7a-8c2d-1b5e6f9a2c3d"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "b6e5d4c9-2a7f-4c1b-9e8f-3d6a5b7c9e0f"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "Home Insurance Policy Activation",
+      "Coverage Details",
+      "Claim Process",
+      "Kitchen Cabinet Upgrade"
+    ],
+    "action_items": [
+      "Provide the process for filing a claim",
+      "Clarify if additional documentation is needed for the kitchen cabinet upgrade"
+    ]
+  }
+}

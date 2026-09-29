@@ -1,0 +1,29 @@
+{
+  "content": "Sunita Agarwal sent the final Home Insurance Policy documents (Sum Insured: \u20b930,00,000, Annual Premium: \u20b918,750, Deductible: \u20b95,000) to Rohan Deshmukh for review and signature to activate the pending policy. Rohan confirmed he reviewed the documents and will sign and return the scanned copy by the evening.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-04-10T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "1a2b3c4d-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "7e8f9a0b-7777-8888-9999-aaaabbbbcccc"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "Home Insurance Policy",
+      "Policy Review",
+      "Pending Policy Activation"
+    ],
+    "action_items": [
+      "Rohan Deshmukh to sign the last page of the policy document",
+      "Rohan Deshmukh to email the scanned copy back to Sunita Agarwal by this evening"
+    ]
+  }
+}

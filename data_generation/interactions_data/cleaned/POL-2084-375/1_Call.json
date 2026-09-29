@@ -1,0 +1,29 @@
+{
+  "content": "Kavya Iyer called insurance agent Neha Kapoor to inquire about a cancellation notice on her health policy due to missed premium payments. Kavya immediately transferred the $120 outstanding balance during the call, allowing Neha to halt the cancellation and reactivate coverage immediately. Neha also confirmed that the next premium is due on December 15, 2026, and agreed to send a confirmation email.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-29T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Kavya Iyer",
+        "id": "a1f3c9e2-7b4d-4f2a-9c1e-5d6b8f7a9c10"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "d4e5f6a7-8b9c-0d1e-2f3a-4b5c6d7e8f90"
+        }
+      ]
+    },
+    "user_mood": "confused",
+    "topics": [
+      "policy cancellation",
+      "missed premium payment",
+      "policy reinstatement",
+      "next premium due date"
+    ],
+    "action_items": [
+      "Send confirmation email regarding policy reactivation and next premium due date"
+    ]
+  }
+}

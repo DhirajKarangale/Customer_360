@@ -1,0 +1,30 @@
+{
+  "content": "Kiara Sen reached out to insurance agent Neha Kapoor to check the status of her reimbursement claim for knee surgery performed on September 6, 2026. Neha Kapoor confirmed receipt of the claim (Reference #: CLM-2026-0910), stated it is currently under review, and provided an expected reimbursement date of September 21, 2026, noting that claims typically take 5-7 business days to process. Neha also provided a claim receipt and mentioned that claims specialist Arjun Mehta would follow up if additional details are needed.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-12T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Kiara Sen",
+        "id": "d4a9c3e1-7b2f-4a6d-9c3e-5f6b8a2d9c01"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Knee Surgery Claim Status",
+      "Reimbursement Timeline",
+      "Policy HP-2024-0456",
+      "Claim Receipt"
+    ],
+    "action_items": [
+      "Await reimbursement processing by September 21, 2026",
+      "Provide further details if contacted by claims specialist Arjun Mehta"
+    ]
+  }
+}

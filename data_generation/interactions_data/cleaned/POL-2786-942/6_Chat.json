@@ -1,0 +1,27 @@
+{
+  "content": "Rohan Deshmukh contacted insurance agent Anjali Desai to confirm that his old policy AU-4521 has expired and been replaced by the active policy AU-4521-R1 (valid until 31/08/2027). Anjali confirmed the update and stated that no further action is required.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-30T10:15:20",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "e9f8g7h6-5432-10fe-dcba-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "policy expiration",
+      "policy renewal",
+      "AU-4521",
+      "AU-4521-R1"
+    ],
+    "action_items": []
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "content": "Isha Agarwal calls Ravi Menon to confirm that auto-pay has been successfully set up for her policy, with the first premium deduction scheduled for the 15th. She also inquires about the costs of optional coverages (personal-property add-on at $75/year, flood at $120/year, and earthquake at $95/year), how to add earthquake coverage via email link without filling out extra forms, and re-confirms the $500 per claim deductible and $300,000 dwelling coverage limit.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:05:12",
+    "participants": {
+      "customer": {
+        "name": "Isha Agarwal",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "f1e2d3c4-9876-54ba-dcba-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "auto-pay",
+      "optional coverages",
+      "earthquake coverage",
+      "deductible",
+      "dwelling coverage limit"
+    ],
+    "action_items": [
+      "Monitor email for confirmation",
+      "Optionally click the link sent in email to add earthquake coverage"
+    ]
+  }
+}

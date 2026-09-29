@@ -1,0 +1,28 @@
+{
+  "content": "Vikram Patel emailed Atharv Pandey to confirm the successful cancellation of his health policy HP-785412, stating that no further premiums will be charged and any prepaid amount has been refunded, along with an attached cancellation notice. Atharv acknowledged and thanked Vikram for the prompt service, asking if any further action was required.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-30T14:35:00",
+    "participants": {
+      "customer": {
+        "name": "Atharv Pandey",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "d7e8f9a0-7777-8888-9999-aaaabbbbcccc"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Policy Cancellation",
+      "Health Policy HP-785412",
+      "Refund Confirmation"
+    ],
+    "action_items": [
+      "Check if any further action is needed on the customer's end regarding the cancellation."
+    ]
+  }
+}

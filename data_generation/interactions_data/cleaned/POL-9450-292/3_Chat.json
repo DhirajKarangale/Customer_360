@@ -1,0 +1,30 @@
+{
+  "content": "Kiara Sen contacted insurance agent Neha Kapoor to confirm her coverage status after seeing that her old health policy expired. Neha confirmed that her new policy is active. Kiara requested the new policy document for the hospital and inquired about the claims process for her upcoming knee surgery. Neha provided the new policy document PDF, detailed the required claim documents (discharge summary and itemized bills), and agreed to email the claim form to Kiara upon request.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-29T10:15:02",
+    "participants": {
+      "customer": {
+        "name": "Kiara Sen",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "4f9e2b1c-3a6d-4f8b-9c2e-7d5a6b8c9e0f"
+        }
+      ]
+    },
+    "user_mood": "relieved",
+    "topics": [
+      "health policy expiration",
+      "new policy document",
+      "knee surgery claims process",
+      "claim form"
+    ],
+    "action_items": [
+      "Email the claim form to the customer",
+      "Customer to review email and prepare for upcoming knee surgery claim"
+    ]
+  }
+}

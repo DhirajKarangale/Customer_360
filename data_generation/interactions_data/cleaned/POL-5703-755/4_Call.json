@@ -1,0 +1,29 @@
+{
+  "content": "Customer Sneha Roy called insurance agent Anjali Desai to inquire about her auto policy quote of \u20b911,828 and the consequences of not paying by the due date. After learning the policy would remain expired as of 15 August 2026, the customer decided not to renew and requested to close the policy. The agent confirmed the request and noted that a confirmation email would be sent.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Sneha Roy",
+        "id": "a1f9c3e2-7b4d-4f9a-9c2e-5d6b8e1f0a12"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "d4e7b9c1-2a5f-48b3-9d1e-3c7f6a2b8d34"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "auto policy quote",
+      "policy renewal",
+      "policy expiration"
+    ],
+    "action_items": [
+      "Mark the policy as expired in the system",
+      "Send a confirmation email to the customer"
+    ]
+  }
+}

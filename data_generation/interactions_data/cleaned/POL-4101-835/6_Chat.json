@@ -1,0 +1,27 @@
+{
+  "content": "Diya Menon inquired about the expiration status of her home insurance policy (HP-2024-5678) and whether there were any pending premiums or settlements. Karan Joshi confirmed the policy expired as of October 15, 2026, stated that all premiums are fully settled with no outstanding balance, and provided the final policy statement link.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-10-12T09:15:02",
+    "participants": {
+      "customer": {
+        "name": "Diya Menon",
+        "id": "d1a2b3c4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "a9b8c7d6-5432-10fe-dcba-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "policy expiration",
+      "premium settlement",
+      "outstanding balance",
+      "final policy statement"
+    ],
+    "action_items": []
+  }
+}

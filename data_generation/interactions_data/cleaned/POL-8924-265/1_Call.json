@@ -1,0 +1,31 @@
+{
+  "content": "Customer Reyansh Tiwari called agent Anjali Desai at First Guard Brokers because his health policy (HP-2024-987654) had expired on 15/08/2026. They discussed renewal options, and to lower the standard \u20b912,500 premium, they agreed to drop the maternity cover and increase the deductible to \u20b910,000, reducing the premium to \u20b911,200. The agent secured verbal consent, renewed the policy until 15/08/2027, updated the customer's address, and informed him about the 5-7 business day claim settlement turnaround for in-network hospitals and 8 free annual tele-consultation visits.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T09:12:00",
+    "participants": {
+      "customer": {
+        "name": "Reyansh Tiwari",
+        "id": "a1f4c9e2-7b3d-41f9-9a2e-5d6b8c9f3e21"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "4b2d7f1a-9c6e-48a5-8d3f-2e1b6a7c4d58"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "policy renewal",
+      "premium adjustment",
+      "deductible changes",
+      "maternity cover",
+      "claim settlement time",
+      "tele-consultation coverage"
+    ],
+    "action_items": [
+      "Send updated policy document via email"
+    ]
+  }
+}

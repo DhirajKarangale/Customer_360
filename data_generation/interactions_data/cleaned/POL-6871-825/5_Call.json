@@ -1,0 +1,31 @@
+{
+  "content": "Customer Dhruv Kapoor called insurance agent Neha Kapoor to verify COVID cancellation and trip extension policies for his October trip. Neha confirmed that cancellations and extensions up to 7 days are covered if notified 24 hours in advance, though pet care is excluded. Neha also resent the claim form PDF and mobile-friendly policy documents, and walked Dhruv through the step-by-step claims filing process.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-10-15T09:00:00",
+    "participants": {
+      "customer": {
+        "name": "Dhruv Kapoor",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "f1e2d3c4-9876-54ba-dcfe-0987654321fe"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "COVID cancellation coverage",
+      "Trip extensions",
+      "Claim form process",
+      "Pet care coverage",
+      "Policy documents"
+    ],
+    "action_items": [
+      "Resend the claim form PDF to the customer",
+      "Resend the policy document in a mobile-friendly format"
+    ]
+  }
+}

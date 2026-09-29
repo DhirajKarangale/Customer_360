@@ -1,0 +1,29 @@
+{
+  "content": "Customer Vedant Thakur inquired about the total annual premium, effective date, and revised policy documents for policy #AV-45231 following a deductible change to $750. Insurance agent Neha Kapoor confirmed the revised annual premium is $1,250 (including a $15 admin fee), noted the change is effective immediately and applies to the September 15, 2027 renewal, and provided the updated policy schedule and quote attachment.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-03-10T09:15:42",
+    "participants": {
+      "customer": {
+        "name": "Vedant Thakur",
+        "id": "a1c9d4e2-7f3b-41b2-9e6f-3d2a5f8c9b01"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "b2e7f1a9-4c6d-48e3-9b7a-5f1d2c3e8a04"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Deductible Change",
+      "Renewal Quote",
+      "Policy Premium",
+      "Policy Documents"
+    ],
+    "action_items": [
+      "Review attached updated policy schedule and revised quote"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "content": "Krishna Das emails Ramesh Tiwari to confirm that their new employer's HR department verified the previous DCoders corporate health plan (Policy # DC-HLT-2025-8841) now correctly shows as 'Expired' following a manual override, clearing any duplication roadblocks for new enrollment. Ramesh acknowledges the update, confirms the closure and logs have been archived, and wishes Krishna well in the new role.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-10-24T14:15:22",
+    "participants": {
+      "customer": {
+        "name": "Krishna Das",
+        "id": "cust-8392-kd"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "agent-1049-rt"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Health Insurance Policy Status",
+      "Policy Expiration",
+      "Manual Override",
+      "New Employer Onboarding"
+    ],
+    "action_items": [
+      "Archived final confirmation and system override logs"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "content": "Vikram Singh from ProtectAll Agency called Kiara Sen to finalize her DCoders home insurance activation. During the call, they verified her policy number and current address. Kiara requested an increase to her personal property limit to $150,000, which Vikram applied for an additional $12 per month. The policy was successfully updated and activated, and Kiara was informed she would receive a confirmation email shortly.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Kiara Sen",
+        "id": "a3f9c2e1-7b4d-4a9f-8e2d-5b6c9f1a2d34"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "d4e7b5f3-9c1a-4d8e-9b3f-2a6e7c8d9f01"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "home insurance activation",
+      "policy verification",
+      "personal property limit increase"
+    ],
+    "action_items": [
+      "Receive policy confirmation email"
+    ]
+  }
+}

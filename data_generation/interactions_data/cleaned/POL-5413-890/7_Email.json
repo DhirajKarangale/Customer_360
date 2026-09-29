@@ -1,0 +1,29 @@
+{
+  "content": "Karan Joshi emailed Akanksha Bhatt to confirm that her auto policy (AP-123456) has been fully reinstated with the $12/month roadside-assistance rider activated, and provided the updated policy document, proof of insurance PDF, and a quick-start guide. Akanksha replied confirming that everything looks good and she has received the documents.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T10:15:00",
+    "participants": {
+      "customer": {
+        "name": "Akanksha Bhatt",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "d4e5f6a7-89ab-cdef-0123-456789abcdef"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "policy reinstatement",
+      "roadside-assistance rider",
+      "proof of insurance",
+      "policy documents"
+    ],
+    "action_items": [
+      "Customer to keep the PDFs handy and reach out if further assistance is needed"
+    ]
+  }
+}

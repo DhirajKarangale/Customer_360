@@ -1,0 +1,31 @@
+{
+  "content": "Anvi Desai called insurance agent Ravi Menon to confirm her refund amount of \u20b912,450, check on paperwork requirements, inquire about loyalty discounts for a future policy, and confirm if she would receive an SMS notification upon refund credit. Ravi confirmed the details, stated that no further paperwork is needed, explained the 10-15 business day timeline for the refund, confirmed a 5% loyalty discount for future policies, and verified an SMS confirmation will be sent.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T10:05:00",
+    "participants": {
+      "customer": {
+        "name": "Anvi Desai",
+        "id": "a1c9e8d2-4f7b-11ee-bf5a-0242ac130003"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "b2d4f9a1-5a12-11ee-bf5a-0242ac130003"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "settlement statement",
+      "refund status",
+      "paperwork",
+      "loyalty discount",
+      "SMS confirmation"
+    ],
+    "action_items": [
+      "Wait 10-15 business days for refund credit to bank account",
+      "Receive settlement SMS confirmation upon credit"
+    ]
+  }
+}

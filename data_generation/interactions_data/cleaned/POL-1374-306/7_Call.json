@@ -1,0 +1,29 @@
+{
+  "content": "Rahul Jain called insurance agent Sunita Agarwal to verify the first premium debit date, which is scheduled for 05/10/2026. He also inquired about adding a flood-damage rider for an additional \u20b92,000 per year, agreeing to email the basement's elevation details later today. Additionally, Sunita confirmed that the kitchen renovation water damage coverage is already active.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T14:15:00",
+    "participants": {
+      "customer": {
+        "name": "Rahul Jain",
+        "id": "a3f9c2d1-7b4e-4a9f-8e2d-1c5b6e9f2a33"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "5d2e8b7c-9f1a-4c3d-8a6b-0e4f7d9c1b55"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "premium debit date",
+      "flood-damage rider",
+      "kitchen renovation coverage"
+    ],
+    "action_items": [
+      "Rahul will email the basement's elevation details to Sunita today",
+      "Sunita will issue an endorsement and adjust the premium once the details are received"
+    ]
+  }
+}

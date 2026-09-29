@@ -1,0 +1,29 @@
+{
+  "content": "Karan Joshi sent a confirmation and payment link to Reyansh Tiwari for the Enhanced auto policy bundle (Policy No: AU-45789). The updated annual premium is $1,305 with liability limits of $100k/$300k. The customer needs to complete the payment via the provided secure link within 7 days, after which the official confirmation and declarations page will be sent.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T11:42:15",
+    "participants": {
+      "customer": {
+        "name": "Reyansh Tiwari",
+        "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Auto policy renewal",
+      "Policy bundling",
+      "Payment link"
+    ],
+    "action_items": [
+      "Customer must complete the payment using the secure link within 7 days",
+      "Agent will send official policy confirmation and updated declarations page once payment is processed"
+    ]
+  }
+}

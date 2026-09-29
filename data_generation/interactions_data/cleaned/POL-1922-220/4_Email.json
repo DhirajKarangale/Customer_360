@@ -1,0 +1,31 @@
+{
+  "content": "Vikram Singh emailed Krishna Das to outline the payment options and first-premium details for Home Insurance policy HC\u20112026\u20110459, highlighting a 5% discount for auto-debit payments (reducing the standard \u20b912,500 premium to \u20b911,875 due by October 15, 2026). Krishna Das replied confirming the choice of the auto-debit option and requested confirmation of setup along with a receipt for the payment.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Krishna Das",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "e5f6g7h8-1234-56ij-klmn-0987654321cd"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Home Insurance Policy",
+      "Payment Options",
+      "First Premium Details",
+      "Auto-Debit Discount"
+    ],
+    "action_items": [
+      "Set up auto-debit payment for \u20b911,875",
+      "Confirm auto-debit setup",
+      "Send payment receipt to the customer"
+    ]
+  }
+}

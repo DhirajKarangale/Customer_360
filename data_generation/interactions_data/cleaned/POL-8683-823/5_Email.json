@@ -1,0 +1,29 @@
+{
+  "content": "Vikram Singh sent a revised renewal quote for health policy HP-2026-0456, removing the maternity rider and setting a monthly premium of \u20b92,350 starting 01 Oct 2026. Riya Mukherjee reviewed the quote, confirmed the renewal, and requested the next steps to activate the policy with the monthly payment option.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-26T10:15:00",
+    "participants": {
+      "customer": {
+        "name": "Riya Mukherjee",
+        "id": "1a2b3c4d-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Singh",
+          "id": "9f8e7d6c-5432-10fe-ba98-0987654321cd"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "Health policy renewal",
+      "Revised quote",
+      "Maternity rider removal",
+      "Monthly payment plan"
+    ],
+    "action_items": [
+      "Provide next steps to activate the policy for Riya Mukherjee"
+    ]
+  }
+}

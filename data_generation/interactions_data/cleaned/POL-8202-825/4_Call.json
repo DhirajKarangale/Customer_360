@@ -1,0 +1,28 @@
+{
+  "content": "Tanvi Saxena called insurance agent Sunita Agarwal to clarify details regarding her policy expiration date (30/09/2027) and the subsequent 15-day claim window ending on 15/10/2027. Sunita confirmed that services rendered on the final day of the policy are covered if filed within the window, and that the agent will set a reminder to reach out in August for renewal options.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-10-15T14:05:00",
+    "participants": {
+      "customer": {
+        "name": "Tanvi Saxena",
+        "id": "d3f9a1c2-7b4e-4a9d-9f2e-1c2b5e6f8a90"
+      },
+      "insurance_agents": [
+        {
+          "name": "Sunita Agarwal",
+          "id": "a5b2c3d4-8e9f-0a1b-2c3d-4e5f6a7b8c9d"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "policy expiration",
+      "claim window",
+      "policy renewal"
+    ],
+    "action_items": [
+      "Agent to set a reminder to reach out to the customer in August regarding renewal options"
+    ]
+  }
+}

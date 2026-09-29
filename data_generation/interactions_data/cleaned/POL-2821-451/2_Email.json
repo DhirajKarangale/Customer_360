@@ -1,0 +1,31 @@
+{
+  "content": "Neha Kapoor informs Aditi Mahajan that her current health policy (HP-452378) expiring on 30/09/2026 cannot be renewed as it is being phased out, and sends an attachment comparing three alternative health plans. Aditi reviews the options, expresses concern over the higher premium of the Comprehensive Plus plan, asks if costs can be kept closer to her current level, and requests clarification on network hospitals for the Standard plan.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-27T10:15:00",
+    "participants": {
+      "customer": {
+        "name": "Aditi Mahajan",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "f9e8d7c6-5432-10fe-ba98-0987654321cd"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "Health policy renewal",
+      "Policy expiration",
+      "Alternative health plans",
+      "Premium costs",
+      "Network hospitals"
+    ],
+    "action_items": [
+      "Discuss options to keep costs closer to the current level while maintaining adequate coverage",
+      "Clarify network hospitals for the Standard plan"
+    ]
+  }
+}

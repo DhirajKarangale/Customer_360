@@ -1,0 +1,27 @@
+{
+  "content": "Meera Chauhan requested a digital copy of her auto insurance card for policy AU\u20112026\u20110456 and confirmed its active status starting 01/10/2026. Anita Sharma responded by sending the digital card via email attachment and confirming the policy status.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-21T09:15:20",
+    "participants": {
+      "customer": {
+        "name": "Meera Chauhan",
+        "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "digital insurance card",
+      "auto policy status"
+    ],
+    "action_items": [
+      "Send digital copy of auto insurance card"
+    ]
+  }
+}

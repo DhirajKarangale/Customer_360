@@ -1,0 +1,30 @@
+{
+  "content": "Kavya Iyer called insurance agent Neha Kapoor to confirm the cancellation of her health policy (HP-DC-2024-5678). Neha confirmed the cancellation was processed, explained that coverage remains active until the end of the day on 30 September 2026, and stated that the $120 December premium will be prorated and refunded within 7 to 10 business days. Neha also noted that no paperwork is required and that Kavya can apply for a new policy in the future if she changes her mind.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-29T10:15:00",
+    "participants": {
+      "customer": {
+        "name": "Kavya Iyer",
+        "id": "c1a9f8e2-7b4d-4e2a-9c33-5d6f1a2b9c0d"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "d3b2c5f9-8e1a-4b6c-9d2f-1a3e4f6b7c8d"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "policy cancellation",
+      "coverage period",
+      "premium refund",
+      "policy reactivation"
+    ],
+    "action_items": [
+      "Send final confirmation email to customer",
+      "Process prorated refund of $120 within 7-10 business days"
+    ]
+  }
+}

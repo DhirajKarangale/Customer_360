@@ -1,0 +1,30 @@
+{
+  "content": "Rahul Jain called insurance agent Ramesh Tiwari to confirm the cancellation and expiration status of his auto policy (AU-45219) after selling his car. Ramesh verified that the policy expired on 25/09/2026, confirmed that a \u20b94,500 refund will be credited within 5-7 business days, and assured Rahul that no further paperwork is required.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T15:10:00",
+    "participants": {
+      "customer": {
+        "name": "Rahul Jain",
+        "id": "7f9c3e21-4b2a-48d9-9a6e-1d5f2b7c9e34"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "d3a5b8f4-9c1e-4f7a-8b2d-6e4c1a9f0b57"
+        }
+      ]
+    },
+    "user_mood": "concerned",
+    "topics": [
+      "policy cancellation",
+      "policy expiration",
+      "refund status",
+      "auto insurance"
+    ],
+    "action_items": [
+      "Wait for the \u20b94,500 refund to reflect in the bank account within 5-7 business days",
+      "Check email for the refund receipt once processed"
+    ]
+  }
+}

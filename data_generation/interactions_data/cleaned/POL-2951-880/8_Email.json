@@ -1,0 +1,30 @@
+{
+  "content": "Ravi Menon confirmed to Anvi Desai that Health Policy HP-DC-2024-7890 was cancelled effective September 30, 2026, and a refund of \u20b912,450 will be processed in 10-15 business days along with the settlement statement. Anvi acknowledged the confirmation and noted she will monitor her account for the refund and consider a future policy using the offered loyalty discount.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-10-02T10:15:00",
+    "participants": {
+      "customer": {
+        "name": "Anvi Desai",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "d4c3b2a1-8765-09ba-fedc-0987654321ba"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "policy cancellation",
+      "refund details",
+      "settlement statement",
+      "loyalty discount"
+    ],
+    "action_items": [
+      "Customer to monitor bank account for the \u20b912,450 refund within 10-15 business days",
+      "Customer to review the attached settlement statement"
+    ]
+  }
+}

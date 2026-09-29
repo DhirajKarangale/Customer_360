@@ -1,0 +1,30 @@
+{
+  "content": "Customer Dhruv Kapoor called insurance agent Neha Kapoor to check the status of his travel policy for an upcoming trip to Europe. The policy (SH-TRV-2026) was pending activation. Neha agreed to resend the welcome email attachment and confirmed the travel dates as October 15th to October 30th. Neha then successfully activated the policy and informed the customer that a confirmation email would be sent shortly.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Dhruv Kapoor",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "b2c3d4e5-6789-01bc-def0-2345678901bc"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "travel policy",
+      "policy activation",
+      "travel dates"
+    ],
+    "action_items": [
+      "Resend welcome email attachment",
+      "Activate travel policy",
+      "Send confirmation email"
+    ]
+  }
+}

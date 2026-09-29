@@ -1,0 +1,30 @@
+{
+  "content": "Customer Dev Chatterjee contacted insurance agent Neha Kapoor to inquire about his expiring HomeShield policy (#HS-2024-7890). Neha informed him that the policy expires on 30/09/2026 and offered a 5% loyalty discount for renewal. Dev opted to renew with the same coverage, and Neha provided the annual premium of $1,250, stating she would send the renewal quote and document shortly.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T10:15:02",
+    "participants": {
+      "customer": {
+        "name": "Dev Chatterjee",
+        "id": "a3f5c9e2-7b4d-41a2-9f6e-2d4b8c9a1f33"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "d9e2f7b1-5c3a-48d9-8a1e-6f7b2c4d5e66"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "home insurance policy expiration",
+      "policy renewal",
+      "loyalty discount",
+      "premium quote"
+    ],
+    "action_items": [
+      "Send the renewal quote to the customer",
+      "Send the renewal document for review"
+    ]
+  }
+}

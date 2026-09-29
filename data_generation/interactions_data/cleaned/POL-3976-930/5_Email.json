@@ -1,0 +1,26 @@
+{
+  "content": "Karan Joshi confirms the payment and successful renewal of Vedant Thakur's auto policy (AU-4589), effective from 02 October 2026 to 30 September 2027, and provides the updated policy schedule and insurance certificate. Vedant acknowledges receipt and confirms that everything is correct.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-05-10T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Vedant Thakur",
+        "id": "9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Auto policy renewal",
+      "Policy confirmation",
+      "Insurance documents"
+    ],
+    "action_items": []
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "content": "Rohan Deshmukh contacted insurance agent Karan Joshi to check the status of the prorated refund for his cancelled health policy (HP-2024-5678), noting he has not yet received the credit on his card. Karan Joshi confirmed that the refund was processed on 24/09/2026 and should reflect in his account within 5-7 business days, advising him to reach out if it does not appear by 07/10/2026.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-30T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "1b9e7f3a-2c4d-41a9-8f6e-3d5c9a7b0e12"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "7c2d5e9f-4b8a-4c3f-9a1d-6e2f3b7c8d90"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Cancellation Confirmation",
+      "Refund Status",
+      "Health Policy HP-2024-5678"
+    ],
+    "action_items": [
+      "Customer to wait 5-7 business days for the refund to reflect",
+      "Customer to follow up if the refund is not received by 07/10/2026"
+    ]
+  }
+}

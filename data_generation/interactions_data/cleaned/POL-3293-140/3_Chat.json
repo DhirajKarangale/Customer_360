@@ -1,0 +1,32 @@
+{
+  "content": "Aditya Singh discusses insurance quote options with agent Suresh Deshmukh and decides to go with the Premium Plus plan. Suresh provides details regarding the $1,200 annual deductible, specialist pre-authorization requirements, the renewal deadline of October 1, 2026, and a 10% OPD copay. Aditya asks how to submit acceptance, and Suresh instructs him to reply with \"Accept Premium Plus\" to process the renewal.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-10-01T09:15:12",
+    "participants": {
+      "customer": {
+        "name": "Aditya Singh",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "b2c3d4e5-6789-01ab-cdef-2345678901bc"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Premium Plus insurance plan",
+      "deductible amount",
+      "specialist pre-authorization",
+      "renewal deadline",
+      "OPD copay",
+      "policy renewal acceptance"
+    ],
+    "action_items": [
+      "Customer to reply with \"Accept Premium Plus\" to confirm renewal",
+      "Agent to process the renewal and send updated policy document"
+    ]
+  }
+}

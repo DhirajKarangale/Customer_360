@@ -1,0 +1,30 @@
+{
+  "content": "Aaradhya contacted Anjali for the signing link regarding a 3-month policy extension. The initial link was broken, so Anjali agreed to generate a new one. Anjali confirmed that the 5% premium discount was applied, bringing the total to $1,140. They also discussed upcoming surgery coverage, with Anjali confirming that coverage becomes active immediately upon signing and no extra steps are needed aside from providing the policy number to the hospital.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-12-10T09:15:30",
+    "participants": {
+      "customer": {
+        "name": "Aaradhya Verma",
+        "id": "9f1c2a3b-4d5e-6f78-90ab-cdef12345678"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anjali Desai",
+          "id": "a2b3c4d5-6e7f-8a9b-0c1d-2e3f4b5c6d7e"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "policy extension",
+      "signing link",
+      "premium discount",
+      "surgery coverage"
+    ],
+    "action_items": [
+      "Agent to generate and send a new signing link",
+      "Customer to sign the policy extension document"
+    ]
+  }
+}

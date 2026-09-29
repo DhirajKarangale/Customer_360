@@ -1,0 +1,29 @@
+{
+  "content": "Anvi Desai emailed insurance agent Ravi Menon to confirm the cancellation of her health policy (HP-DC-2024-7890) following a previous phone conversation. Ravi Menon responded confirming that the cancellation has been processed, the policy will terminate on 30/09/2026, and a final statement with any applicable refunds will be sent within 7-10 business days along with an attached confirmation document.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-28T09:15:30",
+    "participants": {
+      "customer": {
+        "name": "Anvi Desai",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ravi Menon",
+          "id": "d7e8f9g0-7777-8888-9999-aaaaabbbbbcc"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Health policy cancellation",
+      "Policy termination confirmation",
+      "Refunds"
+    ],
+    "action_items": [
+      "Customer to review attached cancellation confirmation",
+      "Agent to process final statement and refund within 7-10 business days"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "content": "Sneha Roy submitted her required health policy documents, including a blood test report, signed surgery declaration, and ID copy. Anita Sharma confirmed receipt of the documents, stated she will forward them to the underwriting team, and informed Sneha that the policy will be activated within 2-3 business days.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-09-30T09:15:20",
+    "participants": {
+      "customer": {
+        "name": "Sneha Roy",
+        "id": "3f9d8a2b-7c4e-4f1a-9b2e-6d5c8f1a2b3c"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Health Policy Pending",
+      "Document Submission",
+      "Blood Test Report",
+      "Surgery Declaration",
+      "Policy Activation"
+    ],
+    "action_items": [
+      "Anita Sharma to forward documents to the underwriting team",
+      "Activate policy within 2-3 business days",
+      "Send confirmation email once policy status changes to Active"
+    ]
+  }
+}

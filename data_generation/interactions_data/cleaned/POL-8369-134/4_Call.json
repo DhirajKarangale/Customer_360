@@ -1,0 +1,29 @@
+{
+  "content": "Aditya Singh spoke with insurance agent Vikram Patel to add a flood-damage rider to his home insurance policy. The rider adds INR 2,300 to his annual premium. They agreed to split the payment so Aditya can pay the base premium now and be invoiced for the rider amount in 30 days. Vikram updated the policy and confirmed an amendment email would be sent.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:10:00",
+    "participants": {
+      "customer": {
+        "name": "Aditya Singh",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "d4e5f6a7-8901-23bc-de45-67890abcdef1"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Home insurance policy",
+      "Flood-damage rider",
+      "Premium payment options"
+    ],
+    "action_items": [
+      "Send policy amendment email to customer",
+      "Invoice the rider amount of INR 2,300 in 30 days"
+    ]
+  }
+}

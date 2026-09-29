@@ -1,0 +1,29 @@
+{
+  "content": "Riya Mukherjee chatted with insurance agent Vikram Patel to confirm policy renewal details. Vikram confirmed that the $500 deductible remains unchanged and the new policy effective date starts on 01/10/2026. Riya proceeded to complete the renewal.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T10:02:15",
+    "participants": {
+      "customer": {
+        "name": "Riya Mukherjee",
+        "id": "a1b2c3d4-1111-2222-3333-444455556666"
+      },
+      "insurance_agents": [
+        {
+          "name": "Vikram Patel",
+          "id": "e7f8g9h0-7777-8888-9999-aaaaBBBBCCCC"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "policy renewal",
+      "deductible",
+      "effective date"
+    ],
+    "action_items": [
+      "Riya will complete the policy renewal.",
+      "Vikram will send updated policy documents upon submission."
+    ]
+  }
+}

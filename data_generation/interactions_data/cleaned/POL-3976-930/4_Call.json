@@ -1,0 +1,30 @@
+{
+  "content": "Customer Vedant Thakur called insurance agent Karan Joshi to confirm policy details and payment. Karan confirmed that the new policy starts on 02 Oct 2026 with no gap in coverage, following the expiration of the old policy AU-4589 on 01 Oct. Vedant confirmed he made the payment via the credit card link and received a receipt. Karan stated no further action is needed and promised to send a confirmation email once the payment clears.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-03-10T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Vedant Thakur",
+        "id": "d1e2f3a4-b5c6-7d8e-9f0a-b1c2d3e4f5a6"
+      },
+      "insurance_agents": [
+        {
+          "name": "Karan Joshi",
+          "id": "a1b2c3d4-e5f6-7a8b-9c0d-e1f2a3b4c5d6"
+        }
+      ]
+    },
+    "user_mood": "relieved",
+    "topics": [
+      "policy start date",
+      "policy expiration",
+      "payment confirmation",
+      "coverage gap"
+    ],
+    "action_items": [
+      "Process the credit card payment",
+      "Send a confirmation email to the customer after payment processing"
+    ]
+  }
+}

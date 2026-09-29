@@ -1,0 +1,29 @@
+{
+  "content": "Saanvi Pillai called insurance agent Anita Sharma to add the Critical-Illness Rider to her policy, which adds a $45 monthly premium and $50,000 in additional coverage, bringing her total coverage to $250,000 effective November 15, 2026. Saanvi also verified that her husband Rajesh remains the policy beneficiary and provided verbal consent to bind the rider via her existing auto-debit payment method.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T11:15:00",
+    "participants": {
+      "customer": {
+        "name": "Saanvi Pillai",
+        "id": "9f8c2a1b-3e4d-4b9a-9c1f-2d5e6f7a8b9c"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "Critical-Illness Rider",
+      "Premium update",
+      "Beneficiary verification",
+      "Sum assured coverage"
+    ],
+    "action_items": [
+      "Send a confirmation email to the customer regarding the rider addition"
+    ]
+  }
+}

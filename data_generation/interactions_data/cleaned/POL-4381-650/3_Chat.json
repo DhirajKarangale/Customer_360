@@ -1,0 +1,31 @@
+{
+  "content": "Anvi Desai inquired about details of the comprehensive insurance plan with agent Anita Sharma. Anita clarified specialist-visit coverage (80% up to $5,000), pre-authorization rules for consults over $200, and the October 30 renewal deadline (with a current premium lock if confirmed by October 20), sharing the plan brochure. Anvi expressed satisfaction and requested the renewal form, which Anita agreed to email.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-28T10:15:02",
+    "participants": {
+      "customer": {
+        "name": "Anvi Desai",
+        "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "b2c3d4e5-6789-01bc-def2-2345678901bc"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "comprehensive plan",
+      "specialist-visit coverage",
+      "pre-authorization",
+      "renewal deadline",
+      "renewal form"
+    ],
+    "action_items": [
+      "Review the comprehensive plan brochure",
+      "Send the renewal form via email"
+    ]
+  }
+}

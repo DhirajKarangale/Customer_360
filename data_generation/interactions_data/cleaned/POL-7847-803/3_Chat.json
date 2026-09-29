@@ -1,0 +1,29 @@
+{
+  "content": "Aditi Mahajan contacted Suresh Deshmukh to check the status of her $1,200 refund. Suresh confirmed that the refund was processed on September 27, 2026, and provided the transaction reference REF-20260927-1200, verifying that it will be credited to her card ending in 1234 within 2 to 3 business days.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-09-30T09:12:15",
+    "participants": {
+      "customer": {
+        "name": "Aditi Mahajan",
+        "id": "9a1b2c3d-4e5f-6789-abcd-ef0123456789"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "d4e5f6a7-b8c9-0d1e-f2g3-h4i5j6k7l8m9"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "refund status",
+      "transaction confirmation",
+      "payment method"
+    ],
+    "action_items": [
+      "Customer to check account for refund by 01/10/2026",
+      "Agent to investigate further if refund is not received by 01/10/2026"
+    ]
+  }
+}

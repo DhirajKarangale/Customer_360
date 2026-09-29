@@ -1,0 +1,26 @@
+{
+  "content": "Anita Sharma (insurance agent) confirmed the receipt of payment of \u20b911,875 for health policy HP-2026-001, making it active from 01/04/2026 to 31/03/2027, and attached the updated policy document. Akanksha Bhatt (customer) acknowledged receipt and confirmed all details are correct.",
+  "metadata": {
+    "type": "email",
+    "timestamp": "2026-05-10T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Akanksha Bhatt",
+        "id": "5d2e9a3c-1f4b-4c9a-8e2f-7c5b9d2a6f3e"
+      },
+      "insurance_agents": [
+        {
+          "name": "Anita Sharma",
+          "id": "9c4f7d2e-3a5b-41c9-9e8d-2b6a4e7c9d0f"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "Health Policy Renewal",
+      "Payment Confirmation",
+      "Policy Document"
+    ],
+    "action_items": []
+  }
+}

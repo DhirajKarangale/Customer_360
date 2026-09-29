@@ -1,0 +1,29 @@
+{
+  "content": "Kriti Mahajan called Suresh Deshmukh to confirm her premium due date (October 15, 2026), set up auto-debit using her bank details for upcoming travels, and inquire about the claim filing deadline. Suresh successfully scheduled the auto-debit, advised that claims should ideally be filed within 30 days of an event, and confirmed her address was updated.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T14:15:00",
+    "participants": {
+      "customer": {
+        "name": "Kriti Mahajan",
+        "id": "a5d3f2c1-9b4e-4f7a-8c2d-1e9b6a7c3d5e"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "interested",
+    "topics": [
+      "premium due date",
+      "auto-debit setup",
+      "claim filing deadline",
+      "contact information update"
+    ],
+    "action_items": [
+      "Send a confirmation email for the scheduled auto-debit"
+    ]
+  }
+}

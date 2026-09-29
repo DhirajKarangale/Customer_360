@@ -1,0 +1,29 @@
+{
+  "content": "Rohan Deshmukh and insurance agent Ramesh Tiwari reviewed the verification document for Rohan's life insurance policy, confirming details on page 3 regarding the nominee breakdown. Ramesh successfully updated the policy status to Active in the portal and provided the confirmation receipt, which Rohan downloaded.",
+  "metadata": {
+    "type": "chat",
+    "timestamp": "2026-05-28T11:15:20",
+    "participants": {
+      "customer": {
+        "name": "Rohan Deshmukh",
+        "id": "c1a2b3c4-d5e6-7890-abcd-ef0123456789"
+      },
+      "insurance_agents": [
+        {
+          "name": "Ramesh Tiwari",
+          "id": "f9e8d7c6-b5a4-3210-fedc-ba9876543210"
+        }
+      ]
+    },
+    "user_mood": "happy",
+    "topics": [
+      "policy verification",
+      "nominee breakdown",
+      "policy status active",
+      "confirmation receipt"
+    ],
+    "action_items": [
+      "Download the policy confirmation receipt"
+    ]
+  }
+}

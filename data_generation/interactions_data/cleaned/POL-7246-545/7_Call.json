@@ -1,0 +1,32 @@
+{
+  "content": "Customer Kavya Iyer called insurance agent Suresh Deshmukh to confirm that her life insurance policy (L-2026-0459) status was active after paying her premium. Suresh confirmed the policy is active, verified that Anjali Iyer and Meera Iyer remain primary and secondary beneficiaries, and updated Kavya's address to 78 Pine Avenue, Bengaluru. They also reviewed the claims process (requiring a death certificate and beneficiary ID), and Suresh agreed to email an auto-debit enrollment form for automatic premium payments along with an updated policy PDF.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T10:15:00",
+    "participants": {
+      "customer": {
+        "name": "Kavya Iyer",
+        "id": "9f1c2a3b-7e4d-4f8a-9c2b-6d5e7f8a9b0c"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "satisfied",
+    "topics": [
+      "Policy status confirmation",
+      "Beneficiary verification",
+      "Address update",
+      "Claims process",
+      "Automatic premium payments"
+    ],
+    "action_items": [
+      "Send updated schedule via email",
+      "Send auto-debit enrollment form via email",
+      "Email updated policy PDF"
+    ]
+  }
+}

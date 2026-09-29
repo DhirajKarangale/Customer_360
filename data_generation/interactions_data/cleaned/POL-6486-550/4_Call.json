@@ -1,0 +1,28 @@
+{
+  "content": "Customer Dev Chatterjee called insurance agent Suresh Deshmukh to confirm the status of his health policy (#HP-34219). The agent confirmed it expired on August 15, 2026, and remains inactive with no premiums being charged. The customer stated he is not ready to renew at this time and requested an email summary of the previous coverage.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-30T14:15:00",
+    "participants": {
+      "customer": {
+        "name": "Dev Chatterjee",
+        "id": "9f8c2e1b-7a4d-4b9a-9c3e-1d5f6a7b8c9d"
+      },
+      "insurance_agents": [
+        {
+          "name": "Suresh Deshmukh",
+          "id": "3a6a7028-a699-4de4-b932-41271ff311d6"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "health policy status",
+      "policy expiration",
+      "coverage summary"
+    ],
+    "action_items": [
+      "Email the previous coverage summary to the customer"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "content": "Saanvi Pillai discusses the renewal of her expired health policy (HP-2024-9876) with insurance agent Neha Kapoor. Neha informs her that the new premium is \u20b912,500 (an increase of \u20b91,200) and explains that there is a 15-day grace period until 14 September 2026 to pay without a coverage lapse. Saanvi confirms she will pay using the secure link provided in the email.",
+  "metadata": {
+    "type": "call",
+    "timestamp": "2026-09-28T09:15:00",
+    "participants": {
+      "customer": {
+        "name": "Saanvi Pillai",
+        "id": "7f3a9c2e-5b4d-4e2a-9c1f-8d2b6a7e9c01"
+      },
+      "insurance_agents": [
+        {
+          "name": "Neha Kapoor",
+          "id": "a2d4f6b9-8c3e-4f1a-b2e5-9f7c3d1e0b44"
+        }
+      ]
+    },
+    "user_mood": "neutral",
+    "topics": [
+      "Health policy renewal",
+      "Premium amount",
+      "Grace period",
+      "Payment process"
+    ],
+    "action_items": [
+      "Saanvi Pillai to complete the policy payment using the secure link",
+      "Neha Kapoor to activate the policy immediately after payment submission"
+    ]
+  }
+}
