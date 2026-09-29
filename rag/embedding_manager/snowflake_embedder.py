@@ -10,8 +10,6 @@ import snowflake.connector
 class EmbeddingManager:
     """Generates embeddings via Snowflake Cortex. Manages its own connection lifecycle."""
 
-    _RECONNECT_EVERY = 50
-
     def __init__(self, model: str, dimension: int) -> None:
         self._model = model
         self._dimension = dimension
@@ -23,8 +21,6 @@ class EmbeddingManager:
     def embed_text(self, text: str) -> list[float]:
         """Generate embedding for a single text string."""
         self._call_count += 1
-        if self._call_count % self._RECONNECT_EVERY == 0:
-            self._refresh_connection()
 
         conn = self._get_connection()
         query = f"SELECT SNOWFLAKE.CORTEX.EMBED_TEXT_{self._dimension}(%s, %s)"
@@ -70,12 +66,21 @@ class EmbeddingManager:
         return self._conn
 
     def _create_connection(self) -> snowflake.connector.SnowflakeConnection:
-        conn = snowflake.connector.connect(
-            user=os.getenv("SNOWFLAKE_USER"),
-            password=os.getenv("SNOWFLAKE_PASSWORD"),
-            account=os.getenv("SNOWFLAKE_ACCOUNT"),
-            passcode="987043"
-        )
+        import os
+        try:
+            conn = snowflake.connector.connect(
+                user=os.getenv("SNOWFLAKE_USER"),
+                password=os.getenv("SNOWFLAKE_PASSWORD"),
+                account=os.getenv("SNOWFLAKE_ACCOUNT"),
+                passcode="546119"
+            )
+        except Exception as e:
+            error_str = str(e).lower()
+            if "mfa" in error_str or "auth" in error_str or "passcode" in error_str or "incorrect username or password" in error_str or "too many failed" in error_str or "locked" in error_str or "connection is closed" in error_str:
+                print(f"\n[CRITICAL] Snowflake Auth/MFA Error: {e}")
+                print("Aborting the entire process to prevent lockout. Please update the passcode and rerun.")
+                os._exit(1)
+            raise
 
         cursor = conn.cursor()
         warehouse = os.getenv("SNOWFLAKE_WAREHOUSE")

@@ -14,11 +14,20 @@ SF_DATABASE = os.getenv("SNOWFLAKE_DATABASE")
 SF_SCHEMA = os.getenv("SNOWFLAKE_SCHEMA")
 
 def get_snowflake_conn():
-    conn = snowflake.connector.connect(
-        user=SF_USER,
-        password=SF_PASSWORD,
-        account=SF_ACCOUNT
-    )
+    import sys
+    try:
+        conn = snowflake.connector.connect(
+            user=SF_USER,
+            password=SF_PASSWORD,
+            account=SF_ACCOUNT
+        )
+    except Exception as e:
+        error_str = str(e).lower()
+        if "mfa" in error_str or "auth" in error_str or "passcode" in error_str or "incorrect username or password" in error_str or "too many failed" in error_str or "locked" in error_str or "connection is closed" in error_str:
+            print(f"\n[CRITICAL] Snowflake Auth/MFA Error in get_snowflake_conn: {e}")
+            print("Aborting the entire process to prevent lockout. Please update the passcode and rerun.")
+            os._exit(1)
+        raise
 
     cursor = conn.cursor()
     if SF_WAREHOUSE:
