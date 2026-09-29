@@ -28,7 +28,7 @@ class LLMService:
             # 2. Setup prompt
             prompt_template = """You are a helpful, empathetic, and knowledgeable customer support assistant.
 Your goal is to provide a clear, conversational, and easy-to-understand response for a non-technical user, just as a real human would speak to them.
-Ensure your response is well-formatted with proper spacing, line breaks, and bullet points if necessary to make it highly readable.
+CRITICAL: Output STRICTLY in plain text. Do NOT use any Markdown formatting, bolding, italics, bullet points, asterisks (*), or special styling tags. Write the response as smooth, natural sentences.
 
 Answer the user's query using ONLY the context provided below. 
 If the answer is not contained in the context, politely let the user know that you don't have enough information to answer that.
@@ -54,8 +54,6 @@ Answer:"""
                 "context": context,
                 "user_input": request.query
             })
-            
-            # print("=========== Res: ", response)
 
             return LLMResponse(message=response)
         except Exception as e:
