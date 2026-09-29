@@ -1,27 +1,57 @@
 import sys
 import os
 from fastapi import HTTPException, status
-from server.schemas.llm import LLMRequest, LLMResponse
+from server.schemas.llm import LLMRequest
 
 project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
 from utils.llm_utils import get_llm
+from rag.scripts.retrieval import RAGRetrievalPipeline
+from langchain_core.prompts import PromptTemplate
+from langchain_core.output_parsers import StrOutputParser
 
 class LLMService:
-    def generate_response(self, request: LLMRequest) -> LLMResponse:
+    def __init__(self):
+        pass
+        
+    def generate_response(self, request: LLMRequest) -> str:
         try:
-            llm_runnable = get_llm(request.model_key)
-            if not llm_runnable:
-                raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="LLM configuration error")
+            # 1. Retrieve context
+            retrieval_pipeline = RAGRetrievalPipeline()
+            try:
+                context, count = retrieval_pipeline.retrieve_context(request.query)
+            finally:
+                retrieval_pipeline.close()
+
+            # 2. Setup prompt
+            prompt_template = """You are an intelligent customer support assistant.
+Answer the user's query using ONLY the context provided below. Be precise and directly answer the question asked.
+If the answer is not contained in the context, say "I don't have enough information to answer that."
+
+Context:
+{context}
+
+User Query:
+{user_input}
+
+Answer:"""
+            prompt = PromptTemplate.from_template(prompt_template)
             
-            result = llm_runnable.invoke(request.prompt)
-            if hasattr(result, "content"):
-                result_str = result.content
-            else:
-                result_str = str(result)
+            # 3. Get LLM
+            llm = get_llm('TRANSCRIPT')
+            if not llm:
+                raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="LLM configuration error")
                 
-            return LLMResponse(response=result_str)
+            chain = prompt | llm | StrOutputParser()
+            
+            # 4. Generate
+            response = chain.invoke({
+                "context": context,
+                "user_input": request.query
+            })
+            
+            return response
         except Exception as e:
             raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=f"LLM Error: {str(e)}")

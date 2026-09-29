@@ -1,6 +1,8 @@
 from typing import List, Optional
+import math
 from server.db.repositories.customer_repo import CustomerRepository
 from server.schemas.customer import CustomerResponse
+from server.schemas.pagination import PaginatedResponse
 
 class CustomerService:
     def __init__(self, customer_repo: CustomerRepository):
@@ -11,8 +13,10 @@ class CustomerService:
         agent_id: str, 
         policy_status: Optional[str] = None,
         policy_type: Optional[str] = None,
-        customer_name: Optional[str] = None
-    ) -> List[CustomerResponse]:
+        customer_name: Optional[str] = None,
+        page: int = 1,
+        page_size: int = 10
+    ) -> PaginatedResponse[CustomerResponse]:
         filters = {}
         if policy_status:
             filters["policy_status"] = policy_status
@@ -21,7 +25,7 @@ class CustomerService:
         if customer_name:
             filters["customer_name"] = customer_name
             
-        customers = self.customer_repo.get_customers_by_agent(agent_id, filters)
+        total_items, customers = self.customer_repo.get_customers_by_agent(agent_id, filters, page, page_size)
         
         results = []
         for c in customers:
@@ -33,4 +37,13 @@ class CustomerService:
                 date_of_birth=c.get("DATE_OF_BIRTH") or c.get("date_of_birth"),
                 address=c.get("ADDRESS") or c.get("address"),
             ))
-        return results
+            
+        total_pages = math.ceil(total_items / page_size) if total_items > 0 else 1
+        
+        return PaginatedResponse[CustomerResponse](
+            total_items=total_items,
+            total_pages=total_pages,
+            current_page=page,
+            count=len(results),
+            items=results
+        )

@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from server.config.settings import settings
 from server.api.routes import auth_routes, agent_routes, policy_routes, customer_routes, llm_routes
 from server.utils.logger import get_logger
+from utils.sf_auth import get_snowflake_conn
 
 logger = get_logger(__name__)
 
@@ -30,6 +31,16 @@ def create_app() -> FastAPI:
     @app.on_event("startup")
     async def startup_event():
         logger.info(f"Starting {settings.app_name} Server...")
+        logger.info("Initializing global Snowflake connection...")
+        get_snowflake_conn()
+        logger.info("Snowflake connection initialized successfully.")
+
+    @app.on_event("shutdown")
+    async def shutdown_event():
+        logger.info("Closing global Snowflake connection...")
+        conn = get_snowflake_conn()
+        if conn and not conn.is_closed():
+            conn.close()
 
     @app.get("/health", tags=["Health"])
     def health_check():

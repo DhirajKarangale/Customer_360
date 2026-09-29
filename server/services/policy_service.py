@@ -1,19 +1,28 @@
 from typing import List, Optional
+import math
 from server.db.repositories.policy_repo import PolicyRepository
 from server.schemas.policy import PolicyResponse
+from server.schemas.pagination import PaginatedResponse
 
 class PolicyService:
     def __init__(self, policy_repo: PolicyRepository):
         self.policy_repo = policy_repo
 
-    def get_agent_policies(self, agent_id: str, status: Optional[str] = None, policy_type: Optional[str] = None) -> List[PolicyResponse]:
+    def get_agent_policies(
+        self, 
+        agent_id: str, 
+        status: Optional[str] = None, 
+        policy_type: Optional[str] = None,
+        page: int = 1,
+        page_size: int = 10
+    ) -> PaginatedResponse[PolicyResponse]:
         filters = {}
         if status:
             filters["status"] = status
         if policy_type:
             filters["policy_type"] = policy_type
             
-        policies = self.policy_repo.get_policies_by_agent(agent_id, filters)
+        total_items, policies = self.policy_repo.get_policies_by_agent(agent_id, filters, page, page_size)
         
         results = []
         for p in policies:
@@ -29,4 +38,13 @@ class PolicyService:
                 premium_amount=float(p.get("PREMIUM_AMOUNT") or p.get("premium_amount")) if (p.get("PREMIUM_AMOUNT") or p.get("premium_amount")) else None,
                 coverage_amount=float(p.get("COVERAGE_AMOUNT") or p.get("coverage_amount")) if (p.get("COVERAGE_AMOUNT") or p.get("coverage_amount")) else None,
             ))
-        return results
+            
+        total_pages = math.ceil(total_items / page_size) if total_items > 0 else 1
+        
+        return PaginatedResponse[PolicyResponse](
+            total_items=total_items,
+            total_pages=total_pages,
+            current_page=page,
+            count=len(results),
+            items=results
+        )
