@@ -1,0 +1,17 @@
+call_id: c3f9a7b2-5e4d-4a9c-8f2b-1d6e9f3c7a2b
+start_timestamp: 15/10/2026 T:10:15:30
+end_timestamp: 15/10/2026 T:10:18:45
+participants[2]{id,name,role}:
+  1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d,Reyansh Tiwari,customer
+  9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f,Karan Joshi,insurance agent
+messages[10]{user,text}:
+  user_1,Hey Karan uh... I got the payment link you sent but... I think I might just let the auto policy expire. Can we... cancel the renewal?
+  user_2,Sure um let me check... Yeah we can let it lapse. The current policy AU‑45789 is set to expire on 01/10/2026 so if we don't process payment it will be marked expired.
+  user_1,Yeah I decided to go with a different insurer I don't need the bundle anymore.
+  user_2,Understood... I'll update the system to reflect a cancellation. You'll receive a confirmation email shortly.
+  user_1,[sighs] Thanks. Also can you send me a copy of the final policy statement for my records even though it's expired?
+  user_2,Absolutely I'll email you the policy‑summary PDF and a cancellation notice.
+  user_1,Appreciate it One more thing... If I ever need to reinstate what's the process?
+  user_2,You can contact us anytime we can issue a new quote. Since the policy will be marked expired you'd need a fresh application.
+  user_1,Got it Thanks for your help.
+  user_2,No problem Reyansh. Have a good day.

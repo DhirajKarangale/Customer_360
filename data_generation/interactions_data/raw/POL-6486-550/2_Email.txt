@@ -1,0 +1,8 @@
+mail_id: e3f9a1c2-5d4b-41e8-9c2f-7b6a9d0e3f12
+subject: Your Health Policy Status – Expired as of 15 Aug 2026
+participants[2]{id,name,email,role}:
+  a1c9f8e2-7b3d-4f6a-9c1e-2d5b6a7e9f01,Dev Chatterjee,dev.chatterjee@dcoders.com,customer
+  b3d2e5f7-9a4c-4b8e-8d2f-3c6a7b9e0d12,Suresh Deshmukh,suresh.d@securelifesolutions.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,20/09/2026 T:09:15:00,"Dear Dev,\n\nThank you for speaking with me earlier today. As discussed, your health policy (Policy No: HL-2026-0457) expired on 15 Aug 2026. We have noted that you wish to keep the policy in its expired state for now while you explore other options. Should you decide to reactivate or need a new plan, feel free to reach out.\n\nBest regards,\nSuresh Deshmukh\nInsurance Agent\nSecure Life Solutions",
+  user_1,user_2,,20/09/2026 T:10:02:00,"Hi Suresh,\n\nThanks for the summary. I appreciate the clarification. I’ll keep the policy as expired for now and will get back to you when I’m ready to consider renewal or a new plan.\n\nRegards,\nDev Chatterjee",

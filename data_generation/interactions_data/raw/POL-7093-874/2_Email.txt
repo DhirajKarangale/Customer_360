@@ -1,0 +1,8 @@
+mail_id: a1f9c3e2-7b4d-41f8-9e2a-5d6c8f9b0e12
+subject: Life Policy Activation Confirmation – Policy No. LC-2026-00123
+participants[2]{id,name,email,role}:
+  4d9e2b7c-3f1a-4c9e-8a6d-2b5f7c1e9a34,Samar Ghosh,samar.ghosh@example.com,customer
+  9b6f3a1d-5e2c-4d8b-9c7f-1a2e3d4b5c6f,Sunita Agarwal,sunita.agarwal@protectallagency.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,02/10/2026 T:09:15:00,"Hi Sunita,\n\nThank you for speaking with me earlier. Could you please send me the official policy document and confirm the sum assured and premium details?\n\nPolicy Number: LC-2026-00123\n\nBest,\nSamar",
+  user_2,user_1,,02/10/2026 T:09:45:30,"Dear Samar,\n\nI'm pleased to confirm that your Life policy (Policy No. LC-2026-00123) is now active. The sum assured is ₹10 lakh and the annual premium is ₹12,500, payable on the 1st of each year. Please find attached the policy schedule for your records.\n\nIf you have any further questions, feel free to reach out.\n\nWarm regards,\nSunita Agarwal\nInsurance Agent\nProtect All Agency\nsunita.agarwal@protectallagency.com",https://storage.protectallagency.com/policies/LC-2026-00123_schedule.pdf

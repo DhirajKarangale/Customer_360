@@ -1,0 +1,17 @@
+call_id: CALL-7-DC-2026-001
+start_timestamp: 20/10/2026 T:09:15:00
+end_timestamp: 20/10/2026 T:09:20:00
+participants[2]{id,name,role}:
+  c9f1e2b4-7a3d-41f9-9b2e-5d6c8a1f2b3c,Kriti Mahajan,customer
+  a4d9e6f7-2b5c-48d1-9a0e-3c7b6d5e8f9a,Karan Joshi,insurance agent
+messages[10]{user,text}:
+  user_1,[00:00] Hi Karan, it's Kriti. I got the payment link you sent, but I'm not sure how to proceed.
+  user_2,[00:05] Hey Kriti, sure—just click the link, it takes you to our secure portal.
+  user_1,[00:12] Umm, I see the amount $345. Is that the total? No extra fees?
+  user_2,[00:18] Yes, that's the full premium for the 3‑month term. No hidden charges.
+  user_1,[00:25] [sighs] Great. Also, can you confirm the collision and comprehensive limits again? I want to be 100% sure before I pay.
+  user_2,[00:30] Absolutely—collision is $25,000, comprehensive $20,000, same as we discussed.
+  user_1,[00:38] Got it. One more thing—once I pay, when does the coverage start? Immediately?
+  user_2,[00:45] As soon as the payment processes, usually within a few minutes. We'll send you a confirmation email.
+  user_1,[00:52] Perfect. I'll go ahead now. If anything pops up, can I call you back?
+  user_2,[00:58] Sure thing, just give me a call or reply here. Have a good day!

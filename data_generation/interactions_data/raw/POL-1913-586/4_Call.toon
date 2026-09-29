@@ -1,0 +1,17 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:09:15:00
+end_timestamp: 28/09/2026 T:09:18:45
+participants[2]{id,name,role}:
+  7f3a9c2e-5b4d-4e2a-9c1f-8d2b6a7e9c01,Saanvi Pillai,customer
+  a2d4f6b9-8c3e-4f1a-b2e5-9f7c3d1e0b44,Neha Kapoor,insurance agent
+messages[10]{user,text}:
+  user_2,[00:00] Hello Saanvi, this is Neha from Shield Life Services, can you hear me? [sighs]
+  user_1,[00:05] Yeah, hi... I can hear you. Uh, yeah, I got your email.
+  user_2,[00:12] Great. So just to confirm, your health policy HP‑2024‑9876 expired on 31 Aug 2026, right? -- I see that here.
+  user_1,[00:18] Yes, that's right. I was wondering... what's the exact premium now?
+  user_2,[00:24] The renewal premium comes to ₹12,500, which is about ₹1,200 higher than your current plan. -- I’ve also sent a PDF quote earlier.
+  user_1,[00:33] Okay… and if I miss the deadline, will there be a gap in coverage?
+  user_2,[00:39] There's a 15‑day grace period, so you have until 14 Sept 2026 to pay without a lapse. After that, coverage stops on the expiry date.
+  user_1,[00:48] Got it. Can I pay through the link you shared?
+  user_2,[00:53] Yes, just click the link in the email – it redirects to our secure portal. Let me know once you’ve submitted, and I’ll activate it immediately.
+  user_1,[01:02] Sure, I’ll do that now. Thanks, Neha.

@@ -1,0 +1,20 @@
+call_id: REC-DC-2026-001A
+start_timestamp: 29/09/2026 T:09:15:00
+end_timestamp: 29/09/2026 T:09:20:45
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Sneha Roy,customer
+  d4e5f6g7-8901-23hi-jk45-67890lmnopqr,Anita Sharma,insurance agent
+messages[13]{user,text}:
+  user_1,[00:00] Hello? Hi, is this Anita from Trust Wealth Advisors? I... I wanted to talk about my health policy.
+  user_2,[00:05] Yes, hi Sneha! This is Anita Sharma, how can I help you today?
+  user_1,[00:10] Umm, I received a notice that my policy status is... pending? I'm a bit confused.
+  user_2,[00:15] Okay, let me pull up your details... [typing]... Got it. Your policy number is HP-2026-0456, right?
+  user_1,[00:20] Yeah, that's the one. I was wondering if the pending status means I need to submit any documents.
+  user_2,[00:25] Usually pending means we’re waiting on a couple of things—maybe a recent medical report or a claim form. Did you get a request email?
+  user_1,[00:30] I think I got an email, but I... I didn't open it yet. [sighs] Can you tell me what exactly is needed?
+  user_2,[00:35] Sure. We need your latest blood test results and a signed declaration that you haven’t had any major surgeries in the last year. Also, a copy of your ID.
+  user_1,[00:40] Got it. I can send those over. How should I upload them?
+  user_2,[00:45] You can upload them through our portal, or email me directly at anita.sharma@trustwealth.com. Whatever’s easier.
+  user_1,[00:50] Okay, I’ll do that today. Do I need to do anything else for the policy to be active?
+  user_2,[00:55] Once we receive the docs, we’ll review and update the status. Should be active within 2-3 business days. Anything else I can help with?
+  user_1,[01:00] No, that's all. Thanks!

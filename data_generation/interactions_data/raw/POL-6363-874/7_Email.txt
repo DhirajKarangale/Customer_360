@@ -1,0 +1,8 @@
+mail_id: 9f3b2a7c-1e4f-4d9b-8c6a-2b5e9f7d1c4e
+subject: Travel Policy Renewal Confirmation – TRV‑2024‑0789
+participants[2]{id,name,email,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Meera Chauhan,meera.chauhan@dcoders.com,customer
+  d4c3b2a1-8765-09ba-fedc-0987654321fe,Ravi Menon,ravi.menon@securefuture.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,12/10/2026 T:09:15:00,"Hi Ravi,\n\nThanks for confirming the payment. Could you please send me the final policy document and let me know the exact steps to add my spouse as a co‑traveler? My travel dates are 10 Oct 2026 to 9 Nov 2026.\n\nBest,\nMeera",
+  user_2,user_1,,12/10/2026 T:09:45:00,"Dear Meera,\n\nI’m pleased to confirm that your Travel Policy TRV‑2024‑0789 has been renewed and is now active from 10 Oct 2026 through 9 Nov 2026. You can download the full policy document here:\nhttps://storage.securefuture.com/policies/TRV-2024-0789_Renewed_2026.pdf\n\nTo add your spouse, Jane Chauhan, as a co‑traveler, please follow these steps:\n1. Log in to your account at https://portal.securefuture.com.\n2. Navigate to ‘My Policies’ → ‘TRV‑2024‑0789’ → ‘Add Co‑Traveler’.\n3. Enter her full name, date of birth, and passport number.\n4. Confirm the additional premium of $30 and submit.\n5. You will receive a confirmation email once the addition is processed.\n\nIf you need any assistance, feel free to reply to this email or call our support line.\n\nBest regards,\nRavi Menon\nInsurance Agent, Secure Future Group\nravi.menon@securefuture.com",https://storage.securefuture.com/policies/TRV-2024-0789_Renewed_2026.pdf

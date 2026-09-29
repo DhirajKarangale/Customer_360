@@ -1,0 +1,8 @@
+mail_id: a7c9f2e4-5b1d-4a9f-8c3e-1d2f6b9e7a4c
+subject: Your Auto Policy Cancellation Refund – Confirmation & Receipt
+participants[2]{id,name,email,role}:
+  1e3b9a7c-4d5f-4c2a-9e8b-6f7d2a1c3b5e,Reyansh Tiwari,reyan.t@dcoders.com,customer
+  9f2d6c3b-8a1e-4b7f-9c2d-5e6a7b8c9d0e,Ravi Menon,ravi.m@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2026 T:09:15:00,"Hi Reyansh,\n\nI’m writing to confirm that your auto‑policy cancellation has been fully processed. As discussed, a prorated refund of $480.00 will be credited to the payment method on file and should appear on your statement by 05/10/2026.\n\nThere are no outstanding balances on your account. Please find attached the official refund receipt for your records.\n\nIf you’d like to explore a new policy in the future, just let me know and I’ll prepare a fresh quote.\n\nBest regards,\nRavi Menon\nInsurance Agent, Secure Future Group\nravi.m@dcoders.com",https://storage.dcoders.com/receipts/Refund_Receipt_2026_09_28_001.pdf
+  user_1,user_2,,28/09/2026 T:09:45:00,"Hi Ravi,\n\nThanks for the confirmation and the receipt. I appreciate the quick turnaround.\n\nWhen I’m ready to get a new auto policy, could you please send me a preliminary quote based on my current driving record? Also, let me know if there are any loyalty discounts I might be eligible for.\n\nThanks again for your help.\n\nBest,\nReyansh",

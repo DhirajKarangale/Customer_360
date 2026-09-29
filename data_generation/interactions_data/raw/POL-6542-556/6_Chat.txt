@@ -1,0 +1,11 @@
+chat_id: a1b2c3d4-5678-90ab-cdef-1234567890ab
+participants[2]{id,name,role}:
+  9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f,Akanksha Bhatt,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[6]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T10:15:02,"hi suresh, i just signed the consent on the portal, uploading it now *now*.", 
+  user_2,28/09/2026 T10:15:10,"Hello Akanksha! Got it. Please go ahead and upload the signed consent PDF here.", 
+  user_1,28/09/2026 T10:15:25,"uploading... *done* (see attached)",https://storage.dcoders.com/uploads/consent_akanksha_20260928.pdf
+  user_2,28/09/2026 T10:16:00,"Thanks! I’ve received the consent. Your MRI pre‑authorization is now approved. You’ll get a confirmation email within the next hour. Remember to bring your ID and insurance card to the imaging centre. The co‑pay will be 10% of the MRI cost after the ₹2,000 deductible.", 
+  user_1,28/09/2026 T10:16:20,"great, thx! any specific centre you recommend? also, will the email have the appointment link?", 
+  user_2,28/09/2026 T10:16:45,"You can book with any network hospital. I’ll CC Priya from our network ops; she’ll share a list and the booking link. Let me know if you need help.",https://storage.dcoders.com/docs/Network_Hospitals_List.pdf

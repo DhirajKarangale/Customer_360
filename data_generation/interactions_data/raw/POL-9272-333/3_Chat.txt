@@ -1,0 +1,12 @@
+chat_id: c3f9a7b2-1e4d-4f9a-8c2b-6d5e9f0a1b2c
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Sai Kumar,customer
+  b2c3d4e5-6789-01ab-cdef-2345678901bc,Ravi Menon,insurance agent
+messages[7]{user,timestamp,text,media_url}:
+  user_1,01/10/2026 T09:15:12,"hi*Hello ravi, just checking on my home policy status. i think it might have expired?", 
+  user_2,01/10/2026 T09:15:45,"Hey Sai! Let me pull that up for you. One sec.", 
+  user_2,01/10/2026 T09:16:30,"Okay, I see the original policy (HC-2026-7854) expired on 15 Aug 2026, but we renewed it on 20 Aug 2026. The new policy is active until 15 Aug 2027.", 
+  user_1,01/10/2026 T09:17:05,"got it, thx*thanks! can you send me the new expiry date again? i want to make sure i have it right.", 
+  user_2,01/10/2026 T09:17:45,"Sure thing – the renewed policy expires on 15 August 2027. Let me know if you need anything else.", 
+  user_1,01/10/2026 T09:18:20,"actually, i think i might need to add a new garaje*garage to the coverage. can we update that?", 
+  user_2,01/10/2026 T09:19:10,"Absolutely, we can add the garage. I’ll send you an endorsement form shortly. Expect an email in a few minutes.",

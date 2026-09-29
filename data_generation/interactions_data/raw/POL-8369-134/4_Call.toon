@@ -1,0 +1,18 @@
+call_id: REC-INS-004A
+start_timestamp: 28/09/2026 T:14:10:00
+end_timestamp: 28/09/2026 T:14:13:30
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Aditya Singh,customer
+  d4e5f6a7-8901-23bc-de45-67890abcdef1,Vikram Patel,insurance agent
+messages[11]{user,text}:
+  user_2,[00:00] Hello Aditya, this is Vikram Patel from Omni Insurance, how are you today?
+  user_1,[00:15] Hi Vikram... uh, I'm good, thanks. You?
+  user_2,[00:30] I'm fine, thanks. I just wanted to follow up on your home policy—any questions?
+  user_1,[00:45] Yeah, actually I was looking at the policy doc you sent, and I think I need to add a flood‑damage rider. Can we do that?
+  user_2,[01:00] Sure thing—let me pull that up. [typing] Okay, the flood rider adds INR 2,300 per annum to your premium.
+  user_1,[01:20] Hmm, that's a bit higher than I expected—uh, can I pay that extra amount separately, maybe next month?
+  user_2,[01:35] Absolutely, we can split it. You can keep the base premium of 12,500 now, and the rider amount will be invoiced in 30 days. Does that work?
+  user_1,[01:55] Yeah, that works. Please go ahead and add it.
+  user_2,[02:10] Done. I've updated your policy to HC‑AD‑2026‑001‑FLOOD, and you’ll receive an amendment email shortly. Anything else I can help with?
+  user_1,[02:25] No, that's all. Thanks for the help!
+  user_2,[02:30] You're welcome! Have a great day.

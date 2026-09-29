@@ -1,0 +1,17 @@
+call_id: REC-INS-004C
+start_timestamp: 01/10/2026 T:09:12:00
+end_timestamp: 01/10/2026 T:09:18:00
+participants[2]{id,name,role}:
+  d4f9a6b2-1c3e-4a7f-9b2e-6c8d5f1a2b3c,Ishaan Bose,customer
+  a7c3e9d4-5b6f-4d8a-9c1e-2f3b4a5c6d7e,Ramesh Tiwari,insurance agent
+messages[10]{user,text}:
+  user_1,[00:00] Hi Ramesh, it's Ishaan. I got your email and the payment link. -- I just wanted to confirm how I should actually pay the $25 reinstatement fee.
+  user_2,[00:10] Hey Ishaan, yeah, you can click the link I sent, it takes you to our secure portal. You can pay via credit card or PayPal. The fee is $25, simple.
+  user_1,[00:20] Umm, okay... and once I pay, how soon will the policy be active again? I need coverage for a doctor appointment tomorrow.
+  user_2,[00:30] Once the payment is processed—usually within a few minutes—the policy reinstates retroactively to 15/09/2026, and you’ll get a confirmation email. So you’ll be covered for tomorrow.
+  user_1,[00:45] Got it. And do I need to fill out any additional paperwork, or is the form I already have enough?
+  user_2,[00:55] Just sign the form and send it back by 30/09/2026. If you’ve already filled it, you can email it back now. No extra docs needed.
+  user_1,[01:05] [typing] Okay, I’ll do that. One more thing—will I get a receipt for the $25? I need it for my records.
+  user_2,[01:15] Yes, after the payment you’ll get an automated receipt on the portal and a PDF attached to the confirmation email.
+  user_1,[01:25] [sighs] Great, thanks. I’ll make the payment right after this call.
+  user_2,[01:35] Perfect. If you run into any issues, just give us a call. Have a good day!

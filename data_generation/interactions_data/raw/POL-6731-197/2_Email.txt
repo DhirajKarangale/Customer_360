@@ -1,0 +1,8 @@
+mail_id: a7f3c9e2-4b1d-4e6a-9c2f-8d7a5b3c6e1f
+subject: Renewal Quote for Your Auto Policy (Policy No: DG-2024-5678)
+participants[2]{id,name,email,role}:
+  1c9e5b7a-3f2d-4a6b-8c1e-9d2f3b4c5d6e,Sneha Roy,sneha.roy@dcoders.com,customer
+  7a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d,Anjali Desai,anjali.desai@firstguardbrokers.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,27/09/2026 T:09:30:45,"Dear Sneha,\n\nThank you for speaking with me earlier today. As discussed, please find attached the renewal quote for your auto policy (Policy No: DG-2024-5678) covering your 2020 Honda Civic. The total premium for the 12‑month term is $1,250.00, payable in full or in quarterly installments of $312.50.\n\nKey highlights:\n- Comprehensive coverage with $500 deductible\n- Zero depreciation cover included\n- Roadside assistance\n\nPlease review the quote at your earliest convenience. If everything looks good, you can sign the attached renewal form and return it to me via email or upload it through our portal.\n\nShould you have any questions or need adjustments, feel free to let me know.\n\nBest regards,\nAnjali Desai\nInsurance Agent | First Guard Brokers\nPhone: +1 (555) 123‑4567\nEmail: anjali.desai@firstguardbrokers.com",https://storage.firstguardbrokers.com/docs/Renewal_DG-2024-5678.pdf
+  user_1,user_2,,27/09/2026 T:10:12:10,"Hi Anjali,\n\nThanks for sending the quote. The coverage looks good, but I’d like to know if I can increase the deductible to $1,000 to lower the premium a bit. Also, could you confirm the effective date of the renewed policy?\n\nLooking forward to your response.\n\nThanks,\nSneha Roy\nSenior Software Engineer, DCoders\nPhone: +1 (555) 987‑6543",

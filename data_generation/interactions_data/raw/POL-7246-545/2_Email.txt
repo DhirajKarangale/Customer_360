@@ -1,0 +1,8 @@
+mail_id: 7f9c3e2a-4b1d-47a9-9e6f-2d5c8b1e7a3f
+subject: Re: Life Policy L‑2026‑0459 Activation Status
+participants[2]{id,name,email,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Kavya Iyer,kavya.iyer@example.com,customer
+  d4c3b2a1-8765-09fe-dcba-0987654321fe,Suresh Deshmukh,suresh.d@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,28/09/2026 T:09:15:00,"Hi Suresh,\n\nFollowing our call earlier today, could you please confirm that my life policy L‑2026‑0459 has been activated? I made the premium payment on 24 Sep and would like to ensure everything is in order.\n\nThanks,\nKavya Iyer",
+  user_2,user_1,,28/09/2026 T:10:05:30,"Dear Kavya,\n\nI’m pleased to let you know that your policy L‑2026‑0459 is now active in our system. The activation was completed at 09:58 today. I’ve attached the updated policy schedule for your records. Your mother, Mrs. Anjali Iyer, remains listed as the beneficiary as discussed.\n\nPlease let me know if you need anything else.\n\nBest regards,\nSuresh Deshmukh\nInsurance Agent\nSecure Life Solutions\nsuresh.d@dcoders.com",https://storage.securelifesolutions.com/policies/L-2026-0459_Active.pdf

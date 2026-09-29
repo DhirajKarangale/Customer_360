@@ -1,0 +1,8 @@
+mail_id: a1b2c3d4-5678-90ab-cdef-1234567890ab
+subject: Renewal Options for Health Policy HP-4521
+participants[2]{id,name,email,role}:
+  9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f,Pooja Bhatia,pooja.bhatia@example.com,customer
+  1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d,Anita Sharma,anita.sharma@trustwealthadvisors.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,02/10/2026 T09:15:00,"Dear Pooja,\n\nI hope you’re well. As discussed on our call earlier today, your health policy (Policy No: HP-4521) is set to expire on 15/10/2026. Below are the renewal options available:\n\n1. Standard renewal – premium will increase by 8% to $1,080 annually (same coverage and deductible).\n2. Low‑premium plan – premium $950 annually, but the deductible will rise from $500 to $1,200 per claim.\n\nPlease review the attached Renewal Form (Renewal_HP-4521.pdf) and let me know which option you’d prefer. If you have any questions or need a customized quote, feel free to reply to this email or give me a call.\n\nThank you for trusting DCoders for your health coverage.\n\nBest regards,\nAnita Sharma\nInsurance Agent, Trust Wealth Advisors\nPhone: +1-555-0123\nEmail: anita.sharma@trustwealthadvisors.com",https://storage.dcoders.com/forms/Renewal_HP-4521.pdf
+  user_1,user_2,,02/10/2026 T10:05:00,"Hi Anita,\n\nThank you for the details. I’ve looked over the options. Could you please clarify how the higher deductible would affect my out‑of‑pocket costs for routine doctor visits? Also, is there a deadline to submit the renewal form?\n\nThanks,\nPooja Bhatia",

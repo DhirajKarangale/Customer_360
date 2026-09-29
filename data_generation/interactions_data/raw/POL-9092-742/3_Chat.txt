@@ -1,0 +1,11 @@
+chat_id: cht-dc-8841-992a
+participants[2]{id,name,role}:
+  cust-7721,Krishna Das,customer
+  agent-3312,Ramesh Tiwari,insurance agent
+messages[6]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T11:15:20,"Hi Ramesh, got your email regarding the DCoders health policy update. Just checked the portal and it still says active :(",
+  user_2,28/09/2026 T11:16:02,"Hello Krishna! Let me check the system backend real quick. Portal refreshes might take a bit.",
+  user_2,28/09/2026 T11:17:45,"Ah I see it. The batch sync runs every hour. It should flip to Expired status by noon today.",
+  user_1,28/09/2026 T11:18:10,"Ah ok ok, cool. Thanks for sorting this out so fast btw! My new office was asking for proof that old corp policy is dead.",
+  user_2,28/09/2026 T11:18:50,"No worries at all! Did you receive the confirmation letter PDF I mailed earlier?",
+  user_1,28/09/2026 T11:19:15,"Yep got it, already forwarded to HR here. Thanks again, Ramesh! Cheers.",https://storage.safeshield.com/docs/policy_expiry_confirm_Krishna_Das.pdf

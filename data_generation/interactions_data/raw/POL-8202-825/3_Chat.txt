@@ -1,0 +1,13 @@
+chat_id: a1b2c3d4-5678-90ab-cdef-1234567890ab
+participants[2]{id,name,role}:
+  3f9e2b1c-4d5f-6a7b-8c9d-0e1f2a3b4c5d,Tanvi Saxena,customer
+  d4c3b2a1-0e9f-8d7c-6b5a-4f3e2d1c0b9a,Sunita Agarwal,insurance agent
+messages[8]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T10:15:02,"hi sunita, i saw your email about the 15‑day claim window. does that also cover serives *services done on 30/09/2026? the day before new policy starts.", 
+  user_2,28/09/2026 T10:15:45,"Hello Tanvi! Good question 😊. The 15‑day post‑expiry claim window applies to any claim for services rendered up‑to the expiry date, which is 30/09/2026. So yes, you can submit a claim for a service done on that day, as long as you file it within 15 days after 30/09/2026.", 
+  user_1,28/09/2026 T10:18:10,"Great! thnks *thanks. Just to be clear, if I get a test on 01/10/2026, that would be under the new policy, right?", 
+  user_2,28/09/2026 T10:18:55,"Exactly! Any service from 01/10/2026 onward is covered by the renewed policy.", 
+  user_1,28/09/2026 T10:20:30,"Cool, also can i get a digital copy of the updated policy here in chat? *I", 
+  user_2,28/09/2026 T10:20:31,"Sure, here's the link:",https://storage.dcodelife.com/policies/health_Tanvi_2026_2027.pdf
+  user_1,28/09/2026 T10:21:05,"Got it, thx *thanks!", 
+  user_2,28/09/2026 T10:21:45,"Happy to help! Let me know if you need anything else.",

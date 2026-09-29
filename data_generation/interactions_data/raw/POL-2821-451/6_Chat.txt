@@ -1,0 +1,11 @@
+chat_id: 9f2c7a1b-3e4d-5f6a-8b9c-d0e1f2a3b4c5
+participants[2]{id,name,role}:
+  1a2b3c4d-5678-90ab-cdef-1234567890ab,Aditi Mahajan,customer
+  d4c3b2a1-8765-09ba-fedc-0987654321fe,Neha Kapoor,insurance agent
+messages[6]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T09:12:30,"hi neha, thx for the email. i just sent the signed form attached.", 
+  user_2,28/09/2026 T09:12:45,"Hello Aditi! Got it – I see the *form attached. Thanks for sending it over.", 
+  user_2,28/09/2026 T09:13:05,"Just confirming: your new Balanced Care plan will be active from 01/10/2026 and your previous policy will be marked expired on 30/09/2026. No coverage gap 😊.", 
+  user_1,28/09/2026 T09:13:20,"great! can u also send the final policy doc? want to review before it kicks in.", 
+  user_2,28/09/2026 T09:13:45,"Sure thing, here's the final policy document. Let me know if any questions.",https://storage.dcodelife.com/policies/BCP-2026-ADMA.pdf
+  user_1,28/09/2026 T09:14:05,"thanks neha, all good. thx for the quick help!",

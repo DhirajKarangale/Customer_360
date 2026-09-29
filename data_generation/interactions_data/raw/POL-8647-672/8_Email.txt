@@ -1,0 +1,8 @@
+mail_id: a1b2c3d4-5678-90ab-cdef-1234567890ab
+subject: Re: Confirmation of Refund for Cancelled Auto Policy AU-45219
+participants[2]{id,name,email,role}:
+  1a2b3c4d-1111-2222-3333-444455556666,Rahul Jain,rahul.jain@example.com,customer
+  5e6f7g8h-7777-8888-9999-aaaabbbbcccc,Ramesh Tiwari,ram.tiwari@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,12/10/2026 T:09:15:20,"Dear Ramesh,\n\nI hope you are well. Could you please confirm the status of the ₹4,500 refund for my cancelled auto policy AU-45219? I haven't seen the credit on my account yet.\n\nThanks,\nRahul Jain",
+  user_2,user_1,,12/10/2026 T:09:45:05,"Hi Rahul,\n\nThanks for reaching out. I’ve checked the transaction and the refund of ₹4,500 was processed on 10/10/2026. It should reflect in your bank account within 1‑2 business days. I’ve attached the refund receipt for your records.\n\nIf you have any further questions, feel free to let me know.\n\nBest regards,\nRamesh Tiwari\nInsurance Agent, DCoders\nSafe Shield Agency",https://storage.dcoders.com/refunds/Refund_AU45219_20261012.pdf

@@ -1,0 +1,8 @@
+mail_id: 7f9c3a1b-5e2d-4f9a-bc12-8d9f6e3a2b1c
+subject: Re: Claim Process and Required Documents for Policy LC‑2026‑00123
+participants[2]{id,name,email,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Samar Ghosh,samar.ghosh@dcoders.com,customer
+  d4e5f6a7-8901-23bc-45de-67890fghij12,Sunita Agarwal,sunita.agarwal@protectall.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,02/10/2026 T:09:15:00,"Hi Sunita,\n\nI would like to initiate a claim for my life insurance policy LC-2026-00123. Could you please send me the claim form and let me know the exact documents required? Also, confirm the address where I should send the completed form.\n\nThanks,\nSamar Ghosh",
+  user_2,user_1,,02/10/2026 T:09:45:30,"Dear Samar,\n\nThank you for your email. Please find attached the Claim Form (LC-2026-00123) along with a checklist of required documents. You can submit the completed form and copies of the documents either via email to claims@protectall.com or by post to:\nProtect All Agency – Claims Department\n123 Insurance Avenue, Mumbai, Maharashtra, 400001, India.\n\nOnce we receive your submission, our team will process the claim within 15 business days. If you have any further questions, feel free to reach out.\n\nBest regards,\nSunita Agarwal\nInsurance Agent, Protect All Agency\nsunita.agarwal@protectall.com",https://storage.protectall.com/claims/LC-2026-00123_ClaimForm.pdf

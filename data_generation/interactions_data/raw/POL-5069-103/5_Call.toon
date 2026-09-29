@@ -1,0 +1,11 @@
+call_id: CALL-DC-20260930-005
+start_timestamp: 30/09/2026 T:14:00:00
+end_timestamp: 30/09/2026 T:14:16:00
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Neha Chauhan,customer
+  f9e8d7c6-5432-10fe-ba98-0987654321cd,Karan Joshi,insurance agent
+messages[34]{user,text}:
+  user_2,Hello Neha this is Karan from Safe Step Insurance how are you today
+  user_1,Umm hi Karan I am good thanks just a bit busy you
+  user_2,I'm doing well thanks I see your health policy is now active wanted to check if you have any questions
+  user_1,Actually

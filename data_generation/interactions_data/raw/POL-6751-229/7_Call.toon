@@ -1,0 +1,22 @@
+call_id: REC-INS-007C
+start_timestamp: 28/09/2026 T:14:05:00
+end_timestamp: 28/09/2026 T:14:12:30
+participants[2]{id,name,role}:
+  9f2c1a7b-4e5d-4b9a-8c33-1d2f9e6b5a7c,Rohan Deshmukh,customer
+  d4e5f6a7-8b9c-4d10-9e11-2f3a4b5c6d7e,Vikram Patel,insurance agent
+messages[15]{user,text}:
+  user_2,[00:00] Hi Rohan it's Vikram Patel from Omni Insurance how are you
+  user_1,[00:05] Hey Vikram uh I'm good thanks
+  user_2,[00:10] Great just wanted to follow up on the updated policy PDF we sent yesterday did you get a chance to look at it
+  user_1,[00:15] Yeah I opened it but I have a couple of questions
+  user_2,[00:20] Sure fire away
+  user_1,[00:22] First about the claim process for outpatient specialist visits what do I need to do
+  user_2,[00:28] Okay so for any OPD specialist claim you log in to our portal fill the claim form upload the receipt and doctor prescription then we process within five to seven business days you can also email them to claims@omniinsurance.com if you prefer
+  user_1,[00:35] Got it and do I need pre‑authorization for specialist visits
+  user_2,[00:40] No pre‑auth needed for covered specialists as long as it’s within network just keep the documents
+  user_1,[00:45] Alright also I was thinking of adding my spouse as a dependent is that possible now
+  user_2,[00:50] You can add a spouse during open enrollment or anytime with a thirty day waiting period and underwriting it will affect the premium
+  user_1,[00:55] Okay I’ll wait for open enrollment then thanks for the info
+  user_2,[01:00] No problem anything else
+  user_1,[01:02] No that's all appreciate your help
+  user_2,[01:05] Happy to help have a good day

@@ -1,0 +1,8 @@
+mail_id: e7b3c9d2-4f6a-41b2-9c5e-2a8f3d7e9b1c
+subject: Policy HP‑34219 – Expiration Confirmation & Coverage Summary
+participants[2]{id,name,email,role}:
+  a1f4c9e2-7b3d-4f8a-9d2e-5c6b7a9d0e3f,Dev Chatterjee,dev.c@dcoders.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,suresh.d@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,21/09/2026 T:09:15:00,"Dear Dev,\n\nAs discussed on our call earlier today, I am confirming that your health policy (Policy Number: HP-34219) expired on 15 Aug 2026 and is currently inactive. Please find attached a summary of the coverage that was in effect until the expiration date.\n\nShould you wish to explore renewal options or a new plan in the future, feel free to reach out at your convenience.\n\nBest regards,\nSuresh Deshmukh\nInsurance Agent\nSecure Life Solutions\nsuresh.d@dcoders.com",https://storage.securelifesolutions.com/policies/HP-34219_Coverage_Summary_2026.pdf
+  user_1,user_2,,21/09/2026 T:10:02:30,"Hi Suresh,\n\nThank you for the summary. I have reviewed the attached document and will get back to you when I am ready to discuss renewal or a new policy.\n\nRegards,\nDev Chatterjee\nDev Chatterjee\ndev.c@dcoders.com",

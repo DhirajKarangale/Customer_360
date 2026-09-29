@@ -1,0 +1,8 @@
+mail_id: e3b9f0a2-4c5d-11ee-8f7a-0242ac120002
+subject: Confirmation of Policy Status and Updated Beneficiary Details
+participants[2]{id,name,email,role}:
+  1a2b3c4d-5678-90ab-cdef-1234567890ab,Kriti Mahajan,kriti.mahajan@example.com,customer
+  9f8e7d6c-5432-10fe-ba98-0987654321cd,Suresh Deshmukh,suresh.d@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2026 T:09:15:00,"Dear Kriti,\n\nI hope you’re well. Following our phone conversation earlier today, I have verified that your Life Insurance Policy (Policy No: LC-2024-5789) remains active in our system. As requested, I have resent your latest policy statement; you’ll find it attached to this email.\n\nAdditionally, I have added your sister, Ananya Mahajan, as a secondary beneficiary on the policy. The update will be reflected in the next policy snapshot, and you will receive a formal beneficiary confirmation shortly.\n\nIf you have any further questions or need additional documents, please let me know.\n\nBest regards,\nSuresh Deshmukh\nInsurance Agent, Secure Life Solutions\nsuresh.d@dcoders.com",https://storage.dcodelife.com/policies/LC-2024-5789_statement_2026-09-28.pdf
+  user_1,user_2,,28/09/2026 T:10:02:30,"Hi Suresh,\n\nThank you for the quick confirmation and for sending the statement. I appreciate the update regarding Ananya as the secondary beneficiary.\n\nAll looks good on my end.\n\nThanks again,\nKriti Mahajan",

@@ -1,0 +1,9 @@
+mail_id: 9f3b2c1d-7a4e-4b9f-8c12-3e6f9a7d5b2e
+subject: Re: Kitchen Cabinet Upgrade – Claim Documentation Confirmation
+participants[3]{id,name,email,role}:
+  1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d,Samar Ghosh,samar.ghosh@example.com,customer
+  2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e,Sunita Agarwal,sunita.agarwal@protectallagency.com,insurance agent
+  3c4d5e6f-7a8b-9c0d-1e2f-3a4b5c6d7e8f,Claims Team,claims@dcoders.com,internal
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,30/09/2026 T:09:15:20,"Hi Sunita,\n\nI have just uploaded the claim paperwork (invoice, photos, contractor statement, proof of payment) to the portal as per your checklist. Could you let me know what the next steps are and how long the review typically takes?\n\nThanks,\nSamar",
+  user_2,user_1,user_3,30/09/2026 T:09:45:05,"Dear Samar,\n\nThank you for submitting the required documents. I have forwarded them to our Claims Team (cc’d) for processing. They will review the files and aim to provide a preliminary decision within 5‑7 business days. In the meantime, please ensure the photos are under 5 MB each (as you already did) and keep the original receipts in case we need them.\n\nIf you have any further questions or need to add additional information, feel free to reply to this email.\n\nBest regards,\nSunita Agarwal\nInsurance Agent, Protect All Agency\nDCoders\nPhone: +1‑555‑123‑4567\nEmail: sunita.agarwal@protectallagency.com",https://storage.dcoders.com/claims/forms/Claim_Form_H-2026-0459.pdf

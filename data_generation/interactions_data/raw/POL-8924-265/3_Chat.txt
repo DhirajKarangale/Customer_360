@@ -1,0 +1,11 @@
+chat_id: a8f9c2e1-4b3d-4f9a-9c2e-6d5b7a9f1c23
+participants[2]{id,name,role}:
+  9d2f7a1c-5e3b-4a9d-bc11-2f8e6d4c7b90,Reyansh Tiwari,customer
+  3e4b9c2d-7a1f-48d3-9e5f-1c2a3b4d5e6f,Anjali Desai,insurance agent
+messages[6]{user,timestamp,text,media_url}:
+  user_1,12/10/2026 T09:15:10,"hey anjali, just saw the renewal email. quick q: how do i file a claim now?"
+  user_2,12/10/2026 T09:15:45,"Hey Reyansh! 😊 You can file a claim via our portal or the mobile app. Just upload the bills and we’ll process it. Anything else?"
+  user_1,12/10/2026 T09:16:30,"got it. also i noticed the new dedcutible is $2500. is that correct? (*deductible)"
+  user_2,12/10/2026 T09:17:05,"Yes, the deductible is $2,500 and the premium is $150/month. We lowered the premuim by switching to higher deductible (*premium)."
+  user_1,12/10/2026 T09:18:10,"nice. can i use the tele‑consultation for any doc? like a dermatologist?"
+  user_2,12/10/2026 T09:18:55,"Absolutely! Tele‑consultation covers any specialist, including dermatology. I’m also attaching the updated policy PDF for your reference.",https://storage.dcodelabs.com/policies/HealthPolicy_REY-2027.pdf

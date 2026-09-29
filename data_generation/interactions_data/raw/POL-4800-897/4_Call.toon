@@ -1,0 +1,19 @@
+call_id: CALL-DC-20261001-001
+start_timestamp: 01/10/2026 T:11:15:00
+end_timestamp: 01/10/2026 T:11:18:30
+participants[2]{id,name,role}:
+  d4f7a9c2-3b1e-4f6a-9c2e-1a5b6c7d8e9f,Kunal Mehta,customer
+  a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d,Ravi Menon,insurance agent
+messages[12]{user,text}:
+  user_1,Hello... uh, hi Ravi? This is Kunal.
+  user_2,Hey Kunal, good to hear from you. How can I help?
+  user_1,I just wanted to double‑check that my health policy HP‑123456 is fully cancelled and that there's nothing left on my end.
+  user_2,Yes, that's right. The policy was marked as expired on 30/09/2026, no pending premiums.
+  user_1,Great—uh, so if I wanted to start a new plan next month, is there any waiting period?
+  user_2,No waiting period, you can apply any time. Just let me know the coverage you need.
+  user_1,Okay, I'll look at the options. Do I need any docs from the old policy?
+  user_2,Just the cancellation confirmation we already emailed you. If you need it again, I can resend.
+  user_1,Thanks, could you also send a quick summary of my claim history? I might need it for the new employer.
+  user_2,Sure thing—I'll attach the claim summary to an email right after this call.
+  user_1,Appreciate it, Ravi. Sorry for the long call, I've got a meeting in a few minutes.
+  user_2,No problem, Kunal. Talk soon, and have a good meeting. [sighs]

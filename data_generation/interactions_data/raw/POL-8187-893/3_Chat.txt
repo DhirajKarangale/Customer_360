@@ -1,0 +1,11 @@
+chat_id: 9f8e7d6c-1234-5678-9abc-def012345678
+participants[2]{id,name,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Riya Mukherjee,customer
+  e7f8g9h0-7777-8888-9999-aaaaBBBBCCCC,Vikram Patel,insurance agent
+messages[6]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T10:02:15,"hi vikram, i got ur email with the renewal link. thx!", 
+  user_2,28/09/2026 T10:02:45,"Hey Riya! Glad you got it. Let me know if you have any q's.", 
+  user_1,28/09/2026 T10:03:10,"i just saw the policy summary. can you confirm the $500 dedcutible*deductible will stay the same?", 
+  user_2,28/09/2026 T10:04:00,"Absolutely, the deductible remains $500 as before. The only change is the effective date starting 01/10/2026.", 
+  user_1,28/09/2026 T10:04:20,"great, thx! i’ll finish the renewal now.", 
+  user_2,28/09/2026 T10:04:55,"Perfect. Once you submit, I’ll get the confirmation and send you the updated policy docs.",

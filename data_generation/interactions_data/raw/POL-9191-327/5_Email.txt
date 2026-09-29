@@ -1,0 +1,7 @@
+mail_id: f3c9a2e1-7b4d-4f2a-9c8e-1a2b3c4d5e6f
+subject: Confirmation & Payment Link for Enhanced Auto Policy Bundle
+participants[2]{id,name,email,role}:
+  1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d,Reyansh Tiwari,reyan.tiwari@dcoders.com,customer
+  9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f,Karan Joshi,karan.joshi@safeStepInsurance.com,insurance agent
+mails[1]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2026 T:11:42:15,"Hi Reyansh,\n\nThank you for confirming the Enhanced auto policy bundle. I have updated your policy (Policy No: AU‑45789) to reflect the bundled premium of $1,305 per year, with liability limits of $100k/$300k and the additional benefits we discussed.\n\nTo complete the renewal, please use the secure payment link below. The link will remain active for 7 days.\n\nhttps://payments.safestepinsurance.com/pay?policy=AU-45789&amount=1305\n\nOnce the payment is processed, I will send you the official policy confirmation and a copy of the updated declarations page.\n\nIf you have any questions or need further assistance, just let me know.\n\nBest regards,\nKaran Joshi\nInsurance Agent, Safe Step Insurance\nPhone: +1 (555) 123‑4567\nEmail: karan.joshi@safeStepInsurance.com",https://storage.safestepinsurance.com/docs/Policy_AU45789_Enhanced_Confirmation.pdf

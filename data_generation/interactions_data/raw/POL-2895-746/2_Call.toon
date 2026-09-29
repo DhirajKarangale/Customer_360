@@ -1,0 +1,23 @@
+call_id: REC-INS-003C
+start_timestamp: 28/09/2026 T:14:15:00
+end_timestamp: 28/09/2026 T:14:18:30
+participants[2]{id,name,role}:
+  9f3b7c1a-5d4e-4a9f-8b2c-1e6f7a9d3c4e,Meera Chauhan,customer
+  d2a6e8f5-1b3c-47d2-9f8a-6c5b2e1f9a0b,Anita Sharma,insurance agent
+messages[16]{user,text}:
+  user_1,[00:00] Hello, uh... this is Meera. I just saw your email about my auto policy. It's... expired.
+  user_2,[00:05] Hi Meera, this is Anita from Trust Wealth Advisors. Yes, I saw that. Sorry to hear the lapse. How can I help you today?
+  user_1,[00:12] I... I need to get it back on. I drive to work every day and I’m worried about being uninsured.
+  user_2,[00:18] Absolutely, we can reinstate it. Since it didn’t auto‑renew, we have two options: reactivate the same term or start a fresh 12‑month term.
+  user_1,[00:25] Oh, okay. What’s the difference?
+  user_2,[00:30] Reactivation keeps your original start date, but the premium might be higher because of the gap. A new term resets the date to today and we can apply any current discounts.
+  user_1,[00:38] Hmm... I think I’d rather... uh... start fresh.
+  user_2,[00:44] Got it. Let me pull up the quote I attached in the email. One sec… [typing] … Okay, the new 12‑month premium would be $1,250, payable in full or in three installments.
+  user_1,[01:02] $1,250… that’s a bit higher than last year. Any chance of a discount?
+  user_2,[01:08] I understand. Since you’ve been a loyal customer, I can apply the safe‑driver discount and a multi‑policy discount if you bundle home. That brings it down to $1,150.
+  user_1,[01:20] That’s better. Can we go ahead and... uh... set it up now?
+  user_2,[01:28] Sure thing. I’ll need to confirm a few details – your current address, VIN, and a payment method.
+  user_1,[01:35] My address is still 45 Greenfield Ave, Bangalore. VIN is 1HGCM82633A004352. I’ll use the same credit card on file.
+  user_2,[01:45] Great, I’ve updated that. I’ll process the payment… [sighs] … and you should receive a confirmation email within the next few minutes.
+  user_1,[02:00] Thank you, Anita. I appreciate the help.
+  user_2,[02:05] You’re welcome, Meera. Your policy is now active as of today. Drive safe! Bye.

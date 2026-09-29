@@ -1,0 +1,19 @@
+call_id: REC-DC-001A
+start_timestamp: 29/09/2026 T:10:15:00
+end_timestamp: 29/09/2026 T:10:20:00
+participants[2]{id,name,role}:
+  a3f9c2e1-7b4d-4f9a-8d2e-5b6c9d1e2f34,Vivaan Gupta,customer
+  d4e8b7a2-1c5f-4a3b-9e6f-2d1c8b9a0f57,Vikram Singh,insurance agent
+messages[12]{user,text}:
+  user_1,Hello umm... is this Vikram from ProtectAll? [00:05]
+  user_2,Hey Vivaan yes speaking. Hi how can I help you today? [00:07]
+  user_1,I wanted to discuss the life policy I recently applied for. Just checking the status.
+  user_2,Sure thing let me pull up your details. One sec... [typing]
+  user_2,Okay I see your policy number is LC-2026-0456 right?
+  user_1,Yes that's the one.
+  user_2,Looks good the policy is currently in 'Pending Activation' but should go active by end of day once premium is cleared.
+  user_1,Great I just made the payment this morning. Should be reflected now?
+  user_2,Give me a moment... [sighs] Yep I can see the transaction. We're moving it to Active.
+  user_1,Awesome! So it's active now?
+  user_2,Yes it's now Active in the system. You'll get a confirmation email shortly.
+  user_1,Thanks a lot Vikram. Appreciate your help. Bye.

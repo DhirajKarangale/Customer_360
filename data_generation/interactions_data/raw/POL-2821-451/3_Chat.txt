@@ -1,0 +1,15 @@
+chat_id: c9f8e2a1-7b4d-4c9e-9f3a-2d5b6c7e8f90
+participants[2]{id,name,role}:
+  5d3a9c1e-8f2b-4e7a-9c3d-1a2b3c4d5e6f,Aditi Mahajan,customer
+  a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d,Neha Kapoor,insurance agent
+messages[10]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T14:05:12,"hi neha, thx*thanks for the email. i still think the Comprehensive Plus is too pricey. any cheaper options?", 
+  user_2,28/09/2026 T14:05:25,"Hey Aditi! 😊 I hear you – the premium jump can be a bit much. Let me check a couple of lower‑cost alternatives for you.", 
+  user_1,28/09/2026 T14:05:38,"great, also can you send me the list of network hospitals for the Standard plan? I need to know if my local clinic is covered.", 
+  user_2,28/09/2026 T14:05:55,"Sure thing! The Standard plan covers a pretty wide network – over 1,200 hospitals nationwide. Here’s the link to the full list.",https://storage.dcoders.com/docs/StandardPlan_NetworkHospitals.pdf
+  user_1,28/09/2026 T14:06:12,"got it, thx*thanks. but i’m still worried about the out‑of‑pocket*out-of-pocket costs. is there a plan that balances cost and decent coverage? maybe something like a ‘Basic Plus’?", 
+  user_2,28/09/2026 T14:06:30,"We actually have a ‘Balanced Care’ plan that’s priced about 12% lower than the Comprehensive Plus, while still giving you 80% in‑patient coverage and a lower deductible. Would that work?", 
+  user_1,28/09/2026 T14:06:45,"sounds good. can i switch to that before my current policy expires? also, what’s the exact premium?", 
+  user_2,28/09/2026 T14:07:05,"Yes, we can switch now – the current policy will expire on 30/10/2026. The Balanced Care premium is ₹4,850 per month (incl. taxes). I’ll send you the enrollment form.",https://storage.dcoders.com/forms/BalancedCare_Enrollment.pdf
+  user_1,28/09/2026 T14:07:20,"perfect, please send the form. also, can you confirm that my family members will stay on the same plan?", 
+  user_2,28/09/2026 T14:07:38,"All set – I’ve attached the form and a quick FAQ. Your spouse and kids will stay on the same Balanced Care plan with the same coverage levels. Let me know if you need anything else!",https://storage.dcoders.com/docs/BalancedCare_FAQ.pdf

@@ -1,0 +1,21 @@
+call_id: REC-INS-004A
+start_timestamp: 29/09/2026 T:14:15:00
+end_timestamp: 29/09/2026 T:14:20:00
+participants[2]{id,name,role}:
+  9f1e2c3d-4a5b-6c7d-8e9f-0a1b2c3d4e5f,Aditya Singh,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[14]{user,text}:
+  user_1,[00:00] Hello Suresh, it's Aditya. I got your email with the two quotes.
+  user_2,[00:05] Hey Aditya, good to hear from you. Did you have a chance to look at the Premium Plus one?
+  user_1,[00:10] Yeah, I think I'd go with that, but I need to know—what's the deductible exactly?
+  user_2,[00:12] Sure, let me pull that up... [typing] The annual deductible for Premium Plus is Rs. 7,500 for individuals, Rs. 15,000 for family.
+  user_1,[00:18] Okay, and about specialist visits—do I need pre‑authorization each time?
+  user_2,[00:20] Ah, good question—uh—yes, for specialist consultations you need a pre‑auth, but we can get that done within 24‑48 hours after you submit the referral.
+  user_1,[00:26] Got it. And the renewal deadline—when do I need to sign to avoid any gap?
+  user_2,[00:28] The policy expires on 15 Oct 2026, so we recommend you complete the renewal by 5 Oct 2026. That gives us a 10‑day buffer.
+  user_1,[00:33] Hmm, that's close. If I miss that, will I lose coverage entirely?
+  user_2,[00:35] If you let it lapse, the inpatient, outpatient, and pre‑existing condition coverages all terminate. You'd be back to square one.
+  user_1,[00:40] I definitely don't want that. Can you send me the final quote and the renewal form right now?
+  user_2,[00:42] Absolutely—I'll email you the PDF and the form in the next few minutes. Anything else you need?
+  user_1,[00:45] No, that's all. Thanks, Suresh.
+  user_2,[00:46] You're welcome, Aditya. Talk soon.

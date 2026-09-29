@@ -1,0 +1,13 @@
+chat_id: a0b1c2d3-4e5f-6789-abcd-ef0123456789
+participants[2]{id,name,role}:
+  9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f,Kiara Sen,customer
+  2d3c4b5a-6e7f-8a9b-0c1d-2e3f4a5b6c7d,Vikram Singh,insurance agent
+messages[8]{user,timestamp,text,media_url}:
+  user_1,30/09/2026 T09:15:12,"hey Vikram, i just got a new 55 inch smart TV, can i add it to my policy?",
+  user_2,30/09/2026 T09:15:45,"Hi Kiara! Congrats on the new TV 🎉. We can add it under your personal‑property coverage. There's a $2,500 sub‑limit for electronics beyond the $5k already used for laptop and smartwatch. Could you send me the purchase receipt?",
+  user_1,30/09/2026 T09:16:30,"Sure, just got the email with receipt. sending noww*now",
+  user_2,30/09/2026 T09:17:05,"Got it! Let me update your policy. This will add $1,200 to your monthly premium.",https://storage.dcoders.com/policies/updated_policy_Kiara_2026_09_30.pdf
+  user_1,30/09/2026 T09:18:12,"thx! can you also tell me how to file a claim if something happens?",
+  user_2,30/09/2026 T09:18:45,"Absolutely. If you need to file a claim, you can do it through our portal or via chat. You'll need the incident report, photos, and the receipt we just added. I’ll send you a quick guide.",https://storage.dcoders.com/guides/claim_process_guide.pdf
+  user_1,30/09/2026 T09:19:20,"great, thanks again 😊",
+  user_2,30/09/2026 T09:20:02,"You’re welcome! Your policy is now active with the TV added. Let me know if you need anything else."

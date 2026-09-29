@@ -1,0 +1,15 @@
+call_id: REC-DC-001A
+start_timestamp: 28/09/2026 T:14:05:00
+end_timestamp: 28/09/2026 T:14:12:30
+participants[2]{id,name,role}:
+  9f1e2c3b-4d5a-6b7c-8d9e-0f1a2b3c4d5e,Krishna Das,customer
+  a2b3c4d5-e6f7-8901-2345-6789abcdef01,Vikram Singh,insurance agent
+messages[8]{user,text}:
+  user_1,Hello? Umm, hi... is this Vikram Singh from ProtectAll Agency? [00:00]
+  user_2,Hey Krishna, yes it's me—Vikram. Can you hear me okay? [00:10]
+  user_1,Yeah, I can hear you. Sorry, I was just... [sighs] kind of busy. [00:20]
+  user_2,No worries. Just wanted to confirm we’re looking at your home insurance policy, right? The one under DCoders? [00:35]
+  user_1,Yes, that's the one. I wanted to make sure everything's set to go active. [00:45]
+  user_2,Sure thing—let me pull up your file. One sec... [typing]... Okay, I see the policy number is HC-2026-0459. It's currently pending activation. We just need your final confirmation. [01:05]
+  user_1,Alright, go ahead and activate it. I’m good with the coverage. [01:20]
+  user_2,Great! Your home policy is now active as of today. You'll receive a confirmation email shortly. Anything else I can help you with? [01:35]

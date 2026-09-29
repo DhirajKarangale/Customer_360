@@ -1,0 +1,9 @@
+mail_id: a7f9c2d4-8b1e-4a6f-9c2d-5e7f9a0b1c2d
+subject: Policy Renewal Confirmation – Health Policy HP-2026-2027
+participants[3]{id,name,email,role}:
+  d3f5a9c2-7b1e-4c3d-8f9a-0b2c3d4e5f6a,Tanvi Saxena,tanvi.saxena@dcoders.com,customer
+  e4a6b7c8-9d0e-1f2a-3b4c-5d6e7f8a9b0c,Sunita Agarwal,sunita.agarwal@protectall.com,insurance agent
+  f5b6c7d8-9e0f-1a2b-3c4d-5e6f7a8b9c0d,Rajesh Mehta,rajesh.mehta@dcoders.com,policy admin
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,user_3,02/10/2026 T:09:15:00,"Dear Tanvi,\n\nI’m pleased to confirm that your health policy has been successfully renewed. The new coverage period is from 01/10/2026 to 30/09/2027. As discussed, you have a 15‑day post‑expiry claim window for any services incurred before the renewal date.\n\nPlease find the updated policy document attached for your records.\n\nIf you have any further questions, feel free to reach out.\n\nBest regards,\nSunita Agarwal\nInsurance Agent, Protect All Agency",https://storage.dcodelife.com/policies/HP-2026-2027_TanviSaxena.pdf
+  user_1,user_2,,02/10/2026 T:10:05:00,"Hi Sunita,\n\nThank you for the confirmation and the attached document. Could you please clarify if the 15‑day claim window applies to services rendered on 30/09/2026, the day before the new policy starts?\n\nThanks,\nTanvi",

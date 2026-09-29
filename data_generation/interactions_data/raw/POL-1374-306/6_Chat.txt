@@ -1,0 +1,11 @@
+chat_id: d7e8f9a0-1234-5678-9abc-def012345678
+participants[2]{id,name,role}:
+  c3f9a1d2-7e4b-4a9c-9f1e-2b6d8e5f9a0b,Rahul Jain,customer
+  a5b8c3d4-1f2e-3d4c-5b6a-7c8d9e0f1a2b,Sunita Agarwal,insurance agent
+messages[6]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T10:15:30,"hey sunita, got the policy doc thx! just wanted to ask about claim process if i*I get water damage from the new kitchen remodel.", 
+  user_2,28/09/2026 T10:16:05,"Hi Rahul! Happy to hear you got the doc 😊. For any water‑damage claim you can file it online via our portal. Here’s the step‑by‑step guide.",https://storage.dcoders.com/docs/HC-2026-0456_Claim_Guide.pdf
+  user_1,28/09/2026 T10:16:45,"Thanks! Also, when will the first premi*premium auto‑debit happen? want to make sure funds are ready.", 
+  user_2,28/09/2026 T10:17:20,"Your first premium of ₹12,500 will be auto‑debited on 05/10/2026. You’ll receive a reminder email a day before. Here’s the payment schedule.",https://storage.dcoders.com/docs/HC-2026-0456_Payment_Schedule.pdf
+  user_1,28/09/2026 T10:18:00,"Got it, cheers!", 
+  user_2,28/09/2026 T10:18:30,"You’re welcome! Let me know if you need anything else.",

@@ -1,0 +1,12 @@
+chat_id: 7f3a9c2e-5b1d-4e8a-9c3f-2d6b7e1a4f9b
+participants[2]{id,name,role}:
+  a12f4c9b-8e33-41d2-9b5e-6f7a2d3c9e01,Anvi Desai,customer
+  d4b9e6f2-3c7a-44b5-8f1a-9c2d5e7b8a6f,Ravi Menon,insurance agent
+messages[7]{user,timestamp,text,media_url}:
+  user_1,05/10/2026 T09:12:15,"hey ravi, just saw your email about the cancelation *cancellation. can u confirm it's set?", 
+  user_2,05/10/2026 T09:12:45,"Hi Anvi! Yes, the health policy HP-DC-2024-7890 is scheduled to be cancelled effective 30 Sep 2026. I've attached the confirmation again for you.",https://storage.securefuturegroup.com/docs/Cancel_HP-DC-2024-7890.pdf
+  user_1,05/10/2026 T09:13:10,"thanks! also, what's the refund process? i think i should get the prepaid premium back.", 
+  user_2,05/10/2026 T09:13:45,"Sure thing. We'll process the refund within 10‑15 business days after the cancellation date. It'll be credited to the same bank account you used for payments.", 
+  user_1,05/10/2026 T09:14:20,"got it. can you send me a summary of the refund amount? i want to double‑check.", 
+  user_2,05/10/2026 T09:14:55,"Absolutely, I'm sending a PDF with the refund breakdown.",https://storage.securefuturegroup.com/docs/Refund_Summary_HP-DC-2024-7890.pdf
+  user_1,05/10/2026 T09:15:30,"awesome, thx a lot! :)"}

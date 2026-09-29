@@ -1,0 +1,11 @@
+chat_id: a1b2c3d4-5678-90ab-cdef-1234567890ab
+participants[2]{id,name,role}:
+  9f8e7d6c-5b4a-3c2d-1e0f-a9b8c7d6e5f4,Rahul Jain,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Patel,insurance agent
+messages[6]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T10:15:23,"hey vikram, i just got the renewal form, thx! can u confirm if auto‑debit will work with my saved card?",
+  user_2,28/09/2026 T10:15:55,"Hi Rahul! Yes, the auto‑debit (aut‑debit*auto‑debit) will pull ₹1,200 each month from the card ending 1234. Let me know if you need to update details.",
+  user_1,28/09/2026 T10:16:20,"Great! also, when does the new coverage start? from today? i dont want any gap.",
+  user_2,28/09/2026 T10:16:48,"Your renewed policy (HP‑45789) becomes active on 01/10/2026, right after the current one expires on 30/09/2026. No gap at all.",
+  user_1,28/09/2026 T10:17:12,"Cool, can u send me the receipt once it’s processed? thanks!",
+  user_2,28/09/2026 T10:17:45,"Sure thing, I’ve just emailed you the receipt. Here’s the PDF for your records.",https://storage.omniins.com/receipts/HP-45789_Receipt_2026-10-01.pdf

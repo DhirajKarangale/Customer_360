@@ -1,0 +1,38 @@
+call_id: REC-INS-007A
+start_timestamp: 28/09/2026 T:14:00:00
+end_timestamp: 28/09/2026 T:14:16:00
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Kiara Sen,customer
+  f9e8d7c6-5432-10fe-dcba-0987654321fe,Vikram Singh,insurance agent
+messages[28]{user,text}:
+  user_2,Hi Kiara, this is Vikram Singh from ProtectAll Agency, calling about your DCoders home policy. Can you hear me okay?
+  user_1,Umm… yeah, I can hear you. Hi Vikram.
+  user_2,Great. Just wanted to confirm we have everything updated after the TV addition. Do you have a minute?
+  user_1,Sure, go ahead.
+  user_2,First, can you confirm the policy number for me? I have it as H‑2026‑0459.
+  user_1,Yes, that’s right.
+  user_2,Perfect. I’m pulling up the record now… one sec.
+  user_2,[hold music]
+  user_2,[typing] …okay, I see the TV receipt you sent on 02/09/2026. It’s a 55‑inch 4K model, $1,200.
+  user_1,[dog barks in background] Oh sorry, my dog just got excited. Yeah, that’s the one.
+  user_2,No worries! Let me just add that to your personal‑property coverage. It will increase your monthly premium by $12.
+  user_2,Hold on, I need to adjust the premium in the system. This might take a minute.
+  user_2,[hold music]
+  user_2,Alright, premium updated. New monthly premium is $84 (previous $72 + $12 for TV). Does that sound okay?
+  user_1,Yeah, that’s fine.
+  user_2,While I’m here, I also wanted to double‑check the electronics sub‑limit. We have $5,000 for general electronics and $2,000 for your smartwatch, both covered with receipts you provided.
+  user_1,Right, I sent the smartwatch receipt last week.
+  user_2,Got it. I see it attached to your file. Everything looks good.
+  user_1,Thanks. By the way, how’s the weather where you are? It’s raining here.
+  user_2,Haha, it’s actually sunny on my side. Perfect day for a coffee break.
+  user_1,Nice! I wish I could enjoy that while I’m on a call.
+  user_2,Speaking of breaks, I’m going to run a quick verification on the TV’s serial number. One sec.
+  user_2,[hold music]
+  user_2,All set. Serial number matches the receipt, so the TV is now fully covered under your personal‑property limit of $150,000.
+  user_1,Great! That’s a relief.
+  user_2,Anything else you’d like to add or any questions about the policy?
+  user_1,No, I think we’re good. Just wanted to make sure the TV is covered.
+  user_2,Excellent. I’ll go ahead and set the policy status to Active now.
+  user_2,Your home policy is active, personal‑property limit $150,000, TV covered, smartwatch covered, and the premium is $84 per month.
+  user_1,Thank you so much, Vikram. Have a good day!
+  user_2,You too, Kiara. Take care!

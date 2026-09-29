@@ -1,0 +1,8 @@
+mail_id: a5d3f9c2-1e4b-4a6d-9f2b-3c7e8d9f0a12
+subject: Re: Updated Life Policy L‑2026‑0459 – Beneficiary Changes & Confirmation
+participants[2]{id,name,email,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Kavya Iyer,kavya.iyer@dcoders.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,suresh.d@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,30/09/2026 T:10:15:00,"Hi Suresh,\n\nThank you for the assistance on the call earlier. Could you please send me a final copy of the policy schedule reflecting the recent activation and the addition of my sister as a secondary beneficiary? I’d also appreciate a brief summary of the current status of my policy L‑2026‑0459.\n\nThanks,\nKavya Iyer",
+  user_2,user_1,,30/09/2026 T:10:45:30,"Dear Kavya,\n\nI’m glad we could sort everything out on the call. I’ve attached the updated policy schedule for L‑2026‑0459, which now shows the policy as Active and lists your mother as the primary beneficiary and your sister, Ananya Iyer, as the secondary beneficiary.\n\nIf you need anything else, feel free to reach out.\n\nBest regards,\nSuresh Deshmukh\nInsurance Agent, Secure Life Solutions\nDCoders",https://storage.dcoders.com/policies/L-2026-0459_updated_schedule.pdf

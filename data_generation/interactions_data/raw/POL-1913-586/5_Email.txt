@@ -1,0 +1,8 @@
+mail_id: a5f3c9e2-7b1d-4f9a-8c2e-1d6b9f3a4c7e
+subject: Renewal Confirmation for Health Policy HP‑2024‑9876
+participants[2]{id,name,email,role}:
+  1e9d4b6a-3c2f-4a8b-9e7d-5f6c2d1a9b0c,Neha Kapoor,neha.kapoor@shieldlife.com,insurance agent
+  7c3a1f5e-9b2d-4e6f-8a1c-2d3e4f5b6a7c,Saanvi Pillai,saanvi.pillai@dcoders.com,customer
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,15/09/2026 T:09:30:00,"Hi Saanvi,\n\nFollowing our call earlier today, here is the payment link to renew your health policy (HP‑2024‑9876): https://payments.shieldlife.com/pay/HP20249876\n\nI have also attached the updated policy document for your reference.\n\nPlease complete the payment by 14 Sept 2026 to avoid any coverage gap.\n\nBest regards,\nNeha Kapoor\nInsurance Agent, Shield Life Services",https://storage.shieldlife.com/docs/Policy_HP20249876_Renewed.pdf
+  user_2,user_1,,15/09/2026 T:10:05:12,"Hi Neha,\n\nI have just completed the payment using the link you provided. Could you please confirm that the transaction has been received and share the renewed policy certificate?\n\nThank you for your assistance.\n\nRegards,\nSaanvi Pillai",

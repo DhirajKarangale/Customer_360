@@ -1,0 +1,8 @@
+mail_id: a1b2c3d4-5678-90ab-cdef-1234567890ab
+subject: Follow‑up on Reinstated Auto Policy #AV‑45231
+participants[2]{id,name,email,role}:
+  9f3c2a1b-7e4d-4b9a-9c8f-1a2b3c4d5e6f,Vedant Thakur,vedant.thakur@dcoders.com,customer
+  d4e5f6a7-b8c9-0d1e-2f3a-4b5c6d7e8f90,Neha Kapoor,neha.kapoor@shieldlife.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,02/10/2026 T:09:15:30,"Hi Neha,\n\nThanks for processing the reinstatement and sending over the receipt. I have a couple of quick questions:\n1. When is the next renewal date for policy #AV‑45231?\n2. I’m considering lowering the deductible to $250 – can I make that change now, or do I need to wait until the renewal period?\n\nAppreciate your help.\n\nBest,\nVedant",
+  user_2,user_1,,02/10/2026 T:09:45:10,"Dear Vedant,\n\nYou’re welcome! I’m glad the reinstatement went smoothly.\n\n1. Your policy will automatically renew on **15 September 2027**. You’ll receive a renewal notice 30 days prior to that date.\n2. You can adjust the deductible at any time before the renewal. If you’d like to lower it to $250, simply let me know and I’ll update the policy for you – the change will be reflected in the next premium calculation.\n\nI’ve attached the updated policy document reflecting the reinstatement and the current deductible of $500. If you decide to change the deductible, I’ll send a revised quote.\n\nFeel free to reply to this email or give me a call if you’d like to proceed with the deductible adjustment.\n\nBest regards,\nNeha Kapoor\nInsurance Agent, Shield Life Services\nneha.kapoor@shieldlife.com\n+1‑555‑0123",https://storage.shieldlife.com/docs/Policy_AV-45231_Updated_2026.pdf

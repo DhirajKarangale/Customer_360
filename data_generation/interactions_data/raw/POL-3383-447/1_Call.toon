@@ -1,0 +1,21 @@
+call_id: REC-DC-001A
+start_timestamp: 28/09/2026 T:09:15:00
+end_timestamp: 28/09/2026 T:09:20:30
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Kiara Sen,customer
+  f1e2d3c4-9876-54ba-dcba-0987654321fe,Sunita Agarwal,insurance agent
+messages[14]{user,text}:
+  user_1,[00:00] Hello? Umm... hi, is this Sunita from Protect All Agency?
+  user_2,[00:05] Hi Kiara, yes speaking. Can you hear me okay?
+  user_1,[00:07] Yeah, I can... a bit noisy here. Sorry, I’m in a café.
+  user_2,[00:12] No worries. I’m calling about your health policy—policy number H-34219— it’s showing as Expired in our system. [sighs] Did you get a notice?
+  user_1,[00:18] Oh... right, I think I got an email but I wasn’t sure. What does that mean for me now?
+  user_2,[00:22] Basically it means the coverage stopped on 15/09/2026. You won’t be able to claim any new expenses unless you renew or switch.
+  user_1,[00:27] Hmm, that’s... disappointing. I was hoping to use it for my upcoming eye surgery.
+  user_2,[00:31] I understand. We can look at renewal options right now if you’d like. It’s a quick process.
+  user_1,[00:36] Yeah, let’s do that. What are the steps?
+  user_2,[00:40] First I’ll need to confirm a few details—your date of birth, current address, and any recent medical changes. Can you confirm?
+  user_1,[00:45] Sure… I’m 34, born 12/03/1992, living at 45 Greenfield Road, Bangalore. No major changes, just the surgery.
+  user_2,[00:52] Got it, thanks. I’ll send you a renewal quote via email in the next few minutes. You can review and sign electronically. Anything else I can help with?
+  user_1,[00:58] That’s all for now. Thanks for the help, Sunita.
+  user_2,[01:00] You’re welcome, Kiara. Have a good day! [ends call]

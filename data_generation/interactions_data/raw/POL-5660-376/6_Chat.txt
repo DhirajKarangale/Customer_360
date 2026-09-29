@@ -1,0 +1,13 @@
+chat_id: 9f3b7c2a-8d4e-41a9-b6f2-5e9c0d1a7b34
+participants[2]{id,name,role}:
+  a12c9f4e-7b3d-4f8a-9c21-3e6b5d8f0a11,Sneha Roy,customer
+  d4e5f6a7-9b8c-4d2e-8f3a-1b2c3d4e5f6a,Vikram Patel,insurance agent
+messages[8]{user,timestamp,text,media_url}:
+  user_1,01/10/2027 T09:15:02,"hey vikram, just checked my portal and see HP‑4478 says expierd *expired as of 30 Sep 2027. is that right?", 
+  user_2,01/10/2027 T09:15:45,"hi sneha! yes, the policy term ended on 30 Sep 2027. it’s now marked as expired in our system.", 
+  user_1,01/10/2027 T09:16:30,"oh ok. i thought it auto‑renewed? we talked about renewal earlier.", 
+  user_2,01/10/2027 T09:17:10,"we did set up an auto‑renew for 1 Oct 2026‑30 Sep 2027, but the renewal was for a single year only. after that it doesn’t auto‑extend unless you opt‑in again.", 
+  user_1,01/10/2027 T09:18:05,"got it. can i still renew for another year? i’d like to keep coverage.", 
+  user_2,01/10/2027 T09:19:00,"absolutely! we can process a renewal now. i’ll apply the same 5% loyalty discount, so the premium will be $199.50 per month for the next term 1 Oct 2027‑30 Sep 2028.", 
+  user_1,01/10/2027 T09:20:12,"great, please go ahead. also, could you send me the updated policy doc? thx.", 
+  user_2,01/10/2027 T09:21:05,"sure thing, sending it over now. let me know if you have any q's.",https://storage.dcodelabs.com/docs/HP-4478_Renewal_2027-2028.pdf

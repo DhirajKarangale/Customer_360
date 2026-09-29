@@ -1,0 +1,8 @@
+mail_id: a3f9c2d4-7e1b-4a9f-8c2e-5d6b9f1a2c34
+subject: Confirmation of Your Health Policy Renewal – Policy HP-2024-5678
+participants[2]{id,name,email,role}:
+  1d9e7a3b-5c4f-4b2a-9f8e-2a6d7c9b0e11,Reyansh Tiwari,rey.tiwari@dcoders.com,customer
+  4b2f6c8d-9a1e-4d3b-8c7f-1e5a3b9d4f22,Anjali Desai,anjali.desai@firstguardbrokers.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,28/09/2026 T:09:15:30,"Hi Anjali,\n\nThanks for the call earlier. Could you please send me the updated policy documents and confirm the new deductible and premium details?\n\nBest,\nReyansh",
+  user_2,user_1,,28/09/2026 T:10:02:10,"Dear Reyansh,\n\nIt was a pleasure assisting you today. I’ve attached the renewed health policy reflecting the higher deductible of $2,500 and the reduced monthly premium of $150. The policy is now active and will remain in force until 30/09/2027. The tele‑consultation coverage and faster claim‑settlement times are included as discussed.\n\nIf you have any further questions, feel free to reach out.\n\nWarm regards,\nAnjali Desai\nInsurance Agent, First Guard Brokers",https://docs.firstguardbrokers.com/policies/HP-2024-5678_Renewed.pdf

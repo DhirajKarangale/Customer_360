@@ -1,0 +1,20 @@
+call_id: CALL-DC-2026-0094
+start_timestamp: 30/09/2026 T:09:15:00
+end_timestamp: 30/09/2026 T:09:18:30
+participants[2]{id,name,role}:
+  a1f9c3e2-7b4d-4f9a-9c2e-5d6b8e1f0a12,Sneha Roy,customer
+  d4e7b9c1-2a5f-48b3-9d1e-3c7f6a2b8d34,Anjali Desai,insurance agent
+messages[13]{user,text}:
+  user_1,[00:00] Hello? Hi, um... this is Sneha Roy, calling about my auto policy.
+  user_2,[00:05] Hi Sneha, Anjali speaking from First Guard Brokers. How can I help you today?
+  user_1,[00:12] Yeah, I got the quote you sent—₹11,828 after discount. I was just wondering—uh—what happens if I don’t pay today?
+  user_2,[00:20] ...If the payment isn’t received by the due date, the policy will stay in a lapsed state and technically be expired as of 15 August 2026.
+  user_1,[00:28] Oh, I see. I was actually thinking maybe I’ll hold off for a bit—
+  user_2,--? Sorry, could you repeat that?
+  user_1,[00:35] I said, I might not renew right now. I’m not sure I need the coverage at the moment.
+  user_2,[00:40] I understand. Just to confirm, you’d like us to close the policy and let it remain expired?
+  user_1,[00:45] Yes, that’s correct. I don’t want any further charges.
+  user_2,[00:50] Alright, I’ll mark it as expired in our system. You’ll receive a confirmation email shortly.
+  user_1,[00:55] Thanks, Anjali. Sorry for the back‑and‑forth.
+  user_2,[01:00] No problem at all, Sneha. If you ever need coverage again, just give us a call. Have a good day.
+  user_1,[01:05] You too, bye.

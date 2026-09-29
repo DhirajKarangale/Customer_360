@@ -1,0 +1,13 @@
+chat_id: a1b2c3d4-5678-90ab-cdef-1234567890ab
+participants[2]{id,name,role}:
+  9f8e7d6c-5b4a-3c2d-1e0f-abcdef123456,Vedant Thakur,customer
+  d4c3b2a1-0f9e-8d7c-6b5a-123456fedcba,Neha Kapoor,insurance agent
+messages[8]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T10:02:15,"hey neha, got the revised quote, but i see the premium went up a bit. can you explain why?", 
+  user_2,28/09/2026 T10:02:45,"Hi Vedant! Sure thing. The increase reflects the lower deductible we set to $750 and the added coverage for roadside assistance you requested.", 
+  user_1,28/09/2026 T10:03:10,"roadside assistance? i didn't ask for that *any*thing", 
+  user_2,28/09/2026 T10:03:40,"Oops, sorry! That was a mistake. I’ll remove the rider. Let me send you the corrected quote.",https://storage.dcoders.com/docs/AV-45231_Quote_2027_v2.pdf
+  user_1,28/09/2026 T10:04:05,"thanks! also, can i get a copy of the insurance card? need it for my new car.", 
+  user_2,28/09/2026 T10:04:35,"Absolutely, here's your digital insurance card.",https://storage.dcoders.com/cards/AV-45231_InsuranceCard.pdf
+  user_1,28/09/2026 T10:05:00,"great, thx! one more thing – when does the next payment due? ", 
+  user_2,28/09/2026 T10:05:30,"Your next premium payment is due on 01/09/2027, a month before renewal. Let me know if you need any changes before then.",

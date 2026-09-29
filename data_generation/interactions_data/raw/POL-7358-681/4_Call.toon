@@ -1,0 +1,21 @@
+call_id: REC-DC-20260928-001
+start_timestamp: 28/09/2026 T:14:05:00
+end_timestamp: 28/09/2026 T:14:15:20
+participants[2]{id,name,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Rohan Deshmukh,customer
+  e7f8g9h0-7777-8888-9999-aaaabbbbcccc,Karan Joshi,insurance agent
+messages[31]{user,text}:
+  user_1,Hey... uh, hi Karan? This is Rohan.
+  user_2,Hello Rohan, good afternoon. It's Karan from Safe Step. How can I help you today?
+  user_1,Yeah, I... I need to confirm that my health policy HP‑2024‑5678 is cancelled. I switched jobs.
+  user_2,Sure thing, let me pull that up. One sec, please hold.
+  user_2,[hold music playing]
+  user_2,Alright, I see the cancellation request from earlier this week. It was processed on 24/09/2026.
+  user_1,Great. And the refund? When will that hit my account?
+  user_2,We issue a prorated refund within 5‑7 business days. It'll be credited to the original payment method.
+  user_1,Umm, okay. Do I need to send any documents or anything else?
+  user_2,No, everything's in the system. Just a quick verification of your new bank details would be helpful.
+  user_1,[typing] Yeah, it's the same account as before, no change.
+  user_2,Got it. Let me just confirm the refund amount... hold on.
+  user_2,[hold music playing]
+  user_

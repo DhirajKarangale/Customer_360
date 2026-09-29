@@ -1,0 +1,8 @@
+mail_id: a1b2c3d4-5678-90ab-cdef-1234567890ab
+subject: Confirmation of Auto Policy Cancellation – Policy AU-2026-789012
+participants[2]{id,name,email,role}:
+  1a2b3c4d-1111-2222-3333-444455556666,Reyansh Tiwari,reyansh.tiwari@example.com,customer
+  5e6f7g8h-7777-8888-9999-aaaabbbbcccc,Ravi Menon,ravi.menon@securefuture.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2026 T:09:15:30,"Hi Reyansh,\n\nThank you for speaking with me earlier today. As requested, I have processed the cancellation of your auto insurance policy (Policy No: AU-2026-789012) effective 28 September 2026.\n\nA prorated refund for the unused portion of your premium will be calculated and should appear on your original payment method within 7‑10 business days. You will receive a separate email when the refund is issued.\n\nFor your records, I have attached a cancellation confirmation document that outlines the details and the refund calculation.\n\nIf you have any further questions or need assistance with a future policy, please feel free to reach out.\n\nBest regards,\nRavi Menon\nInsurance Agent | Secure Future Group\nravi.menon@securefuture.com\n+1 (555) 123‑4567",https://storage.securefuture.com/docs/AutoPolicy_Cancel_Confirmation_2026_123456.pdf
+  user_1,user_2,,28/09/2026 T:10:02:12,"Hi Ravi,\n\nThanks for the confirmation and the attached document. Could you let me know the exact amount that will be refunded and the expected date it will be credited? Also, please confirm that there are no outstanding balances on my account.\n\nAppreciate your help.\n\nRegards,\nReyansh Tiwari",

@@ -1,0 +1,16 @@
+call_id: CALL-DC-001
+start_timestamp: 28/09/2026 T:09:15:00
+end_timestamp: 28/09/2026 T:09:18:30
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Dhruv Kapoor,customer
+  b2c3d4e5-6789-01bc-def0-2345678901bc,Neha Kapoor,insurance agent
+messages[9]{user,text}:
+  user_1,[00:00] Hello, is this Neha? I... uh... I wanted to talk about my travel policy.
+  user_2,[00:05] Hi Dhruv, yes speaking. This is Neha from Shield Life Services. How can I help you today?
+  user_1,[00:12] Yeah, so I just booked a trip to Europe next month and I want to make sure the policy is active. --
+  user_2,[00:18] Let me pull up your details... [typing] Give me a sec.
+  user_2,[00:25] Okay, I see your Travel Policy SH-TRV-2026 is currently pending activation. Did you receive the welcome email?
+  user_1,[00:33] Uh, I think I got something but... I couldn't find the attachment. Can you resend?
+  user_2,[00:40] Sure, I'll resend it now. Also, to activate, we just need your confirmation of travel dates.
+  user_1,[00:48] Got it, the dates are 15th Oct to 30th Oct. Please go ahead and activate.
+  user_2,[00:55] Done! Your policy status is now Active. You'll get a confirmation email shortly.

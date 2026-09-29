@@ -1,0 +1,21 @@
+call_id: a6f3c9d2-5b4e-4a1f-9e2c-3d7b8f0a9c11
+start_timestamp: 29/09/2026 T:14:05:12
+end_timestamp: 29/09/2026 T:14:09:45
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Rohan Deshmukh,customer
+  f1e2d3c4-5678-90ab-cdef-0987654321ba,Vikram Patel,insurance agent
+messages[14]{user,text}:
+  user_1,[00:00] Hello uh Vikram? It's Rohan. I got a notification about my policy possibly being cancelled
+  user_2,[00:05] Hey Rohan yes I see you on the line. Let me pull up your file… [typing] okay I’ve got it here
+  user_1,[00:12] Great thanks. I’m kinda worried I thought I’d need to re‑apply
+  user_2,[00:15] No no it was just a system glitch. Your life policy is still active I’ve double‑checked
+  user_1,[00:20] Oh phew that’s a relief. Did you also I think we talked about increasing the sum assured
+  user_2,[00:25] Yeah we bumped it up to ₹15 lakh and added the accidental‑death rider of ₹5 lakh remember
+  user_1,[00:30] Right right. And my new address… I moved to Sector 12 Pune
+  user_2,[00:33] Got it I’ve updated your address in the system. The revised policy document has been emailed to you today
+  user_1,[00:38] Got the email already the PDF looks good. Thanks for sending it quickly
+  user_2,[00:42] You’re welcome. Just a heads‑up the next premium is due on 15 Oct 2026 same amount as before
+  user_1,[00:46] Okay I’ll mark that in my calendar. Anything else I should be aware of
+  user_2,[00:48] Nothing major. Just keep an eye on the renewal notice a month before and let us know if you change any details
+  user_1,[00:52] Sure thing. Thanks for clearing this up Vikram
+  user_2,[00:55] My pleasure Rohan. Have a good day! [sighs] Bye

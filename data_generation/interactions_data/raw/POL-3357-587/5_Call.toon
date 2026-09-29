@@ -1,0 +1,20 @@
+call_id: CALL-20260929-005
+start_timestamp: 29/09/2026 T:14:10:00
+end_timestamp: 29/09/2026 T:14:13:45
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Samar Ghosh,customer
+  f9e8d7c6-5432-10fe-dcba-0987654321fe,Sunita Agarwal,insurance agent
+messages[13]{user,text}:
+  user_1,[00:00] Hey Sunita uh I got your email about the claim paperwork
+  user_2,[00:05] Hi Samar! Yes I sent the checklist Did you get a chance to look at it
+  user_1,[00:10] Yeah I think I’m missing something about the proof of payment Do I need the original receipt or a copy works
+  user_2,[00:15] Good question a clear scanned copy is fine as long as the total amount and date are visible
+  user_1,[00:20] Got it Also I’m wondering if I can submit everything through the portal or do I have to mail paper copies
+  user_2,[00:25] You can upload everything in the portal We have a Claims Upload section It’s pretty straightforward
+  user_1,[00:30] Okay and the portal does it accept photos of the cabinets I have a few high‑res shots
+  user_2,[00:35] Absolutely just make sure the photos are under 5 MB each The system will compress if needed
+  user_1,[00:40] Great One more thing I noticed the premium was reduced after the discount When will the next billing cycle be
+  user_2,[00:45] Your next premium due date is 15 Oct 2026 Since the policy is active now the first payment will be auto‑debit on that date
+  user_1,[00:50] Perfect thanks I’ll get the docs together and upload them today
+  user_2,[00:55] Sounds good Samar If anything else comes up just give us a call or drop a message Have a good day
+  user_1,[01:00] Thanks you too Bye

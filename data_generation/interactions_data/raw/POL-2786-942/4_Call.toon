@@ -1,0 +1,18 @@
+call_id: REC-INS-004A
+start_timestamp: 29/09/2026 T:14:05:00
+end_timestamp: 29/09/2026 T:14:09:30
+participants[2]{id,name,role}:
+  d3f4a9c2-7b1e-4c9a-8f5e-2b6d9c3e1a44,Rohan Deshmukh,customer
+  a9b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d,Anjali Desai,insurance agent
+messages[11]{user,text}:
+  user_1,[00:00] Hi Anjali, umm... I got the email with the new policy document. Thanks.
+  user_2,[00:10] Hey Rohan, great! Happy to hear that. Did everything look okay?
+  user_1,[00:20] Yeah, looks fine... but I noticed the policy number changed to AU‑4521‑R1? Is that right?
+  user_2,[00:30] Yes, that's the renewed version. The old one is now marked as expired in our system.
+  user_1,[00:45] Okay, good. So the old policy is officially expired, right? I just want to be sure.
+  user_2,[00:55] Exactly, it's now expired. Your active coverage runs until 31/08/2027.
+  user_1,[01:10] [sighs] Got it. One more thing—do I need to do anything else, like sign anything physically?
+  user_2,[01:20] No, the e‑signature we have on file is sufficient. We'll keep the digital copy.
+  user_1,[01:35] Alright, thanks. I'll keep the PDF for my records.
+  user_2,[01:45] Sure thing. If you need anything else, just give us a call.
+  user_1,[01:55] Will do. Bye.

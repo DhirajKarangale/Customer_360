@@ -1,0 +1,21 @@
+call_id: REC-INS-004C
+start_timestamp: 28/09/2026 T:14:15:00
+end_timestamp: 28/09/2026 T:14:18:45
+participants[2]{id,name,role}:
+  a5d3f2c1-9b4e-4f7a-8c2d-1e9b6a7c3d5e,Kriti Mahajan,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[14]{user,text}:
+  user_2,Hello Kriti this is Suresh from Secure Life Solutions how can I help you today?
+  user_1,Hi Suresh umm I just wanted to double‑check the premium due date for my policy.
+  user_2,Sure let me pull that up [typing] Okay your next premium is due on 15 Oct 2026.
+  user_1,Got it Also could we set up auto‑debit I’m traveling soon.
+  user_2,Absolutely we can link your bank account Do you have the account number handy?
+  user_1,Umm yes it’s 1234567890 sort code 00‑11‑22.
+  user_2,Thanks I’ll just confirm -- hold on a sec.
+  user_2,All set the auto‑debit is scheduled You’ll get a confirmation email shortly.
+  user_1,Great thanks One more thing can you tell me the claim filing deadline for this policy?
+  user_2,For a life policy claims are processed as soon as we receive the necessary documents no hard deadline but we recommend filing within 30 days of the event.
+  user_1,[sighs] Okay that’s helpful Anything else I should know?
+  user_2,Just make sure your contact info stays up‑to‑date we already updated your address If anything changes let us know Anything else?
+  user_1,No that’s all Thanks for your help!
+  user_2,You’re welcome Kriti Have a good day!

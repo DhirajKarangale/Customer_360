@@ -1,0 +1,40 @@
+call_id: REC-DC-20261001-001
+start_timestamp: 01/10/2026 T:09:15:00
+end_timestamp: 01/10/2026 T:09:35:00
+participants[2]{id,name,role}:
+  a3f9c2e1-7b4d-4f9a-9c3e-1d5b6a8e2f4b,Kiara Sen,customer
+  5d2e7b9c-1a3f-48c2-9d6e-0f4b7c8d9e1a,Neha Kapoor,insurance agent
+messages[33]{user,text}:
+  user_1,Hello Neha this is Kiara I just got your email about my health policy expiration
+  user_2,Hi Kiara good morning I see your policy does indeed expire on 30 Sept 2026
+  user_1,Yeah I was hoping to confirm because I have a surgery scheduled next month
+  user_2,Oh I understand that can be stressful Let me pull up your record
+  user_2,[hold music] *soft instrumental playing*
+  user_2,Thanks for waiting I have your file open now
+  user_1,Sorry for the background I have a dog barking in the house
+  user_2,No worries I can hear the dog barks faintly
+  user_2,So the policy is currently set to expire and will not auto renew
+  user_1,Is there a way to extend it before the expiry I don’t want a gap in coverage
+  user_2,Yes we can either renew the same plan or switch to a new plan that maybe better for your surgery
+  user_1,What are the differences I’m not sure what I need
+  user_2,The current plan covers inpatient surgery but the premium is a bit higher The new plan has a lower premium and includes a pre‑authorization service for surgeries
+  user_1,That sounds good but I need to know the cost difference
+  user_2,Give me a moment I’ll calculate the quote
+  user_2,[typing]
+  user_2,Okay the renewal quote for the same plan is $150 per month and the new plan would be $130 per month
+  user_1,Okay that’s helpful I think I’ll go with the lower premium plan
+  user_2,Great I will start the enrollment for the new plan
+  user_2,First I need to confirm your address and contact details
+  user_1,Sure my address is 45 Maple Street Bangalore and my phone is 9876543210
+  user_2,Thanks I’ve updated that in the system
+  user_2,Now I need to set up a payment method do you want to use a credit card or direct debit
+  user_1,Can I use my credit card I have Visa ending in 1234
+  user_2,All set I’ve entered the card details and the new policy will become active on 01 Oct 2026
+  user_2,You will receive a confirmation email with the policy document shortly
+  user_1,Perfect thanks I also wanted to ask about any discounts for early renewal
+  user_2,We do have a 5 percent early renewal discount but it only applies if you renew before 15 Aug 2026 which has passed so we can’t apply it now
+  user_1,Got it I’ll just go ahead then
+  user_2,Is there anything else I can help you with today
+  user_1,No that’s all thank you very much
+  user_2,You’re welcome Kiara Take care and best wishes for your surgery
+  user_2,[call ends]

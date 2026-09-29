@@ -1,0 +1,22 @@
+call_id: REC-INS-004C
+start_timestamp: 30/09/2026 T:10:15:00
+end_timestamp: 30/09/2026 T:10:18:30
+participants[2]{id,name,role}:
+  7f3a9c2e-1b4d-4f9a-8c2e-5d6b9e7a1c33,Rohan Deshmukh,customer
+  d2e5b8f4-9a1c-4b6e-93fa-2c8d7f0a4b55,Vikram Patel,insurance agent
+messages[15]{user,text}:
+  user_2,Hi Rohan, uh—this is Vikram Patel from Omni Insurance, calling about your health policy renewal. Do you have a sec?
+  user_1,Hey Vikram, yeah, I’m here. Just... just got off a meeting.
+  user_2,Great. I just wanted to check if you received the renewal quote I emailed on Thursday and the payment link I sent via chat.
+  user_1,Yeah, I saw the email, and the link. I was going to look at it this weekend.
+  user_2,Cool. The premium is $1,250 for a year, same as before, and it includes the outpatient specialist coverage you asked about.
+  user_1,Right, right. I’m good with that. Just wondering—uh—what’s the deadline again?
+  user_2,We need the signed form and payment within 7 days of today, so by next Friday.
+  user_1,Okay, I think I can get that done by Friday. Actually, I have a question about the payment method—can I use my credit card, or do you need a bank transfer?
+  user_2,You can use the secure credit‑card link I sent. It’s PCI‑compliant, so it’s fine.
+  user_1,Got it. I’ll just... I might need a few minutes on Friday to pull the card info.
+  user_2,No problem. If anything comes up, just give me a call or drop a quick email.
+  user_1,Will do. Oh—one more thing, will the policy be active as soon as the payment clears, or is there a waiting period?
+  user_2,As soon as the payment is processed, the policy re‑activates instantly. You’ll get a confirmation email right away.
+  user_1,Alright, thanks Vikram. I’ll get it done by Friday.
+  user_2,Thanks, Rohan. Talk soon. Bye.

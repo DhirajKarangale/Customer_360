@@ -1,0 +1,15 @@
+chat_id: a1b2c3d4-5678-90ab-cdef-1234567890ab
+participants[2]{id,name,role}:
+  9f8e7d6c-1a2b-3c4d-5e6f-7a8b9c0d1e2f,Rohan Deshmukh,customer
+  d4c3b2a1-0f9e-8d7c-6b5a-4e3d2c1b0a9f,Sunita Agarwal,insurance agent
+messages[10]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T09:12:05,"hey sunita, i just scanned the signed policy pdf. sending now.",https://storage.dcodelife.com/policies/HR-2026-00123_signed.pdf
+  user_2,28/09/2026 T09:12:30,"Great Rohan! Got it. Let me check.", 
+  user_2,28/09/2026 T09:13:10,"Yes, the signature is clear. I'll upload it to the system.", 
+  user_2,28/09/2026 T09:13:45,"Also here's the payment link you can use to pay the ₹18,750 premium. Let me know if you face any issue.", 
+  user_1,28/09/2026 T09:14:20,"thanks! I will click the link now. *click*", 
+  user_1,28/09/2026 T09:15:00,"got an errror 'payment gateway not responding', can you help?", 
+  user_2,28/09/2026 T09:15:45,"Apologies for that. Let me generate a fresh link.", 
+  user_2,28/09/2026 T09:16:10,"Here is the new link: https://pay.dcodelife.com/policy/HR-2026-00123. It should work now.", 
+  user_1,28/09/2026 T09:17:00,"All good now, payment done. Thanks for the help!", 
+  user_2,28/09/2026 T09:17:30,"Excellent! Once payment is confirmed, the policy will move from Pending to Active. I'll update you shortly.",

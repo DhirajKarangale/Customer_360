@@ -1,0 +1,17 @@
+call_id: a5d3c9e2-4f1b-4a8e-9c2b-6f7d3e9a1b2c
+start_timestamp: 28/09/2026 T:14:05:12
+end_timestamp: 28/09/2026 T:14:08:55
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Ishaan Bose,customer
+  f1e2d3c4-5678-90ab-cdef-0987654321fe,Sunita Agarwal,insurance agent
+messages[10]{user,text}:
+  user_1,Hello, is this Sunita? I’m calling about my health policy—uh, I think it’s about to expire? [00:00]
+  user_2,Hi Ishaan, yes Sunita here from Protect All Agency. I can see your policy—yeah, let me pull it up. [00:05]
+  user_1,Okay, um, thanks. I was wondering—what happens when it expires? [00:12]
+  user_2,Sure, so the policy will automatically move to expired status on 30/09/2026—so you won’t have coverage after that date. [00:18]
+  user_1,Oh—so if I need any claim after that, I’m out of luck? [00:24]
+  user_2,[sighs] Yeah, basically. You could renew or switch to a new plan—do you want me to go through the options? [00:30]
+  user_1,Uh, I’m not sure. I need to check with my employer—can you maybe send me the renewal brochure? [00:38]
+  user_2,Absolutely, I’ll email you the brochure right after this call—any other questions while we’re on the line? [00:45]
+  user_1,No, that’s all. Thanks, Sunita. [00:50]
+  user_2,Alright, thanks for calling, Ishaan. Take care. [00:55]

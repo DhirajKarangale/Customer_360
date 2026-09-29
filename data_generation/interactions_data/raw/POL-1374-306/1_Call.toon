@@ -1,0 +1,20 @@
+call_id: REC-DC-001A
+start_timestamp: 28/09/2026 T:09:15:00
+end_timestamp: 28/09/2026 T:09:20:12
+participants[2]{id,name,role}:
+  7f3c9a12-5b4e-4d8a-9e1f-2b6d8c7f9a01,Rahul Jain,customer
+  d2e5b4f9-8c3a-41b2-9f6e-3a7c1d5e8b44,Sunita Agarwal,insurance agent
+messages[10]{user,text}:
+  user_2,[00:00] Good morning, Rahul! This is Sunita from Protect All Agency, how are you today?
+  user_1,[00:07] Umm, hi Sunita… I’m good, thanks. Uh, just a bit busy, you know.
+  user_2,[00:12] No worries, I’ll keep it short. I’m calling about your home insurance policy with DCoders. We’re aiming to get it **Active** in the system today.
+  user_1,[00:20] Oh right, the home policy… I was wondering, uh, what documents do you need from me?
+  user_2,[00:26] Sure thing – just a copy of the latest property tax receipt, and a recent utility bill for address verification. You can email them or we can do it over chat later.
+  user_1,[00:35] Got it… I have the tax receipt on hand, but the utility bill… uh— I think I’ll scan and send it tonight.
+  user_2,[00:42] Perfect. Also, just to confirm, the dwelling is a 3‑BHK on 2nd floor, built in 2015, right? [sighs] I have a note here but want to double‑check.
+  user_1,[00:50] Yeah, that’s correct. Actually, we did a renovation last year – added a new kitchen and some flooring.
+  user_2,[00:58] Thanks for letting me know. I’ll note the upgraded kitchen; that might affect the sum insured. Anything else we should be aware of? Any home‑based business?
+  user_1,[01:05] No, just a regular home. Oh, and could you tell me when the policy will actually go live after I send the docs?
+  user_2,[01:12] Once we receive the documents, we’ll process them within 24‑48 hours and set the status to **Active**. I’ll ping you as soon as it’s done. Anything else on your mind?
+  user_1,[01:20] That’s all, thanks. I’ll email the files by tonight.
+  user_2,[01:25] Great! Talk to you soon, Rahul. Have a good day!

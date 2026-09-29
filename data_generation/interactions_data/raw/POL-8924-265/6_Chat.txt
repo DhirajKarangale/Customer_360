@@ -1,0 +1,13 @@
+chat_id: c9f3b2a1-7e4d-4c9a-9f8b-2d6e5f1a8b3c
+participants[2]{id,name,role}:
+  5d1e9a33-2c4f-4b8a-9d1f-6a7c9e2b5f01,Reyansh Tiwari,customer
+  a3b9c7d2-5e6f-4a1b-8c9d-0f1e2d3c4b5a,Anjali Desai,insurance agent
+messages[8]{user,timestamp,text,media_url}:
+  user_1,01/10/2026 T09:12:15,"hey anjali, quick q: when does my health policy actually end? i think you said 30 sept 2027 but i saw something about it expiring soon.", 
+  user_2,01/10/2026 T09:12:45,"Hi Reyansh! 😊 The policy is active until 30 Sept 2027. After that date it will automatically expire unless you renew.", 
+  user_1,01/10/2026 T09:13:10,"got it. so if i dont do anything after sept, it just becomes expired? any notice sent?", 
+  user_2,01/10/2026 T09:13:40,"Exactly. We send a renewal reminder 30 days before expiry. If you don’t respond, the policy status changes to ‘Expired’ on 01 Oct 2027.", 
+  user_1,01/10/2026 T09:14:05,"cool. can i still file a claim after 30 sept if i have a pending one?", 
+  user_2,01/10/2026 T09:14:40,"You must submit any claim within 90 days of the service date, even if the policy expires later. So as long as the claim is filed before 30 Dec 2027 for a Dec‑2027 service, you’re fine.", 
+  user_1,01/10/2026 T09:15:10,"thanks! also, i noticed the doc you sent earlier had 'deductable' typo*deductible. can you send the corrected version?", 
+  user_2,01/10/2026 T09:15:45,"Sure thing, here’s the updated policy PDF with the correct spelling.",https://storage.dcoders.com/policies/Health_REY_2027_v2.pdf

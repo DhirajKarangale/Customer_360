@@ -1,0 +1,19 @@
+call_id: REC-DC-004
+start_timestamp: 30/09/2026 T:09:12:30
+end_timestamp: 30/09/2026 T:09:18:45
+participants[2]{id,name,role}:
+  9f3b2a1e-7c4d-4e9a-9b1f-2d5c6f8a7b01,Aditi Mahajan,customer
+  d4e5f6a7-8b9c-0d1e-2f3a-4b5c6d7e8f90,Suresh Deshmukh,insurance agent
+messages[12]{user,text}:
+  user_1,[00:00] Hi Suresh uh I just wanted to double‑check that my auto policy is really cancelled now.
+  user_2,[00:04] Hey Aditi sure thing give me a sec [typing] …yeah it’s cancelled policy AU‑2019‑HC and the refund was sent on 27 Sept 2026.
+  user_1,[00:10] Oh good I saw the email but I’m a bit worried the money won’t hit my card.
+  user_2,[00:13] It should show up on the card ending 1234 usually within 2‑3 business days. If not by 1 Oct give me a shout.
+  user_1,[00:18] Okay thanks also do I need to return the insurance card or anything.
+  user_2,[00:20] No you can just shred it since the policy’s void there’s no further paperwork.
+  user_1,[00:23] Got it uh one more thing will this cancellation affect my credit score.
+  user_2,[00:26] Nope cancellations don’t get reported to credit bureaus it’s just a closed account.
+  user_1,[00:30] Alright that’s a relief [sighs] I guess I’m all set then.
+  user_2,[00:32] Great I’ll also send a final confirmation email right after we hang up.
+  user_1,[00:35] Perfect thank you so much for your help.
+  user_2,[00:37] You’re welcome Aditi have a good day [typing] …goodbye.

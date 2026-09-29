@@ -1,0 +1,15 @@
+call_id: CALL-20260930-001
+start_timestamp: 30/09/2026 T:14:15:00
+end_timestamp: 30/09/2026 T:14:18:30
+participants[2]{id,name,role}:
+  a3f9c2d1-7b4e-4a9f-8e2d-1c5b6e9f2a33,Rahul Jain,customer
+  5d2e8b7c-9f1a-4c3d-8a6b-0e4f7d9c1b55,Sunita Agarwal,insurance agent
+messages[8]{user,text}:
+  user_1,"[00:00] Hi Sunita, it's Rahul. Um... I just wanted to double‑check the premium debit date you mentioned."
+  user_2,"Sure, Rahul. Let me pull up your policy... [typing] ... The first premium of ₹12,500 is scheduled for 05/10/2026."
+  user_1,"Okay, thanks. Also, I was thinking of adding a flood‑damage rider since we got a new basement. Is that possible?"
+  user_2,"Yes, we can add a flood rider. It will be an additional ₹2,000 per year. I’ll need a brief note about the basement's elevation."
+  user_1,"Got it. I can email you the details later today."
+  user_2,"Perfect. Once we receive it, we’ll issue an endorsement and the premium will be adjusted in the next billing cycle."
+  user_1,"Great, and just to confirm, the kitchen renovation coverage is already active, right?"
+  user_2,"Yes, the extended clause covering water damage from your kitchen remodel is active as of today."

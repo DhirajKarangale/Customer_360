@@ -1,0 +1,19 @@
+call_id: CALL-20260928-001
+start_timestamp: 28/09/2026 T:14:05:00
+end_timestamp: 28/09/2026 T:14:09:30
+participants[2]{id,name,role}:
+  9f3b2c1e-7a4d-4e9b-8c2a-5d6f9b0a1c2d,Meera Chauhan,customer
+  d2e7a9f4-3c5b-41f2-9e8c-0b7a6d4e9f1a,Ravi Menon,insurance agent
+messages[12]{user,text}:
+  user_1,[00:00] Hello hi Ravi? This is Meera. I... uh... I saw my travel policy TRV‑2024‑0789 says expired and I have a trip in October. Can I still get coverage?
+  user_2,[00:10] Hi Meera yes I’m Ravi. Let me pull up your policy… [typing]... Okay I see it’s marked as expired as of 30/09/2024.
+  user_1,[00:25] Oh that's... uh... I was hoping maybe it’s still active? Or can we renew quickly?
+  user_2,[00:35] Unfortunately once a policy hits the expiry date it’s no longer in force. We can issue a new travel policy but it won’t retroactively cover the October dates if you travel before the new start date.
+  user_1,[00:50] Hmm my flight is 12th October. If we start a new policy on 10th Oct would that work?
+  user_2,[01:00] Yeah we could set the effective date 10/10/2026 that gives you coverage for the trip. It’ll be a fresh policy number and the premium will be based on the usual rates.
+  user_1,[01:10] Great. What’s the process? Do I need to fill a form or can you send me a link?
+  user_2,[01:20] I’ll email you the renewal form right after this call and you can sign electronically. Once we get the signed form and payment I’ll activate it and send you the new policy doc.
+  user_1,[01:30] Okay thanks. Also will the previous claims history carry over?
+  user_2,[01:40] Yes your claims history stays on file so the new policy will reflect your good standing. Anything else?
+  user_1,[01:45] No that’s all. Thanks for the help.
+  user_2,[01:50] You’re welcome! Have a safe trip in October. Bye.

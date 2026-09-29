@@ -1,0 +1,11 @@
+chat_id: 9f2b1c4d-8e7a-4f3b-9c2d-6a5e7b9c0d1f
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Rohan Deshmukh,customer
+  b2c3d4e5-6789-01ab-cdef-2345678901bc,Anjali Desai,insurance agent
+messages[6]{user,timestamp,text,media_url}:
+  user_1,30/09/2026 T09:15:12,"hi anjali, i just completed the net banking payment for invoice AU‑4521. can you confirm reciept*receipt?", 
+  user_2,30/09/2026 T09:15:45,"Hi Rohan! Thanks for the prompt payment. Let me check... Yes, I see the payment of ₹11,875 has been received. Your policy is now actve*active until 31/08/2027.", 
+  user_1,30/09/2026 T09:16:10,"Great! do i need to do anythin*anything else?", 
+  user_2,30/09/2026 T09:16:45,"All set from our side. I’ll send you the updated policy documnt*document shortly. Anything else I can help with?", 
+  user_1,30/09/2026 T09:17:05,"No, that's all. thx!", 
+  user_2,30/09/2026 T09:17:30,"You’re welcome! Have a safe drive 🚗. If anything pops up, just ping me.",

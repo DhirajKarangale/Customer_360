@@ -1,0 +1,8 @@
+mail_id: 7c9e5f2b-4a1d-47b3-9c8e-2d6f1a3b5e7f
+subject: Renewal Quote for Your Health Policy (Expiring 15 Oct 2026)
+participants[2]{id,name,email,role}:
+  9f8c2a7e-3b4d-4f9a-9c2e-1a6b5d7c8e90,Aditya Singh,aditya.singh@dcoders.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,suresh.d@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,20/10/2026 T:09:15:00,"Dear Aditya,\n\nThank you for speaking with me earlier regarding your health policy that is set to expire on 15 Oct 2026. As discussed, a lapse would terminate inpatient, outpatient, and pre‑existing condition coverage.\n\nPlease find attached two renewal quote options for you to review:\n1. Standard Renewal – continuation of current benefits with a modest premium increase.\n2. Premium Plus – enhanced coverage limits and added wellness benefits.\n\nKindly let me know which option you’d prefer, or if you’d like any adjustments. I’m happy to answer any questions you may have.\n\nBest regards,\nSuresh Deshmukh\nInsurance Agent, Secure Life Solutions\nsuresh.d@dcoders.com",https://storage.dcodelife.com/quotes/HealthPolicy_ADS_2026_Renewal.pdf
+  user_1,user_2,,20/10/2026 T:10:05:30,"Hi Suresh,\n\nI’ve reviewed the attached quotes – thank you for sending them over. I’m leaning towards the Premium Plus option but would like clarification on the annual deductible and the process for pre‑authorization of specialist visits.\n\nAlso, could you confirm the deadline for confirming the renewal to avoid any coverage gap?\n\nThanks,\nAditya Singh\naditya.singh@dcoders.com",

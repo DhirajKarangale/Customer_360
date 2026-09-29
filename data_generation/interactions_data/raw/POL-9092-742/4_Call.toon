@@ -1,0 +1,20 @@
+call_id: REC-DC-04928
+start_timestamp: 14/10/2026 T:15:30:00
+end_timestamp: 14/10/2026 T:15:33:45
+participants[2]{id,name,role}:
+  c1a2b3c4-d5e6-7f8a-9b0c-1d2e3f4a5b6c,Krishna Das,customer
+  f9e8d7c6-b5a4-3f2e-1d0c-9b8a7f6e5d4c,Ramesh Tiwari,insurance agent
+messages[12]{user,text}:
+  user_2,[00:00] Safe Shield Agency, this is Ramesh speaking. How can I help you today?
+  user_1,[00:07] Hi Ramesh, it's Krishna Das here. Umm, I'm just calling back following our chat earlier regarding-- you know, the DCoders corporate health policy.
+  user_2,[00:18] Ah, hello Krishna! Yes, I remember. Did the portal update go through after the batch sync, or is it still showing active?
+  user_1,[00:26] Well, actually, that's why I'm calling. [sighs] My HR just reached out again saying their portal is throwing an error because technically your system still says 'Active' on their backend view, even though I forwarded them the PDF confirmation.
+  user_2,[00:43] Oh! Really? Ah, let me check right now. Hold on, let me pull up your file [typing sounds]. DCoders group policy, right?
+  user_1,[00:54] Yeah, exactly. The old one from DCoders. I need it to read completely 'Expired' so my new employer's insurance can kick in without any duplication flags.
+  user_2,[01:10] Understood, understood. Let me see... ah, okay, I see the batch job is still queued for the evening run. But you know what? Let me just override it manually right now while we're on the call so it reflects instantly for your HR.
+  user_1,[01:28] Oh, can you do that? That would be fantastic, Ramesh. Thank you so much.
+  user_2,[01:34] Yeah, no worries at all. Let me just click here... okay, changing status from Active to... Expired. Boom. Done. Status is now fully updated as 'Expired' in the main repository.
+  user_1,[01:54] Awesome! Let me just refresh my end-- ah, yeah, I see it too. It says 'Expired' now. Perfect!
+  user_2,[02:03] Excellent. Sorry for the little hiccup with the batch timing, but you're all set now. Anything else I can assist you with, Krishna?
+  user_1,[02:14] No, that's everything I needed, Ramesh. Thanks for sorting this out so quickly. Have a good one!
+  user_2,[02:22] Anytime, Krishna. Take care, bye-bye!

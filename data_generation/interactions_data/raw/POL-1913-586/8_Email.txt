@@ -1,0 +1,8 @@
+mail_id: a3f9c2e4-7b1d-4a6f-9d3e-2f8b5c1d9e7a
+subject: Your Health Policy Renewal Confirmation – HP-2024-9876-R1
+participants[2]{id,name,email,role}:
+  9f1b2c3d-4e5f-6789-abcd-ef0123456789,Saanvi Pillai,saanvi.pillai@dcoders.com,customer
+  d4e5f6a7-89ab-0cde-f123-456789abcd01,Neha Kapoor,neha.kapoor@shieldlife.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,27/09/2026 T:10:15:00,"Dear Saanvi,\n\nI’m pleased to confirm that we have received your renewal payment of ₹12,500 for health policy HP‑2024‑9876‑R1. Your coverage will be active from 15 September 2026.\n\nPlease find attached your updated policy certificate and the full renewed policy document for your records.\n\nIf you have any questions or need assistance with future claims, you can continue to use the same online portal or reach out to me directly.\n\nThank you for choosing Shield Life Services. We appreciate your trust in DCoders.\n\nWarm regards,\nNeha Kapoor\nInsurance Agent, Shield Life Services\nPhone: +91‑98765‑43210\nEmail: neha.kapoor@shieldlife.com",https://storage.shieldlife.com/policies/HP-2024-9876-R1_certificate.pdf
+  user_1,user_2,,27/09/2026 T:10:45:12,"Hi Neha,\n\nThank you for the confirmation and for sending the certificate. I’ve received the documents and everything looks good.\n\nBest,\nSaanvi",

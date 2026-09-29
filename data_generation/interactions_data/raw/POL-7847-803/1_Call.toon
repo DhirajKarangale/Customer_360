@@ -1,0 +1,19 @@
+call_id: CALL-DC-20261015-001
+start_timestamp: 15/10/2026 T:14:05:00
+end_timestamp: 15/10/2026 T:14:08:30
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Aditi Mahajan,customer
+  d4c3b2a1-8765-09ba-fedc-0987654321fe,Suresh Deshmukh,insurance agent
+messages[12]{user,text}:
+  user_1,[00:00] Hello? Hi, is this Suresh? ... can you hear me?
+  user_2,[00:04] Yeah, hi Aditi, I can hear you. Good afternoon.
+  user_1,[00:07] Umm... I wanted to talk about my auto policy, the one for my 2019 Honda Civic.
+  user_2,[00:10] Sure, let me pull that up... [typing]... Got it.
+  user_1,[00:15] So, I... I think I need to cancel it. I'm moving to another city and won't be driving there.
+  user_2,[00:18] Oh, I see. -- Sorry to hear that. Are you sure you want to cancel? There might be a prorated refund.
+  user_1,[00:22] Yeah, I'm sure. I just... I don't want any more premiums.
+  user_2,[00:25] Alright, let me check the cancellation terms. One moment.
+  user_2,[00:35] Okay, policy number is AUTO-DC-4592. Since you're within the 30‑day cooling period, we can process a full refund.
+  user_1,[00:38] That's good. Thank you. What's the next step?
+  user_2,[00:40] I'll initiate the cancellation now, and you'll receive a confirmation email in about 5‑10 minutes. Any other questions?
+  user_1,[00:45] No, that's all. Thanks, Suresh. [sighs]

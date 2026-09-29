@@ -1,0 +1,23 @@
+call_id: CALL-8f3a9c2e-1b4d-4f8a-9c2e-7d5b6a9f3c1d
+start_timestamp: 28/09/2026 T:09:15:00
+end_timestamp: 28/09/2026 T:09:20:30
+participants[2]{id,name,role}:
+  3e1f9b2a-7c4d-4a8e-9f23-5d6b7c8d9e0f,Sneha Roy,customer
+  a2b5c6d7-8e9f-4a1b-9c2d-3e4f5a6b7c8d,Anjali Desai,insurance agent
+messages[16]{user,text}:
+  user_2,[00:00] Good morning, Sneha. This is Anjali from First Guard Brokers. Am I speaking with Ms. Roy?
+  user_1,[00:05] Uh, yeah... hi Anjali. Yes, this is Sneha.
+  user_2,[00:10] Thanks. I'm calling about your auto policy with DCoders. I see it’s set to expire on 15/09/2026. [sighs]
+  user_1,[00:15] Oh... already? I thought I had more time.
+  user_2,[00:20] Yeah, the system shows the coverage ended yesterday. I wanted to let you know before you hit the road.
+  user_1,[00:25] Uh, what happens now? Do I have to... like, get a new policy?
+  user_2,[00:30] Exactly. We can renew it today, or you could switch to a different plan. Any thoughts?
+  user_1,[00:35] I... I need to check my budget. Can you send me the renewal quote? --
+  user_2,[00:38] Sure, I can email you the quote right after this call. Also, if you renew now, you’ll avoid a lapse fee.
+  user_1,[00:42] Okay, that sounds good. [typing]
+  user_2,[00:45] Great. Just to confirm, your vehicle is a 2020 Honda Civic, right?
+  user_1,[00:48] Yes, that's correct.
+  user_2,[00:52] Perfect. I’ll process the renewal and send the documents. Expect an email by 09:55.
+  user_1,[00:55] Thanks, Anjali. Appreciate the help.
+  user_2,[00:58] You’re welcome! Let me know if you have any questions later. Have a safe day.
+  user_1,[01:00] Will do. Bye.

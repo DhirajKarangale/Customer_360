@@ -1,0 +1,17 @@
+call_id: REC-DC-9924-04
+start_timestamp: 28/09/2026 T:11:15:00
+end_timestamp: 28/09/2026 T:11:18:30
+participants[2]{id,name,role}:
+  c4f82a11-893b-4c2d-98e1-512bc90a1201,Rohan Deshmukh,customer
+  d7831bc9-4412-4ee2-b911-3091ab7287cc,Ramesh Tiwari,insurance agent
+messages[10]{user,text}:
+  user_2,[00:00] Hello Rohan bhai! Ramesh here from Safe Shield Agency, calling regarding DCoders life insurance policy. Did you get a chance to check the confirmation receipt I sent over after our chat?
+  user_1,[00:12] Hi Ramesh. Ah, yes, actually I just opened the email a few minutes ago. Everything looks correct on the receipt.
+  user_0,[00:20] [typing] Great, perfect! Just wanted to touch base quickly to make sure -- you know, make sure there are no remaining doubts or anything regarding the nominee setup we discussed?
+  user_1,[00:32] Umm, no, no doubts as such. The nominee name is spelled right this time. Thanks for sorting that out so quickly yesterday.
+  user_0,[00:41] Excellent. I've already updated the main DCoders system on my end as well. Your life insurance policy status is now fully Active, so you're all set.
+  user_1,[00:54] Oh, wonderful. That's a huge relief. Glad to hear it's finally active. So I don't need to submit any more physical documents, right?
+  user_0,[01:05] No, nothing further needed. Everything is locked in. You'll receive a physical welcome kit from DCoders within -- let's say, 4 to 5 working days at your registered address.
+  user_1,[01:19] Perfect, sounds good. [sighs] Glad this whole verification process is finally done.
+  user_0,[01:27] Haha, yes indeed! Sorry for the initial hassle with the portal. Is there anything else I can help you with today, Rohan?
+  user_1,[01:36] No Ramesh, that's pretty much it. Thanks for all your help getting this sorted out. Have a good day!

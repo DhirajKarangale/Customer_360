@@ -1,0 +1,8 @@
+mail_id: 9f8c7b6a-1e23-4d5f-a9b0-2c3d4e5f6789
+subject: Re: Your Life Insurance Policy – Updated Documents & Premium Due
+participants[2]{id,name,email,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Rohan Deshmukh,rohan.d@dcoders.com,customer
+  e5f6g7h8-7777-8888-9999-aaaabbbbcccc,Vikram Patel,vikram.p@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,30/09/2026 T:09:30:00,"Dear Rohan,\n\nI hope you’re doing well. I’m writing to confirm that your life‑insurance policy (Policy No. LD‑2026‑ROHAN) remains active. As discussed, we have increased the sum assured to ₹15 lakh and added a ₹5 lakh accidental‑death rider. Your address has also been updated to the new one you provided.\n\nThe revised policy document is attached for your records. Please note that the next premium payment is due on 15 Oct 2026. You can make the payment via the link in the portal or let me know if you’d prefer a direct payment link.\n\nFeel free to reach out if you have any questions.\n\nBest regards,\nVikram Patel\nInsurance Agent\nOmni Insurance Group\nvikram.p@dcoders.com",https://storage.dcodelife.com/policies/LD-2026-ROHAN-UPDATED.pdf
+  user_1,user_2,,30/09/2026 T:10:05:00,"Hi Vikram,\n\nThanks for the quick update and for sending the revised policy document—I’ve reviewed it and everything looks good.\n\nCould you please share the payment link for the upcoming premium due on 15 Oct 2026? I’d like to schedule the payment today.\n\nThanks again!\n\nRegards,\nRohan Deshmukh",

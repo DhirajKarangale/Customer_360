@@ -1,0 +1,11 @@
+chat_id: a3f9c2d4-7b1e-4f8a-9c3e-5d6b2f1a8e9b
+participants[2]{id,name,role}:
+  4d2f9a7b-1c3e-45b6-8f2a-9e0d7c6b5a1f,Diya Menon,customer
+  9b8e7c3d-2a4f-48d9-9e1b-3c5f6a7d8e9f,Suresh Deshmukh,insurance agent
+messages[6]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T10:05:12,"hey suresh, i got the rider pdf but i cant open it, any help?", 
+  user_2,28/09/2026 T10:07:03,"Hey Diya! Sorry to hear that. I’ll resend a fresh link. Please try this one:",https://storage.dcodelife.com/riders/SL-2026-001.pdf
+  user_1,28/09/2026 T10:09:45,"got it now, thanks! i also wanted to confirm the $150 payment went through. i think i saw a charge but not sure", 
+  user_2,28/09/2026 T10:10:30,"The $150 premium was successfully posted at 10:15am today. Your policy status is now ACTIVE again. Let me know if you need anything else.", 
+  user_1,28/09/2026 T10:12:15,"great! can you also send me a copy of the updated policy doc? i need it for my records", 
+  user_2,28/09/2026 T10:13:00,"Sure thing, attaching the updated policy summary.",https://storage.dcodelife.com/policies/SL-2026-PolicySummary.pdf

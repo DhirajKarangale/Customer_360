@@ -1,0 +1,12 @@
+chat_id: c9f3a1e2-7b4d-4c8a-9f12-3d5e6b7c8a9f
+participants[2]{id,name,role}:
+  d4e5f6a7-b8c9-0d1e-2f3a-4b5c6d7e8f90,Dev Chatterjee,customer
+  a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d,Anita Sharma,insurance agent
+messages[7]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T10:15:20,"hey Anita, just saw my travel policy is about to expire on 30/09/2026. any chance to extend it? :)", 
+  user_2,28/09/2026 T10:15:45,"Hi Dev! 👋 I cheked *checked the policy – unfortunately once it hits 30/09/2026 it will automatically lapse and be marked “Expired”.", 
+  user_1,28/09/2026 T10:16:10,"oh nooo, that's sucks. can we *extend it? I need coverage for next month.", 
+  user_2,28/09/2026 T10:16:35,"I understand the frustration. The current policy can’t be renewed after expiry. The only option is to issue a fresh policy for the upcoming travel period.", 
+  user_1,28/09/2026 T10:17:00,"so no refund then? I already paid for the full year.", 
+  user_2,28/09/2026 T10:17:30,"Correct, no refund as the policy will simply lapse. But I can set up a new travel policy starting 01/10/2026. Here’s the quote and terms.",https://storage.trustwealth.com/docs/TravelPolicy_Quote_2026.pdf
+  user_1,28/09/2026 T10:18:00,"thanks! please send over the details, I'll review and confirm.",

@@ -1,0 +1,11 @@
+chat_id: 7f3c9a12-5b4e-4d9a-8f6e-1a2b3c4d5e6f
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Sneha Roy,customer
+  f1e2d3c4-9876-54ba-dcba-0987654321fe,Anita Sharma,insurance agent
+messages[6]{user,timestamp,text,media_url}:
+  user_1,30/09/2026 T09:12:05,"hi Anita, any updte*update on my health policy? it's still showing pending",
+  user_2,30/09/2026 T09:12:15,"Good morning Sneha! I’ve checked with underwriting – they received your documents and are reviewing them now. Should be active in 2‑3 business days.",
+  user_1,30/09/2026 T09:12:30,"great thx! do I need to do anything else?",
+  user_2,30/09/2026 T09:12:45,"No, you’re all set. I’ll ping you once it’s active. Let me know if you have any other questions.",
+  user_1,30/09/2026 T09:13:05,"actually, can you send me the policy summary pdf again? I misplaced the one from email.",
+  user_2,30/09/2026 T09:13:20,"Sure, here’s the summary.",https://storage.dcoders.com/policies/HC-2026-001-summary.pdf

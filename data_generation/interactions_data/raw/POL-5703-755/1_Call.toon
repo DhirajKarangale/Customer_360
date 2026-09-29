@@ -1,0 +1,15 @@
+call_id: REC-DC-001A
+start_timestamp: 28/09/2026 T:09:15:00
+end_timestamp: 28/09/2026 T:09:20:00
+participants[2]{id,name,role}:
+  3f9a1c2e-5b4d-4e9a-8f2c-1a2b3c4d5e6f,Sneha Roy,customer
+  7d8e9f0a-b1c2-3d4e-5f6a-7b8c9d0e1f2a,Anjali Desai (First Guard Brokers),insurance agent
+messages[8]{user,text}:
+  user_1,[00:00] Hello? Umm... hi, is this Anjali? I’m Sneha.
+  user_2,[00:05] Hi Sneha, yes, Anjali speaking. How can I help you today?
+  user_1,[00:12] I was just checking on my auto policy… I think it might be… expired?
+  user_2,[00:18] Let me pull it up… [typing] yeah, I see here it expired on 15/08/2026. Sorry about that. [sighs]
+  user_1,[00:30] Oh… okay. I wasn’t aware. Can we… renew it? Or what are my options?
+  user_2,[00:38] We can definitely look at renewal. I’ll need a few details – your vehicle registration, any recent claims?
+  user_1,[00:45] Yeah, the car is a 2019 Honda Civic, registration ABC-1234. No claims this year.
+  user_2,[00:55] Great, I’ll start the renewal process and send you a quote by end of day. Anything else?

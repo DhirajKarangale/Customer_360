@@ -1,0 +1,9 @@
+mail_id: e3f9a1c2-7b4d-4e9a-9f3c-2d5b6a8c9e0f
+subject: Follow‑up: OPD & MRI Pre‑Authorization Request
+participants[3]{id,name,email,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Akanksha Bhatt,akanksha.bhatt@dcoders.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,suresh.d@dcoders.com,insurance agent
+  9f8e7d6c-5432-10ba-cdef-0987654321fe,Priya Nair,priya.n@dcoders.com,claims coordinator
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,02/10/2026 T:08:45:12,"Hi Suresh,\n\nThanks for confirming over the phone that my health policy (Policy No: HP-2026-0456) is active and that OPD consultations and MRI scans are covered.\n\nCould you please send me the pre‑authorization form and let me know if there’s any co‑pay or deductible I should be aware of before I schedule my upcoming MRI?\n\nRegards,\nAkanksha Bhatt",
+  user_2,user_1,user_3,02/10/2026 T:09:12:45,"Dear Akanksha,\n\nI’m glad we could clarify the coverage on our call. As discussed, your policy does cover OPD visits and MRI diagnostics, subject to a modest co‑pay of ₹500 per OPD visit and a 10% share of the MRI cost after the annual deductible of ₹2,000 is met.\n\nPlease find attached the Pre‑Authorization Form you’ll need to submit to the hospital. Once you fill it out, you can email it back to this address or fax it to 1800‑555‑0199. I’ve copied Priya from our Claims Coordination team; she’ll be happy to assist if you have any questions during the submission process.\n\nBest regards,\nSuresh Deshmukh\nInsurance Agent, Secure Life Solutions",https://storage.securelifesolutions.com/forms/PreAuth_HP2026_0456.pdf

@@ -1,0 +1,8 @@
+mail_id: a7c9f2e4-3b1d-4f6a-9d2e-8b5c7d1e9f0a
+subject: Re: Health Policy Reinstatement - Payment Confirmation
+participants[2]{id,name,email,role}:
+  1e4b9c3a-7d2f-41a8-9f6e-2c5d8a9b0e1f,Ishaan Bose,ishaan.bose@dcoders.com,customer
+  5d3a6f8b-2c4e-44b9-8a1d-9e7f3c2b6a5d,Ramesh Tiwari,ramesh.t@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,25/09/2026 T:09:15:00,"Hi Ramesh,\n\nI have just completed the $25 reinstatement fee using the payment link you provided. Could you please send me a receipt and confirm that the policy is now active?\n\nThanks,\nIshaan", 
+  user_2,user_1,,25/09/2026 T:09:45:30,"Dear Ishaan,\n\nThank you for your payment. I have attached the receipt for the $25 reinstatement fee. Your health policy (Policy No: HP-2026-0456) has been reinstated retroactively to 15 September 2026 and is now active. If you have any further questions, feel free to reach out.\n\nBest regards,\nRamesh Tiwari\nInsurance Agent, Safe Shield Agency\nDCoders\n\n---\nAttachment: Receipt_HP-2026-0456.pdf",https://storage.dcodelabs.com/receipts/Receipt_HP-2026-0456.pdf

@@ -1,0 +1,15 @@
+chat_id: 7f9c2b1e-3a4d-4e6f-9b2c-1d5e8f0a2b3c
+participants[2]{id,name,role}:
+  9f2c1a8b-7e34-4d5b-9a1f-3c6e9b2d4f01,Rahul Jain,customer
+  d3a4b5c6-8f9e-4a2b-9c1d-7e6f5a4b3c2d,Ramesh Tiwari,insurance agent
+messages[10]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T09:15:02,"hey ramesh, i just saw my dashboard says policy AU‑45219 is expired??",
+  user_2,28/09/2026 T09:15:10,"Hi Rahul! Let me check that for you. One sec...",
+  user_1,28/09/2026 T09:15:25,"sure, thx",
+  user_2,28/09/2026 T09:16:00,"Looks like the system still shows the old status. Since we renewed on 01/09/2026, it should be active. Did you maybe request a cancellation?",
+  user_1,28/09/2026 T09:16:20,"actually i *actually want* to cancel. sold my car, dont need insurance anymore.",
+  user_2,28/09/2026 T09:16:45,"Got it. I’ll process a cancellation. Per our terms, the policy will be marked expired as of today and you’ll receive a confirmation PDF.",
+  user_2,28/09/2026 T09:17:05,"Here’s the cancellation receipt, please review:",https://storage.dcoders.com/docs/Cancel_AU45219_28092026.pdf
+  user_1,28/09/2026 T09:17:30,"thanks ramesh. any refund for the remaining months?",
+  user_2,28/09/2026 T09:18:00,"Since you cancelled within the first 30 days of the renewal period, you’re eligible for a prorated refund of ₹4,500. It will be credited to your bank within 5‑7 business days.",
+  user_1,28/09/2026 T09:18:20,"great, thx for the help!",

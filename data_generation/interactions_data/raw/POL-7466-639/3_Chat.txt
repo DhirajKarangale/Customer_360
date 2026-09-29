@@ -1,0 +1,11 @@
+chat_id: a3f9c2d4-7b1e-4e9a-9c3f-2d5b8e6f1a4b
+participants[2]{id,name,role}:
+  9f2c1e7b-3a44-4d9f-8b2a-6e5d9c1f3a7e,Reyansh Tiwari,customer
+  d4b6e8f2-1c5a-47b9-9d3e-0a2f7c9e5b1d,Ravi Menon,insurance agent
+messages[6]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T09:15:12,"hey ravi, i got your email about my auto policy cancel. can u tell me the exact refund amount? also when will it hit my account? and i want to make sure i have no pending balances.", 
+  user_2,28/09/2026 T09:15:45,"Sure thing, Reyansh! Let me pull up your policy details…", 
+  user_2,28/09/2026 T09:16:30,"Okay, here's what we have: Your policy premium for the full term was $1,200. Since you cancelled on 24/09/2026, you’re eligible for a prorated refund of $480.00. The refund will be credited to the original payment method (your Visa ending 1234) within 7‑10 business days, typically by 05/10/2026. I’ve also double‑checked – there are no outstanding balances or fees on your account.", 
+  user_1,28/09/2026 T09:17:05,"thanks! just to confirm, the $480 will be *exactly* that amount? and is the credit date guaranteed? also, will I get an email confirmation?", 
+  user_2,28/09/2026 T09:17:40,"Yes, the $480.00 is the exact refundable amount after accounting for the days used. The credit date is an estimate based on banking processing times, but we aim for 05/10/2026. You’ll receive an email receipt as soon as the refund is posted.", 
+  user_1,28/09/2026 T09:18:10,"great, appreciate the help 😊",

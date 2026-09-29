@@ -1,0 +1,24 @@
+call_id: CALL-DC-20260928-001
+start_timestamp: 28/09/2026 T:09:15:00
+end_timestamp: 28/09/2026 T:09:32:00
+participants[2]{id,name,role}:
+  7f3a9c2e-5b1d-4c9a-8f2e-6d3b9a1c4e7f,Pranav Mishra,customer
+  d2a6f8b9-3c4e-4f1a-9b2d-5e6f7a8b9c0d,Ravi Menon,insurance agent
+messages[17]{user,text}:
+  user_2,[00:00] *ring* Hello, is this Pranav?
+  user_1,[00:05] Yeah, speaking... hi.
+  user_2,[00:07] Hey Pranav, this is Ravi Menon from Secure Future Group, calling about your health policy.
+  user_1,[00:12] Oh, uh... what about it?
+  user_2,[00:15] I see your policy (Policy No: HP-459812) just hit its expiry date yesterday -- it's now marked as Expired in our system.
+  user_1,[00:20] *sighs* I kinda forgot... what does that mean for me now?
+  user_2,[00:25] Basically, you won't have active coverage until you renew. Any claims after the expiry won't be processed.
+  user_1,[00:30] Ah, okay... can I renew today over the phone?
+  user_2,[00:35] Sure, we can do that. I just need to verify a few details.
+  user_1,[00:40] Go ahead.
+  user_2,[00:42] ... (typing) Let me pull up your record... [typing] Alright, I have it. We'll need your DOB and a quick payment.
+  user_1,[00:48] My DOB is 12/04/1985. And... uh, what's the premium?
+  user_2,[00:55] It's $120 per month, same as before. If you pay today, we can reactivate instantly.
+  user_1,[01:02] Okay, I'll do that. Can you send me the payment link?
+  user_2,[01:05] Absolutely, I'll email it right after this call. Anything else?
+  user_1,[01:10] No, that's all. Thanks.
+  user_2,[01:12] Great, talk soon. Bye.

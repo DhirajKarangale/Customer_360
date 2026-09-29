@@ -1,0 +1,19 @@
+call_id: 9f1c2e7b-3a4d-4f9a-8c2e-1b5d6f7a9c0d
+start_timestamp: 28/09/2026 T:10:15:00
+end_timestamp: 28/09/2026 T:10:20:30
+participants[2]{id,name,role}:
+  a3d9f2c4-7e1b-44a5-9c3e-2b6f8d1e5a7b,Anvi Desai,customer
+  5b6e8d9f-2c4a-41f3-8b7d-9e3a0c1d4f6e,Ravi Menon,insurance agent
+messages[12]{user,text}:
+  user_1,[00:00] Hello? Hi, is this Ravi? ...  
+  user_2,[00:05] Yes, hi Anvi, this is Ravi from Secure Future Group, how can I help you today?  
+  user_1,[00:12] Umm... I'm calling about my health policy, I think I want to cancel it.  
+  user_2,[00:18] I see, let me pull up your details... [typing]... Okay, I have your policy here, policy number SH-452378.  
+  user_1,[00:30] Yeah, I... I just... I don't need it anymore, the premiums are getting high.  
+  user_2,[00:38] I understand, it's a big decision. Just to confirm, you want to cancel effective immediately, right? --  
+  user_1,[00:45] Yes, please. I don't want any further charges.  
+  user_2,[00:52] Alright, I'm going to process the cancellation. This will take a couple of minutes. [sighs]  
+  user_2,[01:10] Done. Your policy status is now Cancelled. You'll receive a confirmation email shortly.  
+  user_1,[01:20] Thank you... I appreciate it.  
+  user_2,[01:25] You're welcome. If you have any other questions, feel free to call back.  
+  user_1,[01:30] Okay, bye.

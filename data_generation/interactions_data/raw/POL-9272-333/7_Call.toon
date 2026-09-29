@@ -1,0 +1,21 @@
+call_id: REC-INS-007C
+start_timestamp: 20/08/2027 T:09:15:00
+end_timestamp: 20/08/2027 T:09:20:00
+participants[2]{id,name,role}:
+  9f2c1a7e-3b4d-4f9a-8c2e-1a5d6b9e7c4f,Sai Kumar,customer
+  2d5e9b3c-6a1f-4d2b-9e8f-3c7a5d9b2e1a,Ravi Menon,insurance agent
+messages[14]{user,text}:
+  user_1,Hello? ... uh hi Ravi this is Sai. I just got a notification that my home policy... [00:05] ... says it's expired as of yesterday.
+  user_2,Hey Sai yeah I see that... let me pull up your file. One sec... [typing]
+  user_1,Sure take your time. I was wondering... um... what are my options now?
+  user_2,Okay so the policy #HC-2026-7854 actually expired on 15 Aug 2027. Since you're past the grace period we can either renew it for another year or you could switch to a new plan.
+  user_1,Oh okay I guess I'd like to renew same coverage plus the garage addition we did earlier.
+  user_2,Got it. That would be the same $1,250 base plus the $150 garage endorsement total $1,400 for the next year. Does that work?
+  user_1,Umm yeah that sounds fine. Can we process that now over the phone?
+  user_2,Sure thing. I'll just need to confirm your address... is it still 45 Oak Street Apt 3B?
+  user_1,Yes that's correct [sighs] Actually I moved last month to 78 Pine Lane Unit 5. Sorry I forgot to update.
+  user_2,No worries let me update that. One moment... Okay address updated. I'm going to charge the $1,400 now. You'll receive a confirmation email shortly.
+  user_1,Thanks Ravi I appreciate it. And uh when will the next reminder be sent?
+  user_2,We'll send a renewal reminder 30 days before the new expiry on 15 Aug 2028. Anything else I can help with?
+  user_1,No that's all. Thanks again.
+  user_2,You're welcome! Have a great day.

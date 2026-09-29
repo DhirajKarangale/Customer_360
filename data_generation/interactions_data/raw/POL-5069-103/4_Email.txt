@@ -1,0 +1,8 @@
+mail_id: a7f3c9e2-4b1d-41f8-9e2a-6d5f8c2b7e91
+subject: Your Health Policy – Dental Coverage & Claim Filing Guide
+participants[2]{id,name,email,role}:
+  1d9f2c4b-8a7e-4b3a-9f6c-2e5d7a1b3c4d,Neha Chauhan,neha.chauhan@dcoders.com,customer
+  3b6e7f8a-2c5d-4e9f-a1b2-3c4d5e6f7a8b,Karan Joshi,karan.joshi@safestepinsurance.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2026 T:10:15:00,"Hi Neha,\n\nGreat to hear that your health policy is now active. As discussed in our chat, your plan includes coverage for dental cleanings up to ₹2,000 per year.\n\nTo help you file any future claims, I’ve attached a step‑by‑step Claim Filing Guide. You can also access the guide anytime through our online portal.\n\nIf you have any questions or need assistance uploading documents, just let me know.\n\nBest regards,\nKaran Joshi\nInsurance Agent, Safe Step Insurance\nPhone: +91-98765-43210\nEmail: karan.joshi@safestepinsurance.com",https://storage.safestepinsurance.com/guides/Claim_Filing_Guide_Health.pdf
+  user_1,user_2,,28/09/2026 T:10:45:00,"Hi Karan,\n\nThank you for the guide and the clarification on dental coverage. I’ve reviewed the document and will keep it handy for future claims.\n\nBest,\nNeha",

@@ -1,0 +1,8 @@
+mail_id: c9f3a2d4-7b1e-4c8f-9a6d-2f5e9b8c0d3e
+subject: Cancellation Confirmation – Health Policy HP‑785412
+participants[2]{id,name,email,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Atharv Pandey,atharv.pandey@personalmail.com,customer
+  d7e8f9a0-7777-8888-9999-aaaabbbbcccc,Vikram Patel,vikram.patel@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,30/09/2026 T:14:35:00,"Dear Atharv,\n\nI’m writing to confirm that we have processed the cancellation of your health policy HP‑785412 as per your request during our call earlier today. The policy is now officially expired as of 30 September 2026. No further premiums will be charged, and any prepaid premium for the upcoming period has been refunded to your original payment method. Please find the formal cancellation notice attached.\n\nIf you have any questions or need assistance with future insurance needs, feel free to reach out.\n\nBest regards,\nVikram Patel\nInsurance Agent\nOmni Insurance Group\nvikram.patel@dcoders.com",https://storage.dcodelabs.com/docs/Cancellation_HP785412_2026.pdf
+  user_1,user_2,,30/09/2026 T:15:10:00,"Hi Vikram,\n\nThank you for the prompt confirmation and the attached document. I appreciate the swift handling. Please let me know if there’s anything else I need to do on my end.\n\nRegards,\nAtharv Pandey",

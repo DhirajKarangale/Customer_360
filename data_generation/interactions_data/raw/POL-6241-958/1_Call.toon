@@ -1,0 +1,19 @@
+call_id: CALL-DC-20260928-001
+start_timestamp: 28/09/2026 T:09:15:00
+end_timestamp: 28/09/2026 T:09:20:30
+participants[2]{id,name,role}:
+  9f3b2c7e-1a4d-4f9b-8c2e-5d6a9b0e7f12,Kriti Mahajan,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[12]{user,text}:
+  user_1,[00:00] Hello? Hi, um, is this Suresh?
+  user_2,[00:05] Yes, hi Kriti, this is Suresh from Secure Life Solutions. I can hear you.
+  user_1,[00:10] Great, thanks. I wanted to... uh, check on the status of my life policy.
+  user_2,[00:15] Sure thing. Let me pull that up. One moment, please.
+  user_2,[00:20] ...[typing]... Okay, I have it here. Policy number ... it's currently listed as Active.
+  user_1,[00:30] Oh, that's good. I was a bit worried because I didn't get any recent statements.
+  user_2,[00:35] I understand. We sent the last statement in March. Do you want me to resend it to your email?
+  user_1,[00:40] Yes, please. Also, can I... can I make a change to the beneficiary?
+  user_2,[00:45] Absolutely, we can update that. Who would you like to add or replace?
+  user_1,[00:50] I'd like to add my sister, Ananya Mahajan, as secondary beneficiary.
+  user_2,[00:55] Got it. Let me just confirm some details... [sighs] ... Okay, I’ve updated the record. You’ll receive a confirmation email shortly.
+  user_1,[01:00] Thanks, Suresh. That's all I needed today.

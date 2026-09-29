@@ -1,0 +1,8 @@
+mail_id: 9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f
+subject: Your Health Policy Renewal Confirmation & Certificate (Policy #HP-2026-0456)
+participants[2]{id,name,email,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Riya Mukherjee,riya.mukherjee@dcoders.com,customer
+  d4e5f6g7-8910-11aa-bbcc-0987654321fe,Vikram Patel,vikram.patel@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,27/09/2026 T:15:30:00,"Dear Riya,\n\nI’m pleased to confirm that your health policy (Policy No: HP-2026-0456) has been successfully renewed effective today. The deductible remains at $500 as discussed.\n\nPlease find attached your updated policy certificate for your records. Should you have any further questions or need assistance, feel free to reach out.\n\nBest regards,\nVikram Patel\nInsurance Agent\nOmni Insurance Group\nvikram.p@dcoders.com",https://storage.dcodelabs.com/policies/HP-2026-0456_certificate.pdf
+  user_1,user_2,,27/09/2026 T:15:45:12,"Hi Vikram,\n\nThank you for sending over the certificate. I’ve received it and everything looks good.\n\nBest,\nRiya",

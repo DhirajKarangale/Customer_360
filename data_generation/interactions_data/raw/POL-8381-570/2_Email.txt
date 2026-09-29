@@ -1,0 +1,8 @@
+mail_id: a3f9c2d4-7b1e-4f9a-8c6d-2e5b9f1a7d3e
+subject: Policy Activation Confirmation – LC‑2026‑0456
+participants[2]{id,name,email,role}:
+  9f2b6c1e-5d4a-4e8b-9a3c-1d7f0e2b6c8a,Vivaan Gupta,vivaan.g@dcoders.com,customer
+  3c7e9a2b-1f5d-4b6c-8e9f-0a2d3c4b5e6f,Vikram Singh,vikram.s@protectall.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,26/09/2026 T:15:30:00,"Dear Vivaan,\n\nI hope you are well. Following our conversation earlier today, I have updated your life policy (Policy No: LC‑2026‑0456) to **Active** status in our system. You can now enjoy the full benefits of your coverage.\n\nPlease find attached the official policy document for your records.\n\nIf you have any questions or need further assistance, feel free to reach out.\n\nBest regards,\nVikram Singh\nProtectAll Agency",https://storage.protectall.com/policies/LC-2026-0456.pdf
+  user_1,user_2,,26/09/2026 T:15:45:12,"Hi Vikram,\n\nThank you for the prompt update and the policy document. Everything looks good. I appreciate the assistance.\n\nKind regards,\nVivaan Gupta",

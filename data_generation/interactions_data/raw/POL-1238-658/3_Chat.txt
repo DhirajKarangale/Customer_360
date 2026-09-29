@@ -1,0 +1,15 @@
+chat_id: a5d3f9c2-7b1e-4c9a-9f3e-2d6b8e4a1c7f
+participants[2]{id,name,role}:
+  9f2c1e4b-8d5a-4b7c-a9e3-6f2d3c4b5a6d,Saanvi Pillai,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Anita Sharma,insurance agent
+messages[10]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T10:15:30,"hey Anita, just saw your email about the critical‑illness rider. can u send me the pdf again? I think my inbox missed it.", 
+  user_2,28/09/2026 T10:16:05,"Hi Saanvi! Sure, I’ll resend it right now. One moment…", 
+  user_2,28/09/2026 T10:16:12,"Here’s the rider brochure. Let me know if you have any questions.",https://storage.dcoders.com/docs/Critical_Illness_Rider_Brochure.pdf
+  user_1,28/09/2026 T10:18:20,"got it, thanks! the premium looks a bit higher. is that *the correct amount? I thought it was $45 monthly.", 
+  user_2,28/09/2026 T10:19:02,"The premium for the rider is $48 per month, which includes the additional coverage benefits. It’s a slight increase from the base policy.", 
+  user_1,28/09/2026 T10:20:45,"okay, that’s fine. i’d like to go ahead and add the rider. also can we update the beneficiary to my sister, Maya Patel? her dob is 12/03/1992.", 
+  user_2,28/09/2026 T10:21:30,"Got it. I’ll process the rider addition and update the beneficiary. I’ll need a quick confirmation email from you to finalize. Could you reply ‘Confirm’?", 
+  user_1,28/09/2026 T10:22:10,"Confirm. also, can you tell me the next premium due date after adding the rider? is it still 15 Nov 2026?", 
+  user_2,28/09/2026 T10:22:55,"Yes, the next due date remains 15 Nov 2026. The rider premium will be added to that payment. I’ll send you a confirmation email shortly.", 
+  user_1,28/09/2026 T10:23:40,"thanks! looking forward to the email.",

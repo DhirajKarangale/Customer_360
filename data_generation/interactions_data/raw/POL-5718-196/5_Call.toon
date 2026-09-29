@@ -1,0 +1,32 @@
+call_id: CALL-DC-20260928-005
+start_timestamp: 28/09/2026 T:14:05:00
+end_timestamp: 28/09/2026 T:14:22:00
+participants[2]{id,name,role}:
+  1a2b3c4d-5e6f-7a8b-9c0d-ef1234567890,Dev Chatterjee,customer
+  9f8e7d6c-5b4a-3c2d-1e0f-9876543210ab,Neha Kapoor,insurance agent
+messages[40]{user,text}:
+  user_1,Hey Neha it's Dev. Can you hear me okay?
+  user_2,Hi Dev! Yeah I can hear you loud and clear. How's your day going?
+  user_1,Pretty good just got back from a quick walk with my dog [dog barks] sorry about that.
+  user_2,No worries at all. So about your HomeShield policy...
+  user_1,Yeah I saw the renewal email. The premium is $1250 right?
+  user_2,Exactly that's the new annual premium with the 5% loyalty discount applied.
+  user_1,Umm I was wondering about the payment timing. Can I pay today and have coverage start immediately?
+  user_2,Sure thing. As soon as the payment is processed your coverage will be active from 01/10/2026 no gap.
+  user_1,Great. Do you accept credit cards? I prefer using my Visa.
+  user_2,Yes we accept Visa MasterCard and even Amex. I’ll send you a secure link right after this call.
+  user_1,Sounds good. Also could you walk me through what happens after I click the link? Just in case.
+  user_2,Absolutely. You’ll open the link enter card details and hit ‘Pay’. You’ll get an instant confirmation email and I’ll get a notification on my end.
+  user_1,[typing] Okay I’m ready.
+  user_2,[hold music] ...
+  user_2,Alright I’ve just sent the payment link to your email and also as an SMS to your phone.
+  user_1,Got it. Let me check… Yep the link is there.
+  user_2,Do you want me to stay on the line while you complete the payment?
+  user_1,Sure give me a sec…
+  user_1,[background noise coffee machine whirring]
+  user_1,Okay I’m on the payment page now.
+  user_2,Take your time. Let me know if anything looks off.
+  user_1,Umm… the CVV field is asking for 4 digits? My card only has 3.
+  user_2,Ah that’s a typo on our side. Let me resend a fresh link.
+  user_2,[typing] Sending…
+  user_2,All set. New link in your inbox.

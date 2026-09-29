@@ -1,0 +1,39 @@
+call_id: REC-DC-0047
+start_timestamp: 30/09/2026 T:14:05:00
+end_timestamp: 30/09/2026 T:14:22:00
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Sai Kumar,customer
+  f1e2d3c4-9876-54ba-dcba-0987654321fe,Ravi Menon,insurance agent
+messages[30]{user,text}:
+  user_2,Good afternoon, Sai. This is Ravi from Secure Future Group. How can I help you today?
+  user_1,Hi Ravi, uh… I’m calling about my home insurance. I think it expired recently?
+  user_2,Let me pull up your policy… one moment please. [hold music]
+  user_2,Thanks for holding. I see here Policy #HC-2026-7854. It actually expired on 15 August 2026, but we renewed it over the phone last week.
+  user_1,Right, I got the renewal email. I just wanted to double‑check everything’s set.
+  user_2,Sure thing. I’ve got the renewal in the system, new effective date 15 August 2026 to 15 August 2027, premium $1,250.
+  user_1,Great. Did the payment go through? I saw a pending charge on my card.
+  user_2,Yes, the $1,250 was charged on 12 August 2026. You should have received a receipt email on the same day.
+  user_1,Uh‑yeah, I got the email but I want to add garage coverage we talked about in chat.
+  user_2,Got it. We need to issue an endorsement for the garage. I’ll send you the endorsement form right after this call.
+  user_1,Sounds good. Email is fine, I don’t need a fax.
+  user_2,Alright, I’ll attach it to an email and send it to you@dcoders.com. Anything else on your mind?
+  user_1,Actually, what’s the deductible for the garage addition?
+  user_2,The standard deductible stays at $500 for the whole home, including the garage. If you want a lower deductible we can adjust the premium.
+  user_1,Okay, thanks. By the way, how’s the weather there? It’s raining cats and dogs here.
+  user_2,Haha, it’s sunny on my side, perfect for a walk. [dog barks faintly in background]
+  user_1,Oh, sorry about the bark, my neighbor’s dog is always… uh… excited.
+  user_2,No worries at all. Let me just double‑check the endorsement details… one sec. [hold music]
+  user_2,Thanks for waiting. The endorsement will add $150 per year to your premium, bringing the total to $1,400 annually.
+  user_1,Alright, that’s fine. Can we go ahead and process that?
+  user_2,Absolutely. I’m applying the endorsement now… and it’s done. You’ll see the updated premium on your next statement.
+  user_1,Great. Will the payment be taken from the same card on file?
+  user_2,Yes, the $150 will be charged automatically on 15 August 2026, same card ending in 1234.
+  user_1,Perfect. And the endorsement form, you said you’d email it?
+  user_2,Yes, I’ve just sent it. You should get an email titled “Garage Coverage Endorsement – HC‑2026‑7854” in a few seconds.
+  user_1,Got it, thanks. Also, I’m moving next month. Can we update the address now?
+  user_2,Sure thing. What’s the new address?
+  user_1,1234 Elm Street, Apt 5B, Springfield.
+  user_2,Updated. Your policy now reflects the new address. Anything else you need?
+  user_1,No, that’s everything. I’ll review the email and let you know if anything else comes up.
+  user_2,Sounds good. Thanks for calling, Sai. Have a great day!
+  user_1,You too, Ravi. Bye.

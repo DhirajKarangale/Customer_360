@@ -1,0 +1,24 @@
+call_id: REC-INS-007C
+start_timestamp: 28/09/2026 T:14:05:12
+end_timestamp: 28/09/2026 T:14:11:45
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Rohan Deshmukh,customer
+  d4c3b2a1-8765-09ba-fedc-0987654321ba,Sunita Agarwal,insurance agent
+messages[17]{user,text}:
+  user_1,[00:00] Hello Sunita? umm... is this a good time?
+  user_2,Hi Rohan! Yes I'm here. Go ahead what's up?
+  user_1,Thanks I just wanted to check uh has my home policy been activated yet I paid the premium
+  user_2,Let me pull it up [typing]... Okay I see the payment and the signed document is in the system
+  user_1,Great so is it live now or still pending
+  user_2,Right now it's still showing as Pending in our backend. We need one more step—verification of the fire‑safety certificate by our underwriting team
+  user_1,But I uploaded that already in the chat. Did they get it?
+  user_2,Yes they have it. It's just under review. Usually it takes a few hours but sometimes up to 24 hrs
+  user_1,Ah okay I was hoping it would be immediate. Any way to expedite?
+  user_2,Unfortunately I can't fast‑track it but I can flag it as urgent since you’ve completed payment
+  user_1,Thanks I appreciate that. Also could you send me a copy of the policy terms again just in case
+  user_2,Sure thing—I’ll email you the final policy PDF with the cover page highlighted. Expect it in the next 10 minutes
+  user_1,Alright thanks. One more thing—if I need to file a claim what's the first thing I should do
+  user_2,First call our 24/7 claims hotline give them your policy number (we’ll include it in the email) and they'll guide you through the documentation
+  user_1,Got it thanks for all the info. I'll wait for the email and the activation status
+  user_2,You’re welcome Rohan. I’ll follow up once the underwriting clears it. Have a good day!
+  user_1,You too bye

@@ -1,0 +1,16 @@
+chat_id: c9f3b1e2-7a4d-4c9a-9f2e-5d6b8a9c0d12
+participants[2]{id,name,role}:
+  08205bbe-3423-470e-a3fc-799eaf739c96,Kiara Sen,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Sunita Agarwal,insurance agent
+messages[11]{user,timestamp,text,media_url}:
+  user_1,30/09/2026 T09:15:02,"hi sunita, i got your email about the renewal quote. can we talk?", 
+  user_2,30/09/2026 T09:15:45,"Good morning Kiara! Sure, happy to help. I saw you had some questions about the premium increase and pre‑existing condition coverage.", 
+  user_1,30/09/2026 T09:16:30,"the premuim*premium went up by about 12% compared to last year. why is that? is there any way to lower it?", 
+  user_2,30/09/2026 T09:17:10,"The increase reflects the updated medical inflation rates and the fact that your policy lapsed on 15 Sep 2026, which resets the waiting period. We can offer a 5% discount if you opt for annual payment.", 
+  user_1,30/09/2026 T09:18:05,"i have a pre‑existing condition – asthma*asthma. will it be covered if i renew now?", 
+  user_2,30/09/2026 T09:18:55,"Since the policy expired, the standard 12‑month waiting period for pre‑existing conditions applies. However, we have a special waiver for asthma if you provide a recent physician report.", 
+  user_1,30/09/2026 T09:19:40,"the email said I need to sign by 05 Oct. is that still ok?", 
+  user_2,30/09/2026 T09:20:20,"Yes, the electronic signing link is valid until 07 Oct 2026. Let me know if you need any changes before then.", 
+  user_1,30/09/2026 T09:21:10,"actually i think i'll let it go. the waiting period and extra cost are too much for me right now.", 
+  user_2,30/09/2026 T09:21:55,"I understand, Kiara. I’ll process the cancellation and send you a confirmation email. If you change your mind, we’re always here.", 
+  user_1,30/09/2026 T09:22:20,"thanks sunita for your help.",

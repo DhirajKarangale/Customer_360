@@ -1,0 +1,8 @@
+mail_id: a9f3c7e2-4b1d-48f9-9a6e-2d5f7c1b8e4a
+subject: Home Insurance Policy – Signed Declaration and Valuation Report
+participants[2]{id,name,email,role}:
+  1c2d3e4f-5678-90ab-cdef-1234567890ab,Kunal Mehta,kunal.mehta@dcoders.com,customer
+  9f8e7d6c-5432-10fe-dcba-0987654321fe,Anita Sharma,anita.sharma@trustwealth.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,30/09/2026 T:09:15:00,"Hi Anita,\n\nPlease find attached the signed home‑insurance declaration form together with the property valuation report (combined PDF) as requested. I have also attached a screenshot of the $850 bank‑transfer confirmation.\n\nLet me know if anything else is needed.\n\nThanks,\nKunal",https://storage.trustwealth.com/uploads/Kunal_Mehta_HomeValuation.pdf
+  user_2,user_1,,30/09/2026 T:09:45:12,"Dear Kunal,\n\nThank you for sending the signed declaration and the valuation report. I have received the PDF and the payment confirmation screenshot. Your documents are now under review.\n\nOnce the verification is complete (usually within a few hours), we will update the policy status from ‘Pending’ to ‘Active’ and send you the final policy document.\n\nIf I need any further information I will reach out promptly.\n\nBest regards,\nAnita Sharma\nInsurance Agent, Trust Wealth Advisors\nanita.sharma@trustwealth.com",​

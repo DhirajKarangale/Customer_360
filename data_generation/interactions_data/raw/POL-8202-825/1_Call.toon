@@ -1,0 +1,19 @@
+call_id: REC-DC-001A
+start_timestamp: 28/09/2026 T:09:15:00
+end_timestamp: 28/09/2026 T:09:22:30
+participants[2]{id,name,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Tanvi Saxena,customer
+  f7e8d9c0-7777-8888-9999-aaaabbbbcccc,Sunita Agarwal,insurance agent
+messages[12]{user,text}:
+  user_1,Hi Sunita umm this is Tanvi Saxena I wanted to talk about my health policy
+  user_2,Good morning Tanvi yes I'm Sunita from Protect All Agency I can see your policy here How can I help you today
+  user_1,[00:05] Actually I think the policy is about to expire I saw a notice
+  user_2,Let me check... yeah the system shows the end date is 30/09/2026 so it's expiring soon Are you looking to renew or maybe discuss other options
+  user_1,Umm I'm not sure I was hoping you could explain what happens when it expires Will I lose coverage completely
+  user_2,If it expires without renewal the coverage stops on the expiry date You won't be able to claim any new expenses after that [sighs]
+  user_1,Oh that's not great Is there any grace period like a few days to file a claim
+  user_2,There's a 15‑day post‑expiry window where you can still submit claims that were incurred before the expiry but new treatments won't be covered
+  user_1,Got it So if I want to keep coverage I need to renew before 30/09 right --
+  user_2,Exactly We can process a renewal right now if you like or I can send you the renewal documents via email
+  user_1,Can we do it now I have my payment details ready
+  user_2,Sure thing let me pull up the renewal form... [typing] Done I've just sent the renewal confirmation to your email and the policy will be extended to 30/09/2027 Anything else I can help with

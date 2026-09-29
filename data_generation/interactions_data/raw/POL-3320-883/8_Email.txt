@@ -1,0 +1,7 @@
+mail_id: f1e2d3c4-5a6b-7c8d-9e0f-112233445566
+subject: Your 3‑Month Auto Insurance Quote – Policy #AU‑2026‑345 – Payment Link & Coverage Confirmation
+participants[2]{id,name,email,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Kriti Mahajan,kriti.mahajan@dcoders.com,customer
+  e7f8g9h0-7777-8888-9999-aaaabbbbcccc,Karan Joshi,karan.joshi@dcoders.com,insurance agent
+mails[1]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,20/10/2026 T:11:02:00,"Hi Kriti,\n\nThank you for confirming the details on our call earlier today. I'm pleased to send you the final paperwork for your 3‑month auto‑insurance coverage (Policy #AU‑2026‑345).\n\n**Coverage Limits**\n- Collision: $25,000\n- Comprehensive: $20,000\n\n**Premium & Term**\n- Total premium: $345 (payable in full)\n- Coverage period: 21 Oct 2026 – 20 Jan 2027\n\nTo activate the policy, please complete the payment using the secure link below. Coverage will begin as soon as the payment is processed.\n\nPayment link: https://pay.dcoders.com/payments/AU-2026-345\n\nI've attached the policy document for your records. Should you have any questions or need further assistance, just let me know.\n\nBest regards,\nKaran Joshi\nInsurance Agent, Safe Step Insurance\nPhone: +1‑555‑0123\nEmail: karan.joshi@dcoders.com",https://storage.dcoders.com/policies/AU-2026-345_3month.pdf

@@ -1,0 +1,17 @@
+call_id: REC-INS-004A
+start_timestamp: 29/09/2026 T:14:05:00
+end_timestamp: 29/09/2026 T:14:09:30
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Sneha Roy,customer
+  d4c3b2a1-8765-09ba-fedc-0987654321fe,Anita Sharma,insurance agent
+messages[10]{user,text}:
+  user_1,[00:00] Hi Anita, it's Sneha. I... umm... wanted to check on my health policy status.
+  user_2,Sure Sneha, I see it's still pending. Let me pull it up. [typing]...
+  user_1,Okay, thanks. Is there anything else you need from me? [sighs]
+  user_2,No, we have all docs. Underwriting is just reviewing. Should be done in 2‑3 business days.
+  user_1,Oh, great. I was worried maybe something missing. Did you get the ID copy okay?
+  user_2,Yes, we have the ID and the signed declaration, and your blood test report. All good.
+  user_1,Good. So... if it's approved, when will the policy actually become active? Like can I start using it tomorrow?
+  user_2,Once we finalize underwriting, the system will flip to active. That usually takes by end of day 3rd business day. So you can expect coverage by then.
+  user_1,Got it. Thanks for the update. I'll just keep an eye on the portal.
+  user_2,You're welcome! If anything changes, I'll give you a call. Have a nice day.

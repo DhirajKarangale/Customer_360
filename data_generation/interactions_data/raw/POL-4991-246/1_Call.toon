@@ -1,0 +1,17 @@
+call_id: REC-DC-99214
+start_timestamp: 14/10/2024 T:11:05:22
+end_timestamp: 14/10/2024 T:11:08:45
+participants[2]{id,name,role}:
+  c4f82a1b-773e-4911-8201-98bc874a1122,Rohan Deshmukh,customer
+  d88a1e42-1209-4bf7-a982-11bc90812345,Ramesh Tiwari,insurance agent
+messages[10]{user,text}:
+  user_2,[00:00] Hello, am I speaking with Mr. Rohan Deshmukh?
+  user_1,[00:06] Yeah, speaking. Who is this?
+  user_2,[00:08] Hi Rohan, this is Ramesh Tiwari calling from Safe Shield Agency, on behalf of DCoders. Umm, I'm calling regarding your life insurance policy -- your term plan.
+  user_1,[00:00:20] Oh, right. Actually, I was meaning to look into that. I got some notification about it recently?
+  user_2,[00:00:27] Yes, exactly. [typing] Let me just pull up your file here... Ah, yes. So your policy status is currently showing as pending document verification, and I just wanted to help you get that cleared up today so we can keep it active, you know?
+  user_1,[00:00:46] Right, right. I had submitted some bank statements or something last week, but I wasn't sure if it went through properly.
+  user_2,[00:00:54] [sighs] Yeah, unfortunately, the previous upload got slightly corrupted on our portal. But don't worry, it's a very quick fix. If you have the PDF handy right now, I can actually guide you or we can verify the details over the call.
+  user_1,[00:01:12] Let me check... [rustling sound] Umm, yeah, I think I have it here on my desktop. Desktop folder... hang on a second.
+  user_2,[00:01:25] Take your time, no rush at all. We just want to make sure everything's squared away so your coverage remains fully active without any gaps.
+  user_1,[00:01:35] Found it. Okay, what do you need me to do?

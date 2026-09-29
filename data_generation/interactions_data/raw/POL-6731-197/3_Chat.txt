@@ -1,0 +1,11 @@
+chat_id: 3f9b7c2e-1a4d-4e8f-9b3c-2d5f6a7b8c9d
+participants[2]{id,name,role}:
+  9f2b1c4a-3e5d-4f6a-9b8c-1d2e3f4a5b6c,Sneha Roy,customer
+  d4c3b2a1-5f6e-4d8c-9b0a-1c2d3e4f5a6b,Anjali Desai,insurance agent
+messages[6]{user,timestamp,text,media_url}:
+  user_2,28/09/2026 T10:02:15,"Hi Sneha! Just wanted to follow up on the renewal quote I emailed. Did you get a chance to look at it?", 
+  user_1,28/09/2026 T10:03:02,"hey anjali, yes i saw it. can we raise the dedcutible*deductible* to $1,000 like i asked?", 
+  user_2,28/09/2026 T10:04:10,"Sure thing! I’ve updated the policy with a $1,000 deductible. The new premium comes to $1,250 per year. I’ve attached the revised quote here.",https://storage.dcoders.com/quotes/auto_renewal_SNEHA_2026_v2.pdf
+  user_1,28/09/2026 T10:04:55,"thanks! also, what's the effective date? i want it to start asap*as soon as possible*", 
+  user_2,28/09/2026 T10:06:20,"The policy will be effective from 01/10/2026, assuming we get your signed documents. I’ll send the updated docs for you to e‑sign.",https://storage.dcoders.com/docs/auto_policy_SNEHA_2026_signed.pdf
+  user_1,28/09/2026 T10:07:05,"got it, i’ll sign and send back today. thx*thanks*"

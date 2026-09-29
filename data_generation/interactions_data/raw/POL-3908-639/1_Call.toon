@@ -1,0 +1,45 @@
+call_id: REC-DC-20260929-001
+start_timestamp: 29/09/2026 T:14:00:00
+end_timestamp: 29/09/2026 T:14:18:00
+participants[2]{id,name,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Vivaan Gupta,customer
+  d7e8f9a0-7777-8888-9999-aaaaBBBBCCCC,Anjali Desai,insurance agent
+messages[38]{user,text}:
+  user_1,Hey, um... hi? Is this... uh... Anjali?
+  user_2,Hi Vivaan! Yeah, this is Anjali Desai, First Guard Brokers. I can hear you okay?
+  user_1,Yeah, I think... I can hear you. [typing]
+  user_2,Great. So, what can I do for you today?
+  user_1,Well, I was calling about my home policy with DCoders. I think it's about to expire? I'm not sure.
+  user_2,Let me pull that up... one sec. [hold music]
+  user_2,[hold music] *soft instrumental playing*
+  user_2,Okay, got it. Your policy number is HP-2024-987654, expiring on 30/09/2026.
+  user_1,Oh wow, that's soon. I... uh... I wanted to know my options.
+  user_2,Sure thing. We can renew, we can let it lapse, or we can switch to a different coverage level. What are you thinking?
+  user_1,Honestly, I'm not sure. My house... it's an older place, and I'm thinking maybe I don't need as much coverage.
+  user_2,I get that. Let me ask a few quick questions to see what's best. First, any recent renovations?
+  user_1,Uh, yeah. We did a kitchen remodel last year. [dog barks in background]
+  user_2,Okay, noted. And any new valuables? Like electronics?
+  user_1,Just the usual... a new TV, maybe a laptop. Nothing huge.
+  user_2,Alright. Based on that, the standard coverage is $250k dwelling, $50k personal property. We could reduce personal property to $30k if you want lower premium.
+  user_1,Hmm, $30k sounds... maybe okay. But I worry about underinsuring.
+  user_2,That's a valid concern. If you go lower and a claim exceeds the limit, you'd be out of pocket.
+  user_1,Right. Also, I heard about some discount if I bundle home and auto. Do I have auto with DCoders?
+  user_2,Let me check... [typing] ... yep, you have an auto policy with us, policy #AU-2023-112233.
+  user_1,Great! So a bundle discount is possible?
+  user_2,Yes, we can apply a 10% multi‑policy discount on the home premium if you renew both together.
+  user_1,Okay, that sounds good. But... uh... I also heard the policy might be expired already? I'm confused.
+  user_2,The system shows expiration date 30/09/2026, which is in two days. So it's still active but will lapse if not renewed.
+  user_1,Two days! That's tight. I need to think. Can I get a few days extension?
+  user_2,We can place a short‑term extension of 30 days for free, just to give you breathing room.
+  user_1,That would help. Thanks. Also, I have a question about the deductible. What's the current one?
+  user_2,Your current deductible is $500 for wind and hail, $1,000 for other per‑occurrence.
+  user_1,Okay. If I lower coverage, does deductible change?
+  user_2,Usually we keep the same deductible unless you request a change. Lower coverage can keep the same deductible, but premium will drop.
+  user_1,Alright. So... can we go ahead and set the extension and maybe reduce personal property to $30k, keep deductible same, and apply bundle discount?
+  user_2,Sure thing. Let me process that. One moment... [hold music]
+  user_2,[hold music] *soft music continues*
+  user_2,All set. Your policy is now extended to 30/10/2026, personal property coverage reduced to $30k, deductible unchanged, and bundle discount applied. New annual premium is $1,080.
+  user_1,Thanks, Anjali. I appreciate your help. [sighs] Anything else I need to do?
+  user_2,Just sign the renewal confirmation I’ll email you. Do you have any other questions?
+  user_1,No, that's it. Thanks again. Bye.
+  user_2,Bye, Vivaan. Have a great day!

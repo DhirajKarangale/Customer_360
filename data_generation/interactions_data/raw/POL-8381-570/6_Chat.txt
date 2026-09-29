@@ -1,0 +1,14 @@
+chat_id: 9f3b2c1a-7e4d-4a9b-8f2c-1d5e9b6a7c3d
+participants[2]{id,name,role}:
+  5d2f9a3c-8b44-4e2a-9c6f-3d7e9a1b2c4d,Vivaan Gupta,customer
+  a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d,Vikram Singh,insurance agent
+messages[9]{user,timestamp,text,media_url}:
+  user_1,02/10/2026 T09:15:12,"hey Vikram, just wanted to check if the benifit*beneficiary changes i sent are processed?", 
+  user_2,02/10/2026 T09:15:45,"Hi Vivaan! I got your form. Let me pull up the details.", 
+  user_2,02/10/2026 T09:16:10,"Looks like everything is in order – your sister is now the primary beneficiary and your parents are secondary.", 
+  user_2,02/10/2026 T09:16:20,"I’ve attached the updated policy document reflecting these changes.",https://storage.dcodelife.com/policies/LC-2026-0456_updated.pdf
+  user_1,02/10/2026 T09:16:55,"thanks! also when is the next premium due? i think it's 15 Nov but want to be sure.", 
+  user_2,02/10/2026 T09:17:20,"You’re right – the next $1,200 premium is due on 15 Nov 2026.", 
+  user_1,02/10/2026 T09:17:45,"great, can you set up auto‑pay for me? i’d rather not miss it.", 
+  user_2,02/10/2026 T09:18:10,"Sure thing! Here’s the secure auto‑pay link. Just follow the steps to schedule the recurring payment.",https://payments.protectall.com/autopay?policy=LC-2026-0456
+  user_1,02/10/2026 T09:18:45,"got it, all set. thx for the quick help!",

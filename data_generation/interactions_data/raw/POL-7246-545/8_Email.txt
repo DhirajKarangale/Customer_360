@@ -1,0 +1,8 @@
+mail_id: e3f9a7c2-5b4d-41e9-9c3a-2d6f8b9e0c12
+subject: Updated Policy Schedule and Address Confirmation – L‑2026‑0459
+participants[2]{id,name,email,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Kavya Iyer,kavya.iyer@dcoders.com,customer
+  d7e8f9a0-7777-8888-9999-aaaaabbbbbcc,Suresh Deshmukh,suresh.d@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,29/09/2026 T:10:12:34,"Hi Suresh,\n\nThank you for updating my address during our call earlier today. Could you please send me the final policy schedule that reflects the new address and the beneficiary changes (mother as primary, sister as secondary)? I’d like to keep a copy for my records.\n\nThanks,\nKavya", 
+  user_2,user_1,,29/09/2026 T:10:45:07,"Dear Kavya,\n\nI’ve updated your mailing address to:\n123 Greenfield Avenue, Apt 4B, Springfield, IL 62704.\nThe beneficiary details are now:\n- Primary: Meera Iyer (Mother)\n- Secondary: Ananya Iyer (Sister)\nYour policy L‑2026‑0459 is active, and the attached document is the final policy schedule reflecting these changes.\n\nPlease let me know if there’s anything else I can assist you with.\n\nBest regards,\nSuresh Deshmukh\nInsurance Agent, Secure Life Solutions\nsuresh.d@dcoders.com",https://storage.dcoders.com/policies/L-2026-0459_Final_Schedule.pdf

@@ -1,0 +1,11 @@
+chat_id: c3f9b1a2-7e4d-4c9a-9d5f-2b6e8a1c9d3e
+participants[2]{id,name,role}:
+  d1a2b3c4-5678-90ab-cdef-1234567890ab,Diya Menon,customer
+  a9b8c7d6-5432-10fe-dcba-0987654321fe,Karan Joshi,insurance agent
+messages[6]{user,timestamp,text,media_url}:
+  user_1,12/10/2026 T09:15:02,"hi karan, just wanted to double check that my home policy is now officially expired?", 
+  user_2,12/10/2026 T09:15:10,"hey Diya! yes, HP‑2024‑5678 is now marked as expired as of 15 Oct 2026. any other queries?", 
+  user_1,12/10/2026 T09:15:45,"great, thx! also, is there any pending premium or settlement i need to clear?", 
+  user_2,12/10/2026 T09:16:05,"all premiums are settled. you have no outstanding balance. here's the final policy statement for your records.",https://storage.dcoders.com/policies/HP-2024-5678_Final_Statement.pdf
+  user_1,12/10/2026 T09:16:30,"got it, thx for the quick help. sorry for the typo earlier, thx*thanks", 
+  user_2,12/10/2026 T09:16:45,"no worries! happy to help. feel free to reach out if you need anything else in future. take care!",

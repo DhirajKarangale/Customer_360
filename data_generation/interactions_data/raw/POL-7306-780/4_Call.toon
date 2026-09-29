@@ -1,0 +1,18 @@
+call_id: REC-HP-4521-004
+start_timestamp: 05/10/2026 T:14:10:12
+end_timestamp: 05/10/2026 T:14:13:45
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Pooja Bhatia,customer
+  f9e8d7c6-5432-10fe-dcba-0987654321fe,Anita Sharma,insurance agent
+messages[11]{user,text}:
+  user_2,Hi Pooja, this is Anita from Trust Wealth Advisors at DCoders. I'm calling about your health policy HP‑4521 – it's... [uh] nearing expiration.
+  user_1,Oh hi Anita... yeah I saw the email. I... uh... haven't submitted the form yet.
+  user_2,No worries, just wanted to see if you're still planning to renew. The deadline to return the signed renewal form is 12 Oct, end of day.
+  user_1,If I don't get it in by tomorrow, will the policy just... expire?
+  user_2,Yes, if we don't receive the form by the deadline, the policy will lapse and be marked as Expired. [sighs] That means no coverage from that date.
+  user_1,Hmm... I think I might need a little more time. Is there any... grace period?
+  user_2,Unfortunately, we can't extend beyond the date. Once it expires, you'd need to re‑apply as a new policy, which could affect rates. --
+  user_1,Alright, I'll... send it today then. Can you confirm you have my email address?
+  user_2,Sure, I have pooja.bhatia@example.com on file. I'll resend the renewal form right after this call.
+  user_1,No, that's all. Thanks, Anita.
+  user_2,Thanks, Pooja. Talk soon. Bye.

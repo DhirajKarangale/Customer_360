@@ -1,0 +1,14 @@
+chat_id: a5f3c9e2-7b1d-4c9a-9f3e-2d8b6e7c0a1b
+participants[2]{id,name,role}:
+  3d9f2a1c-5e44-4b8a-9c2f-7a1e6b9d3f4e,Aditi Mahajan,customer
+  7c2b1e8f-9d33-4a6f-8b1c-2f5e9c0a7d3b,Karan Joshi,insurance agent
+messages[8]{user,timestamp,text,media_url}:
+  user_1,01/10/2026 T09:15:12,"hey karan, i wanna set up the autp *auto‑debit for the new health plus plus plan. what do i need to do?"
+  user_2,01/10/2026 T09:15:45,"Good morning Aditi! Sure thing, I’ll send you the e‑mandate form. Just fill it and we’ll link it to your policy."
+  user_2,01/10/2026 T09:16:02,"Here’s the form: https://storage.safe-step.com/forms/autodebit_form.pdf"
+  user_2,01/10/2026 T09:16:10,"Please review and upload a clear photo of your cancelled cheque or bank statement."
+  user_1,01/10/2026 T09:18:05,"got it, i’ll upload. any specific formate *format? pdf or jpg is fine?"
+  user_2,01/10/2026 T09:18:45,"Either PDF or JPG works. Once we receive it, we’ll activate auto‑debit by 03 Oct."
+  user_1,01/10/2026 T09:20:30,"uploading now…",https://storage.safe-step.com/uploads/adi_cheque_01012026.jpg
+  user_2,01/10/2026 T09:21:10,"Received the cheque image, thanks! I’ve set up the auto‑debit. Your first premium of ₹12,480 will be debited on 05 Oct 2026."
+  user_1,01/10/2026 T09:21:45,"thx karan! that’s all i needed. :)"

@@ -1,0 +1,27 @@
+call_id: REC-DC-20260928-001
+start_timestamp: 28/09/2026 T:09:00:00
+end_timestamp: 28/09/2026 T:09:16:00
+participants[3]{id,name,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Isha Agarwal,customer
+  d4c3b2a1-7777-8888-9999-aaaabbbbcccc,Ravi Menon,insurance agent
+  00000000-0000-0000-0000-000000000000,System,system
+messages[40]{user,text}:
+  user_1,Hello? Is this... umm... Ravi?
+  user_2,Hey Isha good morning, this is Ravi from Secure Future Group, how can I help?
+  user_1,Yeah, I can hear you... I wanted to check on my home policy, you know the one we set up last month.
+  user_2,Sure sure, let me pull that up... one sec.
+  user_3,hold_music, [soft instrumental music playing]
+  user_2,Okay, got it. I see policy #HC-2026-0456, status shows pending activation. Is that right?
+  user_1,Yeah, that's what I saw in the portal, but I need it active by next week.
+  user_2,Alright, let me see why it's still pending... hmm.
+  user_2,[typing] ...looks like we need a proof of residence doc.
+  user_1,Oh, I thought we already sent that. I sent an email... maybe it didn't go through?
+  user_2,Can you resend it now? I can take it while we're on the line.
+  user_1,Um... okay, give me a sec... [dog barks in background] ...yeah, I have it here.
+  user_2,Great, you can just read the file name, I'll note it.
+  user_1,It's "Isha_Agarwal_ResidenceProof_Sept2026.pdf".
+  user_2,Got it, thanks. Let me attach that to your policy.
+  user_3,hold_music, [soft hold music continues]
+  user_2,All set. The system says it's now under review and should be active within 24 hours.
+  user_1,That's good. But... uh... what about the deductible? I want to know the amount.
+  user_2,Sure thing, let

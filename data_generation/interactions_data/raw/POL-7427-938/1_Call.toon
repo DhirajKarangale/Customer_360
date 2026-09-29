@@ -1,0 +1,19 @@
+call_id: REC-DC-001A
+start_timestamp: 28/09/2026 T:09:15:00
+end_timestamp: 28/09/2026 T:09:18:30
+participants[2]{id,name,role}:
+  a3f9c2e1-7b4d-4a9f-8e2d-5b6c9f1a2d34,Kiara Sen,customer
+  d4e7b5f3-9c1a-4d8e-9b3f-2a6e7c8d9f01,Vikram Singh,insurance agent
+messages[12]{user,text}:
+  user_2,Hi Kiara this is Vikram Singh from ProtectAll Agency uh calling regarding your DCoders home insurance Can you hear me okay [00:05]
+  user_1,Umm yeah I can hear you Hi Vikram
+  user_2,Great Just need to confirm a few details before we finalize the activation Can I get your policy number please [00:15]
+  user_1,Sure it's H-2026-0459
+  user_2,Thanks And just to verify your current address is 742 Evergreen Terrace Springfield [00:25]
+  user_1,Yes that's correct
+  user_2,Perfect I see the coverage includes dwelling personal property and liability Anything specific you want to add or change [00:35]
+  user_1,Actually I was wondering if we could increase the personal property limit to $150k is that possible [00:45]
+  user_2,Sure thing let me just pull that up typing ...yeah we can bump it up It will add a small premium of $12 per month Does that work for you [01:05]
+  user_1,Yeah that's fine I’d like that
+  user_2,All right I’ve updated the policy It will go active as of today 28/09/2026 You’ll receive a confirmation email shortly Anything else I can help with [01:25]
+  user_1,No that's all Thanks for the help

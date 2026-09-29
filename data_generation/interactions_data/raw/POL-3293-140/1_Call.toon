@@ -1,0 +1,16 @@
+call_id: REC-DC-001A
+start_timestamp: 29/09/2026 T:14:05:00
+end_timestamp: 29/09/2026 T:14:12:00
+participants[2]{id,name,role}:
+  a3f9c2d4-7e1b-4a9f-8c3e-2d5f9b6a1c7e,Aditya Singh,customer
+  5d2b8f9a-3c4d-41e2-9a6f-8b7c0e2d3f9b,Suresh Deshmukh,insurance agent
+messages[9]{user,text}:
+  user_2,Hello Aditya, this is Suresh from Secure Life Solutions, can you hear me? [00:00]
+  user_1,Um...yeah, I can hear you. Hi Suresh. [00:05]
+  user_2,Great. I’m calling regarding your health policy – the one ending soon. [00:10]
+  user_1,Oh right, the policy…yeah, I saw the expiry date. [00:14]
+  user_2,Yes, it’s set to expire on 15/10/2026. I wanted to check if you’d like to renew or let it lapse. [00:20]
+  user_1,Umm, I’m not sure… I’ve been thinking maybe I don’t need it anymore. [00:25]
+  user_2,Okay, I understand. Just so you know, once it expires you’ll lose coverage for any upcoming treatments. [00:30] [sighs]
+  user_1,Yeah…that’s a bit concerning. Can you give me a quick summary of what I’d lose? [00:35]
+  user_2,Sure—no inpatient coverage, no outpatient benefits, and any pre‑existing condition riders will terminate. Would you like me to email you renewal quotes? [00:40]

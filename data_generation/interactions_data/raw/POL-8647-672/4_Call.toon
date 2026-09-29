@@ -1,0 +1,19 @@
+call_id: REC-INS-004A
+start_timestamp: 28/09/2026 T:14:05:00
+end_timestamp: 28/09/2026 T:14:09:30
+participants[2]{id,name,role}:
+  9f1c2d3e-4b5a-6c7d-8e9f-0a1b2c3d4e5f,Rahul Jain,customer
+  a2b3c4d5-6e7f-8a9b-0c1d-2e3f4a5b6c7d,Ramesh Tiwari,insurance agent
+messages[12]{user,text}:
+  user_2,Hello, Rahul? This is Ramesh from DCoders, Safe Shield Agency. Can you hear me? [00:00]
+  user_1,Uh, yeah... hi Ramesh. I... I tried the payment link you sent, but... I think it didn't go through.
+  user_2,Oh, sorry about that. Let me check... [pause] I see the link was for ₹12,450, due on 05/10/2026. Did you get any error?
+  user_1,Yeah, it said something about 'transaction failed' and then... I just closed it.
+  user_2,Got it. Sometimes the bank blocks it. Let me... um... send you a fresh link, okay?
+  user_1,Sure, please. Also, can you confirm the policy status? The portal still shows 'Expired'.
+  user_2,Right now, because the payment hasn't cleared, the system still flags it as expired. Once the payment posts, it'll change to 'Active' automatically.
+  user_1,[sighs] I really need the car covered; I'm going on a trip next week.
+  user_2,Understood. I'll expedite this. I'll send a new secure link to your email and also a WhatsApp copy. You should get it in a minute.
+  user_1,Thanks. I'll try now.
+  user_2,Great. Let me know if anything else comes up. And just so you know, once the payment is confirmed, your policy number AU‑45219 will show renewal till 04/10/2027.
+  user_1,Okay, will do. Thanks for the help.

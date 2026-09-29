@@ -1,0 +1,8 @@
+mail_id: a3f9c7e2-5b1d-4a9f-8c3e-2d6f9b1a7c4e
+subject: Your Updated Life Insurance Policy – Confirmation & Documents
+participants[2]{id,name,email,role}:
+  1e7b9c4a-3f22-4d6a-9f8b-0a5c2e7d9f01,Rohan Deshmukh,rohan.d@dcoders.com,customer
+  9c4f2a1b-8e73-4b5d-9c6a-3d7e9f0b2a84,Vikram Patel,vikram.p@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2026 T:10:05:00,"Dear Rohan,\n\nThank you for speaking with me earlier today. As discussed, I have confirmed that your Life Insurance policy (Policy No: LI-2026-0456) remains active – the earlier cancellation notice was a system glitch.\n\nWe have now:\n- Increased the Sum Assured to ₹15,00,000\n- Added an Accidental‑Death Rider of ₹5,00,000\n- Updated your residential address to: 12, Greenfield Apartments, MG Road, Pune, Maharashtra – 411001\n\nPlease find attached the revised policy document reflecting these changes. Let me know if you need any further assistance.\n\nWarm regards,\nVikram Patel\nSenior Insurance Advisor\nOmni Insurance Group\nvikram.p@dcoders.com",https://storage.omniinsgroup.com/policies/LI-2026-0456_Revised_28092026.pdf
+  user_1,user_2,,28/09/2026 T:10:45:00,"Hi Vikram,\n\nI’ve received the updated policy documents and everything looks good. Thanks for the quick resolution and for confirming that the policy is active.\n\nBest,\nRohan Deshmukh\nDCoders",

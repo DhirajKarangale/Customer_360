@@ -1,0 +1,8 @@
+mail_id: 7f9c2a1e-4b3d-45f9-8e2a-9c6d5f1b2e84
+subject: Confirmation of Auto Policy Cancellation – Policy #AU-123456
+participants[2]{id,name,email,role}:
+  a3d9f6e2-7c4b-41f2-9a8e-5b2c3d7f9e01,Sneha Roy,sneha.roy@dcoders.com,customer
+  b5e8c1d4-2f6a-48b9-9d3e-1a7f4c6b8d02,Anjali Desai,anjali.desai@firstguardbrokers.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2026 T:15:30:00,"Dear Sneha,\n\nAs discussed on our call earlier today, I have processed the cancellation of your auto insurance policy (Policy #AU-123456) effective immediately. Since the policy was active until today, you will receive a prorated refund for the unused portion of the premium. The refund will be credited to the same bank account used for the auto‑debit and should appear within five business days.\n\nAttached you will find the official cancellation confirmation letter for your records.\n\nIf you have any further questions or need assistance in the future, please feel free to reach out.\n\nBest regards,\nAnjali Desai\nInsurance Agent, First Guard Brokers\nanjali.desai@firstguardbrokers.com\nPhone: +1-555-0198",https://storage.firstguardbrokers.com/docs/Cancellation_AU-123456_28092026.pdf
+  user_1,user_2,,28/09/2026 T:15:45:00,"Hi Anjali,\n\nThank you for the confirmation and the attached document. I appreciate the quick handling.\n\nBest,\nSneha",

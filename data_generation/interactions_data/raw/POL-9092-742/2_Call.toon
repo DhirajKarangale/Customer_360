@@ -1,0 +1,18 @@
+call_id: REC-DCODERS-002C
+start_timestamp: 28/09/2026 T:14:15:00
+end_timestamp: 28/09/2026 T:14:18:42
+participants[2]{id,name,role}:
+  c4f82a11-9932-470e-a3fc-799eaf739c91,Krishna Das,customer
+  9b2e5f10-1234-48de-8811-34e8f7911b12,Ramesh Tiwari,insurance agent
+messages[10]{user,text}:
+  user_2,[00:00] Safe Shield Agency, this is Ramesh speaking. Am I speaking with Mr. Krishna Das?
+  user_1,[00:07] Hi Ramesh, yeah, Krishna here. I just dropped you an email a little while ago about my DCoders corporate health insurance policy.
+  user_2,[00:15] Ah, yes, Mr. Das! [typing] Let me just pull up your file here... DCoders health policy, right? Give me a second.
+  user_1,[00:23] Right, exactly. See, my HR told me it ended last month when I left the company, but when I logged into the portal this morning, it still shows as active. I need it marked as expired so my new employer's plan doesn't run into duplication issues.
+  user_2,[00:41] Right, I see. [sighs] Sometimes there's a lag with the bulk employer update files syncing with our portal database. Let me check the exact status on my end... Oh, okay, yeah, it's currently flagged as active because the end-of-month batch hasn't cleared for DCoders yet.
+  user_1,[01:05] Can you fix that right now? It's kind of urgent because my new company's onboarding team is asking for clearance.
+  user_2,[01:14] Umm, yeah, I can manually push the status override from my end since you've already officially exited. Let me just process that... [typing] Okay, changing the target status to 'Expired'... done.
+  user_1,[01:38] Oh, perfect! Does it show expired on your system now?
+  user_2,[01:43] Yep, it's updated to 'Expired' right here on my dashboard. It might take about an hour to reflect on your self-service portal login, but I can also email you a confirmation letter right away if your HR or new employer needs proof immediately.
+  user_1,[02:02] Yes, please do email that confirmation. That would be a huge help. Thanks, Ramesh!
+  user_2,[02:08] No problem at all, Mr. Das. I'll send that over in a couple of minutes. Have a great day!

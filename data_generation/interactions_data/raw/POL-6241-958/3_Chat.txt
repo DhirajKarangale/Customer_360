@@ -1,0 +1,13 @@
+chat_id: 3d9f6a2b-4c5d-6e7f-8a9b-0c1d2e3f4a5b
+participants[2]{id,name,role}:
+  9f1c2e5b-7a3d-4f9b-8c2e-1a9d6b5c7e3f,Kriti Mahajan,customer
+  a2b4c6d8-9e0f-1a2b-3c4d-5e6f7a8b9c0d,Suresh Deshmukh,insurance agent
+messages[8]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T09:15:02,"hey suresh, i just got the email about my policy. quick q: can i see the benefeciary*beneficiary list again?",
+  user_2,28/09/2026 T09:15:20,"Hi Kriti! Sure thing, here's the current list:\nPrimary: You (Kriti Mahajan)\nSecondary: Ananya Mahajan\n",https://storage.dcoders.com/docs/Beneficiary_List_2026.pdf
+  user_1,28/09/2026 T09:16:05,"thanks! also, i noticed the policy end date is 2028? is that right? I think i might need to updat*update my address soon.", 
+  user_2,28/09/2026 T09:16:30,"Yes, the term runs till 31/12/2028. No worries, just send me the new address and I'll update it.", 
+  user_1,28/09/2026 T09:17:10,"cool, here's my new address: 45B Greenfield Ave, Apt 12, Mumbai 400001.", 
+  user_2,28/09/2026 T09:17:35,"Got it, updated now. You'll receive a confirmation email shortly.", 
+  user_1,28/09/2026 T09:18:12,"awesome! one last thing, can you send me a quick summary of my coverage? like sum assured, term, premium.", 
+  user_2,28/09/2026 T09:18:40,"Sure! Summary attached.",https://storage.dcoders.com/docs/Policy_Summary_Kriti_2026.pdf

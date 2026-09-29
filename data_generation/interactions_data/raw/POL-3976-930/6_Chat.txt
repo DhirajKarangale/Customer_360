@@ -1,0 +1,10 @@
+chat_id: a1b2c3d4-5678-90ab-cdef-1234567890ab
+participants[2]{id,name,role}:
+  4f2e1c9b-8a12-4d3f-b9e7-6c5d4f2a1b3c,Vedant Thakur,customer
+  9b8c7d6e-5f4a-3b2c-1d0e-9f8e7d6c5b4a,Karan Joshi,insurance agent
+messages[6]{user,timestamp,text,media_url}:
+  user_1,03/10/2026 T09:15:10,"hey karan, just checking if my new polciy is live? the old one should be expired today. *policy",
+  user_2,03/10/2026 T09:15:18,"Hi Vedant! Yes, the new auto policy (AU‑4589) is active as of 02 Oct 2026. The previous policy expired yesterday.",
+  user_1,03/10/2026 T09:15:35,"great! can you send me the policy number again? i think i lost the email.",
+  user_2,03/10/2026 T09:15:45,"Sure thing, the policy number is AU‑4589. I’ll also resend the certificate.",https://storage.dcoders.com/docs/Policy_AU4589_2026.pdf
+  user_1,03/10/2026 T09:16:02,"got it, thx! *thanks for the quick help.",

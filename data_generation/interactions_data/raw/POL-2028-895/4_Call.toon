@@ -1,0 +1,17 @@
+call_id: CALL-20260928-0012
+start_timestamp: 28/09/2026 T:09:15:00
+end_timestamp: 28/09/2026 T:09:18:00
+participants[2]{id,name,role}:
+  a3f9c1e2-7b4d-4f9a-9d2e-5c6b8a1f2d3e,Reyansh Tiwari,customer
+  5d2e7b9c-1a4f-4c3d-8e9f-0b7c6d5e4f1a,Vikram Patel,insurance agent
+messages[10]{user,text}:
+  user_1,[00:00] Hey Vikram, um... I just made the payment—yeah, the renewal payment, can you check if it went through?
+  user_2,[00:10] Sure, let me pull up your account... (typing) ... yeah, I see the $1,300 transaction, that includes the lapse fee.
+  user_1,[00:25] Great! So the policy will be active from 01/10/2026, right?
+  user_2,[00:30] Yes, exactly. Your health coverage will restart on Oct 1st. We'll issue the new policy documents today.
+  user_1,[00:40] Do I need to do anything else? Any forms?
+  user_2,[00:45] No extra forms. I'll email you the PDF and a confirmation number. You should get it in a few minutes.
+  user_1,[00:55] Thanks, appreciate it. Oh, and— (sighs) I was wondering about the lapse fee, is that refundable if I keep the policy active?
+  user_2,[01:00] Unfortunately the lapse fee is non‑refundable, it's just for the administrative re‑instatement. But you're all set moving forward.
+  user_1,[01:05] Got it. Thanks for the help, Vikram.
+  user_2,[01:10] You're welcome, Reyansh. Call us if you have any questions. Have a good day!

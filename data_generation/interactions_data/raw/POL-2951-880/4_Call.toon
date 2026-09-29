@@ -1,0 +1,19 @@
+call_id: 7f3a9c2e-4b1d-11ee-bf0c-0242ac120002
+start_timestamp: 30/09/2026 T:14:05:00
+end_timestamp: 30/09/2026 T:14:09:45
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Anvi Desai,customer
+  d4c3b2a1-8765-09ba-fedc-0987654321ba,Ravi Menon,insurance agent
+messages[12]{user,text}:
+  user_1,"[00:00] Hi Ravi it's Anvi I got your email and the PDFs just wanted to double check everything"
+  user_2,"[00:10] Hey Anvi yes I'm here So the health policy HP‑DC‑2024‑7890 is set to cancel effective 30 Sept 2026 right"
+  user_1,"[00:20] Yeah that's correct I just want to make sure the refund will hit my bank account"
+  user_2,"[00:30] Sure thing refund of the prepaid premium will be processed within 10‑15 business days to the same account we have on file"
+  user_1,"[00:45] Got it uh do I need to sign anything else I saw a form attached but"
+  user_2,"[00:55] No additional signature needed The cancellation confirmation we sent is sufficient [typing]"
+  user_1,"[01:10] Okay thanks and um will I receive a final statement by email"
+  user_2,"[01:15] Yes you’ll get the final settlement statement today I’ll also send a short summary SMS"
+  user_1,"[01:30] Perfect one more thing if I ever need a new policy can I just reach out to you directly"
+  user_2,"[01:35] Absolutely just give me a call or drop an email We’ll get you set up Anything else"
+  user_1,"[01:40] No that’s all thanks for the help Ravi"
+  user_2,"[01:45] You’re welcome Have a good day"

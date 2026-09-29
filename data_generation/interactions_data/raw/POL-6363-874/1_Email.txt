@@ -1,0 +1,7 @@
+mail_id: a1b2c3d4-5678-90ab-cdef-1234567890ab
+subject: Travel Policy Expiration Inquiry – Policy #TRV-2024-0789
+participants[2]{id,name,email,role}:
+  9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f,Meera Chauhan,meera.chauhan@dcoders.com,customer
+  1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d,Ravi Menon,ravi.menon@securefuture.com,insurance agent
+mails[1]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,27/09/2026 T:09:15:30,"Hi Ravi,\n\nI hope you’re well. I was checking the status of my travel policy (Policy #TRV-2024-0789) and see that it’s listed as Expired. I have a trip scheduled for early October and need to know if I can still get coverage or what the next steps are for renewal.\n\nThanks,\nMeera",

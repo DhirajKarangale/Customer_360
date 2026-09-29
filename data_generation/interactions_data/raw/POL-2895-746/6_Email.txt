@@ -1,0 +1,8 @@
+mail_id: e3f7b9c2-9a4d-4f1a-8c6e-2b5d7e9f1a3b
+subject: Re: Your Auto Policy AU‑2026‑0456 – Digital Card Request
+participants[2]{id,name,email,role}:
+  1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d,Meera Chauhan,meera.chauhan@example.com,customer
+  9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f,Anita Sharma,anita.sharma@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,21/09/2026 T:09:15:20,"Hi Anita,\n\nCould you please send me the digital copy of my auto insurance card? I’d like to have it on my phone for easy reference. Also, just confirming that my policy AU‑2026‑0456 is active as of 01/10/2026.\n\nThanks,\nMeera Chauhan",
+  user_2,user_1,,21/09/2026 T:10:02:45,"Dear Meera,\n\nSure thing! Your auto insurance card is attached to this email. The policy (AU‑2026‑0456) is active as of 01/10/2026. Let me know if you need anything else.\n\nBest regards,\nAnita Sharma\nInsurance Agent, Trust Wealth Advisors\nDCoders",https://storage.dcoders.com/insurance/cards/Auto_AU-2026-0456_Meera_Chauhan.pdf

@@ -1,0 +1,8 @@
+mail_id: a7c9f2e4-5b1d-41f9-8e3a-9d2f6c4b7e12
+subject: Renewal Quote for Your Health Policy (Policy #HS-789012)
+participants[2]{id,name,email,role}:
+  3f2d9c1a-7e44-4b9a-9c2e-5f8b6a1d3c4e,Kiara Sen,kiara.sen@dcoders.com,customer
+  9b8e7d4c-2a6f-4c3d-9f1b-0e7a5d9c6b8f,Sunita Agarwal,sunita.agarwal@protectallagency.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,01/10/2026 T:09:15:00,"Hi Kiara,\n\nIt was a pleasure speaking with you earlier today about your health policy that expired on 15 Sept 2026. As discussed, I’ve prepared a renewal quote for you. The attached PDF outlines the coverage details, premium amount, and the steps to electronically sign the renewal.\n\nPlease review the document at your convenience. If everything looks good, you can sign directly through the link in the PDF or let me know if you have any questions.\n\nThank you for choosing Protect All Agency. I’m here to help with any concerns you might have.\n\nBest regards,\nSunita Agarwal\nInsurance Agent, Protect All Agency\nsunita.agarwal@protectallagency.com",https://storage.protectallagency.com/quotes/HS-789012_Renewal_2026.pdf
+  user_1,user_2,,01/10/2026 T:10:02:00,"Hi Sunita,\n\nThank you for sending over the renewal quote so quickly. I’ve looked through the PDF and have a couple of questions:\n\n1. The premium has increased by about 12% compared to last year. Could you explain what factors contributed to this rise?\n2. Is the pre‑existing condition coverage the same as before, or are there any changes I should be aware of?\n\nIf possible, could you also confirm the deadline for signing the renewal to avoid any lapse in coverage?\n\nI appreciate your help and look forward to your clarification.\n\nThanks,\nKiara Sen\n",

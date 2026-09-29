@@ -1,0 +1,42 @@
+call_id: CALL-DC-20260926-001
+start_timestamp: 26/09/2026 T:09:00:00
+end_timestamp: 26/09/2026 T:09:15:30
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Vihaan Patel,customer
+  e5f6g7h8-1234-56ij-klmn-0987654321cd,Neha Kapoor,insurance agent
+messages[35]{user,text}:
+  user_2,Hello, thank you for calling Shield Life Services, this is Neha speaking, how can I help you today?
+  user_1,Uhh, hi... yeah, this is Vihaan Patel. I was just checking on my auto policy, I think it's... it's about to expire?
+  user_2,Sure thing, Vihaan. Let me just pull up your file, can you confirm your policy number, please?
+  user_1,Yeah, it's... uh... SH-3421-9876.
+  user_2,[typing] ...okay, give me a sec, I'm pulling it up.
+  user_2,One moment while I check the system, I'll put you on a brief hold.
+  user_2,[hold music playing softly]
+  user_2,[hold music fades] Thanks for waiting.
+  user_2,Alright, I have your auto policy here. It looks like the coverage end date is 30/09/2026, so it's still active for a few days.
+  user_1,Oh, okay... I thought it was already expired. So what happens if I don't renew?
+  user_2,If you let it lapse after 30th, the policy will go to expired status and you won't have coverage. You could also... uh... we could do a quick renewal right now if you'd like.
+  user_1,Yeah, I'd like to... uh... maybe renew. What are the options?
+  user_2,We have a standard renewal for another 12 months at the same premium, or you could switch to a higher deductible plan which would lower your premium a bit.
+  user_1,Hmm, let me think... also, I have a question about the deductible. It's $500, right?
+  user_2,Yes, that's correct, $500 deductible per claim. If you go with the higher deductible option, it would be $1000.
+  user_1,[dog barks in background] Sorry about that, my dog just... uh... got excited.
+  user_2,No worries at all! So, which option would you prefer?
+  user_1,I think I'll stick with the current plan, same deductible, just renew.
+  user_2,Great, I can process that for you. It'll be effective immediately after today, and you'll get a confirmation email.
+  user_2,Just need to confirm your payment method. Is the credit card ending in 1234 still good?
+  user_1,Yeah, that's fine.
+  user_2,Alright, processing renewal now... [typing]
+  user_2,Hold on a sec, I'm seeing a little glitch, let me check with our system.
+  user_2,[hold music playing]
+  user_2,Thanks for holding. Looks like everything's good, renewal approved.
+  user_2,You'll receive an email shortly with the updated policy documents. Anything else I can help with?
+  user_1,Actually, yeah, I wanted to ask about adding a roadside assistance rider.
+  user_2,Sure, we can add that. It’s $5 per month. Would you like to include it?
+  user_1,Yeah, let's add it.
+  user_2,Okay, adding now... [typing] Done. Updated premium will be $... let me check... it's $120 total now.
+  user_2,I'll update the email with the new premium details. Anything else?
+  user_1,No, that's all. Thanks for your help, Neha.
+  user_2,My pleasure! Have a great day, Vihaan.
+  user_1,You too. Bye.
+  user_2,Goodbye.

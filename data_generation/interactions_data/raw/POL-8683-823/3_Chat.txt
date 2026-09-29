@@ -1,0 +1,13 @@
+chat_id: c3f8a9e2-7b4d-4a1f-9c2e-5d6f8b9a0c1d
+participants[2]{id,name,role}:
+  1a2b3c4d-5678-90ab-cdef-1234567890ab,Riya Mukherjee,customer
+  9f8e7d6c-5b4a-3210-9c8b-7a6f5e4d3c2b,Vikram Singh,insurance agent
+messages[8]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T10:12:05,"hi vikram, i saw the quote you sent. why is the premiun* premium higher than before?",
+  user_2,28/09/2026 T10:12:45,"Hey Riya! Thanks for reaching out. The increase is mainly due to the recent medical inflation adjustment (+5%) and the added maternity coverage you requested. I’ve attached the updated quote for your reference.",https://storage.dcodelabs.com/docs/HealthPolicy_Renewal_Quote_RIYA_2026.pdf
+  user_1,28/09/2026 T10:13:20,"got it, thx. can you break down the numbers? i think my previous was about 8k per year.",
+  user_2,28/09/2026 T10:14:02,"Sure thing. Here’s the split:\n- Base premium: $6,500\n- Medical inflation uplift: $400\n- Maternity add‑on: $1,200\n- Administrative fee: $100\nTotal: $8,200 per annum.\nI’ve also attached a detailed table.",https://storage.dcodelabs.com/docs/Quote_Breakdown_RIYA_2026.xlsx
+  user_1,28/09/2026 T10:15:10,"ok, that makes sense. what payment options do i have? can i do monthly?",
+  user_2,28/09/2026 T10:15:45,"Yes, you can pay monthly, quarterly or annually. Monthly installments will be $690 (incl. processing fee). Quarterly is $2,050 and annual is $8,000 (2% discount). Let me know which you prefer.",
+  user_1,28/09/2026 T10:16:30,"i’ll need a day to think. is there a deadline to accept the renewal?",
+  user_2,28/09/2026 T10:17:05,"We’d need your acceptance by 15 Oct 2026 to avoid a lapse. If you need more time, just ping me and we can discuss.",

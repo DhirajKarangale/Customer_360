@@ -1,0 +1,15 @@
+chat_id: a1b2c3d4-5678-90ab-cdef-1234567890ab
+participants[2]{id,name,role}:
+  9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f,Kunal Mehta,customer
+  1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d,Ravi Menon,insurance agent
+messages[10]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T10:15:02,"hey ravi, quick q: can i*I start a new health plan now that my old one is expired?", 
+  user_2,28/09/2026 T10:15:30,"Hi Kunal! Sure thing. You can definitely apply for a new plan. The only thing is there’s a standard 30‑day waiting period before the coverage kicks in.", 
+  user_1,28/09/2026 T10:16:10,"30 days? that sounds long. is there any way to *reduce it* maybe because i*I have a new job benefit?", 
+  user_2,28/09/2026 T10:16:45,"Usually the waiting period is fixed, but if your employer offers a group plan you could get immediate coverage through them. Our individual plans stick to the 30‑day rule.", 
+  user_1,28/09/2026 T10:17:20,"got it. also could you resend the claim‑history summary? lost the email.", 
+  user_2,28/09/2026 T10:17:55,"Sure, just sent it again to your inbox.", 
+  user_2,28/09/2026 T10:18:00,"Here's the PDF you asked for.",https://storage.dcoders.com/docs/Kunal_HP123456_ClaimHistory.pdf
+  user_1,28/09/2026 T10:18:30,"thanks! one last thing – can you share the brochure for the new plans? want to compare.", 
+  user_2,28/09/2026 T10:19:05,"Absolutely, here's the latest health‑plan brochure.",https://storage.dcoders.com/docs/2026_Health_Brochure.pdf
+  user_1,28/09/2026 T10:19:35,"great, i'll review and get back. thx again!",

@@ -1,0 +1,8 @@
+mail_id: a3f9c2e4-7b1d-4f9a-8d2e-5c6b9f1a2d34
+subject: Auto Policy Expiration Notice – Action Required
+participants[2]{id,name,email,role}:
+  1d9f8c4a-2e7b-44a1-9f3c-6b5e2d7a9c01,Meera Chauhan,meera.chauhan@example.com,customer
+  9b3e7d5f-4c2a-48f9-9a6b-1e3d8c7f0b22,Anita Sharma,anita.sharma@trustwealthadvisors.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,01/10/2026 T:09:15:00,"Hi Anita,\n\nI hope you’re well. I just noticed that my auto insurance policy (Policy No: DC-AUTO-2024-7890) has expired as of today. I was under the impression it would auto‑renew. Could you let me know what steps I need to take to reinstate or renew it? I’d like to avoid any lapse in coverage.\n\nThanks,\nMeera", 
+  user_2,user_1,,01/10/2026 T:10:05:12,"Dear Meera,\n\nThank you for reaching out. I’m sorry for any inconvenience caused by the expiration of your auto policy. The policy indeed reached its end date on 30/09/2026 and was not set to auto‑renew.\n\nWe can reactivate your coverage immediately, or you may choose a new term. I’ve attached a renewal quote that outlines the options and pricing. Please review it at your convenience and let me know which option works best for you. If you have any questions, feel free to reply to this email or call me directly at (555) 123‑4567.\n\nBest regards,\nAnita Sharma\nTrust Wealth Advisors\nInsurance Agent\nDCoders",https://storage.dcoders.com/policies/DC-AUTO-2024-7890_RenewalQuote_01Oct2026.pdf

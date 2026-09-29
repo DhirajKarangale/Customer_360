@@ -1,0 +1,17 @@
+call_id: CALL-2026-09-28-0014
+start_timestamp: 28/09/2026 T:14:05:00
+end_timestamp: 28/09/2026 T:14:09:30
+participants[2]{id,name,role}:
+  1a2b3c4d-5678-90ab-cdef-1234567890ab,Rahul Jain,customer
+  9f8e7d6c-5432-10fe-ba98-0987654321cd,Sunita Agarwal,insurance agent
+messages[10]{user,text}:
+  user_1,[00:00] Hello? Hi Sunita, it's Rahul.
+  user_2,[00:10] Hi Rahul, good afternoon. I see your home policy HC-2026-0456 is almost ready to go active.
+  user_1,[00:25] Uh, yeah, I got the endorsement PDF you sent. Just wanted to make sure everything's set, especially after the kitchen remodel. [sighs]
+  user_2,[00:35] Right, we reviewed the renovation details you emailed — the new countertops and the extra sink are covered under the extended water‑damage clause.
+  user_1,[00:45] Great... um, do I need to do anything else? Like a payment or sign something?
+  user_2,[01:00] We've already got the premium auto‑debit set up from your last policy. So once we flip the status, the first premium will post today. You'll get a confirmation email in a few minutes.
+  user_1,[01:15] Okay, perfect. So... the policy will be active now?
+  user_2,[01:40] Yes, I'm going to push the activation now. Give me a sec... [typing] ...All set, Rahul. Your home policy is now active as of today, 28 Sep 2026. Anything else I can help with?
+  user_1,[01:50] No, that's all. Thanks a lot, Sunita.
+  user_2,[02:00] You're welcome! Have a great day. Bye.

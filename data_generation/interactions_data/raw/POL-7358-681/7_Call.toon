@@ -1,0 +1,22 @@
+call_id: REC-INS-007C
+start_timestamp: 30/09/2026 T:10:15:00
+end_timestamp: 30/09/2026 T:10:18:30
+participants[2]{id,name,role}:
+  5f3a9c2e-1b4d-4f8a-9c3e-2d7b6a9e5c01,Rohan Deshmukh,customer
+  a8d2f6b4-7c9e-41d3-8f5a-3e2c1b0d9f44,Karan Joshi,insurance agent
+messages[15]{user,text}:
+  user_1,[00:00] Hello? Umm... hi, this is Rohan. I wanted to check on the refund for my cancelled health policy.
+  user_2,[00:05] Hey Rohan, this is Karan from Safe Step Insurance. Sure, let me pull up your file. One sec... [typing]
+  user_2,[00:12] ...Okay, I see the refund of $123.45 was processed on Sep 24, reference REF‑2026‑HP5678‑001. It should've hit your account by now.
+  user_1,[00:18] Yeah, I... I checked my bank, nothing yet. It's been... almost two weeks now.
+  user_2,[00:24] Hmm, that's odd. Usually banks take up to three business days. Let me verify the transaction status on our side.
+  user_2,[00:30] ...Alright, the status shows 'Completed' on our end. No bounce backs.
+  user_1,[00:35] Could there be a delay on the bank side? Maybe weekend?
+  user_2,[00:40] Possibly. Also, sometimes banks hold funds for extra checks, but this was a same‑currency transfer so should be quick. Have you checked pending transactions?
+  user_1,[00:45] Yeah, I looked. Nothing. I'm starting to get a bit worried.
+  user_2,[00:50] I understand, sorry for the inconvenience. Let me open a trace with the bank. It might take a day or two.
+  user_2,[00:55] ...Okay, I’ve raised a query. They’ll get back to us within 24‑48 hours. I’ll also email you the reference and our ticket number.
+  user_1,[01:00] Thanks, I appreciate it. Can you give me the ticket number now?
+  user_2,[01:05] Sure, it’s TCK‑2026‑00987. I’ll send you an email shortly.
+  user_1,[01:10] Great, thanks. I’ll wait for the update.
+  user_2,[01:12] No problem. If you don’t hear back by tomorrow, give us a call. Have a good day!

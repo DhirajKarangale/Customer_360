@@ -1,0 +1,9 @@
+mail_id: 9f1c2b3e-7a4d-41f9-9b2e-5d6a8c9e0f12
+subject: Your Home Insurance Policy – Documents Enclosed
+participants[3]{id,name,email,role}:
+  d4e5f6a7-b8c9-4d10-9e11-f2a3b4c5d6e7,Aditya Singh,aditya.singh@dcoders.com,customer
+  a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d,Vikram Patel,vikram.p@omniinsurance.com,insurance agent
+  f0e1d2c3-b4a5-6d7e-8f9a-0b1c2d3e4f5a,Priya Mehta,policyadmin@dcoders.com,policy admin
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,user_3,28/09/2026 T:09:15:00,"Dear Aditya,\n\nThank you for choosing Omni Insurance for your home coverage. As discussed, your Home Insurance Policy (Policy No: HC-AD-2026-001) is now active with an annual premium of INR 12,500. Please find the policy document attached.\n\nIf you have any questions, feel free to reach out.\n\nBest regards,\nVikram Patel\nInsurance Agent\nOmni Insurance Group",https://storage.omniinsurance.com/policies/HC-AD-2026-001.pdf
+  user_1,user_2,,28/09/2026 T:10:05:30,"Hi Vikram,\n\nI have received the policy document and everything looks good. Thank you for the swift processing.\n\nRegards,\nAditya Singh",

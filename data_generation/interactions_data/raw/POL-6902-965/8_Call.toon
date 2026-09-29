@@ -1,0 +1,21 @@
+call_id: CALL-AV45231-20260929-001
+start_timestamp: 29/09/2026 T:14:05:12
+end_timestamp: 29/09/2026 T:14:09:45
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Vedant Thakur,customer
+  f1e2d3c4-8765-43ba-dcfe-0987654321fe,Neha Kapoor,insurance agent
+messages[14]{user,text}:
+  user_1,[00:00] Uh... hi, is this Neha? This is Ved... Vedant Thakur.
+  user_2,[00:05] Hey Vedant, yes Neha Kapoor speaking, how can I help you today?
+  user_1,[00:12] So... I was looking at my auto policy #AV-45231. I actually sold my car last week, so I think I need to cancel it.
+  user_2,[00:20] Oh, I see. I'm sorry to hear you're parting with the car. Let me just pull up your policy... [typing] ...Okay, I have it here.
+  user_1,[00:35] Yeah, I figured it's better to close it out. What’s the process?
+  user_2,[00:40] Sure thing. Since the policy was reinstated and the deductible changed, we can cancel effective today. There's a small cancellation fee of $20, and any prepaid premium will be prorated back to today. [sighs]
+  user_1,[01:00] Umm... okay. Will I get a refund for the remaining months until September 2027?
+  user_2,[01:10] Yes, you'll receive a prorated refund for the period from today until the renewal date, minus the $20 fee. That comes to about $450. We'll process it to the card on file.
+  user_1,[01:30] Alright, go ahead. Also, could you confirm the policy will be marked as expired in the system?
+  user_2,[01:35] Absolutely. Once I submit the cancellation, the status will change to Expired as of today. You'll get an email confirmation with the final details and the refund receipt.
+  user_1,[02:00] Thanks, Neha. I appreciate the help.
+  user_2,[02:05] No problem, Vedant. Anything else I can assist with?
+  user_1,[02:08] No, that's all. Thanks.
+  user_2,[02:10] Alright, have a great day!

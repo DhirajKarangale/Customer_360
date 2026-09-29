@@ -1,0 +1,17 @@
+call_id: REC-DC-004
+start_timestamp: 05/05/2026 T:09:15:00
+end_timestamp: 05/05/2026 T:09:18:30
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Reyansh Tiwari,customer
+  e5f6g7h8-1234-56ij-klmn-0987654321cd,Ravi Menon,insurance agent
+messages[10]{user,text}:
+  user_1,[00:00] Hi Ravi, uh... I got the email about the refund but just wanted to double‑check everything’s settled.
+  user_2,[00:05] Hey Reyansh, yes, we processed the cancellation. The $480 prorated refund is on its way.
+  user_1,[00:12] Great, um… can you tell me the exact date it’ll hit my account? I need to plan a car purchase.
+  user_2,[00:18] Sure, it should post by 10/05/2026. You’ll get an email receipt right after.
+  user_1,[00:24] Got it… and just to be safe, there’s no outstanding balance on my account, right?
+  user_2,[00:30] Correct, your balance is zero. The policy is now marked as Expired in our system.
+  user_1,[00:35] Okay… thanks. One more thing – if I decide to get a new policy later, will I need a new quote or can I reactivate this one?
+  user_2,[00:42] You’ll need a fresh quote since the old policy is closed, but we can pull your history to speed it up.
+  user_1,[00:48] Alright, that sounds good. I’ll reach out when I’m ready. Thanks for your help.
+  user_2,[00:55] You’re welcome! If anything else comes up, just give us a call. Have a great day. [sighs]

@@ -1,0 +1,11 @@
+chat_id: a5f3c9e2-7b4d-4a9f-9c3e-1d2f8b6a9c0e
+participants[2]{id,name,role}:
+  3d9f1a2b-5c6e-4f7a-8b9c-0d1e2f3a4b5c,Akanksha Bhatt,customer
+  7e8f9a0b-1c2d-3e4f-5a6b-7c8d9e0f1a2b,Anjali Desai,insurance agent
+messages[6]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T10:15:12,"hi anjali, thx for the quote. can u tell me when exactly my home policy expires?", 
+  user_2,28/09/2026 T10:15:45,"Hi Akanksha! The policy (H‑4521) is set to expire on 30/10/2026. Let me know if you'd like to renew or explore other options.", 
+  user_1,28/09/2026 T10:16:10,"also, i’m interested in the motor policy bundle. what are the options and discount details? *policy", 
+  user_2,28/09/2026 T10:16:55,"We have two motor plans:\n1. Comprehensive Cover – ₹12,000 per year.\n2. Third‑Party Liability – ₹5,500 per year.\nBundling gives a 10% discount on each, so the combined premium would be ₹15,750 per year.\nWould you like to add a motor policy now?", 
+  user_1,28/09/2026 T10:17:30,"sounds good. can you send me the details in a pdf? *PDF", 
+  user_2,28/09/2026 T10:18:05,"Sure! Please find the summary attached.",https://storage.dcoders.com/docs/HomeMotor_Bundle_Summary_2026.pdf

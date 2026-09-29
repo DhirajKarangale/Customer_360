@@ -1,0 +1,19 @@
+call_id: REC-INS-004A
+start_timestamp: 28/09/2026 T:14:05:00
+end_timestamp: 28/09/2026 T:14:12:00
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Reyansh Tiwari,customer
+  f9e8d7c6-5432-10fe-dcba-0987654321fe,Karan Joshi,insurance agent
+messages[12]{user,text}:
+  user_1,Hey Karan, uh, I got your email about the renewal.
+  user_2,Hi Reyansh! Yeah I sent that over this morning. Did you get a chance to look at the Enhanced bundle?
+  user_1,Yes, I did. The $1,305 after the bundle discount sounds good. I just wanted to confirm the coverage details again before we lock it in.
+  user_2,Sure thing—so the Enhanced plan adds roadside assistance, zero‑deductible collision, and rental car coverage up to $30 per day. Anything else you’re wondering about?
+  user_1,Uhh, actually—what about the liability limits? Are they still $100k/$300k?
+  user_2,Exactly, those limits stay the same. The only changes are the added benefits and the premium we discussed.
+  user_1,[sighs] Okay, great. How do we proceed with payment? Can I do it over the phone?
+  user_2,Absolutely. I can take your credit card now, or I can email you a secure link. Which do you prefer?
+  user_1,Let’s do the secure link, I’ll handle it after the call. Can you send that over?
+  user_2,Will do. I’ll send the link right after we hang up and you’ll get a confirmation email once it’s processed. Anything else I can help with?
+  user_1,No, that’s all. Thanks, Karan.
+  user_2,My pleasure! Talk soon. Bye.

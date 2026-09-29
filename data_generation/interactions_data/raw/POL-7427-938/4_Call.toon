@@ -1,0 +1,21 @@
+call_id: CALL-DC-20260930-001
+start_timestamp: 30/09/2026 T:11:15:00
+end_timestamp: 30/09/2026 T:11:20:30
+participants[2]{id,name,role}:
+  7f3a9c12-4b5e-4d9a-8e2f-1c9b6e7d5a3f,Kiara Sen,customer
+  d2c4e8b7-9a1f-4f3b-8c6d-5e2a1b9f0c4d,Vikram Singh,insurance agent
+messages[14]{user,text}:
+  user_2,Hello Kiara, this is Vikram Singh from ProtectAll Agency, how are you today? [00:00]
+  user_1,Hi Vikram, I'm good, thanks. Uh, just a quick call—
+  user_2,Great, I just wanted to confirm we got the laptop receipt you emailed earlier.
+  user_1,Yes, I sent it right after our chat. Did you manage to attach it to the policy?
+  user_2,Yep, I added your laptop under the personal‑property coverage, $5,000 limit for electronics. It’s now reflected in the system.
+  user_1,Awesome, so my total personal‑property limit is still $150,000, right?
+  user_2,Exactly, $150k total, with $5k earmarked for electronics like your laptop.
+  user_1,Cool. Oh—actually, I was wondering if the policy also covers my new smartwatch?
+  user_2,The standard electronics endorsement covers up to $2,000 for wearables, as long as you provide a receipt. Do you have it handy?
+  user_1,Umm, I can email it later. Is that okay?
+  user_2,Sure thing, just send it over and I'll add it. No extra premium for that small addition.
+  user_2,Anything else you need help with today?
+  user_1,No, that's all. Thanks for the help!
+  user_2,You're welcome! Your home policy is now active with the updated coverage. Have a great day!

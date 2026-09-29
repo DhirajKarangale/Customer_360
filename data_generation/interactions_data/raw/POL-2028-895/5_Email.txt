@@ -1,0 +1,8 @@
+mail_id: 9f3b2c1e-7a4d-4e9b-9c3f-2d5e6a7b8c9d
+subject: Health Policy Renewal Confirmation – Policy #HP-2026-015
+participants[2]{id,name,email,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Reyansh Tiwari,reyansh.t@dcoders.com,customer
+  d7e8f9a0-7777-8888-9999-aaaabbbbcccc,Vikram Patel,vikram.p@omniinsurance.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,21/09/2026 T:10:15:30,"Dear Reyansh,\n\nThank you for your prompt payment of $1,300 (including the $50 non‑refundable lapse fee). I’m pleased to confirm that your Health Policy has been successfully renewed and is effective from 01/10/2026.\n\nYour renewal confirmation number is RN-2026-0915-001. The attached document contains the updated policy schedule, terms, and your new annual premium of $1,250 plus the lapse fee.\n\nPlease review the attached PDF at your convenience. Should you have any questions or need further assistance, feel free to reach out.\n\nBest regards,\nVikram Patel\nInsurance Agent\nOmni Insurance Group",https://storage.omniinsurance.com/policies/HP-2026-015_Renewed.pdf
+  user_1,user_2,,21/09/2026 T:10:45:12,"Hi Vikram,\n\nI’ve received the renewal documents and the confirmation number. Everything looks good. Thanks for the swift processing.\n\nPlease let me know if there’s anything else I should do.\n\nThanks again,\nReyansh",

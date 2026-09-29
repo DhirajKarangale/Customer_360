@@ -1,0 +1,42 @@
+call_id: REC-DC-008-7f9a
+start_timestamp: 28/09/2026 T:14:05:00
+end_timestamp: 28/09/2026 T:14:20:00
+participants[2]{id,name,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Meera Chauhan,customer
+  e7f8g9h0-7777-8888-9999-aaaabbbbcccc,Anita Sharma,insurance agent
+messages[35]{user,text}:
+  user_1,Hi Anita I just got off a meeting and wanted to talk about my auto policy
+  user_2,Hello Meera thanks for calling DCoders how can I help you today
+  user_1,Well I was looking at my renewal notice and I think I might need to adjust my coverage a bit
+  user_2,Sure let me pull up your policy AU-2026-0456 one moment
+  user_2,[hold music]
+  user_2,Okay I have it here
+  user_1,Thanks Sorry there was a dog barking in the background uh my kid's dog
+  user_2,No problem I hear you loud and clear
+  user_1,So I was wondering if I could increase my liability limit from 100k to 300k
+  user_2,Let me check the rates for that change
+  user_2,[typing]
+  user_2,Alright the premium would go up by about 120 dollars per year
+  user_1,Okay that seems reasonable I also wanted to know if I could lower my deductible back to 250 dollars
+  user_2,We can do that but it will add another 80 dollars to the premium
+  user_1,Hmm so overall the premium would be 1150 plus 120 plus 80 that’s 1350 right
+  user_2,Exactly that would be the new annual premium
+  user_1,Do you think there are any other discounts I qualify for maybe a safe driver or multi‑car discount
+  user_2,Let me see you have the safe driver discount already applied and you have only one vehicle on the policy
+  user_2,If you add the new vehicle we can get a multi‑car discount of 5 percent off the total
+  user_1,Oh yeah I was planning to add my sister's car as well the 2022 Honda Civic
+  user_2,Great we can add that driver and vehicle now
+  user_2,One sec while I verify the VIN
+  user_2,[typing]
+  user_2,Got it the VIN is correct and the vehicle is eligible
+  user_1,Awesome can we also add my sister as an additional driver she has a clean record
+  user_2,Sure I’ll add her as a driver with a 30 dollar per month surcharge
+  user_2,That will increase the monthly premium by 30 dollars
+  user_1,So the new monthly premium will be about 112.5 dollars let me calculate 1350 plus 360 divided by 12
+  user_2,Yes that comes out to 112.5 per month
+  user_1,Do I need to sign anything electronically or can we just confirm over the phone
+  user_2,We can send you an e‑signature link right after this call you just need to click approve
+  user_1,Okay perfect I’ll look out for that email
+  user_2,Anything else I can help you with today
+  user_1,No I think that covers everything thanks for your help
+  user_2,You’re welcome Meera have a great day

@@ -1,0 +1,18 @@
+call_id: CALL-DC-20260928-04
+start_timestamp: 28/09/2026 T:10:15:00
+end_timestamp: 28/09/2026 T:10:18:45
+participants[2]{id,name,role}:
+  9f1c2b7e-3a4d-41f9-9e5a-2b6c8d9f0a1b,Sneha Roy,customer
+  d4e5f6a7-8b9c-4d10-ef11-223344556677,Anjali Desai,insurance agent
+messages[11]{user,text}:
+  user_2,Hi Sneha, this is Anjali from First Guard Brokers, calling about your auto policy renewal—just wanted to confirm you got the documents.
+  user_1,Oh hi Anjali, yeah I got the email, I... uh... I signed the forms earlier today.
+  user_2,Great! So we’re all set. Just to double‑check, the policy will be effective from 01/10/2026, right?
+  user_1,Yes, that's what I saw. But— um— I wanted to ask about the payment schedule—when is the first premium due?
+  user_2,Sure, the first premium is due within 10 days of the effective date, so by 10/10/2026. You can pay online or we can set up auto‑debit.
+  user_1,Okay, I think I'll do the auto‑debit. Can you set that up now?
+  user_2,I can definitely start the process—I'll need your bank details. Do you have them handy?
+  user_1,[sighs] Yeah, let me pull them up... okay, it's 123456789, ABC Bank, checking.
+  user_2,Got it, thank you. I’ll send you a confirmation email shortly. Anything else you need?
+  user_1,No, that's all. Thanks!
+  user_2,You’re welcome! Have a great day.

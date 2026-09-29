@@ -1,0 +1,17 @@
+call_id: CALL-DC-001A
+start_timestamp: 28/09/2026 T:09:15:00
+end_timestamp: 28/09/2026 T:09:20:00
+participants[2]{id,name,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Reyansh Tiwari,customer
+  d4c3b2a1-9999-8888-7777-666655554444,Karan Joshi,insurance agent
+messages[10]{user,text}:
+  user_1,Hello uh this is Reyansh speaking? [00:00]
+  user_2,Hi Reyansh this is Karan from Safe Step Insurance. Can you hear me okay? [00:05]
+  user_1,Yeah I can hear you. Uh I got a call about my auto policy. [00:10]
+  user_2,Sure let me pull up your details one sec... [00:15] [typing]
+  user_2,Okay I see your policy #AU-987654 is set to expire on 15/09/2026. [00:20]
+  user_1,Oh really I thought it was still active. [00:25]
+  user_2,Yeah it actually expired last week sorry for the confusion. [00:30] [sighs]
+  user_1,Ah okay so what are my options now? [00:35]
+  user_2,We can either renew it for another year or you could switch to a different coverage level. [00:40]
+  user_1,Um let me think I need to check with my finance team can you send me the renewal quote? [00:45]

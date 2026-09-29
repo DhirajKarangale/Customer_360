@@ -1,0 +1,13 @@
+call_id: REC-DC-20260928-004
+start_timestamp: 28/09/2026 T:10:15:00
+end_timestamp: 28/09/2026 T:10:19:30
+participants[2]{id,name,role}:
+  a3f9c2d1-7b4e-4f1a-9c8d-2e5b6a9f1c3e,Kavya Iyer,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Suresh Deshmukh,insurance agent
+messages[6]{user,text}:
+  user_2,[00:00] Hello, this is Suresh from Secure Life Solutions, how can I help you today?
+  user_1,Um— hi Suresh... I just wanted to double‑check that my policy L‑2026‑0459 is now active. I saw the email but... 
+  user_2,Sure, let me pull it up... yeah, it shows as Active as of 09:58 today. Anything else on your mind?
+  user_1,Actually, I was wondering about the premium due next year, and also... can you resend the policy PDF to my email? I think I missed it.
+  user_2,[sighs] Got it, I’ll resend the PDF right after we hang up. The next premium is due on 01/09/2027, same amount unless you make changes. Anything else?
+  user_1,No, that’s all. Thanks!

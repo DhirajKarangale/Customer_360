@@ -1,0 +1,8 @@
+mail_id: 9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f
+subject: Re: Confirmation of 15‑day post‑expiry claim window for services on 30/09/2026
+participants[2]{id,name,email,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Tanvi Saxena,tanvi.saxena@dcoders.com,customer
+  f1e2d3c4-9876-54ba-dcba-0987654321fe,Sunita Agarwal,sunita.agarwal@protectall.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,04/10/2026 T:09:15:30,"Hi Sunita,\n\nThank you for the renewal confirmation. I just wanted to double‑check: does the 15‑day claim window also cover services that were performed on 30/09/2026, the last day before the new policy starts?\n\nBest,\nTanvi",
+  user_2,user_1,,04/10/2026 T:10:02:45,"Dear Tanvi,\n\nThank you for your question. Yes, the 15‑day post‑expiry claim window applies to any services rendered up to and including the expiry date of 30/09/2026, provided the claim is submitted no later than 15 days after that date (i.e., by 15/10/2026). Services received on 01/10/2026 onward are covered under the renewed policy period.\n\nI have attached the updated policy document for your reference.\n\nPlease let me know if you need any further assistance.\n\nWarm regards,\nSunita Agarwal\nInsurance Agent, Protect All Agency\nsunita.agarwal@protectall.com",https://storage.dcoders.com/policies/HealthPolicy_TanviSaxena_2026-2027.pdf

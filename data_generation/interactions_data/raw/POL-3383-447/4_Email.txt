@@ -1,0 +1,8 @@
+mail_id: a3f9c2d4-7e1b-4f9a-9c3e-5b6d8f1a2c7e
+subject: Re: Renewal Quote for Health Policy – Cancellation Request
+participants[2]{id,name,email,role}:
+  1d9e8b7a-3c4f-4a2b-9d6e-0f1c2b3d4e5f,Kiara Sen,kiara.sen@dcoders.com,customer
+  6a5b4c3d-2e1f-4d8a-9b0c-7e6f5d4c3b2a,Sunita Agarwal,sunita.agarwal@protectallagency.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,22/09/2026 T:09:15:30,"Hi Sunita,\n\nThank you for the information. After considering the premium increase and the coverage limitations for my asthma, I have decided to cancel the renewal of my health policy.\n\nPlease confirm the cancellation and let me know if there is anything else I need to do on my end.\n\nRegards,\nKiara Sen",
+  user_2,user_1,,22/09/2026 T:10:02:45,"Dear Kiara,\n\nI’m sorry to hear you’ve decided not to renew your health policy. I have processed the cancellation as requested, and your policy will remain expired as of 15 September 2026 with no further premiums due.\n\nIf you have any questions or need assistance in the future, feel free to reach out. We appreciate you choosing DCoders and Protect All Agency for your insurance needs.\n\nBest regards,\nSunita Agarwal\nInsurance Agent | Protect All Agency\nsunita.agarwal@protectallagency.com\n+1‑555‑123‑4567",

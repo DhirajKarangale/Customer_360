@@ -1,0 +1,11 @@
+chat_id: f3b9c8d1-5e6a-4f2b-9c3d-7e8f9a0b1c2d
+participants[2]{id,name,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Kriti Mahajan,customer
+  d4e5f6g7-7777-8888-9999-aaaabbbbcccc,Karan Joshi,insurance agent
+messages[6]{user,timestamp,text,media_url}:
+  user_1,20/10/2026 T09:12:30,"hey karan i just got the form, thx! but i think i might need a lil*little more time, can i still reinstate after 15 oct?", 
+  user_2,20/10/2026 T09:13:20,"Hi Kriti! 😊 The 30‑day window ends on 15 Oct, so after that we can’t reinstate automatically. You’d need to submit a new application. Let me know if you’d like to start that.", 
+  user_1,20/10/2026 T09:15:05,"oh nooo... i was hoping to keep the car for a bit longer. is there any way to get a short extension? *no", 
+  user_2,20/10/2026 T09:16:00,"I understand, but policy rules are strict. The best we can do is offer a new quote for a fresh policy. It’ll be similar coverage, but the premium may differ.", 
+  user_1,20/10/2026 T09:18:10,"got it. can you send me a quick quote for a new auto policy? i’ll decide soon.", 
+  user_2,20/10/2026 T09:19:00,"Sure thing! I’ll email you the quote and the new application form right after this chat.",

@@ -1,0 +1,13 @@
+chat_id: 7f3a9c2e-4b1d-48f9-9a6e-2d5c7b1e9f34
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Vivaan Gupta,customer
+  d4c3b2a1-8765-09ba-fedc-0987654321ba,Vikram Singh,insurance agent
+messages[8]{user,timestamp,text,media_url}:
+  user_1,30/09/2026 T10:15:12,"hey Vikram, thx for the email. just wanted to double check something about my policy LC-2026-0456.", 
+  user_2,30/09/2026 T10:15:45,"Hey Vivaan! Happy to help. What do you need clarification on?", 
+  user_1,30/09/2026 T10:16:20,"i saw the premium amount is $1200/yr. is that *yearly? also can i set up auto‑pay?", 
+  user_2,30/09/2026 T10:17:05,"Yes, it’s $1,200 per year. We can definitely set up auto‑pay. Would you like me to send a link to set it up now?", 
+  user_1,30/09/2026 T10:18:10,"yes pls, send the link. also, can i get a copy of the policy doc in pdf?", 
+  user_2,30/09/2026 T10:18:45,"Sure thing! Here’s the auto‑pay setup link: https://payments.dcoders.com/autopay?policy=LC-2026-0456 and the PDF of your policy.",https://storage.dcoders.com/policies/LC-2026-0456.pdf
+  user_1,30/09/2026 T10:19:30,"got it, thanks! one more thing – if i need to make a claim, what's the process?", 
+  user_2,30/09/2026 T10:20:15,"You can file a claim through our portal or call us 24/7. I’ll also attach the claim guide.",https://storage.dcoders.com/guides/Claim_Guide_LC-2026-0456.pdf

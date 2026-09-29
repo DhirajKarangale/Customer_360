@@ -1,0 +1,16 @@
+call_id: REC-INS-007A
+start_timestamp: 28/09/2026 T:15:10:00
+end_timestamp: 28/09/2026 T:15:14:12
+participants[2]{id,name,role}:
+  7f9c3e21-4b2a-48d9-9a6e-1d5f2b7c9e34,Rahul Jain,customer
+  d3a5b8f4-9c1e-4f7a-8b2d-6e4c1a9f0b57,Ramesh Tiwari,insurance agent
+messages[8]{user,text}:
+  user_2,[00:00] Hi Rahul, this is Ramesh from Safe Shield Agency, how can I help you today?
+  user_1,[00:12] Uh, hi Ramesh... yeah, I wanted to double‑check that my auto policy AU‑45219 is really cancelled and… uh… expired now.
+  user_2,[00:25] Sure thing, let me pull it up… [typing]… Yeah, I see the cancellation was processed on 25/09/2026 and the system now shows the policy status as **Expired**.
+  user_1,[00:40] Okay… great. And the refund you mentioned in the chat – the ₹4,500 – when will that actually hit my account? I’m a bit worried it might get delayed.
+  user_2,[01:00] No worries, the refund is queued and should reflect in your bank within 5‑7 business days. We’ll also email you the refund receipt as soon as it’s done.
+  user_1,[01:15] Got it… Do I need to send back any paperwork or sign anything else? My car’s sold, so I just want to close everything cleanly.
+  user_2,[01:30] Nope, you’re all set. The cancellation receipt we sent you over email is the only document you need to keep. The policy is officially expired, so there’s nothing else on your end.
+  user_1,[01:45] Alright, thanks for confirming… and for the help. I’ll keep an eye on my account for the refund. Bye.
+  user_2,[01:55] You’re welcome, Rahul. If anything else comes up, just give us a call. Have a good day!

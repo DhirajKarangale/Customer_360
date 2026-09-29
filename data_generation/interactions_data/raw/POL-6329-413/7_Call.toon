@@ -1,0 +1,17 @@
+call_id: CALL-20260929-07
+start_timestamp: 29/09/2026 T:10:15:00
+end_timestamp: 29/09/2026 T:10:19:30
+participants[2]{id,name,role}:
+  9f3c2a1b-8e4d-4a9b-9c1f-5d2e6b7c8a90,Kunal Mehta,customer
+  d2e5f6a7-3b9c-4d8e-9f1a-2b3c4d5e6f70,Anita Sharma,insurance agent
+messages[10]{user,text}:
+  user_1,Hey Anita, it's Kunal. I just wanted to double‑check—uh—what's the exact status of my home policy right now?
+  user_2,Hi Kunal, yeah, the policy is still in Pending because we’re waiting on the signed declaration and your valuation report.
+  user_1,Got it. I'm planning to email both tomorrow morning. Is there any specific file naming convention you need?
+  user_2,Just make sure it's a single PDF, something like 'Kunal_Mehta_HomeValuation.pdf'—that works fine.
+  user_1,Okay, and the $850 premium—I'll do a bank transfer today. Can you resend the account details?
+  user_2,Sure, I'll send you an email right after this call with the bank details and a quick checklist. Anything else? [typing]
+  user_1,Um, do I need to include a cover page or anything with the valuation?
+  user_2,No cover page needed, just the valuation report and the signed declaration form attached together—[typing]—and the PDF should be under 5 MB.
+  user_1,Great, thanks. Once you get the docs, will the policy go active immediately?
+  user_2,As soon as we verify everything, we'll change the status to Active, usually within a couple of hours. I'll keep you posted.

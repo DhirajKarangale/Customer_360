@@ -1,0 +1,8 @@
+mail_id: 9f8e7d6c-1234-5678-9abc-def012345678
+subject: Confirmation of Policy Expiration and Next Steps
+participants[2]{id,name,email,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Reyansh Tiwari,rey.tiwari@dcoders.com,customer
+  f7e8d9c0-7777-8888-9999-aaaaabbbbbcc,Anjali Desai,anjali.desai@firstguardbrokers.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,05/10/2027 T:09:15:30,"Hi Anjali,\n\nI just noticed that my health policy was set to expire on 30 September 2027. Could you please confirm that it has indeed lapsed and let me know what, if any, steps I need to take regarding pending claims or cancellation?\n\nThanks,\nReyansh",
+  user_2,user_1,,05/10/2027 T:10:02:45,"Dear Reyansh,\n\nThank you for reaching out. I can confirm that your Health Policy (Policy No. HP-2024-5678) automatically lapsed on 30 September 2027 as per the terms. No further premiums will be charged, and the policy will not renew unless you initiate a new enrollment.\n\nPlease note the following:\n- Any claims for services rendered before the expiry date must be submitted within 90 days of the service date.\n- Pending claims already in process will be settled according to the usual timelines.\n- There is no formal cancellation required; the policy simply ends on the expiry date.\n- If you wish to restart coverage, we can discuss a new plan at your convenience.\n\nI have attached a final copy of your policy showing the expiration details for your records.\n\nIf you have any more questions, feel free to reply to this email or give me a call.\n\nBest regards,\nAnjali Desai\nInsurance Agent, First Guard Brokers\nanjali.desai@firstguardbrokers.com",https://storage.firstguardbrokers.com/docs/Policy_RTT_Expired_2027.pdf

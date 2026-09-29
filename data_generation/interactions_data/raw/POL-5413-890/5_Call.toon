@@ -1,0 +1,27 @@
+call_id: REC-DC-005A
+start_timestamp: 28/09/2026 T:14:05:00
+end_timestamp: 28/09/2026 T:14:18:00
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Akanksha Bhatt,customer
+  e5f6g7h8-1234-56ij-klmn-0987654321cd,Karan Joshi,insurance agent
+messages[20]{user,text}:
+  user_1,Hello? Hi Karan, it's Akanksha. I just got your email about the reinstatement.
+  user_2,Hey Akanksha, good morning! Yeah, I sent that over. Did you get the payment link okay?
+  user_1,Umm... yeah, I clicked it but the page kept loading, and then I heard my dog bark in the background. [dog barks]
+  user_2,Oh no, sorry about that. Let me check on my end. One sec, I'll put you on a brief hold.
+  user_2,[hold music] ... (soft instrumental) ...
+  user_2,Thanks for waiting. Looks like the link was fine, maybe your browser cache? Can you try clearing it?
+  user_1,Okay, give me a sec... [typing] ... Alright, I cleared and tried again. Now it shows the payment page.
+  user_2,Great! You can go ahead and enter your card details. It should be $152.75, as we discussed.
+  user_1,Umm, I see the amount, but it says 'additional processing fee' of $2.5. Is that normal?
+  user_2,Yeah, that's just the standard gateway fee. Total will be $155.25. No extra penalty.
+  user_1,Alright, I'm entering now... [typing] ... Done. Got a confirmation number: REIN-20260928-001.
+  user_2,Perfect, I've got it on my side too. Your policy AP‑123456 is now active again.
+  user_1,Thanks! Oh, by the way, how's the traffic today? I was stuck on the highway.
+  user_2,Haha, same here. My kid's school bus was late, so I was driving around. Anyway, anything else you need?
+  user_1,Actually, I wanted to ask about adding a roadside assistance rider. Is that possible now?
+  user_2,Sure thing. We can add it for an extra $12 per month. It covers towing, lockout, fuel delivery.
+  user_1,Sounds good. Can we bundle that with my policy now?
+  user_2,Absolutely, I'll attach it right away. You'll see the updated premium on your next bill. Anything else?
+  user_1,No, that's all. Appreciate your help, Karan.
+  user_2,My pleasure! Have a great day, Akanksha. Bye.

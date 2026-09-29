@@ -1,0 +1,8 @@
+mail_id: a1b2c3d4-5678-90ab-cdef-1234567890ab
+subject: Re: Confirmation of Auto Policy Renewal – AU‑45219
+participants[2]{id,name,email,role}:
+  9f8e7d6c-4b3a-11e6-8c9f-0242ac130003,Rahul Jain,rahul.jain@dcoders.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Ramesh Tiwari,ramesh.tiwari@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,05/10/2026 T:09:15:30,"Hi Ramesh,\n\nI just completed the payment through the link you sent earlier. Could you please confirm that the payment has been received and that my auto policy (AU‑45219) is now active? Also, I would appreciate it if you could send me the updated policy document reflecting the renewal.\n\nThanks,\nRahul Jain", 
+  user_2,user_1,,05/10/2026 T:10:02:45,"Dear Rahul,\n\nThank you for your prompt payment. I can confirm that we have received ₹12,450 and your Auto Policy AU‑45219 is now active as of today, 05/10/2026. The next auto‑debit will occur on 01/11/2026 for the renewal premium of ₹12,450.\n\nPlease find attached the updated policy schedule for your records.\n\nIf you have any further questions, feel free to reach out.\n\nBest regards,\nRamesh Tiwari\nInsurance Agent, Safe Shield Agency\nDCoders",https://storage.dcoders.com/policies/AutoPolicy_AU45219_Updated_05102026.pdf

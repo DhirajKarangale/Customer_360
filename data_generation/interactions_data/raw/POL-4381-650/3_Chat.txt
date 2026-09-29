@@ -1,0 +1,13 @@
+chat_id: 7f9c2e1a-4b3d-45f9-8a2c-9d5e6b7c8f01
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Anvi Desai,customer
+  b2c3d4e5-6789-01bc-def2-2345678901bc,Anita Sharma,insurance agent
+messages[8]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T10:15:02,"hi Anita, thx for the email. i like the comprehensive plan but got a few q's.",
+  user_2,28/09/2026 T10:15:20,"Hey Anvi! Glad you’re leaning towards the comprehensive one. Happy to clear things up 😊.",
+  user_2,28/09/2026 T10:15:35,"First, specialist‑visit coverage: you get up to 80% of the approved fees after the deductible, with a max annual limt*limit of $5,000.",
+  user_2,28/09/2026 T10:16:00,"Pre‑authorization: any specialist consult over $200 needs prior approval. Just give us a heads‑up and we’ll fast‑track it. It usually takes 1‑2 business days.",
+  user_2,28/09/2026 T10:16:15,"Renewal deadline: you have until 30 Oct 2026 to renew without a lapse. If you confirm by 20 Oct, we can lock in the current premium.",
+  user_2,28/09/2026 T10:16:30,"I’ve attached the detailed Comprehensive plan brochure for you to review.",https://storage.dcodelabs.com/docs/Comprehensive_Plan_Brochure.pdf
+  user_1,28/09/2026 T10:17:05,"thanks! that helps a lot. i’ll sign off by next week. can you send the renewal form? thx!",
+  user_2,28/09/2026 T10:17:20,"Sure thing! I’ll email the renewal form right after this chat. Let me know if anything else pops up.",

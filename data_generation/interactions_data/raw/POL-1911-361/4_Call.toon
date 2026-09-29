@@ -1,0 +1,17 @@
+call_id: REC-HEALTH-004A
+start_timestamp: 28/09/2026 T:14:05:00
+end_timestamp: 28/09/2026 T:14:08:30
+participants[2]{id,name,role}:
+  9f1b2c3d-4e5f-6789-abcd-1234567890ab,Aaradhya Verma,customer
+  d4e5f6a7-89ab-1c2d-3e4f-56789abcde12,Anjali Desai,insurance agent
+messages[10]{user,text}:
+  user_1,Hi Anjali it's Aaradhya. Um... I just wanted to confirm that the three‑month extension is now active? I tried signing the link you sent earlier.
+  user_2,Hey Aaradhya yes I see the signature came through a few minutes ago. Your coverage for the surgery is now active.
+  user_1,Great thanks. So just to clear the original policy is still marked as expired right? And this extension will keep me covered until end of November?
+  user_2,Exactly. The base policy expired on 31 Aug 2026 and the short‑term extension runs from 1 Sep to 30 Nov 2026. No gap.
+  user_1,Okay I also wanted to ask if I need any pre‑authorization for the upcoming knee surgery do I go through First Guard or directly with the hospital?
+  user_2,You can submit the pre‑auth request through our portal. I’ll also forward it to the hospital admin. It usually takes 48‑72 hours.
+  user_1,[sighs] Thanks that helps a lot. Anything else I need to do on my end?
+  user_2,Just make sure the signed document stays on file. We’ve got everything. If anything changes give me a call.
+  user_1,Will do. Thanks again Anjali.
+  user_2,You’re welcome! Take care Aaradhya.

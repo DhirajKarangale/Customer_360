@@ -1,0 +1,11 @@
+chat_id: 7f3a9c2b-1e4d-4b6a-9c8f-2d5e7a9b0c3d
+participants[2]{id,name,role}:
+  a1d9f2e4-3c7b-41a9-8f6e-5b2c9d8e7f01,Pooja Bhatia,customer
+  b3e4c5d6-7f8a-49b2-9c0d-1e2f3a4b5c6d,Anita Sharma,insurance agent
+messages[6]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T10:15:12,"hi i got ur email about the renewal. can u tell me how the higher deductible will affect routne*routine visit costs?"
+  user_2,28/09/2026 T10:15:45,"Hey Pooja! Sure thing. With the low‑premium plan the deductible goes up to $1,200 per year. That means for routine visits like a general check‑up, you’ll pay the usual copay (e.g., $20) until you’ve met the deductible. Once the $1,200 is met, the plan covers 100% of in‑network services. Also, you need to submit the renewal form by 15 Oct 2026 to keep coverage active."
+  user_1,28/09/2026 T10:16:20,"oh ok thx! what if i dont meet the deductible before the policy expires? will i lose the coverage for those visits?"
+  user_2,28/09/2026 T10:16:55,"If you don’t hit the deductible, you’ll still pay the copays for each visit until the policy expires on 30 Oct 2026. After that the policy will be marked as Expired in our system."
+  user_1,28/09/2026 T10:17:30,"got it. i think i’ll go with the standard plan then. can u send me the form again?"
+  user_2,28/09/2026 T10:18:05,"Absolutely! I’ve just re‑sent the renewal form to your email. Let me know if you need anything else. 😊"

@@ -1,0 +1,8 @@
+mail_id: 7f9c2a1b-5e4d-4b9a-8c3f-1a2b3c4d5e6f
+subject: Your Home Insurance Renewal – Policy #H‑4521 (Plan A) Confirmation & Documents
+participants[2]{id,name,email,role}:
+  1e2d3c4b-5a6f-7b8c-9d0e-1f2a3b4c5d6e,Akanksha Bhatt,akanksha.bhatt@dcoders.com,customer
+  9b8a7c6d-5e4f-3d2c-1b0a-9e8f7d6c5b4a,Anjali Desai,anjali.desai@firstguardbrokers.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,05/10/2026 T:09:15:00,"Dear Akanksha,\n\nThank you for confirming Plan A during our recent call. I’m pleased to attach your renewed Home Insurance policy (Policy #H‑4521) effective from 01/11/2025 until 30/10/2026. As discussed, the premium will be INR 12,480 per year, payable in monthly installments of INR 1,040 each, starting 05/11/2025. The 10 % bundling discount for the motor policy has been applied.\n\nPlease review the attached PDF titled “H‑4521_Renewal_PlanA.pdf”. If everything looks good, kindly confirm so we can activate the policy. Let me know if you have any questions about the payment schedule or the motor‑policy bundle.\n\nBest regards,\nAnjali Desai\nInsurance Agent, First Guard Brokers\nPhone: +91‑98765‑43210\nEmail: anjali.desai@firstguardbrokers.com",https://storage.firstguardbrokers.com/policies/H-4521_Renewal_PlanA.pdf
+  user_1,user_2,,05/10/2026 T:10:02:00,"Hi Anjali,\n\nI’ve received the renewal documents – thank you. The terms look fine. Could you let me know the exact date the first monthly installment will be debited and the preferred method for setting up the auto‑debit?\n\nThanks,\nAkanksha Bhatt",

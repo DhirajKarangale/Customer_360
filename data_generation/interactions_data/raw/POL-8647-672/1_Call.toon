@@ -1,0 +1,39 @@
+call_id: REC-DC-20260928-001
+start_timestamp: 28/09/2026 T:09:00:00
+end_timestamp: 28/09/2026 T:09:15:00
+participants[2]{id,name,role}:
+  9f3b2c1e-7a4d-4e9a-9b6f-2d5c8f1a7e3b,Rahul Jain,customer
+  d4a6e9b2-5c1f-4b8a-8e2d-9f7c3a6b5d1f,Ramesh Tiwari,insurance agent
+messages[32]{user,text}:
+  user_1,Hello? Is this... uh... Ramesh? I’m Rahul.
+  user_2,Hi Rahul, this is Ramesh from Safe Shield Agency, how can I help you today?
+  user_1,Yeah, I... I wanted to talk about my auto policy, the one that’s about to... expire? 
+  user_2,Sure, let me pull that up… [typing] ... Okay I see policy number… uh… DC-AUTO-4578, expiring 30/09/2026.
+  user_1,Right, I got a call earlier saying it’s already expired. I’m confused.
+  user_2,Let me check the system… hold on… [hold music] ... Alright, it shows status “Active” but the end date is 30/09/2026, so not yet expired.
+  user_1,[sighs] Okay, but I also got a notice about a cancellation fee...
+  user_2,Uh, I’m not seeing any cancellation fee. Maybe you got a spam call. Let’s verify your email… 
+  user_1,My email is rahul.jain@email.com, right?
+  user_2,Got it, sending you a verification link… [typing] ... Done. You should get it in a minute.
+  user_1,Okay… [dog barks in background] ... I’ll check.
+  user_2,While you’re checking, can you confirm your vehicle’s make and model? 
+  user_1,It’s a 2019 Honda Civic, silver, registration AB12CD3456.
+  user_2,Thanks. Also, do you have any recent claims? 
+  user_1,No, none. Just a little scratch on the rear bumper from a parking lot.
+  user_2,Got it. That’s covered under comprehensive, but since the policy isn’t expired yet, you’re still protected.
+  user_1,So… do I need to do anything to renew? 
+  user_2,Usually we send a renewal notice 30 days prior. Since today is 28/09, you’ll get it soon. Do you want me to start the renewal now?
+  user_1,Yeah, that’d be great. I’d like to keep the same coverage.
+  user_2,Alright, let me generate a renewal quote… [typing] ... Okay, the premium will be $1,200 for the next year.
+  user_1,That’s a bit higher than last year… any discounts?
+  user_2,Let’s see… you have a no-claim bonus of 10%, and you qualify for the safe driver discount. That brings it down to $1,080.
+  user_1,Okay, that sounds reasonable. How do I pay?
+  user_2,You can pay via credit card, net banking, or we can set up auto‑debit. Which do you prefer?
+  user_1,Uh… I’ll do auto‑debit, please.
+  user_2,Sure thing. I’ll need your bank account number and routing number.
+  user_1,It’s 123456789, routing 00112233.
+  user_2,Got it, setting that up… [typing] ... All done. Your policy is now renewed and will stay active until 28/09/2027.
+  user_1,Great! Thanks a lot, Ramesh.
+  user_2,You’re welcome! Anything else I can help with today?
+  user_1,No, that’s all. Have a good day.
+  user_2,You too, Rahul. Bye.

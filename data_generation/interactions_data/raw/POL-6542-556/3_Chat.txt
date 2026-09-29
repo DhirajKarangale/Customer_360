@@ -1,0 +1,12 @@
+chat_id: 7f3a9c2e-5b1d-4e8a-9c3f-2d6b1e4f7a9b
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Akanksha Bhatt,customer
+  d4c3b2a1-8765-09ba-fedc-0987654321ba,Suresh Deshmukh,insurance agent
+messages[7]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T10:15:30,"hi suresh, i just got the email with the pre‑auth form. thnks!", 
+  user_2,28/09/2026 T10:16:20,"Hi Akanksha! Happy to help. Let me know if you need any help filling it.", 
+  user_1,28/09/2026 T10:17:05,"actually i have a qestion about the co‑pay. it says ₹500 OP*OPD co‑pay, is that per visit?", 
+  user_2,28/09/2026 T10:18:10,"Yes, the ₹500 is per OPD visit. For the MRI you’ll pay 10% after the ₹2,000 deductible is met.", 
+  user_1,28/09/2026 T10:19:00,"Got it. Do i need to upload the filled form here or email it to preauth@securelife.com?", 
+  user_2,28/09/2026 T10:19:45,"You can upload it directly in the chat – just attach the PDF – or email it. Whatever’s easier.", 
+  user_1,28/09/2026 T10:20:30,"ok thnks! i’ll upload it now. *thanks",https://storage.securelifesolutions.com/uploads/preauth_form_akanksha.pdf

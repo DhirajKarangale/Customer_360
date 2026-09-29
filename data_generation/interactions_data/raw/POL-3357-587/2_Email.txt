@@ -1,0 +1,8 @@
+mail_id: a7f3c9e2-5b1d-4a6e-9c3f-2d8b6e7f1a4c
+subject: Confirmation of Home Insurance Policy H‑2026‑0459 – Active
+participants[2]{id,name,email,role}:
+  d3f8c2a1-9e4b-4f7a-8c2d-1b5e6f9a2c3d,Samar Ghosh,samar.ghosh@dcoders.com,customer
+  b6e5d4c9-2a7f-4c1b-9e8f-3d6a5b7c9e0f,Sunita Agarwal,sunita.agarwal@protectallagency.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2026 T:10:15:00,"Dear Samar,\n\nThank you for speaking with me earlier today. I’m pleased to confirm that your Home Insurance policy (Policy No: H‑2026‑0459) is now active as of today, 28 September 2026.\n\nCoverage details:\n- Dwelling coverage: $350,000\n- Personal property: $80,000\n- Liability: $300,000\n- Deductible: $1,000 per claim\n\nYour newly installed kitchen cabinets are covered under the “Improved Home Features” endorsement, and the alarm system you mentioned has qualified you for a $150 premium discount.\n\nPlease find attached the official policy document for your records.\n\nIf you have any questions or need further assistance, feel free to reply to this email or call me directly at 555‑123‑4567.\n\nBest regards,\nSunita Agarwal\nInsurance Agent, Protect All Agency\nsunita.agarwal@protectallagency.com",https://secure.dcodelabs.com/policies/H-2026-0459.pdf
+  user_1,user_2,,28/09/2026 T:11:02:30,"Hi Sunita,\n\nThanks for the confirmation and the attached policy document. Everything looks good. Could you let me know the process for filing a claim should we need to, and whether I need to provide any additional documentation for the kitchen cabinet upgrade?\n\nRegards,\nSamar Ghosh\nDCoders\nsamar.ghosh@dcoders.com",

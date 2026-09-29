@@ -1,0 +1,8 @@
+mail_id: e3f9b7c2-4a1d-45e9-9c6f-2b7d8e9a1c34
+subject: Your Auto Policy Renewal Confirmation – Policy #AU-2026-4590
+participants[2]{id,name,email,role}:
+  9b2d5f4e-7c3a-41f9-8e2a-6d5c9b1f0a12,Vihaan Patel,vihaan.patel@dcoders.com,customer
+  3a6a7028-a699-4de4-b932-41271ff311d6,Neha Kapoor,neha.kapoor@shieldlife.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2026 T:09:15:00,"Dear Vihaan,\n\nI hope you’re doing well. I’m writing to confirm that your auto policy has been successfully renewed for another year. Below are the key details:\n\nPolicy Number: AU-2026-4590\nEffective Date: 01 Oct 2026\nExpiration Date: 30 Sep 2027\nAnnual Premium: $1,210.00\nPayment Method: Card ending in 4321 (same as previous policy)\nRoadside‑Assistance Rider: $5 per month (coverage limits as discussed)\n\nYou will find the updated policy documents attached for your records.\n\nIf you have any questions or need further assistance, please don’t hesitate to reach out.\n\nBest regards,\nNeha Kapoor\nInsurance Agent, Shield Life Services\nneha.kapoor@shieldlife.com\n+1 (555) 123‑4567",https://storage.shieldlife.com/docs/Policy_AU-2026-4590.pdf
+  user_1,user_2,,28/09/2026 T:10:02:12,"Hi Neha,\n\nThank you for the quick turnaround and for sending over the renewal documents. I’ve reviewed the policy and everything looks good. Please proceed with the payment as scheduled.\n\nBest,\nVihaan Patel\nvihaan.patel@dcoders.com",

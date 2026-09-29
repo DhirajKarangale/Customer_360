@@ -1,0 +1,15 @@
+chat_id: 7f4c2b1e-9a3d-4e6b-8f1c-2d5a9e3b7c01
+participants[2]{id,name,role}:
+  a3f5c9e2-7b4d-41a2-9f6e-2d4b8c9a1f33,Dev Chatterjee,customer
+  d9e2f7b1-5c3a-48d9-8a1e-6f7b2c4d5e66,Neha Kapoor,insurance agent
+messages[10]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T10:15:02,"hey, i need some info about my hom*policy. It's about to expiery*expire soon.",
+  user_2,28/09/2026 T10:15:10,"Hi Dev! Absolutely, I can help. Let me pull up your HomeShield policy details.",
+  user_2,28/09/2026 T10:15:20,"Just a sec, pulling the record...",
+  user_2,28/09/2026 T10:15:35,"Okay, I see your policy (Policy #HS-2024-7890) is set to expire on 30/09/2026.",
+  user_1,28/09/2026 T10:15:50,"oh no, that’s soon. what are my options? can i renew or do i need to switch?",
+  user_2,28/09/2026 T10:16:05,"We can definitely renew it. Since you’ve been a loyal customer for 5 years, you qualify for a 5% loyalty discount on the renewal premium.",
+  user_2,28/09/2026 T10:16:12,"Alternatively, if you’re considering a different coverage level, we can adjust the sum insured.",
+  user_1,28/09/2026 T10:16:25,"sounds good. i’d like to renew with the same coverage. what’s the premium now?",
+  user_2,28/09/2026 T10:16:40,"The renewal premium comes to $1,250 annually (incl. discount). I’ll send you the renewal quote shortly.",
+  user_2,28/09/2026 T10:16:55,"Also, I’ve attached the renewal document for your review.",https://storage.dcoders.com/docs/Renewal_HS-2024-7890.pdf

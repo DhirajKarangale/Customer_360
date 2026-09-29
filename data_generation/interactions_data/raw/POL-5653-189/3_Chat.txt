@@ -1,0 +1,12 @@
+chat_id: a3f9c2d4-7b1e-4a6f-9c3e-2d5b8f1e7a90
+participants[2]{id,name,role}:
+  6d1f9a23-5c4b-4e9a-8f2d-1a7c9e3b5d6f,Ishaan Bose,customer
+  9b2e8c44-3d7a-4f1c-9a6b-2c8d5e7f9a0b,Ramesh Tiwari,insurance agent
+messages[7]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T14:05:12,"hey ramesh, got the form thx. quick q: how do i pay the $25 reinstatement fee?", 
+  user_2,28/09/2026 T14:05:48,"Hi Ishaan! 😊 You can pay via credit card, debit card, or net‑banking. I’ll send a secure payment link.", 
+  user_2,28/09/2026 T14:05:50,"Here’s the link: https://payments.dcoders.com/rehab/25fee?policy=HL-2026‑001", 
+  user_1,28/09/2026 T14:06:22,"got it. any deadline for sending back the completed form? *sending", 
+  user_2,28/09/2026 T14:07:01,"Yes, please return the signed form and payment receipt by 30/09/2026. After that we can’t guarantee retroactive coverage.", 
+  user_1,28/09/2026 T14:07:45,"thanks! i’ll do that asap. one more thing – can i use paypal? *PayPal", 
+  user_2,28/09/2026 T14:08:20,"We currently support PayPal via our portal link, so yes. Just select PayPal at checkout.",

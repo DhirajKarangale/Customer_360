@@ -1,0 +1,8 @@
+mail_id: 9f2c7a1b-8e4d-4b2a-9c3f-1d6e5b7c8a9f
+subject: Updated Auto Policy Document – AU‑4521‑R1
+participants[2]{id,name,email,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Rohan Deshmukh,rohan.d@dcoders.com,customer
+  d4e5f6a7-89ab-0cde-f123-456789abcdef,Anjali Desai,anjali.desai@firstguard.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,30/09/2026 T:10:15:00,"Dear Rohan,\n\nI hope you’re doing well. As discussed on our call earlier today, I’ve attached the updated auto policy document for your renewed coverage (Policy No. AU‑4521‑R1). The previous policy AU‑4521 is now marked as Expired in our system, and the new policy is active until 31/08/2027.\n\nPlease review the attached document at your convenience. If you have any questions or need further assistance, feel free to reach out.\n\nBest regards,\nAnjali Desai\nInsurance Agent, First Guard Brokers\nPhone: +91‑98765‑43210\nEmail: anjali.desai@firstguard.com",https://storage.firstguard.com/policies/AU-4521-R1.pdf
+  user_1,user_2,,30/09/2026 T:10:45:00,"Hi Anjali,\n\nThank you for sending over the updated policy document. I’ve reviewed it and everything looks good. I’ll keep it on file.\n\nThanks again for your help.\n\nRegards,\nRohan Deshmukh",

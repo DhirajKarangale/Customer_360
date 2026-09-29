@@ -1,0 +1,20 @@
+call_id: REC-INS-007A
+start_timestamp: 20/09/2026 T:14:05:00
+end_timestamp: 20/09/2026 T:14:09:30
+participants[2]{id,name,role}:
+  3f9b2c1e-7a4d-4f9a-9c3e-2b5d6e8f0a1b,Aditi Mahajan,customer
+  d2e5b7c3-9f1a-44b2-8d6e-5c3a9f0b7c4d,Karan Joshi,insurance agent
+messages[13]{user,text}:
+  user_2,Hi Aditi, this is Karan from Safe Step Insurance, how are you doing today? [00:00]
+  user_1,Oh hi Karan... uh, I'm good, thanks. Just a bit busy, you know.
+  user_2,No worries. I just wanted to quickly confirm that your auto‑debit setup for the Health Plus Plus plan is all good.
+  user_1,Sure, uh, I sent the cheque image yesterday, right? Did you get it?
+  user_2,Yes, I got it—thanks. I’ve processed the e‑mandate, so the first premium of ₹12,480 will be debited on 05/10/2026.
+  user_1,[sighs] Great. And the policy... it expires on 05/10/2026, right? So the new one starts immediately after?
+  user_2,Exactly. The upgrade kicks in on the same day, no gap. Your coverage limits increase to ₹12 Lakhs, deductible stays at ₹5,000.
+  user_1,Okay... and I guess I’ll get the updated policy document by email?
+  user_2,Yes, I’ll send it right after this call—should be in your inbox in a few minutes. Anything else you need?
+  user_1,Um, maybe just a quick recap of the premium amount and the auto‑debit schedule?
+  user_2,Sure thing. Premium is ₹12,480 per year, payable annually on 05 Oct. Auto‑debit will happen on that date, and you’ll get a reminder a week before.
+  user_1,Alright, thanks Karan. That’s all for now.
+  user_2,You’re welcome! Feel free to call if you have any questions. Have a good day!

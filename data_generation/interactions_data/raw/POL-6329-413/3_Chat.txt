@@ -1,0 +1,13 @@
+chat_id: 9f3b2c7e-5d4a-4e9b-8a1f-0c2d6e7f9b01
+participants[2]{id,name,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Kunal Mehta,customer
+  e7f8g9h0-7777-8888-9999-aaaabbbbcccc,Anita Sharma,insurance agent
+messages[8]{user,timestamp,text,media_url}:
+  user_1,29/09/2026 T10:15:30,"hi Anita, got the declaration form. thnks!", 
+  user_2,29/09/2026 T10:15:45,"Hi Kunal! Glad you received it. Let me know if you have any q's.", 
+  user_1,29/09/2026 T10:16:10,"I will sign it and send back with the valuation report. Any specific format for the report?", 
+  user_2,29/09/2026 T10:16:40,"You can attach the report as a PDF. If you have multiple pages, a single combined PDF is fine.", 
+  user_1,29/09/2026 T10:17:05,"Great, thanks. Also, the lump‑smm payment—*sum, can I do a bank transfer or do you need a check?", 
+  user_2,29/09/2026 T10:18:00,"Bank transfer works best. I’ll send you our account details in a follow‑up email. Once we get the signed form and valuation, we’ll process the $850 premium.", 
+  user_1,29/09/2026 T10:18:30,"Got it. I’ll aim to send everything by tomorrow afternoon.", 
+  user_2,29/09/2026 T10:19:05,"Perfect! I’ll keep the policy status as Pending until we receive the docs. Let me know if anything else comes up.",

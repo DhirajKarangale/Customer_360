@@ -1,0 +1,19 @@
+call_id: CALL-DC-20260930-004
+start_timestamp: 30/09/2026 T:14:10:00
+end_timestamp: 30/09/2026 T:14:13:45
+participants[2]{id,name,role}:
+  9f2c3a7e-5b1d-4f8a-9c2e-1d4b6f7a9c01,Kunal Mehta,customer
+  d4e8b9c2-3a7f-44c5-8f6a-2b5e9d0f3a77,Anita Sharma,insurance agent
+messages[12]{user,text}:
+  user_1,[00:00] Hey Anita it's Kunal. Uh just calling to about the home policy.
+  user_2,[00:15] Hi Kunal! Yeah I see you on the line. How can I help you today?
+  user_1,[00:30] So I wanted to let you know I'll be sending the signed declaration form and the property valuation report first thing tomorrow morning.
+  user_2,[00:45] Great thanks. Just to confirm you'll combine them into one PDF right?
+  user_1,[01:00] Yeah that's what I was thinking. Um any specific format you need for the valuation like a certified appraisal PDF? [sighs]
+  user_2,[01:15] As long as it's a clear PDF with the assessor's signature and the property details we're good. No extra formatting required.
+  user_1,[01:30] Got it. And for the $850 premium you mentioned bank transfer could you send me the account details again?
+  user_2,[01:45] Sure I'll email you the bank details right after this call. I'll also attach a quick checklist so you know what we need.
+  user_1,[02:00] Thanks Anita. One more thing – once you get the docs will the policy move from Pending to Active immediately?
+  user_2,[02:15] Yes once we verify the signed declaration and the valuation we'll update the status to Active and send you the confirmation.
+  user_1,[02:30] Perfect. I'll make sure to get it over by tomorrow. Appreciate your help.
+  user_2,[02:45] No problem Kunal. Talk soon. Have a good day!

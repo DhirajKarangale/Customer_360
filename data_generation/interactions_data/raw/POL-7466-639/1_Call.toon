@@ -1,0 +1,40 @@
+call_id: 7f9c3e2a-5b1d-4f8a-9c6e-2d4b7a1e3f90
+start_timestamp: 28/09/2026 T:09:15:00
+end_timestamp: 28/09/2026 T:09:45:00
+participants[2]{id,name,role}:
+  9f3c1a2b-7e4d-41b9-9c2f-6a5d8e7b9c10,Reyansh Tiwari,customer
+  d2b5e6f8-3c1a-4f9d-a2b7-5c6e9d1f3a44,Ravi Menon,insurance agent
+messages[33]{user,text}:
+  user_1,Hey... umm, hi, is this Ravi?
+  user_2,Hello, this is Ravi Menon from Secure Future Group, how can I help you today?
+  user_1,Yeah, I’m Reyansh. I... I wanted to check on my auto policy, I think it’s about to expire.
+  user_2,Sure, let me pull that up. One sec... [typing]
+  user_2,[hold music]
+  user_2,Alright, I have it here. Policy number... uh, can you confirm the number?
+  user_1,It's 2026-AUTO-4598.
+  user_2,Got it. Give me a moment... [typing]
+  user_2,[hold music]
+  user_2,Okay, looks like the policy is set to expire on 15/10/2026.
+  user_1,Oh, that's soon. I was hoping to maybe extend or... maybe cancel?
+  user_2,We can do either. If you want to extend, there’s a renewal option. If you cancel, it’ll go to expired status.
+  user_1,Umm, I think I want to cancel. I’m selling the car.
+  user_2,Got it. Let me walk you through the cancellation. First, we need to verify some details.
+  user_2,Can you confirm your date of birth?
+  user_1,Sure... it's 12/04/1990.
+  user_2,Thanks. Also, can you confirm the VIN? I have it as 1HGCM82633A004352.
+  user_1,Yeah, that's right.
+  user_2,Great. One sec while I process the cancellation... [typing]
+  user_2,[hold music]
+  user_2,All set. Your policy is now cancelled and will be marked as expired on 15/10/2026.
+  user_1,Okay, thanks. Will I get a confirmation email?
+  user_2,Yes, we’ll send it right after this call. Anything else I can help with?
+  user_1,Actually, can you tell me about any refunds? I paid the annual premium already.
+  user_2,Since you’re cancelling before the renewal date, you’re eligible for a prorated refund of the remaining months.
+  user_1,Cool, how long does that take?
+  user_2,Usually 5-7 business days to your original payment method.
+  user_1,Alright, thanks. Oh, by the way, my dog was barking earlier, sorry about that.
+  user_2,No worries at all. [laughs] Anything else?
+  user_1,Just wanted to say thanks for being helpful.
+  user_2,My pleasure, Reyansh. Have a great day!
+  user_1,You too, bye.
+  user_2,Goodbye.

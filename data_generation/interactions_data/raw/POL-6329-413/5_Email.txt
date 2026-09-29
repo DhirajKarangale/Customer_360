@@ -1,0 +1,8 @@
+mail_id: a1b2c3d4-5678-90ab-cdef-1234567890ab
+subject: Home Insurance Policy – Bank Details & Checklist
+participants[2]{id,name,email,role}:
+  9f8e7d6c-5b4a-3c2d-1e0f-a1b2c3d4e5f6,Kunal Mehta,kunal.mehta@example.com,customer
+  1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d,Anita Sharma,anita.sharma@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,30/09/2026 T:09:15:00,"Hi Kunal,\n\nFollowing our call earlier today, please find attached the bank‑transfer details for the $850 premium and a short checklist to help you gather everything we need to move your home‑insurance policy from ‘Pending’ to ‘Active’.\n\n**Bank Transfer Details**\nAccount Name: DCoders Insurance Ltd.\nAccount No.: 0123456789\nIFSC: DCODUS33\nReference: Please use your policy number H‑2026‑KM‑001.\n\n**Checklist**\n1. Signed Home‑Insurance Declaration Form (PDF)\n2. Property Valuation Report (PDF) – any format is fine as long as it’s readable.\n3. Confirmation of payment (screenshot or transaction receipt).\n\nOnce we have the signed declaration, the valuation report and the payment confirmation, I’ll update the policy status immediately.\n\nIf you have any questions about the format or need further assistance, just let me know.\n\nBest regards,\nAnita Sharma\nInsurance Agent, Trust Wealth Advisors\nanita.sharma@dcoders.com",https://storage.dcoders.com/docs/BankDetails_Checklist_KM_2026.pdf
+  user_1,user_2,,30/09/2026 T:10:05:00,"Hi Anita,\n\nThanks for sending over the bank details and checklist. I’ve saved the PDF and will initiate the $850 transfer today. I’ll also sign the declaration form and attach the valuation report in a combined PDF and send it back to you by tomorrow morning.\n\nAppreciate your help!\n\nRegards,\nKunal Mehta",

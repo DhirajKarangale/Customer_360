@@ -1,0 +1,11 @@
+chat_id: 9f3b2a1c-4d5e-6f7a-8b9c-0d1e2f3a4b5c
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Saanvi Pillai,customer
+  f1e2d3c4-9876-54ba-dcba-0987654321fe,Neha Kapoor,insurance agent
+messages[6]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T10:05:12,"hey neha, got the brochure thx. can u tell me the cost diffrence *difference between renew and my current plan?",
+  user_2,28/09/2026 T10:06:00,"Hi Saanvi! 😊 Happy to help. The renewal premium for HP‑2024‑9876 will be ₹12,500 per annum, which is ₹1,200 higher than your current ₹11,300.",
+  user_1,28/09/2026 T10:07:15,"oh ok. is there any grace period if i miss the deadline? also what's the last date i can renew to avoid a gap?",
+  user_2,28/09/2026 T10:08:05,"Good question! You have a 15‑day grace period after the expiry (which was 30/08/2026). To keep continuous coverage, please complete renewal by 14/09/2026.",
+  user_1,28/09/2026 T10:09:30,"got it. can you send me the payment link or a quick quote pdf?",
+  user_2,28/09/2026 T10:10:20,"Sure thing! Here’s the detailed quote and payment portal link.",https://storage.dcodelife.com/docs/HP-2024-9876_Renewal_Quote.pdf

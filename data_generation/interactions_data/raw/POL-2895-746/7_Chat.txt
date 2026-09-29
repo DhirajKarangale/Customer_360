@@ -1,0 +1,15 @@
+chat_id: 7f9c3a1b-4e2d-48b9-9a6f-1d2e5c8b7a90
+participants[2]{id,name,role}:
+  a12f5c9e-3b4d-4e7a-8c9f-6b2d1e4f7c3a,Meera Chauhan,customer
+  d4b8e7f2-9c1a-4f6d-8b3e-2a5c9d0e1f6b,Anita Sharma,insurance agent
+messages[10]{user,timestamp,text,media_url}:
+  user_1,02/10/2026 T09:15:12,"hi Anita, i need to know how to file a claim now that my polciy is active", 
+  user_2,02/10/2026 T09:15:45,"Good morning Meera! Happy to help. You can file a claim online via our portal or call 1‑800‑555‑1234. Would you like the step‑by‑step guide?", 
+  user_1,02/10/2026 T09:16:05,"yes please, send me the guide", 
+  user_2,02/10/2026 T09:16:30,"Sure, here’s the PDF. Let me know if you have any questions.",https://storage.dcoders.com/docs/Claim_Guide_AU-2026-0456.pdf
+  user_1,02/10/2026 T09:18:10,"thanks! also, can i add my sister as an additional driver? she has a clean record.", 
+  user_2,02/10/2026 T09:18:45,"Absolutely, we can add her. I’ll need her driver’s license number and DOB.", 
+  user_1,02/10/2026 T09:19:20,"her license is D1234567, dob 12/05/1995.", 
+  user_2,02/10/2026 T09:20:05,"Got it. Adding now... Done! She’s added as an additional driver. Your premium will increase by $30/month.", 
+  user_1,02/10/2026 T09:20:30,"oh great, *great! when will the new premium reflect?", 
+  user_2,02/10/2026 T09:21:00,"The updated premium will appear on your next billing cycle starting 01/11/2026.",

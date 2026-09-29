@@ -1,0 +1,7 @@
+mail_id: e84f29a1-7c32-48ea-912c-0e83bf6201b4
+subject: Policy Activation Confirmation and Final Welcome Kit - DCoders Life Insurance
+participants[2]{id,name,email,role}:
+  d4b21915-1842-4f93-8b7a-904128f6e102,Rohan Deshmukh,rohan.deshmukh@mail.com,customer
+  7a1c8340-5e29-4391-b4f2-1082be73fa91,Ramesh Tiwari,ramesh.tiwari@safeshieldagency.com,insurance agent
+mails[1]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2026 T:11:15:30,"Dear Rohan,\n\nIt was a pleasure speaking with you earlier today. Following our verification of your nominee details and documents via chat and call, I am pleased to confirm that your life insurance policy with DCoders has been successfully activated in our system.\n\nYour policy is now fully active, and all coverage terms are in effect as of today. I have attached your official policy bond, premium receipt, and the final welcome kit to this email for your permanent records.\n\nPolicy Number: DC-LIFE-884920\nStatus: Active\n\nThank you for choosing Safe Shield Agency and DCoders for your financial protection needs. Please feel free to reach out if you have any questions or require further assistance in the future.\n\nWarm regards,\n\nRamesh Tiwari\nSenior Insurance Advisor\nSafe Shield Agency (Partnered with DCoders)",https://storage.safeshieldagency.com/docs/DC_LIFE_884920_WelcomeKit.pdf

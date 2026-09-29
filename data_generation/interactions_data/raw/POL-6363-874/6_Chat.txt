@@ -1,0 +1,11 @@
+chat_id: a5f3c9e2-7b4d-4f2a-9c1e-3d5b8f6a9c2d
+participants[2]{id,name,role}:
+  1c2d3e4f-5678-90ab-cdef-1234567890ab,Meera Chauhan,customer
+  9f8e7d6c-5432-1b0a-9c8d-abcdef123456,Ravi Menon,insurance agent
+messages[6]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T10:05:12,"hi ravi, i just got the renewal link you sent*sent. can u confirm if the payment i made via card went through? i used 4242 4242 4242 4242.",
+  user_2,28/09/2026 T10:05:45,"Hey Meera! Let me check that for you. One sec…",
+  user_1,28/09/2026 T10:06:20,"thx! also, does the new policy start on 10 Oct 2026 exactly? i have a flight on 12 Oct.",
+  user_2,28/09/2026 T10:06:55,"Yes, the coverage kicks in on 10 Oct 2026, so you’re all set for your flight. I see the card payment of $145 was approved. I’ll send you the receipt and the policy PDF.",https://storage.dcoders.com/receipts/TRV-2024-0789_receipt.pdf
+  user_1,28/09/2026 T10:07:30,"great! can you also tell me how i can add my spouse as a co‑travler?*traveler it might need coverage for them too.",
+  user_2,28/09/2026 T10:08:05,"Sure thing – you can add a spouse by opening the policy in our portal, clicking ‘Add traveler’, and uploading their passport. It’ll cost an extra $30. I’ve attached the step‑by‑step guide.",https://storage.dcoders.com/guides/add_spouse_travel_coverage.pdf

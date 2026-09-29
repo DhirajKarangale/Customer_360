@@ -1,0 +1,21 @@
+call_id: CALL-DC-20260928-003
+start_timestamp: 28/09/2026 T:10:15:00
+end_timestamp: 28/09/2026 T:10:19:00
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Dev Chatterjee,customer
+  f1e2d3c4-8765-43ba-9cde-0987654321fe,Neha Kapoor,insurance agent
+messages[14]{user,text}:
+  user_1,[00:00] Hi Neha, uh... I got your email about the renewal. Thanks.
+  user_2,Hey Dev, good morning! Yeah I sent it over. Did you have a look at the numbers?
+  user_1,Yeah, I saw the $1,250 premium with the 5% loyalty discount. Looks fine.
+  user_2,Great. So you wanted the payment link, right?
+  user_1,Exactly. And— uh— I also wanted to know, once I pay, does the policy start immediately? Or is there a gap?
+  user_2,No gap. As soon as we get the payment, the coverage rolls over on the same day the old policy expires. [sighs] It's seamless.
+  user_1,Good. And can I pay with a credit card? I don't have a checkbook handy.
+  user_2,Absolutely, we accept Visa, MasterCard, Amex. I can send you a secure link right now.
+  user_1,Perfect. Please send it.
+  user_2,Sure thing— sending now. You'll get an email with the link, plus a short text if you prefer. Do you want the SMS too?
+  user_1,Yeah, that'd be helpful. My number is the same as on file.
+  user_2,All set. Once you click the link and complete payment, you'll get a confirmation receipt and the updated policy document. Anything else I can help with?
+  user_1,No, that's all. Thanks, Neha.
+  user_2,You're welcome! Have a great day, Dev.

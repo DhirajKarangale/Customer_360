@@ -1,0 +1,8 @@
+mail_id: 9f3b2c1d-1234-5678-9abc-def012345678
+subject: Health Policy Renewal Confirmation – Policy #HP-2026-0456
+participants[3]{id,name,email,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Pranav Mishra,pranav.mishra@dcoders.com,customer
+  e5f6g7h8-7777-8888-9999-aaaabbbbcccc,Ravi Menon,ravi.menon@securefuturegroup.com,insurance agent
+  i9j0k1l2-dddd-eeee-ffff-111122223333,Anita Rao,anita.rao@dcoders.com,account manager
+mails[1]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,user_3,28/09/2026 T:10:15:00,"Dear Pranav,\n\nI’m pleased to confirm that your health policy (Policy No: HP-2026-0456) has been successfully renewed as of 27 September 2026. The coverage is active for the next 12 months, with a monthly premium of $120, which we have received.\n\nPlease find the updated policy document attached for your records.\n\nIf you have any further questions or need assistance, feel free to reach out.\n\nBest regards,\nRavi Menon\nInsurance Agent, Secure Future Group\nPhone: +1-555-0123\nEmail: ravi.menon@securefuturegroup.com",https://storage.securefuturegroup.com/policies/HP-2026-0456_Updated.pdf

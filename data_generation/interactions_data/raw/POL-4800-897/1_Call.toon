@@ -1,0 +1,17 @@
+call_id: 7f3a9c2e-1b4d-4f8a-9c2e-6b5d8f1a2c3d
+start_timestamp: 28/09/2026 T:09:15:00
+end_timestamp: 28/09/2026 T:09:22:30
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Kunal Mehta,customer
+  d4e5f6g7-8910-11aa-bbcc-223344556677,Ravi Menon,insurance agent
+messages[10]{user,text}:
+  user_1,[00:00] Hey Ravi uh... I just got a notification that my health policy is about to expire. Can you...?
+  user_2,[00:05] Hi Kunal yeah I see that. Let me pull it up... [typing] ... Okay your policy #HP-3421 is set to expire on 30/09/2026.
+  user_1,[00:12] Oh... that's sooner than I thought. I was hoping to keep it active. What are my options?
+  user_2,[00:18] We can either renew it for another year or you could switch to a different plan. Since it's a health policy renewal is usually straightforward.
+  user_1,[00:24] Umm I... I think I might just let it lapse. I'm not sure I need it anymore.
+  user_2,[00:30] I understand. If you let it expire you won't have coverage for any medical expenses after 30th. That could be risky.
+  user_1,[00:38] Yeah I know. I just... [sighs] ... I'm moving to a new job and they have their own health benefits.
+  user_2,[00:45] Got it. In that case we can process a cancellation effective 30/09/2026 so it shows as Expired in our system. Do you want me to send you a confirmation email?
+  user_1,[00:52] Yes please. And could you also let me know if there's any refund for the unused months?
+  user_2,[01:00] Since the policy is annual and you’re cancelling at the end of the term there’s no prorated refund. I’ll note the expiration and send the email now.

@@ -1,0 +1,19 @@
+call_id: 9f3b7c2e-5d1a-4e9b-8f6c-2a1d4e9b7c01
+start_timestamp: 28/09/2026 T:10:15:00
+end_timestamp: 28/09/2026 T:10:19:00
+participants[2]{id,name,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Dev Chatterjee,customer
+  f7e8d9c0-7777-8888-9999-aaaabbbbcccc,Anita Sharma,insurance agent
+messages[12]{user,text}:
+  user_1,[00:00] Hello, uh... is this Anita from Trust Wealth Advisors?
+  user_2,[00:05] Hi Dev, yes this is Anita. How can I help you today?
+  user_1,[00:10] I'm calling about my travel policy... I think it's about to expire?
+  user_2,[00:15] Let me pull that up... one sec... [typing] ... Okay, I see policy #TRV-2024-9876.
+  user_1,[00:22] Right, that's the one. I was wondering if I could... extend it? Or maybe just... cancel since I'm not traveling anymore.
+  user_2,[00:28] I get that. The policy is actually set to expire on 30/09/2026. After that it will automatically become 'Expired'.
+  user_1,[00:35] Oh... so it's already close. Can we... uh... keep it active for another year?
+  user_2,[00:40] Unfortunately the product rules don't allow renewal after the expiry date. We could issue a new policy, but the current one will just lapse.
+  user_1,[00:45] Got it. So it's going to be marked as Expired in the system then?
+  user_2,[00:48] Yes, that's correct. It'll show as Expired on 30/09/2026.
+  user_1,[00:52] That's a bit disappointing, I was hoping to... maybe get a refund for the unused months? [sighs]
+  user_2,[00:58] I'm sorry to hear that. Since the policy is still active until the expiry date, we can’t refund now, but you could let it run out or we can set up a new travel plan for next year.

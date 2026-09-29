@@ -1,0 +1,8 @@
+mail_id: 9f3b7c1e-4a2d-4f9b-8c3e-1a2b3c4d5e6f
+subject: Your Health Policy Renewal Options – DCoders
+participants[2]{id,name,email,role}:
+  a1b2c3d4-1111-2222-3333-444455556666,Ishaan Bose,ishaan.bose@dcoders.com,customer
+  d4e5f6g7-7777-8888-9999-aaaabbbbcccc,Sunita Agarwal,sunita.agarwal@protectall.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,21/09/2026 T:09:15:00,"Hi Ishaan,\n\nThank you for speaking with me earlier regarding your health policy (Policy No: HP-2024-5678) which is set to expire on 30/09/2026. As discussed, you have the option to renew for another year at the current premium, or switch to our upgraded Comprehensive Care Plan which offers additional benefits such as tele‑health consultations and a higher annual coverage limit.\n\nPlease find attached the renewal brochure that outlines the plans, pricing, and the steps to complete the renewal online or via a signed form.\n\nLet me know if you have any questions or need assistance with the renewal process.\n\nBest regards,\nSunita Agarwal\nInsurance Agent, Protect All Agency\nsunita.agarwal@protectall.com",https://storage.dcodelabs.com/brochures/Health_Renewal_2026.pdf
+  user_1,user_2,,21/09/2026 T:10:02:15,"Hi Sunita,\n\nThanks for sending over the brochure. I’ve reviewed the options and have a couple of questions about the premium increase for the Comprehensive Care Plan. Could you please clarify the exact amount and whether there’s a discount for early renewal?\n\nRegards,\nIshaan Bose\nDCoders\nishaan.bose@dcoders.com",

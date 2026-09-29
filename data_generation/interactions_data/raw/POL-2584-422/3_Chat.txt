@@ -1,0 +1,11 @@
+chat_id: 7f3a9c1e-5b2d-4e9a-8c6f-2d1e9b6a4c3f
+participants[2]{id,name,role}:
+  1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d,Pooja Bhatia,customer
+  9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f,Karan Joshi,insurance agent
+messages[6]{user,timestamp,text,media_url}:
+  user_1,29/09/2026 T09:12:15,"hey karan, thx for the email! just wondering when exactly will the $80 hit my accoutn *account? :)", 
+  user_2,29/09/2026 T09:12:45,"hey pooja! happy to help 😊 the refund should land by 04/10/2026 (that's 3‑5 biz days).", 
+  user_1,29/09/2026 T09:13:20,"got it, thx! will i get a notifcation *notification or should i check my bank?", 
+  user_2,29/09/2026 T09:13:55,"you’ll get an email confirmation once it’s processsed *processed and you can also see it in your online portal. any other questions?", 
+  user_1,29/09/2026 T09:14:30,"no that's all, thx again! have a grea *great day :)", 
+  user_2,29/09/2026 T09:15:05,"you too, pooja! take care.",

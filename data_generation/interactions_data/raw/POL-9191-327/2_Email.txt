@@ -1,0 +1,7 @@
+mail_id: 9f3b1c2e-7a4d-4f8b-9c12-3e5d6f7a8b9c
+subject: Renewal Quote for Your Auto Policy – Policy #AU-45789
+participants[2]{id,name,email,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Reyansh Tiwari,reyansh.tiwari@dcoders.com,customer
+  d4c3b2a1-8765-09ba-fedc-0987654321fe,Karan Joshi,karan.joshi@safeStepInsurance.com,insurance agent
+mails[1]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2026 T:10:15:00,"Hi Reyansh,\n\nThanks for speaking with me earlier about your auto policy that expired on 21/09/2026. As discussed, I’ve prepared a renewal quote for you. Below are the two options:\n\n1. **Standard Coverage** – $1,200 annual premium, includes liability, collision, and comprehensive.\n2. **Enhanced Coverage** – $1,450 annual premium, adds roadside assistance and rental car reimbursement.\n\nBoth options maintain your current deductible of $500. The policies would be effective from 01/10/2026.\n\nPlease review the attached PDF for a detailed breakdown and let me know which option you’d like to proceed with, or if you’d like to discuss any adjustments.\n\nYou can reply to this email or give me a call at (555) 123‑4567.\n\nBest regards,\nKaran Joshi\nInsurance Agent, Safe Step Insurance\nkaran.joshi@safeStepInsurance.com\n(555) 123‑4567",https://storage.safestepinsurance.com/quotes/auto/AU-45789_Renewal_2026.pdf

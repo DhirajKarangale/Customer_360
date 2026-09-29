@@ -1,0 +1,13 @@
+chat_id: c3b9f8e2-7a4d-4c9b-9f12-3d6e5a2b1c7f
+participants[2]{id,name,role}:
+  d9f1a2b3-4c5d-6e7f-8a9b-0c1d2e3f4a5b,Meera Chauhan,customer
+  a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d,Ravi Menon,insurance agent
+messages[8]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T10:15:02,"hi ravi, i saw ur email about the new travel policy. can i still use my old one (TRV‑2024‑0789) for my octobor*oct trip?",
+  user_2,28/09/2026 T10:15:15,"Hi Meera! Thanks for reaching out. Unfortunately the policy TRV‑2024‑0789 expired on 30/09/2025, so it won’t cover your October 2026 trip.*trip",
+  user_1,28/09/2026 T10:15:30,"oh nooo, that's bad. is there any way to reacttivate*reactivate it quickly?",
+  user_2,28/09/2026 T10:15:45,"We can’t reactivate an expired policy, but we can issue a new one effective 10 Oct 2026. It’s a standard 30‑day travel cover.",
+  user_1,28/09/2026 T10:16:05,"great! what do i need to do? do i fill a form?",
+  user_2,28/09/2026 T10:16:25,"Yes, just fill the online renewal form (https://securefuturegroup.com/travel/renew) and pay the premium. Once payment is confirmed, the policy will be active instantly.",
+  user_1,28/09/2026 T10:16:45,"got it, sending the form now. any doccuments*documents i should attach?",
+  user_2,28/09/2026 T10:17:05,"Just upload a copy of your passport and the trip itinerary. Here’s the policy PDF for reference.",https://storage.securefuturegroup.com/policies/TRV-2024-0789_New.pdf

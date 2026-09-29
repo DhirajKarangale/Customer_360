@@ -1,0 +1,8 @@
+mail_id: 9f3b7c2a-4d1e-4f9b-8a6c-2e5d9f1b0c3d
+subject: Request for Clarification on Life Policy Cancellation
+participants[2]{id,name,email,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Diya Menon,diya.menon@example.com,customer
+  d4e5f6a7-8910-11c2-d3e4-56789abcde01,Suresh Deshmukh,suresh.d@dcoders.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,01/10/2026 T:09:15:30,"Hi Suresh,\n\nI just received a notice that my life insurance policy (Policy No: LP-452789) has been cancelled. I haven't missed any payments, and I didn't receive any prior warning. This is quite concerning as I rely on this coverage.\n\nCould you please explain why it was cancelled and let me know what can be done to reinstate it?\n\nThank you,\nDiya",
+  user_2,user_1,,01/10/2026 T:10:02:45,"Dear Diya,\n\nI’m sorry to hear about the confusion regarding your policy cancellation. After reviewing your account, it appears the policy was marked for cancellation due to an outstanding premium payment that was not received by the due date of 15/09/2026. Our system also flagged a missing signed rider document which is required for the policy to remain active.\n\nTo reactivate the policy, we can:\n1. Process the overdue premium of $150.00 immediately.\n2. Provide the signed rider document (I’ve attached the form for your convenience).\n\nOnce both items are received, we can restore the coverage retroactively to the date of cancellation.\n\nPlease let me know if you need any assistance completing the form or setting up a payment.\n\nBest regards,\nSuresh Deshmukh\nInsurance Agent, Secure Life Solutions\nPhone: +1-555-123-4567\nEmail: suresh.d@dcoders.com",https://storage.dcodelife.com/docs/LP-452789_RiderForm.pdf

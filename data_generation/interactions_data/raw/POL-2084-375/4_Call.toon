@@ -1,0 +1,21 @@
+call_id: REC-DC-2026-0099
+start_timestamp: 29/09/2026 T:10:15:00
+end_timestamp: 29/09/2026 T:10:20:30
+participants[2]{id,name,role}:
+  c1a9f8e2-7b4d-4e2a-9c33-5d6f1a2b9c0d,Kavya Iyer,customer
+  d3b2c5f9-8e1a-4b6c-9d2f-1a3e4f6b7c8d,Neha Kapoor,insurance agent
+messages[14]{user,text}:
+  user_1,"[00:00] Hello, um... is this Neha? I wanted to... check on the cancellation of my health policy."
+  user_2,"Hi Kavya, yes this is Neha from Shield Life Services. How can I help you today?"
+  user_1,"I got the email confirming the cancellation, but I just wanted to make sure everything is set. The policy number is HP-DC-2024-5678."
+  user_2,"Sure, let me pull that up... [typing] ...Okay, I see the cancellation request was processed earlier today."
+  user_1,"Great. So does that mean the coverage stops right now? I have a few upcoming appointments."
+  user_2,"The effective date of cancellation is 30 September 2026, so you’re still covered until end of day today. After that, no coverage."
+  user_1,"Got it. And what about the premium I paid for December? I paid the $120 on 12 September."
+  user_2,"Since the policy is cancelled before the next premium due date, that $120 will be prorated and refunded to your original payment method within 7‑10 business days."
+  user_1,"Okay, thanks. Is there any paperwork I need to sign? [sighs]"
+  user_2,"No, everything is handled electronically. You'll receive a final confirmation email shortly."
+  user_1,"Alright, appreciate it. One more thing—can I re‑activate later if I change my mind?"
+  user_2,"You can always apply for a new policy with us. The previous policy can’t be reinstated, but we’ll be happy to help you set up a new one."
+  user_1,"Thanks, Neha. That's all for now."
+  user_2,"You’re welcome, Kavya. Have a good day!"

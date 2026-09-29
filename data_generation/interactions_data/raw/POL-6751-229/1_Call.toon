@@ -1,0 +1,23 @@
+call_id: CALL-8f3a2c9b-5d1e-4b7a-9c2f-1e2d3b4c5d6e
+start_timestamp: 15/10/2026 T:09:12:00
+end_timestamp: 15/10/2026 T:09:19:30
+participants[2]{id,name,role}:
+  3f9c2a7e-1b4d-4e6f-9a12-5d8b6c9e0f1a,Rohan Deshmukh,customer
+  d4b8e9f3-2c7a-4f5b-8d3e-6a1c9b2d3e4f,Vikram Patel,insurance agent
+messages[16]{user,text}:
+  user_2,[00:00] Hi, is this Rohan Deshmukh? This is Vikram Patel from Omni Insurance Group, calling about your health policy.
+  user_1,[00:05] Umm, yes speaking... hi Vikram.
+  user_2,[00:10] Great, thanks. I see your policy—Health Plan ID HP-2023-0456—has reached its expiry date as of 30/09/2026.
+  user_1,[00:15] Oh... already? I thought it was still active.
+  user_2,[00:18] Yeah, the system shows it's marked as Expired. I wanted to discuss renewal options—
+  user_1,[00:22] -- sorry, can you repeat that? I was just checking my email.
+  user_2,[00:25] Sure, I said your current health policy expired last month. We can either renew the same coverage or look at a new plan.
+  user_1,[00:30] Hmm, what's the difference? I don't want any surprise premium hikes.
+  user_2,[00:35] Well, the renewal keeps your existing terms, but rates might increase by about 5% due to market adjustments. A new plan could give you broader network access, but the premium could be higher.
+  user_1,[00:45] [sighs] I see. Honestly, I was hoping to keep the same plan. Is there any way to lock the current rate?
+  user_2,[00:50] We could lock in a 1‑year renewal at the current rate, but it requires payment within the next 7 days. After that, the standard increase applies.
+  user_1,[00:55] alright, let me think. Can you send me the renewal details via email?
+  user_2,[01:00] Sure thing, I'll email you the quote and the renewal form right after this call.
+  user_1,[01:05] Thanks, Vikram. Appreciate the help.
+  user_2,[01:10] No problem, Rohan. Feel free to call back if you have any questions. Have a good day!
+  user_1,[01:15] You too, bye.

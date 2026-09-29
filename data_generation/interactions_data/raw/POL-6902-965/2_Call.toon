@@ -1,0 +1,23 @@
+call_id: REC-AV-45231-02
+start_timestamp: 30/09/2026 T:10:15:00
+end_timestamp: 30/09/2026 T:10:18:30
+participants[2]{id,name,role}:
+  7f9c2a1b-4e3d-4b9a-9c1e-2d5f6a7b8c9d,Vedant Thakur,customer
+  d3e5f6a7-8b9c-1d2e-3f4a-5b6c7d8e9f0a,Neha Kapoor,insurance agent
+messages[16]{user,text}:
+  user_1,[00:00] Hello? uh... hi, is this Neha from Shield Life Services?
+  user_2,[00:05] Hi Vedant, yes this is Neha. I got your email about the auto policy.
+  user_1,[00:10] Yeah, I just saw that my policy #AV‑45231 expired on Sep 15. I didn't expect that.
+  user_2,[00:15] I understand, it's because we don't auto‑renew unless you opt‑in. We can reinstate within 30 days...
+  user_1,[00:20] Re‑...re‑instate? How does that work? Is there a penalty?
+  user_2,[00:25] No penalty, just the back‑dated premium from Sep 15 to today, plus a small admin fee of $15.
+  user_1,[00:30] Hmm, okay. And if I just get a new policy, you mentioned a loyalty discount?
+  user_2,[00:35] Yes, we can offer a 5% discount on the new quote I emailed you. The total would be $1,200 annual.
+  user_1,[00:40] $1,200... that's a bit higher than my previous $1,050. Can we maybe keep the same coverage but lower the deductible?
+  user_2,[00:45] Let me check... we could raise the deductible to $500, that brings it down to $1,130. Does that work?
+  user_1,[00:50] Yeah, that sounds reasonable. So... I can reinstate now, right?
+  user_2,[00:55] Yes, I can process the reinstatement right now. I’ll need your confirmation and a payment method.
+  user_1,[01:00] Sure, go ahead. I’ll use the credit card on file.
+  user_2,[01:05] Got it, I’ve submitted the reinstatement. You’ll receive a confirmation email shortly. Anything else I can help with?
+  user_1,[01:10] No, that’s all. Thanks, Neha.
+  user_2,[01:12] You’re welcome! Have a safe drive.

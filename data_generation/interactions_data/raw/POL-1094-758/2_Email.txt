@@ -1,0 +1,8 @@
+mail_id: a7f3c9e2-4b1d-41f9-9a6e-2d5f8c3b7e12
+subject: Your Auto Policy Renewal – Documents Enclosed
+participants[2]{id,name,email,role}:
+  3a6a7028-a699-4de4-b932-41271ff311d6,Vikram Singh,vikram.s@dcoders.com,insurance agent
+  08205bbe-3423-470e-a3fc-799eaf739c96,Kiara Sen,kiara.sen@email.com,customer
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_1,user_2,,28/09/2026 T:15:30:00,"Hi Kiara,\n\nThank you for speaking with me earlier. As discussed, I've attached your auto policy renewal documents. The new premium is $1,080, effective from 01/10/2026. Please review, sign, and return the attached PDF at your earliest convenience. If you have any questions, feel free to reach out.\n\nBest regards,\nVikram Singh\nInsurance Agent, ProtectAll Agency\nDCoders\nvikram.s@dcoders.com",https://storage.dcoders.com/policies/auto/KIARA_AUTO_2026_RENEWAL.pdf
+  user_2,user_1,,28/09/2026 T:16:05:00,"Hi Vikram,\n\nI received the renewal documents, thank you. I've reviewed the terms and everything looks good. I will sign and return the PDF by tomorrow.\n\nThanks again for the quick assistance!\n\nBest,\nKiara Sen",​

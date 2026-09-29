@@ -1,0 +1,13 @@
+chat_id: c3f9a7b2-8e4d-4f9a-bc2e-1d5f6a9e3c4b
+participants[2]{id,name,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Rohan Deshmukh,customer
+  b2c3d4e5-6789-0abc-def1-234567890abc,Karan Joshi,insurance agent
+messages[8]{user,timestamp,text,media_url}:
+  user_1,28/09/2026 T09:15:02,"hey karan, i need to check on my health policy cancelation* (HP‑2024‑5678).",
+  user_2,28/09/2026 T09:15:10,"Hi Rohan! Sure thing – the policy was cancelled* as of yesterday. The 24‑hour effective date is already applied.",
+  user_1,28/09/2026 T09:15:45,"got it, thx! any update on the refund? i heard 5‑7 business days.",
+  user_2,28/09/2026 T09:15:55,"Yes, the prorated refund is being processed. You should see the amount hit your bank within 5‑7 business days.",
+  user_1,28/09/2026 T09:16:30,"do i need to send any docs or bank info again? i think i gave it earlier.",
+  user_2,28/09/2026 T09:16:38,"No extra docs needed. We have your bank details on file, so the refund will be auto‑credited.",
+  user_1,28/09/2026 T09:17:05,"awesome, appreciate the help :)",
+  user_2,28/09/2026 T09:17:12,"Happy to help! Let me know if anything else comes up. Have a great day!",

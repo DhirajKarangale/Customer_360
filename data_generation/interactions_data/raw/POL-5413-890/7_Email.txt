@@ -1,0 +1,8 @@
+mail_id: e3f9a1c2-7b4e-4d9a-8f2c-1a2b3c4d5e6f
+subject: Confirmation of Reinstated Auto Policy and Roadside‑Assistance Rider
+participants[2]{id,name,email,role}:
+  a1b2c3d4-5678-90ab-cdef-1234567890ab,Akanksha Bhatt,akanksha.bhatt@dcoders.com,customer
+  d4e5f6a7-89ab-cdef-0123-456789abcdef,Karan Joshi,karan.joshi@sa­feste­pinsurance.com,insurance agent
+mails[2]{from,to,cc,timestamp,body,attachment_url}:
+  user_2,user_1,,28/09/2026 T:10:15:00,"Hi Akanksha,\n\nI'm pleased to confirm that your auto policy (AP-123456) has been fully reinstated, and the $12/month roadside‑assistance rider is now active. Attached you’ll find:\n- Your updated policy document with the reinstatement fee reflected.\n- A PDF containing the proof of insurance you can download or print.\n- A quick‑start guide outlining the claim‑filing process and the coverage details of the roadside‑assistance rider.\n\nIf you have any further questions or need additional assistance, feel free to reply to this email or give me a call.\n\nBest regards,\nKaran Joshi\nInsurance Agent | Safe Step Insurance\nkaran.joshi@sa­feste­pinsurance.com\n+1 (555) 123‑4567",https://storage.safestepinsurance.com/docs/AP-123456_Reinstated_Proof.pdf
+  user_1,user_2,,28/09/2026 T:10:45:00,"Hi Karan,\n\nThank you for the documents and the clear instructions. Everything looks good. I’ll keep the PDFs handy and will reach out if I need anything else.\n\nThanks again!\nAkanksha Bhatt",

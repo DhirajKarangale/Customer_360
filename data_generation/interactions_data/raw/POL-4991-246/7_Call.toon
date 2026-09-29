@@ -1,0 +1,17 @@
+call_id: REC-DC-007C
+start_timestamp: 02/10/2026 T:15:10:00
+end_timestamp: 02/10/2026 T:15:13:30
+participants[2]{id,name,role}:
+  c94812aa-789a-4bc1-b123-918237410091,Rohan Deshmukh,customer
+  4b8912cc-1234-4ef8-89ab-781923049812,Ramesh Tiwari,insurance agent
+messages[10]{user,text}:
+  user_2,[00:00] Hello Rohan! This is Ramesh from Safe Shield Agency here. Just calling to make sure everything is completely sorted with your DCoders life policy now that you've got the welcome kit and bond.
+  user_1,[00:12] Hey Ramesh. Yep, everything looks good. Umm, actually I was just looking through the printed receipt you suggested I keep handy.
+  user_2,[00:23] Ah, perfect! Glad you got a hard copy sorted out. It's always safer that way, you know, just in case digital systems act up.
+  user_1,[00:32] Exactly. It took me a second to find my printer cable [laughs], but I got it printed. So yeah, policy status is fully active in your DCoders portal right? Just want to be 100% sure.
+  user_2,[00:44] Oh absolutely, Rohan. Right after we confirmed those nominee details yesterday, I pushed the final trigger in the system. Your life policy status is rock-solid 'Active'.
+  user_1,[00:58] Awesome. That's a huge relief to finally have this whole process wrapped up. Thanks for staying on top of it, Ramesh.
+  user_2,[01:08] Anytime at all, Rohan! That's what I'm here for. If you ever need anything else regarding your coverage, just give me a direct ring or drop a chat.
+  user_1,[01:18] Will do. Thanks again, man. Have a good rest of your day.
+  user_2,[01:23] You too, Rohan. Take care, bye-bye!
+  user_1,[01:27] Bye.

@@ -1,0 +1,11 @@
+chat_id: a1b2c3d4-5678-90ab-cdef-1234567890ab
+participants[2]{id,name,role}:
+  d3f9e2b1-4c6a-44f2-9a8b-5e7d9c0f1a23,Tanvi Saxena,customer
+  7b2e5f9c-1a3d-48b7-9e2f-6c4d8a0b9e55,Sunita Agarwal,insurance agent
+messages[6]{user,timestamp,text,media_url}:
+  user_1,05/10/2026 T09:12:30,"hey sunita, quick q: after 30/09/2027 when my policy expires, do i still get the 15‑day claim window? *question",
+  user_2,05/10/2026 T09:13:15,"Hi Tanvi! Yes, the 15‑day post‑expiry claim window will still apply after 30/09/2027, so you can submit claims for services up to 15/10/2027.",
+  user_1,05/10/2026 T09:14:02,"got it, thx! also can i get a reminder before it ends? maybe in august like u said before.",
+  user_2,05/10/2026 T09:14:45,"Sure thing! I'll set a reminder for early August 2027 and send you an email & SMS.",
+  user_1,05/10/2026 T09:15:30,"cool, also could you resend the updated policy pdf? I misplaced the last one. *receive",
+  user_2,05/10/2026 T09:16:10,"Here is the updated policy document for the 01/10/2026‑30/09/2027 coverage.",https://storage.dcodelife.com/docs/HealthPolicy_Tanvi_Saxena_2026-2027.pdf
