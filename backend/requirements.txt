@@ -1,0 +1,11 @@
+psycopg2-binary
+python-dotenv
+fastapi
+uvicorn
+pydantic
+pydantic-settings
+email-validator
+passlib
+bcrypt
+redis
+requests

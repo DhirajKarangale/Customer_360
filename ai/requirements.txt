@@ -1,0 +1,13 @@
+psycopg2-binary
+python-dotenv
+snowflake-connector-python
+faiss-cpu
+numpy
+google-genai
+groq
+langchain
+langchain-core
+langchain-google-genai
+langchain-groq
+redis
+requests
