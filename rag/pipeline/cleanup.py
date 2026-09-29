@@ -1,33 +1,25 @@
 from __future__ import annotations
-
 import os
 import shutil
 from typing import Optional
-
-from rag.config import (
-    CHUNKS_DATA_DIR,
-    EMBEDDINGS_DATA_DIR,
-    VECTOR_STORE_DIR,
-)
-
+from rag.config import CHUNKS_DATA_DIR, EMBEDDINGS_DATA_DIR, VECTOR_STORE_DIR
 
 class CleanupManager:
-    """Provides cleanup operations for each RAG pipeline stage."""
 
     @staticmethod
-    def cleanup_chunks(chunks_dir: Optional[str] = None) -> None:
+    def cleanup_chunks(chunks_dir: Optional[str]=None) -> None:
         target = chunks_dir or CHUNKS_DATA_DIR
-        CleanupManager._remove_directory(target, "chunks")
+        CleanupManager._remove_directory(target, 'chunks')
 
     @staticmethod
-    def cleanup_embeddings(embeddings_dir: Optional[str] = None) -> None:
+    def cleanup_embeddings(embeddings_dir: Optional[str]=None) -> None:
         target = embeddings_dir or EMBEDDINGS_DATA_DIR
-        CleanupManager._remove_directory(target, "embeddings")
+        CleanupManager._remove_directory(target, 'embeddings')
 
     @staticmethod
-    def cleanup_vector_store(store_dir: Optional[str] = None) -> None:
+    def cleanup_vector_store(store_dir: Optional[str]=None) -> None:
         target = store_dir or VECTOR_STORE_DIR
-        CleanupManager._remove_directory(target, "vector store")
+        CleanupManager._remove_directory(target, 'vector store')
 
     @staticmethod
     def cleanup_all() -> None:
@@ -39,6 +31,6 @@ class CleanupManager:
     def _remove_directory(path: str, label: str) -> None:
         if os.path.exists(path):
             shutil.rmtree(path)
-            print(f"Cleaned up {label}: {path}")
+            print(f'Cleaned up {label}: {path}')
         else:
-            print(f"Nothing to clean ({label}): {path}")
+            print(f'Nothing to clean ({label}): {path}')

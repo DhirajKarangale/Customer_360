@@ -1,20 +1,13 @@
 from __future__ import annotations
-
 import json
 import os
 from typing import Any
 
-
 def atomic_write_json(output_path: str, data: Any) -> None:
-    """
-    Write JSON data atomically.
-    Writes to a temporary file first, then replaces the target.
-    If anything fails, the temp file is cleaned up and the original is untouched.
-    """
-    tmp_path = output_path + ".tmp"
+    tmp_path = output_path + '.tmp'
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     try:
-        with open(tmp_path, "w", encoding="utf-8") as f:
+        with open(tmp_path, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=2)
         os.replace(tmp_path, output_path)
     except Exception:
@@ -25,12 +18,7 @@ def atomic_write_json(output_path: str, data: Any) -> None:
                 pass
         raise
 
-
 def discover_json_files(directory: str) -> list[str]:
-    """
-    Discover all .json files in a two-level directory structure.
-    Returns sorted relative paths like 'POL-1028-823/1_Call.json'.
-    """
     files: list[str] = []
     if not os.path.exists(directory):
         return files
@@ -39,6 +27,6 @@ def discover_json_files(directory: str) -> list[str]:
         if not os.path.isdir(folder_path):
             continue
         for filename in sorted(os.listdir(folder_path)):
-            if filename.endswith(".json"):
+            if filename.endswith('.json'):
                 files.append(os.path.join(folder_name, filename))
     return files
