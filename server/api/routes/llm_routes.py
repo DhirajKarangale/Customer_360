@@ -1,12 +1,11 @@
 from fastapi import APIRouter, Depends
-from fastapi.responses import PlainTextResponse
-from server.schemas.llm import LLMRequest
+from server.schemas.llm import LLMRequest, LLMResponse
 from server.services.llm_service import LLMService
 from server.api.dependencies import get_llm_service
 
 router = APIRouter(prefix="/llm", tags=["LLM Operations"])
 
-@router.post("/generate", response_class=PlainTextResponse)
+@router.post("/generate", response_model=LLMResponse)
 def generate_llm_response(
     request: LLMRequest,
     llm_service: LLMService = Depends(get_llm_service)

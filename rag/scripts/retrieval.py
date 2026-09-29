@@ -30,11 +30,32 @@ class RAGRetrievalPipeline:
             
         # Retrieve matching chunks and their complete metadata/context
         formatted_context = []
-        for result in results:
-            # Compress JSON by omitting spaces to lower token count
-            formatted_context.append(json.dumps(result, separators=(',', ':')))
+        for i, result in enumerate(results, 1):
+            metadata = result.get("metadata", {})
+            participants = metadata.get("participants", {})
+            customer_name = participants.get("customer", {}).get("name", "Unknown")
+            mood = metadata.get("user_mood", "neutral")
+            doc_type = metadata.get("type", "unknown")
+            timestamp = metadata.get("timestamp", "unknown")
+            topics = metadata.get("topics", [])
+            action_items = metadata.get("action_items", [])
             
-        # Return only the final relevant context and count
+            # Format nicely as markdown
+            doc_str = (
+                f"### [Document {i}]\n"
+                f"**Type:** {doc_type}\n"
+                f"**Date:** {timestamp}\n"
+                f"**Customer:** {customer_name} (Mood: {mood})\n"
+            )
+            
+            if topics:
+                doc_str += f"**Topics:** {', '.join(topics)}\n"
+            if action_items:
+                doc_str += f"**Action Items:** {', '.join(action_items)}\n"
+                
+            doc_str += f"**Summary:** {result.get('chunk_text', '')}\n"
+            formatted_context.append(doc_str)
+            
         return "\n".join(formatted_context), count
 
     def close(self):

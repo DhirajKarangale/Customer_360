@@ -1,7 +1,7 @@
 import sys
 import os
 from fastapi import HTTPException, status
-from server.schemas.llm import LLMRequest
+from server.schemas.llm import LLMRequest, LLMResponse
 
 project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 if project_root not in sys.path:
@@ -16,7 +16,7 @@ class LLMService:
     def __init__(self):
         pass
         
-    def generate_response(self, request: LLMRequest) -> str:
+    def generate_response(self, request: LLMRequest) -> LLMResponse:
         try:
             # 1. Retrieve context
             retrieval_pipeline = RAGRetrievalPipeline()
@@ -55,6 +55,8 @@ Answer:"""
                 "user_input": request.query
             })
             
-            return response
+            # print("=========== Res: ", response)
+
+            return LLMResponse(message=response)
         except Exception as e:
             raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=f"LLM Error: {str(e)}")
