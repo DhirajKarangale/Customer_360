@@ -78,8 +78,10 @@ class EmbeddingGenerationPipeline:
         entries: list[dict[str, Any]] = []
         if DIRECT_EMBEDDING_NO_CHUNKING:
             text = chunk_data.get('content', '')
+            metadata = chunk_data.get('metadata', {})
             if text:
-                embedding = self._embedder.embed_text(text)
+                text_to_embed = f"Metadata: {json.dumps(metadata)}\n\nContent: {text}" if metadata else text
+                embedding = self._embedder.embed_text(text_to_embed)
                 delay = random.uniform(EMBEDDING_MIN_DELAY_SECONDS, EMBEDDING_MAX_DELAY_SECONDS)
                 print(f'    [Delay] Waiting for {delay:.1f} seconds to respect rate limits...')
                 time.sleep(delay)
@@ -93,9 +95,11 @@ class EmbeddingGenerationPipeline:
                 return None
             for chunk in chunks:
                 text = chunk.get('chunk_text', '')
+                metadata = chunk.get('metadata', chunk_data.get('metadata', {}))
                 if not text:
                     continue
-                embedding = self._embedder.embed_text(text)
+                text_to_embed = f"Metadata: {json.dumps(metadata)}\n\nContent: {text}" if metadata else text
+                embedding = self._embedder.embed_text(text_to_embed)
                 delay = random.uniform(EMBEDDING_MIN_DELAY_SECONDS, EMBEDDING_MAX_DELAY_SECONDS)
                 print(f'    [Delay] Waiting for {delay:.1f} seconds to respect rate limits...')
                 time.sleep(delay)
