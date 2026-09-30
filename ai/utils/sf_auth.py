@@ -7,7 +7,6 @@ if os.path.exists(env_path):
 SF_USER = os.getenv('SNOWFLAKE_USER')
 SF_PASSWORD = os.getenv('SNOWFLAKE_PASSWORD')
 SF_ACCOUNT = os.getenv('SNOWFLAKE_ACCOUNT')
-SF_PASSCODE = os.getenv('SNOWFLAKE_PASSCODE')
 SF_WAREHOUSE = os.getenv('SNOWFLAKE_WAREHOUSE')
 SF_DATABASE = os.getenv('SNOWFLAKE_DATABASE')
 SF_SCHEMA = os.getenv('SNOWFLAKE_SCHEMA')
@@ -35,8 +34,6 @@ def get_snowflake_conn(force_refresh=False):
         }
         if SF_PASSWORD:
             connect_kwargs["password"] = SF_PASSWORD
-        if SF_PASSCODE:
-            connect_kwargs["passcode"] = SF_PASSCODE
         if PRIVATE_KEY_PATH:
             connect_kwargs["private_key_file"] = PRIVATE_KEY_PATH
         
