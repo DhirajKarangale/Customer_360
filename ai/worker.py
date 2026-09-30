@@ -1,18 +1,22 @@
+import os
+import sys
+import time
+import logging
+import requests
+import redis
+from dotenv import load_dotenv
+
+load_dotenv(os.path.join(os.path.dirname(__file__), '.env'))
+
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
+
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import PromptTemplate
 from ai.utils.sf_auth import get_snowflake_conn
 from ai.utils.llm_utils import get_llm
 from ai.rag.scripts.retrieval import RAGRetrievalPipeline
-from ai.db.db_access import AIDatabaseAccess
-import logging
-import requests
-import redis
-import time
-import sys
-import os
-from dotenv import load_dotenv
-load_dotenv(os.path.join(os.path.dirname(__file__), '.env'))
-
 
 logging.basicConfig(
     level=logging.INFO,
@@ -21,10 +25,6 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-if project_root not in sys.path:
-    sys.path.insert(0, project_root)
-
 
 REDIS_URL = os.getenv("REDIS_URL", "redis://localhost:6379/0")
 STREAM_KEY = "ai_jobs"
@@ -32,7 +32,7 @@ GROUP_NAME = "ai_workers"
 CONSUMER_NAME = f"worker-{os.getpid()}"
 
 
-def process_job(redis_client, job_id, payload, db_access, rag_pipeline):
+def process_job(redis_client, job_id, payload, rag_pipeline):
     callback_url = payload.get("callback_url")
     try:
         user_query = payload.get("query") or payload.get("user_query")
@@ -45,11 +45,6 @@ def process_job(redis_client, job_id, payload, db_access, rag_pipeline):
         logger.info(
             f"🚀 Job Received | ID: {job_id} | Agent: {agent_id} | Customer: {customers_id} | Policy: {policies_id}")
 
-        db_context = ""
-        if agent_id:
-            logger.info(f"🔍 Fetching DB context for agent {agent_id}...")
-            db_context += db_access.get_agent_context(agent_id) + "\n"
-            db_context += db_access.get_customers_for_agent(agent_id) + "\n"
 
         logger.info(f"📚 Retrieving RAG context for query...")
         rag_context, _ = rag_pipeline.retrieve_context(user_query)
@@ -60,10 +55,7 @@ def process_job(redis_client, job_id, payload, db_access, rag_pipeline):
         prompt_template = """You are a helpful customer support assistant.
 Answer the user's query using ONLY the context provided below.
 
-Structured Context:
-{db_context}
-
-Unstructured Context:
+Context:
 {rag_context}
 
 User Query:
@@ -77,7 +69,6 @@ Answer:"""
         chain = prompt | llm | StrOutputParser()
 
         response = chain.invoke({
-            "db_context": db_context,
             "rag_context": rag_context,
             "user_input": user_query
         })
@@ -115,7 +106,6 @@ Answer:"""
 
 def start_worker():
     logger.info("🚀 Starting AI worker... Initialization sequence initiated.")
-    db_access = AIDatabaseAccess()
     get_snowflake_conn()
 
     redis_client = redis.Redis.from_url(
@@ -139,7 +129,7 @@ def start_worker():
                 for stream, messages in streams:
                     for job_id, payload in messages:
                         process_job(redis_client, job_id, payload,
-                                    db_access, rag_pipeline)
+                                    rag_pipeline)
         except redis.exceptions.ConnectionError:
             logger.warning(
                 "⚠️ Redis connection lost. Reconnecting in 5 seconds...")
