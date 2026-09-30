@@ -1,13 +1,16 @@
 import os
-from dotenv import load_dotenv
 import sys
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))))
+
 from ai.utils.sf_auth import get_snowflake_conn
-env_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), '.env')
+from dotenv import load_dotenv
+
+env_path = os.path.join(os.path.dirname(
+    os.path.dirname(os.path.dirname(__file__))), '.env')
 if not os.path.exists(env_path):
     raise FileNotFoundError(f'Environment file not found at {env_path}')
 load_dotenv(env_path)
-
 def main():
     print('Connecting to Snowflake...')
     try:

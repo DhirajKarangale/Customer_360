@@ -3,14 +3,15 @@ import os
 import time
 from typing import Any, Optional
 from ai.rag.config import CLEANED_DATA_DIR, CHUNK_OVERLAP, CHUNK_SIZE, CHUNKS_DATA_DIR, OVERRIDE_CHUNKS
-from ai.rag.chunk_manager import ChunkManager
+from ai.rag.pipeline.chunker import ChunkManager
 from ai.rag.pipeline.document_loader import DocumentLoader
 from ai.rag.pipeline._utils import atomic_write_json
 from ai.utils.sound_utils import play_sound
 
+
 class ChunkGenerationPipeline:
 
-    def __init__(self, data_dir: Optional[str]=None, output_dir: Optional[str]=None, override: Optional[bool]=None) -> None:
+    def __init__(self, data_dir: Optional[str] = None, output_dir: Optional[str] = None, override: Optional[bool] = None) -> None:
         self._loader = DocumentLoader(data_dir or CLEANED_DATA_DIR)
         self._chunker = ChunkManager(CHUNK_SIZE, CHUNK_OVERLAP)
         self._output_dir = output_dir or CHUNKS_DATA_DIR
@@ -40,7 +41,8 @@ class ChunkGenerationPipeline:
                     success_count += 1
                     total_chunks += chunk_count
                     if (i + 1) % 50 == 0 or success_count == 1:
-                        print(f"  [{i + 1}/{len(documents)}] {doc_path} ({chunk_count} chunk{('s' if chunk_count != 1 else '')})")
+                        print(
+                            f"  [{i + 1}/{len(documents)}] {doc_path} ({chunk_count} chunk{('s' if chunk_count != 1 else '')})")
                 else:
                     error_count += 1
             except Exception as e:
@@ -65,7 +67,8 @@ class ChunkGenerationPipeline:
         doc = self._loader.load_document(doc_path)
         if doc is None:
             return None
-        chunk_metadata: dict[str, Any] = {'document_path': doc['document_path'], 'policy_number': doc['policy_number']}
+        chunk_metadata: dict[str, Any] = {
+            'document_path': doc['document_path'], 'policy_number': doc['policy_number']}
         chunk_metadata.update(doc['metadata'])
         chunks = self._chunker.chunk_document(doc['content'], chunk_metadata)
         if not chunks:

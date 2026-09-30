@@ -1,7 +1,10 @@
-import sys
 import os
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))))
+
 from ai.rag.pipeline import CleanupManager
+
 USAGE = 'Usage: python rag/scripts/cleanup.py <target>\n\nTargets:\n  [None]        Delete all generated RAG data (default)\n  chunks        Delete generated chunk files\n  embeddings    Delete generated embedding files\n  vector_store  Delete the FAISS vector store\n  all           Delete all generated RAG data\n'
 if __name__ == '__main__':
     if len(sys.argv) < 2:

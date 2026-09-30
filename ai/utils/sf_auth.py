@@ -13,6 +13,7 @@ SF_SCHEMA = os.getenv('SNOWFLAKE_SCHEMA')
 PRIVATE_KEY_PATH = os.getenv('SNOWFLAKE_PRIVATE_KEY_PATH')
 _GLOBAL_SF_CONN = None
 
+
 def get_snowflake_conn(force_refresh=False):
     global _GLOBAL_SF_CONN
     if not force_refresh and _GLOBAL_SF_CONN is not None:
@@ -36,13 +37,15 @@ def get_snowflake_conn(force_refresh=False):
             connect_kwargs["password"] = SF_PASSWORD
         if PRIVATE_KEY_PATH:
             connect_kwargs["private_key_file"] = PRIVATE_KEY_PATH
-        
+
         conn = snowflake.connector.connect(**connect_kwargs)
     except Exception as e:
         error_str = str(e).lower()
         if 'mfa' in error_str or 'auth' in error_str or 'passcode' in error_str or ('incorrect username or password' in error_str) or ('too many failed' in error_str) or ('locked' in error_str) or ('connection is closed' in error_str):
-            print(f'\n[CRITICAL] Snowflake Auth/MFA Error in get_snowflake_conn: {e}')
-            print('Aborting the entire process to prevent lockout. Please update the passcode and rerun.')
+            print(
+                f'\n[CRITICAL] Snowflake Auth/MFA Error in get_snowflake_conn: {e}')
+            print(
+                'Aborting the entire process to prevent lockout. Please update the passcode and rerun.')
             os._exit(1)
         raise
     cursor = conn.cursor()

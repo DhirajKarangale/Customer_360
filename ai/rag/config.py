@@ -5,7 +5,8 @@ PROJECT_ROOT = os.path.dirname(_RAG_DIR)
 _env_path = os.path.join(PROJECT_ROOT, '.env')
 if os.path.exists(_env_path):
     load_dotenv(_env_path)
-CLEANED_DATA_DIR = os.path.join(PROJECT_ROOT, 'data_generation', 'interactions_data', 'cleaned')
+CLEANED_DATA_DIR = os.path.join(
+    PROJECT_ROOT, 'data_generation', 'interactions_data', 'cleaned')
 CHUNKS_DATA_DIR = os.path.join(_RAG_DIR, 'chunks_data')
 EMBEDDINGS_DATA_DIR = os.path.join(_RAG_DIR, 'embeddings_data')
 VECTOR_STORE_DIR = os.path.join(_RAG_DIR, 'vector_store_data')

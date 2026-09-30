@@ -1,6 +1,7 @@
 from __future__ import annotations
 from typing import Any
 
+
 class ChunkManager:
 
     def __init__(self, chunk_size: int, chunk_overlap: int) -> None:

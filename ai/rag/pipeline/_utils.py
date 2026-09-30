@@ -3,6 +3,7 @@ import json
 import os
 from typing import Any
 
+
 def atomic_write_json(output_path: str, data: Any) -> None:
     tmp_path = output_path + '.tmp'
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
@@ -17,6 +18,7 @@ def atomic_write_json(output_path: str, data: Any) -> None:
             except OSError:
                 pass
         raise
+
 
 def discover_json_files(directory: str) -> list[str]:
     files: list[str] = []

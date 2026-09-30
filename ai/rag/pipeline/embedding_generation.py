@@ -5,13 +5,14 @@ import time
 import random
 from typing import Any, Optional
 from ai.rag.config import CHUNKS_DATA_DIR, CLEANED_DATA_DIR, EMBEDDING_DIMENSION, EMBEDDING_MODEL, EMBEDDINGS_DATA_DIR, OVERRIDE_EMBEDDINGS, DIRECT_EMBEDDING_NO_CHUNKING, EMBEDDING_MIN_DELAY_SECONDS, EMBEDDING_MAX_DELAY_SECONDS
-from ai.rag.embedding_manager import EmbeddingManager
+from ai.rag.pipeline.snowflake_embedder import EmbeddingManager
 from ai.rag.pipeline._utils import atomic_write_json, discover_json_files
 from ai.utils.sound_utils import play_sound
 
+
 class EmbeddingGenerationPipeline:
 
-    def __init__(self, chunks_dir: Optional[str]=None, output_dir: Optional[str]=None, override: Optional[bool]=None) -> None:
+    def __init__(self, chunks_dir: Optional[str] = None, output_dir: Optional[str] = None, override: Optional[bool] = None) -> None:
         if DIRECT_EMBEDDING_NO_CHUNKING:
             self._chunks_dir = chunks_dir or CLEANED_DATA_DIR
         else:
@@ -45,7 +46,8 @@ class EmbeddingGenerationPipeline:
                     success_count += 1
                     total_embeddings += emb_count
                     if (i + 1) % 25 == 0 or success_count == 1:
-                        print(f"  [{i + 1}/{len(chunk_files)}] {rel_path} ({emb_count} embedding{('s' if emb_count != 1 else '')})")
+                        print(
+                            f"  [{i + 1}/{len(chunk_files)}] {rel_path} ({emb_count} embedding{('s' if emb_count != 1 else '')})")
                 else:
                     error_count += 1
             except Exception as e:
@@ -82,10 +84,13 @@ class EmbeddingGenerationPipeline:
             if text:
                 text_to_embed = f"Metadata: {json.dumps(metadata)}\n\nContent: {text}" if metadata else text
                 embedding = self._embedder.embed_text(text_to_embed)
-                delay = random.uniform(EMBEDDING_MIN_DELAY_SECONDS, EMBEDDING_MAX_DELAY_SECONDS)
-                print(f'    [Delay] Waiting for {delay:.1f} seconds to respect rate limits...')
+                delay = random.uniform(
+                    EMBEDDING_MIN_DELAY_SECONDS, EMBEDDING_MAX_DELAY_SECONDS)
+                print(
+                    f'    [Delay] Waiting for {delay:.1f} seconds to respect rate limits...')
                 time.sleep(delay)
-                entries.append({'chunk_text': text, 'metadata': chunk_data.get('metadata', {}), 'embedding': embedding, 'chunk_index': 0, 'total_chunks': 1})
+                entries.append({'chunk_text': text, 'metadata': chunk_data.get(
+                    'metadata', {}), 'embedding': embedding, 'chunk_index': 0, 'total_chunks': 1})
             else:
                 print(f'  [WARN] No valid content in {rel_path}')
         else:
@@ -95,19 +100,23 @@ class EmbeddingGenerationPipeline:
                 return None
             for chunk in chunks:
                 text = chunk.get('chunk_text', '')
-                metadata = chunk.get('metadata', chunk_data.get('metadata', {}))
+                metadata = chunk.get(
+                    'metadata', chunk_data.get('metadata', {}))
                 if not text:
                     continue
                 text_to_embed = f"Metadata: {json.dumps(metadata)}\n\nContent: {text}" if metadata else text
                 embedding = self._embedder.embed_text(text_to_embed)
-                delay = random.uniform(EMBEDDING_MIN_DELAY_SECONDS, EMBEDDING_MAX_DELAY_SECONDS)
-                print(f'    [Delay] Waiting for {delay:.1f} seconds to respect rate limits...')
+                delay = random.uniform(
+                    EMBEDDING_MIN_DELAY_SECONDS, EMBEDDING_MAX_DELAY_SECONDS)
+                print(
+                    f'    [Delay] Waiting for {delay:.1f} seconds to respect rate limits...')
                 time.sleep(delay)
                 entry = dict(chunk)
                 entry['embedding'] = embedding
                 entries.append(entry)
         if not entries:
             return None
-        data = {'source_document': chunk_data.get('source_document', rel_path), 'entries': entries}
+        data = {'source_document': chunk_data.get(
+            'source_document', rel_path), 'entries': entries}
         atomic_write_json(output_path, data)
         return len(entries)

@@ -3,6 +3,7 @@ import os
 import pickle
 from typing import Any, Optional
 
+
 class MetadataStore:
 
     def __init__(self, store_path: str) -> None:

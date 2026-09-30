@@ -6,6 +6,7 @@ try:
 except ImportError:
     winsound = None
 
+
 def _mac_play_beeps(beeps_with_pauses):
     try:
         import math
@@ -20,7 +21,8 @@ def _mac_play_beeps(beeps_with_pauses):
             for freq, duration_ms, pause_ms in beeps_with_pauses:
                 num_samples = int(sample_rate * (duration_ms / 1000.0))
                 for i in range(num_samples):
-                    value = int(32767.0 * math.sin(2.0 * math.pi * freq * i / sample_rate))
+                    value = int(32767.0 * math.sin(2.0 *
+                                math.pi * freq * i / sample_rate))
                     audio_data.extend(value.to_bytes(2, 'little', signed=True))
                 if pause_ms > 0:
                     pause_samples = int(sample_rate * (pause_ms / 1000.0))
@@ -30,6 +32,7 @@ def _mac_play_beeps(beeps_with_pauses):
         os.remove(wave_file)
     except Exception:
         pass
+
 
 def _play_error_windows():
     try:
@@ -41,6 +44,7 @@ def _play_error_windows():
             print('\x07')
     except:
         print('\x07')
+
 
 def _play_success_windows():
     try:
@@ -54,11 +58,15 @@ def _play_success_windows():
     except:
         pass
 
+
 def _play_error_mac():
     _mac_play_beeps([(3000, 1000, 50)] * 7)
 
+
 def _play_success_mac():
-    _mac_play_beeps([(392, 150, 0), (523, 150, 0), (659, 150, 0), (784, 200, 0), (659, 150, 0), (784, 600, 0)])
+    _mac_play_beeps([(392, 150, 0), (523, 150, 0), (659, 150, 0),
+                    (784, 200, 0), (659, 150, 0), (784, 600, 0)])
+
 
 def _play_error():
     if sys.platform == 'win32':
@@ -68,6 +76,7 @@ def _play_error():
     else:
         print('\x07')
 
+
 def _play_success():
     if sys.platform == 'win32':
         _play_success_windows()
@@ -75,6 +84,7 @@ def _play_success():
         _play_success_mac()
     else:
         pass
+
 
 def play_sound(status: str):
     if status.lower() == 'success':

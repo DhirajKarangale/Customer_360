@@ -4,7 +4,8 @@ import os
 from typing import Any, Optional
 import faiss
 import numpy as np
-from ai.rag.vector_manager.metadata_store import MetadataStore
+from ai.rag.pipeline.metadata_store import MetadataStore
+
 
 class VectorStoreManager:
     _FAISS_INDEX_FILE = 'faiss.index'
@@ -15,7 +16,8 @@ class VectorStoreManager:
         self._store_dir = store_dir
         self._dimension = dimension
         self._index: Optional[faiss.IndexFlatIP] = None
-        self._metadata = MetadataStore(os.path.join(store_dir, self._METADATA_FILE))
+        self._metadata = MetadataStore(
+            os.path.join(store_dir, self._METADATA_FILE))
         self._registry: dict[str, dict[str, Any]] = {}
 
     def initialize(self) -> None:
@@ -25,7 +27,8 @@ class VectorStoreManager:
 
     def save(self) -> None:
         os.makedirs(self._store_dir, exist_ok=True)
-        faiss.write_index(self._index, os.path.join(self._store_dir, self._FAISS_INDEX_FILE))
+        faiss.write_index(self._index, os.path.join(
+            self._store_dir, self._FAISS_INDEX_FILE))
         self._metadata.save()
         with open(os.path.join(self._store_dir, self._REGISTRY_FILE), 'w') as f:
             json.dump(self._registry, f, indent=2)
@@ -43,7 +46,8 @@ class VectorStoreManager:
         start_index = self._metadata.count
         self._metadata.add_entries(chunks)
         self._index.add(vectors)
-        self._registry[document_id] = {'start_index': start_index, 'num_chunks': len(chunks)}
+        self._registry[document_id] = {
+            'start_index': start_index, 'num_chunks': len(chunks)}
 
     def similarity_search(self, query_embedding: list[float], top_k: int, score_threshold: float) -> list[dict[str, Any]]:
         if self._index is None or self._index.ntotal == 0:
@@ -62,13 +66,13 @@ class VectorStoreManager:
             if entry is not None:
                 result = dict(entry)
                 result['score'] = float(score)
-                
+
                 # Find source document using the registry
                 for doc_id, info in self._registry.items():
                     if info['start_index'] <= int(idx) < info['start_index'] + info['num_chunks']:
                         result['source_document'] = doc_id
                         break
-                        
+
                 results.append(result)
         return results
 
@@ -98,6 +102,7 @@ class VectorStoreManager:
         except Exception as e:
             print(f'  [WARN] Failed to load existing vector store: {e}')
             self._index = None
-            self._metadata = MetadataStore(os.path.join(self._store_dir, self._METADATA_FILE))
+            self._metadata = MetadataStore(os.path.join(
+                self._store_dir, self._METADATA_FILE))
             self._registry = {}
             return False

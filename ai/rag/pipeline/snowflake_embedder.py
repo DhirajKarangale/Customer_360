@@ -1,8 +1,10 @@
 from __future__ import annotations
+from ai.utils.llm_utils import get_snowflake_embedding
 import sys
 import os
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-from ai.utils.llm_utils import get_snowflake_embedding
+sys.path.insert(0, os.path.dirname(os.path.dirname(
+    os.path.dirname(os.path.abspath(__file__)))))
+
 
 class EmbeddingManager:
 

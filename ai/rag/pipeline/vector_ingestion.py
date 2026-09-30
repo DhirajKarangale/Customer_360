@@ -4,15 +4,17 @@ import os
 import time
 from typing import Any, Optional
 from ai.rag.config import EMBEDDING_DIMENSION, EMBEDDINGS_DATA_DIR, VECTOR_STORE_DIR
-from ai.rag.vector_manager import VectorStoreManager
+from ai.rag.pipeline.faiss_store import VectorStoreManager
 from ai.rag.pipeline._utils import discover_json_files
 from ai.utils.sound_utils import play_sound
 
+
 class VectorIngestionPipeline:
 
-    def __init__(self, embeddings_dir: Optional[str]=None, store_dir: Optional[str]=None) -> None:
+    def __init__(self, embeddings_dir: Optional[str] = None, store_dir: Optional[str] = None) -> None:
         self._embeddings_dir = embeddings_dir or EMBEDDINGS_DATA_DIR
-        self._vector_store = VectorStoreManager(store_dir or VECTOR_STORE_DIR, EMBEDDING_DIMENSION)
+        self._vector_store = VectorStoreManager(
+            store_dir or VECTOR_STORE_DIR, EMBEDDING_DIMENSION)
 
     def run(self) -> dict[str, Any]:
         print('=' * 60)
@@ -45,7 +47,8 @@ class VectorIngestionPipeline:
                     success_count += 1
                     total_vectors += vec_count
                     if (i + 1) % 50 == 0 or success_count == 1:
-                        print(f"  [{i + 1}/{len(new_files)}] {rel_path} ({vec_count} vector{('s' if vec_count != 1 else '')})")
+                        print(
+                            f"  [{i + 1}/{len(new_files)}] {rel_path} ({vec_count} vector{('s' if vec_count != 1 else '')})")
                 else:
                     error_count += 1
             except Exception as e:
@@ -56,7 +59,8 @@ class VectorIngestionPipeline:
         self._vector_store.save()
         elapsed = time.time() - start_time
         final_count = self._vector_store.get_document_count()
-        summary = self._build_summary(success_count, error_count, total_vectors, final_count, elapsed)
+        summary = self._build_summary(
+            success_count, error_count, total_vectors, final_count, elapsed)
         self._print_summary(summary)
         if error_count > 0:
             play_sound('error')

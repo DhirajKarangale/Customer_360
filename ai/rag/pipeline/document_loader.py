@@ -3,6 +3,7 @@ import json
 import os
 from typing import Any, Optional
 
+
 class DocumentLoader:
 
     def __init__(self, data_dir: str) -> None:

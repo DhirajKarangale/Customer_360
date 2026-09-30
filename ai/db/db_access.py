@@ -2,6 +2,7 @@ import os
 import psycopg2
 import psycopg2.extras
 
+
 class AIDatabaseAccess:
     def __init__(self):
         self.conn = psycopg2.connect(
@@ -13,7 +14,8 @@ class AIDatabaseAccess:
         )
 
     def get_agent_context(self, agent_id: str) -> str:
-        cursor = self.conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+        cursor = self.conn.cursor(
+            cursor_factory=psycopg2.extras.RealDictCursor)
         try:
             cursor.execute("SELECT * FROM agents WHERE id = %s", (agent_id,))
             agent = cursor.fetchone()
@@ -26,7 +28,8 @@ class AIDatabaseAccess:
             cursor.close()
 
     def get_customers_for_agent(self, agent_id: str) -> str:
-        cursor = self.conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+        cursor = self.conn.cursor(
+            cursor_factory=psycopg2.extras.RealDictCursor)
         try:
             cursor.execute("""
                 SELECT c.name, c.email, p.status 
@@ -37,7 +40,7 @@ class AIDatabaseAccess:
             customers = cursor.fetchall()
             if not customers:
                 return "No structured customer data found."
-            
+
             res = "Structured Customers:\\n"
             for c in customers:
                 res += f"- Name: {c['name']}, Email: {c['email']}, Policy Status: {c['status']}\\n"

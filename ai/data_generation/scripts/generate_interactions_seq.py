@@ -1,19 +1,20 @@
-import sys
+import json
 import os
 import random
-import json
-import psycopg2
+import shutil
 import snowflake.connector
-from dotenv import load_dotenv
 import sys
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-from ai.utils.sf_auth import get_snowflake_conn
-from ai.utils.llm_utils import get_llm, LLM_PROVIDER
-from ai.utils.prompts import SEQUENCE_GENERATION_PROMPT, TRANSCRIPT_GENERATION_PROMPT, SUMMARY_PROMPT
-from langchain_core.output_parsers import StrOutputParser
 import time
 import traceback
-import shutil
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))))
+
+from ai.utils.sound_utils import play_sound
+from langchain_core.output_parsers import StrOutputParser
+from ai.utils.prompts import SEQUENCE_GENERATION_PROMPT, TRANSCRIPT_GENERATION_PROMPT, SUMMARY_PROMPT
+from ai.utils.llm_utils import get_llm
+import psycopg2
+from dotenv import load_dotenv
 
 START_POLICY = 1
 END_POLICY = 200
@@ -22,15 +23,14 @@ MIN_DELAY_SECONDS = 1
 MAX_DELAY_SECONDS = 3
 MIN_INTERACTIONS = 4
 MAX_INTERACTIONS = 8
-
-env_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), '.env')
+env_path = os.path.join(os.path.dirname(
+    os.path.dirname(os.path.dirname(__file__))), '.env')
 if not os.path.exists(env_path):
     raise FileNotFoundError(f'Environment file not found at {env_path}')
 load_dotenv(env_path)
-
-SCHEMA_PROMPT_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'prompts', 'llm_schema_prompt.md')
+SCHEMA_PROMPT_PATH = os.path.join(os.path.dirname(
+    os.path.dirname(__file__)), 'prompts', 'llm_schema_prompt.md')
 SCHEMA_PROMPT = ''
-
 if os.path.exists(SCHEMA_PROMPT_PATH):
     with open(SCHEMA_PROMPT_PATH, 'r', encoding='utf-8') as f:
         SCHEMA_PROMPT = f.read()
@@ -39,10 +39,8 @@ PG_PORT = os.getenv('POSTGRES_PORT')
 PG_NAME = os.getenv('POSTGRES_DB')
 PG_USER = os.getenv('POSTGRES_USER')
 PG_PASS = os.getenv('POSTGRES_PASSWORD')
-
 def get_postgres_conn():
     return psycopg2.connect(host=PG_HOST, port=PG_PORT, dbname=PG_NAME, user=PG_USER, password=PG_PASS)
-
 def fetch_all_policy_data():
     conn = get_postgres_conn()
     cursor = conn.cursor()
@@ -53,10 +51,10 @@ def fetch_all_policy_data():
     cursor.close()
     conn.close()
     return data
-
-def generate_interaction_sequence(sf_conn, policy):
+def generate_interaction_sequence(policy):
     num_interactions = random.randint(MIN_INTERACTIONS, MAX_INTERACTIONS)
-    prompt = SEQUENCE_GENERATION_PROMPT.format(customer_name=policy['customer_name'], agent_name=policy['agent_name'], policy_type=policy['policy_type'], status=policy['status'], num_interactions=num_interactions)
+    prompt = SEQUENCE_GENERATION_PROMPT.format(customer_name=policy['customer_name'], agent_name=policy['agent_name'],
+                                               policy_type=policy['policy_type'], status=policy['status'], num_interactions=num_interactions)
     try:
         chain = get_llm('SEQUENCE') | StrOutputParser()
         result = chain.invoke(prompt)
@@ -81,10 +79,10 @@ def generate_interaction_sequence(sf_conn, policy):
     except Exception as e:
         print(f'Failed to parse interaction sequence: {e}')
         raise e
-    fallback = ['Email', 'Call', 'Chat', 'Call', 'Email', 'Chat', 'Call', 'Email', 'Call', 'Chat']
+    fallback = ['Email', 'Call', 'Chat', 'Call',
+                'Email', 'Chat', 'Call', 'Email', 'Call', 'Chat']
     return fallback[:num_interactions]
-
-def generate_interaction_content(sf_conn, policy, sequence, policy_dir):
+def generate_interaction_content(policy, sequence, policy_dir):
     context = ''
     results_to_save = []
     for i, channel in enumerate(sequence):
@@ -104,7 +102,8 @@ def generate_interaction_content(sf_conn, policy, sequence, policy_dir):
             human_instructions = '- Use a slightly informal tone. Customers might use lower case, abbreviations, or have typos. Include corrections (*word). Add emotion if policy is Cancelled/Expired.'
         else:
             human_instructions = '- Write in a natural business tone, not a robotic template. The customer can be direct or frustrated if policy is Cancelled/Expired. The agent is professional but empathetic.'
-        prompt = TRANSCRIPT_GENERATION_PROMPT.format(step_num=step_num, total_steps=len(sequence), channel=channel, customer_name=policy['customer_name'], agent_name=policy['agent_name'], agency_name=policy['agency_name'], policy_type=policy['policy_type'], status=policy['status'], context=context if context else 'This is the first interaction.', length_desc=length_desc, human_instructions=human_instructions, schema_prompt=SCHEMA_PROMPT)
+        prompt = TRANSCRIPT_GENERATION_PROMPT.format(step_num=step_num, total_steps=len(sequence), channel=channel, customer_name=policy['customer_name'], agent_name=policy['agent_name'], agency_name=policy['agency_name'], policy_type=policy[
+                                                     'policy_type'], status=policy['status'], context=context if context else 'This is the first interaction.', length_desc=length_desc, human_instructions=human_instructions, schema_prompt=SCHEMA_PROMPT)
         success = False
         for attempt in range(3):
             try:
@@ -119,7 +118,8 @@ def generate_interaction_content(sf_conn, policy, sequence, policy_dir):
                 elif '```' in content:
                     content = content.split('```')[1].split('```')[0]
                 ext = '.toon' if channel == 'Call' else '.txt'
-                file_path = os.path.join(policy_dir, f'{step_num}_{channel}{ext}')
+                file_path = os.path.join(
+                    policy_dir, f'{step_num}_{channel}{ext}')
                 results_to_save.append((file_path, content.strip()))
                 summary_prompt = SUMMARY_PROMPT.format(content=content.strip())
                 try:
@@ -138,17 +138,17 @@ def generate_interaction_content(sf_conn, policy, sequence, policy_dir):
                 print(f'    [Retry {attempt + 2}/3 for step {step_num}]')
                 time.sleep(2)
         if not success:
-            print(f'    [Content Generation Failed for step {step_num} after 3 attempts]')
+            print(
+                f'    [Content Generation Failed for step {step_num} after 3 attempts]')
             return None
     return results_to_save
-
-def process_policy(index, policy, total_in_batch, output_dir, sf_conn):
+def process_policy(index, policy, total_in_batch, output_dir):
     p_num = policy['policy_number']
     print(f'\nProcessing Policy {index + 1}/{total_in_batch}: {p_num}')
     policy_dir = os.path.join(output_dir, p_num)
-    sequence = generate_interaction_sequence(sf_conn, policy)
+    sequence = generate_interaction_sequence(policy)
     print(f'  [{p_num}] Sequence planned: {sequence}')
-    results = generate_interaction_content(sf_conn, policy, sequence, policy_dir)
+    results = generate_interaction_content(policy, sequence, policy_dir)
     if results:
         os.makedirs(policy_dir, exist_ok=True)
         for file_path, content in results:
@@ -162,8 +162,6 @@ def process_policy(index, policy, total_in_batch, output_dir, sf_conn):
                 shutil.rmtree(policy_dir)
             except Exception as e:
                 pass
-from ai.utils.sound_utils import play_sound
-
 def main():
     print('Fetching policy data from PostgreSQL...')
     try:
@@ -173,16 +171,8 @@ def main():
         play_sound('error')
         return
     print(f'Found {len(policies)} policies.')
-    sf_conn = None
-    if LLM_PROVIDER.lower() == 'snowflake':
-        print('Connecting to Snowflake...')
-        try:
-            sf_conn = get_snowflake_conn()
-        except Exception as e:
-            print(f'Could not connect to Snowflake: {e}')
-            play_sound('error')
-            return
-    output_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'interactions_data', 'raw')
+    output_dir = os.path.join(os.path.dirname(
+        os.path.dirname(__file__)), 'interactions_data', 'raw')
     os.makedirs(output_dir, exist_ok=True)
     start_index = START_POLICY - 1
     end_index = END_POLICY
@@ -196,25 +186,27 @@ def main():
             policy_dir = os.path.join(output_dir, p_num)
             if os.path.exists(policy_dir):
                 if OVERRIDE:
-                    print(f'\nPolicy {index + 1}/{total_to_process}: {p_num} already exists. OVERRIDE is True. Deleting old directory...')
+                    print(
+                        f'\nPolicy {index + 1}/{total_to_process}: {p_num} already exists. OVERRIDE is True. Deleting old directory...')
                     shutil.rmtree(policy_dir)
                 else:
-                    print(f'\nPolicy {index + 1}/{total_to_process}: {p_num} already exists. OVERRIDE is False. Skipping...')
+                    print(
+                        f'\nPolicy {index + 1}/{total_to_process}: {p_num} already exists. OVERRIDE is False. Skipping...')
                     continue
-            process_policy(index, policy, total_to_process, output_dir, sf_conn)
+            process_policy(index, policy, total_to_process, output_dir)
             if index < total_to_process - 1:
                 delay = random.randint(MIN_DELAY_SECONDS, MAX_DELAY_SECONDS)
-                print(f'  -> Successfully generated. Waiting for {delay} seconds before the next policy...')
+                print(
+                    f'  -> Successfully generated. Waiting for {delay} seconds before the next policy...')
                 time.sleep(delay)
         except Exception as e:
-            print(f"\n[!] ERROR OCCURRED during processing policy '{policy.get('policy_number', 'UNKNOWN')}':")
+            print(
+                f"\n[!] ERROR OCCURRED during processing policy '{policy.get('policy_number', 'UNKNOWN')}':")
             traceback.print_exc()
             print('Stopping the pipeline and sounding alarm...')
             pipeline_successful = False
             play_sound('error')
             break
-    if sf_conn:
-        sf_conn.close()
     print('\nData generation pipeline finished!')
     if pipeline_successful and total_to_process > 0:
         print('  -> All policies processed! Playing success chime...')
