@@ -1,6 +1,6 @@
 import sys
 import os
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))))
 from ai.utils.sf_auth import get_snowflake_conn
 from ai.rag.pipeline import EmbeddingGenerationPipeline
 if __name__ == '__main__':
