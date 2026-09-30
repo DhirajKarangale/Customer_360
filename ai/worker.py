@@ -12,11 +12,8 @@ project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
-from langchain_core.output_parsers import StrOutputParser
-from langchain_core.prompts import PromptTemplate
 from ai.utils.sf_auth import get_snowflake_conn
-from ai.utils.llm_utils import get_llm
-from ai.rag.scripts.retrieval import RAGRetrievalPipeline
+from ai.agent.run import invoke_agent
 
 logging.basicConfig(
     level=logging.INFO,
@@ -32,7 +29,7 @@ GROUP_NAME = "ai_workers"
 CONSUMER_NAME = f"worker-{os.getpid()}"
 
 
-def process_job(redis_client, job_id, payload, rag_pipeline):
+def process_job(redis_client, job_id, payload):
     callback_url = payload.get("callback_url")
     try:
         user_query = payload.get("query") or payload.get("user_query")
@@ -45,33 +42,13 @@ def process_job(redis_client, job_id, payload, rag_pipeline):
         logger.info(
             f"🚀 Job Received | ID: {job_id} | Agent: {agent_id} | Customer: {customers_id} | Policy: {policies_id}")
 
-
-        logger.info(f"📚 Retrieving RAG context for query...")
-        rag_context, _ = rag_pipeline.retrieve_context(user_query)
-
-        logger.info(
-            f"=== 📄 RAG CONTEXT ===\n{rag_context}\n======================")
-
-        prompt_template = """You are a helpful customer support assistant.
-Answer the user's query using ONLY the context provided below.
-
-Context:
-{rag_context}
-
-User Query:
-{user_input}
-
-Answer:"""
-        prompt = PromptTemplate.from_template(prompt_template)
-
-        logger.info(f"🧠 Generating LLM response...")
-        llm = get_llm('TRANSCRIPT')
-        chain = prompt | llm | StrOutputParser()
-
-        response = chain.invoke({
-            "rag_context": rag_context,
-            "user_input": user_query
-        })
+        logger.info(f"🧠 Invoking LangGraph Agent for query...")
+        response = invoke_agent(
+            user_query=user_query,
+            customers_id=customers_id,
+            insurance_agents_id=insurance_agents_id,
+            policies_id=policies_id
+        )
 
         logger.info(
             f"=== 🤖 AI RESPONSE ===\n{response}\n======================")
@@ -117,8 +94,6 @@ def start_worker():
         if "BUSYGROUP" not in str(e):
             logger.warning(f"Redis group message: {e}")
 
-    rag_pipeline = RAGRetrievalPipeline()
-
     logger.info("🟢 AI worker fully initialized and waiting for jobs...")
     while True:
         try:
@@ -128,8 +103,7 @@ def start_worker():
             if streams:
                 for stream, messages in streams:
                     for job_id, payload in messages:
-                        process_job(redis_client, job_id, payload,
-                                    rag_pipeline)
+                        process_job(redis_client, job_id, payload)
         except redis.exceptions.ConnectionError:
             logger.warning(
                 "⚠️ Redis connection lost. Reconnecting in 5 seconds...")
