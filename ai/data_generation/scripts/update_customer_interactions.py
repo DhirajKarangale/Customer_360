@@ -1,104 +1,123 @@
 import os
 import sys
+import json
 import psycopg2
 from dotenv import load_dotenv
 
+# Setup path to load .env
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-
 env_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), '.env')
 if not os.path.exists(env_path):
     raise FileNotFoundError(f'Environment file not found at {env_path}')
 load_dotenv(env_path)
 
-PG_HOST = os.getenv('POSTGRES_HOST')
-PG_PORT = os.getenv('POSTGRES_PORT')
-PG_NAME = os.getenv('POSTGRES_DB')
-PG_USER = os.getenv('POSTGRES_USER')
-PG_PASS = os.getenv('POSTGRES_PASSWORD')
-
 def get_postgres_conn():
-    return psycopg2.connect(host=PG_HOST, port=PG_PORT, dbname=PG_NAME, user=PG_USER, password=PG_PASS)
+    return psycopg2.connect(
+        host=os.getenv('POSTGRES_HOST'),
+        port=os.getenv('POSTGRES_PORT'),
+        dbname=os.getenv('POSTGRES_DB'),
+        user=os.getenv('POSTGRES_USER'),
+        password=os.getenv('POSTGRES_PASSWORD')
+    )
 
 def main():
-    print("Connecting to PostgreSQL...")
     conn = get_postgres_conn()
     cursor = conn.cursor()
-
-    # Fetch policies to map policy_number to customer_id and agent_id
-    print("Fetching policies...")
-    cursor.execute("SELECT policy_number, customer_id, agent_id FROM policies")
-    policies = {row[0]: {'customer_id': row[1], 'agent_id': row[2]} for row in cursor.fetchall()}
-    print(f"Found {len(policies)} policies in DB.")
-
-    base_data_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'interactions_data')
-    raw_dir = os.path.join(base_data_dir, 'raw')
     
-    if not os.path.exists(raw_dir):
-        print(f"Raw data directory not found: {raw_dir}")
-        return
+    # 1. Fetch valid policies mapping to customers and agents
+    print("Fetching policy mappings from DB...")
+    cursor.execute("SELECT policy_number, customer_id::text, agent_id::text FROM policies")
+    policy_mapping = {row[0]: (row[1], row[2]) for row in cursor.fetchall()}
+    
+    # 2. Delete all existing interactions
+    print("Deleting existing customer_interactions...")
+    cursor.execute("DELETE FROM customer_interactions")
+    conn.commit()
+    print("Deleted.")
 
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    cleaned_dir = os.path.join(base_dir, 'interactions_data', 'cleaned')
+    raw_dir = os.path.join(base_dir, 'interactions_data', 'raw')
+    
     interactions_to_insert = []
     
-    print("Scanning local raw files...")
-    for policy_num in os.listdir(raw_dir):
-        policy_path = os.path.join(raw_dir, policy_num)
-        if not os.path.isdir(policy_path):
+    print("Scanning JSON files in cleaned directory...")
+    for policy_num in os.listdir(cleaned_dir):
+        policy_cleaned_dir = os.path.join(cleaned_dir, policy_num)
+        policy_raw_dir = os.path.join(raw_dir, policy_num)
+        if not os.path.isdir(policy_cleaned_dir):
             continue
             
-        if policy_num not in policies:
-            print(f"Warning: Policy {policy_num} found in files but not in DB.")
-            continue
-            
-        customer_id = policies[policy_num]['customer_id']
-        agent_id = policies[policy_num]['agent_id']
+        raw_files_dict = {}
+        if os.path.isdir(policy_raw_dir):
+            for rf in os.listdir(policy_raw_dir):
+                base_name = os.path.splitext(rf)[0]
+                raw_files_dict[base_name] = rf
         
-        for file in os.listdir(policy_path):
-            # Parse filename e.g. 1_Call.toon
-            name_parts = file.split('_')
-            if len(name_parts) < 2:
+        for filename in os.listdir(policy_cleaned_dir):
+            if not filename.endswith('.json'):
                 continue
                 
-            type_part = name_parts[1].split('.')[0].upper()
-            if type_part not in ['CALL', 'EMAIL', 'CHAT']:
-                interaction_type = 'OTHER'
-            else:
-                interaction_type = type_part
+            base_name = os.path.splitext(filename)[0]
+            filepath = os.path.join(policy_cleaned_dir, filename)
+            
+            with open(filepath, 'r', encoding='utf-8') as f:
+                try:
+                    data = json.load(f)
+                except Exception:
+                    continue
+            
+            metadata = data.get("metadata", {})
+            
+            # Use the folder name as the policy_number
+            policy_number = policy_num
+            
+            # Lookup true IDs from our database mapping
+            if policy_number not in policy_mapping:
+                continue
                 
-            raw_url = f"@INTERACTIONS_STAGE/raw/{policy_num}/{file}"
+            customer_id, agent_id = policy_mapping[policy_number]
+                
+            interaction_type = metadata.get("type", "UNKNOWN").upper()
+            interaction_date = metadata.get("timestamp")
+            policy_number = metadata.get("policy_number", policy_num)
             
-            # Cleaned data filename has .json extension
-            clean_file = file.rsplit('.', 1)[0] + '.json'
-            clean_url = f"@INTERACTIONS_STAGE/cleaned/{policy_num}/{clean_file}"
+            cleaned_data_url = f"@INTERACTIONS_STAGE/cleaned/{policy_num}/{filename}"
             
+            raw_filename = raw_files_dict.get(base_name)
+            if raw_filename:
+                raw_data_url = f"@INTERACTIONS_STAGE/raw/{policy_num}/{raw_filename}"
+            else:
+                raw_data_url = None
+                
             interactions_to_insert.append((
                 customer_id,
                 agent_id,
+                policy_number,
                 interaction_type,
-                raw_url,
-                clean_url
+                interaction_date,
+                raw_data_url,
+                cleaned_data_url
             ))
-
-    print(f"Prepared {len(interactions_to_insert)} interactions for insertion.")
+            
+    print(f"Found {len(interactions_to_insert)} valid interactions to insert.")
     
-    if interactions_to_insert:
-        # Clear existing interactions to prevent duplicates on multiple runs
-        print("Clearing existing interactions...")
-        cursor.execute("TRUNCATE TABLE customer_interactions RESTART IDENTITY CASCADE")
-        
-        print("Inserting into customer_interactions...")
-        insert_query = """
-            INSERT INTO customer_interactions (customer_id, agent_id, interaction_type, raw_data_url, cleaned_data_url)
-            VALUES (%s, %s, %s, %s, %s)
-        """
-        
-        # Batch insert
+    # 3. Insert new data
+    insert_query = """
+        INSERT INTO customer_interactions (
+            customer_id, agent_id, policy_number, 
+            interaction_type, interaction_date, 
+            raw_data_url, cleaned_data_url
+        ) VALUES (%s, %s, %s, %s, %s, %s, %s)
+    """
+    try:
         from psycopg2.extras import execute_batch
         execute_batch(cursor, insert_query, interactions_to_insert)
-        
         conn.commit()
-        print("Successfully updated customer_interactions table.")
-    else:
-        print("No interactions found to insert.")
+        print("Successfully repopulated customer_interactions.")
+    except Exception as e:
+        print(f"Error inserting: {e}")
+        conn.rollback()
         
     cursor.close()
     conn.close()
