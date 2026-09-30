@@ -16,10 +16,15 @@ class LLMService:
             
             payload = {
                 "job_id": job_id,
-                "user_query": request.query,
-                "insurance_agent_id": request.insurance_agent_id or "",
+                "query": request.query,
                 "callback_url": callback
             }
+            if request.customers_id:
+                payload["customers_id"] = request.customers_id
+            if request.insurance_agents_id:
+                payload["insurance_agents_id"] = request.insurance_agents_id
+            if request.policies_id:
+                payload["policies_id"] = request.policies_id
             
             self.redis_client.xadd("ai_jobs", payload)
             

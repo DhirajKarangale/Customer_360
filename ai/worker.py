@@ -34,10 +34,15 @@ CONSUMER_NAME = f"worker-{os.getpid()}"
 def process_job(redis_client, job_id, payload, db_access, rag_pipeline):
     callback_url = payload.get("callback_url")
     try:
-        user_query = payload.get("user_query")
-        agent_id = payload.get("insurance_agent_id")
+        user_query = payload.get("query") or payload.get("user_query")
+        customers_id = payload.get("customers_id")
+        insurance_agents_id = payload.get("insurance_agents_id")
+        policies_id = payload.get("policies_id")
         
-        logger.info(f"🚀 Job Received | ID: {job_id} | Agent: {agent_id}")
+        # Keep backwards compatibility for DB context if needed
+        agent_id = insurance_agents_id or payload.get("insurance_agent_id")
+        
+        logger.info(f"🚀 Job Received | ID: {job_id} | Agent: {agent_id} | Customer: {customers_id} | Policy: {policies_id}")
 
         db_context = ""
         if agent_id:
@@ -47,6 +52,8 @@ def process_job(redis_client, job_id, payload, db_access, rag_pipeline):
 
         logger.info(f"📚 Retrieving RAG context for query...")
         rag_context, _ = rag_pipeline.retrieve_context(user_query)
+        
+        logger.info(f"=== 📄 RAG CONTEXT ===\n{rag_context}\n======================")
 
         prompt_template = """You are a helpful customer support assistant.
 Answer the user's query using ONLY the context provided below.
@@ -73,9 +80,22 @@ Answer:"""
             "user_input": user_query
         })
         
+        logger.info(f"=== 🤖 AI RESPONSE ===\n{response}\n======================")
+        
         if callback_url:
             logger.info(f"📤 Sending result back to callback URL...")
-            requests.post(callback_url, json={"job_id": job_id, "message": response}, timeout=10)
+            callback_data = {
+                "job_id": job_id, 
+                "message": response
+            }
+            if customers_id:
+                callback_data["customers_id"] = customers_id
+            if insurance_agents_id:
+                callback_data["insurance_agents_id"] = insurance_agents_id
+            if policies_id:
+                callback_data["policies_id"] = policies_id
+                
+            requests.post(callback_url, json=callback_data, timeout=10)
         
         logger.info(f"✅ Job Successfully Completed | ID: {job_id}")
     except Exception as e:

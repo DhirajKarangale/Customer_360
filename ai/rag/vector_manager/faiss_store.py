@@ -62,6 +62,13 @@ class VectorStoreManager:
             if entry is not None:
                 result = dict(entry)
                 result['score'] = float(score)
+                
+                # Find source document using the registry
+                for doc_id, info in self._registry.items():
+                    if info['start_index'] <= int(idx) < info['start_index'] + info['num_chunks']:
+                        result['source_document'] = doc_id
+                        break
+                        
                 results.append(result)
         return results
 

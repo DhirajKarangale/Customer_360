@@ -1,4 +1,5 @@
 import json
+import re
 from ai.rag.config import EMBEDDING_DIMENSION, EMBEDDING_MODEL, SIMILARITY_SCORE_THRESHOLD, TOP_K, VECTOR_STORE_DIR
 from ai.rag.embedding_manager import EmbeddingManager
 from ai.rag.vector_manager import VectorStoreManager
@@ -40,9 +41,18 @@ class RAGRetrievalPipeline:
             topics = metadata.get("topics", [])
             action_items = metadata.get("action_items", [])
             
+            # Try to extract policy number from source_document
+            source_doc = result.get("source_document", "")
+            if not source_doc:
+                source_doc = metadata.get("source_document", "")
+            
+            policy_match = re.search(r'POL-\d+-\d+', source_doc)
+            policy_number = policy_match.group(0) if policy_match else "Unknown"
+            
             # Format nicely as markdown
             doc_str = (
                 f"### [Document {i}]\n"
+                f"**Policy Number:** {policy_number}\n"
                 f"**Type:** {doc_type}\n"
                 f"**Date:** {timestamp}\n"
                 f"**Customer:** {customer_name} (Mood: {mood})\n"
