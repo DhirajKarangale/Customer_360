@@ -24,6 +24,7 @@
     "action_items": [
       "Process and post the $1,200.00 refund to the customer's original payment method",
       "Notify the customer once the refund has been posted"
-    ]
+    ],
+    "policy_number": "POL-7847-803"
   }
 }

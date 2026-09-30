@@ -23,6 +23,7 @@
     "action_items": [
       "Wait for policy activation by the end of the day",
       "Receive confirmation email upon activation"
-    ]
+    ],
+    "policy_number": "POL-1704-291"
   }
 }

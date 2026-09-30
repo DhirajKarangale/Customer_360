@@ -23,6 +23,7 @@
     "action_items": [
       "Agent to send cancellation confirmation letter within the next few days",
       "Customer to follow up if the letter is not received"
-    ]
+    ],
+    "policy_number": "POL-1323-603"
   }
 }

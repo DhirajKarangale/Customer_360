@@ -24,6 +24,7 @@
     "action_items": [
       "Complete the payment using the provided link within 48 hours",
       "Notify Anita once the payment is done"
-    ]
+    ],
+    "policy_number": "POL-1996-923"
   }
 }

@@ -27,6 +27,7 @@
       "Agent to send detailed quote with trip cancellation coverage information",
       "Agent to confirm whether hypertension affects the premium",
       "Customer to review the new quote"
-    ]
+    ],
+    "policy_number": "POL-5527-607"
   }
 }

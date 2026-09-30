@@ -26,6 +26,7 @@
     "action_items": [
       "Customer to pay the premium for the current month to reinstate the policy",
       "Agent to process the reinstatement after payment is received"
-    ]
+    ],
+    "policy_number": "POL-2949-580"
   }
 }

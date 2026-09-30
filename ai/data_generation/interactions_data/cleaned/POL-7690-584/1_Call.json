@@ -23,6 +23,7 @@
     "action_items": [
       "Confirm customer's date of birth",
       "Confirm customer's residential address"
-    ]
+    ],
+    "policy_number": "POL-7690-584"
   }
 }

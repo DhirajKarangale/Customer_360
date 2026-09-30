@@ -23,6 +23,7 @@
     ],
     "action_items": [
       "Karan Joshi to investigate the auto-renewal failure for policy HP-001234"
-    ]
+    ],
+    "policy_number": "POL-7466-628"
   }
 }

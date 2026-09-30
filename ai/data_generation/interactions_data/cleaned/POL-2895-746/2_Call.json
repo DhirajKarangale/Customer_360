@@ -25,6 +25,7 @@
     ],
     "action_items": [
       "Send policy confirmation email to the customer"
-    ]
+    ],
+    "policy_number": "POL-2895-746"
   }
 }

@@ -23,6 +23,7 @@
     ],
     "action_items": [
       "Send confirmation email once policy is active"
-    ]
+    ],
+    "policy_number": "POL-7635-699"
   }
 }

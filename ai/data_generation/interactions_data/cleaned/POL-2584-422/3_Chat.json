@@ -24,6 +24,7 @@
     "action_items": [
       "Process $80 refund for the customer",
       "Send email confirmation once processed"
-    ]
+    ],
+    "policy_number": "POL-2584-422"
   }
 }

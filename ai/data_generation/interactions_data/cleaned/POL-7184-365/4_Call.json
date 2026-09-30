@@ -23,6 +23,7 @@
     ],
     "action_items": [
       "Send confirmation email to the customer"
-    ]
+    ],
+    "policy_number": "POL-7184-365"
   }
 }

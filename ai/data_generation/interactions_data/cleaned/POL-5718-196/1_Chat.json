@@ -25,6 +25,7 @@
     "action_items": [
       "Send the renewal quote to the customer",
       "Send the renewal document for review"
-    ]
+    ],
+    "policy_number": "POL-5718-196"
   }
 }

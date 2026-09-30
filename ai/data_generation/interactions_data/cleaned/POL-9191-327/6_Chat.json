@@ -24,6 +24,7 @@
     "action_items": [
       "Customer to complete the payment",
       "Customer to let agent know once payment is done"
-    ]
+    ],
+    "policy_number": "POL-9191-327"
   }
 }

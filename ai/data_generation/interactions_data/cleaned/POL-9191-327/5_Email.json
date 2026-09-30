@@ -24,6 +24,7 @@
     "action_items": [
       "Customer must complete the payment using the secure link within 7 days",
       "Agent will send official policy confirmation and updated declarations page once payment is processed"
-    ]
+    ],
+    "policy_number": "POL-9191-327"
   }
 }

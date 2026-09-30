@@ -23,6 +23,7 @@
     ],
     "action_items": [
       "Send a confirmation email to update the customer's records showing the policy is active."
-    ]
+    ],
+    "policy_number": "POL-9871-540"
   }
 }

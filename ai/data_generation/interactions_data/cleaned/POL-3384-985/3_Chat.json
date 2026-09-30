@@ -27,6 +27,7 @@
       "Update customer's email address in the system",
       "Provide details on reinstatement option if needed",
       "Process cancellation of the travel policy as requested"
-    ]
+    ],
+    "policy_number": "POL-3384-985"
   }
 }

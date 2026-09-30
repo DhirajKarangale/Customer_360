@@ -24,6 +24,7 @@
     "action_items": [
       "Agent to update internal system and activate policy",
       "Send email with policy documents and details to customer within 24 hours"
-    ]
+    ],
+    "policy_number": "POL-2316-788"
   }
 }

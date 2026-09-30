@@ -24,6 +24,7 @@
     "action_items": [
       "Customer to receive confirmation email",
       "Customer to view policy documents in portal"
-    ]
+    ],
+    "policy_number": "POL-5069-103"
   }
 }

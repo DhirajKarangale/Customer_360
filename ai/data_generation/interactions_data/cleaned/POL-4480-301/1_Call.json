@@ -27,6 +27,7 @@
       "Process auto policy renewal for 12 months",
       "Add roadside assistance rider for $5/month",
       "Send confirmation email with updated policy documents and total premium details"
-    ]
+    ],
+    "policy_number": "POL-4480-301"
   }
 }

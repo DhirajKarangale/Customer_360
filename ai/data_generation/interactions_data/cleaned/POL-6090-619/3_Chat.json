@@ -23,6 +23,7 @@
     ],
     "action_items": [
       "Agent to send confirmation email with policy details"
-    ]
+    ],
+    "policy_number": "POL-6090-619"
   }
 }

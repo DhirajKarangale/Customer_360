@@ -24,6 +24,7 @@
     "action_items": [
       "Resolve the expired policy status in the system",
       "Keep the customer updated on the status of the policy update"
-    ]
+    ],
+    "policy_number": "POL-8112-504"
   }
 }

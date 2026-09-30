@@ -25,6 +25,7 @@
     "action_items": [
       "Agent to generate and send a new signing link",
       "Customer to sign the policy extension document"
-    ]
+    ],
+    "policy_number": "POL-1911-361"
   }
 }

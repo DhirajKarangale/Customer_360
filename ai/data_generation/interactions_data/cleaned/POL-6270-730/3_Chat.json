@@ -23,6 +23,7 @@
     ],
     "action_items": [
       "Send a confirmation email to the customer regarding the active home policy"
-    ]
+    ],
+    "policy_number": "POL-6270-730"
   }
 }

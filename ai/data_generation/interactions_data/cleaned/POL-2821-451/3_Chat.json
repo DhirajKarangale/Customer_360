@@ -27,6 +27,7 @@
       "Send the Balanced Care enrollment form",
       "Review network hospitals list for the Standard plan",
       "Process policy switch to Balanced Care"
-    ]
+    ],
+    "policy_number": "POL-2821-451"
   }
 }

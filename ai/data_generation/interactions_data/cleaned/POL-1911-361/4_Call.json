@@ -25,6 +25,7 @@
       "Submit pre-authorization request through the portal",
       "Forward pre-authorization request to the hospital admin",
       "Keep the signed document on file"
-    ]
+    ],
+    "policy_number": "POL-1911-361"
   }
 }

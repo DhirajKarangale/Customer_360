@@ -24,6 +24,7 @@
     ],
     "action_items": [
       "Send a new invoice to the customer"
-    ]
+    ],
+    "policy_number": "POL-4533-209"
   }
 }

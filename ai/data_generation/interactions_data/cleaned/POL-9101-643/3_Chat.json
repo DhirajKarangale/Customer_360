@@ -24,6 +24,7 @@
     "action_items": [
       "Customer to expect confirmation email with policy details by end of day",
       "Customer to contact agent directly if they have further questions"
-    ]
+    ],
+    "policy_number": "POL-9101-643"
   }
 }

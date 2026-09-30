@@ -26,6 +26,7 @@
       "Set up auto-debit payment for \u20b911,875",
       "Confirm auto-debit setup",
       "Send payment receipt to the customer"
-    ]
+    ],
+    "policy_number": "POL-1922-220"
   }
 }

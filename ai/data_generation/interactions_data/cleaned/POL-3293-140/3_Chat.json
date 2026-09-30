@@ -27,6 +27,7 @@
     "action_items": [
       "Customer to reply with \"Accept Premium Plus\" to confirm renewal",
       "Agent to process the renewal and send updated policy document"
-    ]
+    ],
+    "policy_number": "POL-3293-140"
   }
 }

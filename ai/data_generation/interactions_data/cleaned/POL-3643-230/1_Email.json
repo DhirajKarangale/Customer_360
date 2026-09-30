@@ -26,6 +26,7 @@
       "Agent to verify policy status in the system",
       "Confirm whether coverage is active or lapsed",
       "Respond promptly to the customer"
-    ]
+    ],
+    "policy_number": "POL-3643-230"
   }
 }

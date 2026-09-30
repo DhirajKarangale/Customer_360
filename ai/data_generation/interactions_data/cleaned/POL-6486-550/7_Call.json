@@ -23,6 +23,7 @@
     ],
     "action_items": [
       "Agent to email the coverage summary PDF to the customer"
-    ]
+    ],
+    "policy_number": "POL-6486-550"
   }
 }

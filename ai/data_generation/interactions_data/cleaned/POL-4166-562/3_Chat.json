@@ -25,6 +25,7 @@
       "Cancellation of the health policy initiated",
       "Send confirmation email to customer",
       "Update system status to 'Expired'"
-    ]
+    ],
+    "policy_number": "POL-4166-562"
   }
 }

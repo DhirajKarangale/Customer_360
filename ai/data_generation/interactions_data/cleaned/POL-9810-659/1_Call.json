@@ -24,6 +24,7 @@
     "action_items": [
       "Collect basic customer information",
       "Activate home insurance policy"
-    ]
+    ],
+    "policy_number": "POL-9810-659"
   }
 }

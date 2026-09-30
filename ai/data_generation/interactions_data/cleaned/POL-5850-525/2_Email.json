@@ -24,6 +24,7 @@
     "action_items": [
       "Insurance agent will investigate required documentation and update the policy to Active",
       "Agent will inform the customer of progress"
-    ]
+    ],
+    "policy_number": "POL-5850-525"
   }
 }

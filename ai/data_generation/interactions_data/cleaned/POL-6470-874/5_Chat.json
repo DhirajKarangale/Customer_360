@@ -25,6 +25,7 @@
       "Update policy details with confirmed address",
       "Activate home policy by the end of the day",
       "Send confirmation email to customer once active"
-    ]
+    ],
+    "policy_number": "POL-6470-874"
   }
 }

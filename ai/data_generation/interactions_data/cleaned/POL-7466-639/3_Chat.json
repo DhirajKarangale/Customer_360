@@ -25,6 +25,7 @@
     "action_items": [
       "Process prorated refund of $480.00 to customer's Visa",
       "Send email confirmation once refund is posted"
-    ]
+    ],
+    "policy_number": "POL-7466-639"
   }
 }

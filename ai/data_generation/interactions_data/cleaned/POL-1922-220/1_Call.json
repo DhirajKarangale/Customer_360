@@ -22,6 +22,7 @@
     ],
     "action_items": [
       "Send confirmation email to the customer regarding the activated policy"
-    ]
+    ],
+    "policy_number": "POL-1922-220"
   }
 }

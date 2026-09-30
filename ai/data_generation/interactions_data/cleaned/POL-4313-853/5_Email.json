@@ -24,6 +24,7 @@
     "action_items": [
       "Wait for the new policy to be processed and go live",
       "Receive separate email with new policy details"
-    ]
+    ],
+    "policy_number": "POL-4313-853"
   }
 }

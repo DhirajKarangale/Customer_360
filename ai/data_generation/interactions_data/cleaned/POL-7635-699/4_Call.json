@@ -24,6 +24,7 @@
     "action_items": [
       "Customer to monitor policy status for 'Pending' designation until the 20th",
       "Company to complete renewal processing by the 20th"
-    ]
+    ],
+    "policy_number": "POL-7635-699"
   }
 }

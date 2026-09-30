@@ -24,6 +24,7 @@
     "action_items": [
       "Send confirmation email",
       "Send updated policy documents to the customer"
-    ]
+    ],
+    "policy_number": "POL-6199-922"
   }
 }

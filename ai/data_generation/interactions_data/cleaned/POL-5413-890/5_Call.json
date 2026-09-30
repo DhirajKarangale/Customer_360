@@ -24,6 +24,7 @@
     "action_items": [
       "Add roadside assistance rider to policy AP-123456 for an extra $12 per month",
       "Reflect updated premium on the customer's next bill"
-    ]
+    ],
+    "policy_number": "POL-5413-890"
   }
 }

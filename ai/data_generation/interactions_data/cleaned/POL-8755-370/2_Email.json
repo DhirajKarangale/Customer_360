@@ -25,6 +25,7 @@
     "action_items": [
       "Investigate why the customer was not notified of the policy expiration",
       "Clarify the differences between the reinstatement quote and the new suggested plans"
-    ]
+    ],
+    "policy_number": "POL-8755-370"
   }
 }

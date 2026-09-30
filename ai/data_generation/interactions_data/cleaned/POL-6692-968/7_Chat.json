@@ -24,6 +24,7 @@
     ],
     "action_items": [
       "Agent will escalate the policy status issue to update it"
-    ]
+    ],
+    "policy_number": "POL-6692-968"
   }
 }

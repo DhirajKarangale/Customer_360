@@ -24,6 +24,7 @@
     "action_items": [
       "Customer to confirm if any further action is required",
       "Agent to finalize policy activation after payment"
-    ]
+    ],
+    "policy_number": "POL-2949-580"
   }
 }

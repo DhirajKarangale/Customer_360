@@ -24,6 +24,7 @@
     "action_items": [
       "Customer to provide specific travel dates or request a quote for the new policy",
       "Agent to prepare a quote if requested"
-    ]
+    ],
+    "policy_number": "POL-1666-532"
   }
 }

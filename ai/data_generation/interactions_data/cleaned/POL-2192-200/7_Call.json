@@ -25,6 +25,7 @@
     "action_items": [
       "Set up a payment plan for the health policy premium",
       "Update the policy and send a new policy document to the customer"
-    ]
+    ],
+    "policy_number": "POL-2192-200"
   }
 }

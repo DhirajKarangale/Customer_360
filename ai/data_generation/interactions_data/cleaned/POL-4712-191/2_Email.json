@@ -26,6 +26,7 @@
       "Clarify if the reinstatement fee is mandatory",
       "Confirm if payment can be split into two installments",
       "Await customer's signed form and payment"
-    ]
+    ],
+    "policy_number": "POL-4712-191"
   }
 }

@@ -25,6 +25,7 @@
     "action_items": [
       "Confirm final premium based on provided vehicle details",
       "Provide available payment options to the customer"
-    ]
+    ],
+    "policy_number": "POL-5703-755"
   }
 }

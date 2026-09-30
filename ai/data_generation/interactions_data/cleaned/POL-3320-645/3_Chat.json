@@ -25,6 +25,7 @@
     "action_items": [
       "Agent resent renewal quote to customer's email",
       "Customer will review the quote and follow up if assistance is needed"
-    ]
+    ],
+    "policy_number": "POL-3320-645"
   }
 }

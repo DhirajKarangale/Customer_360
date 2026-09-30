@@ -27,6 +27,7 @@
       "Set up auto-pay using the provided link",
       "Review the PDF policy document",
       "Review the claim guide"
-    ]
+    ],
+    "policy_number": "POL-8381-570"
   }
 }

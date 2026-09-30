@@ -27,6 +27,7 @@
       "Agent to email payment link to the customer",
       "Customer to complete the $152.75 payment via credit card or net-banking",
       "Agent to process same-day policy reinstatement upon payment"
-    ]
+    ],
+    "policy_number": "POL-5413-890"
   }
 }

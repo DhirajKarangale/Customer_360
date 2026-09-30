@@ -25,6 +25,7 @@
     "action_items": [
       "Flag policy for priority manual review",
       "Confirm beneficiary details for the customer's mother"
-    ]
+    ],
+    "policy_number": "POL-7246-545"
   }
 }

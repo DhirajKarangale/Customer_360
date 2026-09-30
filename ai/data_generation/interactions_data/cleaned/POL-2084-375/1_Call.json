@@ -24,6 +24,7 @@
     ],
     "action_items": [
       "Send confirmation email regarding policy reactivation and next premium due date"
-    ]
+    ],
+    "policy_number": "POL-2084-375"
   }
 }

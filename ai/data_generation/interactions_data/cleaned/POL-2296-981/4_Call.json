@@ -25,6 +25,7 @@
     "action_items": [
       "Agent will guide Sneha through the medical certificate process",
       "Sneha to confirm her current address and phone number"
-    ]
+    ],
+    "policy_number": "POL-2296-981"
   }
 }

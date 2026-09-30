@@ -23,6 +23,7 @@
     "action_items": [
       "Customer to provide vehicle make and model",
       "Agent to finalize policy activation after receiving vehicle details"
-    ]
+    ],
+    "policy_number": "POL-6090-619"
   }
 }

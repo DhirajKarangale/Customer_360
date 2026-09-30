@@ -23,6 +23,7 @@
     ],
     "action_items": [
       "Update policy status to active in the system"
-    ]
+    ],
+    "policy_number": "POL-2706-623"
   }
 }

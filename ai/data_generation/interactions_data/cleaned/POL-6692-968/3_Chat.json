@@ -26,6 +26,7 @@
       "Confirm policy activation status",
       "Investigate and fix notification glitch",
       "Escalate policy status update to administration team"
-    ]
+    ],
+    "policy_number": "POL-6692-968"
   }
 }

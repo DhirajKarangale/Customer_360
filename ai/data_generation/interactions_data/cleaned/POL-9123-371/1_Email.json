@@ -24,6 +24,7 @@
     "action_items": [
       "Investigate why the policy status shows as expired",
       "Provide an update to the customer"
-    ]
+    ],
+    "policy_number": "POL-9123-371"
   }
 }

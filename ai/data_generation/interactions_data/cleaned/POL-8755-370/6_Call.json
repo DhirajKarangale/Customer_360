@@ -23,6 +23,7 @@
     ],
     "action_items": [
       "Update the status of the old policy to expired in the system"
-    ]
+    ],
+    "policy_number": "POL-8755-370"
   }
 }

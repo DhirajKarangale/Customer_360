@@ -26,6 +26,7 @@
       "Verify the completed form and payment on the agent's end",
       "Confirm the updated policy status",
       "Confirm the revised policy expiration date"
-    ]
+    ],
+    "policy_number": "POL-2093-198"
   }
 }

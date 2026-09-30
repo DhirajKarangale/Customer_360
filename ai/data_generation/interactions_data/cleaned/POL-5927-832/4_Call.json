@@ -24,6 +24,7 @@
     "action_items": [
       "Agent to resolve the payment processing backlog and reinstate the policy",
       "Agent to send a follow-up email with details to the customer"
-    ]
+    ],
+    "policy_number": "POL-5927-832"
   }
 }

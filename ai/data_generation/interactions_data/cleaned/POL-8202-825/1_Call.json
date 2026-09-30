@@ -24,6 +24,7 @@
     "action_items": [
       "Process policy renewal payment",
       "Send renewal confirmation email"
-    ]
+    ],
+    "policy_number": "POL-8202-825"
   }
 }

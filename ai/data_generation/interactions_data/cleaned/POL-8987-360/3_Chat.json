@@ -22,6 +22,7 @@
     ],
     "action_items": [
       "Send confirmation email to customer once policy is active"
-    ]
+    ],
+    "policy_number": "POL-8987-360"
   }
 }

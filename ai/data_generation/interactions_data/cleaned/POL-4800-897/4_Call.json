@@ -25,6 +25,7 @@
     "action_items": [
       "Send cancellation confirmation email",
       "Attach claim summary to an email and send to the customer"
-    ]
+    ],
+    "policy_number": "POL-4800-897"
   }
 }

@@ -25,6 +25,7 @@
     "action_items": [
       "Send a confirmation email regarding the policy cancellation",
       "Process the prorated refund to the customer's original payment method within 5-7 business days"
-    ]
+    ],
+    "policy_number": "POL-7466-639"
   }
 }

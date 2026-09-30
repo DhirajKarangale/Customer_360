@@ -28,6 +28,7 @@
       "Update primary beneficiary to Raj and secondary to Ananya",
       "Send confirmation email for beneficiary update",
       "Send coverage summary PDF"
-    ]
+    ],
+    "policy_number": "POL-6241-958"
   }
 }

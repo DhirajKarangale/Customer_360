@@ -43,6 +43,7 @@ CREATE TABLE customer_interactions (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     customer_id UUID NOT NULL REFERENCES customers(id) ON DELETE CASCADE,
     agent_id UUID REFERENCES insurance_agents(id) ON DELETE SET NULL,
+    policy_number VARCHAR(100),
     
     interaction_type VARCHAR(50) NOT NULL, -- e.g., 'CALL', 'CHAT', 'EMAIL'
     interaction_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,

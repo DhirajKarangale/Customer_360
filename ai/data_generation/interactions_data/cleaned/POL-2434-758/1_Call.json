@@ -22,6 +22,7 @@
     ],
     "action_items": [
       "Agent to confirm remaining details and process the cancellation of policy AP-001234"
-    ]
+    ],
+    "policy_number": "POL-2434-758"
   }
 }

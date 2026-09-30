@@ -25,6 +25,7 @@
     "action_items": [
       "Disable auto-renewal for policy SH-112233",
       "Send an email summary containing cancellation notes and updated policy terms to the customer"
-    ]
+    ],
+    "policy_number": "POL-4480-301"
   }
 }

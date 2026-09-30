@@ -24,6 +24,7 @@
     "action_items": [
       "Confirm receipt of the payment transaction",
       "Share the renewed policy certificate with the customer"
-    ]
+    ],
+    "policy_number": "POL-1913-586"
   }
 }

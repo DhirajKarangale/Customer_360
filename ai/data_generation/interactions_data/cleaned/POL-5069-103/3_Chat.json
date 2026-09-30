@@ -26,6 +26,7 @@
       "View the policy document via the provided link",
       "Submit any future claims via the online portal: https://portal.dcodelabs.com/claims",
       "Review the attached quick-start guide for claims"
-    ]
+    ],
+    "policy_number": "POL-5069-103"
   }
 }

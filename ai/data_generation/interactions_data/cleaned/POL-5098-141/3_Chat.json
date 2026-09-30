@@ -25,6 +25,7 @@
     "action_items": [
       "Confirm policy number SH-123456 for Kiara Sen",
       "Select payment method (upfront vs. payment plan)"
-    ]
+    ],
+    "policy_number": "POL-5098-141"
   }
 }

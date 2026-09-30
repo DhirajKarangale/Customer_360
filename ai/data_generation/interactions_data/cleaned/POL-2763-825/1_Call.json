@@ -23,6 +23,7 @@
     "action_items": [
       "Confirm customer address on file",
       "Proceed with auto policy cancellation"
-    ]
+    ],
+    "policy_number": "POL-2763-825"
   }
 }

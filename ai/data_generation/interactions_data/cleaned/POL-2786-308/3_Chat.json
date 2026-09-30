@@ -26,6 +26,7 @@
     "action_items": [
       "Send auto-pay setup link to customer",
       "Send email reminder for premium payment"
-    ]
+    ],
+    "policy_number": "POL-2786-308"
   }
 }

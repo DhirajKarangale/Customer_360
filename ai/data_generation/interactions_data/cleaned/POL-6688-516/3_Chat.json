@@ -25,6 +25,7 @@
     "action_items": [
       "Agent will send email with updated policy details",
       "Policy to become active by the next day"
-    ]
+    ],
+    "policy_number": "POL-6688-516"
   }
 }

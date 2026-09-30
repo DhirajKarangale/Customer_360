@@ -25,6 +25,7 @@
     "action_items": [
       "Resend home insurance policy documents to customer",
       "Update policy status to 'Active' in the system"
-    ]
+    ],
+    "policy_number": "POL-9450-307"
   }
 }

@@ -23,6 +23,7 @@
     ],
     "action_items": [
       "Send a policy cancellation confirmation email to the customer"
-    ]
+    ],
+    "policy_number": "POL-2951-880"
   }
 }

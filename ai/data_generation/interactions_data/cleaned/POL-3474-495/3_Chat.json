@@ -25,6 +25,7 @@
     "action_items": [
       "Customer to pay the total due amount of \u20b925,000 using the provided payment link",
       "Agent to confirm policy activation status after payment"
-    ]
+    ],
+    "policy_number": "POL-3474-495"
   }
 }

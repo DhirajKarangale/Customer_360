@@ -26,6 +26,7 @@
     "action_items": [
       "Customer to use the autopay link to set up automatic payments",
       "Agent to send confirmation email and PDF copy of the policy"
-    ]
+    ],
+    "policy_number": "POL-8381-570"
   }
 }

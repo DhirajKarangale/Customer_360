@@ -23,6 +23,7 @@
     "action_items": [
       "Wait for policy activation confirmation email",
       "Check inbox/spam for the resent policy document"
-    ]
+    ],
+    "policy_number": "POL-1704-291"
   }
 }

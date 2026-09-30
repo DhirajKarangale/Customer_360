@@ -24,6 +24,7 @@
     "action_items": [
       "Customer to confirm complete address including street name or zip code",
       "Agent to send policy details form to customer"
-    ]
+    ],
+    "policy_number": "POL-9810-659"
   }
 }

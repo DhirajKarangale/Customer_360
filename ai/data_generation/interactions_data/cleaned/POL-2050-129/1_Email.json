@@ -25,6 +25,7 @@
     "action_items": [
       "Investigate why the policy expired despite expected auto-renewal",
       "Provide steps to reinstate or renew the health policy SH-123456"
-    ]
+    ],
+    "policy_number": "POL-2050-129"
   }
 }

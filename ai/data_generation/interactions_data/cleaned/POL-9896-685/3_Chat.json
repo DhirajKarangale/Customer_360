@@ -26,6 +26,7 @@
     "action_items": [
       "Check if customer qualifies for the no-claim bonus",
       "Provide the deadline for policy renewal"
-    ]
+    ],
+    "policy_number": "POL-9896-685"
   }
 }

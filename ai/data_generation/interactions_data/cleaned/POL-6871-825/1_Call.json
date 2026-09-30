@@ -25,6 +25,7 @@
       "Resend welcome email attachment",
       "Activate travel policy",
       "Send confirmation email"
-    ]
+    ],
+    "policy_number": "POL-6871-825"
   }
 }

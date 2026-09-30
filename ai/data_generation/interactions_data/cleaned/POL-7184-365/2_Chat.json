@@ -24,6 +24,7 @@
     "action_items": [
       "Confirm current address",
       "Sign and return the Policy Update Form sent via email"
-    ]
+    ],
+    "policy_number": "POL-7184-365"
   }
 }

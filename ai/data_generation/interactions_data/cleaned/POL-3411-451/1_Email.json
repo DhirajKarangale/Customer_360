@@ -25,6 +25,7 @@
       "Agent to review the customer's account",
       "Confirm coverage details and ensure status is active",
       "Request any additional documents if needed"
-    ]
+    ],
+    "policy_number": "POL-3411-451"
   }
 }

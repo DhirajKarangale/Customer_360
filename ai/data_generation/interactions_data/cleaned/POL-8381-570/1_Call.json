@@ -23,6 +23,7 @@
     ],
     "action_items": [
       "Send confirmation email to customer regarding policy activation"
-    ]
+    ],
+    "policy_number": "POL-8381-570"
   }
 }

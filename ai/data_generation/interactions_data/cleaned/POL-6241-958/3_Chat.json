@@ -25,6 +25,7 @@
     "action_items": [
       "Send address update confirmation email to the customer",
       "Provide policy coverage summary document"
-    ]
+    ],
+    "policy_number": "POL-6241-958"
   }
 }

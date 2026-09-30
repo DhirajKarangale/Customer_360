@@ -27,6 +27,7 @@
       "Send revised quote via email",
       "Customer to review and confirm email quote",
       "Agent to follow up tomorrow regarding email receipt"
-    ]
+    ],
+    "policy_number": "POL-8683-823"
   }
 }

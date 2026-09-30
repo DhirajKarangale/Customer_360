@@ -24,6 +24,7 @@
     "action_items": [
       "Check the system status of policy DC-HLT-2023-8891",
       "Ensure the target end status is updated to 'Expired'"
-    ]
+    ],
+    "policy_number": "POL-9092-742"
   }
 }

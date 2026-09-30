@@ -24,6 +24,7 @@
     "action_items": [
       "Send confirmation email for old policy expiration",
       "Send new policy details to customer once processed"
-    ]
+    ],
+    "policy_number": "POL-4313-853"
   }
 }

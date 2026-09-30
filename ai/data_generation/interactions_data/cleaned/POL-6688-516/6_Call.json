@@ -25,6 +25,7 @@
     "action_items": [
       "Agent to reprocess payment to reinstate the policy",
       "Waive the $50 reinstatement fee"
-    ]
+    ],
+    "policy_number": "POL-6688-516"
   }
 }

@@ -26,6 +26,7 @@
     "action_items": [
       "Agent to send a link to the new application form via email",
       "Agent to clarify coverage details compared to the old policy"
-    ]
+    ],
+    "policy_number": "POL-8292-796"
   }
 }

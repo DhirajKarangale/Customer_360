@@ -24,6 +24,7 @@
     "action_items": [
       "Process prorated refund within 5-7 business days",
       "Send separate refund confirmation transaction"
-    ]
+    ],
+    "policy_number": "POL-7358-681"
   }
 }

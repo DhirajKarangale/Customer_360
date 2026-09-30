@@ -28,6 +28,7 @@
       "Keep claim window open until 15/10/2027",
       "Send final policy closure statement and pending claims summary after the claim window",
       "Resend the updated policy PDF via email to the customer"
-    ]
+    ],
+    "policy_number": "POL-8202-825"
   }
 }

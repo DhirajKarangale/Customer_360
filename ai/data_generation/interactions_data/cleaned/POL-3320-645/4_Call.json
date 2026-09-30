@@ -24,6 +24,7 @@
     "action_items": [
       "Agent will assist with renewing the auto insurance policy",
       "Agent will resend the renewal quote via email"
-    ]
+    ],
+    "policy_number": "POL-3320-645"
   }
 }

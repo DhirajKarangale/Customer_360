@@ -24,6 +24,7 @@
     "action_items": [
       "Agent to escalate system issue to correct policy status",
       "Agent to follow up with customer by end of day to confirm update"
-    ]
+    ],
+    "policy_number": "POL-5098-141"
   }
 }

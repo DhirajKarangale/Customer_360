@@ -23,6 +23,7 @@
     ],
     "action_items": [
       "Update policy status to expired"
-    ]
+    ],
+    "policy_number": "POL-6738-577"
   }
 }

@@ -27,6 +27,7 @@
       "Customer to sign up for the new policy",
       "Agent to send the new policy document via email and make it downloadable in the online account",
       "Agent to confirm the status of the old policy in the system"
-    ]
+    ],
+    "policy_number": "POL-5359-197"
   }
 }

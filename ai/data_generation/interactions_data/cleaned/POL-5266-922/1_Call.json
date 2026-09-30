@@ -24,6 +24,7 @@
     "action_items": [
       "Customer to confirm whether to proceed with renewal or request changes",
       "Agent to prepare renewal paperwork based on customer's decision"
-    ]
+    ],
+    "policy_number": "POL-5266-922"
   }
 }

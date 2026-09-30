@@ -25,6 +25,7 @@
     "action_items": [
       "Agent to pull up policy details and guide renewal process",
       "Customer to review renewal options once details are provided"
-    ]
+    ],
+    "policy_number": "POL-2296-981"
   }
 }

@@ -25,6 +25,7 @@
     "action_items": [
       "Verify auto policy AP-001234 update",
       "Update policy status to expired"
-    ]
+    ],
+    "policy_number": "POL-9896-685"
   }
 }

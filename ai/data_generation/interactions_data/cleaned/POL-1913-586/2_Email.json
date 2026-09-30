@@ -27,6 +27,7 @@
       "Provide exact cost difference between current plan and new plan",
       "Confirm if there is a grace period to avoid a coverage gap",
       "Confirm the final date to finalize renewal for continuous coverage"
-    ]
+    ],
+    "policy_number": "POL-1913-586"
   }
 }

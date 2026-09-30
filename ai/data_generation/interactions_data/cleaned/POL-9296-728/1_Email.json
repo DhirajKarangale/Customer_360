@@ -26,6 +26,7 @@
       "Investigate the failed payment transaction",
       "Confirm whether the auto insurance policy is still active, lapsed, or expired",
       "Respond promptly to the customer"
-    ]
+    ],
+    "policy_number": "POL-9296-728"
   }
 }

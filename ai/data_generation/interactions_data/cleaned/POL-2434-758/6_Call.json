@@ -20,6 +20,7 @@
       "auto policy cancellation",
       "policy AP-001234"
     ],
-    "action_items": []
+    "action_items": [],
+    "policy_number": "POL-2434-758"
   }
 }

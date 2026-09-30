@@ -24,6 +24,7 @@
     "action_items": [
       "Manually update the system status",
       "Send the confirmation email to the customer"
-    ]
+    ],
+    "policy_number": "POL-1472-990"
   }
 }

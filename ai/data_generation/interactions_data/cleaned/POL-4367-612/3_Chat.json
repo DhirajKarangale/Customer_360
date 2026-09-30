@@ -24,6 +24,7 @@
     "action_items": [
       "Confirm policy details with the underwriting team",
       "Process policy reinstatement for policy DC-001234"
-    ]
+    ],
+    "policy_number": "POL-4367-612"
   }
 }

@@ -26,6 +26,7 @@
       "Send secure credit card payment link via email and SMS",
       "Complete payment via the link",
       "Receive confirmation receipt and updated policy document"
-    ]
+    ],
+    "policy_number": "POL-5718-196"
   }
 }

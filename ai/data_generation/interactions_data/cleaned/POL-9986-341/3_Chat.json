@@ -24,6 +24,7 @@
     "action_items": [
       "Agent to move policy status to 'Under Review'",
       "Agent to finalize the policy and send the final document by tomorrow"
-    ]
+    ],
+    "policy_number": "POL-9986-341"
   }
 }

@@ -25,6 +25,7 @@
     "action_items": [
       "Send a new auto policy quote to the customer via email",
       "Send the new application form to the customer via email"
-    ]
+    ],
+    "policy_number": "POL-3320-883"
   }
 }

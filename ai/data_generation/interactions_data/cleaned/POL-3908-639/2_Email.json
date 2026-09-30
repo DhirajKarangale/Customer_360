@@ -26,6 +26,7 @@
       "Finalize the changes to the policy",
       "Apply the bundle discount",
       "Notify the customer once the policy is fully active"
-    ]
+    ],
+    "policy_number": "POL-3908-639"
   }
 }

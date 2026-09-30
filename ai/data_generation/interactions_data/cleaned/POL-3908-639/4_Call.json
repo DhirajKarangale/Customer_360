@@ -26,6 +26,7 @@
       "Mark the home policy as expiring/will expire without auto-renewal",
       "Email a final policy expiration notice to the customer",
       "Ensure the 10% auto policy bundle discount remains in effect until 04/11/2026"
-    ]
+    ],
+    "policy_number": "POL-3908-639"
   }
 }

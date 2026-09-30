@@ -27,6 +27,7 @@
       "Sunita to flag the underwriting review as urgent",
       "Sunita to email the final policy PDF with the cover page highlighted within 10 minutes",
       "Rohan to wait for the email and policy activation status"
-    ]
+    ],
+    "policy_number": "POL-9986-341"
   }
 }

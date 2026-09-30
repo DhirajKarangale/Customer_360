@@ -25,6 +25,7 @@
     "action_items": [
       "Customer to e-sign and email the renewal form",
       "Agent to update the system and send confirmation email upon receiving the signed form"
-    ]
+    ],
+    "policy_number": "POL-4381-650"
   }
 }

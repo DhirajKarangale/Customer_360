@@ -25,6 +25,7 @@
     "action_items": [
       "Send details of the newly launched policy to the customer",
       "Provide a list of alternative insurance providers to the customer"
-    ]
+    ],
+    "policy_number": "POL-6972-333"
   }
 }

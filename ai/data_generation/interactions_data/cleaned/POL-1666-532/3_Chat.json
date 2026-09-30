@@ -25,6 +25,7 @@
     "action_items": [
       "Customer to review the new travel policy quote and terms",
       "Agent to await customer's confirmation for the new policy"
-    ]
+    ],
+    "policy_number": "POL-1666-532"
   }
 }

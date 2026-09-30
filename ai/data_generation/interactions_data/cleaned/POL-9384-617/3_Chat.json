@@ -25,6 +25,7 @@
       "Update customer records with the new phone number",
       "Send confirmation email with renewal details and payment instructions within 24 hours",
       "Customer to make payment to activate policy"
-    ]
+    ],
+    "policy_number": "POL-9384-617"
   }
 }

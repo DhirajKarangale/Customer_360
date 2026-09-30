@@ -25,6 +25,7 @@
     "action_items": [
       "Agent to check if the premium amount is correct using policy number HP-001234",
       "Agent to provide the renewal deadline to the customer"
-    ]
+    ],
+    "policy_number": "POL-5003-916"
   }
 }

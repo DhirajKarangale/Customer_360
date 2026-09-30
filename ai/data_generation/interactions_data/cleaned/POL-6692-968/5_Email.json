@@ -26,6 +26,7 @@
     "action_items": [
       "Send confirmation email to the customer",
       "Provide updated policy document (attached)"
-    ]
+    ],
+    "policy_number": "POL-6692-968"
   }
 }

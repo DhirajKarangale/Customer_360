@@ -26,6 +26,7 @@
       "Customer to review the attached expiration notice",
       "Customer to decide on renewal within the next 30 days",
       "Agent to assist with the renewal process if requested"
-    ]
+    ],
+    "policy_number": "POL-2949-580"
   }
 }

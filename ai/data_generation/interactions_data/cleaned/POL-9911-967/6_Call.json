@@ -26,6 +26,7 @@
       "Renew auto policy",
       "Update customer contact information",
       "Send confirmation email"
-    ]
+    ],
+    "policy_number": "POL-9911-967"
   }
 }

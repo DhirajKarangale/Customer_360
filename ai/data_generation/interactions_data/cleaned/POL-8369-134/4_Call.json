@@ -24,6 +24,7 @@
     "action_items": [
       "Send policy amendment email to customer",
       "Invoice the rider amount of INR 2,300 in 30 days"
-    ]
+    ],
+    "policy_number": "POL-8369-134"
   }
 }

@@ -27,6 +27,7 @@
       "Send portal link to the customer",
       "Provide agent email address to the customer",
       "Customer to upload/send proof of income and medical certificate"
-    ]
+    ],
+    "policy_number": "POL-2316-788"
   }
 }

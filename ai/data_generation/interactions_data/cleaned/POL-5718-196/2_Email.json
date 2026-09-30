@@ -27,6 +27,7 @@
       "Provide payment link to the customer",
       "Clarify policy activation duration after payment",
       "Confirm if credit card payments are accepted"
-    ]
+    ],
+    "policy_number": "POL-5718-196"
   }
 }

@@ -25,6 +25,7 @@
     "action_items": [
       "Wait for underwriting team to review coverage changes",
       "Agent to send email confirmation once policy is active"
-    ]
+    ],
+    "policy_number": "POL-7635-699"
   }
 }

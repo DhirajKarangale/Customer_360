@@ -25,6 +25,7 @@
     "action_items": [
       "Customer to decide on reinstatement or confirm cancellation",
       "Agent updated policy status to expired"
-    ]
+    ],
+    "policy_number": "POL-3384-985"
   }
 }

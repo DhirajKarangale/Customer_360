@@ -25,6 +25,7 @@
       "Mark policy HP-2024-5678 as 'Expired' in the system",
       "Send confirmation email to the customer",
       "Attach final policy statement and expiration notice"
-    ]
+    ],
+    "policy_number": "POL-4101-835"
   }
 }

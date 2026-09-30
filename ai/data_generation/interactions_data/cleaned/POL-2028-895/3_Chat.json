@@ -25,6 +25,7 @@
     "action_items": [
       "Customer to complete payment today via the provided secure link",
       "Agent to update the system and send the new policy document once payment is confirmed"
-    ]
+    ],
+    "policy_number": "POL-2028-895"
   }
 }

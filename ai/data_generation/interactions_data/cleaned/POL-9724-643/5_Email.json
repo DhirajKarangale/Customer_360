@@ -25,6 +25,7 @@
       "Await payment clearance for \u20b915,000",
       "Activate policy upon payment completion",
       "Send confirmation email to customer"
-    ]
+    ],
+    "policy_number": "POL-9724-643"
   }
 }

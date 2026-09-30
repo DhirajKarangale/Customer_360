@@ -25,6 +25,7 @@
       "Provide the exact refund amount",
       "Confirm the expected credit date",
       "Confirm no outstanding balances on the account"
-    ]
+    ],
+    "policy_number": "POL-7466-639"
   }
 }

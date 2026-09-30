@@ -26,6 +26,7 @@
       "Provide ID proof",
       "Provide address proof",
       "Provide medical reports if applicable"
-    ]
+    ],
+    "policy_number": "POL-3599-447"
   }
 }

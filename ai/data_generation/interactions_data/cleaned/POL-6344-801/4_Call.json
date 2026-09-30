@@ -26,6 +26,7 @@
       "Customer to provide payment information for reinstatement",
       "Agent to process reinstatement upon receipt of payment",
       "Customer may call back later to make payment"
-    ]
+    ],
+    "policy_number": "POL-6344-801"
   }
 }

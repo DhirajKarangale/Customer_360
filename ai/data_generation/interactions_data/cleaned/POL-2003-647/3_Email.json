@@ -26,6 +26,7 @@
       "Review the attached insurance quote",
       "Review the list of required documents",
       "Finalize the policy and activate coverage"
-    ]
+    ],
+    "policy_number": "POL-2003-647"
   }
 }

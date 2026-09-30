@@ -23,6 +23,7 @@
     "action_items": [
       "Agent updated payment status in system",
       "Confirmed policy activation"
-    ]
+    ],
+    "policy_number": "POL-8536-663"
   }
 }

@@ -27,6 +27,7 @@
       "Send payment receipt #REC-2026-011875",
       "Send auto-debit reminder on 12 Oct 2026",
       "Resend PDF copy of the policy document"
-    ]
+    ],
+    "policy_number": "POL-1922-220"
   }
 }

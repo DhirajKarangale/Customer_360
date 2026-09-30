@@ -25,6 +25,7 @@
     "action_items": [
       "Update policy status to 'Pending' in the system",
       "Provide policy document timeline to the customer"
-    ]
+    ],
+    "policy_number": "POL-9058-358"
   }
 }

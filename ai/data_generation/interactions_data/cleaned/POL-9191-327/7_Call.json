@@ -25,6 +25,7 @@
     "action_items": [
       "Update system to reflect policy cancellation",
       "Email policy-summary PDF and cancellation notice to the customer"
-    ]
+    ],
+    "policy_number": "POL-9191-327"
   }
 }

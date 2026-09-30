@@ -23,6 +23,7 @@
     "action_items": [
       "Agent to keep customer updated on policy status",
       "Policy activation within 2-3 working days"
-    ]
+    ],
+    "policy_number": "POL-1710-288"
   }
 }

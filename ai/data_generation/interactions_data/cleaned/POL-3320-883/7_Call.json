@@ -25,6 +25,7 @@
     "action_items": [
       "Customer will proceed with making the payment",
       "Agent will send a confirmation email once payment processes"
-    ]
+    ],
+    "policy_number": "POL-3320-883"
   }
 }

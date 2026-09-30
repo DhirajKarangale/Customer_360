@@ -25,6 +25,7 @@
     "action_items": [
       "Review the attached invoice",
       "Pay the outstanding premium and reinstatement fee to renew policy HP-123456"
-    ]
+    ],
+    "policy_number": "POL-6248-458"
   }
 }

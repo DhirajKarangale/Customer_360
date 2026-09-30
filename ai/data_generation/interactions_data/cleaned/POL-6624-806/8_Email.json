@@ -25,6 +25,7 @@
     "action_items": [
       "Agent to provide details of the underwriting process and required documents",
       "Customer to review information and decide on purchasing a new policy"
-    ]
+    ],
+    "policy_number": "POL-6624-806"
   }
 }

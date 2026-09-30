@@ -24,6 +24,7 @@
     "action_items": [
       "Confirm vehicle's registration number",
       "Confirm policy start date"
-    ]
+    ],
+    "policy_number": "POL-9058-358"
   }
 }

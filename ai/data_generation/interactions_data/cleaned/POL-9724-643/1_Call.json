@@ -25,6 +25,7 @@
     "action_items": [
       "Place policy on pending status",
       "Send email with payment details and instructions to customer"
-    ]
+    ],
+    "policy_number": "POL-9724-643"
   }
 }

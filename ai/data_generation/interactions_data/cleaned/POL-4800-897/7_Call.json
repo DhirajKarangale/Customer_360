@@ -29,6 +29,7 @@
       "Send claim-history summary",
       "Send dental rider quote and short enrollment form via email",
       "Customer to sign and return the enrollment form"
-    ]
+    ],
+    "policy_number": "POL-4800-897"
   }
 }

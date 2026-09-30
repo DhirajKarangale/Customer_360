@@ -22,6 +22,7 @@
     ],
     "action_items": [
       "Agent to send email when policy becomes active"
-    ]
+    ],
+    "policy_number": "POL-7690-584"
   }
 }

@@ -25,6 +25,7 @@
     "action_items": [
       "Update policy status within 24 hours",
       "Send a confirmation email to the customer once the update is done"
-    ]
+    ],
+    "policy_number": "POL-2093-198"
   }
 }

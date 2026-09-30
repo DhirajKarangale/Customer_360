@@ -26,6 +26,7 @@
       "Process refund of prepaid premium within 10-15 business days",
       "Send final settlement statement by email today",
       "Send a short summary SMS to the customer"
-    ]
+    ],
+    "policy_number": "POL-2951-880"
   }
 }

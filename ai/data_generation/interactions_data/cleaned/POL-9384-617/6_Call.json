@@ -24,6 +24,7 @@
     "action_items": [
       "Agent to send a payment link via email",
       "Customer to complete the payment to reactivate the policy"
-    ]
+    ],
+    "policy_number": "POL-9384-617"
   }
 }

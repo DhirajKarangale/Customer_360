@@ -25,6 +25,7 @@
     "action_items": [
       "Process the policy renewal",
       "Email the updated policy documents to the customer within the hour"
-    ]
+    ],
+    "policy_number": "POL-7691-433"
   }
 }

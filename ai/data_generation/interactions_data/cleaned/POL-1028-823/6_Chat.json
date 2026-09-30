@@ -22,6 +22,7 @@
     ],
     "action_items": [
       "update policy status to 'Active'"
-    ]
+    ],
+    "policy_number": "POL-1028-823"
   }
 }

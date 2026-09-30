@@ -27,6 +27,7 @@
       "Process applicable refunds",
       "Check for pending renewal charges",
       "Inform customer if further documentation is required"
-    ]
+    ],
+    "policy_number": "POL-1323-603"
   }
 }

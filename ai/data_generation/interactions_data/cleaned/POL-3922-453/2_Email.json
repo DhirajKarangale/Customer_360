@@ -28,6 +28,7 @@
       "Customer to decide whether to proceed with reinstatement",
       "Customer to pay outstanding premium and reinstatement fee",
       "Agent to await customer's confirmation"
-    ]
+    ],
+    "policy_number": "POL-3922-453"
   }
 }

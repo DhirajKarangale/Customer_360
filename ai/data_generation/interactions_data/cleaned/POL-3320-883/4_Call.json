@@ -26,6 +26,7 @@
     "action_items": [
       "Process the 3-month term policy for $345",
       "Send confirmation and policy documents via email to the customer"
-    ]
+    ],
+    "policy_number": "POL-3320-883"
   }
 }

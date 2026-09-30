@@ -25,6 +25,7 @@
     "action_items": [
       "Check email spam folder for the payment notice",
       "Process the policy payment over the phone to reactivate the health policy"
-    ]
+    ],
+    "policy_number": "POL-6199-922"
   }
 }

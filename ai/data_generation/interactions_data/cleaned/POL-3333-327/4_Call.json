@@ -26,6 +26,7 @@
     "action_items": [
       "Make a payment of $500 by the end of the week to reinstate the policy",
       "Send a confirmation email with details to the customer"
-    ]
+    ],
+    "policy_number": "POL-3333-327"
   }
 }

@@ -25,6 +25,7 @@
       "Process policy cancellation within 24 hours",
       "Calculate and issue prorated refund within 5-7 business days",
       "Send a confirmation email to the customer"
-    ]
+    ],
+    "policy_number": "POL-7358-681"
   }
 }

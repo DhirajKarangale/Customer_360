@@ -26,6 +26,7 @@
       "Process the policy renewal",
       "Send a confirmation email with updated policy details by end of day",
       "Clarify if there is a gap in coverage between policies"
-    ]
+    ],
+    "policy_number": "POL-8196-922"
   }
 }

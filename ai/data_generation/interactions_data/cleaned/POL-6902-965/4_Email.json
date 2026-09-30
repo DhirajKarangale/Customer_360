@@ -24,6 +24,7 @@
     "action_items": [
       "Customer to decide if they want to proceed with lowering the deductible to $250",
       "Agent to send a revised quote if the customer requests the deductible change"
-    ]
+    ],
+    "policy_number": "POL-6902-965"
   }
 }

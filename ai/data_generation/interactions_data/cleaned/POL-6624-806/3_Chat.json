@@ -26,6 +26,7 @@
     "action_items": [
       "Customer to confirm whether to make the remaining payment of 15,000 now",
       "Agent to process the payment if the customer agrees"
-    ]
+    ],
+    "policy_number": "POL-6624-806"
   }
 }

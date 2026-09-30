@@ -28,6 +28,7 @@
     "action_items": [
       "Agent to send a payment link to the customer",
       "Customer to complete payment and upload required documents"
-    ]
+    ],
+    "policy_number": "POL-3283-904"
   }
 }

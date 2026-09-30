@@ -26,6 +26,7 @@
       "Agent to review form and update policy details",
       "Agent to send email notification upon completion",
       "Agent to confirm if policy remains active or becomes pending"
-    ]
+    ],
+    "policy_number": "POL-7690-584"
   }
 }

@@ -26,6 +26,7 @@
       "Process the rider addition",
       "Update the beneficiary to Maya Patel",
       "Send a confirmation email to the customer"
-    ]
+    ],
+    "policy_number": "POL-1238-658"
   }
 }

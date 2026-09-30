@@ -27,6 +27,7 @@
       "Agent sent secure payment link and quote PDF via email",
       "Customer to complete payment via net banking",
       "Agent to issue new policy certificate (AG-2026-078) once payment is processed"
-    ]
+    ],
+    "policy_number": "POL-5703-755"
   }
 }

@@ -27,6 +27,7 @@
       "Process the $1,400 payment for policy renewal",
       "Send a confirmation email to the customer",
       "Send a renewal reminder 30 days before August 15, 2028"
-    ]
+    ],
+    "policy_number": "POL-9272-333"
   }
 }

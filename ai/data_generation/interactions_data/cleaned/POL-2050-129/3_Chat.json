@@ -24,6 +24,7 @@
     "action_items": [
       "Send email with updated policy status",
       "Send email with updated premium amount and payment link"
-    ]
+    ],
+    "policy_number": "POL-2050-129"
   }
 }

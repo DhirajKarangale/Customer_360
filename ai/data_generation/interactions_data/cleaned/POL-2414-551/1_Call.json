@@ -24,6 +24,7 @@
     "action_items": [
       "Send payment link to customer via email",
       "Pay monthly premium of $120 to reactivate policy"
-    ]
+    ],
+    "policy_number": "POL-2414-551"
   }
 }

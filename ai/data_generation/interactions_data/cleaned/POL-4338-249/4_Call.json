@@ -24,6 +24,7 @@
     "action_items": [
       "Process the first payment today",
       "Email the updated policy document and receipt to the customer"
-    ]
+    ],
+    "policy_number": "POL-4338-249"
   }
 }

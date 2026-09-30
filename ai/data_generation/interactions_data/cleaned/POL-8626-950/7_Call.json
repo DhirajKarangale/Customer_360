@@ -24,6 +24,7 @@
     "action_items": [
       "Investigate why the policy is still showing as expired in the system",
       "Resolve the policy activation issue for the customer"
-    ]
+    ],
+    "policy_number": "POL-8626-950"
   }
 }

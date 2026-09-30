@@ -26,6 +26,7 @@
       "Investigate the initial payment processing failure",
       "Provide a detailed breakdown of the premium amount and additional fees",
       "Update payment information and complete payment for policy reinstatement"
-    ]
+    ],
+    "policy_number": "POL-8626-950"
   }
 }

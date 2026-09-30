@@ -24,6 +24,7 @@
     "action_items": [
       "Agent to update policy status to active",
       "Customer to receive a confirmation email once status is updated"
-    ]
+    ],
+    "policy_number": "POL-4533-209"
   }
 }

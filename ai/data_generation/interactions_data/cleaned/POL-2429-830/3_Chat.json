@@ -24,6 +24,7 @@
     "action_items": [
       "Process the policy cancellation",
       "Send a confirmation email including refund details"
-    ]
+    ],
+    "policy_number": "POL-2429-830"
   }
 }

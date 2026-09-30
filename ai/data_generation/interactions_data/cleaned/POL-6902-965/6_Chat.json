@@ -26,6 +26,7 @@
     "action_items": [
       "Remove the roadside assistance rider from the quote",
       "Send the corrected quote to the customer"
-    ]
+    ],
+    "policy_number": "POL-6902-965"
   }
 }

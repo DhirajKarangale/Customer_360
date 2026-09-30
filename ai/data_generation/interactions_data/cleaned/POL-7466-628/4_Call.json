@@ -24,6 +24,7 @@
     "action_items": [
       "Agent to send new signing link for policy renewal form",
       "Customer to sign and submit the new renewal form"
-    ]
+    ],
+    "policy_number": "POL-7466-628"
   }
 }

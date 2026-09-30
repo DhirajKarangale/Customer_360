@@ -25,6 +25,7 @@
       "Pay premium by October 15th",
       "Agent to send a payment reminder a week before October 15th",
       "Review attached policy confirmation letter"
-    ]
+    ],
+    "policy_number": "POL-1517-327"
   }
 }

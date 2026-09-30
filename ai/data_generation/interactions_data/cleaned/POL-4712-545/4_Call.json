@@ -24,6 +24,7 @@
     "action_items": [
       "Confirm policy number and date of birth",
       "Process the payment for policy reinstatement"
-    ]
+    ],
+    "policy_number": "POL-4712-545"
   }
 }

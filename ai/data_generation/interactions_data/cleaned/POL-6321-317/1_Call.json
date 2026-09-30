@@ -25,6 +25,7 @@
     "action_items": [
       "Process cancellation of policy HP-001234",
       "Issue refund for unused premium within 3-5 business days"
-    ]
+    ],
+    "policy_number": "POL-6321-317"
   }
 }

@@ -23,6 +23,7 @@
     ],
     "action_items": [
       "Confirm when the policy status will be updated to 'Active'"
-    ]
+    ],
+    "policy_number": "POL-6270-730"
   }
 }

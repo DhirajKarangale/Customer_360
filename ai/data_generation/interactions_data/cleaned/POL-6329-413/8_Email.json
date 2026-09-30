@@ -26,6 +26,7 @@
       "Review the submitted documents and payment confirmation",
       "Update policy status from Pending to Active upon successful verification",
       "Send the final policy document to the customer"
-    ]
+    ],
+    "policy_number": "POL-6329-413"
   }
 }

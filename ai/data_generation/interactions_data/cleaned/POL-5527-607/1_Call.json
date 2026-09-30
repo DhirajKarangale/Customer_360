@@ -25,6 +25,7 @@
     "action_items": [
       "Agent to generate a new travel policy quote",
       "Update customer information with date of birth"
-    ]
+    ],
+    "policy_number": "POL-5527-607"
   }
 }

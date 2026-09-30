@@ -23,6 +23,7 @@
     ],
     "action_items": [
       "Await customer decision regarding policy renewal before expiration in two days"
-    ]
+    ],
+    "policy_number": "POL-7162-675"
   }
 }

@@ -23,6 +23,7 @@
     "action_items": [
       "Process cancellation of policy LP-001234",
       "Agent to record reason for cancellation"
-    ]
+    ],
+    "policy_number": "POL-5497-352"
   }
 }

@@ -28,6 +28,7 @@
       "Check email for verification link",
       "Renew auto policy (completed)",
       "Set up auto-debit payment (completed)"
-    ]
+    ],
+    "policy_number": "POL-8647-672"
   }
 }

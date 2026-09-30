@@ -24,6 +24,7 @@
     "action_items": [
       "Agent to provide renewal options for the expired health policy",
       "Customer to decide whether to renew the policy"
-    ]
+    ],
+    "policy_number": "POL-3922-453"
   }
 }

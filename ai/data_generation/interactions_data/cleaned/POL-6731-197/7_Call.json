@@ -25,6 +25,7 @@
     "action_items": [
       "Issue a prorated refund to the customer within five business days",
       "Send a confirmation email containing the refund details to the customer"
-    ]
+    ],
+    "policy_number": "POL-6731-197"
   }
 }

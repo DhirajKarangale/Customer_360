@@ -26,6 +26,7 @@
     "action_items": [
       "Agent to guide customer through new policy application",
       "Agent to consider offering discount for new policy"
-    ]
+    ],
+    "policy_number": "POL-6344-801"
   }
 }

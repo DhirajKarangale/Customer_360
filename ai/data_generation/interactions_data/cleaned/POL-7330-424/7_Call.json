@@ -24,6 +24,7 @@
     "action_items": [
       "Send confirmation email to customer",
       "Follow up with IT department regarding the system update delay"
-    ]
+    ],
+    "policy_number": "POL-7330-424"
   }
 }

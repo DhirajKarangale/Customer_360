@@ -24,6 +24,7 @@
     "action_items": [
       "Atharv to decide whether to renew or cancel the policy",
       "If renewing, Atharv needs to make the pending payment within two days"
-    ]
+    ],
+    "policy_number": "POL-4166-562"
   }
 }

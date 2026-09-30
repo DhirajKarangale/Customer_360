@@ -27,6 +27,7 @@
       "Send updated policy document via email",
       "Debit first premium of \u20b912,480 on 05/10/2026",
       "Send a payment reminder one week prior to the annual debit date"
-    ]
+    ],
+    "policy_number": "POL-2713-693"
   }
 }

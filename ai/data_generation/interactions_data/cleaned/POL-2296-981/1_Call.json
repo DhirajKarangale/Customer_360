@@ -23,6 +23,7 @@
     ],
     "action_items": [
       "Agent to initiate renewal process for policy HP-001234"
-    ]
+    ],
+    "policy_number": "POL-2296-981"
   }
 }

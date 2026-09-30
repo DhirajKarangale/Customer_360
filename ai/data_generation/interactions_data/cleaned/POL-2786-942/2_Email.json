@@ -24,6 +24,7 @@
     "action_items": [
       "Process payment via net banking",
       "Update policy status to active upon payment receipt"
-    ]
+    ],
+    "policy_number": "POL-2786-942"
   }
 }

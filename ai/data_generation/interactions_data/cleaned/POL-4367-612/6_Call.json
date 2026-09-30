@@ -24,6 +24,7 @@
     "action_items": [
       "Send policy reinstatement confirmation email to customer",
       "Process $50 penalty using the credit card on file"
-    ]
+    ],
+    "policy_number": "POL-4367-612"
   }
 }

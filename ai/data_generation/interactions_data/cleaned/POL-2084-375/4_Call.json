@@ -25,6 +25,7 @@
     "action_items": [
       "Send final confirmation email to customer",
       "Process prorated refund of $120 within 7-10 business days"
-    ]
+    ],
+    "policy_number": "POL-2084-375"
   }
 }

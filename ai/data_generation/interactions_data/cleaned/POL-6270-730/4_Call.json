@@ -21,6 +21,7 @@
       "policy activation",
       "address update"
     ],
-    "action_items": []
+    "action_items": [],
+    "policy_number": "POL-6270-730"
   }
 }

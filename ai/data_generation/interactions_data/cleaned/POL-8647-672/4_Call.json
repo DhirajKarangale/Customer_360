@@ -25,6 +25,7 @@
     "action_items": [
       "Ramesh to send a new secure payment link to customer's email and WhatsApp",
       "Rahul to complete the payment using the new link"
-    ]
+    ],
+    "policy_number": "POL-8647-672"
   }
 }

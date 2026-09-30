@@ -24,6 +24,7 @@
     "action_items": [
       "Customer to confirm if further action is needed",
       "Agent to respond regarding any remaining steps"
-    ]
+    ],
+    "policy_number": "POL-9123-371"
   }
 }

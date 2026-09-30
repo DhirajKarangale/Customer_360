@@ -24,6 +24,7 @@
     "action_items": [
       "Mark the policy as expired in the system",
       "Send a confirmation email to the customer"
-    ]
+    ],
+    "policy_number": "POL-5703-755"
   }
 }

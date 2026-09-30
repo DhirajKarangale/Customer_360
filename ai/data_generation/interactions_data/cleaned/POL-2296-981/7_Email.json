@@ -24,6 +24,7 @@
     "action_items": [
       "Send confirmation email with updated policy details",
       "Provide renewed policy document (attached)"
-    ]
+    ],
+    "policy_number": "POL-2296-981"
   }
 }

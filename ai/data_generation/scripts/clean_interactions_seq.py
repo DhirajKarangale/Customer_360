@@ -55,7 +55,7 @@ def semantic_clean_with_llm(sf_conn, text):
         print(f'Error in semantic cleaning chain: {e}')
     return text
 
-def structure_with_llm(sf_conn, raw_text, cleaned_text, file_type):
+def structure_with_llm(sf_conn, raw_text, cleaned_text, file_type, policy_num):
     prompt = PromptTemplate.from_template(STRUCTURING_PROMPT)
     llm = get_llm('STRUCTURING')
     if not llm:
@@ -69,6 +69,11 @@ def structure_with_llm(sf_conn, raw_text, cleaned_text, file_type):
             elif '```' in result:
                 result = result.split('```')[1].split('```')[0]
             json_obj = json.loads(result.strip())
+            
+            if "metadata" not in json_obj:
+                json_obj["metadata"] = {}
+            json_obj["metadata"]["policy_number"] = policy_num
+            
             return json.dumps(json_obj, indent=2)
     except json.JSONDecodeError:
         print('Warning: LLM did not return valid JSON. Returning raw string.')
@@ -77,14 +82,14 @@ def structure_with_llm(sf_conn, raw_text, cleaned_text, file_type):
         print(f'Error in structuring chain: {e}')
     return None
 
-def process_file(sf_conn, raw_filepath, cleaned_filepath, filename):
+def process_file(sf_conn, raw_filepath, cleaned_filepath, filename, policy_num):
     print(f'    Processing file: {filename}')
     with open(raw_filepath, 'r', encoding='utf-8') as f:
         raw_text = f.read()
     local_cleaned = clean_text_locally(raw_text)
     semantic_cleaned = semantic_clean_with_llm(sf_conn, local_cleaned)
     file_type = 'call' if filename.endswith('.toon') else 'chat or email'
-    structured_json = structure_with_llm(sf_conn, raw_text, semantic_cleaned, file_type)
+    structured_json = structure_with_llm(sf_conn, raw_text, semantic_cleaned, file_type, policy_num)
     if structured_json:
         return structured_json
     else:
@@ -110,7 +115,7 @@ def process_policy_folder(policy_num, raw_policy_dir, cleaned_policy_dir, sf_con
                 continue
         success = False
         for attempt in range(3):
-            structured_json = process_file(sf_conn, raw_filepath, cleaned_filepath, file)
+            structured_json = process_file(sf_conn, raw_filepath, cleaned_filepath, file, policy_num)
             if structured_json:
                 results_to_save.append((expected_json_path, structured_json))
                 success = True

@@ -26,6 +26,7 @@
     "action_items": [
       "Resend the claim form PDF to the customer",
       "Resend the policy document in a mobile-friendly format"
-    ]
+    ],
+    "policy_number": "POL-6871-825"
   }
 }

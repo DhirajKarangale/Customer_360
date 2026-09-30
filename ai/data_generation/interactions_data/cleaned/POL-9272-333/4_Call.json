@@ -26,6 +26,7 @@
     "action_items": [
       "Customer to review the emailed garage coverage endorsement form",
       "System to automatically charge the $150 endorsement payment on 15 August 2026 to the card ending in 1234"
-    ]
+    ],
+    "policy_number": "POL-9272-333"
   }
 }

@@ -24,6 +24,7 @@
     "action_items": [
       "Cancel policy HP-001234",
       "Provide cancellation confirmation to the customer"
-    ]
+    ],
+    "policy_number": "POL-3541-489"
   }
 }

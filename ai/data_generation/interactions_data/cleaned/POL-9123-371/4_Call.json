@@ -24,6 +24,7 @@
     "action_items": [
       "Update policy status to 'Expired' in the portal",
       "Send automatic closure confirmation email to customer"
-    ]
+    ],
+    "policy_number": "POL-9123-371"
   }
 }

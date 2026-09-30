@@ -24,6 +24,7 @@
     "action_items": [
       "Agent to send an email with reinstatement steps and fee details",
       "Customer to review email and respond regarding policy reinstatement"
-    ]
+    ],
+    "policy_number": "POL-4712-191"
   }
 }

@@ -23,6 +23,7 @@
     "action_items": [
       "Customer to provide policy number",
       "Agent to check policy status"
-    ]
+    ],
+    "policy_number": "POL-2192-200"
   }
 }

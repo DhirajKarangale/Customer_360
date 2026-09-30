@@ -23,6 +23,7 @@
     ],
     "action_items": [
       "Send confirmation email with updated policy documents to the customer"
-    ]
+    ],
+    "policy_number": "POL-8318-953"
   }
 }

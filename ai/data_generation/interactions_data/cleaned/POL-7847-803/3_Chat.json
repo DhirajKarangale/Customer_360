@@ -24,6 +24,7 @@
     "action_items": [
       "Customer to check account for refund by 01/10/2026",
       "Agent to investigate further if refund is not received by 01/10/2026"
-    ]
+    ],
+    "policy_number": "POL-7847-803"
   }
 }

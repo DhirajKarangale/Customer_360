@@ -26,6 +26,7 @@
     "action_items": [
       "Process the renewal for the Enhanced bundle",
       "Send the confirmation email to the customer within the hour"
-    ]
+    ],
+    "policy_number": "POL-9191-327"
   }
 }

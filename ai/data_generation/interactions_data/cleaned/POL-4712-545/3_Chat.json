@@ -26,6 +26,7 @@
     "action_items": [
       "Customer needs to decide whether to proceed with the payment",
       "Agent to guide the customer through the payment process upon agreement"
-    ]
+    ],
+    "policy_number": "POL-4712-545"
   }
 }

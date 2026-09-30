@@ -23,6 +23,7 @@
     ],
     "action_items": [
       "Send the policy confirmation email to the customer"
-    ]
+    ],
+    "policy_number": "POL-8196-922"
   }
 }

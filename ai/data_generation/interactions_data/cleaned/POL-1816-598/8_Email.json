@@ -26,6 +26,7 @@
       "Resolve the policy expiration issue in the system",
       "Keep the customer updated on the progress",
       "Ensure policy coverage is reinstated"
-    ]
+    ],
+    "policy_number": "POL-1816-598"
   }
 }

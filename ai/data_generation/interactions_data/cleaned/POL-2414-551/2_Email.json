@@ -25,6 +25,7 @@
     "action_items": [
       "Confirm policy is active as of today",
       "Send updated policy document to the customer"
-    ]
+    ],
+    "policy_number": "POL-2414-551"
   }
 }

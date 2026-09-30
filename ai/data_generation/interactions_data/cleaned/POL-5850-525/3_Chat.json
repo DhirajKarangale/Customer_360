@@ -24,6 +24,7 @@
     "action_items": [
       "Roshni to upload the vehicle inspection report to the portal or email it to Suresh",
       "Suresh to activate the policy once the report is received"
-    ]
+    ],
+    "policy_number": "POL-5850-525"
   }
 }

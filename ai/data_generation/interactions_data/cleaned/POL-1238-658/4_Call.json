@@ -24,6 +24,7 @@
     ],
     "action_items": [
       "Send a confirmation email to the customer regarding the rider addition"
-    ]
+    ],
+    "policy_number": "POL-1238-658"
   }
 }

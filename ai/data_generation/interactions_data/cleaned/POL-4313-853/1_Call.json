@@ -24,6 +24,7 @@
     ],
     "action_items": [
       "Cancel the expired policy and reissue a new one"
-    ]
+    ],
+    "policy_number": "POL-4313-853"
   }
 }

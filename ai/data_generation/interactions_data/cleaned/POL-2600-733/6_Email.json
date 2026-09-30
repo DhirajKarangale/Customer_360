@@ -21,6 +21,7 @@
       "Payment Status",
       "Policy Number HP-123456"
     ],
-    "action_items": []
+    "action_items": [],
+    "policy_number": "POL-2600-733"
   }
 }

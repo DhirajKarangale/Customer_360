@@ -25,6 +25,7 @@
     "action_items": [
       "Send payment link",
       "Complete payment of $1,250 via credit card"
-    ]
+    ],
+    "policy_number": "POL-3976-930"
   }
 }

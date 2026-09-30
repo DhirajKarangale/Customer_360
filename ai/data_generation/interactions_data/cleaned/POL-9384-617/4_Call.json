@@ -23,6 +23,7 @@
     ],
     "action_items": [
       "Send confirmation email with policy details"
-    ]
+    ],
+    "policy_number": "POL-9384-617"
   }
 }

@@ -24,6 +24,7 @@
     "action_items": [
       "Agent to provide detailed quotes for new auto insurance options",
       "Customer to review quotes and decide on reinstatement or a new policy"
-    ]
+    ],
+    "policy_number": "POL-3337-805"
   }
 }

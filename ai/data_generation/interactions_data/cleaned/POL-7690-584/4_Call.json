@@ -25,6 +25,7 @@
     "action_items": [
       "Insurance agent to finalize policy updates",
       "Insurance agent to send email notification when policy becomes active"
-    ]
+    ],
+    "policy_number": "POL-7690-584"
   }
 }

@@ -28,6 +28,7 @@
       "Escalate issue of missing reminder emails",
       "Cancel the policy per customer request",
       "Send policy cancellation confirmation email to the customer"
-    ]
+    ],
+    "policy_number": "POL-3384-985"
   }
 }

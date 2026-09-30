@@ -23,6 +23,7 @@
     ],
     "action_items": [
       "Confirm policy number (SH-123456) and date of birth"
-    ]
+    ],
+    "policy_number": "POL-2600-733"
   }
 }

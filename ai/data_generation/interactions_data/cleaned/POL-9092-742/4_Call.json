@@ -23,6 +23,7 @@
     ],
     "action_items": [
       "Manually update policy status from Active to Expired in the main repository"
-    ]
+    ],
+    "policy_number": "POL-9092-742"
   }
 }

@@ -24,6 +24,7 @@
     ],
     "action_items": [
       "Agent to resend the invoice if requested by the customer"
-    ]
+    ],
+    "policy_number": "POL-4708-109"
   }
 }

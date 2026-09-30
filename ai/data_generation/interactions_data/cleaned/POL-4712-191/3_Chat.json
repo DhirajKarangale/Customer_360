@@ -25,6 +25,7 @@
     "action_items": [
       "Process the first payment transfer",
       "Provide bank details if requested"
-    ]
+    ],
+    "policy_number": "POL-4712-191"
   }
 }

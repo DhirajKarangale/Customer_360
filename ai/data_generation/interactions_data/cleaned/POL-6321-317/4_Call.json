@@ -26,6 +26,7 @@
       "Refund to be issued within the next 2 business days",
       "Policy HP-001234 confirmed cancelled effective last week",
       "No further billing for the cancelled policy"
-    ]
+    ],
+    "policy_number": "POL-6321-317"
   }
 }

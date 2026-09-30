@@ -27,6 +27,7 @@
       "Customer to fill out and return the renewal form",
       "Customer to make payment via the provided link",
       "Agent to process renewal upon receipt of form and payment"
-    ]
+    ],
+    "policy_number": "POL-3643-230"
   }
 }

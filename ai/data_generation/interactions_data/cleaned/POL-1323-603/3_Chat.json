@@ -25,6 +25,7 @@
       "Process health policy cancellation",
       "Issue partial refund within 5-7 business days",
       "Send cancellation confirmation letter via email"
-    ]
+    ],
+    "policy_number": "POL-1323-603"
   }
 }

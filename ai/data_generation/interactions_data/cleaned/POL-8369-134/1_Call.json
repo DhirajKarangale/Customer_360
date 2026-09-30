@@ -25,6 +25,7 @@
     "action_items": [
       "Update policy status to active",
       "Send policy documents via email to the customer"
-    ]
+    ],
+    "policy_number": "POL-8369-134"
   }
 }

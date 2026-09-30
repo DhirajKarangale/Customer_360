@@ -26,6 +26,7 @@
     "action_items": [
       "Customer to review and sign the renewal form and return it via email or portal upload",
       "Agent to confirm accepted payment methods and provide bank details for auto-debit"
-    ]
+    ],
+    "policy_number": "POL-4338-249"
   }
 }

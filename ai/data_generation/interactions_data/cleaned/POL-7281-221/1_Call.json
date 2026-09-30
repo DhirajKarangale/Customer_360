@@ -22,6 +22,7 @@
     ],
     "action_items": [
       "Agent to ask customer few questions to update policy information"
-    ]
+    ],
+    "policy_number": "POL-7281-221"
   }
 }

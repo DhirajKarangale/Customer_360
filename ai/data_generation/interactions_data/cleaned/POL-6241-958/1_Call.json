@@ -24,6 +24,7 @@
     "action_items": [
       "Resend the last statement to the customer's email",
       "Send a confirmation email for the beneficiary update"
-    ]
+    ],
+    "policy_number": "POL-6241-958"
   }
 }

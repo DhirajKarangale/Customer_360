@@ -26,6 +26,7 @@
       "Customer to check for refund by 1 October 2026",
       "Customer to shred the physical insurance card",
       "Agent to send a final confirmation email"
-    ]
+    ],
+    "policy_number": "POL-7847-803"
   }
 }

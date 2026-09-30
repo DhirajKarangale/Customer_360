@@ -25,6 +25,7 @@
     "action_items": [
       "Disable auto-renewal on the policy",
       "Send final confirmation email upon policy expiration on October 20th"
-    ]
+    ],
+    "policy_number": "POL-9296-728"
   }
 }

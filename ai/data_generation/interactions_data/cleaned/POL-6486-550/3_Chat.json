@@ -25,6 +25,7 @@
     "action_items": [
       "Keep the policy marked as expired in the system",
       "Email the policy summary document to the customer"
-    ]
+    ],
+    "policy_number": "POL-6486-550"
   }
 }

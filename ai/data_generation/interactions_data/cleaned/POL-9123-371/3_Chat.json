@@ -23,6 +23,7 @@
     ],
     "action_items": [
       "Agent to send policy expiration statement to customer's registered email"
-    ]
+    ],
+    "policy_number": "POL-9123-371"
   }
 }

@@ -24,6 +24,7 @@
     "action_items": [
       "Agent to review the received documents",
       "Agent to provide a policy status update by tomorrow"
-    ]
+    ],
+    "policy_number": "POL-3599-447"
   }
 }

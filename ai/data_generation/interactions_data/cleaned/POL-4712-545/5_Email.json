@@ -24,6 +24,7 @@
     "action_items": [
       "Confirm receipt of payment",
       "Update policy status"
-    ]
+    ],
+    "policy_number": "POL-4712-545"
   }
 }

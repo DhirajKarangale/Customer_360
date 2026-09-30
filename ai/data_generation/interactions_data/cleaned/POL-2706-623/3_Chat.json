@@ -23,6 +23,7 @@
     ],
     "action_items": [
       "Update system status to reflect the policy is no longer expired"
-    ]
+    ],
+    "policy_number": "POL-2706-623"
   }
 }

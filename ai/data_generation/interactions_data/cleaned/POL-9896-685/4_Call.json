@@ -27,6 +27,7 @@
       "Update policy with no-claim bonus",
       "Update policy with higher deductible option",
       "Activate the renewed policy"
-    ]
+    ],
+    "policy_number": "POL-9896-685"
   }
 }

@@ -20,6 +20,7 @@
       "Life Insurance Policy Activation",
       "Policy Status Verification"
     ],
-    "action_items": []
+    "action_items": [],
+    "policy_number": "POL-5538-781"
   }
 }

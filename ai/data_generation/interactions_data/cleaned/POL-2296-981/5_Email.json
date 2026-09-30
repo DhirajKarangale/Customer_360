@@ -24,6 +24,7 @@
     "action_items": [
       "Agent to process policy renewal",
       "Agent to send confirmation email with updated policy details"
-    ]
+    ],
+    "policy_number": "POL-2296-981"
   }
 }

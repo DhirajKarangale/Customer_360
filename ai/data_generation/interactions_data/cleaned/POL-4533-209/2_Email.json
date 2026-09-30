@@ -24,6 +24,7 @@
     "action_items": [
       "Make the payment for the life policy today",
       "Update policy status to Active once payment is processed"
-    ]
+    ],
+    "policy_number": "POL-4533-209"
   }
 }

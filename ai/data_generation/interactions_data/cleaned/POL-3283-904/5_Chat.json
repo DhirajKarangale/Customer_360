@@ -26,6 +26,7 @@
     "action_items": [
       "Customer to proceed with online payment using the installment option",
       "Agent to provide payment instructions or link"
-    ]
+    ],
+    "policy_number": "POL-3283-904"
   }
 }

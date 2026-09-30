@@ -25,6 +25,7 @@
       "Process policy cancellation effective today",
       "Issue prorated refund of approximately $450 to the card on file",
       "Send email confirmation and refund receipt to the customer"
-    ]
+    ],
+    "policy_number": "POL-6902-965"
   }
 }

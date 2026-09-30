@@ -24,6 +24,7 @@
     "action_items": [
       "Agent to notify customer once the policy is active",
       "Agent sent the policy summary PDF link"
-    ]
+    ],
+    "policy_number": "POL-9731-349"
   }
 }

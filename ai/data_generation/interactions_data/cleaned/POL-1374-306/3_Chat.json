@@ -27,6 +27,7 @@
       "Send policy activation confirmation",
       "Update sum insured for the kitchen value",
       "Send endorsement PDF"
-    ]
+    ],
+    "policy_number": "POL-1374-306"
   }
 }

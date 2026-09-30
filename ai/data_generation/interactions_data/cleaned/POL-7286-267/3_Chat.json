@@ -25,6 +25,7 @@
     ],
     "action_items": [
       "Check for available discounts for the customer's policy"
-    ]
+    ],
+    "policy_number": "POL-7286-267"
   }
 }

@@ -25,6 +25,7 @@
     "action_items": [
       "Anjali will send the renewal invoice via email",
       "Rohan will complete the payment upon receiving the invoice"
-    ]
+    ],
+    "policy_number": "POL-2786-942"
   }
 }

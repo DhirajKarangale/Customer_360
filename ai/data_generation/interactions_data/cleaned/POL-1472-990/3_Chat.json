@@ -25,6 +25,7 @@
     "action_items": [
       "Customer to settle the outstanding payment and return the renewal form by the end of the month",
       "Agent to update policy status and send a follow-up confirmation email after payment"
-    ]
+    ],
+    "policy_number": "POL-1472-990"
   }
 }

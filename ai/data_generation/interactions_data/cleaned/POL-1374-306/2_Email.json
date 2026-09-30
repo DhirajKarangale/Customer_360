@@ -24,6 +24,7 @@
     "action_items": [
       "Activate home insurance policy within 24-48 hours",
       "Send confirmation email to customer once status changes to active"
-    ]
+    ],
+    "policy_number": "POL-1374-306"
   }
 }

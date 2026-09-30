@@ -24,6 +24,7 @@
     "action_items": [
       "Make the missed payment",
       "Update policy status to active"
-    ]
+    ],
+    "policy_number": "POL-5538-781"
   }
 }

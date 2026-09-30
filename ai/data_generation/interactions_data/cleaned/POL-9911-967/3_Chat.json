@@ -26,6 +26,7 @@
       "Customer to fill out and return the renewal form by tomorrow",
       "Agent to send a copy of the renewal email to the customer",
       "Agent to confirm the customer's policy number remains unchanged"
-    ]
+    ],
+    "policy_number": "POL-9911-967"
   }
 }

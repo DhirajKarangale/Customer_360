@@ -24,6 +24,7 @@
     "action_items": [
       "Technical team to process vehicle inspection report",
       "Notify customer when policy status changes to Active"
-    ]
+    ],
+    "policy_number": "POL-5850-525"
   }
 }

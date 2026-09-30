@@ -24,6 +24,7 @@
     "action_items": [
       "Send a confirmation email for the policy cancellation",
       "Issue a direct deposit refund of $80 to the bank account on file"
-    ]
+    ],
+    "policy_number": "POL-2584-422"
   }
 }

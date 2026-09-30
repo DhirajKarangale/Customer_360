@@ -24,6 +24,7 @@
     "action_items": [
       "Update system status of DCoders auto policy to Expired effective today",
       "Auto-generate and send policy closure confirmation email to the customer"
-    ]
+    ],
+    "policy_number": "POL-9296-728"
   }
 }

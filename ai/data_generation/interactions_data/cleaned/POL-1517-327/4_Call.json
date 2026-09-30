@@ -24,6 +24,7 @@
     ],
     "action_items": [
       "Send a confirmation email with the policy changes to the customer"
-    ]
+    ],
+    "policy_number": "POL-1517-327"
   }
 }

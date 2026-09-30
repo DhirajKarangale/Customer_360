@@ -24,6 +24,7 @@
     "action_items": [
       "Initiate policy cancellation",
       "Send confirmation email to customer within 5-10 minutes"
-    ]
+    ],
+    "policy_number": "POL-7847-803"
   }
 }

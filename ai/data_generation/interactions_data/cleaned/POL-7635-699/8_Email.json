@@ -23,6 +23,7 @@
     "action_items": [
       "Anita to ensure auto policy renewal is processed by end of day",
       "System to send confirmation email to Shaurya upon processing"
-    ]
+    ],
+    "policy_number": "POL-7635-699"
   }
 }

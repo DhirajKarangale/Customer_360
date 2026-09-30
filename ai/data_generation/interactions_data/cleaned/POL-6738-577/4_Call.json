@@ -21,6 +21,7 @@
       "policy status update",
       "policy expiration confirmation"
     ],
-    "action_items": []
+    "action_items": [],
+    "policy_number": "POL-6738-577"
   }
 }

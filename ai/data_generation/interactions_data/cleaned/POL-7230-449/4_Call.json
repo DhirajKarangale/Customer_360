@@ -22,6 +22,7 @@
     ],
     "action_items": [
       "Policy status updated in the system by the agent"
-    ]
+    ],
+    "policy_number": "POL-7230-449"
   }
 }

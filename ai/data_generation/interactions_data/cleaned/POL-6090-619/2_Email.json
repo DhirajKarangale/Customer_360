@@ -23,6 +23,7 @@
     "action_items": [
       "Agent to proceed with policy activation based on provided vehicle details",
       "Customer to provide any additional required information if requested"
-    ]
+    ],
+    "policy_number": "POL-6090-619"
   }
 }

@@ -23,6 +23,7 @@
     ],
     "action_items": [
       "Update payment information to resolve declined payment"
-    ]
+    ],
+    "policy_number": "POL-8987-360"
   }
 }

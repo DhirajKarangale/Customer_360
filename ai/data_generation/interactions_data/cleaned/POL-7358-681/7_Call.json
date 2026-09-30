@@ -25,6 +25,7 @@
       "Agent to email reference and ticket number TCK-2026-00987 to the customer",
       "Bank to respond to the trace query within 24-48 hours",
       "Customer to follow up if no update is received by tomorrow"
-    ]
+    ],
+    "policy_number": "POL-7358-681"
   }
 }

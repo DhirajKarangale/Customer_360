@@ -23,6 +23,7 @@
     ],
     "action_items": [
       "Process the renewal payment for the expired policy"
-    ]
+    ],
+    "policy_number": "POL-3956-752"
   }
 }

@@ -26,6 +26,7 @@
     "action_items": [
       "Monitor email for confirmation",
       "Optionally click the link sent in email to add earthquake coverage"
-    ]
+    ],
+    "policy_number": "POL-2786-308"
   }
 }

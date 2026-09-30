@@ -26,6 +26,7 @@
       "Walk the customer through the renewal process",
       "Confirm the new premium amount",
       "Explain any changes to the coverage"
-    ]
+    ],
+    "policy_number": "POL-2192-200"
   }
 }

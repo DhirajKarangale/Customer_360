@@ -23,6 +23,7 @@
     "action_items": [
       "Confirm vehicle make and model",
       "Activate auto policy"
-    ]
+    ],
+    "policy_number": "POL-5274-402"
   }
 }

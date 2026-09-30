@@ -25,6 +25,7 @@
     "action_items": [
       "Agent to evaluate and respond to the requested 7\u201110 day payment extension and inform about any additional charges.",
       "Customer to make the payment within the granted extension period."
-    ]
+    ],
+    "policy_number": "POL-6624-806"
   }
 }

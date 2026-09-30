@@ -23,6 +23,7 @@
     "action_items": [
       "Process policy cancellation",
       "Send confirmation email to the customer"
-    ]
+    ],
+    "policy_number": "POL-2429-830"
   }
 }

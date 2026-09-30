@@ -25,6 +25,7 @@
     "action_items": [
       "Wait for refund to reflect in bank account within 10-15 business days",
       "Review the resent settlement statement PDF"
-    ]
+    ],
+    "policy_number": "POL-2951-880"
   }
 }

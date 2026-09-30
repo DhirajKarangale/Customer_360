@@ -25,6 +25,7 @@
     "action_items": [
       "Set a reminder for early August 2027 to send an email and SMS renewal notification",
       "Resend the updated policy PDF"
-    ]
+    ],
+    "policy_number": "POL-8202-825"
   }
 }

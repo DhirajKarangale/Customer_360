@@ -26,6 +26,7 @@
     "action_items": [
       "Customer to review the policy brochure sent via email",
       "Agent to confirm policy activation timeline if customer decides to upgrade"
-    ]
+    ],
+    "policy_number": "POL-7651-932"
   }
 }

@@ -24,6 +24,7 @@
     "action_items": [
       "Set up auto-debit using provided bank details",
       "Send a confirmation email to the customer"
-    ]
+    ],
+    "policy_number": "POL-6731-197"
   }
 }

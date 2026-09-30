@@ -25,6 +25,7 @@
     "action_items": [
       "Agent to prepare a new travel policy quote considering the customer's hypertension",
       "Agent to inform the customer about any premium adjustments"
-    ]
+    ],
+    "policy_number": "POL-5527-607"
   }
 }
