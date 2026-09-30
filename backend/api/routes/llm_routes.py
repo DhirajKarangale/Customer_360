@@ -15,7 +15,9 @@ def generate_llm_response(
     return llm_service.submit_job(request)
 
 @router.post("/callback")
-def llm_callback(request: CallbackRequest):
+def llm_callback(
+    request: CallbackRequest,
+    llm_service: LLMService = Depends(get_llm_service)
+):
     logger.info(f"Received callback for job {request.job_id}: {request.message[:50]}...")
-    # In a real app, you would broadcast this to a websocket or save it to the DB
     return {"status": "success"}

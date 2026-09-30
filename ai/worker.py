@@ -6,6 +6,14 @@ import sys
 import time
 import redis
 import requests
+import logging
+
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - [%(levelname)s] - AI WORKER - %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S'
+)
+logger = logging.getLogger(__name__)
 
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if project_root not in sys.path:
@@ -28,12 +36,16 @@ def process_job(redis_client, job_id, payload, db_access, rag_pipeline):
     try:
         user_query = payload.get("user_query")
         agent_id = payload.get("insurance_agent_id")
+        
+        logger.info(f"🚀 Job Received | ID: {job_id} | Agent: {agent_id}")
 
         db_context = ""
         if agent_id:
+            logger.info(f"🔍 Fetching DB context for agent {agent_id}...")
             db_context += db_access.get_agent_context(agent_id) + "\n"
             db_context += db_access.get_customers_for_agent(agent_id) + "\n"
 
+        logger.info(f"📚 Retrieving RAG context for query...")
         rag_context, _ = rag_pipeline.retrieve_context(user_query)
 
         prompt_template = """You are a helpful customer support assistant.
@@ -51,6 +63,7 @@ User Query:
 Answer:"""
         prompt = PromptTemplate.from_template(prompt_template)
         
+        logger.info(f"🧠 Generating LLM response...")
         llm = get_llm('TRANSCRIPT')
         chain = prompt | llm | StrOutputParser()
         
@@ -61,10 +74,12 @@ Answer:"""
         })
         
         if callback_url:
+            logger.info(f"📤 Sending result back to callback URL...")
             requests.post(callback_url, json={"job_id": job_id, "message": response}, timeout=10)
         
+        logger.info(f"✅ Job Successfully Completed | ID: {job_id}")
     except Exception as e:
-        print(f"Error processing job {job_id}: {e}")
+        logger.error(f"❌ Job Failed | ID: {job_id} | Error: {str(e)}")
         if callback_url:
             try:
                 requests.post(callback_url, json={"job_id": job_id, "message": f"Error: {e}"}, timeout=10)
@@ -74,35 +89,37 @@ Answer:"""
         redis_client.xack(STREAM_KEY, GROUP_NAME, job_id)
 
 def start_worker():
-    print("Starting AI worker...")
+    logger.info("🚀 Starting AI worker... Initialization sequence initiated.")
     db_access = AIDatabaseAccess()
     get_snowflake_conn()
     
-    redis_client = redis.Redis.from_url(REDIS_URL, decode_responses=True)
+    redis_client = redis.Redis.from_url(REDIS_URL, decode_responses=True, health_check_interval=30)
     try:
         redis_client.xgroup_create(STREAM_KEY, GROUP_NAME, id="0", mkstream=True)
     except redis.exceptions.ResponseError as e:
         if "BUSYGROUP" not in str(e):
-            print(f"Redis group error: {e}")
+            logger.warning(f"Redis group message: {e}")
             
     rag_pipeline = RAGRetrievalPipeline()
     
-    print("AI worker started, waiting for jobs...")
+    logger.info("🟢 AI worker fully initialized and waiting for jobs...")
     while True:
         try:
             streams = redis_client.xreadgroup(
-                GROUP_NAME, CONSUMER_NAME, {STREAM_KEY: ">"}, count=1, block=0
+                GROUP_NAME, CONSUMER_NAME, {STREAM_KEY: ">"}, count=1, block=5000
             )
             if streams:
                 for stream, messages in streams:
                     for job_id, payload in messages:
                         process_job(redis_client, job_id, payload, db_access, rag_pipeline)
         except redis.exceptions.ConnectionError:
-            print("Redis connection lost. Reconnecting...")
+            logger.warning("⚠️ Redis connection lost. Reconnecting in 5 seconds...")
             time.sleep(5)
-            redis_client = redis.Redis.from_url(REDIS_URL, decode_responses=True)
+            redis_client = redis.Redis.from_url(REDIS_URL, decode_responses=True, health_check_interval=30)
+        except redis.exceptions.TimeoutError:
+            pass
         except Exception as e:
-            print(f"Unexpected error in worker loop: {e}")
+            logger.error(f"💥 Unexpected error in worker loop: {e}")
             time.sleep(1)
 
 if __name__ == "__main__":
