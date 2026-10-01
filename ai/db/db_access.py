@@ -13,15 +13,28 @@ class AIDatabaseAccess:
             password=os.getenv('POSTGRES_PASSWORD')
         )
 
-    def get_agent_context(self, agent_id: str) -> str:
+    def get_agent_context(self, agent_identifier: str) -> str:
         cursor = self.conn.cursor(
             cursor_factory=psycopg2.extras.RealDictCursor)
         try:
-            cursor.execute("SELECT * FROM insurance_agents WHERE id = %s", (agent_id,))
+            import uuid
+            is_uuid = False
+            try:
+                uuid.UUID(agent_identifier)
+                is_uuid = True
+            except ValueError:
+                pass
+                
+            if is_uuid:
+                cursor.execute("SELECT * FROM insurance_agents WHERE id = %s", (agent_identifier,))
+            else:
+                cursor.execute("SELECT * FROM insurance_agents WHERE name ILIKE %s LIMIT 1", (f"%{agent_identifier}%",))
+                
             agent = cursor.fetchone()
             if not agent:
-                return "Agent context not found."
+                return f"Agent context not found for {agent_identifier}."
             
+            agent_id = agent['id']
             # Fetch aggregate policy statistics for this agent
             cursor.execute("""
                 SELECT status, count(*) as count 
@@ -42,10 +55,27 @@ class AIDatabaseAccess:
         finally:
             cursor.close()
 
-    def get_customers_for_agent(self, agent_id: str) -> str:
+    def get_customers_for_agent(self, agent_identifier: str) -> str:
         cursor = self.conn.cursor(
             cursor_factory=psycopg2.extras.RealDictCursor)
         try:
+            import uuid
+            is_uuid = False
+            try:
+                uuid.UUID(agent_identifier)
+                is_uuid = True
+            except ValueError:
+                pass
+                
+            if is_uuid:
+                agent_id = agent_identifier
+            else:
+                cursor.execute("SELECT id FROM insurance_agents WHERE name ILIKE %s LIMIT 1", (f"%{agent_identifier}%",))
+                agent = cursor.fetchone()
+                if not agent:
+                    return ""
+                agent_id = agent['id']
+
             cursor.execute("""
                 SELECT c.name, c.email, p.status 
                 FROM customers c
@@ -56,9 +86,9 @@ class AIDatabaseAccess:
             if not customers:
                 return "No structured customer data found."
 
-            res = "Structured Customers:\\n"
+            res = "Structured Customers:\n"
             for c in customers:
-                res += f"- Name: {c['name']}, Email: {c['email']}, Policy Status: {c['status']}\\n"
+                res += f"- Name: {c['name']}, Email: {c['email']}, Policy Status: {c['status']}\n"
             return res
         except Exception as e:
             return f"Error fetching customers: {str(e)}"
@@ -68,3 +98,74 @@ class AIDatabaseAccess:
     def close(self):
         if self.conn:
             self.conn.close()
+
+    def get_policy_details(self, policy_id: str) -> str:
+        cursor = self.conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+        try:
+            cursor.execute("""
+                SELECT p.policy_number, p.policy_type, p.status, p.start_date, p.end_date, 
+                       p.premium_amount, p.coverage_amount, c.name as customer_name, a.name as agent_name
+                FROM policies p
+                LEFT JOIN customers c ON p.customer_id = c.id
+                LEFT JOIN insurance_agents a ON p.agent_id = a.id
+                WHERE p.policy_number = %s
+            """, (policy_id,))
+            policy = cursor.fetchone()
+            if not policy:
+                return f"No structured database records found for policy {policy_id}."
+            
+            res = f"Structured Policy Details for {policy['policy_number']}:\n"
+            res += f"- Type: {policy['policy_type']}\n"
+            res += f"- Status: {policy['status']}\n"
+            res += f"- Customer: {policy['customer_name']}\n"
+            res += f"- Agent: {policy['agent_name']}\n"
+            res += f"- Premium Amount: ${policy['premium_amount']}\n"
+            res += f"- Coverage Amount: ${policy['coverage_amount']}\n"
+            res += f"- Start Date: {policy['start_date']}\n"
+            res += f"- End Date: {policy['end_date']}\n"
+            return res
+        except Exception as e:
+            return f"Error fetching policy details: {str(e)}"
+        finally:
+            cursor.close()
+
+    def get_customer_details(self, customer_identifier: str) -> str:
+        cursor = self.conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+        try:
+            # Check if it's a UUID
+            import uuid
+            is_uuid = False
+            try:
+                uuid.UUID(customer_identifier)
+                is_uuid = True
+            except ValueError:
+                pass
+
+            if is_uuid:
+                cursor.execute("SELECT * FROM customers WHERE id = %s", (customer_identifier,))
+            else:
+                cursor.execute("SELECT * FROM customers WHERE name ILIKE %s LIMIT 1", (f"%{customer_identifier}%",))
+                
+            customer = cursor.fetchone()
+            if not customer:
+                return f"No structured database records found for customer {customer_identifier}."
+            
+            res = f"Structured Customer Details for {customer['name']}:\n"
+            res += f"- Email: {customer['email']}\n"
+            res += f"- Phone Number: {customer['phone_number']}\n"
+            res += f"- Date of Birth: {customer['date_of_birth']}\n"
+            res += f"- Address: {customer['address']}\n"
+            
+            # Get their policies
+            cursor.execute("SELECT policy_number, status, policy_type FROM policies WHERE customer_id = %s", (customer['id'],))
+            policies = cursor.fetchall()
+            if policies:
+                res += "Active/Known Policies:\n"
+                for p in policies:
+                    res += f"  * {p['policy_number']} ({p['policy_type']} - {p['status']})\n"
+            
+            return res
+        except Exception as e:
+            return f"Error fetching customer details: {str(e)}"
+        finally:
+            cursor.close()

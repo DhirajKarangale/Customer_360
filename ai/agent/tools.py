@@ -8,20 +8,63 @@ from ai.rag.config import SIMILARITY_SCORE_THRESHOLD
 class SearchInput(BaseModel):
     query: str = Field(description="The search query to find in the documents.")
     policy_id: Optional[str] = Field(default=None, description="The specific policy ID to filter by, if applicable.")
+    customer_id: Optional[str] = Field(default=None, description="The specific customer ID or name to filter by, if applicable.")
+    agent_id: Optional[str] = Field(default=None, description="The specific agent ID or name to filter by, if applicable.")
 
 @tool("search_unstructured_interactions", args_schema=SearchInput)
-def search_unstructured_interactions(query: str, policy_id: Optional[str] = None) -> str:
-    """Search transcripts, chats, and emails for relevant context. Provide a policy_id to strongly filter the results for that specific policy."""
-    if policy_id and policy_id not in query:
-        query = f"{query} {policy_id}"
+def search_unstructured_interactions(query: str, policy_id: Optional[str] = None, customer_id: Optional[str] = None, agent_id: Optional[str] = None) -> str:
+    """Search transcripts, chats, and emails for relevant context. Provide a policy_id, customer_id, or agent_id to strongly filter the results."""
+    import uuid
+    def is_uuid(val: str) -> bool:
+        try:
+            uuid.UUID(val)
+            return True
+        except ValueError:
+            return False
+
+    db = AIDatabaseAccess()
+    try:
+        if policy_id and policy_id not in query:
+            query = f"{query} {policy_id}"
+            
+        if customer_id:
+            if is_uuid(customer_id):
+                # Fetch name to boost FAISS recall and fix metadata ID mismatches
+                c_details = db.get_customer_details(customer_id)
+                import re
+                name_match = re.search(r"Structured Customer Details for (.*?):", c_details)
+                if name_match:
+                    name = name_match.group(1).strip()
+                    if name not in query:
+                        query = f"{query} {name}"
+                    customer_id = name # overwrite to use name for filtering!
+            elif customer_id not in query:
+                query = f"{query} {customer_id}"
+                
+        if agent_id:
+            if is_uuid(agent_id):
+                a_details = db.get_agent_context(agent_id)
+                import re
+                name_match = re.search(r"Agent Name: (.*?),", a_details)
+                if name_match:
+                    name = name_match.group(1).strip()
+                    if name not in query:
+                        query = f"{query} {name}"
+                    agent_id = name # overwrite to use name for filtering!
+            elif agent_id not in query:
+                query = f"{query} {agent_id}"
+    finally:
+        db.close()
         
     rag_pipeline = RAGRetrievalPipeline()
     try:
         query_embedding = rag_pipeline._embedder.embed_text(query)
+        # Increase top_k if any filters are applied to ensure we don't miss them before Python filtering
+        has_filter = policy_id or customer_id or agent_id
         results = rag_pipeline._vector_store.similarity_search(
             query_embedding,
-            top_k=100 if policy_id else 5,
-            score_threshold=0.0  # Temporarily lower threshold to ensure we catch the ID
+            top_k=100 if has_filter else 10,
+            score_threshold=0.0 if has_filter else SIMILARITY_SCORE_THRESHOLD
         )
         
         if not results:
@@ -40,6 +83,26 @@ def search_unstructured_interactions(query: str, policy_id: Optional[str] = None
             
             if policy_id and policy_id != doc_policy_number:
                 continue
+                
+            participants = metadata.get("participants", {})
+            c_name = participants.get("customer", {}).get("name", "Unknown")
+            c_id = participants.get("customer", {}).get("id", "Unknown")
+            
+            if customer_id and customer_id not in c_name and customer_id != c_id:
+                continue
+                
+            agents = participants.get("insurance_agents", [])
+            a_names = [a.get("name", "Unknown") for a in agents]
+            a_ids = [a.get("id", "Unknown") for a in agents]
+            
+            if agent_id:
+                agent_match = False
+                for an, aid in zip(a_names, a_ids):
+                    if agent_id in an or agent_id == aid:
+                        agent_match = True
+                        break
+                if not agent_match:
+                    continue
                 
             participants = metadata.get("participants", {})
             customer_name = participants.get("customer", {}).get("name", "Unknown")
@@ -64,7 +127,7 @@ def search_unstructured_interactions(query: str, policy_id: Optional[str] = None
             formatted_context.append(doc_str)
             
         if not formatted_context:
-            return f"No relevant context found for policy {policy_id}."
+            return "No relevant context found after applying filters."
             
         return "\n".join(formatted_context[:5])
     finally:
@@ -72,16 +135,26 @@ def search_unstructured_interactions(query: str, policy_id: Optional[str] = None
 
 class DatabaseInput(BaseModel):
     agent_id: Optional[str] = Field(default=None, description="The agent ID to fetch context for.")
+    policy_id: Optional[str] = Field(default=None, description="The policy ID to fetch structured policy details for (e.g. premium, coverage).")
+    customer_id: Optional[str] = Field(default=None, description="The customer ID or customer name to fetch exact structured details for (e.g. phone number, DOB, address).")
 
 @tool("get_database_context", args_schema=DatabaseInput)
-def get_database_context(agent_id: Optional[str] = None) -> str:
-    """Fetch structured customer and agent details from the PostgreSQL database using the agent's ID."""
-    if not agent_id:
-        return "No agent ID provided."
+def get_database_context(agent_id: Optional[str] = None, policy_id: Optional[str] = None, customer_id: Optional[str] = None) -> str:
+    """Fetch structured customer, agent, or policy details from the PostgreSQL database using their respective ID or name."""
+    if not agent_id and not policy_id and not customer_id:
+        return "No agent ID, policy ID, or customer ID provided."
+        
     db_access = AIDatabaseAccess()
     try:
-        db_context = db_access.get_agent_context(agent_id) + "\n"
-        db_context += db_access.get_customers_for_agent(agent_id) + "\n"
+        db_context = ""
+        if customer_id:
+            db_context += db_access.get_customer_details(customer_id) + "\n"
+        if policy_id:
+            db_context += db_access.get_policy_details(policy_id) + "\n"
+        if agent_id:
+            db_context += db_access.get_agent_context(agent_id) + "\n"
+            db_context += db_access.get_customers_for_agent(agent_id) + "\n"
+            
         return db_context
     except Exception as e:
         return f"Error connecting to database: {e}"

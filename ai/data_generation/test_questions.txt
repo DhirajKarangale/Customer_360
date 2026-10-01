@@ -1,0 +1,20 @@
+📊 Category 1: SQL-Only (Testing exact numerical / demographic data)
+"What is the total premium amount and coverage amount for policy POL-8196-922?"
+"Give me the phone number and date of birth for customer Aarav Sharma."
+"How many active policies does insurance agent Ramesh Tiwari currently manage?"
+"What is the address and email for the customer with ID a0cfc835-3fa7-4c2d-8ce3-68ea56373eb5?"
+"What is the status and end date of policy POL-6411-436?"
+
+📄 Category 2: Vector-Only (Testing call transcripts and semantic search)
+"Summarize the last phone call you have on record regarding policy POL-8196-922."
+"Have there been any recent complaints from customer Aarav Sharma?"
+"What was the general mood or sentiment of the customer during the last interaction with agent Ramesh Tiwari?"
+"Can you find any emails where customer ID a0cfc835-3fa7-4c2d-8ce3-68ea56373eb5 mentioned renewing their policy?"
+"Give me a summary of the hardest customer interaction agent ID b8626860-7a30-41c2-bad4-e14639f33c45 has had recently."
+
+🚀 Category 3: Hybrid Questions (Testing Parallel SQL & Vector Execution)
+"Can you give me detailed information about policy POL-8196-922, including its exact premium amount and a summary of the customer's last phone call?"
+"Aarav Sharma called recently. What did he complain about, and what is his current policy status?"
+"Find the customer who holds policy POL-6411-436. What is their address, and what did they say in their last email?"
+"I need a complete 360 view of customer ID a0cfc835-3fa7-4c2d-8ce3-68ea56373eb5. Show me his active policies and summarize his recent chat interactions."
+"Why was the customer with policy POL-8196-922 upset, and exactly how much do they pay in premiums?"

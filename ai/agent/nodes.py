@@ -11,8 +11,8 @@ llm = get_llm('TRANSCRIPT')
 
 SYSTEM_PROMPT = """You are a helpful customer support assistant for an insurance and lending company.
 You have access to the following tools:
-1. `search_unstructured_interactions`: Search transcripts, chats, and emails for relevant context. Arguments: {"query": "string", "policy_id": "string (optional)"}
-2. `get_database_context`: Fetch structured customer and agent details. Arguments: {"agent_id": "string (optional)"}
+1. `search_unstructured_interactions`: Search transcripts, chats, and emails for relevant context. Arguments: {"query": "string", "policy_id": "string (optional)", "customer_id": "string (optional)", "agent_id": "string (optional)"}
+2. `get_database_context`: Fetch structured customer, agent, or policy details from the database. Arguments: {"agent_id": "string (optional)", "policy_id": "string (optional)", "customer_id": "string (optional)"}
 
 If you need to use a tool, you MUST output exactly a JSON block and nothing else, like this:
 ```json
