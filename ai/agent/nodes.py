@@ -13,6 +13,7 @@ SYSTEM_PROMPT = """You are a helpful customer support assistant for an insurance
 You have access to the following tools:
 1. `search_unstructured_interactions`: Search transcripts, chats, and emails for relevant context. Arguments: {"query": "string", "policy_id": "string (optional)", "customer_id": "string (optional)", "agent_id": "string (optional)"}
 2. `get_database_context`: Fetch structured customer, agent, or policy details from the database. Arguments: {"agent_id": "string (optional)", "policy_id": "string (optional)", "customer_id": "string (optional)"}
+3. `execute_sql_query`: Execute a raw PostgreSQL query to answer complex or aggregated questions. Tables available: customers, insurance_agents, policies, customer_interactions. Arguments: {"query": "string"}
 
 If you need to use a tool, you MUST output exactly a JSON block and nothing else, like this:
 ```json
@@ -31,9 +32,24 @@ CRITICAL: If a tool returns "No relevant context found" or an error, DO NOT call
 def agent_node(state: AgentState):
     messages = state.get("messages", [])
     
-    # Format messages into a single prompt string since get_llm returns a RunnableLambda 
-    # and _extract_prompt_str in llm_utils expects strings or simple prompt objects.
-    conversation_history = SYSTEM_PROMPT + "\n\nConversation History:\n"
+    # Inject contextual IDs if they exist
+    context_str = "\n[Current Session Context]\n"
+    has_context = False
+    if state.get("insurance_agents_id"):
+        context_str += f"- Logged in Agent ID: {state['insurance_agents_id']}\n"
+        has_context = True
+    if state.get("customers_id"):
+        context_str += f"- Active Customer ID: {state['customers_id']}\n"
+        has_context = True
+    if state.get("policies_id"):
+        context_str += f"- Active Policy ID: {state['policies_id']}\n"
+        has_context = True
+        
+    system_prompt_with_context = SYSTEM_PROMPT
+    if has_context:
+        system_prompt_with_context += context_str
+        
+    conversation_history = system_prompt_with_context + "\n\nConversation History:\n"
     for msg in messages:
         if isinstance(msg, HumanMessage):
             conversation_history += f"User: {msg.content}\n"

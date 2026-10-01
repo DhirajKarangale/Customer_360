@@ -45,6 +45,11 @@ class AIDatabaseAccess:
             stats = cursor.fetchall()
             
             res = f"Agent Name: {agent.get('name')}, Agency: {agent.get('agency_name')}\n"
+            res += f"- Email: {agent.get('email')}\n"
+            res += f"- Phone: {agent.get('phone_number')}\n"
+            res += f"- License Number: {agent.get('license_number')}\n"
+            res += f"- Profile Image: {agent.get('profile_image_url')}\n"
+            res += f"- Member Since: {agent.get('created_at')}\n"
             res += "Policy Statistics for Agent:\n"
             for stat in stats:
                 res += f"- {stat['status']} Policies: {stat['count']}\n"
@@ -155,6 +160,7 @@ class AIDatabaseAccess:
             res += f"- Phone Number: {customer['phone_number']}\n"
             res += f"- Date of Birth: {customer['date_of_birth']}\n"
             res += f"- Address: {customer['address']}\n"
+            res += f"- Member Since: {customer['created_at']}\n"
             
             # Get their policies
             cursor.execute("SELECT policy_number, status, policy_type FROM policies WHERE customer_id = %s", (customer['id'],))
@@ -167,5 +173,38 @@ class AIDatabaseAccess:
             return res
         except Exception as e:
             return f"Error fetching customer details: {str(e)}"
+        finally:
+            cursor.close()
+
+    def execute_query(self, query: str) -> str:
+        """Executes a read-only SQL query and returns the results."""
+        if any(keyword in query.upper() for keyword in ['INSERT', 'UPDATE', 'DELETE', 'DROP', 'ALTER', 'CREATE', 'TRUNCATE', 'GRANT', 'REVOKE', 'COMMIT']):
+            return "Error: Only read-only SELECT queries are allowed."
+            
+        cursor = self.conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+        try:
+            cursor.execute(query)
+            results = cursor.fetchall()
+            
+            if not results:
+                return "Query returned no results."
+                
+            # Format results nicely
+            import json
+            def default_serializer(obj):
+                import datetime
+                import uuid
+                if isinstance(obj, (datetime.date, datetime.datetime)):
+                    return obj.isoformat()
+                if isinstance(obj, uuid.UUID):
+                    return str(obj)
+                from decimal import Decimal
+                if isinstance(obj, Decimal):
+                    return float(obj)
+                return str(obj)
+                
+            return json.dumps(results[:100], default=default_serializer, indent=2)  # Limit to 100 to avoid giant responses
+        except Exception as e:
+            return f"SQL Error: {str(e)}"
         finally:
             cursor.close()

@@ -161,4 +161,18 @@ def get_database_context(agent_id: Optional[str] = None, policy_id: Optional[str
     finally:
         db_access.close()
 
-TOOLS = [search_unstructured_interactions, get_database_context]
+class SQLQueryInput(BaseModel):
+    query: str = Field(description="The exact PostgreSQL query to execute. MUST be read-only (SELECT).")
+
+@tool("execute_sql_query", args_schema=SQLQueryInput)
+def execute_sql_query(query: str) -> str:
+    """Execute a raw PostgreSQL query to answer complex or aggregated questions about customers, policies, agents, or customer_interactions."""
+    db_access = AIDatabaseAccess()
+    try:
+        return db_access.execute_query(query)
+    except Exception as e:
+        return f"Error executing query: {e}"
+    finally:
+        db_access.close()
+
+TOOLS = [search_unstructured_interactions, get_database_context, execute_sql_query]
