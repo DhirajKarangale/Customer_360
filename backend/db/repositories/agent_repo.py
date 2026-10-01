@@ -9,7 +9,7 @@ class AgentRepository:
     def get_agent_by_email(self, email: str) -> Optional[Dict[str, Any]]:
         cursor = self.conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
         try:
-            cursor.execute("SELECT id, name, email, password, phone_number, agency_name, license_number FROM insurance_agents WHERE email = %s", (email,))
+            cursor.execute("SELECT id, name, email, password, phone_number, agency_name, license_number, profile_image_url FROM insurance_agents WHERE email = %s", (email,))
             return cursor.fetchone()
         finally:
             cursor.close()
@@ -17,7 +17,7 @@ class AgentRepository:
     def get_agent_by_id(self, agent_id: str) -> Optional[Dict[str, Any]]:
         cursor = self.conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
         try:
-            cursor.execute("SELECT id, name, email, phone_number, agency_name, license_number FROM insurance_agents WHERE id = %s", (agent_id,))
+            cursor.execute("SELECT id, name, email, phone_number, agency_name, license_number, profile_image_url FROM insurance_agents WHERE id = %s", (agent_id,))
             return cursor.fetchone()
         finally:
             cursor.close()

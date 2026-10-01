@@ -8,3 +8,4 @@ class AgentResponse(BaseModel):
     phone_number: Optional[str] = None
     agency_name: Optional[str] = None
     license_number: Optional[str] = None
+    profile_image_url: Optional[str] = None

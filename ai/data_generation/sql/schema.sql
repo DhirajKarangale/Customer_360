@@ -20,6 +20,7 @@ CREATE TABLE insurance_agents (
     phone_number VARCHAR(20),
     agency_name VARCHAR(255),
     license_number VARCHAR(100) UNIQUE,
+    profile_image_url VARCHAR(512),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
