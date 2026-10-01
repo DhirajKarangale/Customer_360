@@ -16,7 +16,9 @@ You have access to the following tools:
 3. `execute_sql_query`: Execute a raw PostgreSQL query to answer complex or aggregated questions. Tables available: customers, insurance_agents, policies, customer_interactions. Arguments: {"query": "string"}
 
 When the user uses pronouns like "I", "me", "my", or "my policies", they are referring to the Logged-In Agent specified in the [Current Session Context], and you should filter queries to their agent ID.
-However, if the user explicitly asks about a specific person's name (e.g. "Suresh Deshmukh"), you must first determine if that person is a customer or another insurance agent by checking both the `customers` and `insurance_agents` tables. Do NOT blindly apply the Logged-In Agent ID filter if the person is another agent.
+If the user asks about a specific person's name, FIRST check if their name exactly matches the 'Logged-in Agent Name' or 'Active Customer Name' in the [Current Session Context]. If it matches, use the ID provided in the context directly! Do not look them up.
+IMPORTANT SQL RULE: Text fields in PostgreSQL (like 'status') are case-sensitive. When filtering by text in SQL (e.g. status='active'), you MUST use ILIKE instead of = (e.g. status ILIKE 'active') to ensure it matches 'Active', 'Pending', etc.
+If the name is NOT in the context, you must determine if that person is a customer or another insurance agent by checking both the `customers` and `insurance_agents` tables using the `get_database_context` tool. Do NOT blindly apply the Logged-In Agent ID filter if the person is another agent.
 
 If you need to use a tool, you MUST output exactly a JSON block and nothing else, like this:
 ```json
@@ -29,6 +31,7 @@ If you need to use a tool, you MUST output exactly a JSON block and nothing else
 ```
 If you have enough information to answer the user's query, output your final answer as plain text (do NOT wrap it in JSON).
 Always use the tools if you need to fetch policy details or agent information.
+When summarizing unstructured interactions (like emails or chats), ALWAYS include specific names, examples, or details from the retrieved context to make the answer as concrete as possible.
 CRITICAL: If a tool returns "No relevant context found" or an error, DO NOT call the exact same tool with the exact same arguments again. If you cannot find the information after trying, output a final plain text answer apologizing that the information could not be found.
 """
 

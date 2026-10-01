@@ -88,7 +88,7 @@ def _unified_llm_call(prompt_str: str, model_key: str) -> str:
                 print(f"Trying Gemini key {idx}/{total_keys}")
                 try:
                     llm = ChatGoogleGenerativeAI(
-                        model=model_name, google_api_key=key)
+                        model=model_name, google_api_key=key, temperature=0.0)
                     response = llm.invoke(prompt_str)
                     if isinstance(response.content, list):
                         return "".join([part.get("text", "") for part in response.content if isinstance(part, dict) and "text" in part])
@@ -111,7 +111,7 @@ def _unified_llm_call(prompt_str: str, model_key: str) -> str:
             for idx, key in enumerate(keys, 1):
                 print(f"Trying Groq key {idx}/{total_keys}")
                 try:
-                    llm = ChatGroq(model_name=model_name, groq_api_key=key)
+                    llm = ChatGroq(model_name=model_name, groq_api_key=key, temperature=0.0)
                     response = llm.invoke(prompt_str)
                     return response.content
                 except Exception as e:
