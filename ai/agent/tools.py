@@ -24,6 +24,20 @@ def search_unstructured_interactions(query: str, policy_id: Optional[str] = None
 
     db = AIDatabaseAccess()
     try:
+        import ai.agent.state
+        from ai.agent.restrictions import restriction_manager
+        
+        logged_in_agent_id = ai.agent.state.CURRENT_AGENT_ID
+        is_allowed, error_msg = restriction_manager.check_access(
+            db_access=db,
+            logged_in_agent_id=logged_in_agent_id,
+            target_agent_identifier=agent_id,
+            target_customer_identifier=customer_id,
+            target_policy_identifier=policy_id
+        )
+        if not is_allowed:
+            return error_msg
+
         if policy_id and policy_id not in query:
             query = f"{query} {policy_id}"
             
@@ -146,6 +160,20 @@ def get_database_context(agent_id: Optional[str] = None, policy_id: Optional[str
         
     db_access = AIDatabaseAccess()
     try:
+        import ai.agent.state
+        from ai.agent.restrictions import restriction_manager
+        
+        logged_in_agent_id = ai.agent.state.CURRENT_AGENT_ID
+        is_allowed, error_msg = restriction_manager.check_access(
+            db_access=db_access,
+            logged_in_agent_id=logged_in_agent_id,
+            target_agent_identifier=agent_id,
+            target_customer_identifier=customer_id,
+            target_policy_identifier=policy_id
+        )
+        if not is_allowed:
+            return error_msg
+            
         db_context = ""
         if customer_id:
             db_context += db_access.get_customer_details(customer_id) + "\n"
@@ -167,9 +195,23 @@ class SQLQueryInput(BaseModel):
 @tool("execute_sql_query", args_schema=SQLQueryInput)
 def execute_sql_query(query: str) -> str:
     """Execute a raw PostgreSQL query to answer complex or aggregated questions about customers, policies, agents, or customer_interactions."""
+    import ai.agent.state
+    from ai.agent.restrictions import restriction_manager
+    
+    logged_in_agent_id = ai.agent.state.CURRENT_AGENT_ID
+    
+    if restriction_manager.enabled and logged_in_agent_id:
+        # Schema queries are safe and shouldn't require the agent ID
+        is_schema_query = "information_schema" in query.lower() or "pg_catalog" in query.lower()
+        if not is_schema_query and logged_in_agent_id not in query:
+            return "SYSTEM ERROR: ACCESS DENIED. (AI INSTRUCTION: CRITICAL: DO NOT RETRY. You attempted to access data without filtering by your agent ID. Stop immediately and politely inform the user that you can only access their own policies, customers, and data.)"
+            
     db_access = AIDatabaseAccess()
     try:
-        return db_access.execute_query(query)
+        res = db_access.execute_query(query)
+        if restriction_manager.enabled and logged_in_agent_id and ("Query returned no results" in res or res.strip() == ""):
+             return "SYSTEM ERROR: NO RESULTS FOUND. (AI INSTRUCTION: CRITICAL: DO NOT RETRY. The data doesn't exist or belongs to someone else. Stop immediately.)"
+        return res
     except Exception as e:
         return f"Error executing query: {e}"
     finally:

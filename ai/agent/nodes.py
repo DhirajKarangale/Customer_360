@@ -15,6 +15,9 @@ You have access to the following tools:
 2. `get_database_context`: Fetch structured customer, agent, or policy details from the database. Arguments: {"agent_id": "string (optional)", "policy_id": "string (optional)", "customer_id": "string (optional)"}
 3. `execute_sql_query`: Execute a raw PostgreSQL query to answer complex or aggregated questions. Tables available: customers, insurance_agents, policies, customer_interactions. Arguments: {"query": "string"}
 
+When the user uses pronouns like "I", "me", "my", or "my policies", they are referring to the Logged-In Agent specified in the [Current Session Context], and you should filter queries to their agent ID.
+However, if the user explicitly asks about a specific person's name (e.g. "Suresh Deshmukh"), you must first determine if that person is a customer or another insurance agent by checking both the `customers` and `insurance_agents` tables. Do NOT blindly apply the Logged-In Agent ID filter if the person is another agent.
+
 If you need to use a tool, you MUST output exactly a JSON block and nothing else, like this:
 ```json
 {
@@ -29,20 +32,74 @@ Always use the tools if you need to fetch policy details or agent information.
 CRITICAL: If a tool returns "No relevant context found" or an error, DO NOT call the exact same tool with the exact same arguments again. If you cannot find the information after trying, output a final plain text answer apologizing that the information could not be found.
 """
 
+
 def agent_node(state: AgentState):
+    import ai.agent.state
     messages = state.get("messages", [])
     
     # Inject contextual IDs if they exist
     context_str = "\n[Current Session Context]\n"
     has_context = False
+    
+    # Reset it by default
+    ai.agent.state.CURRENT_AGENT_ID = None
+    
+    from ai.agent.restrictions import restriction_manager
     if state.get("insurance_agents_id"):
-        context_str += f"- Logged in Agent ID: {state['insurance_agents_id']}\n"
+        agent_uuid = state['insurance_agents_id']
+        
+        # Resolve agent name to make the context more human-readable for the LLM
+        agent_name = "Unknown Agent"
+        from ai.agent.tools import AIDatabaseAccess
+        db = AIDatabaseAccess()
+        try:
+            res = db.execute_query(f"SELECT name FROM insurance_agents WHERE id = '{agent_uuid}'")
+            lines = [line.strip() for line in res.split('\n') if line.strip() and not line.startswith('-')]
+            if len(lines) > 1 and lines[0].lower() == 'name':
+                agent_name = lines[1]
+        except Exception:
+            pass
+        finally:
+            db.close()
+            
+        context_str += f"- Logged-in Agent ID: {agent_uuid}\n"
+        context_str += f"- Logged-in Agent Name: {agent_name}\n"
         has_context = True
+        ai.agent.state.CURRENT_AGENT_ID = agent_uuid
     if state.get("customers_id"):
-        context_str += f"- Active Customer ID: {state['customers_id']}\n"
+        cust_uuid = state['customers_id']
+        cust_name = "Unknown Customer"
+        from ai.agent.tools import AIDatabaseAccess
+        db = AIDatabaseAccess()
+        try:
+            res = db.execute_query(f"SELECT name FROM customers WHERE id = '{cust_uuid}'")
+            lines = [line.strip() for line in res.split('\n') if line.strip() and not line.startswith('-')]
+            if len(lines) > 1 and lines[0].lower() == 'name':
+                cust_name = lines[1]
+        except Exception:
+            pass
+        finally:
+            db.close()
+        context_str += f"- Active Customer ID: {cust_uuid}\n"
+        context_str += f"- Active Customer Name: {cust_name}\n"
         has_context = True
+        
     if state.get("policies_id"):
-        context_str += f"- Active Policy ID: {state['policies_id']}\n"
+        pol_uuid = state['policies_id']
+        pol_number = "Unknown Policy"
+        from ai.agent.tools import AIDatabaseAccess
+        db = AIDatabaseAccess()
+        try:
+            res = db.execute_query(f"SELECT policy_number FROM policies WHERE id = '{pol_uuid}'")
+            lines = [line.strip() for line in res.split('\n') if line.strip() and not line.startswith('-')]
+            if len(lines) > 1 and lines[0].lower() == 'policy_number':
+                pol_number = lines[1]
+        except Exception:
+            pass
+        finally:
+            db.close()
+        context_str += f"- Active Policy ID: {pol_uuid}\n"
+        context_str += f"- Active Policy Number: {pol_number}\n"
         has_context = True
         
     system_prompt_with_context = SYSTEM_PROMPT

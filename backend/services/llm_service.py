@@ -15,21 +15,17 @@ class LLMService:
             default_callback = os.getenv("CALLBACK_URL")
             callback = request.callback_url or default_callback
             
-            final_query = request.query
-            if request.insurance_agents_id and request.insurance_agents_id not in final_query:
-                final_query += f" {request.insurance_agents_id}"
-            if request.customers_id and request.customers_id not in final_query:
-                final_query += f" {request.customers_id}"
-            if request.policies_id and request.policies_id not in final_query:
-                final_query += f" {request.policies_id}"
-                
             payload = {
                 "job_id": job_id,
-                "query": final_query,
+                "query": request.query,
                 "callback_url": callback
             }
             if request.insurance_agents_id:
                 payload["insurance_agents_id"] = request.insurance_agents_id
+            if request.customers_id:
+                payload["customers_id"] = request.customers_id
+            if request.policies_id:
+                payload["policies_id"] = request.policies_id
             
             self.redis_client.xadd("ai_jobs", payload)
             

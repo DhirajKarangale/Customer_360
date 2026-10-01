@@ -45,6 +45,7 @@ class AIDatabaseAccess:
             stats = cursor.fetchall()
             
             res = f"Agent Name: {agent.get('name')}, Agency: {agent.get('agency_name')}\n"
+            res += f"- Agent ID: {agent.get('id')}\n"
             res += f"- Email: {agent.get('email')}\n"
             res += f"- Phone: {agent.get('phone_number')}\n"
             res += f"- License Number: {agent.get('license_number')}\n"
@@ -120,6 +121,7 @@ class AIDatabaseAccess:
                 return f"No structured database records found for policy {policy_id}."
             
             res = f"Structured Policy Details for {policy['policy_number']}:\n"
+            res += f"- Policy ID: {policy_id}\n"
             res += f"- Type: {policy['policy_type']}\n"
             res += f"- Status: {policy['status']}\n"
             res += f"- Customer: {policy['customer_name']}\n"
@@ -156,6 +158,7 @@ class AIDatabaseAccess:
                 return f"No structured database records found for customer {customer_identifier}."
             
             res = f"Structured Customer Details for {customer['name']}:\n"
+            res += f"- Customer ID: {customer['id']}\n"
             res += f"- Email: {customer['email']}\n"
             res += f"- Phone Number: {customer['phone_number']}\n"
             res += f"- Date of Birth: {customer['date_of_birth']}\n"

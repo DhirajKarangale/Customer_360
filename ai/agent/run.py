@@ -17,8 +17,8 @@ def invoke_agent(user_query: str, customers_id: str = None, insurance_agents_id:
     }
     
     try:
-        # recursion_limit=15 prevents infinite loops if the LLM gets stuck
-        final_state = agent_app.invoke(inputs, {"recursion_limit": 15})
+        # recursion_limit=25 prevents infinite loops if the LLM gets stuck
+        final_state = agent_app.invoke(inputs, {"recursion_limit": 25})
         
         # The final message should be the AI's response
         final_message = final_state["messages"][-1]
