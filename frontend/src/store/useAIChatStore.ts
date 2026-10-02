@@ -21,6 +21,9 @@ interface AIChatState {
   updateMessage: (job_id: string, message: string) => void;
   markAsFailed: (job_id: string) => void;
   clearMessages: () => void;
+  activePolicyId: string | null;
+  activePolicyNumber: string | null;
+  setActivePolicy: (id: string | null, number: string | null) => void;
 }
 
 export const useAIChatStore = create<AIChatState>()(
@@ -55,7 +58,10 @@ export const useAIChatStore = create<AIChatState>()(
             msg.job_id === job_id ? { ...msg, status: 'failed', message: 'Request failed: No response received after 5 minutes.' } : msg
           )
         })),
-      clearMessages: () => set({ messages: [], draftInput: '' })
+      clearMessages: () => set({ messages: [], draftInput: '' }),
+      activePolicyId: null,
+      activePolicyNumber: null,
+      setActivePolicy: (id, number) => set({ activePolicyId: id, activePolicyNumber: number })
     }),
     {
       name: 'ai-chat-storage',
@@ -63,7 +69,9 @@ export const useAIChatStore = create<AIChatState>()(
       // We don't want to persist the panel being open/closed across reloads
       partialize: (state) => ({ 
         messages: state.messages, 
-        draftInput: state.draftInput 
+        draftInput: state.draftInput,
+        activePolicyId: state.activePolicyId,
+        activePolicyNumber: state.activePolicyNumber
       }),
     }
   )

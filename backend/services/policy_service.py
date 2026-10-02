@@ -54,3 +54,6 @@ class PolicyService:
             count=len(results),
             items=results
         )
+
+    def get_unique_column_values(self, columns: List[str]) -> dict:
+        return self.policy_repo.get_unique_column_values(columns)

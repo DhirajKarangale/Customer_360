@@ -1,8 +1,272 @@
+import { useState, useEffect, useMemo } from 'react';
+import { Search, Loader2, FileText, ShieldAlert, CalendarDays, ArrowRight, MessageSquare } from 'lucide-react';
+import { useAuthStore } from '../store/useAuthStore';
+import { usePoliciesQuery } from '../api/policies';
+import type { Policy } from '../api/policies';
+import { usePoliciesStore } from '../store/usePoliciesStore';
+import { useAIChatStore } from '../store/useAIChatStore';
+import { Pagination } from '../components/ui/Pagination';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '../components/ui/select';
+
+// Fallback constant filters since no API is available to fetch unique ones
+const POLICY_TYPES = ["Life", "Health", "Auto", "Home", "Liability", "Property", "Business"];
+const POLICY_STATUSES = ["Active", "Pending", "Expired", "Cancelled", "Suspended", "Claimed"];
+
 export default function PoliciesPage() {
+  const agent = useAuthStore((state) => state.agent);
+  
+  // Local state
+  const [page, setPage] = useState(1);
+  const [pageSize, setPageSize] = useState(10);
+  const [searchTerm, setSearchTerm] = useState('');
+  const [debouncedSearch, setDebouncedSearch] = useState('');
+  const [policyType, setPolicyType] = useState('all');
+  const [status, setStatus] = useState('all');
+
+  const { mergePolicies, getAllPolicies } = usePoliciesStore();
+  const { setIsOpen: setChatOpen, setActivePolicy } = useAIChatStore();
+
+  // Debounce search term
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setDebouncedSearch(searchTerm);
+      setPage(1); // Reset to page 1 on new search
+    }, 500);
+    return () => clearTimeout(timer);
+  }, [searchTerm]);
+
+  // Reset page when filters change
+  useEffect(() => {
+    setPage(1);
+  }, [policyType, status, pageSize]);
+
+  // Query Backend
+  // If "all" is selected, we pass undefined to the backend
+  const { data, isFetching, isError } = usePoliciesQuery(
+    {
+      insurance_agent_id: agent?.id || '',
+      page,
+      page_size: pageSize,
+      search_term: debouncedSearch,
+      policy_type: policyType === 'all' ? undefined : policyType,
+      status: status === 'all' ? undefined : status,
+    },
+    !!agent?.id
+  );
+
+  // Sync incoming API data into our global deduplicated store
+  useEffect(() => {
+    if (data?.items && data.items.length > 0) {
+      mergePolicies(data.items);
+    }
+  }, [data, mergePolicies]);
+
+  // Intelligent Local Fallback logic
+  const displayItems = useMemo(() => {
+    // If API response is ready and we aren't fetching, just show authoritative data
+    if (data && !isFetching) {
+      return data.items;
+    }
+
+    // While fetching, optimistic search local store cache
+    const all = getAllPolicies();
+    let filtered = all;
+
+    if (policyType !== 'all') {
+      filtered = filtered.filter(p => p.policy_type === policyType);
+    }
+    if (status !== 'all') {
+      filtered = filtered.filter(p => p.status === status);
+    }
+    if (debouncedSearch) {
+      const lower = debouncedSearch.toLowerCase();
+      filtered = filtered.filter(p => 
+        p.policy_number.toLowerCase().includes(lower) ||
+        p.customer_id.toLowerCase().includes(lower) ||
+        p.agent_id.toLowerCase().includes(lower)
+      );
+    }
+
+    const startIndex = (page - 1) * pageSize;
+    return filtered.slice(startIndex, startIndex + pageSize);
+  }, [data, isFetching, getAllPolicies, policyType, status, debouncedSearch, pageSize, page]);
+
+  // Calculate pagination props
+  const totalItems = data?.total_items ?? displayItems.length;
+  const totalPages = data?.total_pages ?? Math.ceil(displayItems.length / pageSize);
+  const currentPage = data?.current_page ?? page;
+
   return (
-    <div className="flex h-full min-h-[50vh] flex-col items-center justify-center rounded-xl border border-border bg-card p-8 text-card-foreground">
-      <h1 className="text-3xl font-bold tracking-tight">Policies</h1>
-      <p className="mt-4 text-muted-foreground">Policy management and details will appear here.</p>
+    <div className="space-y-6">
+      {/* Page Header & Filters */}
+      <div className="flex flex-col gap-4 rounded-xl border border-border bg-card p-4 shadow-sm md:flex-row md:items-center md:justify-between">
+        <div className="flex items-center gap-2">
+          <div className="rounded-lg bg-primary/10 p-2 text-primary">
+            <ShieldAlert className="h-6 w-6" />
+          </div>
+          <h1 className="text-xl font-semibold tracking-tight">Policies Management</h1>
+        </div>
+
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+          {/* Search Bar */}
+          <div className="relative">
+            <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+            <input
+              type="text"
+              placeholder="Search ID, Policy #..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="h-10 w-full rounded-md border border-input bg-background pl-9 pr-4 text-sm font-medium focus:outline-none focus:ring-1 focus:ring-primary sm:w-[250px] shadow-sm"
+            />
+          </div>
+
+          {/* Filters */}
+          <div className="flex items-center gap-3">
+            <Select value={policyType} onValueChange={setPolicyType}>
+              <SelectTrigger className="w-full sm:w-[160px] bg-background">
+                <div className="flex items-center gap-1.5 truncate">
+                  <span className="text-muted-foreground font-normal">Type:</span>
+                  <span>{policyType === 'all' ? 'All' : policyType}</span>
+                </div>
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">All Types</SelectItem>
+                {POLICY_TYPES.map((type) => (
+                  <SelectItem key={type} value={type}>{type}</SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+
+            <Select value={status} onValueChange={setStatus}>
+              <SelectTrigger className="w-full sm:w-[160px] bg-background">
+                <div className="flex items-center gap-1.5 truncate">
+                  <span className="text-muted-foreground font-normal">Status:</span>
+                  <span>{status === 'all' ? 'All' : status}</span>
+                </div>
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">All Statuses</SelectItem>
+                {POLICY_STATUSES.map((stat) => (
+                  <SelectItem key={stat} value={stat}>{stat}</SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Content Area */}
+      <div className="rounded-xl border border-border bg-card shadow-sm overflow-hidden">
+        
+        {/* Loading State Overlay (Only if totally empty) */}
+        {isFetching && displayItems.length === 0 && (
+          <div className="flex h-64 flex-col items-center justify-center gap-4 text-muted-foreground">
+            <Loader2 className="h-8 w-8 animate-spin text-primary" />
+            <p>Searching Policies...</p>
+          </div>
+        )}
+
+        {/* Error State */}
+        {isError && !isFetching && (
+          <div className="flex h-64 flex-col items-center justify-center gap-2 text-destructive">
+            <ShieldAlert className="h-10 w-10" />
+            <p className="font-medium">Failed to load policies</p>
+            <p className="text-sm opacity-80">Please check your connection and try again.</p>
+          </div>
+        )}
+
+        {/* Empty State */}
+        {!isFetching && !isError && displayItems.length === 0 && (
+          <div className="flex h-64 flex-col items-center justify-center gap-2 text-muted-foreground">
+            <FileText className="h-10 w-10 opacity-50" />
+            <p className="text-lg font-medium text-foreground">No Policies Found</p>
+            <p className="text-sm">Try adjusting your search terms or filters.</p>
+          </div>
+        )}
+
+        {/* Data Table */}
+        {displayItems.length > 0 && (
+          <div className="overflow-x-auto relative">
+            <table className="w-full text-left text-sm">
+              <thead className="bg-muted/50 border-b border-border">
+                <tr>
+                  <th className="px-6 py-4 font-medium text-muted-foreground">Policy Number</th>
+                  <th className="px-6 py-4 font-medium text-muted-foreground">Type</th>
+                  <th className="px-6 py-4 font-medium text-muted-foreground">Status</th>
+                  <th className="px-6 py-4 font-medium text-muted-foreground">Premium</th>
+                  <th className="px-6 py-4 font-medium text-muted-foreground">Coverage</th>
+                  <th className="px-6 py-4 font-medium text-muted-foreground">Dates</th>
+                  <th className="px-6 py-4 font-medium text-muted-foreground">Actions</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-border">
+                {displayItems.map((policy) => (
+                  <tr key={policy.id} className="hover:bg-muted/30 transition-colors">
+                    <td className="px-6 py-4 font-medium text-foreground">{policy.policy_number}</td>
+                    <td className="px-6 py-4">
+                      <span className="inline-flex items-center rounded-full bg-secondary px-2.5 py-0.5 text-xs font-semibold text-secondary-foreground border border-border">
+                        {policy.policy_type}
+                      </span>
+                    </td>
+                    <td className="px-6 py-4">
+                      <span className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold border ${
+                        policy.status === 'Active' ? 'bg-emerald-500/10 text-emerald-500 border-emerald-500/20' : 
+                        policy.status === 'Expired' ? 'bg-destructive/10 text-destructive border-destructive/20' :
+                        'bg-amber-500/10 text-amber-500 border-amber-500/20'
+                      }`}>
+                        {policy.status}
+                      </span>
+                    </td>
+                    <td className="px-6 py-4 text-foreground">${policy.premium_amount.toLocaleString(undefined, { minimumFractionDigits: 2 })}</td>
+                    <td className="px-6 py-4 text-muted-foreground">${policy.coverage_amount.toLocaleString()}</td>
+                    <td className="px-6 py-4">
+                      <div className="flex flex-col gap-1 text-xs">
+                        <div className="flex items-center gap-2 text-foreground font-medium">
+                          <CalendarDays className="h-3.5 w-3.5 text-muted-foreground" />
+                          {new Date(policy.start_date).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' })}
+                        </div>
+                        <div className="flex items-center gap-2 text-muted-foreground">
+                          <ArrowRight className="h-3 w-3 ml-[2px] opacity-70" />
+                          {new Date(policy.end_date).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' })}
+                        </div>
+                      </div>
+                    </td>
+                    <td className="px-6 py-4">
+                      <button
+                        onClick={() => {
+                          setActivePolicy(policy.id, policy.policy_number);
+                          setChatOpen(true);
+                        }}
+                        className="inline-flex h-8 items-center justify-center gap-2 rounded-md bg-secondary/50 px-3 text-xs font-medium text-secondary-foreground shadow-sm transition-colors hover:bg-secondary hover:text-foreground"
+                        title="Ask AI about this policy"
+                      >
+                        <MessageSquare className="h-3.5 w-3.5" />
+                        Ask AI
+                      </button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+
+        {/* Pagination */}
+        <Pagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          totalItems={totalItems}
+          pageSize={pageSize}
+          onPageChange={setPage}
+          onPageSizeChange={setPageSize}
+        />
+      </div>
     </div>
   );
 }

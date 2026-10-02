@@ -8,5 +8,7 @@ export const API_ENDPOINTS = {
   llm: {
     generate: `${BASE_URL}/llm/generate`,
   },
-  // Add other endpoints as needed here
+  policies: {
+    list: `${BASE_URL}/policies/`,
+  }
 };

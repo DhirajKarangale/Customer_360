@@ -7,6 +7,13 @@ from backend.api.dependencies import get_policy_service
 
 router = APIRouter(prefix="/policies", tags=["Policies"])
 
+@router.get("/filters")
+def get_policy_filters(
+    columns: List[str] = Query(..., description="List of columns to get unique values for"),
+    policy_service: PolicyService = Depends(get_policy_service)
+):
+    return policy_service.get_unique_column_values(columns)
+
 @router.get("/", response_model=PaginatedResponse[PolicyResponse])
 def get_policies(
     insurance_agent_id: str = Query(..., description="The ID of the insurance agent"),

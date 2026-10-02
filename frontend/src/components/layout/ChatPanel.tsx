@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { ChevronLeft, Send, ArrowUp, ArrowDown } from 'lucide-react';
+import { ChevronLeft, Send, ArrowUp, ArrowDown, Trash2 } from 'lucide-react';
 import { useAIChatStore } from '../../store/useAIChatStore';
 import { useAuthStore } from '../../store/useAuthStore';
 import { useGenerateChatMutation } from '../../api/chat';
@@ -14,7 +14,11 @@ export function ChatPanel() {
     setHasUnread,
     draftInput,
     setDraftInput,
-    markAsFailed
+    markAsFailed,
+    activePolicyId,
+    activePolicyNumber,
+    setActivePolicy,
+    clearMessages
   } = useAIChatStore();
   
   const agent = useAuthStore((state) => state.agent);
@@ -56,7 +60,12 @@ export function ChatPanel() {
     return () => clearInterval(interval);
   }, [messages, markAsFailed]);
 
-  const togglePanel = () => setIsOpen(!isOpen);
+  const togglePanel = () => {
+    if (!isOpen) {
+      setActivePolicy(null, null);
+    }
+    setIsOpen(!isOpen);
+  };
 
   const scrollToTop = () => {
     scrollRef.current?.scrollTo({ top: 0, behavior: 'smooth' });
@@ -85,6 +94,8 @@ export function ChatPanel() {
       job_id: jobId,
       query: userQuery,
       insurance_agents_id: agent.id,
+      policies_id: activePolicyId || undefined,
+      policy_number: activePolicyNumber || undefined,
     }, {
       onError: () => {
         markAsFailed(jobId);
@@ -124,7 +135,28 @@ export function ChatPanel() {
 
         {/* Panel Header */}
         <div className="flex items-center justify-between border-b border-border p-4 bg-background/50 backdrop-blur-md">
-          <h2 className="text-lg font-semibold text-foreground">AI Assistant</h2>
+          <h2 className="text-sm font-semibold text-foreground flex items-center gap-2">
+            {activePolicyNumber ? `Asking about ${activePolicyNumber}` : 'AI Assistant'}
+          </h2>
+          <div className="flex items-center gap-3">
+            {activePolicyNumber && (
+              <button 
+                onClick={() => setActivePolicy(null, null)}
+                className="text-xs text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Clear Context
+              </button>
+            )}
+            {messages.length > 0 && (
+              <button
+                onClick={clearMessages}
+                className="text-muted-foreground hover:text-destructive transition-colors"
+                title="Clear Chat History"
+              >
+                <Trash2 className="h-4 w-4" />
+              </button>
+            )}
+          </div>
         </div>
 
         {/* Messages Area (Scrollable) */}

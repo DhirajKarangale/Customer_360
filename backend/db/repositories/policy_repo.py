@@ -65,3 +65,17 @@ class PolicyRepository:
             return total_items, items
         finally:
             cursor.close()
+
+    def get_unique_column_values(self, columns: List[str]) -> Dict[str, List[Any]]:
+        cursor = self.conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+        result = {}
+        allowed_columns = {'policy_type', 'status'}
+        try:
+            for col in columns:
+                if col in allowed_columns:
+                    cursor.execute(f"SELECT DISTINCT {col} FROM policies WHERE {col} IS NOT NULL")
+                    rows = cursor.fetchall()
+                    result[col] = [row[col] for row in rows]
+            return result
+        finally:
+            cursor.close()
