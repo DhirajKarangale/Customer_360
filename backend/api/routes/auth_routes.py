@@ -1,17 +1,26 @@
-from fastapi import APIRouter, Depends
-from backend.schemas.auth import LoginRequest
+from fastapi import APIRouter, Depends, Request, HTTPException, status
+from backend.schemas.auth import LoginRequest, LoginResponse
 from backend.schemas.agent import AgentResponse
 from backend.services.auth_service import AuthService
-from backend.api.dependencies import get_auth_service
+from backend.services.agent_service import AgentService
+from backend.api.dependencies import get_auth_service, get_agent_service, verify_jwt
 
 router = APIRouter(prefix="/auth", tags=["Authentication"])
 
 from fastapi import Request
 
-@router.post("/login", response_model=AgentResponse)
+@router.post("/login", response_model=LoginResponse)
 def login(request_data: LoginRequest, request: Request, auth_service: AuthService = Depends(get_auth_service)):
     base_url = str(request.base_url).rstrip('/')
     return auth_service.authenticate_agent(request_data, base_url)
+
+@router.get("/verify", response_model=AgentResponse)
+def verify(request: Request, token_data: dict = Depends(verify_jwt), agent_service: AgentService = Depends(get_agent_service)):
+    base_url = str(request.base_url).rstrip('/')
+    agent_id = token_data.get("insurance_agent_id")
+    if not agent_id:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid token payload")
+    return agent_service.get_agent_info(agent_id, base_url)
 
 from fastapi.responses import FileResponse
 import tempfile

@@ -1,14 +1,15 @@
 from fastapi import HTTPException, status
-from backend.schemas.auth import LoginRequest
+from backend.schemas.auth import LoginRequest, LoginResponse
 from backend.schemas.agent import AgentResponse
 from backend.db.repositories.agent_repo import AgentRepository
+from backend.utils.jwt_utils import create_access_token
 import hashlib
 
 class AuthService:
     def __init__(self, agent_repo: AgentRepository):
         self.agent_repo = agent_repo
 
-    def authenticate_agent(self, login_data: LoginRequest, base_url: str = "http://localhost:8000") -> AgentResponse:
+    def authenticate_agent(self, login_data: LoginRequest, base_url: str = "http://localhost:8000") -> LoginResponse:
         error_msg = "Invalid email or password. Please double-check your credentials and try again."
         
         agent = self.agent_repo.get_agent_by_email(login_data.email)
@@ -45,4 +46,6 @@ class AuthService:
             profile_image_url=proxy_url
         )
         
-        return agent_data
+        access_token = create_access_token(data={"insurance_agent_id": agent_data.id})
+        
+        return LoginResponse(agent_data=agent_data, access_token=access_token)

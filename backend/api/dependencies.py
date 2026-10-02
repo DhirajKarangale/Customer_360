@@ -1,6 +1,8 @@
-from fastapi import Depends
+from fastapi import Depends, HTTPException, status
+from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 import psycopg2.extensions
 from backend.db.connection import get_db_connection
+from backend.utils.jwt_utils import verify_token
 from backend.db.repositories.agent_repo import AgentRepository
 from backend.db.repositories.policy_repo import PolicyRepository
 from backend.db.repositories.customer_repo import CustomerRepository
@@ -35,3 +37,15 @@ def get_customer_service(customer_repo: CustomerRepository = Depends(get_custome
 
 def get_llm_service() -> LLMService:
     return LLMService()
+
+security = HTTPBearer()
+
+def verify_jwt(credentials: HTTPAuthorizationCredentials = Depends(security)):
+    token = credentials.credentials
+    payload = verify_token(token)
+    if not payload:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Invalid or expired token"
+        )
+    return payload

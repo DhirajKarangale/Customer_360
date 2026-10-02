@@ -2,6 +2,10 @@
 
 Base URL: `/api/v1`
 
+**Global Authentication Note:** 
+All endpoints under `/agents`, `/customers`, `/policies`, and `/llm` are protected and require a valid JWT token. You must pass it via the HTTP headers:
+`Authorization: Bearer <your_access_token>`
+
 ---
 
 ## 1. Authentication
@@ -19,6 +23,33 @@ Base URL: `/api/v1`
 - **Expected Response (Success - 200 OK)**:
   ```json
   {
+    "agent_data": {
+      "id": "uuid-string",
+      "name": "Agent Name",
+      "email": "agent@example.com",
+      "phone_number": "1234567890",
+      "agency_name": "Agency LLC",
+      "license_number": "LIC123",
+      "profile_image_url": "http://localhost:8000/api/v1/auth/images/filename.jpg"
+    },
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+  }
+  ```
+- **Expected Response (Error - 401 Unauthorized)**:
+  ```json
+  {
+    "message": "Invalid email or password. Please double-check your credentials and try again."
+  }
+  ```
+
+### Verify Token
+- **URL**: `/auth/verify`
+- **Method**: `GET`
+- **Headers**:
+  - `Authorization: Bearer <token>`
+- **Expected Response (Success - 200 OK)**:
+  ```json
+  {
     "id": "uuid-string",
     "name": "Agent Name",
     "email": "agent@example.com",
@@ -31,7 +62,7 @@ Base URL: `/api/v1`
 - **Expected Response (Error - 401 Unauthorized)**:
   ```json
   {
-    "message": "Invalid email or password. Please double-check your credentials and try again."
+    "detail": "Invalid or expired token"
   }
   ```
 
