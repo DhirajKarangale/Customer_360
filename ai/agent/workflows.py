@@ -7,7 +7,7 @@ def run_suggestions_workflow(payload: dict) -> str:
     """
     Workflow for generating suggestions for an insurance agent.
     """
-    agent_id = payload.get("agent_id")
+    agent_id = payload.get("insurance_agents_id") or payload.get("agent_id")
     logger.info(f"🧠 Running LangGraph Agent for suggestions (Agent ID: {agent_id})...")
     
     system_query = "Analyze my recent customer interactions and expiring policies to generate 3 actionable suggestions for today. Format as a clean list and explain why."

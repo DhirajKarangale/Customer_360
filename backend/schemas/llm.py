@@ -3,6 +3,7 @@ from typing import Optional
 
 class LLMRequest(BaseModel):
     query: str
+    job_id: Optional[str] = None
     customers_id: Optional[str] = None
     insurance_agents_id: Optional[str] = None
     policies_id: Optional[str] = None
@@ -15,6 +16,4 @@ class LLMResponse(BaseModel):
 class CallbackRequest(BaseModel):
     job_id: str
     message: str
-    customers_id: Optional[str] = None
     insurance_agents_id: Optional[str] = None
-    policies_id: Optional[str] = None

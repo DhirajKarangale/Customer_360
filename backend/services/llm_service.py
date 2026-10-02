@@ -11,7 +11,7 @@ class LLMService:
 
     def submit_job(self, request: LLMRequest) -> LLMResponse:
         try:
-            job_id = str(uuid.uuid4())
+            job_id = request.job_id or str(uuid.uuid4())
             default_callback = os.getenv("CALLBACK_URL")
             callback = request.callback_url or default_callback
             

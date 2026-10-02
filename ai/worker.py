@@ -29,45 +29,30 @@ GROUP_NAME = "ai_workers"
 CONSUMER_NAME = f"worker-{os.getpid()}"
 
 
-def process_job(redis_client, job_id, payload):
+def process_job(redis_client, redis_msg_id, payload):
     callback_url = payload.get("callback_url")
-    job_type = payload.get("job_type")
-
-    logger.info(f"🚀 Job Received | ID: {job_id} | Type: {job_type or 'general'}")
+    job_id = payload.get("job_id") or redis_msg_id
+    
+    logger.info(f"🚀 Job Received | ID: {job_id} (Redis Msg: {redis_msg_id})")
+    logger.info(f"📦 Incoming Payload: {payload}")
 
     try:
-        if job_type == "suggestions_generation":
-            agent_id = payload.get("agent_id")
+        if job_id.startswith("suggestion_"):
             response = run_suggestions_workflow(payload)
             logger.info(f"=== 🤖 AI SUGGESTIONS RESPONSE ===\n{response}\n======================")
-            
-            if callback_url:
-                logger.info(f"📤 Sending suggestions back to callback URL...")
-                callback_data = {
-                    "job_id": job_id,
-                    "agent_id": agent_id,
-                    "action_text": response
-                }
-                requests.post(callback_url, json=callback_data, timeout=10)
-                
         else:
             response = run_general_workflow(payload)
             logger.info(f"=== 🤖 AI RESPONSE ===\n{response}\n======================")
 
-            if callback_url:
-                logger.info(f"📤 Sending result back to callback URL...")
-                callback_data = {
-                    "job_id": job_id,
-                    "message": response
-                }
-                if payload.get("customers_id"):
-                    callback_data["customers_id"] = payload.get("customers_id")
-                if payload.get("insurance_agents_id"):
-                    callback_data["insurance_agents_id"] = payload.get("insurance_agents_id")
-                if payload.get("policies_id"):
-                    callback_data["policies_id"] = payload.get("policies_id")
-
-                requests.post(callback_url, json=callback_data, timeout=10)
+        if callback_url:
+            logger.info(f"📤 Sending result back to callback URL...")
+            callback_data = {
+                "job_id": job_id,
+                "message": response,
+                "insurance_agents_id": payload.get("insurance_agents_id")
+            }
+            logger.info(f"📦 Outgoing Callback Payload: {callback_data}")
+            requests.post(callback_url, json=callback_data, timeout=10)
 
         logger.info(f"✅ Job Successfully Completed | ID: {job_id}")
     except Exception as e:
@@ -79,7 +64,7 @@ def process_job(redis_client, job_id, payload):
             except:
                 pass
     finally:
-        redis_client.xack(STREAM_KEY, GROUP_NAME, job_id)
+        redis_client.xack(STREAM_KEY, GROUP_NAME, redis_msg_id)
 
 
 def start_worker():

@@ -76,6 +76,28 @@ Base URL: `/api/v1`
   }
   ```
 
+### Get Agent Suggestions
+- **URL**: `/agents/{insurance_agent_id}/suggestions`
+- **Method**: `GET`
+- **Path Params**:
+  - `insurance_agent_id` (string): The ID of the agent.
+- **Expected Response (Success - 200 OK, Found Cached)**:
+  ```json
+  {
+    "status": "success",
+    "message": "Found recent suggestions.",
+    "action_text": "1. Call John Doe about his expiring auto policy...\n2. Check in on Jane Doe's life insurance application...",
+    "last_updated": "2026-10-02T12:00:00"
+  }
+  ```
+- **Expected Response (Success - 200 OK, Pending Generation)**:
+  ```json
+  {
+    "status": "pending",
+    "message": "Analyzing your recent interactions and policies to generate your personalized suggestions for today. This will just take a moment.",
+    "job_id": "suggestion-uuid-string"
+  }
+  ```
 ---
 
 ## 3. Customers
@@ -203,6 +225,7 @@ Base URL: `/api/v1`
   {
     "job_id": "uuid-string",
     "message": "The policy is currently active.",
+    "job_type": "general (or suggestions_generation)",
     "customers_id": "uuid-string (optional)",
     "insurance_agents_id": "uuid-string (optional)",
     "policies_id": "uuid-string (optional)"
