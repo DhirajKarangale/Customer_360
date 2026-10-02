@@ -21,6 +21,8 @@ CREATE TABLE insurance_agents (
     agency_name VARCHAR(255),
     license_number VARCHAR(100) UNIQUE,
     profile_image_url VARCHAR(512),
+    suggestions TEXT,
+    suggestions_updated_at TIMESTAMP,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );

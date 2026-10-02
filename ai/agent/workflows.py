@@ -1,0 +1,37 @@
+import logging
+from ai.agent.run import invoke_agent
+
+logger = logging.getLogger(__name__)
+
+def run_suggestions_workflow(payload: dict) -> str:
+    """
+    Workflow for generating suggestions for an insurance agent.
+    """
+    agent_id = payload.get("agent_id")
+    logger.info(f"🧠 Running LangGraph Agent for suggestions (Agent ID: {agent_id})...")
+    
+    system_query = "Analyze my recent customer interactions and expiring policies to generate 3 actionable suggestions for today. Format as a clean list and explain why."
+    
+    response = invoke_agent(
+        user_query=system_query,
+        insurance_agents_id=agent_id
+    )
+    return response
+
+def run_general_workflow(payload: dict) -> str:
+    """
+    Workflow for generic agent invocations from the frontend LLM chat.
+    """
+    user_query = payload.get("query") or payload.get("user_query")
+    customers_id = payload.get("customers_id")
+    insurance_agents_id = payload.get("insurance_agents_id")
+    policies_id = payload.get("policies_id")
+
+    logger.info(f"🧠 Running LangGraph Agent for general query...")
+    response = invoke_agent(
+        user_query=user_query,
+        customers_id=customers_id,
+        insurance_agents_id=insurance_agents_id,
+        policies_id=policies_id
+    )
+    return response

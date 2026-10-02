@@ -13,7 +13,7 @@ if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
 from ai.utils.sf_auth import get_snowflake_conn
-from ai.agent.run import invoke_agent
+from ai.agent.workflows import run_suggestions_workflow, run_general_workflow
 
 logging.basicConfig(
     level=logging.INFO,
@@ -31,42 +31,43 @@ CONSUMER_NAME = f"worker-{os.getpid()}"
 
 def process_job(redis_client, job_id, payload):
     callback_url = payload.get("callback_url")
+    job_type = payload.get("job_type")
+
+    logger.info(f"🚀 Job Received | ID: {job_id} | Type: {job_type or 'general'}")
+
     try:
-        user_query = payload.get("query") or payload.get("user_query")
-        customers_id = payload.get("customers_id")
-        insurance_agents_id = payload.get("insurance_agents_id")
-        policies_id = payload.get("policies_id")
+        if job_type == "suggestions_generation":
+            agent_id = payload.get("agent_id")
+            response = run_suggestions_workflow(payload)
+            logger.info(f"=== 🤖 AI SUGGESTIONS RESPONSE ===\n{response}\n======================")
+            
+            if callback_url:
+                logger.info(f"📤 Sending suggestions back to callback URL...")
+                callback_data = {
+                    "job_id": job_id,
+                    "agent_id": agent_id,
+                    "action_text": response
+                }
+                requests.post(callback_url, json=callback_data, timeout=10)
+                
+        else:
+            response = run_general_workflow(payload)
+            logger.info(f"=== 🤖 AI RESPONSE ===\n{response}\n======================")
 
-        agent_id = insurance_agents_id or payload.get("insurance_agent_id")
+            if callback_url:
+                logger.info(f"📤 Sending result back to callback URL...")
+                callback_data = {
+                    "job_id": job_id,
+                    "message": response
+                }
+                if payload.get("customers_id"):
+                    callback_data["customers_id"] = payload.get("customers_id")
+                if payload.get("insurance_agents_id"):
+                    callback_data["insurance_agents_id"] = payload.get("insurance_agents_id")
+                if payload.get("policies_id"):
+                    callback_data["policies_id"] = payload.get("policies_id")
 
-        logger.info(
-            f"🚀 Job Received | ID: {job_id} | Agent: {agent_id} | Customer: {customers_id} | Policy: {policies_id}")
-
-        logger.info(f"🧠 Invoking LangGraph Agent for query...")
-        response = invoke_agent(
-            user_query=user_query,
-            customers_id=customers_id,
-            insurance_agents_id=insurance_agents_id,
-            policies_id=policies_id
-        )
-
-        logger.info(
-            f"=== 🤖 AI RESPONSE ===\n{response}\n======================")
-
-        if callback_url:
-            logger.info(f"📤 Sending result back to callback URL...")
-            callback_data = {
-                "job_id": job_id,
-                "message": response
-            }
-            if customers_id:
-                callback_data["customers_id"] = customers_id
-            if insurance_agents_id:
-                callback_data["insurance_agents_id"] = insurance_agents_id
-            if policies_id:
-                callback_data["policies_id"] = policies_id
-
-            requests.post(callback_url, json=callback_data, timeout=10)
+                requests.post(callback_url, json=callback_data, timeout=10)
 
         logger.info(f"✅ Job Successfully Completed | ID: {job_id}")
     except Exception as e:
