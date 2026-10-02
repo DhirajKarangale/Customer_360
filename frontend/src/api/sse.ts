@@ -15,6 +15,7 @@ export function connectSSE(token: string) {
       Accept: 'text/event-stream',
     },
     signal: ctrl.signal,
+    openWhenHidden: true, // IMPORTANT: Keeps connection alive even if tab is in background
     onopen(response) {
       if (response.ok && response.headers.get('content-type')?.includes('text/event-stream')) {
         console.log('SSE connection opened securely');
