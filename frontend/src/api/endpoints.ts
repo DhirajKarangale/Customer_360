@@ -5,5 +5,8 @@ export const API_ENDPOINTS = {
     login: `${BASE_URL}/auth/login`,
     verify: `${BASE_URL}/auth/verify`,
   },
+  llm: {
+    generate: `${BASE_URL}/llm/generate`,
+  },
   // Add other endpoints as needed here
 };

@@ -1,9 +1,24 @@
 import { Outlet } from 'react-router-dom';
+import { useEffect } from 'react';
 import { Navbar } from './Navbar';
 import { Footer } from './Footer';
-import { ChatButton } from './ChatButton';
+import { ChatPanel } from './ChatPanel';
+import { connectSSE } from '../../api/sse';
+import { TokenService } from '../../api/tokenService';
 
 export function AppLayout() {
+  useEffect(() => {
+    const token = TokenService.getToken();
+    if (!token) return;
+
+    const ctrl = connectSSE(token);
+    
+    return () => {
+      ctrl.abort();
+      console.log('SSE connection aborted');
+    };
+  }, []);
+
   return (
     <div className="flex min-h-screen flex-col bg-background text-foreground">
       <Navbar />
@@ -13,7 +28,7 @@ export function AppLayout() {
         <Outlet />
       </main>
 
-      <ChatButton />
+      <ChatPanel />
       <Footer />
     </div>
   );

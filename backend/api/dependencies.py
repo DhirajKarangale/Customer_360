@@ -1,4 +1,4 @@
-from fastapi import Depends, HTTPException, status
+from fastapi import Depends, HTTPException, status, Query
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 import psycopg2.extensions
 from backend.db.connection import get_db_connection
@@ -42,6 +42,15 @@ security = HTTPBearer()
 
 def verify_jwt(credentials: HTTPAuthorizationCredentials = Depends(security)):
     token = credentials.credentials
+    payload = verify_token(token)
+    if not payload:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Invalid or expired token"
+        )
+    return payload
+
+def verify_jwt_query(token: str = Query(...)):
     payload = verify_token(token)
     if not payload:
         raise HTTPException(
