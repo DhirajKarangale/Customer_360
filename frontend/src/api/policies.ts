@@ -28,6 +28,7 @@ export interface PoliciesParams {
   search_term?: string;
   status?: string;
   policy_type?: string;
+  customer_id?: string;
   page?: number;
   page_size?: number;
 }

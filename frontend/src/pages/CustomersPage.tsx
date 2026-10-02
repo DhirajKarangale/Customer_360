@@ -6,6 +6,7 @@ import type { Customer } from '../api/customers';
 import { useCustomersStore } from '../store/useCustomersStore';
 import { useAIChatStore } from '../store/useAIChatStore';
 import { Pagination } from '../components/ui/Pagination';
+import { CustomerModal } from '../components/customers/CustomerModal';
 
 export default function CustomersPage() {
   const agent = useAuthStore((state) => state.agent);
@@ -15,6 +16,7 @@ export default function CustomersPage() {
   const [pageSize, setPageSize] = useState(10);
   const [searchTerm, setSearchTerm] = useState('');
   const [debouncedSearch, setDebouncedSearch] = useState('');
+  const [selectedCustomerId, setSelectedCustomerId] = useState<string | null>(null);
 
   const { mergeCustomers, getAllCustomers } = useCustomersStore();
   const { setIsOpen: setChatOpen, setActiveCustomer } = useAIChatStore();
@@ -129,7 +131,11 @@ export default function CustomersPage() {
               </thead>
               <tbody className="divide-y divide-border">
                 {displayItems.map((customer) => (
-                  <tr key={customer.id} className="hover:bg-muted/30 transition-colors">
+                  <tr 
+                    key={customer.id} 
+                    className="hover:bg-muted/30 transition-colors cursor-pointer"
+                    onClick={() => setSelectedCustomerId(customer.id)}
+                  >
                     <td className="px-6 py-4 font-medium text-foreground">{customer.name}</td>
                     <td className="px-6 py-4 text-muted-foreground">{customer.email}</td>
                     <td className="px-6 py-4 text-muted-foreground">{customer.phone_number}</td>
@@ -141,7 +147,8 @@ export default function CustomersPage() {
                     </td>
                     <td className="px-6 py-4">
                       <button
-                        onClick={() => {
+                        onClick={(e) => {
+                          e.stopPropagation();
                           setActiveCustomer(customer.id, customer.name);
                           setChatOpen(true);
                         }}
@@ -174,6 +181,12 @@ export default function CustomersPage() {
           />
         )}
       </div>
+
+      {/* Customer Detail Modal */}
+      <CustomerModal 
+        customerId={selectedCustomerId} 
+        onClose={() => setSelectedCustomerId(null)} 
+      />
     </div>
   );
 }

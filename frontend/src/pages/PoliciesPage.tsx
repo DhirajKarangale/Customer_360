@@ -13,6 +13,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '../components/ui/select';
+import { CustomerModal } from '../components/customers/CustomerModal';
 
 // Fallback constant filters since no API is available to fetch unique ones
 const POLICY_TYPES = ["Life", "Health", "Auto", "Home", "Liability", "Property", "Business"];
@@ -28,6 +29,7 @@ export default function PoliciesPage() {
   const [debouncedSearch, setDebouncedSearch] = useState('');
   const [policyType, setPolicyType] = useState('all');
   const [status, setStatus] = useState('all');
+  const [selectedCustomerId, setSelectedCustomerId] = useState<string | null>(null);
 
   const { mergePolicies, getAllPolicies } = usePoliciesStore();
   const { setIsOpen: setChatOpen, setActivePolicy } = useAIChatStore();
@@ -207,7 +209,11 @@ export default function PoliciesPage() {
               </thead>
               <tbody className="divide-y divide-border">
                 {displayItems.map((policy) => (
-                  <tr key={policy.id} className="hover:bg-muted/30 transition-colors">
+                  <tr 
+                    key={policy.id} 
+                    className="hover:bg-muted/30 transition-colors cursor-pointer"
+                    onClick={() => setSelectedCustomerId(policy.customer_id)}
+                  >
                     <td className="px-6 py-4 font-medium text-foreground">{policy.policy_number}</td>
                     <td className="px-6 py-4">
                       <span className="inline-flex items-center rounded-full bg-secondary px-2.5 py-0.5 text-xs font-semibold text-secondary-foreground border border-border">
@@ -239,7 +245,8 @@ export default function PoliciesPage() {
                     </td>
                     <td className="px-6 py-4">
                       <button
-                        onClick={() => {
+                        onClick={(e) => {
+                          e.stopPropagation();
                           setActivePolicy(policy.id, policy.policy_number);
                           setChatOpen(true);
                         }}
@@ -267,6 +274,12 @@ export default function PoliciesPage() {
           onPageSizeChange={setPageSize}
         />
       </div>
+
+      {/* Dynamic Customer Modal */}
+      <CustomerModal 
+        customerId={selectedCustomerId} 
+        onClose={() => setSelectedCustomerId(null)} 
+      />
     </div>
   );
 }
