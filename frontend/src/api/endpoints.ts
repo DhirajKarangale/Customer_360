@@ -8,6 +8,9 @@ export const API_ENDPOINTS = {
   llm: {
     generate: `${BASE_URL}/llm/generate`,
   },
+  chats: {
+    list: `${BASE_URL}/chats/`,
+  },
   policies: {
     list: `${BASE_URL}/policies/`,
   },

@@ -44,7 +44,11 @@ class AgentService:
         suggestions_updated_at = agent.get("SUGGESTIONS_UPDATED_AT") or agent.get("suggestions_updated_at")
         
         if suggestions_text and suggestions_updated_at:
-            if datetime.now() - suggestions_updated_at < timedelta(hours=24):
+            now = datetime.now()
+            today_8am = now.replace(hour=8, minute=0, second=0, microsecond=0)
+            most_recent_8am = today_8am if now >= today_8am else today_8am - timedelta(days=1)
+            
+            if suggestions_updated_at >= most_recent_8am:
                 return SuggestionsResponse(
                     message=suggestions_text,
                     job_id=job_id

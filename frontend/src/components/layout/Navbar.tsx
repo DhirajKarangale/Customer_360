@@ -45,7 +45,7 @@ export function Navbar() {
               <img 
                 src={agent.profile_image_url} 
                 alt={agent.name} 
-                className="h-5 w-5 rounded-full object-cover" 
+                className="h-5 w-5 rounded-full object-contain bg-white" 
                 onError={() => setImgError(true)}
               />
             ) : (

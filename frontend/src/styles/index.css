@@ -126,10 +126,12 @@
   box-sizing: border-box;
 }
 
-/* Force ALL children to respect parent width */
+/* Force ALL children to respect parent width and alignment */
 .llm-content * {
   max-width: 100%;
   box-sizing: border-box;
+  text-align: left !important;
+  justify-content: flex-start !important;
 }
 
 .llm-content h3 {

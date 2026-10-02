@@ -4,6 +4,7 @@ import { TokenService } from '../../api/tokenService';
 import { useVerifyTokenQuery } from '../../api/auth';
 import { useUIStore } from '../../store/useUIStore';
 import { useAuthStore } from '../../store/useAuthStore';
+import { abortAllRequests } from '../../api/axios';
 
 export function ProtectedRoute() {
   const token = TokenService.getToken();
@@ -37,6 +38,7 @@ export function ProtectedRoute() {
 
   // 2. If verification fails (e.g. expired or invalid), clear the dead token and redirect
   if (isError) {
+    abortAllRequests();
     TokenService.removeToken();
     setAgent(null);
     return <Navigate to="/login" replace />;

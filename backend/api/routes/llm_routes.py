@@ -2,8 +2,9 @@ from fastapi import APIRouter, Depends
 from backend.schemas.llm import LLMRequest, LLMResponse, CallbackRequest
 from backend.services.llm_service import LLMService
 from backend.services.agent_service import AgentService
+from backend.services.chat_service import ChatService
 from backend.services.sse_manager import sse_manager
-from backend.api.dependencies import get_llm_service, get_agent_service, verify_jwt
+from backend.api.dependencies import get_llm_service, get_agent_service, get_chat_service, verify_jwt
 from backend.utils.logger import get_logger
 
 logger = get_logger(__name__)
@@ -13,15 +14,23 @@ router = APIRouter(prefix="/llm", tags=["LLM Operations"])
 def generate_llm_response(
     request: LLMRequest,
     llm_service: LLMService = Depends(get_llm_service),
+    chat_service: ChatService = Depends(get_chat_service),
     token_data: dict = Depends(verify_jwt)
 ):
-    return llm_service.submit_job(request)
+    import time
+    response = llm_service.submit_job(request)
+    if not (request.job_id and request.job_id.startswith("suggestion_")):
+        agent_id = token_data.get("insurance_agent_id")
+        send_time = int(time.time() * 1000)
+        chat_service.add_chat(response.job_id, agent_id, request.customers_id, request.policies_id, request.query, send_time)
+    return response
 
 @router.post("/callback")
 def llm_callback(
     request: CallbackRequest,
     llm_service: LLMService = Depends(get_llm_service),
-    agent_service: AgentService = Depends(get_agent_service)
+    agent_service: AgentService = Depends(get_agent_service),
+    chat_service: ChatService = Depends(get_chat_service)
 ):
     # logger.info(f"Received callback payload: {request.model_dump()}")
     
@@ -33,8 +42,12 @@ def llm_callback(
         }
         sse_manager.publish(request.insurance_agents_id, message_payload)
 
+    # Update chat if it's not a suggestion
+    if not (request.job_id and request.job_id.startswith("suggestion_")):
+        chat_service.update_chat(request.job_id, request.message)
+
     # Specific database logic for suggestions
-    if request.job_id.startswith("suggestion_") and request.insurance_agents_id:
+    if request.job_id and request.job_id.startswith("suggestion_") and request.insurance_agents_id:
         error_keywords = ["apologize", "unable to process", "system access restrictions", "error:"]
         is_error = any(kw in request.message.lower() for kw in error_keywords)
         

@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import { useLoginMutation } from '../api/auth';
 import { useUIStore } from '../store/useUIStore';
 import { useAuthStore } from '../store/useAuthStore';
+import { useAIChatStore } from '../store/useAIChatStore';
+import { fetchChats } from '../api/chat';
 
 export default function LoginPage() {
   const [email, setEmail] = useState('');
@@ -21,8 +23,18 @@ export default function LoginPage() {
     loginMutation.mutate(
       { email, password },
       {
-        onSuccess: (data) => {
+        onSuccess: async (data) => {
           setAgent(data.agent_data);
+          try {
+            const chats = await fetchChats();
+            const mappedChats = chats.map((c: any) => ({
+              ...c,
+              sendTime: c.send_time
+            }));
+            useAIChatStore.getState().setMessages(mappedChats);
+          } catch (e) {
+            console.error("Failed to load chats", e);
+          }
           showToast('Successfully logged in!', 'text-green-500');
           navigate('/');
         },

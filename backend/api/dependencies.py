@@ -11,6 +11,8 @@ from backend.services.agent_service import AgentService
 from backend.services.policy_service import PolicyService
 from backend.services.customer_service import CustomerService
 from backend.services.llm_service import LLMService
+from backend.db.repositories.chat_repo import ChatRepository
+from backend.services.chat_service import ChatService
 
 def get_agent_repo(conn: psycopg2.extensions.connection = Depends(get_db_connection)) -> AgentRepository:
     return AgentRepository(conn)
@@ -37,6 +39,12 @@ def get_customer_service(customer_repo: CustomerRepository = Depends(get_custome
 
 def get_llm_service() -> LLMService:
     return LLMService()
+
+def get_chat_repo(conn: psycopg2.extensions.connection = Depends(get_db_connection)) -> ChatRepository:
+    return ChatRepository(conn)
+
+def get_chat_service(chat_repo: ChatRepository = Depends(get_chat_repo)) -> ChatService:
+    return ChatService(chat_repo)
 
 security = HTTPBearer()
 

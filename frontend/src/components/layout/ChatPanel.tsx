@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import { ChevronLeft, Send, ArrowUp, ArrowDown, Trash2 } from 'lucide-react';
 import { useAIChatStore } from '../../store/useAIChatStore';
 import { useAuthStore } from '../../store/useAuthStore';
-import { useGenerateChatMutation } from '../../api/chat';
+import { useGenerateChatMutation, clearChatsApi } from '../../api/chat';
 
 export function ChatPanel() {
   const { 
@@ -88,7 +88,7 @@ export function ChatPanel() {
     const userQuery = draftInput.trim();
     
     // Add to zustand immediately (message = null, status = processing)
-    addMessage(jobId, userQuery);
+    addMessage(jobId, userQuery, activeCustomerId || undefined, activePolicyId || undefined);
     setDraftInput(''); // Clear the draft input
 
     setTimeout(scrollToBottom, 100);
@@ -155,15 +155,25 @@ export function ChatPanel() {
                 Clear Context
               </button>
             )}
-            {messages.length > 0 && (
-              <button
-                onClick={clearMessages}
-                className="text-muted-foreground hover:text-destructive transition-colors"
-                title="Clear Chat History"
-              >
-                <Trash2 className="h-4 w-4" />
-              </button>
-            )}
+            {(() => {
+              const displayMessages = activeCustomerId ? messages.filter(m => m.customer_id === activeCustomerId) : messages;
+              return displayMessages.length > 0 && (
+                <button
+                  onClick={async () => {
+                    try {
+                      await clearChatsApi(activeCustomerId || undefined);
+                      clearMessages(activeCustomerId || undefined);
+                    } catch (e) {
+                      console.error("Failed to clear chats", e);
+                    }
+                  }}
+                  className="text-muted-foreground hover:text-destructive transition-colors"
+                  title="Clear Chat History"
+                >
+                  <Trash2 className="h-4 w-4" />
+                </button>
+              );
+            })()}
           </div>
         </div>
 
@@ -181,13 +191,16 @@ export function ChatPanel() {
           </div>
           
           <div ref={scrollRef} className="h-full overflow-y-auto p-4 space-y-6 pb-20">
-            {messages.length === 0 && (
-              <div className="flex h-full items-center justify-center text-center text-sm text-muted-foreground">
-                Hello! I am your AI assistant. <br/> How can I help you today?
-              </div>
-            )}
-            
-            {messages.map((msg) => (
+            {(() => {
+              const displayMessages = activeCustomerId ? messages.filter(m => m.customer_id === activeCustomerId) : messages;
+              return (
+                <>
+                  {displayMessages.length === 0 && (
+                    <div className="flex h-full items-center justify-center text-center text-sm text-muted-foreground">
+                      Hello! I am your AI assistant. <br/> How can I help you today?
+                    </div>
+                  )}
+                  {displayMessages.map((msg) => (
               <div key={msg.job_id} className="space-y-6">
                 {/* User Query */}
                 <div className="flex justify-end">
@@ -218,6 +231,9 @@ export function ChatPanel() {
                 </div>
               </div>
             ))}
+            </>
+           );
+          })()}
           </div>
         </div>
 

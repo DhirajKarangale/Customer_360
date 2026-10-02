@@ -11,7 +11,7 @@ load_dotenv(os.path.join(os.path.dirname(__file__), '.env'))
 from fastapi import FastAPI, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from backend.config.settings import settings
-from backend.api.routes import auth_routes, agent_routes, policy_routes, customer_routes, llm_routes, sse_routes
+from backend.api.routes import auth_routes, agent_routes, policy_routes, customer_routes, llm_routes, sse_routes, chat_routes
 from backend.utils.logger import get_logger
 from backend.api.dependencies import verify_jwt
 
@@ -48,6 +48,7 @@ def create_app() -> FastAPI:
     app.include_router(agent_routes.router, prefix="/api/v1", dependencies=[Depends(verify_jwt)])
     app.include_router(policy_routes.router, prefix="/api/v1", dependencies=[Depends(verify_jwt)])
     app.include_router(customer_routes.router, prefix="/api/v1", dependencies=[Depends(verify_jwt)])
+    app.include_router(chat_routes.router, prefix="/api/v1", dependencies=[Depends(verify_jwt)])
     app.include_router(llm_routes.router, prefix="/api/v1")
 
     @app.on_event("startup")

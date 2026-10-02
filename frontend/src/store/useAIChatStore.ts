@@ -7,6 +7,8 @@ export interface ChatMessage {
   message: string | null;
   status: 'processing' | 'completed' | 'failed';
   sendTime: number;
+  customer_id?: string;
+  policy_id?: string;
 }
 
 interface AIChatState {
@@ -17,10 +19,11 @@ interface AIChatState {
   draftInput: string;
   setDraftInput: (val: string) => void;
   messages: ChatMessage[];
-  addMessage: (job_id: string, query: string) => void;
+  setMessages: (messages: ChatMessage[]) => void;
+  addMessage: (job_id: string, query: string, customer_id?: string, policy_id?: string) => void;
   updateMessage: (job_id: string, message: string) => void;
   markAsFailed: (job_id: string) => void;
-  clearMessages: () => void;
+  clearMessages: (customerId?: string, clearAll?: boolean) => void;
   activePolicyId: string | null;
   activePolicyNumber: string | null;
   setActivePolicy: (id: string | null, number: string | null) => void;
@@ -39,14 +42,17 @@ export const useAIChatStore = create<AIChatState>()(
       draftInput: '',
       setDraftInput: (draftInput) => set({ draftInput }),
       messages: [],
-      addMessage: (job_id, query) => 
+      setMessages: (messages) => set({ messages }),
+      addMessage: (job_id, query, customer_id, policy_id) => 
         set((state) => ({
           messages: [...state.messages, { 
             job_id, 
             query, 
             message: null, 
             status: 'processing',
-            sendTime: Date.now()
+            sendTime: Date.now(),
+            customer_id,
+            policy_id
           }]
         })),
       updateMessage: (job_id, message) => 
@@ -61,7 +67,15 @@ export const useAIChatStore = create<AIChatState>()(
             msg.job_id === job_id ? { ...msg, status: 'failed', message: 'Request failed: No response received after 5 minutes.' } : msg
           )
         })),
-      clearMessages: () => set({ messages: [], draftInput: '' }),
+      clearMessages: (customerId, clearAll = false) => set((state) => {
+        if (clearAll) {
+          return { messages: [], draftInput: '' };
+        }
+        if (customerId) {
+          return { messages: state.messages.filter(m => m.customer_id !== customerId) };
+        }
+        return { messages: state.messages.filter(m => m.customer_id != null) };
+      }),
       activePolicyId: null,
       activePolicyNumber: null,
       setActivePolicy: (id, number) => set({ activePolicyId: id, activePolicyNumber: number, activeCustomerId: null, activeCustomerName: null }),

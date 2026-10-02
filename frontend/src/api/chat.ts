@@ -2,6 +2,18 @@ import { useMutation } from '@tanstack/react-query';
 import { apiClient } from './axios';
 import { API_ENDPOINTS } from './endpoints';
 
+export async function fetchChats() {
+  const response = await apiClient.get(API_ENDPOINTS.chats.list);
+  return response.data;
+}
+
+export async function clearChatsApi(customerId?: string) {
+  const response = await apiClient.delete(API_ENDPOINTS.chats.list, {
+    params: customerId ? { customer_id: customerId } : undefined
+  });
+  return response.data;
+}
+
 interface GenerateChatPayload {
   job_id: string;
   query: string;
