@@ -28,7 +28,6 @@
 🕵️ Category 5: Complex Agent Identity (Testing "I/My" pronoun resolution)
 "I remember talking to my customer Aarav Sharma recently about a claim, but I lost my notes. Can you search my past interactions to tell me what his mood was, what the specific policy number was, and if I had any pending action items from that chat?"
 "Out of all my currently 'Active' policies, what is the total combined premium amount? And what percentage of my overall total policies do these active ones represent?"
-
 "List the names of my customers who have 'Pending' policies, and for the customer with the highest premium amount among them, search my recent chats to see if they've complained about delays."
 
 📈 Category 6: Extreme Database Aggregations (Testing Complex Text-to-SQL)

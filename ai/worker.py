@@ -34,7 +34,7 @@ def process_job(redis_client, redis_msg_id, payload):
     job_id = payload.get("job_id") or redis_msg_id
     
     logger.info(f"🚀 Job Received | ID: {job_id} (Redis Msg: {redis_msg_id})")
-    logger.info(f"📦 Incoming Payload: {payload}")
+    # logger.info(f"📦 Incoming Payload: {payload}")
 
     try:
         if job_id.startswith("suggestion_"):
@@ -51,7 +51,7 @@ def process_job(redis_client, redis_msg_id, payload):
                 "message": response,
                 "insurance_agents_id": payload.get("insurance_agents_id")
             }
-            logger.info(f"📦 Outgoing Callback Payload: {callback_data}")
+            # logger.info(f"📦 Outgoing Callback Payload: {callback_data}")
             requests.post(callback_url, json=callback_data, timeout=10)
 
         logger.info(f"✅ Job Successfully Completed | ID: {job_id}")
