@@ -57,7 +57,7 @@ export default function ProfilePage() {
             <img 
               src={agent.profile_image_url} 
               alt={agent.name} 
-              className="h-32 w-32 rounded-full object-contain bg-white border-4 border-background shadow-lg"
+              className="h-32 w-32 rounded-full object-cover object-top border-4 border-background shadow-lg"
               onError={() => setImgError(true)}
             />
           ) : (
