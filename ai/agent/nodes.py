@@ -1,4 +1,5 @@
 import json
+import os
 from typing import Literal
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage, ToolMessage
 from langgraph.prebuilt import ToolNode
@@ -29,7 +30,7 @@ If you need to use a tool, you MUST output exactly a JSON block and nothing else
   }
 }
 ```
-If you have enough information to answer the user's query, output your final answer as plain text (do NOT wrap it in JSON).
+If you have enough information to answer the user's query, output your final answer as plain text. DO NOT prefix your response with "Assistant:" or hallucinate "Tool Output:" or "Assistant (Tool Call):" text. Just output the final message directly.
 Always use the tools if you need to fetch policy details or agent information.
 When summarizing unstructured interactions (like emails or chats), ALWAYS include specific names, examples, or details from the retrieved context to make the answer as concrete as possible.
 CRITICAL: If a tool returns "No relevant context found" or an error, DO NOT call the exact same tool with the exact same arguments again. If you cannot find the information after trying, output a final plain text answer apologizing that the information could not be found.
@@ -149,11 +150,62 @@ def agent_node(state: AgentState):
 # The ToolNode automatically executes the tools requested via AIMessage.tool_calls
 tool_node = ToolNode(TOOLS)
 
-def should_continue(state: AgentState) -> Literal["tools", "__end__"]:
+def should_continue(state: AgentState) -> Literal["tools", "format_text"]:
     """Determine whether to continue to tools or end the graph."""
     messages = state.get("messages", [])
     last_message = messages[-1]
     
     if isinstance(last_message, AIMessage) and hasattr(last_message, 'tool_calls') and last_message.tool_calls:
         return "tools"
-    return "__end__"
+    return "format_text"
+
+FORMATTING_PROMPT = """You are a text formatter. Convert the following text into clean semantic HTML.
+Do NOT change, add, or remove any content, facts, or data. Only add HTML structure.
+
+RULES:
+1. If the text is a short simple sentence (1-2 lines), wrap it in a single <p> tag.
+2. If the text has a clear title/heading followed by body content, use <h3> for the title and <p> for each paragraph.
+3. If the text contains numbered items or bullet points, use <h3> for the title and <ul><li> for each point.
+4. If the text has multiple sections (each with a sub-heading), use <h3> for each sub-heading, <p> for paragraphs, <ul><li> for lists.
+5. For key terms, names, policy numbers, or important values, wrap them in <strong>.
+6. Use <br> only to separate paragraphs if needed.
+
+DO NOT:
+- Add any CSS classes, styles, or attributes
+- Add any div tags
+- Add any Tailwind classes
+- Use inline styles
+- Wrap output in ```html blocks
+- Add any content not in the original text
+
+Just output raw HTML tags: <p>, <h3>, <ul>, <li>, <strong>, <br>. Nothing else.
+
+Text to format:
+{text}
+"""
+
+def format_text_node(state: AgentState):
+    messages = state.get("messages", [])
+    if not messages:
+        return {"messages": []}
+    
+    last_message = messages[-1]
+    
+    if os.getenv("ENABLE_TEXT_FORMAT") == "True" and isinstance(last_message, AIMessage) and last_message.content:
+        prompt = FORMATTING_PROMPT.format(text=last_message.content)
+        formatted_content = llm.invoke(prompt)
+        
+        # Strip markdown code fences if the LLM wraps them
+        content = formatted_content.strip()
+        if content.startswith("```html"):
+            content = content[7:]
+        elif content.startswith("```"):
+            content = content[3:]
+        if content.endswith("```"):
+            content = content[:-3]
+        content = content.strip()
+                
+        return {"messages": [AIMessage(content=content)]}
+        
+    return {"messages": []}
+

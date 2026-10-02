@@ -22,7 +22,7 @@ def verify(request: Request, token_data: dict = Depends(verify_jwt), agent_servi
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid token payload")
     return agent_service.get_agent_info(agent_id, base_url)
 
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, RedirectResponse
 import tempfile
 import os
 
@@ -42,16 +42,16 @@ def get_profile_image(filename: str):
         if not os.path.exists(dest_path):
             sf_conn = get_snowflake_conn()
             cursor = sf_conn.cursor()
-            # GET command automatically decrypts the file when downloaded
-            # We must use file://{tmp_dir} as destination
-            # Windows path handling for Snowflake GET:
             tmp_uri = tmp_dir.replace('\\', '/')
             cursor.execute(f"GET @PROFILE_IMAGES_STAGE/{filename} 'file://{tmp_uri}'")
             cursor.close()
             
         if os.path.exists(dest_path):
             return FileResponse(dest_path)
-        else:
-            return {"error": "Image not found"}
     except Exception as e:
-        return {"error": str(e)}
+        # If Snowflake fails (e.g. stage doesn't exist, no auth), fallback to a beautiful generated avatar
+        seed = filename.split('.')[0]
+        fallback_url = f"https://api.dicebear.com/7.x/avataaars/png?seed={seed}&backgroundColor=b6e3f4,c0aede,d1d4f9,ffdfbf"
+        return RedirectResponse(url=fallback_url)
+        
+    return {"error": "Image not found"}

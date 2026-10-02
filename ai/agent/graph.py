@@ -1,6 +1,6 @@
 from langgraph.graph import StateGraph, END
 from ai.agent.state import AgentState
-from ai.agent.nodes import agent_node, tool_node, should_continue
+from ai.agent.nodes import agent_node, tool_node, should_continue, format_text_node
 from ai.agent.restrictions import restriction_node
 from langchain_core.messages import AIMessage
 from typing import Literal
@@ -25,6 +25,7 @@ def build_graph():
     workflow.add_node("restriction", restriction_node)
     workflow.add_node("agent", agent_node)
     workflow.add_node("tools", tool_node)
+    workflow.add_node("format_text", format_text_node)
     
     # Define the edges
     workflow.set_entry_point("restriction")
@@ -39,6 +40,8 @@ def build_graph():
         "agent",
         should_continue,
     )
+    
+    workflow.add_edge("format_text", END)
     
     # Normal edge from tools back to agent
     workflow.add_edge("tools", "agent")

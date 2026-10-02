@@ -313,10 +313,14 @@ export default function Customer360Page() {
                 <p className="text-sm">Analyzing portfolio for opportunities...</p>
               </div>
             ) : (
-              <div className="prose prose-sm dark:prose-invert max-w-none space-y-4">
+              <div className="w-full space-y-4">
                 {liveSuggestionText ? (
-                  <div className="text-sm leading-relaxed text-foreground whitespace-pre-wrap">
-                    {liveSuggestionText.replace(/\[DONE\]/g, '')}
+                  <div className="text-sm text-foreground">
+                    {/<[a-z][\s\S]*>/i.test(liveSuggestionText) ? (
+                      <div className="llm-content" dangerouslySetInnerHTML={{ __html: liveSuggestionText.replace(/\[DONE\]/g, '') }} />
+                    ) : (
+                      <div className="whitespace-pre-wrap">{liveSuggestionText.replace(/\[DONE\]/g, '')}</div>
+                    )}
                     {isGenerating && (
                       <span className="inline-block w-2 h-4 ml-1 bg-indigo-500 animate-pulse align-middle rounded-full"></span>
                     )}

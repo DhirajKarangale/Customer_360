@@ -18,7 +18,5 @@ export function useSuggestionsQuery(agentId: string, enabled: boolean = true) {
       return data;
     },
     enabled: !!agentId && enabled,
-    // Refetch often if it's pending, but we'll mostly rely on SSE
-    staleTime: 5 * 60 * 1000,
   });
 }

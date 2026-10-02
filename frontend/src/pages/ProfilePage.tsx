@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuthStore } from '../store/useAuthStore';
 import { TokenService } from '../api/tokenService';
@@ -6,6 +7,7 @@ import { LogOut, User, Mail, Phone, Building2, FileCheck } from 'lucide-react';
 import { useQueryClient } from '@tanstack/react-query';
 
 export default function ProfilePage() {
+  const [imgError, setImgError] = useState(false);
   const agent = useAuthStore((state) => state.agent);
   const setAgent = useAuthStore((state) => state.setAgent);
   const { showToast } = useUIStore();
@@ -31,11 +33,12 @@ export default function ProfilePage() {
         <h1 className="text-3xl font-bold tracking-tight mb-8">Agent Profile</h1>
         
         <div className="flex flex-col md:flex-row items-center gap-8 mb-10">
-          {agent.profile_image_url ? (
+          {!imgError && agent.profile_image_url ? (
             <img 
               src={agent.profile_image_url} 
               alt={agent.name} 
               className="h-32 w-32 rounded-full object-cover border-4 border-border/50 shadow-md"
+              onError={() => setImgError(true)}
             />
           ) : (
             <div className="flex h-32 w-32 items-center justify-center rounded-full bg-muted border-4 border-border/50 shadow-md">

@@ -198,7 +198,7 @@ export function ChatPanel() {
                 
                 {/* LLM Response */}
                 <div className="flex justify-start">
-                  <div className={`max-w-[85%] rounded-2xl px-4 py-3 text-sm shadow-sm border rounded-bl-none ${msg.status === 'failed' ? 'bg-destructive/10 border-destructive/50 text-destructive' : 'bg-muted border-border text-foreground'}`}>
+                  <div className={`max-w-[90%] rounded-2xl px-3 py-2.5 text-sm shadow-sm border rounded-bl-none ${msg.status === 'failed' ? 'bg-destructive/10 border-destructive/50 text-destructive' : 'bg-muted border-border text-foreground'}`}>
                     {msg.status === 'processing' ? (
                       <span className="flex items-center gap-1.5 px-2 py-1">
                         <span className="h-2 w-2 rounded-full bg-primary/60 animate-bounce" style={{ animationDelay: '0ms' }} />
@@ -206,7 +206,13 @@ export function ChatPanel() {
                         <span className="h-2 w-2 rounded-full bg-primary/60 animate-bounce" style={{ animationDelay: '300ms' }} />
                       </span>
                     ) : (
-                      <div className="whitespace-pre-wrap">{msg.message}</div>
+                      <div className="text-sm">
+                        {/<[a-z][\s\S]*>/i.test(msg.message || '') ? (
+                          <div className="llm-content" dangerouslySetInnerHTML={{ __html: msg.message || '' }} />
+                        ) : (
+                          <div className="whitespace-pre-wrap">{msg.message}</div>
+                        )}
+                      </div>
                     )}
                   </div>
                 </div>

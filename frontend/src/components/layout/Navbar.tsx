@@ -1,9 +1,11 @@
 import { NavLink, Link } from 'react-router-dom';
 import { UserCircle } from 'lucide-react';
 import { useAuthStore } from '../../store/useAuthStore';
+import { useState } from 'react';
 
 export function Navbar() {
   const agent = useAuthStore((state) => state.agent);
+  const [imgError, setImgError] = useState(false);
 
   const navItems = [
     { name: 'Customer 360', path: '/' },
@@ -35,19 +37,21 @@ export function Navbar() {
 
         {/* Profile Button */}
         <div className="flex items-center gap-4">
-          <Link to="/profile">
-            <button className="flex items-center gap-2 rounded-full border border-border px-4 py-1.5 text-sm font-medium text-foreground transition-colors hover:bg-muted">
-              {agent?.profile_image_url ? (
-                <img 
-                  src={agent.profile_image_url} 
-                  alt={agent.name} 
-                  className="h-5 w-5 rounded-full object-cover" 
-                />
-              ) : (
-                <UserCircle className="h-5 w-5 text-muted-foreground" />
-              )}
-              <span>{agent?.name || 'Profile'}</span>
-            </button>
+          <Link 
+            to="/profile"
+            className="flex items-center gap-2 rounded-full border border-border px-4 py-1.5 text-sm font-medium text-foreground transition-colors hover:bg-muted"
+          >
+            {!imgError && agent?.profile_image_url ? (
+              <img 
+                src={agent.profile_image_url} 
+                alt={agent.name} 
+                className="h-5 w-5 rounded-full object-cover" 
+                onError={() => setImgError(true)}
+              />
+            ) : (
+              <UserCircle className="h-5 w-5 text-muted-foreground" />
+            )}
+            <span>{agent?.name || 'Profile'}</span>
           </Link>
         </div>
       </div>

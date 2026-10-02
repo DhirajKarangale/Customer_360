@@ -1,6 +1,8 @@
 import { fetchEventSource } from '@microsoft/fetch-event-source';
 import { useAIChatStore } from '../store/useAIChatStore';
 import { useUIStore } from '../store/useUIStore';
+import { queryClient } from '../main';
+import { useAuthStore } from '../store/useAuthStore';
 
 export function connectSSE(token: string) {
   const baseUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000';
@@ -50,6 +52,16 @@ export function connectSSE(token: string) {
         } 
         // Handle AI Suggestions events
         else if (data.job_type === 'suggestions_generation' || (jobId && typeof jobId === 'string' && jobId.startsWith('suggestion_'))) {
+          // Update React Query Cache directly so it loads instantly when navigating back
+          const agentId = useAuthStore.getState().agent?.id;
+          if (agentId) {
+            queryClient.setQueryData(['suggestions', agentId], {
+              status: 'success',
+              message: textResult,
+              job_id: jobId
+            });
+          }
+
           // Dispatch a custom event that the Dashboard page can listen to
           const event = new CustomEvent('agent_suggestions_updated', {
             detail: {
