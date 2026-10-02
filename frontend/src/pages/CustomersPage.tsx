@@ -24,7 +24,7 @@ export default function CustomersPage() {
   // Debounce search term
   useEffect(() => {
     const timer = setTimeout(() => {
-      setDebouncedSearch(searchTerm);
+      setDebouncedSearch(searchTerm.trim().toLowerCase());
       setPage(1); // Reset to page 1 on new search
     }, 500);
     return () => clearTimeout(timer);
