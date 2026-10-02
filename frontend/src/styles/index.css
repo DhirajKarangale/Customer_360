@@ -6,7 +6,7 @@
    from affecting scrollbars, form controls, and system UI components */
 :root,
 * {
-  color-scheme: light;
+  color-scheme: dark;
 }
 
 /* Custom light scrollbar for all scrollable elements in this MFE */

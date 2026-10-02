@@ -1,17 +1,46 @@
-import { Button } from "@/components/ui/button"
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { AppLayout } from './components/layout/AppLayout';
+import { ProtectedRoute } from './components/auth/ProtectedRoute';
+import Customer360Page from './pages/Customer360Page';
+import PoliciesPage from './pages/PoliciesPage';
+import CustomersPage from './pages/CustomersPage';
+import AboutPage from './pages/AboutPage';
+import ProfilePage from './pages/ProfilePage';
+import LoginPage from './pages/LoginPage';
+import NotFoundPage from './pages/NotFoundPage';
+import MaintenancePage from './pages/MaintenancePage';
+import { GlobalLoader } from './components/ui/GlobalLoader';
+import { GlobalToast } from './components/ui/GlobalToast';
 
 function App() {
   return (
     <>
-      <div className="flex min-h-svh flex-col items-center justify-center">
-        <Button>
-          <span className="text-size-filters text-clr-danger">
-            Click me
-          </span>
-        </Button>
-      </div>
+      <GlobalLoader />
+      <GlobalToast />
+      
+      <BrowserRouter>
+        <Routes>
+          {/* Standalone Public Pages */}
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/maintenance" element={<MaintenancePage />} />
+          
+          {/* Protected Routes (Require JWT) */}
+          <Route element={<ProtectedRoute />}>
+            <Route path="/" element={<AppLayout />}>
+              <Route index element={<Customer360Page />} />
+              <Route path="policies" element={<PoliciesPage />} />
+              <Route path="customers" element={<CustomersPage />} />
+              <Route path="about" element={<AboutPage />} />
+              <Route path="profile" element={<ProfilePage />} />
+            </Route>
+          </Route>
+
+          {/* Catch-all 404 Page */}
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
