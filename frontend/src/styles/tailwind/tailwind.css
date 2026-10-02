@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@source "../../../index.html";
+@source "../../../src/**/*.{js,ts,jsx,tsx}";
+@custom-variant dark (&:is(.dark *));
+
+[data-state="closed"] { --tw-animation-fill-mode: forwards; }

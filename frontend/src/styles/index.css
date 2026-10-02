@@ -1,0 +1,111 @@
+@import "./tailwind/tailwind.css";
+@import "./shadcn/shadcn.css";
+@import "./config/config.css";
+
+/* Force light color-scheme for all elements in this MFE — prevents browser/OS dark mode
+   from affecting scrollbars, form controls, and system UI components */
+:root,
+* {
+  color-scheme: light;
+}
+
+/* Custom light scrollbar for all scrollable elements in this MFE */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #D1D5DB transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #D1D5DB;
+  border-radius: 999px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #9CA3AF;
+}
+
+*::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+@keyframes pdd-ppFadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.date-range-group .date-segment,
+.date-range-group .react-aria-DateSegment {
+	position: relative;
+	padding: 0 1px 0px 0px;
+	background: transparent;
+	outline: none;
+	box-shadow: none;
+	transition: color 120ms, background-color 120ms;
+}
+
+.date-range-group .date-segment[data-focus-visible]::after,
+.date-range-group .date-segment[data-focused]::after,
+.date-range-group .date-segment:focus::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 1px;
+	background: #BFC4CC;
+	border-radius: 1px;
+}
+
+.calendar-heading-compact {
+	font-size: var(--filter-font-size) !important;
+	line-height: 1.1 !important;
+	font-weight: 500 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.no-scrollbar {
+	scrollbar-width: none;
+}
+
+.pdd-filter-scrollbar {
+	scrollbar-color: #BFC4CC transparent;
+}
+
+.pdd-filter-scrollbar::-webkit-scrollbar {
+	width: 6px;
+}
+
+.pdd-filter-scrollbar::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+.pdd-filter-scrollbar::-webkit-scrollbar-thumb {
+	background: #BFC4CC;
+	border-radius: 8px;
+}
+
+.pdd-filter-scrollbar::-webkit-scrollbar-thumb:hover {
+	background: #9AA0A8;
+}
+
+.pdd-scrollbar-noarrows {
+	scrollbar-width: thin;
+	scrollbar-color: #BFC4CC transparent;
+	height: calc(100% + 9px);
+	margin-top: -3.5px;
+	margin-bottom: 5px;
+	/* padding-top: 55px; */
+	/* padding-bottom: 55px; */
+}

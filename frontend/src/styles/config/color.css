@@ -1,0 +1,11 @@
+@theme inline {
+  --color-test-1: #ff0000;
+  --color-test-2: #00ff00;
+  --color-test-3: #0000ff;
+  --color-test-4: #ffff00;
+  --color-test-5: #ff00ff;
+
+  --color-clr-success: #00FF00;
+
+  --color-clr-danger: #FF0000;
+}
