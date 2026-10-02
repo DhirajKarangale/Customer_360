@@ -25,11 +25,39 @@ class PolicyRepository:
                 data_query += cond
                 params.append(filters["policy_type"])
 
+            if filters.get("customer_id"):
+                cond = " AND customer_id = %s"
+                count_query += cond
+                data_query += cond
+                params.append(filters["customer_id"])
+
+            if filters.get("search_term"):
+                term = filters["search_term"]
+                like_term = f"%{term}%"
+                cond = " AND (id::text = %s OR agent_id::text = %s OR customer_id::text = %s OR policy_number ILIKE %s)"
+                count_query += cond
+                data_query += cond
+                params.extend([term, term, term, like_term])
+
             cursor.execute(count_query, tuple(params))
             total_items = cursor.fetchone()['total']
 
-            data_query += " ORDER BY start_date DESC LIMIT %s OFFSET %s"
-            data_params = params + [page_size, (page - 1) * page_size]
+            if filters.get("search_term"):
+                term = filters["search_term"]
+                like_term = f"%{term}%"
+                data_query += """ ORDER BY 
+                    CASE 
+                        WHEN id::text = %s THEN 1
+                        WHEN agent_id::text = %s THEN 2
+                        WHEN customer_id::text = %s THEN 3
+                        WHEN policy_number = %s THEN 4
+                        WHEN policy_number ILIKE %s THEN 5
+                        ELSE 6
+                    END, start_date DESC LIMIT %s OFFSET %s"""
+                data_params = params + [term, term, term, term, like_term, page_size, (page - 1) * page_size]
+            else:
+                data_query += " ORDER BY start_date DESC LIMIT %s OFFSET %s"
+                data_params = params + [page_size, (page - 1) * page_size]
 
             cursor.execute(data_query, tuple(data_params))
             items = cursor.fetchall()

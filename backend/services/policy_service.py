@@ -13,6 +13,8 @@ class PolicyService:
         agent_id: str, 
         status: Optional[str] = None, 
         policy_type: Optional[str] = None,
+        customer_id: Optional[str] = None,
+        search_term: Optional[str] = None,
         page: int = 1,
         page_size: int = 10
     ) -> PaginatedResponse[PolicyResponse]:
@@ -21,6 +23,10 @@ class PolicyService:
             filters["status"] = status
         if policy_type:
             filters["policy_type"] = policy_type
+        if customer_id:
+            filters["customer_id"] = customer_id
+        if search_term:
+            filters["search_term"] = search_term
             
         total_items, policies = self.policy_repo.get_policies_by_agent(agent_id, filters, page, page_size)
         

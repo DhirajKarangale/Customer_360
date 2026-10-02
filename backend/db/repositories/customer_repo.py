@@ -50,11 +50,37 @@ class CustomerRepository:
                 data_query += cond
                 params.append(f"%{filters['customer_name']}%")
 
+            if filters.get("search_term"):
+                term = filters["search_term"]
+                like_term = f"%{term}%"
+                cond = " AND (c.name ILIKE %s OR c.email ILIKE %s OR c.phone_number ILIKE %s OR c.id::text = %s)"
+                count_query += cond
+                data_query += cond
+                params.extend([like_term, like_term, like_term, term])
+
             cursor.execute(count_query, tuple(params))
             total_items = cursor.fetchone()['total']
 
-            data_query += " ORDER BY c.name LIMIT %s OFFSET %s"
-            data_params = params + [page_size, (page - 1) * page_size]
+            data_query = f"WITH unique_customers AS ({data_query}) SELECT * FROM unique_customers"
+
+            if filters.get("search_term"):
+                term = filters["search_term"]
+                like_term = f"%{term}%"
+                data_query += """ ORDER BY 
+                    CASE 
+                        WHEN name = %s THEN 1
+                        WHEN email = %s THEN 2
+                        WHEN phone_number = %s THEN 3
+                        WHEN id::text = %s THEN 4
+                        WHEN name ILIKE %s THEN 5
+                        WHEN email ILIKE %s THEN 6
+                        WHEN phone_number ILIKE %s THEN 7
+                        ELSE 8
+                    END, name LIMIT %s OFFSET %s"""
+                data_params = params + [term, term, term, term, like_term, like_term, like_term, page_size, (page - 1) * page_size]
+            else:
+                data_query += " ORDER BY name LIMIT %s OFFSET %s"
+                data_params = params + [page_size, (page - 1) * page_size]
 
             cursor.execute(data_query, tuple(data_params))
             items = cursor.fetchall()

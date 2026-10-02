@@ -14,6 +14,7 @@ class CustomerService:
         policy_status: Optional[str] = None,
         policy_type: Optional[str] = None,
         customer_name: Optional[str] = None,
+        search_term: Optional[str] = None,
         page: int = 1,
         page_size: int = 10
     ) -> PaginatedResponse[CustomerResponse]:
@@ -24,6 +25,8 @@ class CustomerService:
             filters["policy_type"] = policy_type
         if customer_name:
             filters["customer_name"] = customer_name
+        if search_term:
+            filters["search_term"] = search_term
             
         total_items, customers = self.customer_repo.get_customers_by_agent(agent_id, filters, page, page_size)
         

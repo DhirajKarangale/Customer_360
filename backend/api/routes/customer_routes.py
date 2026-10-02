@@ -13,6 +13,7 @@ def get_customers(
     policy_status: Optional[str] = Query(None, description="Filter customers by their policy status"),
     policy_type: Optional[str] = Query(None, description="Filter customers by their policy type"),
     customer_name: Optional[str] = Query(None, description="Filter customers by name (partial match)"),
+    search_term: Optional[str] = Query(None, description="Search term for name, email, phone, or ID"),
     page: int = Query(1, ge=1, description="Page number"),
     page_size: int = Query(10, ge=1, le=100, description="Items per page"),
     customer_service: CustomerService = Depends(get_customer_service)
@@ -22,6 +23,7 @@ def get_customers(
         policy_status=policy_status,
         policy_type=policy_type,
         customer_name=customer_name,
+        search_term=search_term,
         page=page,
         page_size=page_size
     )

@@ -85,6 +85,7 @@ Base URL: `/api/v1`
 - **Method**: `GET`
 - **Query Params**:
   - `insurance_agent_id` (string, required): ID of the agent.
+  - `search_term` (string, optional): Search term for name, email, phone, or ID. Results are ordered by best match.
   - `policy_status` (string, optional): Filter by policy status.
   - `policy_type` (string, optional): Filter by policy type.
   - `customer_name` (string, optional): Partial match for customer name.
@@ -133,6 +134,8 @@ Base URL: `/api/v1`
   - `insurance_agent_id` (string, required): ID of the agent.
   - `status` (string, optional): Filter by policy status.
   - `policy_type` (string, optional): Filter by policy type.
+  - `customer_id` (string, optional): Filter by customer ID.
+  - `search_term` (string, optional): Search term for ID, agent ID, customer ID, or policy number. Results ordered by best match.
   - `page` (int, default=1): Page number.
   - `page_size` (int, default=10): Items per page.
 - **Expected Response (Success - 200 OK)**:
