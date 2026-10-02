@@ -23,11 +23,21 @@ async def sse_endpoint(request: Request, token_data: dict = Depends(verify_jwt))
                 if await request.is_disconnected():
                     break
                 try:
-                    message = await asyncio.wait_for(queue.get(), timeout=1.0)
+                    # Wait up to 15 seconds for a message
+                    message = await asyncio.wait_for(queue.get(), timeout=15.0)
                     yield f"data: {json.dumps(message)}\n\n"
                 except asyncio.TimeoutError:
-                    continue
+                    # Yield a ping comment to keep connection alive and detect disconnects
+                    yield ": ping\n\n"
         finally:
             sse_manager.disconnect(agent_id, queue)
             
-    return StreamingResponse(event_generator(), media_type="text/event-stream")
+    return StreamingResponse(
+        event_generator(), 
+        media_type="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "Connection": "keep-alive",
+            "X-Accel-Buffering": "no"
+        }
+    )

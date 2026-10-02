@@ -23,7 +23,7 @@ def llm_callback(
     llm_service: LLMService = Depends(get_llm_service),
     agent_service: AgentService = Depends(get_agent_service)
 ):
-    logger.info(f"Received callback payload: {request.model_dump()}")
+    # logger.info(f"Received callback payload: {request.model_dump()}")
     
     # Always publish the result back to the frontend regardless of the job type
     if request.insurance_agents_id:

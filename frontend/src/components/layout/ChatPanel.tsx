@@ -18,6 +18,9 @@ export function ChatPanel() {
     activePolicyId,
     activePolicyNumber,
     setActivePolicy,
+    activeCustomerId,
+    activeCustomerName,
+    setActiveCustomer,
     clearMessages
   } = useAIChatStore();
   
@@ -63,6 +66,7 @@ export function ChatPanel() {
   const togglePanel = () => {
     if (!isOpen) {
       setActivePolicy(null, null);
+      setActiveCustomer(null, null);
     }
     setIsOpen(!isOpen);
   };
@@ -96,6 +100,7 @@ export function ChatPanel() {
       insurance_agents_id: agent.id,
       policies_id: activePolicyId || undefined,
       policy_number: activePolicyNumber || undefined,
+      customers_id: activeCustomerId || undefined,
     }, {
       onError: () => {
         markAsFailed(jobId);
@@ -136,12 +141,15 @@ export function ChatPanel() {
         {/* Panel Header */}
         <div className="flex items-center justify-between border-b border-border p-4 bg-background/50 backdrop-blur-md">
           <h2 className="text-sm font-semibold text-foreground flex items-center gap-2">
-            {activePolicyNumber ? `Asking about ${activePolicyNumber}` : 'AI Assistant'}
+            {activePolicyNumber ? `Asking about ${activePolicyNumber}` : activeCustomerName ? `Asking about ${activeCustomerName}` : 'AI Assistant'}
           </h2>
           <div className="flex items-center gap-3">
-            {activePolicyNumber && (
+            {(activePolicyNumber || activeCustomerName) && (
               <button 
-                onClick={() => setActivePolicy(null, null)}
+                onClick={() => {
+                  setActivePolicy(null, null);
+                  setActiveCustomer(null, null);
+                }}
                 className="text-xs text-muted-foreground hover:text-foreground transition-colors"
               >
                 Clear Context

@@ -10,5 +10,8 @@ export const API_ENDPOINTS = {
   },
   policies: {
     list: `${BASE_URL}/policies/`,
+  },
+  customers: {
+    list: `${BASE_URL}/customers/`,
   }
 };

@@ -8,6 +8,7 @@ interface GenerateChatPayload {
   insurance_agents_id: string;
   policies_id?: string;
   policy_number?: string;
+  customers_id?: string;
 }
 
 export function useGenerateChatMutation() {

@@ -24,6 +24,9 @@ interface AIChatState {
   activePolicyId: string | null;
   activePolicyNumber: string | null;
   setActivePolicy: (id: string | null, number: string | null) => void;
+  activeCustomerId: string | null;
+  activeCustomerName: string | null;
+  setActiveCustomer: (id: string | null, name: string | null) => void;
 }
 
 export const useAIChatStore = create<AIChatState>()(
@@ -61,7 +64,10 @@ export const useAIChatStore = create<AIChatState>()(
       clearMessages: () => set({ messages: [], draftInput: '' }),
       activePolicyId: null,
       activePolicyNumber: null,
-      setActivePolicy: (id, number) => set({ activePolicyId: id, activePolicyNumber: number })
+      setActivePolicy: (id, number) => set({ activePolicyId: id, activePolicyNumber: number, activeCustomerId: null, activeCustomerName: null }),
+      activeCustomerId: null,
+      activeCustomerName: null,
+      setActiveCustomer: (id, name) => set({ activeCustomerId: id, activeCustomerName: name, activePolicyId: null, activePolicyNumber: null })
     }),
     {
       name: 'ai-chat-storage',
@@ -71,7 +77,9 @@ export const useAIChatStore = create<AIChatState>()(
         messages: state.messages, 
         draftInput: state.draftInput,
         activePolicyId: state.activePolicyId,
-        activePolicyNumber: state.activePolicyNumber
+        activePolicyNumber: state.activePolicyNumber,
+        activeCustomerId: state.activeCustomerId,
+        activeCustomerName: state.activeCustomerName
       }),
     }
   )
