@@ -40,20 +40,25 @@ export function connectSSE(token: string) {
           const existingMessage = store.messages.find(m => m.job_id === jobId);
           
           if (existingMessage) {
-            // Update the message in the store
             store.updateMessage(jobId, textResult);
             
-            // If the chat panel is closed, show a notification
             if (!store.isOpen) {
               store.setHasUnread(true);
-              
-              useUIStore.getState().showToast(
-                'New message from AI Assistant!', 
-                'text-primary', 
-                5000
-              );
+              useUIStore.getState().showToast('New message from AI Assistant!', 'text-primary', 5000);
             }
           }
+        } 
+        // Handle AI Suggestions events
+        else if (data.job_type === 'suggestions_generation' || (jobId && typeof jobId === 'string' && jobId.startsWith('suggestion_'))) {
+          // Dispatch a custom event that the Dashboard page can listen to
+          const event = new CustomEvent('agent_suggestions_updated', {
+            detail: {
+              jobId,
+              content: textResult
+            }
+          });
+          window.dispatchEvent(event);
+          useUIStore.getState().showToast('New AI suggestions available!', 'text-emerald-500', 5000);
         }
       } catch (e) {
         console.error('Error parsing SSE event:', e);

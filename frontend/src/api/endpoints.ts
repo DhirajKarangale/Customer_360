@@ -13,5 +13,8 @@ export const API_ENDPOINTS = {
   },
   customers: {
     list: `${BASE_URL}/customers/`,
+  },
+  agents: {
+    suggestions: (id: string) => `${BASE_URL}/agents/${id}/suggestions`,
   }
 };
