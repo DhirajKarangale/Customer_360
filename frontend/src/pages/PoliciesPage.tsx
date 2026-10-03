@@ -2,7 +2,6 @@ import { useState, useEffect, useMemo } from 'react';
 import { Search, Loader2, FileText, ShieldAlert, CalendarDays, ArrowRight, MessageSquare } from 'lucide-react';
 import { useAuthStore } from '../store/useAuthStore';
 import { usePoliciesQuery } from '../api/policies';
-import type { Policy } from '../api/policies';
 import { usePoliciesStore } from '../store/usePoliciesStore';
 import { useAIChatStore } from '../store/useAIChatStore';
 import { Pagination } from '../components/ui/Pagination';
@@ -11,7 +10,6 @@ import {
   SelectContent,
   SelectItem,
   SelectTrigger,
-  SelectValue,
 } from '../components/ui/select';
 import { CustomerModal } from '../components/customers/CustomerModal';
 
@@ -131,7 +129,7 @@ export default function PoliciesPage() {
 
           {/* Filters */}
           <div className="flex items-center gap-3">
-            <Select value={policyType} onValueChange={setPolicyType}>
+            <Select value={policyType} onValueChange={(val) => setPolicyType(val || 'all')}>
               <SelectTrigger className="w-full sm:w-[160px] bg-transparent">
                 <div className="flex items-center gap-1.5 truncate">
                   <span className="text-white/70 font-normal">Type:</span>
@@ -146,7 +144,7 @@ export default function PoliciesPage() {
               </SelectContent>
             </Select>
 
-            <Select value={status} onValueChange={setStatus}>
+            <Select value={status} onValueChange={(val) => setStatus(val || 'all')}>
               <SelectTrigger className="w-full sm:w-[160px] bg-transparent">
                 <div className="flex items-center gap-1.5 truncate">
                   <span className="text-white/70 font-normal">Status:</span>

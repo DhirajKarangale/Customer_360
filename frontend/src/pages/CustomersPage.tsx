@@ -2,7 +2,6 @@ import { useState, useEffect, useMemo } from 'react';
 import { Search, Loader2, Users, MessageSquare } from 'lucide-react';
 import { useAuthStore } from '../store/useAuthStore';
 import { useCustomersQuery } from '../api/customers';
-import type { Customer } from '../api/customers';
 import { useCustomersStore } from '../store/useCustomersStore';
 import { useAIChatStore } from '../store/useAIChatStore';
 import { Pagination } from '../components/ui/Pagination';

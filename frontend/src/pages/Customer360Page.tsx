@@ -254,7 +254,7 @@ export default function Customer360Page() {
                         ))}
                       </Pie>
                       <Tooltip 
-                        formatter={(value: number) => formatCurrency(value)}
+                        formatter={(value: any) => formatCurrency(Number(value))}
                         contentStyle={{ borderRadius: '8px', border: '1px solid #27272a', backgroundColor: '#09090b', color: '#fafafa' }}
                         itemStyle={{ color: '#fafafa' }}
                       />
