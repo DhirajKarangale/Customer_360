@@ -48,7 +48,7 @@ def main():
 
         logger.info("Dropping existing tables to prepare for restore (CASCADE)...")
         cursor.execute(
-            "DROP TABLE IF EXISTS customer_interactions, policies, insurance_agents, customers CASCADE"
+            "DROP TABLE IF EXISTS agent_chats, customer_interactions, policies, insurance_agents, customers CASCADE"
         )
 
         logger.info(f"Recreating tables and indexes from {schema_file}...")
@@ -62,6 +62,7 @@ def main():
             "insurance_agents",
             "policies",
             "customer_interactions",
+            "agent_chats",
         ]
         for table in tables_order:
             json_file = os.path.join(backup_dir, f"{table}.json")

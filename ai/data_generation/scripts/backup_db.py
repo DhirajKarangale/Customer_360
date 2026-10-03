@@ -51,7 +51,7 @@ def get_postgres_conn():
 
 
 def main():
-    tables = ["customers", "insurance_agents", "policies", "customer_interactions"]
+    tables = ["customers", "insurance_agents", "policies", "customer_interactions", "agent_chats"]
     backup_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "db_backup")
     os.makedirs(backup_dir, exist_ok=True)
     logger.info("Connecting to PostgreSQL for Backup...")
