@@ -1,3 +1,5 @@
+import os
+import redis
 from backend.db.repositories.chat_repo import ChatRepository
 
 class ChatService:
@@ -13,5 +15,15 @@ class ChatService:
     def get_all_chats(self, agent_id):
         return self.chat_repo.get_all_chats(agent_id)
         
-    def clear_chats(self, agent_id, customer_id=None):
-        self.chat_repo.delete_chats_for_customer(agent_id, customer_id)
+    def clear_chats(self, agent_id):
+        self.chat_repo.delete_chats_for_agent(agent_id)
+        
+        # Clear from redis memory to fully reset context
+        try:
+            REDIS_URL = os.getenv("REDIS_URL", "redis://localhost:6379/0")
+            r = redis.Redis.from_url(REDIS_URL, decode_responses=True)
+            # Wiping the short-term memory completely is the safest way to ensure no leaked context
+            r.delete(f"agent_memory:{agent_id}")
+        except Exception as e:
+            import logging
+            logging.error(f"Failed to clear redis memory: {e}")

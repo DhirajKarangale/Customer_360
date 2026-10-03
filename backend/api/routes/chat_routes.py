@@ -17,11 +17,10 @@ def get_all_chats(
 
 @router.delete("/")
 def clear_chats(
-    customer_id: Optional[str] = None,
     token_data: dict = Depends(verify_jwt),
     chat_service: ChatService = Depends(get_chat_service)
 ):
     agent_id = token_data.get("insurance_agent_id")
     if agent_id:
-        chat_service.clear_chats(agent_id, customer_id)
+        chat_service.clear_chats(agent_id)
     return {"status": "success"}

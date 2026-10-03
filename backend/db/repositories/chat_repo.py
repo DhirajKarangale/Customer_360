@@ -48,19 +48,13 @@ class ChatRepository:
             logger.error(f"Error fetching all chats: {e}")
             return []
 
-    def delete_chats_for_customer(self, agent_id, customer_id):
+    def delete_chats_for_agent(self, agent_id):
         try:
             with self.db.cursor() as cursor:
-                if customer_id:
-                    cursor.execute("""
-                        DELETE FROM agent_chats 
-                        WHERE agent_id = %s AND customer_id = %s
-                    """, (agent_id, customer_id))
-                else:
-                    cursor.execute("""
-                        DELETE FROM agent_chats 
-                        WHERE agent_id = %s AND customer_id IS NULL
-                    """, (agent_id,))
+                cursor.execute("""
+                    DELETE FROM agent_chats 
+                    WHERE agent_id = %s
+                """, (agent_id,))
                 self.db.commit()
         except Exception as e:
             logger.error(f"Error deleting chats: {e}")

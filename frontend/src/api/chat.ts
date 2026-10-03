@@ -7,9 +7,14 @@ export async function fetchChats() {
   return response.data;
 }
 
-export async function clearChatsApi(customerId?: string) {
+export async function clearChatsApi() {
   const response = await apiClient.delete(API_ENDPOINTS.chats.list, {
-    params: customerId ? { customer_id: customerId } : undefined
+    params: { _t: Date.now() },
+    headers: {
+      'Cache-Control': 'no-cache, no-store, must-revalidate',
+      'Pragma': 'no-cache',
+      'Expires': '0'
+    }
   });
   return response.data;
 }

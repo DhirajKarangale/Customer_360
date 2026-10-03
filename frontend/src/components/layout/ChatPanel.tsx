@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { ChevronLeft, Send, ArrowUp, ArrowDown, Trash2 } from 'lucide-react';
 import { useAIChatStore } from '../../store/useAIChatStore';
 import { useAuthStore } from '../../store/useAuthStore';
@@ -26,6 +26,7 @@ export function ChatPanel() {
   
   const agent = useAuthStore((state) => state.agent);
   const generateMutation = useGenerateChatMutation();
+  const [isClearing, setIsClearing] = useState(false);
 
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -117,7 +118,7 @@ export function ChatPanel() {
 
       {/* The Chat Panel */}
       <div 
-        className={`fixed right-0 top-0 z-50 flex h-screen w-full max-w-md flex-col border-l border-white/5 bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
+        className={`fixed right-0 top-0 z-50 flex h-screen w-full max-w-md flex-col border-l border-white/5 bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl transform-gpu will-change-transform transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
       >
         {/* Sticky Toggle Button */}
         <button
@@ -134,7 +135,11 @@ export function ChatPanel() {
           )}
 
           {/* Arrow rotates 180 degrees when open */}
-          <ChevronLeft className={`h-6 w-6 transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] ${isOpen ? 'rotate-180' : 'rotate-0'}`} />
+          <span 
+            className={`flex items-center justify-center transform-gpu will-change-transform transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] ${isOpen ? 'rotate-180' : 'rotate-0'}`}
+          >
+            <ChevronLeft className="h-6 w-6" />
+          </span>
         </button>
 
         {/* Panel Header */}
@@ -157,20 +162,34 @@ export function ChatPanel() {
             {(() => {
               const displayMessages = activeCustomerId ? messages.filter(m => m.customer_id === activeCustomerId) : messages;
               return displayMessages.length > 0 && (
-                <button
-                  onClick={async () => {
-                    try {
-                      await clearChatsApi(activeCustomerId || undefined);
-                      clearMessages(activeCustomerId || undefined);
-                    } catch (e) {
-                      console.error("Failed to clear chats", e);
-                    }
-                  }}
-                  className="text-white/70 hover:text-destructive transition-colors"
-                  title="Clear Chat History"
-                >
-                  <Trash2 className="h-4 w-4" />
-                </button>
+                isClearing ? (
+                  <div className="flex items-center gap-2 text-xs text-white/70">
+                    <span className="flex items-center gap-1">
+                      <span className="h-1.5 w-1.5 rounded-full bg-white/70 animate-bounce" style={{ animationDelay: '0ms' }} />
+                      <span className="h-1.5 w-1.5 rounded-full bg-white/70 animate-bounce" style={{ animationDelay: '150ms' }} />
+                      <span className="h-1.5 w-1.5 rounded-full bg-white/70 animate-bounce" style={{ animationDelay: '300ms' }} />
+                    </span>
+                    Clearing chat...
+                  </div>
+                ) : (
+                  <button
+                    onClick={async () => {
+                      try {
+                        setIsClearing(true);
+                        await clearChatsApi();
+                        clearMessages(undefined, true);
+                      } catch (e) {
+                        console.error("Failed to clear chats", e);
+                      } finally {
+                        setIsClearing(false);
+                      }
+                    }}
+                    className="text-white/70 hover:text-destructive transition-colors"
+                    title="Clear Chat History"
+                  >
+                    <Trash2 className="h-4 w-4" />
+                  </button>
+                )
               );
             })()}
           </div>
