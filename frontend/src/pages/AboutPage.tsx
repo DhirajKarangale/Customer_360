@@ -41,7 +41,7 @@ export default function AboutPage() {
   };
 
   return (
-    <div className="relative min-h-[80vh] w-full overflow-hidden rounded-2xl bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-xl p-8 shadow-2xl border border-white/10">
+    <div className="relative w-full overflow-hidden rounded-2xl bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl p-6 shadow-2xl">
 
       {/* Background ambient glows */}
       <div className="absolute top-0 left-1/4 h-[500px] w-[500px] rounded-full bg-indigo-600/20 blur-[120px] pointer-events-none mix-blend-screen" />
@@ -50,10 +50,10 @@ export default function AboutPage() {
       <div className="relative z-10 mx-auto max-w-6xl">
 
         {/* Header Section */}
-        <div className="flex flex-col items-center justify-center text-center space-y-6 mb-16 mt-8">
+        <div className="flex flex-col items-center justify-center text-center space-y-4 mb-10 mt-4">
           <div className="relative group">
             <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-75 blur transition duration-500 group-hover:opacity-100 group-hover:duration-200"></div>
-            <div className="relative flex h-32 w-32 items-center justify-center overflow-hidden rounded-full bg-black border border-white/10 p-4">
+            <div className="relative flex h-20 w-20 items-center justify-center overflow-hidden rounded-full bg-black border border-white/5 p-3">
               {/* Fallback text if logo fails to load, but typically it will show the logo */}
               <img
                 src="/DCoders.webp"
@@ -66,14 +66,14 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="space-y-4">
-            <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 via-white to-purple-300 drop-shadow-sm">
+          <div className="space-y-2">
+            <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 via-white to-purple-300 drop-shadow-sm">
               Team DCoders
             </h1>
-            <p className="flex items-center justify-center gap-2 text-lg text-indigo-200/80 max-w-2xl mx-auto font-medium">
-              <Rocket className="h-5 w-5 text-indigo-400" />
+            <p className="flex items-center justify-center gap-2 text-base text-indigo-200/80 max-w-xl mx-auto font-medium">
+              <Rocket className="h-4 w-4 text-indigo-400" />
               Building the future at the Snowflake Hackathon
-              <Sparkles className="h-5 w-5 text-purple-400" />
+              <Sparkles className="h-4 w-4 text-purple-400" />
             </p>
           </div>
         </div>
@@ -83,12 +83,12 @@ export default function AboutPage() {
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="group relative flex flex-col rounded-2xl bg-white/5 border border-white/10 p-6 backdrop-blur-md transition-all duration-300 hover:-translate-y-2 hover:bg-white/[0.08] hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:border-white/20"
+              className="group relative flex flex-col rounded-2xl bg-black/20 border border-white/5 p-6 backdrop-blur-md transition-all duration-300 hover:-translate-y-2 hover:bg-white/[0.08] hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:border-white/10"
             >
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-indigo-500/0 via-transparent to-purple-500/5 opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none" />
 
-              <div className="relative mb-6 flex justify-center">
-                <div className="relative h-24 w-24 overflow-hidden rounded-full border-2 border-indigo-500/30 bg-black/50 p-1 transition-transform duration-300 group-hover:scale-110 group-hover:border-indigo-400">
+              <div className="relative mb-4 flex justify-center">
+                <div className="relative h-16 w-16 overflow-hidden rounded-full border-2 border-indigo-500/30 bg-black/50 p-1 transition-transform duration-300 group-hover:scale-110 group-hover:border-indigo-400">
                   <img
                     src={member.avatar}
                     alt={member.name}
@@ -110,7 +110,7 @@ export default function AboutPage() {
                   <button
                     type="button"
                     onClick={() => handleCopy(member.phone, 'Phone number')}
-                    className="w-full cursor-pointer flex items-center gap-3 rounded-xl bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] p-3 text-sm text-gray-300 transition-colors hover:bg-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] hover:text-white border border-white/5 text-left"
+                    className="w-full cursor-pointer flex items-center gap-3 rounded-xl bg-black/20 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] p-3 text-sm text-gray-300 transition-colors hover:bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] hover:text-white border border-white/5 text-left"
                   >
                     <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-indigo-500/20 text-indigo-400">
                       <Phone className="h-4 w-4" />
@@ -121,7 +121,7 @@ export default function AboutPage() {
                   <button
                     type="button"
                     onClick={() => handleCopy(member.email, 'Email address')}
-                    className="w-full cursor-pointer flex items-center gap-3 rounded-xl bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] p-3 text-sm text-gray-300 transition-colors hover:bg-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] hover:text-white border border-white/5 overflow-hidden text-left"
+                    className="w-full cursor-pointer flex items-center gap-3 rounded-xl bg-black/20 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] p-3 text-sm text-gray-300 transition-colors hover:bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] hover:text-white border border-white/5 overflow-hidden text-left"
                     title={member.email}
                   >
                     <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-purple-500/20 text-purple-400">

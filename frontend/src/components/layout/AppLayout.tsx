@@ -1,4 +1,4 @@
-import { Outlet, useLocation } from 'react-router-dom';
+import { useOutlet, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import { Navbar } from './Navbar';
 import { Footer } from './Footer';
@@ -9,6 +9,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 
 export function AppLayout() {
   const location = useLocation();
+  const currentOutlet = useOutlet();
 
   useEffect(() => {
     const token = TokenService.getToken();
@@ -37,7 +38,7 @@ export function AppLayout() {
             transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
             className="h-full"
           >
-            <Outlet />
+            {currentOutlet}
           </motion.div>
         </AnimatePresence>
       </main>

@@ -15,7 +15,7 @@ export function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-transparent/95 backdrop-blur supports-[backdrop-filter]:bg-transparent/60">
+    <header className="sticky top-0 z-50 w-full border-b border-white/5 bg-transparent/95 backdrop-blur supports-[backdrop-filter]:bg-transparent/60">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         
         {/* Navigation Links */}
@@ -39,7 +39,7 @@ export function Navbar() {
         <div className="flex items-center gap-4">
           <Link 
             to="/profile"
-            className="flex items-center gap-2 rounded-full border border-white/10 px-4 py-1.5 text-sm font-medium text-white transition-colors hover:bg-white/10 text-white"
+            className="flex items-center gap-2 rounded-full border border-white/5 px-4 py-1.5 text-sm font-medium text-white transition-colors hover:bg-white/5 text-white"
           >
             {!imgError && agent?.profile_image_url ? (
               <img 

@@ -137,10 +137,11 @@ export default function Customer360Page() {
     // Format chart data
     const pieData = Object.entries(typeDistribution).map(([name, value]) => ({ name, value })).sort((a, b) => b.value - a.value);
     
-    // Sort bar data chronologically (approx by relying on JS sort for now, or just limit to top upcoming)
+    // Sort bar data chronologically (closest months first)
     const barData = Object.entries(renewalsByMonth)
       .map(([name, count]) => ({ name, count }))
-      .slice(0, 5); // top 5 upcoming months
+      .sort((a, b) => new Date(`1 ${a.name}`).getTime() - new Date(`1 ${b.name}`).getTime())
+      .slice(0, 5); // top 5 closest upcoming months
 
     return {
       activePremium,
@@ -171,13 +172,13 @@ export default function Customer360Page() {
           
           {/* KPI Cards Grid */}
           {policiesLoading ? (
-            <div className="flex h-32 items-center justify-center rounded-xl border border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-xl shadow-sm">
+            <div className="flex h-32 items-center justify-center rounded-xl border border-white/5 bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl shadow-sm">
                <Loader2 className="h-6 w-6 animate-spin text-primary" />
             </div>
           ) : (
             <StaggerContainer className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
               
-              <StaggerItem className="flex flex-col gap-2 rounded-xl border border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-xl p-5 shadow-sm transition-all hover:shadow-md">
+              <StaggerItem className="flex flex-col gap-2 rounded-xl border border-white/5 bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl p-5 shadow-sm transition-all hover:shadow-md">
                 <div className="flex items-center gap-2 text-white/70">
                   <Wallet className="h-4 w-4 text-emerald-500" />
                   <span className="text-sm font-medium">Active Premium</span>
@@ -187,7 +188,7 @@ export default function Customer360Page() {
                 </div>
               </StaggerItem>
 
-              <StaggerItem className="flex flex-col gap-2 rounded-xl border border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-xl p-5 shadow-sm transition-all hover:shadow-md">
+              <StaggerItem className="flex flex-col gap-2 rounded-xl border border-white/5 bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl p-5 shadow-sm transition-all hover:shadow-md">
                 <div className="flex items-center gap-2 text-white/70">
                   <ShieldAlert className="h-4 w-4 text-blue-500" />
                   <span className="text-sm font-medium">Total Coverage</span>
@@ -197,7 +198,7 @@ export default function Customer360Page() {
                 </div>
               </StaggerItem>
 
-              <StaggerItem className="flex flex-col gap-2 rounded-xl border border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-xl p-5 shadow-sm transition-all hover:shadow-md">
+              <StaggerItem className="flex flex-col gap-2 rounded-xl border border-white/5 bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl p-5 shadow-sm transition-all hover:shadow-md">
                 <div className="flex items-center gap-2 text-white/70">
                   <AlertTriangle className="h-4 w-4 text-amber-500" />
                   <span className="text-sm font-medium">Expiring Soon (30d)</span>
@@ -208,7 +209,7 @@ export default function Customer360Page() {
                 </div>
               </StaggerItem>
 
-              <StaggerItem className="flex flex-col gap-2 rounded-xl border border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-xl p-5 shadow-sm transition-all hover:shadow-md">
+              <StaggerItem className="flex flex-col gap-2 rounded-xl border border-white/5 bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl p-5 shadow-sm transition-all hover:shadow-md">
                 <div className="flex items-center gap-2 text-white/70">
                   <Users className="h-4 w-4 text-purple-500" />
                   <span className="text-sm font-medium">Cross-Sell Ratio</span>
@@ -226,7 +227,7 @@ export default function Customer360Page() {
           <StaggerContainer delay={0.2} className="grid grid-cols-1 gap-6 lg:grid-cols-2">
             
             {/* Chart 1: Portfolio Mix */}
-            <StaggerItem className="flex min-h-[350px] flex-col rounded-xl border border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-xl p-6 shadow-sm">
+            <StaggerItem className="flex min-h-[350px] flex-col rounded-xl border border-white/5 bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl p-6 shadow-sm">
               <h3 className="mb-6 font-semibold tracking-tight flex items-center gap-2 text-white">
                 <TrendingUp className="h-4 w-4 text-primary" />
                 Revenue by Policy Type
@@ -237,7 +238,7 @@ export default function Customer360Page() {
                 ) : metrics.pieData.length === 0 ? (
                   <div className="absolute inset-0 flex items-center justify-center text-sm text-white/70">No active policies</div>
                 ) : (
-                  <ResponsiveContainer width="100%" height="100%">
+                  <ResponsiveContainer width="100%" height={260}>
                     <PieChart>
                       <Pie
                         data={metrics.pieData}
@@ -265,7 +266,7 @@ export default function Customer360Page() {
             </StaggerItem>
 
             {/* Chart 2: Upcoming Renewals */}
-            <StaggerItem className="flex min-h-[350px] flex-col rounded-xl border border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-xl p-6 shadow-sm">
+            <StaggerItem className="flex min-h-[350px] flex-col rounded-xl border border-white/5 bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl p-6 shadow-sm">
               <h3 className="mb-6 font-semibold tracking-tight flex items-center gap-2 text-white">
                 <Clock className="h-4 w-4 text-amber-500" />
                 Upcoming Renewals Pipeline
@@ -276,7 +277,7 @@ export default function Customer360Page() {
                 ) : metrics.barData.length === 0 ? (
                   <div className="absolute inset-0 flex items-center justify-center text-sm text-white/70">No upcoming renewals</div>
                 ) : (
-                  <ResponsiveContainer width="100%" height="100%">
+                  <ResponsiveContainer width="100%" height={260}>
                     <BarChart data={metrics.barData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
                       <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#27272a" opacity={0.5} />
                       <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{ fontSize: 12, fill: '#a1a1aa' }} dy={10} />
@@ -298,8 +299,8 @@ export default function Customer360Page() {
 
         {/* RIGHT COLUMN: AI Suggestions */}
         <div className="relative xl:col-span-1 h-[400px] xl:h-auto">
-          <div className="flex flex-col rounded-xl border border-white/10 bg-gradient-to-b from-card to-card/50 shadow-sm overflow-hidden h-full xl:absolute xl:inset-0">
-            <div className="flex items-center justify-between border-b border-white/10 bg-muted/30 px-6 py-4">
+          <div className="flex flex-col rounded-xl border border-white/10 bg-black/40 backdrop-blur-xl shadow-2xl overflow-hidden h-full xl:absolute xl:inset-0">
+            <div className="flex items-center justify-between border-b border-white/10 bg-white/5 px-6 py-4">
               <div className="flex items-center gap-2">
                 <Sparkles className="h-5 w-5 text-indigo-500" />
                 <h2 className="text-lg font-semibold tracking-tight text-white">Today's Suggestions</h2>

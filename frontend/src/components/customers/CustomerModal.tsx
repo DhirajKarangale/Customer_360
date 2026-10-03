@@ -1,4 +1,5 @@
 import { useEffect, useMemo } from 'react';
+import { createPortal } from 'react-dom';
 import { X, Loader2, CalendarDays, ShieldAlert, ArrowRight } from 'lucide-react';
 import { usePoliciesQuery } from '../../api/policies';
 import { useCustomersQuery } from '../../api/customers';
@@ -60,20 +61,20 @@ export function CustomerModal({ customerId, onClose }: CustomerModalProps) {
   if (!customerId) return null;
 
   if (shouldFetch && customerLoading && !customer) {
-    return (
+    return typeof document !== 'undefined' ? createPortal(
       <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
         <div className="fixed inset-0 bg-transparent/80 backdrop-blur-sm transition-opacity" onClick={onClose} />
-        <div className="relative flex flex-col items-center justify-center gap-4 rounded-xl border border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-xl p-12 shadow-2xl">
+        <div className="relative flex flex-col items-center justify-center gap-4 rounded-xl border border-white/5 bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl p-12 shadow-2xl">
           <Loader2 className="h-8 w-8 animate-spin text-primary" />
           <p className="text-white/70 font-medium">Loading Customer Profile...</p>
         </div>
       </div>
-    );
+    , document.body) : null;
   }
 
   if (!customer) return null;
 
-  return (
+  return typeof document !== 'undefined' ? createPortal(
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6">
       {/* Backdrop */}
       <div 
@@ -82,17 +83,17 @@ export function CustomerModal({ customerId, onClose }: CustomerModalProps) {
       />
       
       {/* Modal Content */}
-      <div className="relative flex w-full max-w-4xl max-h-[90vh] flex-col overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-xl shadow-2xl">
+      <div className="relative flex w-full max-w-4xl max-h-[90vh] flex-col overflow-hidden rounded-xl bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl">
         
         {/* Header */}
-        <div className="flex items-center justify-between border-b border-white/10 bg-muted/30 px-6 py-4">
+        <div className="flex items-center justify-between border-b border-white/5 bg-muted/30 px-6 py-4">
           <div>
             <h2 className="text-xl font-semibold tracking-tight text-white">{customer.name}</h2>
             <p className="text-sm text-white/70">Customer Profile & Policies</p>
           </div>
           <button 
             onClick={onClose}
-            className="rounded-full p-2 text-white/70 hover:bg-white/10 text-white hover:text-white transition-colors"
+            className="rounded-full p-2 text-white/70 hover:bg-white/5 text-white hover:text-white transition-colors"
           >
             <X className="h-5 w-5" />
           </button>
@@ -130,7 +131,7 @@ export function CustomerModal({ customerId, onClose }: CustomerModalProps) {
               Active Policies
             </h3>
             
-            <div className="rounded-xl border border-white/10 overflow-hidden shadow-sm">
+            <div className="rounded-xl border border-white/5 overflow-hidden shadow-sm">
               {policiesLoading ? (
                 <div className="flex flex-col items-center justify-center p-12 text-white/70">
                   <Loader2 className="h-8 w-8 animate-spin text-primary mb-4" />
@@ -145,7 +146,7 @@ export function CustomerModal({ customerId, onClose }: CustomerModalProps) {
               ) : (
                 <div className="overflow-auto max-h-[50vh]">
                   <table className="w-full text-left text-sm relative">
-                    <thead className="bg-muted/90 backdrop-blur-sm border-b border-white/10 sticky top-0 z-10 shadow-sm">
+                    <thead className="bg-muted/90 backdrop-blur-sm border-b border-white/5 sticky top-0 z-10 shadow-sm">
                       <tr>
                         <th className="px-6 py-4 font-medium text-white/70">Policy Number</th>
                         <th className="px-6 py-4 font-medium text-white/70">Type</th>
@@ -157,10 +158,10 @@ export function CustomerModal({ customerId, onClose }: CustomerModalProps) {
                     </thead>
                     <tbody className="divide-y divide-border">
                       {policiesData.items.map((policy) => (
-                        <tr key={policy.id} className="hover:bg-white/10 transition-colors">
+                        <tr key={policy.id} className="hover:bg-white/5 transition-colors">
                           <td className="px-6 py-4 font-medium text-white">{policy.policy_number}</td>
                           <td className="px-6 py-4">
-                            <span className="inline-flex items-center rounded-full bg-secondary px-2.5 py-0.5 text-xs font-semibold text-secondary-foreground border border-white/10">
+                            <span className="inline-flex items-center rounded-full bg-secondary px-2.5 py-0.5 text-xs font-semibold text-secondary-foreground border border-white/5">
                               {policy.policy_type}
                             </span>
                           </td>
@@ -199,5 +200,5 @@ export function CustomerModal({ customerId, onClose }: CustomerModalProps) {
         
       </div>
     </div>
-  );
+  , document.body) : null;
 }

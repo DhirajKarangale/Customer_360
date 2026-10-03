@@ -19,7 +19,6 @@ interface GenerateChatPayload {
   query: string;
   insurance_agents_id: string;
   policies_id?: string;
-  policy_number?: string;
   customers_id?: string;
 }
 

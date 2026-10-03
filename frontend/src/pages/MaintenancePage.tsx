@@ -12,9 +12,9 @@ export default function MaintenancePage() {
         
         <div className="relative mb-10">
           <div className="absolute -inset-8 rounded-full bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 opacity-20 blur-2xl animate-spin-slow"></div>
-          <div className="relative flex h-32 w-32 items-center justify-center rounded-3xl bg-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] border border-white/10 backdrop-blur-xl shadow-2xl rotate-3 transition-transform hover:rotate-0 duration-500">
+          <div className="relative flex h-32 w-32 items-center justify-center rounded-3xl bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] border border-white/5 backdrop-blur-xl shadow-2xl rotate-3 transition-transform hover:rotate-0 duration-500">
             <ServerCrash className="h-16 w-16 text-indigo-400" />
-            <Wrench className="absolute -bottom-4 -right-4 h-12 w-12 text-blue-400 bg-black rounded-full p-2 border border-white/10" />
+            <Wrench className="absolute -bottom-4 -right-4 h-12 w-12 text-blue-400 bg-black rounded-full p-2 border border-white/5" />
           </div>
         </div>
         
@@ -22,7 +22,7 @@ export default function MaintenancePage() {
           System Under Maintenance
         </h1>
         
-        <div className="max-w-lg rounded-2xl bg-white/5 border border-white/10 p-6 backdrop-blur-md shadow-xl">
+        <div className="max-w-lg rounded-2xl bg-black/20 border border-white/5 p-6 backdrop-blur-md shadow-xl">
           <p className="text-lg text-gray-300 leading-relaxed mb-4">
             We are currently experiencing server issues or performing scheduled upgrades to improve your experience. 
           </p>

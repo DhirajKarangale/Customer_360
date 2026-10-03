@@ -71,14 +71,15 @@ export default function PoliciesPage() {
 
   // Intelligent Local Fallback logic
   const displayItems = useMemo(() => {
-    // If API response is ready and we aren't fetching, just show authoritative data
-    if (data && !isFetching) {
+    // If API response is ready, just show authoritative data (even while fetching)
+    if (data) {
       return data.items;
     }
 
-    // While fetching, optimistic search local store cache
+    // While fetching initial data, optimistic search local store cache
     const all = getAllPolicies();
-    let filtered = all;
+    // Sort local cache by date descending to prevent random jumping
+    let filtered = all.sort((a, b) => new Date(b.start_date).getTime() - new Date(a.start_date).getTime());
 
     if (policyType !== 'all') {
       filtered = filtered.filter(p => p.policy_type === policyType);
@@ -107,7 +108,7 @@ export default function PoliciesPage() {
   return (
     <div className="space-y-6">
       {/* Page Header & Filters */}
-      <div className="flex flex-col gap-4 rounded-xl border border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-xl p-4 shadow-sm md:flex-row md:items-center md:justify-between">
+      <div className="flex flex-col gap-4 rounded-xl border border-white/5 bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl p-4 shadow-sm md:flex-row md:items-center md:justify-between">
         <div className="flex items-center gap-2">
           <div className="rounded-lg bg-primary/10 p-2 text-primary">
             <ShieldAlert className="h-6 w-6" />
@@ -164,7 +165,7 @@ export default function PoliciesPage() {
       </div>
 
       {/* Main Content Area */}
-      <div className="rounded-xl border border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-xl shadow-sm overflow-hidden">
+      <div className="rounded-xl border border-white/5 bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl shadow-sm overflow-hidden">
         
         {/* Loading State Overlay (Only if totally empty) */}
         {isFetching && displayItems.length === 0 && (
@@ -196,7 +197,7 @@ export default function PoliciesPage() {
         {displayItems.length > 0 && (
           <div className="overflow-x-auto relative">
             <table className="w-full text-left text-sm">
-              <thead className="bg-white/5 border-b border-white/10">
+              <thead className="bg-black/20 border-b border-white/5">
                 <tr>
                   <th className="px-6 py-4 font-medium text-white/70">Policy Number</th>
                   <th className="px-6 py-4 font-medium text-white/70">Type</th>
@@ -211,12 +212,12 @@ export default function PoliciesPage() {
                 {displayItems.map((policy) => (
                   <tr 
                     key={policy.id} 
-                    className="hover:bg-white/10 transition-colors cursor-pointer"
+                    className="hover:bg-white/5 transition-colors cursor-pointer"
                     onClick={() => setSelectedCustomerId(policy.customer_id)}
                   >
                     <td className="px-6 py-4 font-medium text-white">{policy.policy_number}</td>
                     <td className="px-6 py-4">
-                      <span className="inline-flex items-center rounded-full bg-secondary px-2.5 py-0.5 text-xs font-semibold text-secondary-foreground border border-white/10">
+                      <span className="inline-flex items-center rounded-full bg-secondary px-2.5 py-0.5 text-xs font-semibold text-secondary-foreground border border-white/5">
                         {policy.policy_type}
                       </span>
                     </td>
@@ -250,7 +251,7 @@ export default function PoliciesPage() {
                           setActivePolicy(policy.id, policy.policy_number);
                           setChatOpen(true);
                         }}
-                        className="inline-flex h-8 items-center justify-center gap-2 rounded-md bg-white/10 border-white/20 px-3 text-xs font-medium text-secondary-foreground shadow-sm transition-colors hover:bg-secondary hover:text-white"
+                        className="inline-flex h-8 items-center justify-center gap-2 rounded-md bg-white/5 border-white/10 px-3 text-xs font-medium text-secondary-foreground shadow-sm transition-colors hover:bg-secondary hover:text-white"
                         title="Ask AI about this policy"
                       >
                         <MessageSquare className="h-3.5 w-3.5" />

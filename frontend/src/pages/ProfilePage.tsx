@@ -31,7 +31,7 @@ export default function ProfilePage() {
   }
 
   return (
-    <div className="relative min-h-[80vh] w-full overflow-hidden rounded-2xl bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-xl p-8 shadow-2xl border border-white/10">
+    <div className="relative min-h-[80vh] w-full overflow-hidden rounded-2xl bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl p-8 shadow-2xl border border-white/5">
       
       {/* Background ambient glows */}
       <div className="absolute top-0 right-1/4 h-[500px] w-[500px] rounded-full bg-blue-600/20 blur-[120px] pointer-events-none mix-blend-screen" />
@@ -40,7 +40,7 @@ export default function ProfilePage() {
       <div className="relative z-10 mx-auto max-w-5xl space-y-8">
         
         {/* Page Header */}
-        <div className="flex flex-col gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md shadow-lg md:flex-row md:items-center md:justify-between transition-all duration-300 hover:bg-white/[0.08]">
+        <div className="flex flex-col gap-4 rounded-2xl border border-white/5 bg-black/20 p-6 backdrop-blur-md shadow-lg md:flex-row md:items-center md:justify-between transition-all duration-300 hover:bg-white/[0.08]">
           <div className="flex items-center gap-3">
             <div className="rounded-xl bg-blue-500/20 p-3 text-blue-400 border border-blue-500/30">
               <User className="h-6 w-6" />
@@ -61,11 +61,11 @@ export default function ProfilePage() {
         </div>
 
         {/* Main Content Area */}
-        <div className="rounded-2xl border border-white/10 bg-white/5 shadow-xl p-8 backdrop-blur-md">
+        <div className="rounded-2xl border border-white/5 bg-black/20 shadow-xl p-8 backdrop-blur-md">
           <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
             <div className="relative group">
               <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-50 blur transition duration-500 group-hover:opacity-100 group-hover:duration-200"></div>
-              <div className="relative flex h-32 w-32 items-center justify-center overflow-hidden rounded-full bg-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] border-2 border-white/20 p-1 backdrop-blur-md">
+              <div className="relative flex h-32 w-32 items-center justify-center overflow-hidden rounded-full bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] border-2 border-white/10 p-1 backdrop-blur-md">
                 {!imgError && agent.profile_image_url ? (
                   <img 
                     src={agent.profile_image_url} 
@@ -94,7 +94,7 @@ export default function ProfilePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             
-            <div className="group flex items-center gap-5 rounded-2xl border border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] p-6 transition-all duration-300 hover:bg-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] hover:border-white/20 hover:-translate-y-1">
+            <div className="group flex items-center gap-5 rounded-2xl border border-white/5 bg-black/20 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] p-6 transition-all duration-300 hover:bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] hover:border-white/10 hover:-translate-y-1">
               <div className="rounded-xl bg-blue-500/10 p-3.5 text-blue-400 transition-colors group-hover:bg-blue-500/20 group-hover:text-blue-300">
                 <Mail className="h-6 w-6" />
               </div>
@@ -104,7 +104,7 @@ export default function ProfilePage() {
               </div>
             </div>
             
-            <div className="group flex items-center gap-5 rounded-2xl border border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] p-6 transition-all duration-300 hover:bg-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] hover:border-white/20 hover:-translate-y-1">
+            <div className="group flex items-center gap-5 rounded-2xl border border-white/5 bg-black/20 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] p-6 transition-all duration-300 hover:bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] hover:border-white/10 hover:-translate-y-1">
               <div className="rounded-xl bg-emerald-500/10 p-3.5 text-emerald-400 transition-colors group-hover:bg-emerald-500/20 group-hover:text-emerald-300">
                 <Phone className="h-6 w-6" />
               </div>
@@ -114,7 +114,7 @@ export default function ProfilePage() {
               </div>
             </div>
 
-            <div className="group flex items-center gap-5 rounded-2xl border border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] p-6 transition-all duration-300 hover:bg-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] hover:border-white/20 hover:-translate-y-1">
+            <div className="group flex items-center gap-5 rounded-2xl border border-white/5 bg-black/20 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] p-6 transition-all duration-300 hover:bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] hover:border-white/10 hover:-translate-y-1">
               <div className="rounded-xl bg-purple-500/10 p-3.5 text-purple-400 transition-colors group-hover:bg-purple-500/20 group-hover:text-purple-300">
                 <Building2 className="h-6 w-6" />
               </div>
@@ -124,7 +124,7 @@ export default function ProfilePage() {
               </div>
             </div>
 
-            <div className="group flex items-center gap-5 rounded-2xl border border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] p-6 transition-all duration-300 hover:bg-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] hover:border-white/20 hover:-translate-y-1">
+            <div className="group flex items-center gap-5 rounded-2xl border border-white/5 bg-black/20 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] p-6 transition-all duration-300 hover:bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] hover:border-white/10 hover:-translate-y-1">
               <div className="rounded-xl bg-amber-500/10 p-3.5 text-amber-400 transition-colors group-hover:bg-amber-500/20 group-hover:text-amber-300">
                 <FileCheck className="h-6 w-6" />
               </div>
