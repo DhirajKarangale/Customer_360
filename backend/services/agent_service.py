@@ -44,15 +44,28 @@ class AgentService:
         suggestions_updated_at = agent.get("SUGGESTIONS_UPDATED_AT") or agent.get("suggestions_updated_at")
         
         if suggestions_text and suggestions_updated_at:
-            now = datetime.now()
-            today_8am = now.replace(hour=8, minute=0, second=0, microsecond=0)
-            most_recent_8am = today_8am if now >= today_8am else today_8am - timedelta(days=1)
+            from datetime import timezone
             
-            if suggestions_updated_at >= most_recent_8am:
-                return SuggestionsResponse(
-                    message=suggestions_text,
-                    job_id=job_id
-                )
+            # Use timezone-aware datetime for local time
+            now_aware = datetime.now().astimezone()
+            today_8am_aware = now_aware.replace(hour=8, minute=0, second=0, microsecond=0)
+            most_recent_8am_aware = today_8am_aware if now_aware >= today_8am_aware else today_8am_aware - timedelta(days=1)
+            
+            if suggestions_updated_at.tzinfo is not None:
+                # If db returns aware datetime, compare directly
+                if suggestions_updated_at >= most_recent_8am_aware:
+                    return SuggestionsResponse(
+                        message=suggestions_text,
+                        job_id=job_id
+                    )
+            else:
+                # If db returns naive datetime, assume it's UTC and convert our 8am to UTC naive
+                most_recent_8am_utc_naive = most_recent_8am_aware.astimezone(timezone.utc).replace(tzinfo=None)
+                if suggestions_updated_at >= most_recent_8am_utc_naive:
+                    return SuggestionsResponse(
+                        message=suggestions_text,
+                        job_id=job_id
+                    )
         
         try:
             redis_url = os.getenv("REDIS_URL", "redis://localhost:6379")
