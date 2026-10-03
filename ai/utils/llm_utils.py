@@ -4,9 +4,59 @@ from langchain_core.runnables import RunnableLambda
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_groq import ChatGroq
 from ai.utils.sf_auth import get_snowflake_conn
-LLM_PROVIDERS_LIST = ['groq', 'gemini', 'snowflake']
-SNOWFLAKE_MODELS = {'SEQUENCE': 'llama3.1-8b', 'TRANSCRIPT': 'llama3.1-70b', 'SUMMARY': 'llama3.1-8b',
-                    'CLEANING': 'llama3.1-70b', 'STRUCTURING': 'llama3.1-70b', 'EMBEDDING': 'snowflake-arctic-embed-l-v2.0'}
+LLM_PROVIDERS_LIST = ['snowflake']
+
+# ─── Snowflake Cortex Model Assignments ────────────────────────────────────────
+# Only using model names confirmed to work with SNOWFLAKE.CORTEX.COMPLETE().
+# The CSV catalog uses uppercase display names, but the API uses lowercase kebab-case.
+# Confirmed working: llama3.1-8b, llama3.1-70b, llama3.3-70b
+SNOWFLAKE_MODELS = {
+    # Main agent reasoning, tool-call decisions, and final response generation.
+    # llama3.3-70b is the best confirmed-available model: stronger instruction
+    # following than 3.1-70b, reliable JSON output for tool-call parsing.
+    'TRANSCRIPT': 'llama3.3-70b',
+
+    # Security entity extraction — fast JSON extraction from the user query.
+    # llama3.1-8b is the fastest confirmed model, sufficient for simple extraction.
+    'RESTRICTION': 'llama3.1-8b',
+
+    # HTML formatting pass — purely structural tag wrapping, no reasoning needed.
+    # Smallest/fastest model is ideal to minimize latency on this pass.
+    'FORMAT': 'llama3.1-8b',
+
+    # Interaction sequence planning (simple JSON list output).
+    # Low-complexity task; 8B model gives fastest response time.
+    'SEQUENCE': 'llama3.1-8b',
+
+    # One/two-sentence summaries for RAG context chaining.
+    # 8B is fast enough for short summarization — no need for a heavy model.
+    'SUMMARY': 'llama3.1-8b',
+
+    # Semantic text cleaning: grammar fixes, noise removal, normalization.
+    # llama3.1-70b gives high-quality rewriting while staying confirmed-available.
+    'CLEANING': 'llama3.1-70b',
+
+    # Strict JSON structuring from raw+cleaned text for RAG ingestion.
+    # Needs the best accuracy for metadata extraction and schema compliance.
+    'STRUCTURING': 'llama3.3-70b',
+
+    # Snowflake Arctic embedding model — best available for semantic similarity.
+    'EMBEDDING': 'snowflake-arctic-embed-l-v2.0',
+}
+
+# ─── Per-key fallback chains ───────────────────────────────────────────────────
+# If the primary model fails (rate-limit, region outage, unknown model error),
+# _unified_llm_call will automatically try the next model in the list.
+# Order: best → good → fast-but-always-available fallback.
+SNOWFLAKE_MODEL_FALLBACKS = {
+    'TRANSCRIPT':   ['llama3.3-70b',  'llama3.1-70b',  'llama3.1-8b'],
+    'RESTRICTION':  ['llama3.1-8b',   'llama3.1-70b'],
+    'FORMAT':       ['llama3.1-8b',   'llama3.1-70b'],
+    'SEQUENCE':     ['llama3.1-8b',   'llama3.1-70b'],
+    'SUMMARY':      ['llama3.1-8b',   'llama3.1-70b'],
+    'CLEANING':     ['llama3.1-70b',  'llama3.1-8b'],
+    'STRUCTURING':  ['llama3.3-70b',  'llama3.1-70b',  'llama3.1-8b'],
+}
 GEMINI_MODELS = ['gemini-3.5-flash-lite', 'gemini-3.1-pro-preview',
                  'gemini-3.5-flash', 'gemini-3.6-flash', 'gemini-3.7-flash', 'gemini-3.8-flash']
 GROQ_MODELS = ['openai/gpt-oss-120b', 'qwen/qwen3.8-27b', 'openai/gpt-oss-20b']
@@ -118,21 +168,42 @@ def _unified_llm_call(prompt_str: str, model_key: str) -> str:
                     print(f"Error with Groq key {idx}/{total_keys}: {e}")
 
         elif provider == 'snowflake':
-            actual_model = SNOWFLAKE_MODELS.get(model_key)
-            if not actual_model:
-                print(
-                    f"Model key '{model_key}' not found in SNOWFLAKE_MODELS.")
+            # Try primary model first, then fallbacks in order
+            models_to_try = SNOWFLAKE_MODEL_FALLBACKS.get(
+                model_key,
+                [SNOWFLAKE_MODELS[model_key]] if model_key in SNOWFLAKE_MODELS else []
+            )
+            if not models_to_try:
+                print(f"Model key '{model_key}' not found in SNOWFLAKE_MODELS.")
                 continue
 
-            print(f"Trying Snowflake model: {actual_model}")
-            try:
-                result = _call_snowflake_direct(prompt_str, actual_model)
-                if result is not None:
-                    return result
-            except Exception as e:
-                print(f"Snowflake error: {e}")
+            for model_name in models_to_try:
+                print(f"Trying Snowflake model: {model_name}")
+                try:
+                    result = _call_snowflake_direct(prompt_str, model_name)
+                    if result is not None:
+                        return result
+                    print(f"  Snowflake model '{model_name}' returned None, trying next...")
+                except Exception as e:
+                    err_str = str(e)
+                    print(f"  Snowflake error ({model_name}): {err_str[:120]}")
+                    # Unknown model → no point retrying same key, skip to next fallback
+                    if 'unknown model' in err_str.lower():
+                        continue
+                    # Session / auth errors → refresh and try same model once more
+                    if 'Session no longer exists' in err_str or 'session' in err_str.lower():
+                        try:
+                            get_snowflake_conn(force_refresh=True)
+                            result = _call_snowflake_direct(prompt_str, model_name)
+                            if result is not None:
+                                return result
+                        except Exception:
+                            pass
+                    # For any other error, try next fallback model
+                    continue
 
-    raise Exception("All LLM providers and keys failed.")
+    raise Exception("All LLM providers and model fallbacks exhausted.")
+
 
 
 def get_llm(model_key: str, strictly_snowflake: bool = False):

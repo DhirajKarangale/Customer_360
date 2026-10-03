@@ -1,149 +1,121 @@
 import os
 import json
 import time
-import numpy as np
 import threading
 import redis
-from ai.rag.pipeline.snowflake_embedder import EmbeddingManager
-from ai.rag.config import EMBEDDING_DIMENSION, EMBEDDING_MODEL
-from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
+from langchain_core.messages import HumanMessage, AIMessage
 
-# We use the sync Redis client because our worker is currently sync.
-# We will use threading for the fire-and-forget background tasks.
 REDIS_URL = os.getenv("REDIS_URL", "redis://localhost:6379/0")
 
-# Lazy initialize
-_redis_client = None
-_embedder = None
+# Maximum number of Q&A turns to keep in memory
+MAX_TURNS = 3  # Each turn = 1 user msg + 1 AI msg → 6 messages total injected.
+               # 5 turns (10 msgs) was too large, bloating the prompt and slowing inference.
 
-def get_redis_client():
+# Lazy-init Redis client (not shared across threads — each thread creates its own)
+_redis_client = None
+
+
+def _get_redis():
+    """Returns a module-level Redis client for the main thread."""
     global _redis_client
     if _redis_client is None:
         _redis_client = redis.Redis.from_url(REDIS_URL, decode_responses=True)
     return _redis_client
 
-def get_embedder():
-    global _embedder
-    if _embedder is None:
-        _embedder = EmbeddingManager(EMBEDDING_MODEL, EMBEDDING_DIMENSION)
-    return _embedder
 
-def cosine_similarity(a, b):
-    # a: vector, b: array of vectors
-    dot_product = np.dot(b, a)
-    norm_a = np.linalg.norm(a)
-    norm_b = np.linalg.norm(b, axis=1)
-    return dot_product / (norm_a * norm_b)
+def _memory_enabled() -> bool:
+    return os.getenv("AGENT_MEMORY", "False").lower() == "true"
+
+
+def _make_key(agent_id: str) -> str:
+    return f"agent_memory:{agent_id}"
+
 
 def fetch_and_filter_memory(query: str, agent_id: str) -> list:
     """
-    Fetches the last 20 chats from Redis, embeds the query, finds top 5 similar,
-    and returns them in chronological order.
+    Returns the last MAX_TURNS conversation turns from Redis as LangChain messages.
+    No embeddings, no similarity search — just raw chronological context injected
+    into the conversation history. Simple, fast, zero Snowflake calls.
     """
-    if os.getenv("AGENT_MEMORY", "False").lower() != "true":
-        return []
-
-    if not agent_id:
+    if not _memory_enabled() or not agent_id:
         return []
 
     try:
-        redis_client = get_redis_client()
-        key = f"agent_memory:{agent_id}"
-        
-        # Fetch up to last 20 items
-        raw_items = redis_client.lrange(key, 0, 19)
+        r = _get_redis()
+        key = _make_key(agent_id)
+
+        # Each list item is one turn: {"user": "...", "ai": "...", "ts": <ms>}
+        # lrange 0 -1 gives oldest-first (we store newest at index 0 via lpush)
+        # We want the last MAX_TURNS turns → head of list is newest, so take [0..MAX_TURNS-1]
+        raw_items = r.lrange(key, 0, MAX_TURNS - 1)
         if not raw_items:
             return []
 
-        items = [json.loads(item) for item in raw_items]
-        
-        # Prepare embeddings for comparison
-        history_embeddings = np.array([item["embedding"] for item in items])
-        
-        # Embed the new query
-        embedder = get_embedder()
-        query_embedding = np.array(embedder.embed_text(query))
-        
-        # Calculate similarity
-        similarities = cosine_similarity(query_embedding, history_embeddings)
-        
-        # Get top 5 indices (or fewer if we have < 5 items)
-        top_k = min(5, len(items))
-        top_indices = np.argsort(similarities)[-top_k:]
-        
-        # Sort chronologically (lowest timestamp first)
-        selected_items = [items[i] for i in top_indices]
-        selected_items.sort(key=lambda x: x.get("timestamp", 0))
-        
-        # Format as LangChain messages
-        formatted_messages = []
-        for item in selected_items:
-            role = item.get("role")
-            content = item.get("content")
-            if role == "user":
-                formatted_messages.append(HumanMessage(content=content))
-            elif role == "ai":
-                formatted_messages.append(AIMessage(content=content))
-                
-        return formatted_messages
+        # Items come newest-first from lpush; reverse to get chronological order
+        turns = [json.loads(item) for item in reversed(raw_items)]
+
+        messages = []
+        for turn in turns:
+            user_msg = turn.get("user", "")
+            ai_msg = turn.get("ai", "")
+            if user_msg:
+                messages.append(HumanMessage(content=user_msg))
+            if ai_msg:
+                messages.append(AIMessage(content=ai_msg))
+
+        return messages
 
     except Exception as e:
         import logging
-        logging.error(f"Error fetching memory: {e}")
+        logging.warning(f"[Memory] Failed to fetch memory for agent {agent_id}: {e}")
         return []
+
 
 def _update_memory_task(agent_id: str, query: str, raw_llm_response: str):
     """
-    Background worker function to embed the chat and store it in Redis.
+    Background thread: stores one conversation turn in Redis.
+    Uses its own Redis connection (thread-safe, no shared state).
+    No Snowflake calls — no embeddings.
     """
     try:
-        redis_client = get_redis_client()
-        embedder = get_embedder()
-        key = f"agent_memory:{agent_id}"
-        
-        ts = int(time.time() * 1000)
-        
-        q_emb = embedder.embed_text(query)
-        a_emb = embedder.embed_text(raw_llm_response)
-        
-        q_obj = {
-            "role": "user",
-            "content": query,
-            "embedding": q_emb,
-            "timestamp": ts
+        # Each background thread gets its own Redis connection to avoid thread-safety issues
+        r = redis.Redis.from_url(REDIS_URL, decode_responses=True)
+        key = _make_key(agent_id)
+
+        # Truncate to keep tokens low — cap individual messages at 800 chars
+        user_content = query.strip()[:800]
+        ai_content = raw_llm_response.strip()[:800]
+
+        turn = {
+            "user": user_content,
+            "ai": ai_content,
+            "ts": int(time.time() * 1000)
         }
-        
-        a_obj = {
-            "role": "ai",
-            "content": raw_llm_response,
-            "embedding": a_emb,
-            "timestamp": ts + 1 # offset slightly to maintain order
-        }
-        
-        # Push to the left (index 0 is newest)
-        redis_client.lpush(key, json.dumps(a_obj), json.dumps(q_obj))
-        
-        # Trim to keep only the last 20 messages
-        redis_client.ltrim(key, 0, 19)
-        
+
+        # lpush prepends → index 0 = newest turn
+        r.lpush(key, json.dumps(turn))
+
+        # Keep only the last MAX_TURNS turns
+        r.ltrim(key, 0, MAX_TURNS - 1)
+
     except Exception as e:
         import logging
-        logging.error(f"Error updating memory in background: {e}")
+        logging.error(f"[Memory] Background memory update failed for agent {agent_id}: {e}")
 
 
 def update_redis_memory_background(agent_id: str, query: str, raw_llm_response: str):
     """
-    Spawns a detached background thread to handle embedding and Redis storage.
+    Fire-and-forget: spawns a daemon thread to persist the conversation turn.
+    Does NOT block the response path.
     """
-    if os.getenv("AGENT_MEMORY", "False").lower() != "true":
-        return
-        
-    if not agent_id:
+    if not _memory_enabled() or not agent_id:
         return
 
-    # True fire-and-forget
+    if not query or not raw_llm_response:
+        return
+
     thread = threading.Thread(
-        target=_update_memory_task, 
+        target=_update_memory_task,
         args=(agent_id, query, raw_llm_response),
         daemon=True
     )

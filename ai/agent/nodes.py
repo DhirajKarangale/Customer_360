@@ -8,20 +8,39 @@ from ai.agent.state import AgentState
 from ai.agent.tools import TOOLS
 from ai.utils.llm_utils import get_llm
 
-llm = get_llm('TRANSCRIPT')
+# Main agent LLM — handles reasoning, tool calls, and response generation
+agent_llm = get_llm('TRANSCRIPT')
+# Lightweight LLM for the HTML formatting pass only
+format_llm = get_llm('FORMAT')
 
 SYSTEM_PROMPT = """You are a helpful customer support assistant for an insurance and lending company.
 You have access to the following tools:
 1. `search_unstructured_interactions`: Search transcripts, chats, and emails for relevant context. Arguments: {"query": "string", "policy_id": "string (optional)", "customer_id": "string (optional)", "agent_id": "string (optional)"}
 2. `get_database_context`: Fetch structured customer, agent, or policy details from the database. Arguments: {"agent_id": "string (optional)", "policy_id": "string (optional)", "customer_id": "string (optional)"}
-3. `execute_sql_query`: Execute a raw PostgreSQL query to answer complex or aggregated questions. Tables available: customers, insurance_agents, policies, customer_interactions. Arguments: {"query": "string"}
+3. `execute_sql_query`: Execute a raw PostgreSQL query to answer complex or aggregated questions. Arguments: {"query": "string"}
 
-You MUST ALWAYS filter any SQL queries on the `policies`, `customers`, or `customer_interactions` tables by the Logged-In Agent ID specified in the [Current Session Context], UNLESS the user explicitly asks to query a different specific agent by name. Default to your own agent scope.
-If the user asks about a specific person's name, FIRST check if their name exactly matches the 'Logged-in Agent Name' or 'Active Customer Name' in the [Current Session Context]. If it matches, use the ID provided in the context directly! Do not look them up.
-IMPORTANT SQL RULE: Text fields in PostgreSQL (like 'status') are case-sensitive. When filtering by text in SQL (e.g. status='active'), you MUST use ILIKE instead of = (e.g. status ILIKE 'active') to ensure it matches 'Active', 'Pending', etc.
-If the name is NOT in the context, you must determine if that person is a customer or another insurance agent by checking both the `customers` and `insurance_agents` tables using the `get_database_context` tool. Do NOT blindly apply the Logged-In Agent ID filter if the person is another agent.
+═══ EXACT DATABASE SCHEMA (use ONLY these column names in SQL) ═══
+customers:          id (uuid), name, email, phone_number, date_of_birth, address, created_at
+insurance_agents:   id (uuid), name, email, phone_number, agency_name, license_number
+policies:           id (uuid), policy_number, customer_id (→ customers.id), agent_id (→ insurance_agents.id),
+                    policy_type, status, start_date, end_date, premium_amount, coverage_amount
+customer_interactions: id (uuid), customer_id (→ customers.id), agent_id (→ insurance_agents.id),
+                       policy_number, interaction_type, interaction_date
+agent_chats:        job_id, agent_id, customer_id, policy_id, query, message, status, send_time
+═══════════════════════════════════════════════════════════════════
 
-If you need to use a tool, you MUST output exactly a JSON block and nothing else, like this:
+RULES:
+- You MUST ALWAYS filter queries on `policies`, `customers`, or `customer_interactions` by the Logged-In Agent ID in [Current Session Context], UNLESS the user explicitly asks about a different specific agent.
+- If the user asks about a person's name, FIRST check if it matches 'Logged-in Agent Name' or 'Active Customer Name' in [Current Session Context]. If it matches, use that ID directly — do NOT look them up again.
+- SQL text fields (like `status`) are case-insensitive in practice but use ILIKE for safety: `status ILIKE 'active'`.
+- If a name is NOT in context, check both `customers` and `insurance_agents` tables using `get_database_context`.
+
+CRITICAL ANTI-LOOP RULES (enforce strictly):
+1. NEVER call the exact same tool with the exact same arguments more than once. If a tool already returned a result for given args, use that result — do NOT repeat the call.
+2. If a tool returns an error, try ONE alternative approach. If that also fails, give a final plain-text answer explaining what you tried.
+3. You have a maximum of 6 tool calls per response. After 6 calls, you MUST output a final plain-text answer immediately regardless of whether you have complete information.
+
+If you need to use a tool, output EXACTLY a JSON block and nothing else:
 ```json
 {
   "tool": "tool_name",
@@ -30,134 +49,179 @@ If you need to use a tool, you MUST output exactly a JSON block and nothing else
   }
 }
 ```
-If you have enough information to answer the user's query, output your final answer as plain text. DO NOT prefix your response with "Assistant:" or hallucinate "Tool Output:" or "Assistant (Tool Call):" text. Just output the final message directly.
-Always use the tools if you need to fetch policy details or agent information.
-When summarizing unstructured interactions (like emails or chats), ALWAYS include specific names, examples, or details from the retrieved context to make the answer as concrete as possible.
-CRITICAL: If a tool returns "No relevant context found" or an error, DO NOT call the exact same tool with the exact same arguments again. If you cannot find the information after trying, output a final plain text answer apologizing that the information could not be found.
+If you have enough information to answer, output plain text directly. DO NOT prefix with "Assistant:".
+When summarizing interactions, ALWAYS include specific names, examples, or details from the retrieved context.
 """
+
+
+
+def _resolve_names_from_state(state: AgentState) -> tuple[str, bool]:
+    """
+    Opens a SINGLE DB connection to resolve agent name, customer name, and
+    policy number from UUIDs in the state. Returns (context_string, has_context).
+    Significantly cheaper than opening 3 separate connections.
+    """
+    import ai.agent.state
+    from ai.agent.tools import AIDatabaseAccess
+
+    agent_uuid = state.get("insurance_agents_id")
+    cust_uuid = state.get("customers_id")
+    pol_uuid = state.get("policies_id")
+
+    if not agent_uuid and not cust_uuid and not pol_uuid:
+        return "", False
+
+    context_lines = []
+    has_context = False
+
+    db = AIDatabaseAccess()
+    try:
+        if agent_uuid:
+            try:
+                res = db.execute_query(
+                    f"SELECT name FROM insurance_agents WHERE id = '{agent_uuid}'"
+                )
+                lines = [l.strip() for l in res.splitlines() if l.strip() and not l.startswith('-')]
+                agent_name = lines[1] if len(lines) > 1 and lines[0].lower() == 'name' else "Unknown Agent"
+            except Exception:
+                agent_name = "Unknown Agent"
+            context_lines.append(f"- Logged-in Agent ID: {agent_uuid}")
+            context_lines.append(f"- Logged-in Agent Name: {agent_name}")
+            has_context = True
+            ai.agent.state.CURRENT_AGENT_ID = agent_uuid
+
+        if cust_uuid:
+            try:
+                res = db.execute_query(
+                    f"SELECT name FROM customers WHERE id = '{cust_uuid}'"
+                )
+                lines = [l.strip() for l in res.splitlines() if l.strip() and not l.startswith('-')]
+                cust_name = lines[1] if len(lines) > 1 and lines[0].lower() == 'name' else "Unknown Customer"
+            except Exception:
+                cust_name = "Unknown Customer"
+            context_lines.append(f"- Active Customer ID: {cust_uuid}")
+            context_lines.append(f"- Active Customer Name: {cust_name}")
+            has_context = True
+
+        if pol_uuid:
+            try:
+                res = db.execute_query(
+                    f"SELECT policy_number FROM policies WHERE id = '{pol_uuid}'"
+                )
+                lines = [l.strip() for l in res.splitlines() if l.strip() and not l.startswith('-')]
+                pol_number = lines[1] if len(lines) > 1 and lines[0].lower() == 'policy_number' else "Unknown Policy"
+            except Exception:
+                pol_number = "Unknown Policy"
+            context_lines.append(f"- Active Policy ID: {pol_uuid}")
+            context_lines.append(f"- Active Policy Number: {pol_number}")
+            has_context = True
+
+    finally:
+        db.close()
+
+    context_str = "\n[Current Session Context]\n" + "\n".join(context_lines) if context_lines else ""
+    return context_str, has_context
 
 
 def agent_node(state: AgentState):
     import ai.agent.state
+
     messages = state.get("messages", [])
-    
-    # Inject contextual IDs if they exist
-    context_str = "\n[Current Session Context]\n"
-    has_context = False
-    
-    # Reset it by default
+
+    # Reset current agent ID at the start of every node invocation
     ai.agent.state.CURRENT_AGENT_ID = None
-    
-    from ai.agent.restrictions import restriction_manager
-    if state.get("insurance_agents_id"):
-        agent_uuid = state['insurance_agents_id']
-        
-        # Resolve agent name to make the context more human-readable for the LLM
-        agent_name = "Unknown Agent"
-        from ai.agent.tools import AIDatabaseAccess
-        db = AIDatabaseAccess()
-        try:
-            res = db.execute_query(f"SELECT name FROM insurance_agents WHERE id = '{agent_uuid}'")
-            lines = [line.strip() for line in res.split('\n') if line.strip() and not line.startswith('-')]
-            if len(lines) > 1 and lines[0].lower() == 'name':
-                agent_name = lines[1]
-        except Exception:
-            pass
-        finally:
-            db.close()
-            
-        context_str += f"- Logged-in Agent ID: {agent_uuid}\n"
-        context_str += f"- Logged-in Agent Name: {agent_name}\n"
-        has_context = True
-        ai.agent.state.CURRENT_AGENT_ID = agent_uuid
-    if state.get("customers_id"):
-        cust_uuid = state['customers_id']
-        cust_name = "Unknown Customer"
-        from ai.agent.tools import AIDatabaseAccess
-        db = AIDatabaseAccess()
-        try:
-            res = db.execute_query(f"SELECT name FROM customers WHERE id = '{cust_uuid}'")
-            lines = [line.strip() for line in res.split('\n') if line.strip() and not line.startswith('-')]
-            if len(lines) > 1 and lines[0].lower() == 'name':
-                cust_name = lines[1]
-        except Exception:
-            pass
-        finally:
-            db.close()
-        context_str += f"- Active Customer ID: {cust_uuid}\n"
-        context_str += f"- Active Customer Name: {cust_name}\n"
-        has_context = True
-        
-    if state.get("policies_id"):
-        pol_uuid = state['policies_id']
-        pol_number = "Unknown Policy"
-        from ai.agent.tools import AIDatabaseAccess
-        db = AIDatabaseAccess()
-        try:
-            res = db.execute_query(f"SELECT policy_number FROM policies WHERE id = '{pol_uuid}'")
-            lines = [line.strip() for line in res.split('\n') if line.strip() and not line.startswith('-')]
-            if len(lines) > 1 and lines[0].lower() == 'policy_number':
-                pol_number = lines[1]
-        except Exception:
-            pass
-        finally:
-            db.close()
-        context_str += f"- Active Policy ID: {pol_uuid}\n"
-        context_str += f"- Active Policy Number: {pol_number}\n"
-        has_context = True
-        
+
+    # Resolve all context names using a SINGLE shared DB connection
+    context_str, has_context = _resolve_names_from_state(state)
+
     system_prompt_with_context = SYSTEM_PROMPT
     if has_context:
         system_prompt_with_context += context_str
-        
+
     conversation_history = system_prompt_with_context + "\n\nConversation History:\n"
+
+    # Count how many tool calls have already been made in this conversation turn,
+    # and collect (tool, args) pairs to detect duplicate calls.
+    tool_call_count = 0
+    seen_tool_calls: set = set()  # frozenset of (tool_name, sorted_args_items)
+
     for msg in messages:
         if isinstance(msg, HumanMessage):
             conversation_history += f"User: {msg.content}\n"
         elif isinstance(msg, AIMessage):
             if hasattr(msg, 'tool_calls') and msg.tool_calls:
-                conversation_history += f"Assistant (Tool Call): {msg.tool_calls[0]['name']} with args {msg.tool_calls[0]['args']}\n"
+                tc = msg.tool_calls[0]
+                tool_call_count += 1
+                seen_tool_calls.add((tc['name'], frozenset(str(v) for v in tc['args'].items())))
+                conversation_history += f"Assistant (Tool Call): {tc['name']} with args {tc['args']}\n"
             else:
                 conversation_history += f"Assistant: {msg.content}\n"
         elif isinstance(msg, ToolMessage) or msg.type == 'tool':
             conversation_history += f"Tool Output: {msg.content}\n"
-            
-    response_str = llm.invoke(conversation_history)
+
+    # Hard cap: force a final answer if the agent has already made MAX_TOOL_CALLS
+    MAX_TOOL_CALLS = 6
+    if tool_call_count >= MAX_TOOL_CALLS:
+        conversation_history += (
+            f"\n[SYSTEM] You have made {tool_call_count} tool calls. "
+            "You MUST now output a final plain-text answer immediately. No more tool calls allowed.\n"
+        )
+
+    response_str = agent_llm.invoke(conversation_history)
     print(f"=== LLM RAW RESPONSE ===\n{response_str}\n========================")
-    
+
+    # Guard: if Snowflake returns None for some reason, return a safe fallback
+    if not response_str:
+        return {"messages": [AIMessage(content="I'm sorry, I encountered an issue generating a response. Please try again.")]}
+
+    response_str = str(response_str).strip()
+
     # Check if the LLM decided to call a tool via JSON block
-    if "```json" in response_str:
+    if "```json" in response_str and tool_call_count < MAX_TOOL_CALLS:
         try:
             json_str = response_str.split("```json")[1].split("```")[0].strip()
             parsed = json.loads(json_str)
             tool_name = parsed.get("tool")
             args = parsed.get("args", {})
-            
+
+            # Deduplication: if this exact (tool, args) combo was already called,
+            # return a synthetic error to force the LLM to move on.
+            call_sig = (tool_name, frozenset(str(v) for v in args.items()))
+            if call_sig in seen_tool_calls:
+                return {"messages": [AIMessage(content=(
+                    f"[SYSTEM] You already called '{tool_name}' with these exact arguments and "
+                    "received a result. Do NOT repeat this call. Use the previous tool output "
+                    "to formulate your final answer now."
+                ))]}
+
             # Create a manual ToolCall so LangGraph's ToolNode can process it natively
             tool_call = {
                 "name": tool_name,
                 "args": args,
-                "id": "call_" + str(hash(response_str))[-8:].replace("-", "")
+                "id": "call_" + str(abs(hash(response_str)))[-8:]
             }
             return {"messages": [AIMessage(content="", tool_calls=[tool_call])]}
         except Exception as e:
-            # If JSON parsing fails, we pass the error back as a pseudo-tool response to force the LLM to fix it
+            # If JSON parsing fails, feed the error back so the LLM can correct itself
             return {"messages": [AIMessage(content=f"Error parsing JSON tool call: {e}. Please ensure you output strictly valid JSON inside markdown blocks if calling a tool.")]}
-            
+
     # If no tool call, it's the final answer
-    return {"messages": [AIMessage(content=response_str.strip())]}
+    return {"messages": [AIMessage(content=response_str)]}
+
 
 # The ToolNode automatically executes the tools requested via AIMessage.tool_calls
 tool_node = ToolNode(TOOLS)
+
 
 def should_continue(state: AgentState) -> Literal["tools", "format_text"]:
     """Determine whether to continue to tools or end the graph."""
     messages = state.get("messages", [])
     last_message = messages[-1]
-    
+
     if isinstance(last_message, AIMessage) and hasattr(last_message, 'tool_calls') and last_message.tool_calls:
         return "tools"
     return "format_text"
+
 
 FORMATTING_PROMPT = """You are a text formatter. Convert the following text into clean semantic HTML.
 Do NOT change, add, or remove any content, facts, or data. Only add HTML structure.
@@ -184,19 +248,24 @@ Text to format:
 {text}
 """
 
+
 def format_text_node(state: AgentState):
     messages = state.get("messages", [])
     if not messages:
         return {"messages": []}
-    
+
     last_message = messages[-1]
-    
+
     if os.getenv("ENABLE_TEXT_FORMAT") == "True" and isinstance(last_message, AIMessage) and last_message.content:
         prompt = FORMATTING_PROMPT.format(text=last_message.content)
-        formatted_content = llm.invoke(prompt)
-        
+        formatted_content = format_llm.invoke(prompt)
+
+        if not formatted_content:
+            # If formatting fails, just pass through the unformatted message
+            return {"messages": []}
+
         # Strip markdown code fences if the LLM wraps them
-        content = formatted_content.strip()
+        content = str(formatted_content).strip()
         if content.startswith("```html"):
             content = content[7:]
         elif content.startswith("```"):
@@ -204,8 +273,7 @@ def format_text_node(state: AgentState):
         if content.endswith("```"):
             content = content[:-3]
         content = content.strip()
-                
-        return {"messages": [AIMessage(content=content)]}
-        
-    return {"messages": []}
 
+        return {"messages": [AIMessage(content=content)]}
+
+    return {"messages": []}
