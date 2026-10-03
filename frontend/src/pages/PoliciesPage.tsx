@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from 'react';
-import { Search, Loader2, FileText, ShieldAlert, CalendarDays, ArrowRight, MessageSquare } from 'lucide-react';
+import { Search, FileText, ShieldAlert, CalendarDays, ArrowRight, MessageSquare } from 'lucide-react';
 import { useAuthStore } from '../store/useAuthStore';
 import { usePoliciesQuery } from '../api/policies';
 import { usePoliciesStore } from '../store/usePoliciesStore';

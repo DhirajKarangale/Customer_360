@@ -36,7 +36,7 @@ export interface PoliciesParams {
 export function usePoliciesQuery(params: PoliciesParams, enabled: boolean = true) {
   // Remove undefined or empty string params to clean up URL
   const cleanParams = Object.fromEntries(
-    Object.entries(params).filter(([_, v]) => v !== undefined && v !== '')
+    Object.entries(params).filter((entry) => entry[1] !== undefined && entry[1] !== '')
   );
 
   return useQuery({
