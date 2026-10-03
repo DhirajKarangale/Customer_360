@@ -63,6 +63,10 @@ def create_app() -> FastAPI:
     def health_check():
         return {"status": "ok", "app": settings.app_name}
 
+    @app.get("/", tags=["Health"])
+    def root_health_check():
+        return {"status": "ok", "message": f"Welcome to {settings.app_name} API"}
+
     return app
 
 app = create_app()
