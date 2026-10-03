@@ -29,27 +29,41 @@ def get_snowflake_conn(force_refresh=False):
             pass
     import sys
     try:
-        connect_kwargs = {
-            "user": SF_USER,
-            "account": SF_ACCOUNT,
-        }
-        if SF_PASSWORD:
-            connect_kwargs["password"] = SF_PASSWORD
-        if PRIVATE_KEY_PATH:
-            from cryptography.hazmat.primitives import serialization
-            from cryptography.hazmat.backends import default_backend
-            with open(PRIVATE_KEY_PATH, "rb") as key:
-                p_key = serialization.load_pem_private_key(
-                    key.read(),
-                    password=None,
-                    backend=default_backend()
+        # SPCS Native Auth
+        spcs_host = os.getenv("SNOWFLAKE_HOST")
+        if spcs_host and os.path.exists("/snowflake/session/token"):
+            with open("/snowflake/session/token", "r") as f:
+                token = f.read().strip()
+            
+            connect_kwargs = {
+                "host": spcs_host,
+                "account": SF_ACCOUNT,
+                "authenticator": "oauth",
+                "token": token,
+            }
+        else:
+            # Local / External Auth
+            connect_kwargs = {
+                "user": SF_USER,
+                "account": SF_ACCOUNT,
+            }
+            if SF_PASSWORD:
+                connect_kwargs["password"] = SF_PASSWORD
+            if PRIVATE_KEY_PATH:
+                from cryptography.hazmat.primitives import serialization
+                from cryptography.hazmat.backends import default_backend
+                with open(PRIVATE_KEY_PATH, "rb") as key:
+                    p_key = serialization.load_pem_private_key(
+                        key.read(),
+                        password=None,
+                        backend=default_backend()
+                    )
+                pkb = p_key.private_bytes(
+                    encoding=serialization.Encoding.DER,
+                    format=serialization.PrivateFormat.PKCS8,
+                    encryption_algorithm=serialization.NoEncryption()
                 )
-            pkb = p_key.private_bytes(
-                encoding=serialization.Encoding.DER,
-                format=serialization.PrivateFormat.PKCS8,
-                encryption_algorithm=serialization.NoEncryption()
-            )
-            connect_kwargs["private_key"] = pkb
+                connect_kwargs["private_key"] = pkb
 
         conn = snowflake.connector.connect(**connect_kwargs)
     except Exception as e:
