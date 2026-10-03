@@ -1,6 +1,5 @@
 import os
 from dotenv import load_dotenv
-
 _RAG_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(_RAG_DIR)
 _env_path = os.path.join(PROJECT_ROOT, ".env")

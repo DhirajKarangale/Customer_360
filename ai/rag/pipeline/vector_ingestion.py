@@ -8,12 +8,8 @@ from ai.rag.pipeline.faiss_store import VectorStoreManager
 from ai.rag.pipeline._utils import discover_json_files
 from ai.utils.sound_utils import play_sound
 import logging
-
 logger = logging.getLogger(__name__)
-
-
 class VectorIngestionPipeline:
-
     def __init__(
         self, embeddings_dir: Optional[str] = None, store_dir: Optional[str] = None
     ) -> None:
@@ -21,7 +17,6 @@ class VectorIngestionPipeline:
         self._vector_store = VectorStoreManager(
             store_dir or VECTOR_STORE_DIR, EMBEDDING_DIMENSION
         )
-
     def run(self) -> dict[str, Any]:
         logger.info("=" * 60)
         logger.info("Step C: Vector Store Ingestion")
@@ -77,7 +72,6 @@ class VectorIngestionPipeline:
         else:
             play_sound("success")
         return summary
-
     def _ingest_file(self, rel_path: str) -> Optional[int]:
         input_path = os.path.join(self._embeddings_dir, rel_path)
         try:
@@ -103,7 +97,6 @@ class VectorIngestionPipeline:
             return None
         self._vector_store.add_documents(embeddings, chunks, rel_path)
         return len(embeddings)
-
     @staticmethod
     def _build_summary(
         success: int,
@@ -119,7 +112,6 @@ class VectorIngestionPipeline:
             "total_vectors": total_vectors,
             "elapsed_seconds": round(elapsed, 1),
         }
-
     @staticmethod
     def _print_summary(summary: dict[str, Any]) -> None:
         logger.info("=" * 60)

@@ -1,27 +1,21 @@
 import os
 import sys
 import logging
-
 logger = logging.getLogger(__name__)
-
 sys.path.insert(
     0,
     os.path.dirname(
         os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     ),
 )
-
 from ai.utils.sf_auth import get_snowflake_conn
 from dotenv import load_dotenv
-
 env_path = os.path.join(
     os.path.dirname(os.path.dirname(os.path.dirname(__file__))), ".env"
 )
 if not os.path.exists(env_path):
     raise FileNotFoundError(f"Environment file not found at {env_path}")
 load_dotenv(env_path)
-
-
 def main():
     logger.info("Connecting to Snowflake...")
     try:
@@ -46,7 +40,5 @@ def main():
     finally:
         cursor.close()
         sf_conn.close()
-
-
 if __name__ == "__main__":
     main()

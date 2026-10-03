@@ -19,12 +19,8 @@ from ai.rag.pipeline.snowflake_embedder import EmbeddingManager
 from ai.rag.pipeline._utils import atomic_write_json, discover_json_files
 from ai.utils.sound_utils import play_sound
 import logging
-
 logger = logging.getLogger(__name__)
-
-
 class EmbeddingGenerationPipeline:
-
     def __init__(
         self,
         chunks_dir: Optional[str] = None,
@@ -38,7 +34,6 @@ class EmbeddingGenerationPipeline:
         self._output_dir = output_dir or EMBEDDINGS_DATA_DIR
         self._embedder = EmbeddingManager(EMBEDDING_MODEL, EMBEDDING_DIMENSION)
         self._override = override if override is not None else OVERRIDE_EMBEDDINGS
-
     def run(self) -> dict[str, Any]:
         logger.info("=" * 60)
         logger.info("Step B: Embedding Generation")
@@ -93,7 +88,6 @@ class EmbeddingGenerationPipeline:
             "total_embeddings": total_embeddings,
             "elapsed_seconds": round(elapsed, 1),
         }
-
     def _process_chunk_file(self, rel_path: str, output_path: str) -> Optional[int]:
         input_path = os.path.join(self._chunks_dir, rel_path)
         try:

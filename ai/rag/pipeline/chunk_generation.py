@@ -14,12 +14,8 @@ from ai.rag.pipeline.document_loader import DocumentLoader
 from ai.rag.pipeline._utils import atomic_write_json
 from ai.utils.sound_utils import play_sound
 import logging
-
 logger = logging.getLogger(__name__)
-
-
 class ChunkGenerationPipeline:
-
     def __init__(
         self,
         data_dir: Optional[str] = None,
@@ -30,7 +26,6 @@ class ChunkGenerationPipeline:
         self._chunker = ChunkManager(CHUNK_SIZE, CHUNK_OVERLAP)
         self._output_dir = output_dir or CHUNKS_DATA_DIR
         self._override = override if override is not None else OVERRIDE_CHUNKS
-
     def run(self) -> dict[str, Any]:
         logger.info("=" * 60)
         logger.info("Step A: Chunk Generation")
@@ -83,7 +78,6 @@ class ChunkGenerationPipeline:
             "total_chunks": total_chunks,
             "elapsed_seconds": round(elapsed, 1),
         }
-
     def _process_document(self, doc_path: str, output_path: str) -> Optional[int]:
         doc = self._loader.load_document(doc_path)
         if doc is None:

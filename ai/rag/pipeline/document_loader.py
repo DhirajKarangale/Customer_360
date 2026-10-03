@@ -3,15 +3,10 @@ import json
 import os
 from typing import Any, Optional
 import logging
-
 logger = logging.getLogger(__name__)
-
-
 class DocumentLoader:
-
     def __init__(self, data_dir: str) -> None:
         self._data_dir = data_dir
-
     def discover_documents(self) -> list[str]:
         documents: list[str] = []
         if not os.path.exists(self._data_dir):
@@ -26,7 +21,6 @@ class DocumentLoader:
                     continue
                 documents.append(os.path.join(policy_name, filename))
         return documents
-
     def load_document(self, rel_path: str) -> Optional[dict[str, Any]]:
         full_path = os.path.join(self._data_dir, rel_path)
         try:

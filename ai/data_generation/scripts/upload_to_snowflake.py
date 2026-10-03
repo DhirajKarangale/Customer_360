@@ -2,20 +2,16 @@ import os
 import sys
 import threading
 import logging
-
 logger = logging.getLogger(__name__)
-
 sys.path.insert(
     0,
     os.path.dirname(
         os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     ),
 )
-
 import concurrent.futures
 from ai.utils.sf_auth import get_snowflake_conn
 from dotenv import load_dotenv
-
 OVERRIDE_DUPLICATE_FILES = False
 MAX_WORKERS = 8
 env_path = os.path.join(
@@ -28,8 +24,6 @@ stats_lock = threading.Lock()
 upload_count = 0
 skip_count = 0
 override_count = 0
-
-
 def process_file(file_info, sf_conn, stage_name):
     global upload_count, skip_count, override_count
     local_path, stage_relative_path, folder, policy_num, is_duplicate = file_info
@@ -58,8 +52,6 @@ def process_file(file_info, sf_conn, stage_name):
         logger.info(f"  [ERROR] Failed to upload {local_path}: {e}")
     finally:
         cursor.close()
-
-
 def main():
     logger.info("Connecting to Snowflake...")
     try:
@@ -135,7 +127,5 @@ def main():
     logger.info(f"Duplicate files ignored (skipped): {skip_count}")
     logger.info(f"Total files in Snowflake after upload: {total_files_after_upload}")
     logger.info("Upload process complete!")
-
-
 if __name__ == "__main__":
     main()

@@ -1,12 +1,9 @@
 import psycopg2
 import psycopg2.extras
 from typing import Optional, Dict, Any
-
-
 class AgentRepository:
     def __init__(self, conn):
         self.conn = conn
-
     def get_agent_by_email(self, email: str) -> Optional[Dict[str, Any]]:
         cursor = self.conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
         try:
@@ -17,7 +14,6 @@ class AgentRepository:
             return cursor.fetchone()
         finally:
             cursor.close()
-
     def get_agent_by_id(self, agent_id: str) -> Optional[Dict[str, Any]]:
         cursor = self.conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
         try:
@@ -28,7 +24,6 @@ class AgentRepository:
             return cursor.fetchone()
         finally:
             cursor.close()
-
     def update_suggestions(self, agent_id: str, action_text: str):
         cursor = self.conn.cursor()
         try:

@@ -6,16 +6,13 @@ import sys
 import time
 import traceback
 import logging
-
 logger = logging.getLogger(__name__)
-
 sys.path.insert(
     0,
     os.path.dirname(
         os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     ),
 )
-
 from ai.utils.sound_utils import play_sound
 from langchain_core.output_parsers import StrOutputParser
 from ai.utils.prompts import (
@@ -26,7 +23,6 @@ from ai.utils.prompts import (
 from ai.utils.llm_utils import get_llm
 import psycopg2
 from dotenv import load_dotenv
-
 START_POLICY = 1
 END_POLICY = 200
 OVERRIDE = False
@@ -52,14 +48,10 @@ PG_PORT = os.getenv("POSTGRES_PORT")
 PG_NAME = os.getenv("POSTGRES_DB")
 PG_USER = os.getenv("POSTGRES_USER")
 PG_PASS = os.getenv("POSTGRES_PASSWORD")
-
-
 def get_postgres_conn():
     return psycopg2.connect(
         host=PG_HOST, port=PG_PORT, dbname=PG_NAME, user=PG_USER, password=PG_PASS
     )
-
-
 def fetch_all_policy_data():
     conn = get_postgres_conn()
     cursor = conn.cursor()
@@ -70,8 +62,6 @@ def fetch_all_policy_data():
     cursor.close()
     conn.close()
     return data
-
-
 def generate_interaction_sequence(policy):
     num_interactions = random.randint(MIN_INTERACTIONS, MAX_INTERACTIONS)
     prompt = SEQUENCE_GENERATION_PROMPT.format(
@@ -118,8 +108,6 @@ def generate_interaction_sequence(policy):
         "Chat",
     ]
     return fallback[:num_interactions]
-
-
 def generate_interaction_content(policy, sequence, policy_dir):
     context = ""
     results_to_save = []
@@ -192,8 +180,6 @@ def generate_interaction_content(policy, sequence, policy_dir):
             )
             return None
     return results_to_save
-
-
 def process_policy(index, policy, total_in_batch, output_dir):
     p_num = policy["policy_number"]
     logger.info(f"\nProcessing Policy {index + 1}/{total_in_batch}: {p_num}")
@@ -214,8 +200,6 @@ def process_policy(index, policy, total_in_batch, output_dir):
                 shutil.rmtree(policy_dir)
             except Exception as e:
                 pass
-
-
 def main():
     logger.info("Fetching policy data from PostgreSQL...")
     try:
@@ -270,7 +254,5 @@ def main():
     if pipeline_successful and total_to_process > 0:
         logger.info("  -> All policies processed! Playing success chime...")
         play_sound("success")
-
-
 if __name__ == "__main__":
     main()

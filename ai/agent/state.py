@@ -1,10 +1,7 @@
 from typing import TypedDict, Annotated, Sequence
 from langchain_core.messages import BaseMessage
 from langgraph.graph.message import add_messages
-
 CURRENT_AGENT_ID = None
-
-
 class AgentState(TypedDict):
     messages: Annotated[Sequence[BaseMessage], add_messages]
     customers_id: str | None

@@ -11,11 +11,8 @@ from backend.api.dependencies import (
     verify_jwt,
 )
 from backend.utils.logger import get_logger
-
 logger = get_logger(__name__)
 router = APIRouter(prefix="/llm", tags=["LLM Operations"])
-
-
 @router.post("/generate", response_model=LLMResponse)
 def generate_llm_response(
     request: LLMRequest,
@@ -25,7 +22,6 @@ def generate_llm_response(
 ):
     import time
     logger.info(f"Received LLM generation request for job_id: {request.job_id}")
-
     response = llm_service.submit_job(request)
     if not (request.job_id and request.job_id.startswith("suggestion_")):
         agent_id = token_data.get("insurance_agent_id")
@@ -39,8 +35,6 @@ def generate_llm_response(
             send_time,
         )
     return response
-
-
 @router.post("/callback")
 def llm_callback(
     request: CallbackRequest,
@@ -48,16 +42,13 @@ def llm_callback(
     agent_service: AgentService = Depends(get_agent_service),
     chat_service: ChatService = Depends(get_chat_service),
 ):
-
     logger.info(f"Received callback from AI for job_id: {request.job_id}")
     if request.insurance_agents_id:
         message_payload = {"job_id": request.job_id, "message": request.message}
         logger.info(f"Sending data to frontend via SSE for agent_id: {request.insurance_agents_id}")
         sse_manager.publish(request.insurance_agents_id, message_payload)
-
     if not (request.job_id and request.job_id.startswith("suggestion_")):
         chat_service.update_chat(request.job_id, request.message)
-
     if (
         request.job_id
         and request.job_id.startswith("suggestion_")
@@ -70,7 +61,6 @@ def llm_callback(
             "error:",
         ]
         is_error = any(kw in request.message.lower() for kw in error_keywords)
-
         if not is_error:
             agent_service.agent_repo.update_suggestions(
                 request.insurance_agents_id, request.message
@@ -79,5 +69,4 @@ def llm_callback(
             logger.warning(
                 f"LLM Error detected for suggestions. Not saving to DB: {request.message}"
             )
-
     return {"status": "success"}

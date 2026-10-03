@@ -2,27 +2,21 @@ import json
 import os
 import sys
 import logging
-
 logger = logging.getLogger(__name__)
-
 sys.path.insert(
     0,
     os.path.dirname(
         os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     ),
 )
-
 import psycopg2
 from dotenv import load_dotenv
-
 env_path = os.path.join(
     os.path.dirname(os.path.dirname(os.path.dirname(__file__))), ".env"
 )
 if not os.path.exists(env_path):
     raise FileNotFoundError(f"Environment file not found at {env_path}")
 load_dotenv(env_path)
-
-
 def get_postgres_conn():
     return psycopg2.connect(
         host=os.getenv("POSTGRES_HOST"),
@@ -31,8 +25,6 @@ def get_postgres_conn():
         user=os.getenv("POSTGRES_USER"),
         password=os.getenv("POSTGRES_PASSWORD"),
     )
-
-
 def main():
     backup_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "db_backup")
     schema_file = os.path.join(
@@ -45,18 +37,15 @@ def main():
     try:
         conn = get_postgres_conn()
         cursor = conn.cursor()
-
         logger.info("Dropping existing tables to prepare for restore (CASCADE)...")
         cursor.execute(
             "DROP TABLE IF EXISTS agent_chats, customer_interactions, policies, insurance_agents, customers CASCADE"
         )
-
         logger.info(f"Recreating tables and indexes from {schema_file}...")
         with open(schema_file, "r", encoding="utf-8") as f:
             schema_sql = f.read()
             cursor.execute(schema_sql)
         conn.commit()
-
         tables_order = [
             "customers",
             "insurance_agents",
@@ -77,14 +66,12 @@ def main():
                 logger.info(f"No data to insert for {table}.")
                 continue
             logger.info(f"Restoring {len(rows)} rows to {table}...")
-
             columns = rows[0].keys()
             col_names = ", ".join(columns)
             placeholders = ", ".join(["%s"] * len(columns))
             insert_query = f"INSERT INTO {table} ({col_names}) VALUES ({placeholders})"
             data_tuples = [tuple(row[col] for col in columns) for row in rows]
             from psycopg2.extras import execute_batch
-
             execute_batch(cursor, insert_query, data_tuples)
             conn.commit()
         cursor.close()
@@ -92,7 +79,5 @@ def main():
         logger.info("Restore completed successfully!")
     except Exception as e:
         logger.info(f"Error during restore: {e}")
-
-
 if __name__ == "__main__":
     main()

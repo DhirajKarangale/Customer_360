@@ -2,7 +2,6 @@ import os
 import snowflake.connector
 from dotenv import load_dotenv
 import logging
-
 logger = logging.getLogger(__name__)
 env_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), ".env")
 if os.path.exists(env_path):
@@ -15,8 +14,6 @@ SF_DATABASE = os.getenv("SNOWFLAKE_DATABASE")
 SF_SCHEMA = os.getenv("SNOWFLAKE_SCHEMA")
 PRIVATE_KEY_PATH = os.getenv("SNOWFLAKE_PRIVATE_KEY_PATH")
 _GLOBAL_SF_CONN = None
-
-
 def get_snowflake_conn(force_refresh=False):
     global _GLOBAL_SF_CONN
     if not force_refresh and _GLOBAL_SF_CONN is not None:
@@ -31,12 +28,10 @@ def get_snowflake_conn(force_refresh=False):
         except Exception:
             pass
     try:
-
         spcs_host = os.getenv("SNOWFLAKE_HOST")
         if spcs_host and os.path.exists("/snowflake/session/token"):
             with open("/snowflake/session/token", "r") as f:
                 token = f.read().strip()
-
             connect_kwargs = {
                 "host": spcs_host,
                 "account": SF_ACCOUNT,
@@ -44,7 +39,6 @@ def get_snowflake_conn(force_refresh=False):
                 "token": token,
             }
         else:
-
             connect_kwargs = {
                 "user": SF_USER,
                 "account": SF_ACCOUNT,
@@ -54,7 +48,6 @@ def get_snowflake_conn(force_refresh=False):
             if PRIVATE_KEY_PATH:
                 from cryptography.hazmat.primitives import serialization
                 from cryptography.hazmat.backends import default_backend
-
                 with open(PRIVATE_KEY_PATH, "rb") as key:
                     p_key = serialization.load_pem_private_key(
                         key.read(), password=None, backend=default_backend()
@@ -65,7 +58,6 @@ def get_snowflake_conn(force_refresh=False):
                     encryption_algorithm=serialization.NoEncryption(),
                 )
                 connect_kwargs["private_key"] = pkb
-
         conn = snowflake.connector.connect(**connect_kwargs)
     except Exception as e:
         error_str = str(e).lower()

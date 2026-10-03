@@ -2,12 +2,9 @@ import os
 import json
 import random
 import logging
-
 logger = logging.getLogger(__name__)
-
 _MESSAGES = None
 _MESSAGES_FILE = os.path.join(os.path.dirname(__file__), "messages.json")
-
 def _load_messages():
     global _MESSAGES
     if _MESSAGES is None:
@@ -17,7 +14,6 @@ def _load_messages():
         except Exception as e:
             logger.error(f"Failed to load messages.json: {e}")
             _MESSAGES = {}
-
 def get_message(message_type: str, default: str = "", **kwargs) -> str:
     """
     Returns a random message from the messages.json file for the given type.
@@ -29,7 +25,6 @@ def get_message(message_type: str, default: str = "", **kwargs) -> str:
         msg = default
     else:
         msg = random.choice(options)
-    
     if kwargs:
         try:
             return msg.format(**kwargs)

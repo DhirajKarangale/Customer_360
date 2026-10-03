@@ -1,15 +1,11 @@
 from __future__ import annotations
 from typing import Any
-
-
 class ChunkManager:
-
     def __init__(self, chunk_size: int, chunk_overlap: int) -> None:
         if chunk_overlap >= chunk_size:
             raise ValueError("chunk_overlap must be less than chunk_size")
         self._chunk_size = chunk_size
         self._chunk_overlap = chunk_overlap
-
     def chunk_document(
         self, content: str, metadata: dict[str, Any]
     ) -> list[dict[str, Any]]:
@@ -36,7 +32,6 @@ class ChunkManager:
             }
             for i, chunk in enumerate(raw_chunks)
         ]
-
     def _split_text(self, text: str) -> list[str]:
         chunks: list[str] = []
         step = self._chunk_size - self._chunk_overlap

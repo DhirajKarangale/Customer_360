@@ -5,16 +5,13 @@ import shutil
 import sys
 import time
 import logging
-
 logger = logging.getLogger(__name__)
-
 sys.path.insert(
     0,
     os.path.dirname(
         os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     ),
 )
-
 import concurrent.futures
 from ai.utils.sound_utils import play_sound
 from langchain_core.output_parsers import StrOutputParser
@@ -22,7 +19,6 @@ from langchain_core.prompts import PromptTemplate
 from ai.utils.prompts import CLEANING_PROMPT, STRUCTURING_PROMPT
 from ai.utils.llm_utils import get_llm
 from dotenv import load_dotenv
-
 MAX_WORKERS = 5
 TEST_MODE = False
 OVERWRITE_EXISTING = False
@@ -32,8 +28,6 @@ env_path = os.path.join(
 if not os.path.exists(env_path):
     raise FileNotFoundError(f"Environment file not found at {env_path}")
 load_dotenv(env_path)
-
-
 def clean_text_locally(raw_text):
     lines = raw_text.split("\n")
     cleaned_lines = []
@@ -48,8 +42,6 @@ def clean_text_locally(raw_text):
         if line:
             cleaned_lines.append(line)
     return "\n".join(cleaned_lines)
-
-
 def semantic_clean_with_llm(text):
     prompt = PromptTemplate.from_template(CLEANING_PROMPT)
     llm = get_llm("CLEANING")
@@ -67,8 +59,6 @@ def semantic_clean_with_llm(text):
     except Exception as e:
         logger.info(f"Error in semantic cleaning chain: {e}")
     return text
-
-
 def structure_with_llm(raw_text, cleaned_text, file_type, policy_num):
     prompt = PromptTemplate.from_template(STRUCTURING_PROMPT)
     llm = get_llm("STRUCTURING")
@@ -95,8 +85,6 @@ def structure_with_llm(raw_text, cleaned_text, file_type, policy_num):
     except Exception as e:
         logger.info(f"Error in structuring chain: {e}")
     return None
-
-
 def process_file(raw_filepath, cleaned_filepath, filename, policy_num):
     logger.info(f"    Processing file: {filename}")
     with open(raw_filepath, "r", encoding="utf-8") as f:
@@ -112,8 +100,6 @@ def process_file(raw_filepath, cleaned_filepath, filename, policy_num):
     else:
         logger.info(f"    Failed to process {filename}")
         return None
-
-
 def process_policy_folder(policy_num, raw_policy_dir, cleaned_policy_dir):
     logger.info(f"  Starting cleaning for Policy: {policy_num}")
     files = [
@@ -164,8 +150,6 @@ def process_policy_folder(policy_num, raw_policy_dir, cleaned_policy_dir):
                 f.write(structured_json)
             logger.info(f"    Saved cleaned JSON to {expected_json_path}")
     logger.info(f"  Finished cleaning for Policy: {policy_num}")
-
-
 def main():
     base_dir = os.path.dirname(os.path.dirname(__file__))
     raw_dir = os.path.join(base_dir, "interactions_data", "raw")
@@ -223,7 +207,5 @@ def main():
         play_sound("success")
     else:
         play_sound("error")
-
-
 if __name__ == "__main__":
     main()

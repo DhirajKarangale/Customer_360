@@ -2,27 +2,21 @@ import json
 import os
 import sys
 import logging
-
 logger = logging.getLogger(__name__)
-
 sys.path.insert(
     0,
     os.path.dirname(
         os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     ),
 )
-
 import psycopg2
 from dotenv import load_dotenv
-
 env_path = os.path.join(
     os.path.dirname(os.path.dirname(os.path.dirname(__file__))), ".env"
 )
 if not os.path.exists(env_path):
     raise FileNotFoundError(f"Environment file not found at {env_path}")
 load_dotenv(env_path)
-
-
 def get_postgres_conn():
     return psycopg2.connect(
         host=os.getenv("POSTGRES_HOST"),
@@ -31,18 +25,14 @@ def get_postgres_conn():
         user=os.getenv("POSTGRES_USER"),
         password=os.getenv("POSTGRES_PASSWORD"),
     )
-
-
 def main():
     conn = get_postgres_conn()
     cursor = conn.cursor()
-
     logger.info("Fetching policy mappings from DB...")
     cursor.execute(
         "SELECT policy_number, customer_id::text, agent_id::text FROM policies"
     )
     policy_mapping = {row[0]: (row[1], row[2]) for row in cursor.fetchall()}
-
     logger.info("Deleting existing customer_interactions...")
     cursor.execute("DELETE FROM customer_interactions")
     conn.commit()
@@ -73,9 +63,7 @@ def main():
                 except Exception:
                     continue
             metadata = data.get("metadata", {})
-
             policy_number = policy_num
-
             if policy_number not in policy_mapping:
                 continue
             customer_id, agent_id = policy_mapping[policy_number]
@@ -100,7 +88,6 @@ def main():
                 )
             )
     logger.info(f"Found {len(interactions_to_insert)} valid interactions to insert.")
-
     insert_query = """
         INSERT INTO customer_interactions (
             customer_id, agent_id, policy_number, 
@@ -110,7 +97,6 @@ def main():
     """
     try:
         from psycopg2.extras import execute_batch
-
         execute_batch(cursor, insert_query, interactions_to_insert)
         conn.commit()
         logger.info("Successfully repopulated customer_interactions.")
@@ -119,7 +105,5 @@ def main():
         conn.rollback()
     cursor.close()
     conn.close()
-
-
 if __name__ == "__main__":
     main()

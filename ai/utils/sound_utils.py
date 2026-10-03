@@ -2,19 +2,15 @@ import sys
 import os
 import time
 import logging
-
 logger = logging.getLogger(__name__)
 try:
     import winsound
 except ImportError:
     winsound = None
-
-
 def _mac_play_beeps(beeps_with_pauses):
     try:
         import math
         import wave
-
         sample_rate = 44100
         wave_file = "/tmp/mac_beep.wav"
         with wave.open(wave_file, "w") as wf:
@@ -37,8 +33,6 @@ def _mac_play_beeps(beeps_with_pauses):
         os.remove(wave_file)
     except Exception:
         pass
-
-
 def _play_error_windows():
     try:
         if winsound:
@@ -49,8 +43,6 @@ def _play_error_windows():
             logger.info("\x07")
     except:
         logger.info("\x07")
-
-
 def _play_success_windows():
     try:
         if winsound:
@@ -62,12 +54,8 @@ def _play_success_windows():
             winsound.Beep(784, 600)
     except:
         pass
-
-
 def _play_error_mac():
     _mac_play_beeps([(3000, 1000, 50)] * 7)
-
-
 def _play_success_mac():
     _mac_play_beeps(
         [
@@ -79,8 +67,6 @@ def _play_success_mac():
             (784, 600, 0),
         ]
     )
-
-
 def _play_error():
     if sys.platform == "win32":
         _play_error_windows()
@@ -88,8 +74,6 @@ def _play_error():
         _play_error_mac()
     else:
         logger.info("\x07")
-
-
 def _play_success():
     if sys.platform == "win32":
         _play_success_windows()
@@ -97,8 +81,6 @@ def _play_success():
         _play_success_mac()
     else:
         pass
-
-
 def play_sound(status: str):
     if status.lower() == "success":
         _play_success()

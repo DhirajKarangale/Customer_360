@@ -3,10 +3,7 @@ from typing import Generator
 import psycopg2
 import psycopg2.extensions
 from backend.utils.logger import get_logger
-
 logger = get_logger(__name__)
-
-
 def get_db_connection() -> Generator[psycopg2.extensions.connection, None, None]:
     """Dependency that provides a postgres connection"""
     conn = None

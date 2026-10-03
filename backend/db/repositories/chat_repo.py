@@ -1,13 +1,9 @@
 import psycopg2.extensions
 from backend.utils.logger import get_logger
-
 logger = get_logger(__name__)
-
-
 class ChatRepository:
     def __init__(self, db: psycopg2.extensions.connection):
         self.db = db
-
     def add_chat(
         self,
         job_id,
@@ -39,7 +35,6 @@ class ChatRepository:
         except Exception as e:
             logger.error(f"Error adding chat: {e}")
             self.db.rollback()
-
     def update_chat_message(self, job_id, message, status="completed"):
         try:
             with self.db.cursor() as cursor:
@@ -55,7 +50,6 @@ class ChatRepository:
         except Exception as e:
             logger.error(f"Error updating chat: {e}")
             self.db.rollback()
-
     def get_all_chats(self, agent_id):
         try:
             with self.db.cursor() as cursor:
@@ -74,7 +68,6 @@ class ChatRepository:
         except Exception as e:
             logger.error(f"Error fetching all chats: {e}")
             return []
-
     def delete_chats_for_agent(self, agent_id):
         try:
             with self.db.cursor() as cursor:

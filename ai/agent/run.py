@@ -2,10 +2,7 @@ from ai.agent.graph import agent_app
 from langchain_core.messages import HumanMessage
 import logging
 from ai.utils.message_manager import get_message
-
 logger = logging.getLogger(__name__)
-
-
 def invoke_agent(
     user_query: str,
     customers_id: str = None,
@@ -21,30 +18,23 @@ def invoke_agent(
     if memory_messages:
         messages.extend(memory_messages)
     messages.append(HumanMessage(content=user_query))
-
     inputs = {
         "messages": messages,
         "customers_id": customers_id,
         "insurance_agents_id": insurance_agents_id,
         "policies_id": policies_id,
     }
-
     try:
-
         final_state = agent_app.invoke(inputs, {"recursion_limit": 25})
-
         messages = final_state["messages"]
         import os
-
         if os.getenv("ENABLE_TEXT_FORMAT") == "True" and len(messages) >= 2:
             formatted_message = messages[-1].content
             raw_message = messages[-2].content
         else:
             formatted_message = messages[-1].content
             raw_message = messages[-1].content
-
         return formatted_message, raw_message
-
     except Exception as e:
         logger.error(f"Agent execution failed: {e}")
         return (

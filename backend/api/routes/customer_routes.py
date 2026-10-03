@@ -4,10 +4,7 @@ from backend.schemas.customer import CustomerResponse
 from backend.schemas.pagination import PaginatedResponse
 from backend.services.customer_service import CustomerService
 from backend.api.dependencies import get_customer_service
-
 router = APIRouter(prefix="/customers", tags=["Customers"])
-
-
 @router.get("/", response_model=PaginatedResponse[CustomerResponse])
 def get_customers(
     insurance_agent_id: str = Query(..., description="The ID of the insurance agent"),

@@ -6,27 +6,21 @@ import faiss
 import numpy as np
 from ai.rag.pipeline.metadata_store import MetadataStore
 import logging
-
 logger = logging.getLogger(__name__)
-
-
 class VectorStoreManager:
     _FAISS_INDEX_FILE = "faiss.index"
     _METADATA_FILE = "metadata.pkl"
     _REGISTRY_FILE = "registry.json"
-
     def __init__(self, store_dir: str, dimension: int) -> None:
         self._store_dir = store_dir
         self._dimension = dimension
         self._index: Optional[faiss.IndexFlatIP] = None
         self._metadata = MetadataStore(os.path.join(store_dir, self._METADATA_FILE))
         self._registry: dict[str, dict[str, Any]] = {}
-
     def initialize(self) -> None:
         os.makedirs(self._store_dir, exist_ok=True)
         if not self._load_existing():
             self._index = faiss.IndexFlatIP(self._dimension)
-
     def save(self) -> None:
         os.makedirs(self._store_dir, exist_ok=True)
         faiss.write_index(
@@ -35,10 +29,8 @@ class VectorStoreManager:
         self._metadata.save()
         with open(os.path.join(self._store_dir, self._REGISTRY_FILE), "w") as f:
             json.dump(self._registry, f, indent=2)
-
     def load(self) -> bool:
         return self._load_existing()
-
     def add_documents(
         self,
         embeddings: list[list[float]],
@@ -58,7 +50,6 @@ class VectorStoreManager:
             "start_index": start_index,
             "num_chunks": len(chunks),
         }
-
     def similarity_search(
         self, query_embedding: list[float], top_k: int, score_threshold: float
     ) -> list[dict[str, Any]]:
@@ -78,7 +69,6 @@ class VectorStoreManager:
             if entry is not None:
                 result = dict(entry)
                 result["score"] = float(score)
-
                 for doc_id, info in self._registry.items():
                     if (
                         info["start_index"]
@@ -87,19 +77,14 @@ class VectorStoreManager:
                     ):
                         result["source_document"] = doc_id
                         break
-
                 results.append(result)
         return results
-
     def get_document_count(self) -> int:
         if self._index is None:
             return 0
         return self._index.ntotal
-
     def get_ingested_document_ids(self) -> set[str]:
         return set(self._registry.keys())
-
-
     def _load_existing(self) -> bool:
         index_path = os.path.join(self._store_dir, self._FAISS_INDEX_FILE)
         registry_path = os.path.join(self._store_dir, self._REGISTRY_FILE)

@@ -5,31 +5,24 @@ import json
 import os
 import sys
 import logging
-
 logger = logging.getLogger(__name__)
-
 sys.path.insert(
     0,
     os.path.dirname(
         os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     ),
 )
-
 import psycopg2
 from psycopg2.extras import RealDictCursor
 from dotenv import load_dotenv
-
 env_path = os.path.join(
     os.path.dirname(os.path.dirname(os.path.dirname(__file__))), ".env"
 )
 if not os.path.exists(env_path):
     raise FileNotFoundError(f"Environment file not found at {env_path}")
 load_dotenv(env_path)
-
-
 class CustomJSONEncoder(json.JSONEncoder):
     """Custom encoder to handle UUID, datetime, date, and Decimal serialization."""
-
     def default(self, obj):
         if isinstance(obj, UUID):
             return str(obj)
@@ -38,8 +31,6 @@ class CustomJSONEncoder(json.JSONEncoder):
         elif isinstance(obj, Decimal):
             return float(obj)
         return super().default(obj)
-
-
 def get_postgres_conn():
     return psycopg2.connect(
         host=os.getenv("POSTGRES_HOST"),
@@ -48,8 +39,6 @@ def get_postgres_conn():
         user=os.getenv("POSTGRES_USER"),
         password=os.getenv("POSTGRES_PASSWORD"),
     )
-
-
 def main():
     tables = ["customers", "insurance_agents", "policies", "customer_interactions", "agent_chats"]
     backup_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "db_backup")
@@ -71,7 +60,5 @@ def main():
         logger.info(f"Backup completed successfully! Files are saved in: {backup_dir}")
     except Exception as e:
         logger.info(f"Error during backup: {e}")
-
-
 if __name__ == "__main__":
     main()

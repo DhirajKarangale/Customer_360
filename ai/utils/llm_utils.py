@@ -4,51 +4,27 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_groq import ChatGroq
 from ai.utils.sf_auth import get_snowflake_conn
 import logging
-
 logger = logging.getLogger(__name__)
 LLM_PROVIDERS_LIST = ["gemini", "groq", "snowflake"]
-
-
 SNOWFLAKE_MODELS = {
-    "TRANSCRIPT": [
-        "claude-sonnet-4-5",
-        "llama4-maverick",
-        "llama3.3-70b",
-        "llama3.1-70b",
-    ],
+    "TRANSCRIPT": [ "claude-sonnet-4-5", "llama4-maverick", "llama3.3-70b", "llama3.1-70b",],
     "RESTRICTION": ["llama4-maverick", "llama4-scout", "llama3.3-70b", "llama3.1-8b"],
     "FORMAT": ["gemini-2.5-flash", "llama4-maverick", "llama4-scout", "llama3.1-8b"],
     "SEQUENCE": ["llama4-maverick", "llama4-scout", "llama3.3-70b", "llama3.1-8b"],
     "SUMMARY": ["gemini-2.5-flash", "llama4-maverick", "llama4-scout", "llama3.1-8b"],
     "CLEANING": ["llama4-maverick", "llama3.3-70b", "llama3.1-70b"],
-    "STRUCTURING": [
-        "claude-sonnet-4-5",
-        "llama4-maverick",
-        "llama3.3-70b",
-        "llama3.1-70b",
-    ],
+    "STRUCTURING": ["claude-sonnet-4-5", "llama4-maverick", "llama3.3-70b", "llama3.1-70b",],
     "EMBEDDING": ["snowflake-arctic-embed-l-v2.0"],
 }
-GEMINI_MODELS = [
-    "gemini-3.5-flash-lite",
-    "gemini-3.1-pro-preview",
-    "gemini-3.5-flash",
-    "gemini-3.6-flash",
-    "gemini-3.7-flash",
-    "gemini-3.8-flash",
-]
+GEMINI_MODELS = ["gemini-3.5-flash-lite", "gemini-3.1-pro-preview", "gemini-3.5-flash", "gemini-3.6-flash", "gemini-3.7-flash", "gemini-3.8-flash",]
 GROQ_MODELS = ["openai/gpt-oss-120b", "qwen/qwen3.8-27b", "openai/gpt-oss-20b"]
 GEMINI_MODEL_INDEX = 0
 GROQ_MODEL_INDEX = 0
 CORTEX_CALL_COUNT = 0
-
-
 def _parse_keys(env_var_name: str) -> list:
     val = os.getenv(env_var_name)
     cleaned = val.replace("\n", ",").replace('"', "").replace("'", "")
     return [k.strip() for k in cleaned.split(",") if k.strip()]
-
-
 def _call_snowflake_direct(prompt_str: str, model_name: str) -> str:
     global CORTEX_CALL_COUNT
     conn_to_use = get_snowflake_conn()
@@ -85,8 +61,6 @@ def _call_snowflake_direct(prompt_str: str, model_name: str) -> str:
             cursor.close()
         except Exception:
             pass
-
-
 def _extract_prompt_str(prompt) -> str:
     if hasattr(prompt, "to_string"):
         return prompt.to_string()
@@ -96,23 +70,18 @@ def _extract_prompt_str(prompt) -> str:
         return prompt.content
     else:
         return str(prompt)
-
-
 def _unified_llm_call(prompt_str: str, model_key: str) -> str:
     for provider in LLM_PROVIDERS_LIST:
         logger.info(f"Using LLM Provider: {provider}")
-
         if provider == "gemini":
             keys = _parse_keys("GEMINI_API_KEY")
             if not keys:
                 logger.info("No Gemini keys found, skipping.")
                 continue
-
             try:
                 model_name = GEMINI_MODELS[GEMINI_MODEL_INDEX]
             except IndexError:
                 model_name = GEMINI_MODELS[0]
-
             total_keys = len(keys)
             for idx, key in enumerate(keys, 1):
                 logger.info(f"Trying Gemini key {idx}/{total_keys}")
@@ -132,18 +101,15 @@ def _unified_llm_call(prompt_str: str, model_key: str) -> str:
                     return str(response.content)
                 except Exception as e:
                     logger.info(f"Error with Gemini key {idx}/{total_keys}: {e}")
-
         elif provider == "groq":
             keys = _parse_keys("GROQ_API_KEY")
             if not keys:
                 logger.info("No Groq keys found, skipping.")
                 continue
-
             try:
                 model_name = GROQ_MODELS[GROQ_MODEL_INDEX]
             except IndexError:
                 model_name = GROQ_MODELS[0]
-
             total_keys = len(keys)
             for idx, key in enumerate(keys, 1):
                 logger.info(f"Trying Groq key {idx}/{total_keys}")
@@ -155,14 +121,11 @@ def _unified_llm_call(prompt_str: str, model_key: str) -> str:
                     return response.content
                 except Exception as e:
                     logger.info(f"Error with Groq key {idx}/{total_keys}: {e}")
-
         elif provider == "snowflake":
-
             models_to_try = SNOWFLAKE_MODELS.get(model_key, [])
             if not models_to_try:
                 logger.info(f"Model key '{model_key}' not found in SNOWFLAKE_MODELS.")
                 continue
-
             for model_name in models_to_try:
                 logger.info(f"Trying Snowflake model: {model_name}")
                 try:
@@ -175,10 +138,8 @@ def _unified_llm_call(prompt_str: str, model_key: str) -> str:
                 except Exception as e:
                     err_str = str(e)
                     logger.info(f"  Snowflake error ({model_name}): {err_str[:120]}")
-
                     if "unknown model" in err_str.lower():
                         continue
-
                     if (
                         "Session no longer exists" in err_str
                         or "session" in err_str.lower()
@@ -190,12 +151,8 @@ def _unified_llm_call(prompt_str: str, model_key: str) -> str:
                                 return result
                         except Exception:
                             pass
-
                     continue
-
     raise Exception("All LLM providers and model fallbacks exhausted.")
-
-
 def get_llm(model_key: str, strictly_snowflake: bool = False):
     def llm_executor(prompt):
         prompt_str = _extract_prompt_str(prompt)
@@ -205,14 +162,10 @@ def get_llm(model_key: str, strictly_snowflake: bool = False):
                 raise ValueError(
                     f"Model key '{model_key}' not found in SNOWFLAKE_MODELS."
                 )
-
             return _call_snowflake_direct(prompt_str, models[0])
         else:
             return _unified_llm_call(prompt_str, model_key)
-
     return RunnableLambda(llm_executor)
-
-
 def get_snowflake_embedding(text: str, model_key: str, dimension: int) -> list[float]:
     models = SNOWFLAKE_MODELS.get(model_key, [])
     if not models:
@@ -232,7 +185,6 @@ def get_snowflake_embedding(text: str, model_key: str, dimension: int) -> list[f
         cursor.execute(query, (actual_model, text))
         result = cursor.fetchone()[0]
         import json
-
         if isinstance(result, list):
             return [float(x) for x in result]
         if isinstance(result, str):
@@ -251,7 +203,6 @@ def get_snowflake_embedding(text: str, model_key: str, dimension: int) -> list[f
                 cursor.execute(query, (actual_model, text))
                 result = cursor.fetchone()[0]
                 import json
-
                 if isinstance(result, list):
                     return [float(x) for x in result]
                 if isinstance(result, str):

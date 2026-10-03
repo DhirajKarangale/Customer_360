@@ -4,10 +4,7 @@ from backend.schemas.policy import PolicyResponse
 from backend.schemas.pagination import PaginatedResponse
 from backend.services.policy_service import PolicyService
 from backend.api.dependencies import get_policy_service
-
 router = APIRouter(prefix="/policies", tags=["Policies"])
-
-
 @router.get("/filters")
 def get_policy_filters(
     columns: List[str] = Query(
@@ -16,8 +13,6 @@ def get_policy_filters(
     policy_service: PolicyService = Depends(get_policy_service),
 ):
     return policy_service.get_unique_column_values(columns)
-
-
 @router.get("/", response_model=PaginatedResponse[PolicyResponse])
 def get_policies(
     insurance_agent_id: str = Query(..., description="The ID of the insurance agent"),
