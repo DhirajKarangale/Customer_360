@@ -58,6 +58,17 @@ CREATE TABLE customer_interactions (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+CREATE TABLE agent_chats (
+    job_id VARCHAR(255) NOT NULL,
+    agent_id VARCHAR(255) NOT NULL,
+    customer_id VARCHAR(255),
+    policy_id VARCHAR(255),
+    query TEXT NOT NULL,
+    message TEXT,
+    status VARCHAR(50) NOT NULL,
+    send_time BIGINT NOT NULL
+);
+
 -- ---------------------------------------------------------
 -- INDEXES
 -- ---------------------------------------------------------
