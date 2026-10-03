@@ -26,13 +26,14 @@ WORKDIR /app
 # We copy it into /app/ai/ so that `from ai.xxx import` resolves correctly.
 COPY . /app/ai/
 
-# Copy the private key for Snowflake JWT auth
-# The SNOWFLAKE_PRIVATE_KEY_PATH env var inside the container points here.
-# In SPCS the path is set via the service spec env vars.
-RUN chmod 600 /app/ai/certs/key.pem
-
 # Non-root user for security
 RUN useradd -m -u 1000 worker
+
+# Copy the private key for Snowflake JWT auth
+# The SNOWFLAKE_PRIVATE_KEY_PATH env var inside the container points here.
+# Change ownership to the worker user and set correct permissions
+RUN chown worker:worker /app/ai/certs/key.pem && chmod 600 /app/ai/certs/key.pem
+
 USER worker
 
 ENV PYTHONUNBUFFERED=1
