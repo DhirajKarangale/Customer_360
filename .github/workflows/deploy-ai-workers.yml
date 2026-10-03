@@ -150,7 +150,7 @@ jobs:
             --spec-path /tmp/ai_worker_spec.yaml \
             --min-instances ${{ env.N }} \
             --max-instances ${{ env.N }} \
-            --external-access-integrations ai_worker_access_integration \
+            --eai-name ai_worker_access_integration \
             --connection default
 
           echo "Successfully deployed ${{ env.N }} AI worker(s) on Snowflake SPCS!"
