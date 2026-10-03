@@ -18,6 +18,7 @@ from ai.rag.config import (
 )
 from ai.rag.pipeline.snowflake_embedder import EmbeddingManager
 from ai.rag.pipeline.faiss_store import VectorStoreManager
+from ai.utils.message_manager import get_message
 
 
 class RAGRetrievalPipeline:
@@ -39,7 +40,7 @@ class RAGRetrievalPipeline:
         )
         count = len(results) if results else 0
         if not results:
-            return "No relevant context found.", count
+            return get_message("no_context_found", "No relevant context found."), count
 
         formatted_context = []
         for i, result in enumerate(results, 1):

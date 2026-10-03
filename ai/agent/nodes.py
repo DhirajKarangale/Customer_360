@@ -10,6 +10,7 @@ logger = logging.getLogger(__name__)
 from ai.agent.state import AgentState
 from ai.agent.tools import TOOLS
 from ai.utils.llm_utils import get_llm
+from ai.utils.message_manager import get_message
 
 agent_llm = get_llm("TRANSCRIPT")
 
@@ -212,7 +213,7 @@ def agent_node(state: AgentState):
         return {
             "messages": [
                 AIMessage(
-                    content="I'm sorry, I encountered an issue generating a response. Please try again."
+                    content=get_message("general_error", "I'm sorry, I encountered an issue generating a response. Please try again.")
                 )
             ]
         }
@@ -272,7 +273,7 @@ def agent_node(state: AgentState):
                 if "```json" in forced_response:
                     forced_response = forced_response.split("```json")[0].strip()
                 if not forced_response:
-                    forced_response = "I'm sorry, I wasn't able to retrieve the requested information. Please try rephrasing your question."
+                    forced_response = get_message("retrieval_failed", "I'm sorry, I wasn't able to retrieve the requested information. Please try rephrasing your question.")
                 return {"messages": [AIMessage(content=forced_response)]}
 
             tool_call = {
@@ -286,7 +287,7 @@ def agent_node(state: AgentState):
             return {
                 "messages": [
                     AIMessage(
-                        content=f"Error parsing JSON tool call: {e}. Please ensure you output strictly valid JSON inside markdown blocks if calling a tool."
+                        content=get_message("json_parse_error", f"Error parsing JSON tool call: {e}. Please ensure you output strictly valid JSON inside markdown blocks if calling a tool.", e=e)
                     )
                 ]
             }

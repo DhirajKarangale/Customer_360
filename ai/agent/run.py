@@ -1,6 +1,7 @@
 from ai.agent.graph import agent_app
 from langchain_core.messages import HumanMessage
 import logging
+from ai.utils.message_manager import get_message
 
 logger = logging.getLogger(__name__)
 
@@ -47,6 +48,6 @@ def invoke_agent(
     except Exception as e:
         logger.error(f"Agent execution failed: {e}")
         return (
-            f"I encountered an error while processing your request: {e}",
+            get_message("agent_execution_error", f"I encountered an error while processing your request: {e}", e=e),
             f"Error: {e}",
         )

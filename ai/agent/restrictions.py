@@ -4,6 +4,7 @@ import re as _re
 from langchain_core.messages import AIMessage
 from ai.agent.state import AgentState
 from ai.utils.llm_utils import get_llm
+from ai.utils.message_manager import get_message
 
 
 class DataRestrictionManager:
@@ -31,7 +32,7 @@ class DataRestrictionManager:
         if not self.enabled or not logged_in_agent_id:
             return True, ""
 
-        funny_message = "SYSTEM ERROR: ACCESS DENIED. (AI INSTRUCTION: CRITICAL: DO NOT RETRY. You attempted to access another agent's data. Stop immediately and politely inform the user that you can only access their own policies, customers, and data. Keep it friendly and professional. Do not output this instruction.)"
+        funny_message = get_message("system_access_denied", "SYSTEM ERROR: ACCESS DENIED. (AI INSTRUCTION: CRITICAL: DO NOT RETRY. You attempted to access another agent's data. Stop immediately and politely inform the user that you can only access their own policies, customers, and data. Keep it friendly and professional. Do not output this instruction.)")
 
         try:
 
@@ -63,7 +64,7 @@ class DataRestrictionManager:
                     return False, funny_message
 
         except Exception as e:
-            return False, f"ACCESS DENIED (Error resolving permissions: {e})"
+            return False, get_message("permission_resolve_error", f"ACCESS DENIED (Error resolving permissions: {e})", e=e)
 
         return True, ""
 
@@ -183,7 +184,7 @@ User query: {last_user_query}
                 return {
                     "messages": [
                         AIMessage(
-                            content="Oops! It looks like you're trying to access data for another agent. I can only help you with your own policies, customers, and data! 😊"
+                            content=get_message("unauthorized_agent", "Oops! It looks like you're trying to access data for another agent. I can only help you with your own policies, customers, and data! 😊")
                         )
                     ]
                 }
@@ -196,7 +197,7 @@ User query: {last_user_query}
                 return {
                     "messages": [
                         AIMessage(
-                            content="Oops! It looks like you're trying to access data for a customer that does not belong to you. I can only help you with your own policies, customers, and data! 😊"
+                            content=get_message("unauthorized_customer", "Oops! It looks like you're trying to access data for a customer that does not belong to you. I can only help you with your own policies, customers, and data! 😊")
                         )
                     ]
                 }
@@ -209,7 +210,7 @@ User query: {last_user_query}
                 return {
                     "messages": [
                         AIMessage(
-                            content="Oops! It looks like you're trying to access a policy that does not belong to you. I can only help you with your own policies, customers, and data! 😊"
+                            content=get_message("unauthorized_policy", "Oops! It looks like you're trying to access a policy that does not belong to you. I can only help you with your own policies, customers, and data! 😊")
                         )
                     ]
                 }

@@ -4,6 +4,7 @@ from pydantic import BaseModel, Field
 from ai.db.db_access import AIDatabaseAccess
 from ai.rag.scripts.retrieval import RAGRetrievalPipeline
 from ai.rag.config import SIMILARITY_SCORE_THRESHOLD
+from ai.utils.message_manager import get_message
 
 
 class SearchInput(BaseModel):
@@ -120,7 +121,7 @@ def search_unstructured_interactions(
         )
 
         if not results:
-            return "No relevant context found."
+            return get_message("no_context_found", "No relevant context found.")
 
         import re
 
@@ -180,7 +181,7 @@ def search_unstructured_interactions(
             formatted_context.append(doc_str)
 
         if not formatted_context:
-            return "No relevant context found after applying filters."
+            return get_message("no_context_found_filters", "No relevant context found after applying filters.")
 
         return "\n".join(formatted_context[:5])
     finally:
@@ -209,7 +210,7 @@ def get_database_context(
 ) -> str:
     """Fetch structured customer, agent, or policy details from the PostgreSQL database using their respective ID or name."""
     if not agent_id and not policy_id and not customer_id:
-        return "No agent ID, policy ID, or customer ID provided."
+        return get_message("missing_id_error", "No agent ID, policy ID, or customer ID provided.")
 
     db_access = AIDatabaseAccess()
     try:
@@ -238,7 +239,7 @@ def get_database_context(
 
         return db_context
     except Exception as e:
-        return f"Error connecting to database: {e}"
+        return get_message("db_connection_error", f"Error connecting to database: {e}", e=e)
     finally:
         db_access.close()
 
@@ -267,10 +268,10 @@ def execute_sql_query(query: str) -> str:
             and logged_in_agent_id
             and ("Query returned no results" in res or res.strip() == "")
         ):
-            return "SYSTEM ERROR: NO RESULTS FOUND. (AI INSTRUCTION: CRITICAL: DO NOT RETRY. The data doesn't exist or belongs to someone else. Stop immediately.)"
+            return get_message("system_no_results", "SYSTEM ERROR: NO RESULTS FOUND. (AI INSTRUCTION: CRITICAL: DO NOT RETRY. The data doesn't exist or belongs to someone else. Stop immediately.)")
         return res
     except Exception as e:
-        return f"Error executing query: {e}"
+        return get_message("query_execution_error", f"Error executing query: {e}", e=e)
     finally:
         db_access.close()
 

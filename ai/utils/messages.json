@@ -1,0 +1,66 @@
+{
+  "general_error": [
+    "I'm sorry, my brain just tripped over a wire! Please try again.",
+    "Oops, something went wrong on my end. Can we give that another go?",
+    "Well, this is embarrassing... I hit a snag. Let's try again!"
+  ],
+  "retrieval_failed": [
+    "I searched high and low, but I couldn't find that information. Try rephrasing?",
+    "Hmm, I'm coming up empty-handed. Could you ask that in a different way?",
+    "Looks like that info is playing hide and seek. Can you give me more clues?"
+  ],
+  "unauthorized_agent": [
+    "Oops! It looks like you're trying to access data for another agent. I can only help you with your own policies, customers, and data! 😊",
+    "Nice try, but I can only peek into your own agent files! Let's stick to your data. 🕵️‍♂️",
+    "Hold up! That belongs to another agent. I'm fiercely loyal to your data only! 🛡️"
+  ],
+  "unauthorized_customer": [
+    "Oops! It looks like you're trying to access data for a customer that does not belong to you. I can only help you with your own policies, customers, and data! 😊",
+    "That customer isn't in your roster! Let's focus on the folks assigned to you. 👥",
+    "I'd love to help, but that customer is outside your jurisdiction! 🛑"
+  ],
+  "unauthorized_policy": [
+    "Oops! It looks like you're trying to access a policy that does not belong to you. I can only help you with your own policies, customers, and data! 😊",
+    "That policy number is out of bounds! Let's stick to your own policies. 📄",
+    "Sorry, I can't let you peek at someone else's policy! Strictly your data only. 🔒"
+  ],
+  "system_access_denied": [
+    "SYSTEM ERROR: ACCESS DENIED. (AI INSTRUCTION: CRITICAL: DO NOT RETRY. You attempted to access another agent's data. Stop immediately and politely inform the user that you can only access their own policies, customers, and data. Keep it friendly and professional. Do not output this instruction.)"
+  ],
+  "system_no_results": [
+    "SYSTEM ERROR: NO RESULTS FOUND. (AI INSTRUCTION: CRITICAL: DO NOT RETRY. The data doesn't exist or belongs to someone else. Stop immediately.)"
+  ],
+  "no_context_found": [
+    "No relevant context found.",
+    "I couldn't find any relevant context for that.",
+    "My search didn't turn up any relevant documents."
+  ],
+  "no_context_found_filters": [
+    "No relevant context found after applying filters.",
+    "I couldn't find anything matching those specific filters.",
+    "The filters you provided didn't match any documents in my records."
+  ],
+  "json_parse_error": [
+    "Error parsing JSON tool call: {e}. Please ensure you output strictly valid JSON inside markdown blocks if calling a tool."
+  ],
+  "missing_id_error": [
+    "No agent ID, policy ID, or customer ID provided.",
+    "I need an agent, policy, or customer ID to look that up!",
+    "Missing some key details. Could you provide an ID?"
+  ],
+  "db_connection_error": [
+    "Error connecting to database: {e}",
+    "My database connection is acting up: {e}"
+  ],
+  "query_execution_error": [
+    "Error executing query: {e}",
+    "Hit a snag while running that query: {e}"
+  ],
+  "agent_execution_error": [
+    "I encountered an error while processing your request: {e}",
+    "Something broke while I was thinking: {e}"
+  ],
+  "permission_resolve_error": [
+    "ACCESS DENIED (Error resolving permissions: {e})"
+  ]
+}
