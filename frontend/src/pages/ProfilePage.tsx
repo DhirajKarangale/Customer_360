@@ -37,14 +37,14 @@ export default function ProfilePage() {
 
   return (
     <div className="relative min-h-[80vh] w-full overflow-hidden rounded-2xl bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl p-8 shadow-2xl border border-white/5">
-      
-      {/* Background ambient glows */}
+
+
       <div className="absolute top-0 right-1/4 h-[500px] w-[500px] rounded-full bg-blue-600/20 blur-[120px] pointer-events-none mix-blend-screen" />
       <div className="absolute bottom-0 left-1/4 h-[400px] w-[400px] rounded-full bg-purple-600/20 blur-[100px] pointer-events-none mix-blend-screen" />
-      
+
       <div className="relative z-10 mx-auto max-w-5xl space-y-8">
-        
-        {/* Page Header */}
+
+
         <div className="flex flex-col gap-4 rounded-2xl border border-white/5 bg-black/20 p-6 backdrop-blur-md shadow-lg md:flex-row md:items-center md:justify-between transition-all duration-300 hover:bg-white/[0.08]">
           <div className="flex items-center gap-3">
             <div className="rounded-xl bg-blue-500/20 p-3 text-blue-400 border border-blue-500/30">
@@ -55,7 +55,7 @@ export default function ProfilePage() {
               <p className="text-sm text-blue-200/70">Manage your account settings and details</p>
             </div>
           </div>
-          
+
           <button
             onClick={handleSignOut}
             className="group relative inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-red-500/10 px-6 py-2 text-sm font-medium text-red-400 transition-all hover:bg-red-500 hover:text-white border border-red-500/20 hover:border-red-500 hover:shadow-[0_0_20px_rgba(239,68,68,0.4)]"
@@ -65,7 +65,7 @@ export default function ProfilePage() {
           </button>
         </div>
 
-        {/* Main Content Area */}
+
         <div className="rounded-2xl border border-white/5 bg-black/20 shadow-xl p-8 backdrop-blur-md">
           <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
             <div className="relative group">
@@ -85,7 +85,7 @@ export default function ProfilePage() {
                 )}
               </div>
             </div>
-            
+
             <div className="text-center md:text-left space-y-2">
               <h2 className="text-4xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-white to-purple-300">
                 {agent.name}
@@ -98,7 +98,7 @@ export default function ProfilePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            
+
             <button 
               onClick={() => handleCopy(agent.email, 'Email Address')}
               className="group flex w-full text-left cursor-pointer items-center gap-5 rounded-2xl border border-white/5 bg-black/20 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] p-6 transition-all duration-300 hover:bg-white/5 hover:border-white/10 hover:-translate-y-1"
@@ -111,7 +111,7 @@ export default function ProfilePage() {
                 <p className="text-lg font-semibold text-gray-100">{agent.email}</p>
               </div>
             </button>
-            
+
             <button 
               onClick={() => handleCopy(agent.phone_number, 'Phone Number')}
               className="group flex w-full text-left cursor-pointer items-center gap-5 rounded-2xl border border-white/5 bg-black/20 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] p-6 transition-all duration-300 hover:bg-white/5 hover:border-white/10 hover:-translate-y-1"
@@ -150,7 +150,7 @@ export default function ProfilePage() {
                 <p className="text-lg font-mono font-semibold text-gray-100">{agent.license_number}</p>
               </div>
             </button>
-            
+
           </div>
         </div>
       </div>

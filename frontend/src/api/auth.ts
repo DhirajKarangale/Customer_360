@@ -32,15 +32,15 @@ export function useLoginMutation() {
 
 export function useVerifyTokenQuery() {
   const token = TokenService.getToken();
-  
+
   return useQuery({
     queryKey: ['auth-verify'],
     queryFn: async () => {
       const response = await apiClient.get<AgentData>(API_ENDPOINTS.auth.verify);
       return response.data;
     },
-    enabled: !!token, // Only run the query if we have a token
-    retry: false, // Don't retry if verification fails (e.g. 401)
-    staleTime: 1000 * 60 * 5, // Cache the verification for 5 minutes
+    enabled: !!token, 
+    retry: false, 
+    staleTime: 1000 * 60 * 5, 
   });
 }

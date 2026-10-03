@@ -9,7 +9,7 @@ interface PolicyLayoutProps {
 
 export function PolicyLayout({ title, effectiveDate, children }: PolicyLayoutProps) {
   const date = effectiveDate || new Date().toLocaleDateString();
-  
+
   return (
     <PageWrapper className="min-h-screen pb-24 pt-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">

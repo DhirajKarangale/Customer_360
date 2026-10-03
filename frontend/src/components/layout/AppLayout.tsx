@@ -16,7 +16,7 @@ export function AppLayout() {
     if (!token) return;
 
     const ctrl = connectSSE(token);
-    
+
     return () => {
       ctrl.abort();
       console.log('SSE connection aborted');
@@ -26,8 +26,8 @@ export function AppLayout() {
   return (
     <div className="flex min-h-screen flex-col bg-transparent text-white">
       <Navbar />
-      
-      {/* Main Content Area */}
+
+
       <main className="flex-1 container mx-auto px-4 py-8 overflow-hidden">
         <AnimatePresence mode="wait">
           <motion.div

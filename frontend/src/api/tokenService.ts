@@ -8,7 +8,7 @@ export class TokenService {
   }
 
   static setToken(token: string): void {
-    Cookies.set(TOKEN_KEY, token, { expires: 7 }); // Expires in 7 days
+    Cookies.set(TOKEN_KEY, token, { expires: 7 }); 
   }
 
   static removeToken(): void {

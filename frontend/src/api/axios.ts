@@ -14,7 +14,6 @@ export const apiClient = axios.create({
   },
 });
 
-// Add a request interceptor to automatically attach JWT token
 apiClient.interceptors.request.use((config) => {
   const token = TokenService.getToken();
   if (token && config.headers) {

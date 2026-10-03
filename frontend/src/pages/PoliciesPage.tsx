@@ -15,14 +15,14 @@ import {
 } from '../components/ui/select';
 import { CustomerModal } from '../components/customers/CustomerModal';
 
-// Fallback constant filters since no API is available to fetch unique ones
+
 const POLICY_TYPES = ["Life", "Health", "Auto", "Home", "Liability", "Property", "Business"];
 const POLICY_STATUSES = ["Active", "Pending", "Expired", "Cancelled", "Suspended", "Claimed"];
 
 export default function PoliciesPage() {
   const agent = useAuthStore((state) => state.agent);
-  
-  // Local state
+
+
   const [page, setPage] = useState(1);
   const [pageSize, setPageSize] = useState(10);
   const [searchTerm, setSearchTerm] = useState('');
@@ -34,22 +34,19 @@ export default function PoliciesPage() {
   const { mergePolicies, getAllPolicies } = usePoliciesStore();
   const { setIsOpen: setChatOpen, setActivePolicy } = useAIChatStore();
 
-  // Debounce search term
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setDebouncedSearch(searchTerm.trim().toLowerCase());
-      setPage(1); // Reset to page 1 on new search
+      setPage(1); 
     }, 500);
     return () => clearTimeout(timer);
   }, [searchTerm]);
 
-  // Reset page when filters change
-  useEffect(() => {
-    setPage(1);
-  }, [policyType, status, pageSize]);
 
-  // Query Backend
-  // If "all" is selected, we pass undefined to the backend
+
+
+
   const { data, isFetching, isError } = usePoliciesQuery(
     {
       insurance_agent_id: agent?.id || '',
@@ -62,23 +59,23 @@ export default function PoliciesPage() {
     !!agent?.id
   );
 
-  // Sync incoming API data into our global deduplicated store
+
   useEffect(() => {
     if (data?.items && data.items.length > 0) {
       mergePolicies(data.items);
     }
   }, [data, mergePolicies]);
 
-  // Intelligent Local Fallback logic
+
   const displayItems = useMemo(() => {
-    // If API response is ready, just show authoritative data (even while fetching)
+
     if (data) {
       return data.items;
     }
 
-    // While fetching initial data, optimistic search local store cache
+
     const all = getAllPolicies();
-    // Sort local cache by date descending to prevent random jumping
+
     let filtered = all.sort((a, b) => new Date(b.start_date).getTime() - new Date(a.start_date).getTime());
 
     if (policyType !== 'all') {
@@ -100,14 +97,14 @@ export default function PoliciesPage() {
     return filtered.slice(startIndex, startIndex + pageSize);
   }, [data, isFetching, getAllPolicies, policyType, status, debouncedSearch, pageSize, page]);
 
-  // Calculate pagination props
+
   const totalItems = data?.total_items ?? displayItems.length;
   const totalPages = data?.total_pages ?? Math.ceil(displayItems.length / pageSize);
   const currentPage = data?.current_page ?? page;
 
   return (
     <div className="space-y-6">
-      {/* Page Header & Filters */}
+
       <div className="flex flex-col gap-4 rounded-xl border border-white/5 bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl p-4 shadow-sm md:flex-row md:items-center md:justify-between">
         <div className="flex items-center gap-2">
           <div className="rounded-lg bg-primary/10 p-2 text-primary">
@@ -117,7 +114,7 @@ export default function PoliciesPage() {
         </div>
 
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-          {/* Search Bar */}
+
           <div className="relative">
             <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-white/70" />
             <input
@@ -129,9 +126,9 @@ export default function PoliciesPage() {
             />
           </div>
 
-          {/* Filters */}
+
           <div className="flex items-center gap-3">
-            <Select value={policyType} onValueChange={(val) => setPolicyType(val || 'all')}>
+            <Select value={policyType} onValueChange={(val) => { setPolicyType(val || 'all'); setPage(1); }}>
               <SelectTrigger className="w-full sm:w-[160px] bg-transparent">
                 <div className="flex items-center gap-1.5 truncate">
                   <span className="text-white/70 font-normal">Type:</span>
@@ -146,7 +143,7 @@ export default function PoliciesPage() {
               </SelectContent>
             </Select>
 
-            <Select value={status} onValueChange={(val) => setStatus(val || 'all')}>
+            <Select value={status} onValueChange={(val) => { setStatus(val || 'all'); setPage(1); }}>
               <SelectTrigger className="w-full sm:w-[160px] bg-transparent">
                 <div className="flex items-center gap-1.5 truncate">
                   <span className="text-white/70 font-normal">Status:</span>
@@ -164,15 +161,15 @@ export default function PoliciesPage() {
         </div>
       </div>
 
-      {/* Main Content Area */}
+
       <div className="rounded-xl border border-white/5 bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl shadow-sm overflow-hidden">
-        
-        {/* Loading State Overlay (Only if totally empty) */}
+
+
         {isFetching && displayItems.length === 0 && (
           <LoadingState className="h-64 gap-4" message={getRandomMessage('loadingPolicies')} />
         )}
 
-        {/* Error State */}
+
         {isError && !isFetching && (
           <div className="flex h-64 flex-col items-center justify-center gap-2 text-destructive">
             <ShieldAlert className="h-10 w-10" />
@@ -181,7 +178,7 @@ export default function PoliciesPage() {
           </div>
         )}
 
-        {/* Empty State */}
+
         {!isFetching && !isError && displayItems.length === 0 && (
           <EmptyState 
             className="h-64 gap-2" 
@@ -191,7 +188,7 @@ export default function PoliciesPage() {
           />
         )}
 
-        {/* Data Table */}
+
         {displayItems.length > 0 && (
           <div className="overflow-x-auto relative">
             <table className="w-full text-left text-sm">
@@ -263,7 +260,7 @@ export default function PoliciesPage() {
           </div>
         )}
 
-        {/* Pagination */}
+
         <Pagination
           currentPage={currentPage}
           totalPages={totalPages}
@@ -274,7 +271,7 @@ export default function PoliciesPage() {
         />
       </div>
 
-      {/* Dynamic Customer Modal */}
+
       <CustomerModal 
         customerId={selectedCustomerId} 
         onClose={() => setSelectedCustomerId(null)} 

@@ -20,7 +20,7 @@ export const PageWrapper: React.FC<PageWrapperProps> = ({ children, className = 
   );
 };
 
-// A staggered container for child items (like cards, list items)
+
 export const StaggerContainer: React.FC<{ children: React.ReactNode; className?: string; delay?: number }> = ({ children, className = '', delay = 0.1 }) => {
   return (
     <motion.div
@@ -43,7 +43,7 @@ export const StaggerContainer: React.FC<{ children: React.ReactNode; className?:
   );
 };
 
-// An individual staggered item
+
 export const StaggerItem: React.FC<{ children: React.ReactNode; className?: string }> = ({ children, className = '' }) => {
   return (
     <motion.div

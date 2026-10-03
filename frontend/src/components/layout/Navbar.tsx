@@ -1,9 +1,10 @@
+import { memo, useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { UserCircle } from 'lucide-react';
 import { useAuthStore } from '../../store/useAuthStore';
-import { useState } from 'react';
 
-export function Navbar() {
+
+export const Navbar = memo(function Navbar() {
   const agent = useAuthStore((state) => state.agent);
   const [imgError, setImgError] = useState(false);
 
@@ -17,8 +18,8 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-white/5 bg-transparent/95 backdrop-blur supports-[backdrop-filter]:bg-transparent/60">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        
-        {/* Navigation Links */}
+
+
         <nav className="flex items-center gap-6">
           {navItems.map((item) => (
             <NavLink
@@ -35,7 +36,7 @@ export function Navbar() {
           ))}
         </nav>
 
-        {/* Profile Button */}
+
         <div className="flex items-center gap-4">
           <Link 
             to="/profile"
@@ -57,4 +58,4 @@ export function Navbar() {
       </div>
     </header>
   );
-}
+});

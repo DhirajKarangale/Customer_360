@@ -13,30 +13,30 @@ export function ProtectedRoute() {
   const setAgent = useAuthStore((state) => state.setAgent);
 
   useEffect(() => {
-    // Show loader while verifying token
+
     if (isLoading) {
       showLoader();
     } else {
       hideLoader();
     }
-    
-    // Cleanup on unmount
+
+
     return () => hideLoader();
   }, [isLoading, showLoader, hideLoader]);
 
-  // Sync agent data to store when verification succeeds
+
   useEffect(() => {
     if (data) {
       setAgent(data);
     }
   }, [data, setAgent]);
 
-  // 1. If no token exists at all, instantly redirect to login
+
   if (!token) {
     return <Navigate to="/login" replace />;
   }
 
-  // 2. If verification fails (e.g. expired or invalid), clear the dead token and redirect
+
   if (isError) {
     abortAllRequests();
     TokenService.removeToken();
@@ -44,12 +44,12 @@ export function ProtectedRoute() {
     return <Navigate to="/login" replace />;
   }
 
-  // 3. If currently loading, render nothing (GlobalLoader will cover the screen and block clicks)
+
   if (isLoading) {
     return null;
   }
 
-  // 4. If we have verified data, render the protected children
+
   if (data) {
     return <Outlet />;
   }

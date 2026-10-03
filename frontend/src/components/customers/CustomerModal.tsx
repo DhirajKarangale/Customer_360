@@ -16,16 +16,16 @@ interface CustomerModalProps {
 export function CustomerModal({ customerId, onClose }: CustomerModalProps) {
   const agent = useAuthStore((state) => state.agent);
   const { customersMap, mergeCustomers } = useCustomersStore();
-  
-  // 1. Try to get it synchronously from our local Zustand store
+
+
   const localCustomer = useMemo(() => {
     if (!customerId) return null;
     return customersMap[customerId] || null;
   }, [customerId, customersMap]);
 
-  // 2. If it's not in the store, fetch it from the backend
+
   const shouldFetch = !!customerId && !localCustomer && !!agent?.id;
-  
+
   const { data: customerData, isLoading: customerLoading } = useCustomersQuery({
     insurance_agent_id: agent?.id || '',
     search_term: customerId || '',
@@ -33,7 +33,7 @@ export function CustomerModal({ customerId, onClose }: CustomerModalProps) {
     page_size: 1,
   }, shouldFetch);
 
-  // Sync the fetched customer into our global store
+
   useEffect(() => {
     if (customerData?.items && customerData.items.length > 0) {
       mergeCustomers(customerData.items);
@@ -41,7 +41,7 @@ export function CustomerModal({ customerId, onClose }: CustomerModalProps) {
   }, [customerData, mergeCustomers]);
 
   const customer = localCustomer || (customerData?.items?.[0] ?? null);
-  
+
   const { data: policiesData, isLoading: policiesLoading } = usePoliciesQuery({
     insurance_agent_id: agent?.id || '',
     customer_id: customer?.id || '',
@@ -78,16 +78,16 @@ export function CustomerModal({ customerId, onClose }: CustomerModalProps) {
 
   return typeof document !== 'undefined' ? createPortal(
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6">
-      {/* Backdrop */}
+
       <div 
         className="fixed inset-0 bg-transparent/80 backdrop-blur-sm transition-opacity" 
         onClick={onClose}
       />
-      
-      {/* Modal Content */}
+
+
       <div className="relative flex w-full max-w-4xl max-h-[90vh] flex-col overflow-hidden rounded-xl bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl">
-        
-        {/* Header */}
+
+
         <div className="flex items-center justify-between border-b border-white/5 bg-muted/30 px-6 py-4">
           <div>
             <h2 className="text-xl font-semibold tracking-tight text-white">{customer.name}</h2>
@@ -101,10 +101,10 @@ export function CustomerModal({ customerId, onClose }: CustomerModalProps) {
           </button>
         </div>
 
-        {/* Body (Scrollable) */}
+
         <div className="flex-1 overflow-y-auto p-6">
-          
-          {/* Customer Details Grid */}
+
+
           <div className="mb-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             <div className="space-y-1">
               <span className="text-xs font-medium text-white/70 uppercase tracking-wider">Email</span>
@@ -126,13 +126,13 @@ export function CustomerModal({ customerId, onClose }: CustomerModalProps) {
             </div>
           </div>
 
-          {/* Policies Section */}
+
           <div>
             <h3 className="mb-4 text-lg font-semibold tracking-tight text-white flex items-center gap-2">
               <ShieldAlert className="h-5 w-5 text-primary" />
               Active Policies
             </h3>
-            
+
             <div className="rounded-xl border border-white/5 overflow-hidden shadow-sm">
               {policiesLoading ? (
                 <LoadingState message={getRandomMessage('loadingPolicies')} />
@@ -196,7 +196,7 @@ export function CustomerModal({ customerId, onClose }: CustomerModalProps) {
             </div>
           </div>
         </div>
-        
+
       </div>
     </div>
   , document.body) : null;

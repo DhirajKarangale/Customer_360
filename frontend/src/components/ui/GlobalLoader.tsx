@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useUIStore } from '../../store/useUIStore';
 import { motion, AnimatePresence } from 'framer-motion';
 import { getRandomMessage } from '../../utils/messages';
@@ -6,12 +6,14 @@ import { getRandomMessage } from '../../utils/messages';
 export function GlobalLoader() {
   const isLoaderVisible = useUIStore((state) => state.isLoaderVisible);
   const [message, setMessage] = useState(getRandomMessage('loading'));
+  const [prevVisible, setPrevVisible] = useState(isLoaderVisible);
 
-  useEffect(() => {
+  if (isLoaderVisible !== prevVisible) {
+    setPrevVisible(isLoaderVisible);
     if (isLoaderVisible) {
       setMessage(getRandomMessage('loading'));
     }
-  }, [isLoaderVisible]);
+  }
 
   return (
     <AnimatePresence>
@@ -30,10 +32,9 @@ export function GlobalLoader() {
             transition={{ type: "spring", damping: 25, stiffness: 300, delay: 0.1 }}
             className="flex flex-col items-center justify-center gap-8 rounded-3xl bg-black/40 backdrop-blur-2xl border border-white/10 p-12 shadow-[0_0_80px_rgba(100,50,255,0.15)] relative overflow-hidden"
           >
-            {/* Ambient Background Glow inside the modal */}
+
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-40 w-40 bg-indigo-500/20 blur-3xl rounded-full" />
-            
-            {/* Custom Spinner */}
+
             <div className="relative flex h-20 w-20 items-center justify-center z-10">
               <motion.div 
                 animate={{ rotate: 360 }}
@@ -51,8 +52,7 @@ export function GlobalLoader() {
                 className="h-5 w-5 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 shadow-[0_0_15px_rgba(99,102,241,0.6)]"
               />
             </div>
-            
-            {/* Funny Message */}
+
             <motion.p 
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}

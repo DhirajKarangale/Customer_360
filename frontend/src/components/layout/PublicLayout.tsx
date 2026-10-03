@@ -10,8 +10,7 @@ export function PublicLayout() {
   return (
     <div className="flex min-h-screen flex-col bg-transparent text-white">
       <Navbar />
-      
-      {/* Main Content Area */}
+
       <main className="flex-1 container mx-auto px-4 py-8 overflow-hidden">
         <AnimatePresence mode="wait">
           <motion.div

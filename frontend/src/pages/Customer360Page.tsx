@@ -28,14 +28,14 @@ import {
 } from 'recharts';
 import { getRandomMessage } from '../utils/messages';
 
-// Modern Color Palette for Charts
+
 const CHART_COLORS = ['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6'];
 
 export default function Customer360Page() {
   const agent = useAuthStore((state) => state.agent);
 
-  // --- Fetching Data ---
-  // We fetch up to 100 policies (backend max limit) to do local aggregation for the dashboard
+
+
   const { data: policiesData, isLoading: policiesLoading } = usePoliciesQuery(
     {
       insurance_agent_id: agent?.id || '',
@@ -45,23 +45,21 @@ export default function Customer360Page() {
     !!agent?.id
   );
 
-  // Fetch initial suggestions
+
   const { data: suggestionsData, isLoading: suggestionsLoading } = useSuggestionsQuery(
     agent?.id || '',
     !!agent?.id
   );
 
-  // --- State for Streaming Suggestions ---
+
   const [liveSuggestionText, setLiveSuggestionText] = useState<string>('');
   const [isGenerating, setIsGenerating] = useState(false);
 
   useEffect(() => {
-    // Check initial load
+
     if (suggestionsData?.message) {
+
       setLiveSuggestionText(suggestionsData.message);
-      
-      // The backend returns a short placeholder message while generating,
-      // and the real cached text otherwise. We can guess it's generating if it's short.
       if (suggestionsData.message.length < 150 && !suggestionsData.message.includes('\n')) {
         setIsGenerating(true);
       } else {
@@ -70,15 +68,15 @@ export default function Customer360Page() {
     }
   }, [suggestionsData]);
 
-  // Listen to SSE updates specifically for suggestions
+
   useEffect(() => {
     const handleSuggestionUpdate = (e: Event) => {
       const customEvent = e as CustomEvent<{ jobId: string; content: string }>;
       const { content } = customEvent.detail;
-      
+
       if (content) {
         setLiveSuggestionText(content.replace(/\[DONE\]/g, ''));
-        setIsGenerating(false); // The callback sends the complete message at once
+        setIsGenerating(false); 
       }
     };
 
@@ -88,22 +86,22 @@ export default function Customer360Page() {
     };
   }, []);
 
-  // --- Metrics Aggregation ---
+
   const metrics = useMemo(() => {
     if (!policiesData?.items) return null;
-    
+
     const policies = policiesData.items;
-    
+
     let activePremium = 0;
     let totalCoverage = 0;
     let expiringSoonCount = 0;
     const uniqueCustomers = new Set<string>();
-    
+
     const now = new Date();
     const thirtyDaysFromNow = new Date();
     thirtyDaysFromNow.setDate(now.getDate() + 30);
 
-    // Grouping for charts
+
     const typeDistribution: Record<string, number> = {};
     const renewalsByMonth: Record<string, number> = {};
 
@@ -113,18 +111,18 @@ export default function Customer360Page() {
         totalCoverage += Number(p.coverage_amount) || 0;
         uniqueCustomers.add(p.customer_id);
 
-        // Check expiring soon
+
         const endDate = new Date(p.end_date);
         if (endDate >= now && endDate <= thirtyDaysFromNow) {
           expiringSoonCount++;
         }
 
-        // Chart 1: Premium by Policy Type
+
         typeDistribution[p.policy_type] = (typeDistribution[p.policy_type] || 0) + Number(p.premium_amount);
 
-        // Chart 2: Renewals Pipeline
+
         const monthKey = endDate.toLocaleString('default', { month: 'short', year: 'numeric' });
-        // Only track future renewals for next 6 months
+
         if (endDate >= now) {
           renewalsByMonth[monthKey] = (renewalsByMonth[monthKey] || 0) + 1;
         }
@@ -135,14 +133,14 @@ export default function Customer360Page() {
       ? (policies.filter(p => p.status === 'Active').length / uniqueCustomers.size).toFixed(1) 
       : '0.0';
 
-    // Format chart data
+
     const pieData = Object.entries(typeDistribution).map(([name, value]) => ({ name, value })).sort((a, b) => b.value - a.value);
-    
-    // Sort bar data chronologically (closest months first)
+
+
     const barData = Object.entries(renewalsByMonth)
       .map(([name, count]) => ({ name, count }))
       .sort((a, b) => new Date(`1 ${a.name}`).getTime() - new Date(`1 ${b.name}`).getTime())
-      .slice(0, 5); // top 5 closest upcoming months
+      .slice(0, 5); 
 
     return {
       activePremium,
@@ -154,31 +152,31 @@ export default function Customer360Page() {
     };
   }, [policiesData]);
 
-  // --- Render Helpers ---
+
   const formatCurrency = (val: number) => `$${val.toLocaleString(undefined, { maximumFractionDigits: 0 })}`;
 
   return (
     <div className="space-y-6">
-      
-      {/* Header */}
+
+
       <div className="flex flex-col gap-1">
         <h1 className="text-2xl font-bold tracking-tight text-white">Welcome back, {agent?.name?.split(' ')[0] || 'Agent'}</h1>
         <p className="text-white/70">Here is your portfolio overview and smart suggestions for today.</p>
       </div>
 
       <div className="grid grid-cols-1 gap-6 xl:grid-cols-3">
-        
-        {/* LEFT COLUMN: Metrics & Charts */}
+
+
         <div className="flex flex-col gap-6 xl:col-span-2">
-          
-          {/* KPI Cards Grid */}
+
+
           {policiesLoading ? (
             <div className="flex h-32 items-center justify-center rounded-xl border border-white/5 bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl shadow-sm">
                <Loader2 className="h-6 w-6 animate-spin text-primary" />
             </div>
           ) : (
             <StaggerContainer className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              
+
               <StaggerItem className="flex flex-col gap-2 rounded-xl border border-white/5 bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl p-5 shadow-sm transition-all hover:shadow-md">
                 <div className="flex items-center gap-2 text-white/70">
                   <Wallet className="h-4 w-4 text-emerald-500" />
@@ -224,10 +222,10 @@ export default function Customer360Page() {
             </StaggerContainer>
           )}
 
-          {/* Charts Row */}
+
           <StaggerContainer delay={0.2} className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-            
-            {/* Chart 1: Portfolio Mix */}
+
+
             <StaggerItem className="flex min-h-[350px] flex-col rounded-xl border border-white/5 bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl p-6 shadow-sm">
               <h3 className="mb-6 font-semibold tracking-tight flex items-center gap-2 text-white">
                 <TrendingUp className="h-4 w-4 text-primary" />
@@ -266,7 +264,7 @@ export default function Customer360Page() {
               </div>
             </StaggerItem>
 
-            {/* Chart 2: Upcoming Renewals */}
+
             <StaggerItem className="flex min-h-[350px] flex-col rounded-xl border border-white/5 bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl p-6 shadow-sm">
               <h3 className="mb-6 font-semibold tracking-tight flex items-center gap-2 text-white">
                 <Clock className="h-4 w-4 text-amber-500" />
@@ -298,7 +296,7 @@ export default function Customer360Page() {
           </StaggerContainer>
         </div>
 
-        {/* RIGHT COLUMN: AI Suggestions */}
+
         <div className="relative xl:col-span-1 h-[400px] xl:h-auto">
           <div className="flex flex-col rounded-xl border border-white/10 bg-black/40 backdrop-blur-xl shadow-2xl overflow-hidden h-full xl:absolute xl:inset-0">
             <div className="flex items-center justify-between border-b border-white/10 bg-white/5 px-6 py-4">
@@ -308,7 +306,7 @@ export default function Customer360Page() {
               </div>
               {isGenerating && <Loader2 className="h-4 w-4 animate-spin text-indigo-500" />}
             </div>
-          
+
           <div className="flex-1 overflow-y-auto p-6 scroll-smooth">
             {suggestionsLoading && !liveSuggestionText ? (
               <div className="flex flex-col items-center justify-center h-full gap-4 text-white/70 opacity-70">

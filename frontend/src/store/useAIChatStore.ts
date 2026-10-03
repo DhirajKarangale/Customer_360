@@ -85,8 +85,8 @@ export const useAIChatStore = create<AIChatState>()(
     }),
     {
       name: 'ai-chat-storage',
-      // We only want to persist the chat history and the current typed input
-      // We don't want to persist the panel being open/closed across reloads
+
+
       partialize: (state) => ({ 
         messages: state.messages, 
         draftInput: state.draftInput,

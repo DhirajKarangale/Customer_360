@@ -7,12 +7,11 @@ interface ToastState {
 }
 
 interface UIState {
-  // Loader State
+
   isLoaderVisible: boolean;
   showLoader: () => void;
   hideLoader: () => void;
 
-  // Toast / Message Bar State
   toast: ToastState;
   showToast: (text: string, color?: string, timeMs?: number) => void;
   hideToast: () => void;
@@ -26,8 +25,7 @@ export const useUIStore = create<UIState>()((set) => ({
   toast: { text: '', color: 'text-foreground', isVisible: false },
   showToast: (text, color = 'text-foreground', timeMs = 3000) => {
     set({ toast: { text, color, isVisible: true } });
-    
-    // Auto-hide after timeMs
+
     setTimeout(() => {
       set((state) => ({ toast: { ...state.toast, isVisible: false } }));
     }, timeMs);

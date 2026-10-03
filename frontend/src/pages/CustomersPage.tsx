@@ -11,8 +11,8 @@ import { getRandomMessage } from '../utils/messages';
 
 export default function CustomersPage() {
   const agent = useAuthStore((state) => state.agent);
-  
-  // Local state
+
+
   const [page, setPage] = useState(1);
   const [pageSize, setPageSize] = useState(10);
   const [searchTerm, setSearchTerm] = useState('');
@@ -22,16 +22,16 @@ export default function CustomersPage() {
   const { mergeCustomers, getAllCustomers } = useCustomersStore();
   const { setIsOpen: setChatOpen, setActiveCustomer } = useAIChatStore();
 
-  // Debounce search term
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setDebouncedSearch(searchTerm.trim().toLowerCase());
-      setPage(1); // Reset to page 1 on new search
+      setPage(1); 
     }, 500);
     return () => clearTimeout(timer);
   }, [searchTerm]);
 
-  // Fetch from backend
+
   const { data, isLoading, isFetching } = useCustomersQuery({
     insurance_agent_id: agent?.id || '',
     search_term: debouncedSearch,
@@ -39,23 +39,23 @@ export default function CustomersPage() {
     page_size: pageSize,
   }, !!agent?.id);
 
-  // Sync incoming API data into our global deduplicated store
+
   useEffect(() => {
     if (data?.items && data.items.length > 0) {
       mergeCustomers(data.items);
     }
   }, [data, mergeCustomers]);
 
-  // Intelligent Local Fallback logic
+
   const displayItems = useMemo(() => {
-    // If API response is ready, just show authoritative data (even while fetching)
+
     if (data) {
       return data.items;
     }
 
-    // While fetching initial data, optimistic search local store cache
+
     const all = getAllCustomers();
-    // Sort local cache by name to prevent random jumping
+
     let filtered = all.sort((a, b) => a.name.localeCompare(b.name));
 
     if (debouncedSearch) {
@@ -71,14 +71,14 @@ export default function CustomersPage() {
     return filtered.slice(startIndex, startIndex + pageSize);
   }, [data, isFetching, getAllCustomers, debouncedSearch, pageSize, page]);
 
-  // Calculate pagination props
+
   const totalItems = data?.total_items ?? displayItems.length;
   const totalPages = data?.total_pages ?? Math.ceil(displayItems.length / pageSize);
   const currentPage = data?.current_page ?? page;
 
   return (
     <div className="space-y-6">
-      {/* Page Header & Filters */}
+
       <div className="flex flex-col gap-4 rounded-xl border border-white/5 bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl p-4 shadow-sm md:flex-row md:items-center md:justify-between">
         <div className="flex items-center gap-2">
           <div className="rounded-lg bg-primary/10 p-2 text-primary">
@@ -88,7 +88,7 @@ export default function CustomersPage() {
         </div>
 
         <div className="flex flex-col gap-3 md:flex-row md:items-center">
-          {/* Search Bar */}
+
           <div className="relative">
             <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-white/70" />
             <input
@@ -105,7 +105,7 @@ export default function CustomersPage() {
         </div>
       </div>
 
-      {/* Table Section */}
+
       <div className="rounded-xl border border-white/5 bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl shadow-sm">
         <div className="overflow-x-auto">
           {isLoading && !data && displayItems.length === 0 ? (
@@ -164,8 +164,8 @@ export default function CustomersPage() {
             </table>
           )}
         </div>
-        
-        {/* Advanced Pagination UI */}
+
+
         {totalItems > 0 && (
           <Pagination
             currentPage={currentPage}
@@ -181,7 +181,7 @@ export default function CustomersPage() {
         )}
       </div>
 
-      {/* Customer Detail Modal */}
+
       <CustomerModal 
         customerId={selectedCustomerId} 
         onClose={() => setSelectedCustomerId(null)} 

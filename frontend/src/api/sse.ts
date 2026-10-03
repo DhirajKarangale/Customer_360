@@ -17,7 +17,7 @@ export function connectSSE(token: string) {
       Accept: 'text/event-stream',
     },
     signal: ctrl.signal,
-    openWhenHidden: true, // IMPORTANT: Keeps connection alive even if tab is in background
+    openWhenHidden: true, 
     onopen(response) {
       if (response.ok && response.headers.get('content-type')?.includes('text/event-stream')) {
         console.log('SSE connection opened securely');
@@ -36,7 +36,6 @@ export function connectSSE(token: string) {
         const jobId = data.job_id || data.id;
         const textResult = data.result || data.message || data.content || JSON.stringify(data);
 
-        // Handle AI Chat events
         if (jobId && typeof jobId === 'string' && jobId.startsWith('aichat_')) {
           const store = useAIChatStore.getState();
           const existingMessage = store.messages.find(m => m.job_id === jobId);
@@ -50,9 +49,9 @@ export function connectSSE(token: string) {
             }
           }
         }
-        // Handle AI Suggestions events
+
         else if (data.job_type === 'suggestions_generation' || (jobId && typeof jobId === 'string' && jobId.startsWith('suggestion_'))) {
-          // Update React Query Cache directly so it loads instantly when navigating back
+
           const agentId = useAuthStore.getState().agent?.id;
           if (agentId) {
             queryClient.setQueryData(['suggestions', agentId], {
@@ -62,7 +61,6 @@ export function connectSSE(token: string) {
             });
           }
 
-          // Dispatch a custom event that the Dashboard page can listen to
           const event = new CustomEvent('agent_suggestions_updated', {
             detail: {
               jobId,

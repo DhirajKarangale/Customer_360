@@ -24,7 +24,7 @@ export function Pagination({
   onPageChange,
   onPageSizeChange,
 }: PaginationProps) {
-  
+
   const handlePageChange = (newPage: number) => {
     if (newPage >= 1 && newPage <= totalPages) {
       onPageChange(newPage);
@@ -33,7 +33,7 @@ export function Pagination({
 
   return (
     <div className="flex flex-col sm:flex-row items-center justify-between px-4 py-3 bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl border-t border-white/5 mt-4 rounded-b-xl shadow-sm">
-      {/* Page Size Dropdown & Info */}
+
       <div className="flex items-center gap-4 text-sm text-white/70 mb-4 sm:mb-0">
         <div className="flex items-center gap-2">
           <span>Show</span>
@@ -59,12 +59,12 @@ export function Pagination({
         </div>
       </div>
 
-      {/* Pagination Controls */}
+
       <div className="flex items-center gap-2">
         <div className="text-sm text-white/70 mr-4">
           Page <span className="font-medium text-white">{currentPage}</span> of <span className="font-medium text-white">{totalPages || 1}</span>
         </div>
-        
+
         <button
           onClick={() => handlePageChange(1)}
           disabled={currentPage === 1 || totalPages === 0}

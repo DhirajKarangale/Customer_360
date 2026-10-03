@@ -43,18 +43,18 @@ export default function AboutPage() {
   return (
     <div className="relative w-full overflow-hidden rounded-2xl bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl p-6 shadow-2xl">
 
-      {/* Background ambient glows */}
+
       <div className="absolute top-0 left-1/4 h-[500px] w-[500px] rounded-full bg-indigo-600/20 blur-[120px] pointer-events-none mix-blend-screen" />
       <div className="absolute bottom-0 right-1/4 h-[400px] w-[400px] rounded-full bg-violet-600/20 blur-[100px] pointer-events-none mix-blend-screen" />
 
       <div className="relative z-10 mx-auto max-w-6xl">
 
-        {/* Header Section */}
+
         <div className="flex flex-col items-center justify-center text-center space-y-4 mb-10 mt-4">
           <div className="relative group">
             <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-75 blur transition duration-500 group-hover:opacity-100 group-hover:duration-200"></div>
             <div className="relative flex h-20 w-20 items-center justify-center overflow-hidden rounded-full bg-black border border-white/5 p-3">
-              {/* Fallback text if logo fails to load, but typically it will show the logo */}
+
               <img
                 src="/DCoders.webp"
                 alt="DCoders Logo"
@@ -78,7 +78,7 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* Team Members Grid */}
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {teamMembers.map((member, index) => (
             <div
