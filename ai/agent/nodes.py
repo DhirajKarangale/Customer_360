@@ -15,9 +15,17 @@ format_llm = get_llm('FORMAT')
 
 SYSTEM_PROMPT = """You are a helpful customer support assistant for an insurance and lending company.
 You have access to the following tools:
-1. `search_unstructured_interactions`: Search transcripts, chats, and emails for relevant context. Arguments: {"query": "string", "policy_id": "string (optional)", "customer_id": "string (optional)", "agent_id": "string (optional)"}
-2. `get_database_context`: Fetch structured customer, agent, or policy details from the database. Arguments: {"agent_id": "string (optional)", "policy_id": "string (optional)", "customer_id": "string (optional)"}
+1. `search_unstructured_interactions`: Search transcripts, chats, and emails for relevant context. Arguments: {"query": "string", "policy_id": "string (optional)", "customer_id": "string or name (optional)", "agent_id": "string or name (optional)"}
+2. `get_database_context`: Fetch structured customer, agent, or policy details from the database. Arguments: {"agent_id": "UUID or name (optional)", "policy_id": "UUID or policy number (optional)", "customer_id": "UUID or customer name (optional)"}
 3. `execute_sql_query`: Execute a raw PostgreSQL query to answer complex or aggregated questions. Arguments: {"query": "string"}
+
+╔══ TOOL ARGUMENT RULES (CRITICAL) ════════════════════════════════════════════╗
+║ `customer_id` accepts EITHER a UUID OR a customer name string               ║
+║ `agent_id`   accepts EITHER a UUID OR an agent name string                  ║
+║ `policy_id`  accepts EITHER a UUID OR a policy number string                ║
+║ NEVER invent fields like `name`, `customer_name`, `agent_name` — they      ║
+║ do NOT exist. ONLY use: customer_id, agent_id, policy_id, query.           ║
+╚═════════════════════════════════════════════════════════════════════════════╝
 
 ═══ EXACT DATABASE SCHEMA (use ONLY these column names in SQL) ═══
 customers:          id (uuid), name, email, phone_number, date_of_birth, address, created_at
@@ -32,13 +40,15 @@ agent_chats:        job_id, agent_id, customer_id, policy_id, query, message, st
 RULES:
 - You MUST ALWAYS filter queries on `policies`, `customers`, or `customer_interactions` by the Logged-In Agent ID in [Current Session Context], UNLESS the user explicitly asks about a different specific agent.
 - If the user asks about a person's name, FIRST check if it matches 'Logged-in Agent Name' or 'Active Customer Name' in [Current Session Context]. If it matches, use that ID directly — do NOT look them up again.
+- If you know a customer's name from Conversation History but don't have their UUID, pass that name as `customer_id` to `get_database_context` — the tool supports name-based lookup automatically.
 - SQL text fields (like `status`) are case-insensitive in practice but use ILIKE for safety: `status ILIKE 'active'`.
 - If a name is NOT in context, check both `customers` and `insurance_agents` tables using `get_database_context`.
 
 CRITICAL ANTI-LOOP RULES (enforce strictly):
 1. NEVER call the exact same tool with the exact same arguments more than once. If a tool already returned a result for given args, use that result — do NOT repeat the call.
-2. If a tool returns an error, try ONE alternative approach. If that also fails, give a final plain-text answer explaining what you tried.
+2. If a tool returns an error or empty result, try ONE alternative approach. If that also fails, give a final plain-text answer explaining what you tried.
 3. You have a maximum of 6 tool calls per response. After 6 calls, you MUST output a final plain-text answer immediately regardless of whether you have complete information.
+4. NEVER invent tool arguments that are not listed above. Invalid args are silently ignored — your call will return no useful data.
 
 If you need to use a tool, output EXACTLY a JSON block and nothing else:
 ```json
@@ -184,15 +194,48 @@ def agent_node(state: AgentState):
             tool_name = parsed.get("tool")
             args = parsed.get("args", {})
 
+            # Strip out any invalid/invented fields the LLM may hallucinate.
+            # Only keep args that are actually accepted by our tools.
+            VALID_TOOL_ARGS = {
+                "search_unstructured_interactions": {"query", "policy_id", "customer_id", "agent_id"},
+                "get_database_context":             {"agent_id", "policy_id", "customer_id"},
+                "execute_sql_query":                {"query"},
+            }
+            valid_keys = VALID_TOOL_ARGS.get(tool_name, set())
+            invalid_keys = set(args.keys()) - valid_keys
+            if invalid_keys:
+                # Remap common hallucinations to the correct field
+                FIELD_REMAPS = {
+                    "name": "customer_id", "customer_name": "customer_id",
+                    "agent_name": "agent_id", "policy_number": "policy_id",
+                }
+                for bad_key in list(invalid_keys):
+                    good_key = FIELD_REMAPS.get(bad_key)
+                    if good_key and good_key in valid_keys and good_key not in args:
+                        args[good_key] = args.pop(bad_key)
+                    else:
+                        args.pop(bad_key, None)
+
             # Deduplication: if this exact (tool, args) combo was already called,
-            # return a synthetic error to force the LLM to move on.
+            # inject a strong correction and force a final plain-text answer.
             call_sig = (tool_name, frozenset(str(v) for v in args.items()))
             if call_sig in seen_tool_calls:
-                return {"messages": [AIMessage(content=(
+                correction = (
                     f"[SYSTEM] You already called '{tool_name}' with these exact arguments and "
-                    "received a result. Do NOT repeat this call. Use the previous tool output "
-                    "to formulate your final answer now."
-                ))]}
+                    "received a result. Do NOT repeat this call. "
+                    "You MUST now write your final plain-text answer using the information already retrieved."
+                )
+                # Append the correction and re-invoke the LLM immediately so it
+                # produces a real answer instead of leaking the system message.
+                forced_history = conversation_history + f"Assistant: {correction}\nAssistant:"
+                forced_response = agent_llm.invoke(forced_history)
+                forced_response = str(forced_response).strip() if forced_response else ""
+                # If LLM still tries a tool call, strip it and use whatever text we got
+                if "```json" in forced_response:
+                    forced_response = forced_response.split("```json")[0].strip()
+                if not forced_response:
+                    forced_response = "I'm sorry, I wasn't able to retrieve the requested information. Please try rephrasing your question."
+                return {"messages": [AIMessage(content=forced_response)]}
 
             # Create a manual ToolCall so LangGraph's ToolNode can process it natively
             tool_call = {
@@ -257,7 +300,15 @@ def format_text_node(state: AgentState):
     last_message = messages[-1]
 
     if os.getenv("ENABLE_TEXT_FORMAT") == "True" and isinstance(last_message, AIMessage) and last_message.content:
-        prompt = FORMATTING_PROMPT.format(text=last_message.content)
+        content_str = last_message.content.strip()
+
+        # Skip formatting for system/error messages — never send internal
+        # control messages to the frontend as formatted HTML.
+        _SKIP_PREFIXES = ("[SYSTEM]", "Error", "Error:", "SYSTEM ERROR", "ACCESS DENIED", "I'm sorry")
+        if any(content_str.startswith(p) for p in _SKIP_PREFIXES):
+            return {"messages": []}
+
+        prompt = FORMATTING_PROMPT.format(text=content_str)
         formatted_content = format_llm.invoke(prompt)
 
         if not formatted_content:

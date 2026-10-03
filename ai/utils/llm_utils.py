@@ -7,55 +7,44 @@ from ai.utils.sf_auth import get_snowflake_conn
 LLM_PROVIDERS_LIST = ['snowflake']
 
 # ─── Snowflake Cortex Model Assignments ────────────────────────────────────────
-# Only using model names confirmed to work with SNOWFLAKE.CORTEX.COMPLETE().
-# The CSV catalog uses uppercase display names, but the API uses lowercase kebab-case.
-# Confirmed working: llama3.1-8b, llama3.1-70b, llama3.3-70b
+# Model names must be lowercase kebab-case as used by SNOWFLAKE.CORTEX.COMPLETE().
+# Source catalog: 'snowflake models.csv' (SHOW CORTEX BASE MODELS output).
+#
+# Each key maps to a list: [primary_model, fallback1, fallback2, ...]
+# Index 0 is always tried first. On any failure, the next model is tried in order.
+# Order: best → good → fast-but-always-available (Llama 3.x as last resort).
 SNOWFLAKE_MODELS = {
-    # Main agent reasoning, tool-call decisions, and final response generation.
-    # llama3.3-70b is the best confirmed-available model: stronger instruction
-    # following than 3.1-70b, reliable JSON output for tool-call parsing.
-    'TRANSCRIPT': 'llama3.3-70b',
+    # ── TRANSCRIPT: Main agent — reasoning, tool-call JSON, final responses ──────
+    # Primary: claude-sonnet-4-5 — best instruction following & agentic accuracy.
+    'TRANSCRIPT':   ['claude-sonnet-4-5',  'llama4-maverick',  'llama3.3-70b',   'llama3.1-70b'],
 
-    # Security entity extraction — fast JSON extraction from the user query.
-    # llama3.1-8b is the fastest confirmed model, sufficient for simple extraction.
-    'RESTRICTION': 'llama3.1-8b',
+    # ── RESTRICTION: Security entity extraction (JSON) from the user query ───────
+    # Primary: llama4-maverick — high-end MoE, fast + accurate JSON extraction.
+    'RESTRICTION':  ['llama4-maverick',    'llama4-scout',     'llama3.3-70b',   'llama3.1-8b'],
 
-    # HTML formatting pass — purely structural tag wrapping, no reasoning needed.
-    # Smallest/fastest model is ideal to minimize latency on this pass.
-    'FORMAT': 'llama3.1-8b',
+    # ── FORMAT: HTML tag wrapping only — no reasoning needed ────────────────────
+    # Primary: gemini-2.5-flash — fastest high-quality model for reformatting.
+    'FORMAT':       ['gemini-2.5-flash',   'llama4-maverick',  'llama4-scout',   'llama3.1-8b'],
 
-    # Interaction sequence planning (simple JSON list output).
-    # Low-complexity task; 8B model gives fastest response time.
-    'SEQUENCE': 'llama3.1-8b',
+    # ── SEQUENCE: Interaction sequence planning (JSON list output) ───────────────
+    # Primary: llama4-maverick — consistent, well-formatted JSON at MoE speed.
+    'SEQUENCE':     ['llama4-maverick',    'llama4-scout',     'llama3.3-70b',   'llama3.1-8b'],
 
-    # One/two-sentence summaries for RAG context chaining.
-    # 8B is fast enough for short summarization — no need for a heavy model.
-    'SUMMARY': 'llama3.1-8b',
+    # ── SUMMARY: 1-2 sentence summarization of interactions ──────────────────────
+    # Primary: gemini-2.5-flash — excellent at concise summarization, very fast.
+    'SUMMARY':      ['gemini-2.5-flash',   'llama4-maverick',  'llama4-scout',   'llama3.1-8b'],
 
-    # Semantic text cleaning: grammar fixes, noise removal, normalization.
-    # llama3.1-70b gives high-quality rewriting while staying confirmed-available.
-    'CLEANING': 'llama3.1-70b',
+    # ── CLEANING: Semantic text normalization, grammar, noise removal ─────────────
+    # Primary: llama4-maverick — strong semantic rewriting at high speed.
+    'CLEANING':     ['llama4-maverick',    'llama3.3-70b',     'llama3.1-70b'],
 
-    # Strict JSON structuring from raw+cleaned text for RAG ingestion.
-    # Needs the best accuracy for metadata extraction and schema compliance.
-    'STRUCTURING': 'llama3.3-70b',
+    # ── STRUCTURING: Strict JSON extraction for RAG ingestion ────────────────────
+    # Primary: claude-sonnet-4-5 — highest schema-compliance accuracy.
+    'STRUCTURING':  ['claude-sonnet-4-5',  'llama4-maverick',  'llama3.3-70b',   'llama3.1-70b'],
 
-    # Snowflake Arctic embedding model — best available for semantic similarity.
-    'EMBEDDING': 'snowflake-arctic-embed-l-v2.0',
-}
-
-# ─── Per-key fallback chains ───────────────────────────────────────────────────
-# If the primary model fails (rate-limit, region outage, unknown model error),
-# _unified_llm_call will automatically try the next model in the list.
-# Order: best → good → fast-but-always-available fallback.
-SNOWFLAKE_MODEL_FALLBACKS = {
-    'TRANSCRIPT':   ['llama3.3-70b',  'llama3.1-70b',  'llama3.1-8b'],
-    'RESTRICTION':  ['llama3.1-8b',   'llama3.1-70b'],
-    'FORMAT':       ['llama3.1-8b',   'llama3.1-70b'],
-    'SEQUENCE':     ['llama3.1-8b',   'llama3.1-70b'],
-    'SUMMARY':      ['llama3.1-8b',   'llama3.1-70b'],
-    'CLEANING':     ['llama3.1-70b',  'llama3.1-8b'],
-    'STRUCTURING':  ['llama3.3-70b',  'llama3.1-70b',  'llama3.1-8b'],
+    # ── EMBEDDING: Semantic vector embeddings for FAISS store ────────────────────
+    # Single model — no fallback needed (embedding dimension must stay consistent).
+    'EMBEDDING':    ['snowflake-arctic-embed-l-v2.0'],
 }
 GEMINI_MODELS = ['gemini-3.5-flash-lite', 'gemini-3.1-pro-preview',
                  'gemini-3.5-flash', 'gemini-3.6-flash', 'gemini-3.7-flash', 'gemini-3.8-flash']
@@ -168,11 +157,8 @@ def _unified_llm_call(prompt_str: str, model_key: str) -> str:
                     print(f"Error with Groq key {idx}/{total_keys}: {e}")
 
         elif provider == 'snowflake':
-            # Try primary model first, then fallbacks in order
-            models_to_try = SNOWFLAKE_MODEL_FALLBACKS.get(
-                model_key,
-                [SNOWFLAKE_MODELS[model_key]] if model_key in SNOWFLAKE_MODELS else []
-            )
+            # Index 0 is primary; the rest are fallbacks tried in order.
+            models_to_try = SNOWFLAKE_MODELS.get(model_key, [])
             if not models_to_try:
                 print(f"Model key '{model_key}' not found in SNOWFLAKE_MODELS.")
                 continue
@@ -210,11 +196,12 @@ def get_llm(model_key: str, strictly_snowflake: bool = False):
     def llm_executor(prompt):
         prompt_str = _extract_prompt_str(prompt)
         if strictly_snowflake:
-            actual_model = SNOWFLAKE_MODELS.get(model_key)
-            if not actual_model:
+            models = SNOWFLAKE_MODELS.get(model_key, [])
+            if not models:
                 raise ValueError(
                     f"Model key '{model_key}' not found in SNOWFLAKE_MODELS.")
-            return _call_snowflake_direct(prompt_str, actual_model)
+            # strictly_snowflake always uses only the primary (index 0) model.
+            return _call_snowflake_direct(prompt_str, models[0])
         else:
             return _unified_llm_call(prompt_str, model_key)
 
@@ -222,10 +209,11 @@ def get_llm(model_key: str, strictly_snowflake: bool = False):
 
 
 def get_snowflake_embedding(text: str, model_key: str, dimension: int) -> list[float]:
-    if model_key not in SNOWFLAKE_MODELS:
+    models = SNOWFLAKE_MODELS.get(model_key, [])
+    if not models:
         raise ValueError(
             f"Model key '{model_key}' not found in SNOWFLAKE_MODELS.")
-    actual_model = SNOWFLAKE_MODELS[model_key]
+    actual_model = models[0]  # Embedding model is always fixed — use primary only.
     global CORTEX_CALL_COUNT
     conn_to_use = get_snowflake_conn()
     CORTEX_CALL_COUNT += 1

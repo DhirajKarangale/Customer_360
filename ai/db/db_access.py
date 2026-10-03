@@ -108,20 +108,41 @@ class AIDatabaseAccess:
     def get_policy_details(self, policy_id: str) -> str:
         cursor = self.conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
         try:
-            cursor.execute("""
-                SELECT p.policy_number, p.policy_type, p.status, p.start_date, p.end_date, 
-                       p.premium_amount, p.coverage_amount, c.name as customer_name, a.name as agent_name
-                FROM policies p
-                LEFT JOIN customers c ON p.customer_id = c.id
-                LEFT JOIN insurance_agents a ON p.agent_id = a.id
-                WHERE p.policy_number = %s
-            """, (policy_id,))
+            # Detect whether we received a UUID (id) or a policy number (e.g. POL-XXXX-XXX)
+            import uuid as _uuid
+            is_uuid = False
+            try:
+                _uuid.UUID(policy_id)
+                is_uuid = True
+            except (ValueError, AttributeError):
+                pass
+
+            if is_uuid:
+                cursor.execute("""
+                    SELECT p.id, p.policy_number, p.policy_type, p.status, p.start_date, p.end_date,
+                           p.premium_amount, p.coverage_amount, c.name as customer_name, a.name as agent_name
+                    FROM policies p
+                    LEFT JOIN customers c ON p.customer_id = c.id
+                    LEFT JOIN insurance_agents a ON p.agent_id = a.id
+                    WHERE p.id = %s
+                """, (policy_id,))
+            else:
+                cursor.execute("""
+                    SELECT p.id, p.policy_number, p.policy_type, p.status, p.start_date, p.end_date,
+                           p.premium_amount, p.coverage_amount, c.name as customer_name, a.name as agent_name
+                    FROM policies p
+                    LEFT JOIN customers c ON p.customer_id = c.id
+                    LEFT JOIN insurance_agents a ON p.agent_id = a.id
+                    WHERE p.policy_number = %s
+                """, (policy_id,))
+
             policy = cursor.fetchone()
             if not policy:
                 return f"No structured database records found for policy {policy_id}."
-            
+
             res = f"Structured Policy Details for {policy['policy_number']}:\n"
-            res += f"- Policy ID: {policy_id}\n"
+            res += f"- Policy UUID: {policy['id']}\n"
+            res += f"- Policy Number: {policy['policy_number']}\n"
             res += f"- Type: {policy['policy_type']}\n"
             res += f"- Status: {policy['status']}\n"
             res += f"- Customer: {policy['customer_name']}\n"
