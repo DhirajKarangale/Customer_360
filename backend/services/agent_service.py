@@ -73,7 +73,7 @@ class AgentService:
             payload = {
                 "job_id": job_id,
                 "insurance_agents_id": agent_id,
-                "callback_url": f"{os.getenv('BACKEND_URL', 'http://localhost:8000')}/api/v1/llm/callback"
+                "callback_url": os.getenv("CALLBACK_URL", "http://localhost:8000/api/v1/llm/callback")
             }
             redis_client.xadd("ai_jobs", payload)
         except Exception as e:
