@@ -16,6 +16,11 @@ export default function ProfilePage() {
   const navigate = useNavigate();
   const queryClient = useQueryClient();
 
+  const handleCopy = (text: string, label: string) => {
+    navigator.clipboard.writeText(text);
+    showToast(`${label} copied to clipboard!`, 'text-emerald-400', 3000);
+  };
+
   const handleSignOut = () => {
     abortAllRequests();
     TokenService.removeToken();
@@ -94,7 +99,10 @@ export default function ProfilePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             
-            <div className="group flex items-center gap-5 rounded-2xl border border-white/5 bg-black/20 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] p-6 transition-all duration-300 hover:bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] hover:border-white/10 hover:-translate-y-1">
+            <button 
+              onClick={() => handleCopy(agent.email, 'Email Address')}
+              className="group flex w-full text-left cursor-pointer items-center gap-5 rounded-2xl border border-white/5 bg-black/20 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] p-6 transition-all duration-300 hover:bg-white/5 hover:border-white/10 hover:-translate-y-1"
+            >
               <div className="rounded-xl bg-blue-500/10 p-3.5 text-blue-400 transition-colors group-hover:bg-blue-500/20 group-hover:text-blue-300">
                 <Mail className="h-6 w-6" />
               </div>
@@ -102,9 +110,12 @@ export default function ProfilePage() {
                 <p className="text-sm text-gray-400 font-medium mb-1">Email Address</p>
                 <p className="text-lg font-semibold text-gray-100">{agent.email}</p>
               </div>
-            </div>
+            </button>
             
-            <div className="group flex items-center gap-5 rounded-2xl border border-white/5 bg-black/20 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] p-6 transition-all duration-300 hover:bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] hover:border-white/10 hover:-translate-y-1">
+            <button 
+              onClick={() => handleCopy(agent.phone_number, 'Phone Number')}
+              className="group flex w-full text-left cursor-pointer items-center gap-5 rounded-2xl border border-white/5 bg-black/20 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] p-6 transition-all duration-300 hover:bg-white/5 hover:border-white/10 hover:-translate-y-1"
+            >
               <div className="rounded-xl bg-emerald-500/10 p-3.5 text-emerald-400 transition-colors group-hover:bg-emerald-500/20 group-hover:text-emerald-300">
                 <Phone className="h-6 w-6" />
               </div>
@@ -112,9 +123,12 @@ export default function ProfilePage() {
                 <p className="text-sm text-gray-400 font-medium mb-1">Phone Number</p>
                 <p className="text-lg font-mono font-semibold text-gray-100">{agent.phone_number}</p>
               </div>
-            </div>
+            </button>
 
-            <div className="group flex items-center gap-5 rounded-2xl border border-white/5 bg-black/20 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] p-6 transition-all duration-300 hover:bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] hover:border-white/10 hover:-translate-y-1">
+            <button 
+              onClick={() => handleCopy(agent.agency_name, 'Agency Name')}
+              className="group flex w-full text-left cursor-pointer items-center gap-5 rounded-2xl border border-white/5 bg-black/20 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] p-6 transition-all duration-300 hover:bg-white/5 hover:border-white/10 hover:-translate-y-1"
+            >
               <div className="rounded-xl bg-purple-500/10 p-3.5 text-purple-400 transition-colors group-hover:bg-purple-500/20 group-hover:text-purple-300">
                 <Building2 className="h-6 w-6" />
               </div>
@@ -122,9 +136,12 @@ export default function ProfilePage() {
                 <p className="text-sm text-gray-400 font-medium mb-1">Agency Name</p>
                 <p className="text-lg font-semibold text-gray-100">{agent.agency_name}</p>
               </div>
-            </div>
+            </button>
 
-            <div className="group flex items-center gap-5 rounded-2xl border border-white/5 bg-black/20 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] p-6 transition-all duration-300 hover:bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] hover:border-white/10 hover:-translate-y-1">
+            <button 
+              onClick={() => handleCopy(agent.license_number, 'License Number')}
+              className="group flex w-full text-left cursor-pointer items-center gap-5 rounded-2xl border border-white/5 bg-black/20 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] p-6 transition-all duration-300 hover:bg-white/5 hover:border-white/10 hover:-translate-y-1"
+            >
               <div className="rounded-xl bg-amber-500/10 p-3.5 text-amber-400 transition-colors group-hover:bg-amber-500/20 group-hover:text-amber-300">
                 <FileCheck className="h-6 w-6" />
               </div>
@@ -132,7 +149,7 @@ export default function ProfilePage() {
                 <p className="text-sm text-gray-400 font-medium mb-1">License Number</p>
                 <p className="text-lg font-mono font-semibold text-gray-100">{agent.license_number}</p>
               </div>
-            </div>
+            </button>
             
           </div>
         </div>
