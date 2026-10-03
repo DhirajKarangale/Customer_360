@@ -181,5 +181,5 @@ jobs:
           done
 
           echo "Service did not reach READY within 5 minutes. Dumping logs..."
-          snow spcs service logs "${{ env.SERVICE_NAME }}" --connection default || true
+          snow spcs service logs "${{ env.SERVICE_NAME }}" --container-name ai-worker --connection default || true
           exit 1

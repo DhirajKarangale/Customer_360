@@ -36,7 +36,20 @@ def get_snowflake_conn(force_refresh=False):
         if SF_PASSWORD:
             connect_kwargs["password"] = SF_PASSWORD
         if PRIVATE_KEY_PATH:
-            connect_kwargs["private_key_file"] = PRIVATE_KEY_PATH
+            from cryptography.hazmat.primitives import serialization
+            from cryptography.hazmat.backends import default_backend
+            with open(PRIVATE_KEY_PATH, "rb") as key:
+                p_key = serialization.load_pem_private_key(
+                    key.read(),
+                    password=None,
+                    backend=default_backend()
+                )
+            pkb = p_key.private_bytes(
+                encoding=serialization.Encoding.DER,
+                format=serialization.PrivateFormat.PKCS8,
+                encryption_algorithm=serialization.NoEncryption()
+            )
+            connect_kwargs["private_key"] = pkb
 
         conn = snowflake.connector.connect(**connect_kwargs)
     except Exception as e:
