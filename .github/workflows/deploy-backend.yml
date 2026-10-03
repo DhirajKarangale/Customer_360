@@ -1,0 +1,164 @@
+name: Deploy Backend to Snowflake
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'backend/**'
+      - '.github/workflows/deploy-backend.yml'
+
+env:
+  SERVICE_NAME: "BACKEND_SERVICE"
+  COMPUTE_POOL: "BACKEND_COMPUTE_POOL"
+  IMAGE_REPO: "BACKEND_REPO"
+  IMAGE_TAG: "latest"
+
+jobs:
+  deploy-backend:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Write Snowflake CLI config
+        run: |
+          mkdir -p ~/.snowflake
+          cat > ~/.snowflake/config.toml << TOML
+          [connections.default]
+          account          = "${{ secrets.SNOWFLAKE_ACCOUNT }}"
+          user             = "${{ secrets.SNOWFLAKE_USER }}"
+          warehouse        = "${{ secrets.SNOWFLAKE_WAREHOUSE }}"
+          database         = "${{ secrets.SNOWFLAKE_DATABASE }}"
+          schema           = "${{ secrets.SNOWFLAKE_SCHEMA }}"
+          authenticator    = "SNOWFLAKE_JWT"
+          private_key_path = "${{ github.workspace }}/ai/certs/key.pem"
+          TOML
+          chmod 0600 ~/.snowflake/config.toml
+          # The key file must exist in this path for the snow cli to use it
+          mkdir -p ${{ github.workspace }}/ai/certs
+          echo "${{ secrets.SNOWFLAKE_PRIVATE_KEY }}" > ${{ github.workspace }}/ai/certs/key.pem
+          chmod 0600 "${{ github.workspace }}/ai/certs/key.pem"
+
+      - name: Setup Snowflake CLI
+        uses: Snowflake-Labs/snowflake-cli-action@v2
+        with:
+          default-config-file-path: "~/.snowflake/config.toml"
+
+      - name: Test Snowflake connection
+        run: snow connection test --connection default
+
+      - name: Get Snowflake Image Registry URL
+        run: |
+          REGISTRY=$(snow spcs image-registry url --connection default)
+          echo "REGISTRY=${REGISTRY}" >> $GITHUB_ENV
+          RAW_PATH="${REGISTRY}/${{ secrets.SNOWFLAKE_DATABASE }}/${{ secrets.SNOWFLAKE_SCHEMA }}/${{ env.IMAGE_REPO }}/backend:${{ env.IMAGE_TAG }}"
+          IMAGE_PATH=$(echo "${RAW_PATH}" | tr '[:upper:]' '[:lower:]')
+          echo "IMAGE_PATH=${IMAGE_PATH}" >> $GITHUB_ENV
+          echo "Registry: ${REGISTRY}"
+          echo "Image path: ${IMAGE_PATH}"
+
+      - name: Create image repository (if not exists)
+        run: |
+          echo "Ensuring image repository '${{ env.IMAGE_REPO }}' exists..."
+          snow spcs image-repository create "${{ env.IMAGE_REPO }}" \
+            --connection default \
+            --if-not-exists
+
+      - name: Build and Push Docker image
+        run: |
+          echo "Building Docker image..."
+          docker build -t "${IMAGE_PATH}" ./backend
+
+          echo "Logging into Snowflake Image Registry..."
+          snow spcs image-registry login --connection default
+
+          echo "Pushing image..."
+          docker push "${IMAGE_PATH}"
+
+      - name: Stop existing service
+        run: |
+          echo "Suspending service if it exists..."
+          snow sql \
+            --query "ALTER SERVICE IF EXISTS ${{ env.SERVICE_NAME }} SUSPEND;" \
+            --connection default || true
+
+      - name: Delete existing service
+        run: |
+          echo "Dropping service if it exists..."
+          snow sql \
+            --query "DROP SERVICE IF EXISTS ${{ env.SERVICE_NAME }};" \
+            --connection default || true
+
+      - name: Write SPCS service spec
+        run: |
+          printf 'spec:\n  containers:\n  - name: backend\n    image: %s\n    env:\n      POSTGRES_USER: "%s"\n      POSTGRES_PASSWORD: "%s"\n      POSTGRES_HOST: "%s"\n      POSTGRES_PORT: "%s"\n      POSTGRES_DB: "%s"\n      REDIS_URL: "%s"\n      REDIS_CONSUMER_GROUP: "%s"\n      CALLBACK_URL: "%s"\n      AGENT_MEMORY: "%s"\n  endpoints:\n  - name: api\n    port: 8000\n    public: true\n' \
+            "${IMAGE_PATH}" \
+            "${{ secrets.POSTGRES_USER }}" \
+            "${{ secrets.POSTGRES_PASSWORD }}" \
+            "${{ secrets.POSTGRES_HOST }}" \
+            "${{ secrets.POSTGRES_PORT }}" \
+            "${{ secrets.POSTGRES_DB }}" \
+            "${{ secrets.REDIS_URL }}" \
+            "${{ secrets.REDIS_CONSUMER_GROUP }}" \
+            "${{ secrets.CALLBACK_URL }}" \
+            "${{ secrets.AGENT_MEMORY }}" \
+            > /tmp/backend_spec.yaml
+
+          echo "--- Spec file contents ---"
+          cat /tmp/backend_spec.yaml
+
+      - name: Create compute pool (if not exists)
+        run: |
+          echo "Ensuring compute pool '${{ env.COMPUTE_POOL }}' exists..."
+          snow sql \
+            --query "CREATE COMPUTE POOL IF NOT EXISTS ${{ env.COMPUTE_POOL }} MIN_NODES = 1 MAX_NODES = 1 INSTANCE_FAMILY = CPU_X64_XS;" \
+            --connection default
+
+      - name: Deploy backend on Snowflake SPCS
+        run: |
+          echo "Creating SPCS service..."
+          snow spcs service create "${{ env.SERVICE_NAME }}" \
+            --compute-pool "${{ env.COMPUTE_POOL }}" \
+            --spec-path /tmp/backend_spec.yaml \
+            --min-instances 1 \
+            --max-instances 1 \
+            --eai-name ai_worker_access_integration \
+            --connection default
+
+          echo "Successfully deployed backend on Snowflake SPCS!"
+
+      - name: Wait for service to be READY
+        run: |
+          echo "Waiting for service to reach READY state (max 5 min / 20 attempts)..."
+          for i in $(seq 1 20); do
+            STATUS=$(snow spcs service status "${{ env.SERVICE_NAME }}" \
+              --connection default \
+              --format json 2>/dev/null \
+              | python3 -c "
+          import sys, json
+          try:
+              d = json.load(sys.stdin)
+              print(d[0].get('status', 'UNKNOWN'))
+          except Exception:
+              print('UNKNOWN')
+          " 2>/dev/null || echo "UNKNOWN")
+
+            echo "  Attempt ${i}/20 — current status: ${STATUS}"
+
+            if [ "$STATUS" = "READY" ]; then
+              echo "Service is READY!"
+              
+              echo "Extracting endpoint URL..."
+              snow spcs service endpoint-url "${{ env.SERVICE_NAME }}" api \
+                --connection default
+              
+              exit 0
+            fi
+            sleep 15
+          done
+
+          echo "Service did not reach READY within 5 minutes. Dumping logs..."
+          snow spcs service logs "${{ env.SERVICE_NAME }}" --container-name backend --instance-id 0 --connection default || true
+          exit 1
