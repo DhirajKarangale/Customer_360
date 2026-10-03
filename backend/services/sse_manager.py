@@ -1,9 +1,10 @@
 import asyncio
 from typing import Dict, List
 
+
 class SSEManager:
     def __init__(self):
-        # Maps insurance_agent_id to a list of asyncio Queues
+
         self.connections: Dict[str, List[asyncio.Queue]] = {}
 
     async def connect(self, agent_id: str) -> asyncio.Queue:
@@ -28,5 +29,5 @@ class SSEManager:
                 except asyncio.QueueFull:
                     pass
 
-# Global singleton
+
 sse_manager = SSEManager()

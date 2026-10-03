@@ -5,19 +5,21 @@ from typing import Any, Optional
 import faiss
 import numpy as np
 from ai.rag.pipeline.metadata_store import MetadataStore
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 class VectorStoreManager:
-    _FAISS_INDEX_FILE = 'faiss.index'
-    _METADATA_FILE = 'metadata.pkl'
-    _REGISTRY_FILE = 'registry.json'
+    _FAISS_INDEX_FILE = "faiss.index"
+    _METADATA_FILE = "metadata.pkl"
+    _REGISTRY_FILE = "registry.json"
 
     def __init__(self, store_dir: str, dimension: int) -> None:
         self._store_dir = store_dir
         self._dimension = dimension
         self._index: Optional[faiss.IndexFlatIP] = None
-        self._metadata = MetadataStore(
-            os.path.join(store_dir, self._METADATA_FILE))
+        self._metadata = MetadataStore(os.path.join(store_dir, self._METADATA_FILE))
         self._registry: dict[str, dict[str, Any]] = {}
 
     def initialize(self) -> None:
@@ -27,16 +29,22 @@ class VectorStoreManager:
 
     def save(self) -> None:
         os.makedirs(self._store_dir, exist_ok=True)
-        faiss.write_index(self._index, os.path.join(
-            self._store_dir, self._FAISS_INDEX_FILE))
+        faiss.write_index(
+            self._index, os.path.join(self._store_dir, self._FAISS_INDEX_FILE)
+        )
         self._metadata.save()
-        with open(os.path.join(self._store_dir, self._REGISTRY_FILE), 'w') as f:
+        with open(os.path.join(self._store_dir, self._REGISTRY_FILE), "w") as f:
             json.dump(self._registry, f, indent=2)
 
     def load(self) -> bool:
         return self._load_existing()
 
-    def add_documents(self, embeddings: list[list[float]], chunks: list[dict[str, Any]], document_id: str) -> None:
+    def add_documents(
+        self,
+        embeddings: list[list[float]],
+        chunks: list[dict[str, Any]],
+        document_id: str,
+    ) -> None:
         if not embeddings or not chunks:
             return
         vectors = np.array(embeddings, dtype=np.float32)
@@ -47,9 +55,13 @@ class VectorStoreManager:
         self._metadata.add_entries(chunks)
         self._index.add(vectors)
         self._registry[document_id] = {
-            'start_index': start_index, 'num_chunks': len(chunks)}
+            "start_index": start_index,
+            "num_chunks": len(chunks),
+        }
 
-    def similarity_search(self, query_embedding: list[float], top_k: int, score_threshold: float) -> list[dict[str, Any]]:
+    def similarity_search(
+        self, query_embedding: list[float], top_k: int, score_threshold: float
+    ) -> list[dict[str, Any]]:
         if self._index is None or self._index.ntotal == 0:
             return []
         query = np.array([query_embedding], dtype=np.float32)
@@ -65,12 +77,15 @@ class VectorStoreManager:
             entry = self._metadata.get_entry(int(idx))
             if entry is not None:
                 result = dict(entry)
-                result['score'] = float(score)
+                result["score"] = float(score)
 
-                # Find source document using the registry
                 for doc_id, info in self._registry.items():
-                    if info['start_index'] <= int(idx) < info['start_index'] + info['num_chunks']:
-                        result['source_document'] = doc_id
+                    if (
+                        info["start_index"]
+                        <= int(idx)
+                        < info["start_index"] + info["num_chunks"]
+                    ):
+                        result["source_document"] = doc_id
                         break
 
                 results.append(result)
@@ -84,8 +99,6 @@ class VectorStoreManager:
     def get_ingested_document_ids(self) -> set[str]:
         return set(self._registry.keys())
 
-    def is_document_ingested(self, document_id: str) -> bool:
-        return document_id in self._registry
 
     def _load_existing(self) -> bool:
         index_path = os.path.join(self._store_dir, self._FAISS_INDEX_FILE)
@@ -96,13 +109,14 @@ class VectorStoreManager:
             self._index = faiss.read_index(index_path)
             self._metadata.load()
             if os.path.exists(registry_path):
-                with open(registry_path, 'r') as f:
+                with open(registry_path, "r") as f:
                     self._registry = json.load(f)
             return True
         except Exception as e:
-            print(f'  [WARN] Failed to load existing vector store: {e}')
+            logger.info(f"  [WARN] Failed to load existing vector store: {e}")
             self._index = None
-            self._metadata = MetadataStore(os.path.join(
-                self._store_dir, self._METADATA_FILE))
+            self._metadata = MetadataStore(
+                os.path.join(self._store_dir, self._METADATA_FILE)
+            )
             self._registry = {}
             return False

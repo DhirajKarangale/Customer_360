@@ -3,15 +3,17 @@ import os
 from typing import Literal
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage, ToolMessage
 from langgraph.prebuilt import ToolNode
+import logging
+
+logger = logging.getLogger(__name__)
 
 from ai.agent.state import AgentState
 from ai.agent.tools import TOOLS
 from ai.utils.llm_utils import get_llm
 
-# Main agent LLM — handles reasoning, tool calls, and response generation
-agent_llm = get_llm('TRANSCRIPT')
-# Lightweight LLM for the HTML formatting pass only
-format_llm = get_llm('FORMAT')
+agent_llm = get_llm("TRANSCRIPT")
+
+format_llm = get_llm("FORMAT")
 
 SYSTEM_PROMPT = """You are a helpful customer support assistant for an insurance and lending company.
 You have access to the following tools:
@@ -64,7 +66,6 @@ When summarizing interactions, ALWAYS include specific names, examples, or detai
 """
 
 
-
 def _resolve_names_from_state(state: AgentState) -> tuple[str, bool]:
     """
     Opens a SINGLE DB connection to resolve agent name, customer name, and
@@ -91,8 +92,16 @@ def _resolve_names_from_state(state: AgentState) -> tuple[str, bool]:
                 res = db.execute_query(
                     f"SELECT name FROM insurance_agents WHERE id = '{agent_uuid}'"
                 )
-                lines = [l.strip() for l in res.splitlines() if l.strip() and not l.startswith('-')]
-                agent_name = lines[1] if len(lines) > 1 and lines[0].lower() == 'name' else "Unknown Agent"
+                lines = [
+                    l.strip()
+                    for l in res.splitlines()
+                    if l.strip() and not l.startswith("-")
+                ]
+                agent_name = (
+                    lines[1]
+                    if len(lines) > 1 and lines[0].lower() == "name"
+                    else "Unknown Agent"
+                )
             except Exception:
                 agent_name = "Unknown Agent"
             context_lines.append(f"- Logged-in Agent ID: {agent_uuid}")
@@ -105,8 +114,16 @@ def _resolve_names_from_state(state: AgentState) -> tuple[str, bool]:
                 res = db.execute_query(
                     f"SELECT name FROM customers WHERE id = '{cust_uuid}'"
                 )
-                lines = [l.strip() for l in res.splitlines() if l.strip() and not l.startswith('-')]
-                cust_name = lines[1] if len(lines) > 1 and lines[0].lower() == 'name' else "Unknown Customer"
+                lines = [
+                    l.strip()
+                    for l in res.splitlines()
+                    if l.strip() and not l.startswith("-")
+                ]
+                cust_name = (
+                    lines[1]
+                    if len(lines) > 1 and lines[0].lower() == "name"
+                    else "Unknown Customer"
+                )
             except Exception:
                 cust_name = "Unknown Customer"
             context_lines.append(f"- Active Customer ID: {cust_uuid}")
@@ -118,8 +135,16 @@ def _resolve_names_from_state(state: AgentState) -> tuple[str, bool]:
                 res = db.execute_query(
                     f"SELECT policy_number FROM policies WHERE id = '{pol_uuid}'"
                 )
-                lines = [l.strip() for l in res.splitlines() if l.strip() and not l.startswith('-')]
-                pol_number = lines[1] if len(lines) > 1 and lines[0].lower() == 'policy_number' else "Unknown Policy"
+                lines = [
+                    l.strip()
+                    for l in res.splitlines()
+                    if l.strip() and not l.startswith("-")
+                ]
+                pol_number = (
+                    lines[1]
+                    if len(lines) > 1 and lines[0].lower() == "policy_number"
+                    else "Unknown Policy"
+                )
             except Exception:
                 pol_number = "Unknown Policy"
             context_lines.append(f"- Active Policy ID: {pol_uuid}")
@@ -129,7 +154,11 @@ def _resolve_names_from_state(state: AgentState) -> tuple[str, bool]:
     finally:
         db.close()
 
-    context_str = "\n[Current Session Context]\n" + "\n".join(context_lines) if context_lines else ""
+    context_str = (
+        "\n[Current Session Context]\n" + "\n".join(context_lines)
+        if context_lines
+        else ""
+    )
     return context_str, has_context
 
 
@@ -138,10 +167,8 @@ def agent_node(state: AgentState):
 
     messages = state.get("messages", [])
 
-    # Reset current agent ID at the start of every node invocation
     ai.agent.state.CURRENT_AGENT_ID = None
 
-    # Resolve all context names using a SINGLE shared DB connection
     context_str, has_context = _resolve_names_from_state(state)
 
     system_prompt_with_context = SYSTEM_PROMPT
@@ -150,26 +177,27 @@ def agent_node(state: AgentState):
 
     conversation_history = system_prompt_with_context + "\n\nConversation History:\n"
 
-    # Count how many tool calls have already been made in this conversation turn,
-    # and collect (tool, args) pairs to detect duplicate calls.
     tool_call_count = 0
-    seen_tool_calls: set = set()  # frozenset of (tool_name, sorted_args_items)
+    seen_tool_calls: set = set()
 
     for msg in messages:
         if isinstance(msg, HumanMessage):
             conversation_history += f"User: {msg.content}\n"
         elif isinstance(msg, AIMessage):
-            if hasattr(msg, 'tool_calls') and msg.tool_calls:
+            if hasattr(msg, "tool_calls") and msg.tool_calls:
                 tc = msg.tool_calls[0]
                 tool_call_count += 1
-                seen_tool_calls.add((tc['name'], frozenset(str(v) for v in tc['args'].items())))
-                conversation_history += f"Assistant (Tool Call): {tc['name']} with args {tc['args']}\n"
+                seen_tool_calls.add(
+                    (tc["name"], frozenset(str(v) for v in tc["args"].items()))
+                )
+                conversation_history += (
+                    f"Assistant (Tool Call): {tc['name']} with args {tc['args']}\n"
+                )
             else:
                 conversation_history += f"Assistant: {msg.content}\n"
-        elif isinstance(msg, ToolMessage) or msg.type == 'tool':
+        elif isinstance(msg, ToolMessage) or msg.type == "tool":
             conversation_history += f"Tool Output: {msg.content}\n"
 
-    # Hard cap: force a final answer if the agent has already made MAX_TOOL_CALLS
     MAX_TOOL_CALLS = 6
     if tool_call_count >= MAX_TOOL_CALLS:
         conversation_history += (
@@ -178,15 +206,19 @@ def agent_node(state: AgentState):
         )
 
     response_str = agent_llm.invoke(conversation_history)
-    print(f"=== LLM RAW RESPONSE ===\n{response_str}\n========================")
+    logger.info(f"=== LLM RAW RESPONSE ===\n{response_str}\n========================")
 
-    # Guard: if Snowflake returns None for some reason, return a safe fallback
     if not response_str:
-        return {"messages": [AIMessage(content="I'm sorry, I encountered an issue generating a response. Please try again.")]}
+        return {
+            "messages": [
+                AIMessage(
+                    content="I'm sorry, I encountered an issue generating a response. Please try again."
+                )
+            ]
+        }
 
     response_str = str(response_str).strip()
 
-    # Check if the LLM decided to call a tool via JSON block
     if "```json" in response_str and tool_call_count < MAX_TOOL_CALLS:
         try:
             json_str = response_str.split("```json")[1].split("```")[0].strip()
@@ -194,20 +226,25 @@ def agent_node(state: AgentState):
             tool_name = parsed.get("tool")
             args = parsed.get("args", {})
 
-            # Strip out any invalid/invented fields the LLM may hallucinate.
-            # Only keep args that are actually accepted by our tools.
             VALID_TOOL_ARGS = {
-                "search_unstructured_interactions": {"query", "policy_id", "customer_id", "agent_id"},
-                "get_database_context":             {"agent_id", "policy_id", "customer_id"},
-                "execute_sql_query":                {"query"},
+                "search_unstructured_interactions": {
+                    "query",
+                    "policy_id",
+                    "customer_id",
+                    "agent_id",
+                },
+                "get_database_context": {"agent_id", "policy_id", "customer_id"},
+                "execute_sql_query": {"query"},
             }
             valid_keys = VALID_TOOL_ARGS.get(tool_name, set())
             invalid_keys = set(args.keys()) - valid_keys
             if invalid_keys:
-                # Remap common hallucinations to the correct field
+
                 FIELD_REMAPS = {
-                    "name": "customer_id", "customer_name": "customer_id",
-                    "agent_name": "agent_id", "policy_number": "policy_id",
+                    "name": "customer_id",
+                    "customer_name": "customer_id",
+                    "agent_name": "agent_id",
+                    "policy_number": "policy_id",
                 }
                 for bad_key in list(invalid_keys):
                     good_key = FIELD_REMAPS.get(bad_key)
@@ -216,8 +253,6 @@ def agent_node(state: AgentState):
                     else:
                         args.pop(bad_key, None)
 
-            # Deduplication: if this exact (tool, args) combo was already called,
-            # inject a strong correction and force a final plain-text answer.
             call_sig = (tool_name, frozenset(str(v) for v in args.items()))
             if call_sig in seen_tool_calls:
                 correction = (
@@ -225,34 +260,40 @@ def agent_node(state: AgentState):
                     "received a result. Do NOT repeat this call. "
                     "You MUST now write your final plain-text answer using the information already retrieved."
                 )
-                # Append the correction and re-invoke the LLM immediately so it
-                # produces a real answer instead of leaking the system message.
-                forced_history = conversation_history + f"Assistant: {correction}\nAssistant:"
+
+                forced_history = (
+                    conversation_history + f"Assistant: {correction}\nAssistant:"
+                )
                 forced_response = agent_llm.invoke(forced_history)
-                forced_response = str(forced_response).strip() if forced_response else ""
-                # If LLM still tries a tool call, strip it and use whatever text we got
+                forced_response = (
+                    str(forced_response).strip() if forced_response else ""
+                )
+
                 if "```json" in forced_response:
                     forced_response = forced_response.split("```json")[0].strip()
                 if not forced_response:
                     forced_response = "I'm sorry, I wasn't able to retrieve the requested information. Please try rephrasing your question."
                 return {"messages": [AIMessage(content=forced_response)]}
 
-            # Create a manual ToolCall so LangGraph's ToolNode can process it natively
             tool_call = {
                 "name": tool_name,
                 "args": args,
-                "id": "call_" + str(abs(hash(response_str)))[-8:]
+                "id": "call_" + str(abs(hash(response_str)))[-8:],
             }
             return {"messages": [AIMessage(content="", tool_calls=[tool_call])]}
         except Exception as e:
-            # If JSON parsing fails, feed the error back so the LLM can correct itself
-            return {"messages": [AIMessage(content=f"Error parsing JSON tool call: {e}. Please ensure you output strictly valid JSON inside markdown blocks if calling a tool.")]}
 
-    # If no tool call, it's the final answer
+            return {
+                "messages": [
+                    AIMessage(
+                        content=f"Error parsing JSON tool call: {e}. Please ensure you output strictly valid JSON inside markdown blocks if calling a tool."
+                    )
+                ]
+            }
+
     return {"messages": [AIMessage(content=response_str)]}
 
 
-# The ToolNode automatically executes the tools requested via AIMessage.tool_calls
 tool_node = ToolNode(TOOLS)
 
 
@@ -261,7 +302,11 @@ def should_continue(state: AgentState) -> Literal["tools", "format_text"]:
     messages = state.get("messages", [])
     last_message = messages[-1]
 
-    if isinstance(last_message, AIMessage) and hasattr(last_message, 'tool_calls') and last_message.tool_calls:
+    if (
+        isinstance(last_message, AIMessage)
+        and hasattr(last_message, "tool_calls")
+        and last_message.tool_calls
+    ):
         return "tools"
     return "format_text"
 
@@ -299,12 +344,21 @@ def format_text_node(state: AgentState):
 
     last_message = messages[-1]
 
-    if os.getenv("ENABLE_TEXT_FORMAT") == "True" and isinstance(last_message, AIMessage) and last_message.content:
+    if (
+        os.getenv("ENABLE_TEXT_FORMAT") == "True"
+        and isinstance(last_message, AIMessage)
+        and last_message.content
+    ):
         content_str = last_message.content.strip()
 
-        # Skip formatting for system/error messages — never send internal
-        # control messages to the frontend as formatted HTML.
-        _SKIP_PREFIXES = ("[SYSTEM]", "Error", "Error:", "SYSTEM ERROR", "ACCESS DENIED", "I'm sorry")
+        _SKIP_PREFIXES = (
+            "[SYSTEM]",
+            "Error",
+            "Error:",
+            "SYSTEM ERROR",
+            "ACCESS DENIED",
+            "I'm sorry",
+        )
         if any(content_str.startswith(p) for p in _SKIP_PREFIXES):
             return {"messages": []}
 
@@ -312,10 +366,9 @@ def format_text_node(state: AgentState):
         formatted_content = format_llm.invoke(prompt)
 
         if not formatted_content:
-            # If formatting fails, just pass through the unformatted message
+
             return {"messages": []}
 
-        # Strip markdown code fences if the LLM wraps them
         content = str(formatted_content).strip()
         if content.startswith("```html"):
             content = content[7:]

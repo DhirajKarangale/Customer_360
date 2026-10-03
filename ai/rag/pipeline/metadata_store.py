@@ -34,12 +34,12 @@ class MetadataStore:
 
     def save(self) -> None:
         os.makedirs(os.path.dirname(self._store_path), exist_ok=True)
-        with open(self._store_path, 'wb') as f:
+        with open(self._store_path, "wb") as f:
             pickle.dump(self._entries, f, protocol=pickle.HIGHEST_PROTOCOL)
 
     def load(self) -> bool:
         if not os.path.exists(self._store_path):
             return False
-        with open(self._store_path, 'rb') as f:
+        with open(self._store_path, "rb") as f:
             self._entries = pickle.load(f)
         return True

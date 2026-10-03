@@ -2,6 +2,7 @@ from pydantic import BaseModel
 from typing import Optional
 from datetime import date
 
+
 class CustomerResponse(BaseModel):
     id: str
     name: str

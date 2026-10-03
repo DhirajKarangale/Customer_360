@@ -2,11 +2,14 @@ import psycopg2
 import psycopg2.extras
 from typing import List, Dict, Any, Tuple
 
+
 class PolicyRepository:
     def __init__(self, conn):
         self.conn = conn
 
-    def get_policies_by_agent(self, agent_id: str, filters: Dict[str, Any], page: int, page_size: int) -> Tuple[int, List[Dict[str, Any]]]:
+    def get_policies_by_agent(
+        self, agent_id: str, filters: Dict[str, Any], page: int, page_size: int
+    ) -> Tuple[int, List[Dict[str, Any]]]:
         cursor = self.conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
         try:
             count_query = "SELECT COUNT(*) as total FROM policies WHERE agent_id = %s"
@@ -18,7 +21,7 @@ class PolicyRepository:
                 count_query += cond
                 data_query += cond
                 params.append(filters["status"])
-            
+
             if filters.get("policy_type"):
                 cond = " AND policy_type = %s"
                 count_query += cond
@@ -40,7 +43,7 @@ class PolicyRepository:
                 params.extend([term, term, term, like_term])
 
             cursor.execute(count_query, tuple(params))
-            total_items = cursor.fetchone()['total']
+            total_items = cursor.fetchone()["total"]
 
             if filters.get("search_term"):
                 term = filters["search_term"]
@@ -54,14 +57,22 @@ class PolicyRepository:
                         WHEN policy_number ILIKE %s THEN 5
                         ELSE 6
                     END, start_date DESC LIMIT %s OFFSET %s"""
-                data_params = params + [term, term, term, term, like_term, page_size, (page - 1) * page_size]
+                data_params = params + [
+                    term,
+                    term,
+                    term,
+                    term,
+                    like_term,
+                    page_size,
+                    (page - 1) * page_size,
+                ]
             else:
                 data_query += " ORDER BY start_date DESC LIMIT %s OFFSET %s"
                 data_params = params + [page_size, (page - 1) * page_size]
 
             cursor.execute(data_query, tuple(data_params))
             items = cursor.fetchall()
-            
+
             return total_items, items
         finally:
             cursor.close()
@@ -69,11 +80,13 @@ class PolicyRepository:
     def get_unique_column_values(self, columns: List[str]) -> Dict[str, List[Any]]:
         cursor = self.conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
         result = {}
-        allowed_columns = {'policy_type', 'status'}
+        allowed_columns = {"policy_type", "status"}
         try:
             for col in columns:
                 if col in allowed_columns:
-                    cursor.execute(f"SELECT DISTINCT {col} FROM policies WHERE {col} IS NOT NULL")
+                    cursor.execute(
+                        f"SELECT DISTINCT {col} FROM policies WHERE {col} IS NOT NULL"
+                    )
                     rows = cursor.fetchall()
                     result[col] = [row[col] for row in rows]
             return result

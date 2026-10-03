@@ -1,56 +1,63 @@
-import json
 import os
 import re
 import sys
 
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))))
+sys.path.insert(
+    0,
+    os.path.dirname(
+        os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    ),
+)
 
-from ai.rag.config import EMBEDDING_DIMENSION, EMBEDDING_MODEL, SIMILARITY_SCORE_THRESHOLD, TOP_K, VECTOR_STORE_DIR
+from ai.rag.config import (
+    EMBEDDING_DIMENSION,
+    EMBEDDING_MODEL,
+    SIMILARITY_SCORE_THRESHOLD,
+    TOP_K,
+    VECTOR_STORE_DIR,
+)
 from ai.rag.pipeline.snowflake_embedder import EmbeddingManager
 from ai.rag.pipeline.faiss_store import VectorStoreManager
+
 
 class RAGRetrievalPipeline:
     def __init__(self):
         self._embedder = EmbeddingManager(EMBEDDING_MODEL, EMBEDDING_DIMENSION)
-        self._vector_store = VectorStoreManager(
-            VECTOR_STORE_DIR, EMBEDDING_DIMENSION)
+        self._vector_store = VectorStoreManager(VECTOR_STORE_DIR, EMBEDDING_DIMENSION)
         self._vector_store.initialize()
+
     def retrieve_context(self, user_input: str) -> tuple[str, int]:
         """
         Retrieves relevant context for a given user input.
         Returns a tuple of (compressed_context_string, count_of_retrieved_chunks).
         """
-        # Generate the query embedding
+
         query_embedding = self._embedder.embed_text(user_input)
-        # Perform vector similarity search and filter using threshold and top_k
+
         results = self._vector_store.similarity_search(
-            query_embedding,
-            top_k=TOP_K,
-            score_threshold=SIMILARITY_SCORE_THRESHOLD
+            query_embedding, top_k=TOP_K, score_threshold=SIMILARITY_SCORE_THRESHOLD
         )
         count = len(results) if results else 0
         if not results:
             return "No relevant context found.", count
-        # Retrieve matching chunks and their complete metadata/context
+
         formatted_context = []
         for i, result in enumerate(results, 1):
             metadata = result.get("metadata", {})
             participants = metadata.get("participants", {})
-            customer_name = participants.get(
-                "customer", {}).get("name", "Unknown")
+            customer_name = participants.get("customer", {}).get("name", "Unknown")
             mood = metadata.get("user_mood", "neutral")
             doc_type = metadata.get("type", "unknown")
             timestamp = metadata.get("timestamp", "unknown")
             topics = metadata.get("topics", [])
             action_items = metadata.get("action_items", [])
-            # Try to extract policy number from source_document
+
             source_doc = result.get("source_document", "")
             if not source_doc:
                 source_doc = metadata.get("source_document", "")
-            policy_match = re.search(r'POL-\d+-\d+', source_doc)
-            policy_number = policy_match.group(
-                0) if policy_match else "Unknown"
-            # Format nicely as markdown
+            policy_match = re.search(r"POL-\d+-\d+", source_doc)
+            policy_number = policy_match.group(0) if policy_match else "Unknown"
+
             doc_str = (
                 f"### [Document {i}]\n"
                 f"**Policy Number:** {policy_number}\n"
@@ -65,5 +72,6 @@ class RAGRetrievalPipeline:
             doc_str += f"**Summary:** {result.get('chunk_text', '')}\n"
             formatted_context.append(doc_str)
         return "\n".join(formatted_context), count
+
     def close(self):
         self._embedder.close()

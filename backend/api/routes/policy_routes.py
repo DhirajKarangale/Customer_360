@@ -7,12 +7,16 @@ from backend.api.dependencies import get_policy_service
 
 router = APIRouter(prefix="/policies", tags=["Policies"])
 
+
 @router.get("/filters")
 def get_policy_filters(
-    columns: List[str] = Query(..., description="List of columns to get unique values for"),
-    policy_service: PolicyService = Depends(get_policy_service)
+    columns: List[str] = Query(
+        ..., description="List of columns to get unique values for"
+    ),
+    policy_service: PolicyService = Depends(get_policy_service),
 ):
     return policy_service.get_unique_column_values(columns)
+
 
 @router.get("/", response_model=PaginatedResponse[PolicyResponse])
 def get_policies(
@@ -20,10 +24,12 @@ def get_policies(
     status: Optional[str] = Query(None, description="Filter by policy status"),
     policy_type: Optional[str] = Query(None, description="Filter by policy type"),
     customer_id: Optional[str] = Query(None, description="Filter by customer ID"),
-    search_term: Optional[str] = Query(None, description="Search term for ID, agent ID, customer ID, or policy number"),
+    search_term: Optional[str] = Query(
+        None, description="Search term for ID, agent ID, customer ID, or policy number"
+    ),
     page: int = Query(1, ge=1, description="Page number"),
     page_size: int = Query(10, ge=1, le=100, description="Items per page"),
-    policy_service: PolicyService = Depends(get_policy_service)
+    policy_service: PolicyService = Depends(get_policy_service),
 ):
     return policy_service.get_agent_policies(
         agent_id=insurance_agent_id,
@@ -32,5 +38,5 @@ def get_policies(
         customer_id=customer_id,
         search_term=search_term,
         page=page,
-        page_size=page_size
+        page_size=page_size,
     )

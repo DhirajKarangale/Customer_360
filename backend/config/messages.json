@@ -1,0 +1,57 @@
+{
+  "suggestion_loading": [
+    "Consulting the crystal ball for your next best move... hang tight!",
+    "Rummaging through your policies... I swear there's work in here somewhere.",
+    "Waking up the AI hamsters... spinning the wheel for your suggestions!",
+    "Analyzing your data with a magnifying glass... be right back!",
+    "Searching high and low for something productive for you to do today...",
+    "Brewing some fresh insights... don't go away!",
+    "Summoning the spirits of productivity...",
+    "Polishing your daily agenda... almost there!"
+  ],
+  "chat_loading": [
+    "Thinking really hard... maybe too hard.",
+    "Consulting the digital oracle...",
+    "Crunching numbers and eating bytes...",
+    "Connecting the dots... please hold.",
+    "Loading wisdom... 99% complete.",
+    "Asking my silicon brain...",
+    "Digging through the data mines..."
+  ],
+  "error": [
+    "Oops! Something went wrong in the matrix.",
+    "Well, this is awkward... please try again.",
+    "Houston, we have a problem.",
+    "Our servers tripped over a wire. Try again!"
+  ],
+  "greeting": [
+    "Welcome back! Ready to crush it today?",
+    "Hello there! Let's get to work.",
+    "Greetings! What's on the agenda today?",
+    "Good to see you! Let's make it a productive day."
+  ],
+  "auth_error": [
+    "Invalid email or password. Please double-check your credentials and try again.",
+    "Whoops! Those credentials don't match our records.",
+    "Access denied. Please verify your email and password.",
+    "Hmm, that didn't work. Check your login details and try once more."
+  ],
+  "agent_not_found": [
+    "Agent not found. They might be in disguise.",
+    "404: Agent missing in action.",
+    "We couldn't find that agent. Did they retire?",
+    "Agent not located. Check the ID and try again."
+  ],
+  "invalid_token": [
+    "Invalid or expired token. Your session has vanished into the ether.",
+    "Token expired! Time to log in again.",
+    "Security says no. Please provide a valid token.",
+    "Access denied: Your token is no longer with us."
+  ],
+  "redis_error": [
+    "Redis Error: Our cache hamsters are on strike.",
+    "Redis Error: The memory banks are temporarily scrambled.",
+    "Redis Error: Connection lost to the matrix.",
+    "Redis Error: Backend hiccup. Please try again."
+  ]
+}

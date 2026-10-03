@@ -1,6 +1,7 @@
 from pydantic import BaseModel
 from typing import Optional
 
+
 class AgentResponse(BaseModel):
     id: str
     name: str
@@ -10,7 +11,7 @@ class AgentResponse(BaseModel):
     license_number: Optional[str] = None
     profile_image_url: Optional[str] = None
 
+
 class SuggestionsResponse(BaseModel):
     message: str
     job_id: Optional[str] = None
-

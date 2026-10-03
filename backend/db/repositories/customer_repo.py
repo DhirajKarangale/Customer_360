@@ -2,19 +2,15 @@ import psycopg2
 import psycopg2.extras
 from typing import List, Dict, Any, Optional, Tuple
 
+
 class CustomerRepository:
     def __init__(self, conn):
         self.conn = conn
-        
-    def get_customer_by_email(self, email: str) -> Optional[Dict[str, Any]]:
-        cursor = self.conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
-        try:
-            cursor.execute("SELECT id, name, email, password, phone_number, date_of_birth, address FROM customers WHERE email = %s", (email,))
-            return cursor.fetchone()
-        finally:
-            cursor.close()
 
-    def get_customers_by_agent(self, agent_id: str, filters: Dict[str, Any], page: int, page_size: int) -> Tuple[int, List[Dict[str, Any]]]:
+
+    def get_customers_by_agent(
+        self, agent_id: str, filters: Dict[str, Any], page: int, page_size: int
+    ) -> Tuple[int, List[Dict[str, Any]]]:
         cursor = self.conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
         try:
             count_query = """
@@ -23,7 +19,7 @@ class CustomerRepository:
                 JOIN policies p ON c.id = p.customer_id
                 WHERE p.agent_id = %s
             """
-            
+
             data_query = """
                 SELECT DISTINCT c.id, c.name, c.email, c.phone_number, c.date_of_birth, c.address 
                 FROM customers c
@@ -59,7 +55,7 @@ class CustomerRepository:
                 params.extend([like_term, like_term, like_term, term])
 
             cursor.execute(count_query, tuple(params))
-            total_items = cursor.fetchone()['total']
+            total_items = cursor.fetchone()["total"]
 
             data_query = f"WITH unique_customers AS ({data_query}) SELECT * FROM unique_customers"
 
@@ -77,14 +73,24 @@ class CustomerRepository:
                         WHEN phone_number ILIKE %s THEN 7
                         ELSE 8
                     END, name LIMIT %s OFFSET %s"""
-                data_params = params + [term, term, term, term, like_term, like_term, like_term, page_size, (page - 1) * page_size]
+                data_params = params + [
+                    term,
+                    term,
+                    term,
+                    term,
+                    like_term,
+                    like_term,
+                    like_term,
+                    page_size,
+                    (page - 1) * page_size,
+                ]
             else:
                 data_query += " ORDER BY name LIMIT %s OFFSET %s"
                 data_params = params + [page_size, (page - 1) * page_size]
 
             cursor.execute(data_query, tuple(data_params))
             items = cursor.fetchall()
-            
+
             return total_items, items
         finally:
             cursor.close()

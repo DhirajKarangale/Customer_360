@@ -1,6 +1,7 @@
 from pydantic import BaseModel
 from typing import Optional
 
+
 class LLMRequest(BaseModel):
     query: str
     job_id: Optional[str] = None
@@ -9,9 +10,11 @@ class LLMRequest(BaseModel):
     policies_id: Optional[str] = None
     callback_url: Optional[str] = None
 
+
 class LLMResponse(BaseModel):
     status: str
     job_id: str
+
 
 class CallbackRequest(BaseModel):
     job_id: str
