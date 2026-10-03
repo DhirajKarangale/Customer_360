@@ -35,9 +35,9 @@ jobs:
         run: |
           mkdir -p ~/.snowflake
 
-          # Write the private key PEM from secret to a temp file
-          printf '%s\n' "${{ secrets.SNOWFLAKE_PRIVATE_KEY }}" > /tmp/sf_key.pem
-          chmod 600 /tmp/sf_key.pem
+          # The private key is committed to the repo at ai/certs/key.pem
+          # Set strict permissions so Snowflake connector accepts it
+          chmod 0600 "$GITHUB_WORKSPACE/ai/certs/key.pem"
 
           cat > ~/.snowflake/config.toml << TOML
           [connections.default]
@@ -46,7 +46,7 @@ jobs:
           warehouse        = "${{ secrets.SNOWFLAKE_WAREHOUSE }}"
           database         = "${{ secrets.SNOWFLAKE_DATABASE }}"
           schema           = "${{ secrets.SNOWFLAKE_SCHEMA }}"
-          private_key_file = "/tmp/sf_key.pem"
+          private_key_file = "${{ github.workspace }}/ai/certs/key.pem"
           TOML
           chmod 0600 ~/.snowflake/config.toml
 
