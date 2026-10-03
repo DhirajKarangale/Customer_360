@@ -59,23 +59,24 @@ jobs:
         run: snow connection test --connection default
 
       # ── 5. Build & Push Docker image to Snowflake Image Registry ─────────────
+      #    Registry URL is fetched dynamically via snow CLI — no extra secret needed.
       #    Full image path: <registry>/<database>/<schema>/<repo>/ai_worker:<tag>
-      #    Set SNOWFLAKE_REGISTRY_HOST secret to your org registry hostname,
-      #    e.g. myorg-myaccount.registry.snowflakecomputing.com
-      - name: Build and Push Docker image
-        env:
-          REGISTRY: ${{ secrets.SNOWFLAKE_REGISTRY_HOST }}
+      - name: Get Snowflake Image Registry URL
         run: |
+          REGISTRY=$(snow spcs image-registry url --connection default)
+          echo "REGISTRY=${REGISTRY}" >> $GITHUB_ENV
           IMAGE_PATH="${REGISTRY}/${{ secrets.SNOWFLAKE_DATABASE }}/${{ secrets.SNOWFLAKE_SCHEMA }}/${{ env.IMAGE_REPO }}/ai_worker:${{ env.IMAGE_TAG }}"
           echo "IMAGE_PATH=${IMAGE_PATH}" >> $GITHUB_ENV
+          echo "Registry: ${REGISTRY}"
+          echo "Image path: ${IMAGE_PATH}"
 
+      - name: Build and Push Docker image
+        run: |
           echo "Building Docker image..."
           docker build -t "${IMAGE_PATH}" ./ai
 
           echo "Logging into Snowflake Image Registry..."
-          echo "${{ secrets.SNOWFLAKE_PASSWORD }}" | docker login "${REGISTRY}" \
-            --username "${{ secrets.SNOWFLAKE_USER }}" \
-            --password-stdin
+          snow spcs image-registry login --connection default
 
           echo "Pushing image..."
           docker push "${IMAGE_PATH}"
