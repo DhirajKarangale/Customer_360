@@ -72,6 +72,13 @@ jobs:
           echo "Registry: ${REGISTRY}"
           echo "Image path: ${IMAGE_PATH}"
 
+      - name: Create image repository (if not exists)
+        run: |
+          echo "Ensuring image repository '${{ env.IMAGE_REPO }}' exists..."
+          snow spcs image-repository create "${{ env.IMAGE_REPO }}" \
+            --connection default \
+            --if-not-exists
+
       - name: Build and Push Docker image
         run: |
           echo "Building Docker image..."
