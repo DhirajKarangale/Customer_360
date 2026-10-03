@@ -5,11 +5,11 @@ import { queryClient } from '../main';
 import { useAuthStore } from '../store/useAuthStore';
 
 export function connectSSE(token: string) {
-  const baseUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000';
-  const url = `${baseUrl}/api/v1/stream/`;
-  
+  const baseUrl = import.meta.env.VITE_API_BASE_URL;
+  const url = `${baseUrl}/stream/`;
+
   const ctrl = new AbortController();
-  
+
   fetchEventSource(url, {
     method: 'GET',
     headers: {
@@ -29,7 +29,7 @@ export function connectSSE(token: string) {
     onmessage(event) {
       try {
         if (!event.data) return;
-        
+
         const data = JSON.parse(event.data);
         console.log('Received SSE Event from backend:', data);
 
@@ -40,16 +40,16 @@ export function connectSSE(token: string) {
         if (jobId && typeof jobId === 'string' && jobId.startsWith('aichat_')) {
           const store = useAIChatStore.getState();
           const existingMessage = store.messages.find(m => m.job_id === jobId);
-          
+
           if (existingMessage) {
             store.updateMessage(jobId, textResult);
-            
+
             if (!store.isOpen) {
               store.setHasUnread(true);
               useUIStore.getState().showToast('New message from AI Assistant!', 'text-primary', 5000);
             }
           }
-        } 
+        }
         // Handle AI Suggestions events
         else if (data.job_type === 'suggestions_generation' || (jobId && typeof jobId === 'string' && jobId.startsWith('suggestion_'))) {
           // Update React Query Cache directly so it loads instantly when navigating back
@@ -83,6 +83,6 @@ export function connectSSE(token: string) {
       console.log('SSE stream closed by server');
     }
   });
-  
+
   return ctrl;
 }
