@@ -106,35 +106,42 @@ jobs:
             --query "DROP SERVICE IF EXISTS ${{ env.SERVICE_NAME }};" \
             --connection default || true
 
-      # ── 8. Write SPCS spec YAML (avoids inline $$ shell-escaping issues) ──────
+      # ── 8. Write SPCS spec YAML ───────────────────────────────────────────────
+      #    Use printf so $IMAGE_PATH (set via GITHUB_ENV) expands correctly.
       - name: Write SPCS service spec
         run: |
-          cat > /tmp/ai_worker_spec.yaml << SPEC
-          spec:
-            containers:
-              - name: ai-worker
-                image: "${IMAGE_PATH}"
-                env:
-                  AGENT_MEMORY:                   "${{ secrets.AGENT_MEMORY }}"
-                  ENABLE_AGENT_DATA_RESTRICTIONS: "${{ secrets.ENABLE_AGENT_DATA_RESTRICTIONS }}"
-                  ENABLE_TEXT_FORMAT:             "${{ secrets.ENABLE_TEXT_FORMAT }}"
-                  POSTGRES_DB:                    "${{ secrets.POSTGRES_DB }}"
-                  POSTGRES_HOST:                  "${{ secrets.POSTGRES_HOST }}"
-                  POSTGRES_PASSWORD:              "${{ secrets.POSTGRES_PASSWORD }}"
-                  POSTGRES_PORT:                  "${{ secrets.POSTGRES_PORT }}"
-                  POSTGRES_USER:                  "${{ secrets.POSTGRES_USER }}"
-                  REDIS_CONSUMER_GROUP:           "${{ secrets.REDIS_CONSUMER_GROUP }}"
-                  REDIS_URL:                      "${{ secrets.REDIS_URL }}"
-                  SNOWFLAKE_ACCOUNT:              "${{ secrets.SNOWFLAKE_ACCOUNT }}"
-                  SNOWFLAKE_DATABASE:             "${{ secrets.SNOWFLAKE_DATABASE }}"
-                  SNOWFLAKE_ROLE:                 "${{ secrets.SNOWFLAKE_ROLE }}"
-                  SNOWFLAKE_SCHEMA:               "${{ secrets.SNOWFLAKE_SCHEMA }}"
-                  SNOWFLAKE_USER:                 "${{ secrets.SNOWFLAKE_USER }}"
-                  SNOWFLAKE_WAREHOUSE:            "${{ secrets.SNOWFLAKE_WAREHOUSE }}"
-                  SNOWFLAKE_PRIVATE_KEY_PATH:     "/app/ai/certs/key.pem"
-          SPEC
+          printf 'spec:\n  containers:\n  - name: ai-worker\n    image: %s\n    env:\n      AGENT_MEMORY: "%s"\n      ENABLE_AGENT_DATA_RESTRICTIONS: "%s"\n      ENABLE_TEXT_FORMAT: "%s"\n      POSTGRES_DB: "%s"\n      POSTGRES_HOST: "%s"\n      POSTGRES_PASSWORD: "%s"\n      POSTGRES_PORT: "%s"\n      POSTGRES_USER: "%s"\n      REDIS_CONSUMER_GROUP: "%s"\n      REDIS_URL: "%s"\n      SNOWFLAKE_ACCOUNT: "%s"\n      SNOWFLAKE_DATABASE: "%s"\n      SNOWFLAKE_ROLE: "%s"\n      SNOWFLAKE_SCHEMA: "%s"\n      SNOWFLAKE_USER: "%s"\n      SNOWFLAKE_WAREHOUSE: "%s"\n      SNOWFLAKE_PRIVATE_KEY_PATH: /app/ai/certs/key.pem\n' \
+            "${IMAGE_PATH}" \
+            "${{ secrets.AGENT_MEMORY }}" \
+            "${{ secrets.ENABLE_AGENT_DATA_RESTRICTIONS }}" \
+            "${{ secrets.ENABLE_TEXT_FORMAT }}" \
+            "${{ secrets.POSTGRES_DB }}" \
+            "${{ secrets.POSTGRES_HOST }}" \
+            "${{ secrets.POSTGRES_PASSWORD }}" \
+            "${{ secrets.POSTGRES_PORT }}" \
+            "${{ secrets.POSTGRES_USER }}" \
+            "${{ secrets.REDIS_CONSUMER_GROUP }}" \
+            "${{ secrets.REDIS_URL }}" \
+            "${{ secrets.SNOWFLAKE_ACCOUNT }}" \
+            "${{ secrets.SNOWFLAKE_DATABASE }}" \
+            "${{ secrets.SNOWFLAKE_ROLE }}" \
+            "${{ secrets.SNOWFLAKE_SCHEMA }}" \
+            "${{ secrets.SNOWFLAKE_USER }}" \
+            "${{ secrets.SNOWFLAKE_WAREHOUSE }}" \
+            > /tmp/ai_worker_spec.yaml
 
-      # ── 9. Redeploy N workers ─────────────────────────────────────────────────
+          echo "--- Spec file contents ---"
+          cat /tmp/ai_worker_spec.yaml
+
+      # ── 9. Ensure compute pool exists ──────────────────────────────────────────
+      - name: Create compute pool (if not exists)
+        run: |
+          echo "Ensuring compute pool '${{ env.COMPUTE_POOL }}' exists..."
+          snow sql \
+            --query "CREATE COMPUTE POOL IF NOT EXISTS ${{ env.COMPUTE_POOL }} MIN_NODES = 1 MAX_NODES = ${{ env.N }} INSTANCE_FAMILY = CPU_X64_XS;" \
+            --connection default
+
+      # ── 10. Redeploy N workers ────────────────────────────────────────────────
       - name: Redeploy ${{ env.N }} workers on Snowflake SPCS
         run: |
           echo "Creating SPCS service with ${{ env.N }} instance(s)..."
