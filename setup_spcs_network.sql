@@ -15,10 +15,10 @@ CREATE OR REPLACE NETWORK RULE ai_worker_network_rule
   MODE = EGRESS
   TYPE = HOST_PORT
   VALUE_LIST = (
-      'singapore-keyvalue.render.com:6379',        -- Redis (Render)
-      'api.groq.com:443',                          -- Groq API
-      'generativelanguage.googleapis.com:443',     -- Google Gemini API
-      'YOUR-POSTGRES-HOST:5432'                    -- Postgres (Replace this!)
+      'singapore-keyvalue.render.com:6379',                                                              -- Redis (Render)
+      'api.groq.com:443',                                                                                -- Groq API
+      'generativelanguage.googleapis.com:443',                                                           -- Google Gemini API
+      'df2wnm7nbzfabaxdl7o2h7j7fa.xbobxlx-wo36064.ap-southeast-7.aws.postgres.snowflake.app:5432'      -- Postgres (Snowflake-managed)
   );
 
 -- 2. Create the External Access Integration binding to the Network Rule
@@ -27,5 +27,5 @@ CREATE OR REPLACE EXTERNAL ACCESS INTEGRATION ai_worker_access_integration
   ENABLED = true;
 
 -- 3. Grant usage on the integration to the role deploying/running the SPCS service
--- (Replace YOUR_ROLE with the role used in your GitHub Actions, e.g., SPCS_ROLE)
-GRANT USAGE ON INTEGRATION ai_worker_access_integration TO ROLE YOUR_ROLE;
+--    Replace SYSADMIN with your actual role if different (e.g., the role used in GitHub Actions)
+GRANT USAGE ON INTEGRATION ai_worker_access_integration TO ROLE SYSADMIN;
