@@ -39,7 +39,7 @@ def process_job(redis_client, redis_msg_id, payload):
     callback_url = payload.get("callback_url")
     job_id = payload.get("job_id") or redis_msg_id
 
-    logger.info(f" Job Received | ID: {job_id} (Redis Msg: {redis_msg_id})")
+    logger.info(f"Job Received | ID: {job_id} (Redis Msg: {redis_msg_id})")
 
     try:
         if job_id.startswith("suggestion_"):
@@ -48,7 +48,7 @@ def process_job(redis_client, redis_msg_id, payload):
             response = run_general_workflow(payload)
 
         if callback_url:
-            logger.info(f" Sending result back to callback URL...")
+            logger.info(f"Sending result back to callback URL... (ID: {job_id})")
             callback_data = {
                 "job_id": job_id,
                 "message": response,
@@ -56,9 +56,9 @@ def process_job(redis_client, redis_msg_id, payload):
             }
             requests.post(callback_url, json=callback_data, timeout=10)
 
-        logger.info(f" Job Successfully Completed | ID: {job_id}")
+        logger.info(f"Job Successfully Completed | ID: {job_id}")
     except Exception as e:
-        logger.error(f" Job Failed | ID: {job_id} | Error: {str(e)}")
+        logger.error(f"Job Failed | ID: {job_id} | Error: {str(e)}")
         if callback_url:
             try:
                 requests.post(
@@ -73,7 +73,7 @@ def process_job(redis_client, redis_msg_id, payload):
         try:
             redis_client.xack(STREAM_KEY, GROUP_NAME, redis_msg_id)
         except Exception as ack_err:
-            logger.warning(f" Failed to xack message {redis_msg_id}: {ack_err}")
+            logger.warning(f"Failed to xack message {redis_msg_id}: {ack_err}")
 
 
 def _do_reclaim(redis_client, min_idle_ms: int, label: str = "") -> int:
@@ -93,9 +93,6 @@ def _do_reclaim(redis_client, min_idle_ms: int, label: str = "") -> int:
         )
         claimed_messages = result[1] if result and len(result) > 1 else []
         if claimed_messages:
-            logger.info(
-                f" {label}Reclaimed {len(claimed_messages)} pending job(s). Re-processing..."
-            )
             for msg_id, payload in claimed_messages:
                 process_job(redis_client, msg_id, payload)
         return len(claimed_messages)
@@ -103,7 +100,7 @@ def _do_reclaim(redis_client, min_idle_ms: int, label: str = "") -> int:
 
         return _reclaim_fallback(redis_client, min_idle_ms, label)
     except Exception as e:
-        logger.warning(f" Reclaim failed: {e}")
+        logger.warning(f"Reclaim failed: {e}")
         return 0
 
 
@@ -127,15 +124,12 @@ def _reclaim_fallback(redis_client, min_idle_ms: int, label: str = "") -> int:
                     message_ids=[msg_id],
                 )
                 for claimed_id, payload in claimed:
-                    logger.info(
-                        f" {label}Reclaimed stale message {claimed_id}. Re-processing..."
-                    )
                     process_job(redis_client, claimed_id, payload)
                     count += 1
             except Exception as e:
-                logger.warning(f"   Could not claim {msg_id}: {e}")
+                logger.warning(f"Could not claim {msg_id}: {e}")
     except Exception as e:
-        logger.warning(f" Fallback reclaim failed: {e}")
+        logger.warning(f"Fallback reclaim failed: {e}")
     return count
 
 
@@ -144,10 +138,7 @@ def startup_reclaim(redis_client):
     On startup: claim ALL pending messages from any previous crash (idle >= 0ms).
     Runs once before entering the main loop.
     """
-    logger.info(" Checking for pending jobs from previous run...")
-    n = _do_reclaim(redis_client, min_idle_ms=0, label="[startup] ")
-    if n == 0:
-        logger.info(" No pending jobs from previous run.")
+    _do_reclaim(redis_client, min_idle_ms=0, label="[startup] ")
 
 
 def periodic_reclaim(redis_client):
@@ -156,13 +147,10 @@ def periodic_reclaim(redis_client):
     This catches jobs where a previous worker died mid-processing while this
     worker was already running (so startup_reclaim didn't catch it).
     """
-    n = _do_reclaim(redis_client, min_idle_ms=RECLAIM_IDLE_MS, label="[periodic] ")
-    if n > 0:
-        logger.info(f" Periodic reclaim recovered {n} stale job(s).")
+    _do_reclaim(redis_client, min_idle_ms=RECLAIM_IDLE_MS, label="[periodic] ")
 
 
 def start_worker():
-    logger.info(" Starting AI worker... Initialization sequence initiated.")
     get_snowflake_conn()
 
     redis_client = redis.Redis.from_url(
@@ -171,18 +159,11 @@ def start_worker():
 
     try:
         redis_client.xgroup_create(STREAM_KEY, GROUP_NAME, id="$", mkstream=True)
-        logger.info(
-            f" Created Redis consumer group '{GROUP_NAME}' on stream '{STREAM_KEY}'"
-        )
     except redis.exceptions.ResponseError as e:
         if "BUSYGROUP" not in str(e):
             logger.warning(f"Redis group message: {e}")
 
     startup_reclaim(redis_client)
-
-    logger.info(
-        f" AI worker fully initialized as '{CONSUMER_NAME}' | Waiting for jobs..."
-    )
 
     loop_count = 0
     while True:
@@ -200,7 +181,7 @@ def start_worker():
                 periodic_reclaim(redis_client)
 
         except redis.exceptions.ConnectionError:
-            logger.warning(" Redis connection lost. Reconnecting in 5 seconds...")
+            logger.warning("Redis connection lost. Reconnecting in 5 seconds...")
             time.sleep(5)
             redis_client = redis.Redis.from_url(
                 REDIS_URL, decode_responses=True, health_check_interval=30
@@ -209,10 +190,9 @@ def start_worker():
         except redis.exceptions.TimeoutError:
             pass
         except KeyboardInterrupt:
-            logger.info(" Worker stopped by user.")
             break
         except Exception as e:
-            logger.error(f" Unexpected error in worker loop: {e}")
+            logger.error(f"Unexpected error in worker loop: {e}")
             time.sleep(1)
 
 

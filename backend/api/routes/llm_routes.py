@@ -24,6 +24,7 @@ def generate_llm_response(
     token_data: dict = Depends(verify_jwt),
 ):
     import time
+    logger.info(f"Received LLM generation request for job_id: {request.job_id}")
 
     response = llm_service.submit_job(request)
     if not (request.job_id and request.job_id.startswith("suggestion_")):
@@ -48,8 +49,10 @@ def llm_callback(
     chat_service: ChatService = Depends(get_chat_service),
 ):
 
+    logger.info(f"Received callback from AI for job_id: {request.job_id}")
     if request.insurance_agents_id:
         message_payload = {"job_id": request.job_id, "message": request.message}
+        logger.info(f"Sending data to frontend via SSE for agent_id: {request.insurance_agents_id}")
         sse_manager.publish(request.insurance_agents_id, message_payload)
 
     if not (request.job_id and request.job_id.startswith("suggestion_")):
@@ -74,7 +77,7 @@ def llm_callback(
             )
         else:
             logger.warning(
-                f" LLM Error detected for suggestions. Not saving to DB: {request.message}"
+                f"LLM Error detected for suggestions. Not saving to DB: {request.message}"
             )
 
     return {"status": "success"}
