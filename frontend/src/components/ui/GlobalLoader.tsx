@@ -1,29 +1,15 @@
 import { useEffect, useState } from 'react';
 import { useUIStore } from '../../store/useUIStore';
 import { motion, AnimatePresence } from 'framer-motion';
-
-const LOADING_MESSAGES = [
-  "Waking up the AI from its nap...",
-  "Counting all the snowflakes...",
-  "Convincing the neural network to cooperate...",
-  "Brewing digital coffee for the agents...",
-  "Mining data like it's 1849...",
-  "Translating human to machine and back...",
-  "Assembling insights out of thin air...",
-  "Asking nicely for the database to respond...",
-  "Teaching the AI some manners...",
-  "Processing 360 degrees of customer..."
-];
+import { getRandomMessage } from '../../utils/messages';
 
 export function GlobalLoader() {
   const isLoaderVisible = useUIStore((state) => state.isLoaderVisible);
-  const [message, setMessage] = useState(LOADING_MESSAGES[0]);
+  const [message, setMessage] = useState(getRandomMessage('loading'));
 
   useEffect(() => {
     if (isLoaderVisible) {
-      // Pick a random message every time the loader is shown
-      const randomIndex = Math.floor(Math.random() * LOADING_MESSAGES.length);
-      setMessage(LOADING_MESSAGES[randomIndex]);
+      setMessage(getRandomMessage('loading'));
     }
   }, [isLoaderVisible]);
 

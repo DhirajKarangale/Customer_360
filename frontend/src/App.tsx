@@ -11,6 +11,10 @@ import NotFoundPage from './pages/NotFoundPage';
 import MaintenancePage from './pages/MaintenancePage';
 import { GlobalLoader } from './components/ui/GlobalLoader';
 import { GlobalToast } from './components/ui/GlobalToast';
+import { PublicLayout } from './components/layout/PublicLayout';
+import PrivacyPage from './pages/PrivacyPage';
+import TermsPage from './pages/TermsPage';
+import CookiesPage from './pages/CookiesPage';
 import SetBG from './backgrounds/SetBG';
 
 function App() {
@@ -25,6 +29,13 @@ function App() {
           {/* Standalone Public Pages */}
           <Route path="/login" element={<LoginPage />} />
           <Route path="/maintenance" element={<MaintenancePage />} />
+
+          {/* Public Layout Pages */}
+          <Route element={<PublicLayout />}>
+            <Route path="/privacy" element={<PrivacyPage />} />
+            <Route path="/terms" element={<TermsPage />} />
+            <Route path="/cookies" element={<CookiesPage />} />
+          </Route>
           
           {/* Protected Routes (Require JWT) */}
           <Route element={<ProtectedRoute />}>

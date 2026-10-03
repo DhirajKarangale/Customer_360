@@ -5,6 +5,8 @@ import { usePoliciesQuery } from '../api/policies';
 import { usePoliciesStore } from '../store/usePoliciesStore';
 import { useAIChatStore } from '../store/useAIChatStore';
 import { Pagination } from '../components/ui/Pagination';
+import { LoadingState, EmptyState } from '../components/ui/StateFeedback';
+import { getRandomMessage } from '../utils/messages';
 import {
   Select,
   SelectContent,
@@ -167,10 +169,7 @@ export default function PoliciesPage() {
         
         {/* Loading State Overlay (Only if totally empty) */}
         {isFetching && displayItems.length === 0 && (
-          <div className="flex h-64 flex-col items-center justify-center gap-4 text-white/70">
-            <Loader2 className="h-8 w-8 animate-spin text-primary" />
-            <p>Searching Policies...</p>
-          </div>
+          <LoadingState className="h-64 gap-4" message={getRandomMessage('loadingPolicies')} />
         )}
 
         {/* Error State */}
@@ -184,11 +183,12 @@ export default function PoliciesPage() {
 
         {/* Empty State */}
         {!isFetching && !isError && displayItems.length === 0 && (
-          <div className="flex h-64 flex-col items-center justify-center gap-2 text-white/70">
-            <FileText className="h-10 w-10 opacity-50" />
-            <p className="text-lg font-medium text-white">No Policies Found</p>
-            <p className="text-sm">Try adjusting your search terms or filters.</p>
-          </div>
+          <EmptyState 
+            className="h-64 gap-2" 
+            icon={FileText} 
+            title={getRandomMessage('emptyPolicies')} 
+            description="Try adjusting your search terms or filters." 
+          />
         )}
 
         {/* Data Table */}

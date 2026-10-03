@@ -5,7 +5,9 @@ import { useCustomersQuery } from '../api/customers';
 import { useCustomersStore } from '../store/useCustomersStore';
 import { useAIChatStore } from '../store/useAIChatStore';
 import { Pagination } from '../components/ui/Pagination';
+import { LoadingState, EmptyState } from '../components/ui/StateFeedback';
 import { CustomerModal } from '../components/customers/CustomerModal';
+import { getRandomMessage } from '../utils/messages';
 
 export default function CustomersPage() {
   const agent = useAuthStore((state) => state.agent);
@@ -107,16 +109,13 @@ export default function CustomersPage() {
       <div className="rounded-xl border border-white/5 bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl shadow-sm">
         <div className="overflow-x-auto">
           {isLoading && !data && displayItems.length === 0 ? (
-            <div className="flex flex-col items-center justify-center p-12 text-white/70">
-              <Loader2 className="h-8 w-8 animate-spin text-primary mb-4" />
-              <p>Loading customers...</p>
-            </div>
+            <LoadingState message={getRandomMessage('loadingCustomers')} />
           ) : displayItems.length === 0 ? (
-            <div className="flex flex-col items-center justify-center p-12 text-white/70">
-              <Users className="h-12 w-12 text-white/40 mb-4 opacity-50" />
-              <p className="text-lg font-medium text-white">No customers found</p>
-              <p className="text-sm">Try adjusting your search criteria</p>
-            </div>
+            <EmptyState 
+              icon={Users} 
+              title={getRandomMessage('emptyCustomers')} 
+              description="Try adjusting your search criteria" 
+            />
           ) : (
             <table className="w-full text-left text-sm">
               <thead className="bg-black/20 border-b border-white/5">

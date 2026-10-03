@@ -3,6 +3,7 @@ import { ChevronLeft, Send, ArrowUp, ArrowDown, Trash2 } from 'lucide-react';
 import { useAIChatStore } from '../../store/useAIChatStore';
 import { useAuthStore } from '../../store/useAuthStore';
 import { useGenerateChatMutation, clearChatsApi } from '../../api/chat';
+import { getRandomMessage } from '../../utils/messages';
 
 export function ChatPanel() {
   const { 
@@ -214,8 +215,8 @@ export function ChatPanel() {
               return (
                 <>
                   {displayMessages.length === 0 && (
-                    <div className="flex h-full items-center justify-center text-center text-sm text-white/70">
-                      Hello! I am your AI assistant. <br/> How can I help you today?
+                    <div className="flex h-full items-center justify-center text-center text-sm text-white/70 px-4 whitespace-pre-wrap">
+                      {getRandomMessage('chatGreeting')}
                     </div>
                   )}
                   {displayMessages.map((msg) => (

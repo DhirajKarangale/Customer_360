@@ -26,6 +26,7 @@ import {
   ResponsiveContainer,
   Legend
 } from 'recharts';
+import { getRandomMessage } from '../utils/messages';
 
 // Modern Color Palette for Charts
 const CHART_COLORS = ['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6'];
@@ -236,7 +237,7 @@ export default function Customer360Page() {
                 {policiesLoading || !metrics ? (
                   <div className="absolute inset-0 flex items-center justify-center"><Loader2 className="h-6 w-6 animate-spin text-white/40" /></div>
                 ) : metrics.pieData.length === 0 ? (
-                  <div className="absolute inset-0 flex items-center justify-center text-sm text-white/70">No active policies</div>
+                  <div className="absolute inset-0 flex items-center justify-center text-sm text-white/70 px-4 text-center">{getRandomMessage('emptyPolicies')}</div>
                 ) : (
                   <ResponsiveContainer width="100%" height={260}>
                     <PieChart>
@@ -275,7 +276,7 @@ export default function Customer360Page() {
                 {policiesLoading || !metrics ? (
                   <div className="absolute inset-0 flex items-center justify-center"><Loader2 className="h-6 w-6 animate-spin text-white/40" /></div>
                 ) : metrics.barData.length === 0 ? (
-                  <div className="absolute inset-0 flex items-center justify-center text-sm text-white/70">No upcoming renewals</div>
+                  <div className="absolute inset-0 flex items-center justify-center text-sm text-white/70 px-4 text-center">{getRandomMessage('emptyPolicies')}</div>
                 ) : (
                   <ResponsiveContainer width="100%" height={260}>
                     <BarChart data={metrics.barData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
@@ -312,7 +313,7 @@ export default function Customer360Page() {
             {suggestionsLoading && !liveSuggestionText ? (
               <div className="flex flex-col items-center justify-center h-full gap-4 text-white/70 opacity-70">
                 <Loader2 className="h-6 w-6 animate-spin text-indigo-500" />
-                <p className="text-sm">Analyzing portfolio for opportunities...</p>
+                <p className="text-sm text-center px-4">{getRandomMessage('aiSuggestionsLoading')}</p>
               </div>
             ) : (
               <div className="w-full space-y-4">
@@ -328,8 +329,8 @@ export default function Customer360Page() {
                     )}
                   </div>
                 ) : (
-                  <div className="text-center text-white/70 pt-10">
-                    No suggestions available at the moment.
+                  <div className="text-center text-white/70 pt-10 px-4">
+                    {getRandomMessage('aiSuggestionsEmpty')}
                   </div>
                 )}
               </div>

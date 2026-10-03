@@ -5,6 +5,8 @@ import { usePoliciesQuery } from '../../api/policies';
 import { useCustomersQuery } from '../../api/customers';
 import { useAuthStore } from '../../store/useAuthStore';
 import { useCustomersStore } from '../../store/useCustomersStore';
+import { getRandomMessage } from '../../utils/messages';
+import { LoadingState, EmptyState } from '../ui/StateFeedback';
 
 interface CustomerModalProps {
   customerId: string | null;
@@ -66,7 +68,7 @@ export function CustomerModal({ customerId, onClose }: CustomerModalProps) {
         <div className="fixed inset-0 bg-transparent/80 backdrop-blur-sm transition-opacity" onClick={onClose} />
         <div className="relative flex flex-col items-center justify-center gap-4 rounded-xl border border-white/5 bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl p-12 shadow-2xl">
           <Loader2 className="h-8 w-8 animate-spin text-primary" />
-          <p className="text-white/70 font-medium">Loading Customer Profile...</p>
+          <p className="text-white/70 font-medium">{getRandomMessage('loadingProfile')}</p>
         </div>
       </div>
     , document.body) : null;
@@ -133,16 +135,13 @@ export function CustomerModal({ customerId, onClose }: CustomerModalProps) {
             
             <div className="rounded-xl border border-white/5 overflow-hidden shadow-sm">
               {policiesLoading ? (
-                <div className="flex flex-col items-center justify-center p-12 text-white/70">
-                  <Loader2 className="h-8 w-8 animate-spin text-primary mb-4" />
-                  <p>Loading policies...</p>
-                </div>
+                <LoadingState message={getRandomMessage('loadingPolicies')} />
               ) : !policiesData?.items || policiesData.items.length === 0 ? (
-                <div className="flex flex-col items-center justify-center p-12 text-white/70">
-                  <ShieldAlert className="h-12 w-12 text-white/40 mb-4 opacity-50" />
-                  <p className="text-base font-medium text-white">No policies found</p>
-                  <p className="text-sm">This customer does not have any active policies.</p>
-                </div>
+                <EmptyState 
+                  icon={ShieldAlert} 
+                  title={getRandomMessage('emptyPolicies')} 
+                  description="This customer does not have any active policies." 
+                />
               ) : (
                 <div className="overflow-auto max-h-[50vh]">
                   <table className="w-full text-left text-sm relative">
