@@ -120,11 +120,11 @@ jobs:
                   REDIS_URL:                      "${{ secrets.REDIS_URL }}"
                   SNOWFLAKE_ACCOUNT:              "${{ secrets.SNOWFLAKE_ACCOUNT }}"
                   SNOWFLAKE_DATABASE:             "${{ secrets.SNOWFLAKE_DATABASE }}"
-                  SNOWFLAKE_PASSWORD:             "${{ secrets.SNOWFLAKE_PASSWORD }}"
                   SNOWFLAKE_ROLE:                 "${{ secrets.SNOWFLAKE_ROLE }}"
                   SNOWFLAKE_SCHEMA:               "${{ secrets.SNOWFLAKE_SCHEMA }}"
                   SNOWFLAKE_USER:                 "${{ secrets.SNOWFLAKE_USER }}"
                   SNOWFLAKE_WAREHOUSE:            "${{ secrets.SNOWFLAKE_WAREHOUSE }}"
+                  SNOWFLAKE_PRIVATE_KEY_PATH:     "/app/ai/certs/key.pem"
           SPEC
 
       # ── 9. Redeploy N workers ─────────────────────────────────────────────────
