@@ -5,6 +5,7 @@ from ai.db.db_access import AIDatabaseAccess
 from ai.rag.scripts.retrieval import RAGRetrievalPipeline
 from ai.rag.config import SIMILARITY_SCORE_THRESHOLD
 from ai.utils.message_manager import get_message
+from ai.utils.common import is_valid_uuid
 
 
 class SearchInput(BaseModel):
@@ -30,15 +31,6 @@ def search_unstructured_interactions(
     agent_id: Optional[str] = None,
 ) -> str:
     """Search transcripts, chats, and emails for relevant context. Provide a policy_id, customer_id, or agent_id to strongly filter the results."""
-    import uuid
-
-    def is_uuid(val: str) -> bool:
-        try:
-            uuid.UUID(val)
-            return True
-        except ValueError:
-            return False
-
     db = AIDatabaseAccess()
     try:
         import ai.agent.state
@@ -56,7 +48,7 @@ def search_unstructured_interactions(
             return error_msg
 
         if policy_id:
-            if is_uuid(policy_id):
+            if is_valid_uuid(policy_id):
                 try:
                     res = db.execute_query(
                         f"SELECT policy_number FROM policies WHERE id = '{policy_id}'"
@@ -77,7 +69,7 @@ def search_unstructured_interactions(
                 query = f"{query} {policy_id}"
 
         if customer_id:
-            if is_uuid(customer_id):
+            if is_valid_uuid(customer_id):
 
                 c_details = db.get_customer_details(customer_id)
                 import re
@@ -94,7 +86,7 @@ def search_unstructured_interactions(
                 query = f"{query} {customer_id}"
 
         if agent_id:
-            if is_uuid(agent_id):
+            if is_valid_uuid(agent_id):
                 a_details = db.get_agent_context(agent_id)
                 import re
 

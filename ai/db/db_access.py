@@ -1,7 +1,7 @@
 import os
 import psycopg2
 import psycopg2.extras
-
+from ai.utils.common import is_valid_uuid
 
 class AIDatabaseAccess:
     def __init__(self):
@@ -16,15 +16,7 @@ class AIDatabaseAccess:
     def get_agent_context(self, agent_identifier: str) -> str:
         cursor = self.conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
         try:
-            import uuid
-
-            is_uuid = False
-            try:
-                uuid.UUID(agent_identifier)
-                is_uuid = True
-            except ValueError:
-                pass
-
+            is_uuid = is_valid_uuid(agent_identifier)
             if is_uuid:
                 cursor.execute(
                     "SELECT * FROM insurance_agents WHERE id = %s", (agent_identifier,)
@@ -74,15 +66,7 @@ class AIDatabaseAccess:
     def get_customers_for_agent(self, agent_identifier: str) -> str:
         cursor = self.conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
         try:
-            import uuid
-
-            is_uuid = False
-            try:
-                uuid.UUID(agent_identifier)
-                is_uuid = True
-            except ValueError:
-                pass
-
+            is_uuid = is_valid_uuid(agent_identifier)
             if is_uuid:
                 agent_id = agent_identifier
             else:
@@ -124,16 +108,7 @@ class AIDatabaseAccess:
     def get_policy_details(self, policy_id: str) -> str:
         cursor = self.conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
         try:
-
-            import uuid as _uuid
-
-            is_uuid = False
-            try:
-                _uuid.UUID(policy_id)
-                is_uuid = True
-            except (ValueError, AttributeError):
-                pass
-
+            is_uuid = is_valid_uuid(policy_id)
             if is_uuid:
                 cursor.execute(
                     """
@@ -183,16 +158,7 @@ class AIDatabaseAccess:
     def get_customer_details(self, customer_identifier: str) -> str:
         cursor = self.conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
         try:
-
-            import uuid
-
-            is_uuid = False
-            try:
-                uuid.UUID(customer_identifier)
-                is_uuid = True
-            except ValueError:
-                pass
-
+            is_uuid = is_valid_uuid(customer_identifier)
             if is_uuid:
                 cursor.execute(
                     "SELECT * FROM customers WHERE id = %s", (customer_identifier,)

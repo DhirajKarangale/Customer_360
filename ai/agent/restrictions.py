@@ -2,9 +2,9 @@ import os
 import json
 import re as _re
 from langchain_core.messages import AIMessage
-from ai.agent.state import AgentState
 from ai.utils.llm_utils import get_llm
 from ai.utils.message_manager import get_message
+from ai.utils.common import is_valid_uuid
 
 
 class DataRestrictionManager:
@@ -69,34 +69,26 @@ class DataRestrictionManager:
         return True, ""
 
     def _resolve_agent_id(self, db_access, identifier: str) -> str:
-        import uuid
-
-        try:
-            uuid.UUID(identifier)
+        if is_valid_uuid(identifier):
             return identifier
-        except Exception:
-            res = db_access.execute_query(
-                f"SELECT id FROM insurance_agents WHERE name ILIKE '%{identifier}%' LIMIT 1"
-            )
-            import re
+        res = db_access.execute_query(
+            f"SELECT id FROM insurance_agents WHERE name ILIKE '%{identifier}%' LIMIT 1"
+        )
+        import re
 
-            m = re.search(r"([a-f0-9\-]{36})", res)
-            return m.group(1) if m else None
+        m = re.search(r"([a-f0-9\-]{36})", res)
+        return m.group(1) if m else None
 
     def _resolve_customer_id(self, db_access, identifier: str) -> str:
-        import uuid
-
-        try:
-            uuid.UUID(identifier)
+        if is_valid_uuid(identifier):
             return identifier
-        except Exception:
-            res = db_access.execute_query(
-                f"SELECT id FROM customers WHERE name ILIKE '%{identifier}%' LIMIT 1"
-            )
-            import re
+        res = db_access.execute_query(
+            f"SELECT id FROM customers WHERE name ILIKE '%{identifier}%' LIMIT 1"
+        )
+        import re
 
-            m = re.search(r"([a-f0-9\-]{36})", res)
-            return m.group(1) if m else None
+        m = re.search(r"([a-f0-9\-]{36})", res)
+        return m.group(1) if m else None
 
 
 restriction_manager = DataRestrictionManager()
