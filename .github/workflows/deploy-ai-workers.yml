@@ -65,7 +65,9 @@ jobs:
         run: |
           REGISTRY=$(snow spcs image-registry url --connection default)
           echo "REGISTRY=${REGISTRY}" >> $GITHUB_ENV
-          IMAGE_PATH="${REGISTRY}/${{ secrets.SNOWFLAKE_DATABASE }}/${{ secrets.SNOWFLAKE_SCHEMA }}/${{ env.IMAGE_REPO }}/ai_worker:${{ env.IMAGE_TAG }}"
+          # Docker requires all-lowercase image paths — lowercase everything
+          RAW_PATH="${REGISTRY}/${{ secrets.SNOWFLAKE_DATABASE }}/${{ secrets.SNOWFLAKE_SCHEMA }}/${{ env.IMAGE_REPO }}/ai_worker:${{ env.IMAGE_TAG }}"
+          IMAGE_PATH=$(echo "${RAW_PATH}" | tr '[:upper:]' '[:lower:]')
           echo "IMAGE_PATH=${IMAGE_PATH}" >> $GITHUB_ENV
           echo "Registry: ${REGISTRY}"
           echo "Image path: ${IMAGE_PATH}"
