@@ -10,3 +10,4 @@ bcrypt
 redis
 requests
 PyJWT
+snowflake-connector-python

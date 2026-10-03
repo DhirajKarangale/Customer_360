@@ -28,17 +28,17 @@ import os
 
 @router.get("/images/{filename}")
 def get_profile_image(filename: str):
-    import sys
-    project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-    if project_root not in sys.path:
-        sys.path.insert(0, project_root)
-    from ai.utils.sf_auth import get_snowflake_conn
-    
-    # Download from Snowflake
-    tmp_dir = tempfile.gettempdir()
-    dest_path = os.path.join(tmp_dir, filename)
-    
     try:
+        import sys
+        project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+        if project_root not in sys.path:
+            sys.path.insert(0, project_root)
+        from ai.utils.sf_auth import get_snowflake_conn
+        
+        # Download from Snowflake
+        tmp_dir = tempfile.gettempdir()
+        dest_path = os.path.join(tmp_dir, filename)
+        
         if not os.path.exists(dest_path):
             sf_conn = get_snowflake_conn()
             cursor = sf_conn.cursor()
@@ -49,7 +49,7 @@ def get_profile_image(filename: str):
         if os.path.exists(dest_path):
             return FileResponse(dest_path)
     except Exception as e:
-        # If Snowflake fails (e.g. stage doesn't exist, no auth), fallback to a beautiful generated avatar
+        # If Snowflake fails (e.g. stage doesn't exist, no auth, module missing), fallback to a beautiful generated avatar
         seed = filename.split('.')[0]
         fallback_url = f"https://api.dicebear.com/7.x/avataaars/png?seed={seed}&backgroundColor=b6e3f4,c0aede,d1d4f9,ffdfbf"
         return RedirectResponse(url=fallback_url)
