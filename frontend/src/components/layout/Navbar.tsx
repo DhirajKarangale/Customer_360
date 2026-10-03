@@ -15,7 +15,7 @@ export function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-transparent/95 backdrop-blur supports-[backdrop-filter]:bg-transparent/60">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         
         {/* Navigation Links */}
@@ -26,7 +26,7 @@ export function Navbar() {
               to={item.path}
               className={({ isActive }) =>
                 `text-sm font-medium transition-colors hover:text-primary ${
-                  isActive ? 'text-primary' : 'text-muted-foreground'
+                  isActive ? 'text-primary' : 'text-white/70'
                 }`
               }
             >
@@ -39,7 +39,7 @@ export function Navbar() {
         <div className="flex items-center gap-4">
           <Link 
             to="/profile"
-            className="flex items-center gap-2 rounded-full border border-border px-4 py-1.5 text-sm font-medium text-foreground transition-colors hover:bg-muted"
+            className="flex items-center gap-2 rounded-full border border-white/10 px-4 py-1.5 text-sm font-medium text-white transition-colors hover:bg-white/10 text-white"
           >
             {!imgError && agent?.profile_image_url ? (
               <img 
@@ -49,7 +49,7 @@ export function Navbar() {
                 onError={() => setImgError(true)}
               />
             ) : (
-              <UserCircle className="h-5 w-5 text-muted-foreground" />
+              <UserCircle className="h-5 w-5 text-white/70" />
             )}
             <span>{agent?.name || 'Profile'}</span>
           </Link>

@@ -11,6 +11,7 @@ import NotFoundPage from './pages/NotFoundPage';
 import MaintenancePage from './pages/MaintenancePage';
 import { GlobalLoader } from './components/ui/GlobalLoader';
 import { GlobalToast } from './components/ui/GlobalToast';
+import SetBG from './backgrounds/SetBG';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <GlobalToast />
       
       <BrowserRouter>
+        <SetBG />
         <Routes>
           {/* Standalone Public Pages */}
           <Route path="/login" element={<LoginPage />} />

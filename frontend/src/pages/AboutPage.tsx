@@ -41,7 +41,7 @@ export default function AboutPage() {
   };
 
   return (
-    <div className="relative min-h-[80vh] w-full overflow-hidden rounded-2xl bg-[#030712] animate-in fade-in zoom-in-95 duration-500 p-8 shadow-2xl border border-white/5">
+    <div className="relative min-h-[80vh] w-full overflow-hidden rounded-2xl bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-xl p-8 shadow-2xl border border-white/10">
 
       {/* Background ambient glows */}
       <div className="absolute top-0 left-1/4 h-[500px] w-[500px] rounded-full bg-indigo-600/20 blur-[120px] pointer-events-none mix-blend-screen" />
@@ -110,7 +110,7 @@ export default function AboutPage() {
                   <button
                     type="button"
                     onClick={() => handleCopy(member.phone, 'Phone number')}
-                    className="w-full cursor-pointer flex items-center gap-3 rounded-xl bg-black/40 p-3 text-sm text-gray-300 transition-colors hover:bg-black/60 hover:text-white border border-white/5 text-left"
+                    className="w-full cursor-pointer flex items-center gap-3 rounded-xl bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] p-3 text-sm text-gray-300 transition-colors hover:bg-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] hover:text-white border border-white/5 text-left"
                   >
                     <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-indigo-500/20 text-indigo-400">
                       <Phone className="h-4 w-4" />
@@ -121,7 +121,7 @@ export default function AboutPage() {
                   <button
                     type="button"
                     onClick={() => handleCopy(member.email, 'Email address')}
-                    className="w-full cursor-pointer flex items-center gap-3 rounded-xl bg-black/40 p-3 text-sm text-gray-300 transition-colors hover:bg-black/60 hover:text-white border border-white/5 overflow-hidden text-left"
+                    className="w-full cursor-pointer flex items-center gap-3 rounded-xl bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] p-3 text-sm text-gray-300 transition-colors hover:bg-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] hover:text-white border border-white/5 overflow-hidden text-left"
                     title={member.email}
                   >
                     <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-purple-500/20 text-purple-400">

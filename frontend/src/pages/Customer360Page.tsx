@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo } from 'react';
+import { StaggerContainer, StaggerItem } from '../components/layout/PageWrapper';
 import { useAuthStore } from '../store/useAuthStore';
 import { usePoliciesQuery } from '../api/policies';
 import { useSuggestionsQuery } from '../api/agents';
@@ -155,12 +156,12 @@ export default function Customer360Page() {
   const formatCurrency = (val: number) => `$${val.toLocaleString(undefined, { maximumFractionDigits: 0 })}`;
 
   return (
-    <div className="space-y-6 animate-in fade-in zoom-in-95 duration-300">
+    <div className="space-y-6">
       
       {/* Header */}
       <div className="flex flex-col gap-1">
-        <h1 className="text-2xl font-bold tracking-tight text-foreground">Welcome back, {agent?.name?.split(' ')[0] || 'Agent'}</h1>
-        <p className="text-muted-foreground">Here is your portfolio overview and smart suggestions for today.</p>
+        <h1 className="text-2xl font-bold tracking-tight text-white">Welcome back, {agent?.name?.split(' ')[0] || 'Agent'}</h1>
+        <p className="text-white/70">Here is your portfolio overview and smart suggestions for today.</p>
       </div>
 
       <div className="grid grid-cols-1 gap-6 xl:grid-cols-3">
@@ -170,71 +171,71 @@ export default function Customer360Page() {
           
           {/* KPI Cards Grid */}
           {policiesLoading ? (
-            <div className="flex h-32 items-center justify-center rounded-xl border border-border bg-card shadow-sm">
+            <div className="flex h-32 items-center justify-center rounded-xl border border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-xl shadow-sm">
                <Loader2 className="h-6 w-6 animate-spin text-primary" />
             </div>
           ) : (
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <StaggerContainer className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
               
-              <div className="flex flex-col gap-2 rounded-xl border border-border bg-card p-5 shadow-sm transition-all hover:shadow-md">
-                <div className="flex items-center gap-2 text-muted-foreground">
+              <StaggerItem className="flex flex-col gap-2 rounded-xl border border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-xl p-5 shadow-sm transition-all hover:shadow-md">
+                <div className="flex items-center gap-2 text-white/70">
                   <Wallet className="h-4 w-4 text-emerald-500" />
                   <span className="text-sm font-medium">Active Premium</span>
                 </div>
-                <div className="text-2xl font-bold text-foreground">
+                <div className="text-2xl font-bold text-white">
                   {metrics ? formatCurrency(metrics.activePremium) : '$0'}
                 </div>
-              </div>
+              </StaggerItem>
 
-              <div className="flex flex-col gap-2 rounded-xl border border-border bg-card p-5 shadow-sm transition-all hover:shadow-md">
-                <div className="flex items-center gap-2 text-muted-foreground">
+              <StaggerItem className="flex flex-col gap-2 rounded-xl border border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-xl p-5 shadow-sm transition-all hover:shadow-md">
+                <div className="flex items-center gap-2 text-white/70">
                   <ShieldAlert className="h-4 w-4 text-blue-500" />
                   <span className="text-sm font-medium">Total Coverage</span>
                 </div>
-                <div className="text-2xl font-bold text-foreground">
+                <div className="text-2xl font-bold text-white">
                   {metrics ? formatCurrency(metrics.totalCoverage) : '$0'}
                 </div>
-              </div>
+              </StaggerItem>
 
-              <div className="flex flex-col gap-2 rounded-xl border border-border bg-card p-5 shadow-sm transition-all hover:shadow-md">
-                <div className="flex items-center gap-2 text-muted-foreground">
+              <StaggerItem className="flex flex-col gap-2 rounded-xl border border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-xl p-5 shadow-sm transition-all hover:shadow-md">
+                <div className="flex items-center gap-2 text-white/70">
                   <AlertTriangle className="h-4 w-4 text-amber-500" />
                   <span className="text-sm font-medium">Expiring Soon (30d)</span>
                 </div>
-                <div className="text-2xl font-bold text-foreground">
+                <div className="text-2xl font-bold text-white">
                   {metrics?.expiringSoonCount || 0}
-                  <span className="ml-2 text-xs font-normal text-muted-foreground">policies</span>
+                  <span className="ml-2 text-xs font-normal text-white/70">policies</span>
                 </div>
-              </div>
+              </StaggerItem>
 
-              <div className="flex flex-col gap-2 rounded-xl border border-border bg-card p-5 shadow-sm transition-all hover:shadow-md">
-                <div className="flex items-center gap-2 text-muted-foreground">
+              <StaggerItem className="flex flex-col gap-2 rounded-xl border border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-xl p-5 shadow-sm transition-all hover:shadow-md">
+                <div className="flex items-center gap-2 text-white/70">
                   <Users className="h-4 w-4 text-purple-500" />
                   <span className="text-sm font-medium">Cross-Sell Ratio</span>
                 </div>
-                <div className="text-2xl font-bold text-foreground">
+                <div className="text-2xl font-bold text-white">
                   {metrics?.crossSellRatio || '0.0'}
-                  <span className="ml-2 text-xs font-normal text-muted-foreground">per client</span>
+                  <span className="ml-2 text-xs font-normal text-white/70">per client</span>
                 </div>
-              </div>
+              </StaggerItem>
 
-            </div>
+            </StaggerContainer>
           )}
 
           {/* Charts Row */}
-          <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+          <StaggerContainer delay={0.2} className="grid grid-cols-1 gap-6 lg:grid-cols-2">
             
             {/* Chart 1: Portfolio Mix */}
-            <div className="flex min-h-[350px] flex-col rounded-xl border border-border bg-card p-6 shadow-sm">
-              <h3 className="mb-6 font-semibold tracking-tight flex items-center gap-2 text-foreground">
+            <StaggerItem className="flex min-h-[350px] flex-col rounded-xl border border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-xl p-6 shadow-sm">
+              <h3 className="mb-6 font-semibold tracking-tight flex items-center gap-2 text-white">
                 <TrendingUp className="h-4 w-4 text-primary" />
                 Revenue by Policy Type
               </h3>
               <div className="flex-1 w-full relative">
                 {policiesLoading || !metrics ? (
-                  <div className="absolute inset-0 flex items-center justify-center"><Loader2 className="h-6 w-6 animate-spin text-muted" /></div>
+                  <div className="absolute inset-0 flex items-center justify-center"><Loader2 className="h-6 w-6 animate-spin text-white/40" /></div>
                 ) : metrics.pieData.length === 0 ? (
-                  <div className="absolute inset-0 flex items-center justify-center text-sm text-muted-foreground">No active policies</div>
+                  <div className="absolute inset-0 flex items-center justify-center text-sm text-white/70">No active policies</div>
                 ) : (
                   <ResponsiveContainer width="100%" height="100%">
                     <PieChart>
@@ -261,19 +262,19 @@ export default function Customer360Page() {
                   </ResponsiveContainer>
                 )}
               </div>
-            </div>
+            </StaggerItem>
 
             {/* Chart 2: Upcoming Renewals */}
-            <div className="flex min-h-[350px] flex-col rounded-xl border border-border bg-card p-6 shadow-sm">
-              <h3 className="mb-6 font-semibold tracking-tight flex items-center gap-2 text-foreground">
+            <StaggerItem className="flex min-h-[350px] flex-col rounded-xl border border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-xl p-6 shadow-sm">
+              <h3 className="mb-6 font-semibold tracking-tight flex items-center gap-2 text-white">
                 <Clock className="h-4 w-4 text-amber-500" />
                 Upcoming Renewals Pipeline
               </h3>
               <div className="flex-1 w-full relative">
                 {policiesLoading || !metrics ? (
-                  <div className="absolute inset-0 flex items-center justify-center"><Loader2 className="h-6 w-6 animate-spin text-muted" /></div>
+                  <div className="absolute inset-0 flex items-center justify-center"><Loader2 className="h-6 w-6 animate-spin text-white/40" /></div>
                 ) : metrics.barData.length === 0 ? (
-                  <div className="absolute inset-0 flex items-center justify-center text-sm text-muted-foreground">No upcoming renewals</div>
+                  <div className="absolute inset-0 flex items-center justify-center text-sm text-white/70">No upcoming renewals</div>
                 ) : (
                   <ResponsiveContainer width="100%" height="100%">
                     <BarChart data={metrics.barData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
@@ -290,32 +291,32 @@ export default function Customer360Page() {
                   </ResponsiveContainer>
                 )}
               </div>
-            </div>
+            </StaggerItem>
 
-          </div>
+          </StaggerContainer>
         </div>
 
         {/* RIGHT COLUMN: AI Suggestions */}
         <div className="relative xl:col-span-1 h-[400px] xl:h-auto">
-          <div className="flex flex-col rounded-xl border border-border bg-gradient-to-b from-card to-card/50 shadow-sm overflow-hidden h-full xl:absolute xl:inset-0">
-            <div className="flex items-center justify-between border-b border-border bg-muted/30 px-6 py-4">
+          <div className="flex flex-col rounded-xl border border-white/10 bg-gradient-to-b from-card to-card/50 shadow-sm overflow-hidden h-full xl:absolute xl:inset-0">
+            <div className="flex items-center justify-between border-b border-white/10 bg-muted/30 px-6 py-4">
               <div className="flex items-center gap-2">
                 <Sparkles className="h-5 w-5 text-indigo-500" />
-                <h2 className="text-lg font-semibold tracking-tight text-foreground">Today's Suggestions</h2>
+                <h2 className="text-lg font-semibold tracking-tight text-white">Today's Suggestions</h2>
               </div>
               {isGenerating && <Loader2 className="h-4 w-4 animate-spin text-indigo-500" />}
             </div>
           
           <div className="flex-1 overflow-y-auto p-6 scroll-smooth">
             {suggestionsLoading && !liveSuggestionText ? (
-              <div className="flex flex-col items-center justify-center h-full gap-4 text-muted-foreground opacity-70">
+              <div className="flex flex-col items-center justify-center h-full gap-4 text-white/70 opacity-70">
                 <Loader2 className="h-6 w-6 animate-spin text-indigo-500" />
                 <p className="text-sm">Analyzing portfolio for opportunities...</p>
               </div>
             ) : (
               <div className="w-full space-y-4">
                 {liveSuggestionText ? (
-                  <div className="text-sm text-foreground">
+                  <div className="text-sm text-white">
                     {/<[a-z][\s\S]*>/i.test(liveSuggestionText) ? (
                       <div className="llm-content" dangerouslySetInnerHTML={{ __html: liveSuggestionText.replace(/\[DONE\]/g, '') }} />
                     ) : (
@@ -326,7 +327,7 @@ export default function Customer360Page() {
                     )}
                   </div>
                 ) : (
-                  <div className="text-center text-muted-foreground pt-10">
+                  <div className="text-center text-white/70 pt-10">
                     No suggestions available at the moment.
                   </div>
                 )}

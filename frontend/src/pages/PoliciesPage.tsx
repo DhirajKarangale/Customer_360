@@ -107,7 +107,7 @@ export default function PoliciesPage() {
   return (
     <div className="space-y-6">
       {/* Page Header & Filters */}
-      <div className="flex flex-col gap-4 rounded-xl border border-border bg-card p-4 shadow-sm md:flex-row md:items-center md:justify-between">
+      <div className="flex flex-col gap-4 rounded-xl border border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-xl p-4 shadow-sm md:flex-row md:items-center md:justify-between">
         <div className="flex items-center gap-2">
           <div className="rounded-lg bg-primary/10 p-2 text-primary">
             <ShieldAlert className="h-6 w-6" />
@@ -118,22 +118,22 @@ export default function PoliciesPage() {
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
           {/* Search Bar */}
           <div className="relative">
-            <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+            <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-white/70" />
             <input
               type="text"
               placeholder="Search ID, Policy #..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="h-10 w-full rounded-md border border-input bg-background pl-9 pr-4 text-sm font-medium focus:outline-none focus:ring-1 focus:ring-primary sm:w-[250px] shadow-sm"
+              className="h-10 w-full rounded-md border border-input bg-transparent pl-9 pr-4 text-sm font-medium focus:outline-none focus:ring-1 focus:ring-primary sm:w-[250px] shadow-sm"
             />
           </div>
 
           {/* Filters */}
           <div className="flex items-center gap-3">
             <Select value={policyType} onValueChange={setPolicyType}>
-              <SelectTrigger className="w-full sm:w-[160px] bg-background">
+              <SelectTrigger className="w-full sm:w-[160px] bg-transparent">
                 <div className="flex items-center gap-1.5 truncate">
-                  <span className="text-muted-foreground font-normal">Type:</span>
+                  <span className="text-white/70 font-normal">Type:</span>
                   <span>{policyType === 'all' ? 'All' : policyType}</span>
                 </div>
               </SelectTrigger>
@@ -146,9 +146,9 @@ export default function PoliciesPage() {
             </Select>
 
             <Select value={status} onValueChange={setStatus}>
-              <SelectTrigger className="w-full sm:w-[160px] bg-background">
+              <SelectTrigger className="w-full sm:w-[160px] bg-transparent">
                 <div className="flex items-center gap-1.5 truncate">
-                  <span className="text-muted-foreground font-normal">Status:</span>
+                  <span className="text-white/70 font-normal">Status:</span>
                   <span>{status === 'all' ? 'All' : status}</span>
                 </div>
               </SelectTrigger>
@@ -164,11 +164,11 @@ export default function PoliciesPage() {
       </div>
 
       {/* Main Content Area */}
-      <div className="rounded-xl border border-border bg-card shadow-sm overflow-hidden">
+      <div className="rounded-xl border border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-xl shadow-sm overflow-hidden">
         
         {/* Loading State Overlay (Only if totally empty) */}
         {isFetching && displayItems.length === 0 && (
-          <div className="flex h-64 flex-col items-center justify-center gap-4 text-muted-foreground">
+          <div className="flex h-64 flex-col items-center justify-center gap-4 text-white/70">
             <Loader2 className="h-8 w-8 animate-spin text-primary" />
             <p>Searching Policies...</p>
           </div>
@@ -185,9 +185,9 @@ export default function PoliciesPage() {
 
         {/* Empty State */}
         {!isFetching && !isError && displayItems.length === 0 && (
-          <div className="flex h-64 flex-col items-center justify-center gap-2 text-muted-foreground">
+          <div className="flex h-64 flex-col items-center justify-center gap-2 text-white/70">
             <FileText className="h-10 w-10 opacity-50" />
-            <p className="text-lg font-medium text-foreground">No Policies Found</p>
+            <p className="text-lg font-medium text-white">No Policies Found</p>
             <p className="text-sm">Try adjusting your search terms or filters.</p>
           </div>
         )}
@@ -196,27 +196,27 @@ export default function PoliciesPage() {
         {displayItems.length > 0 && (
           <div className="overflow-x-auto relative">
             <table className="w-full text-left text-sm">
-              <thead className="bg-muted/50 border-b border-border">
+              <thead className="bg-white/5 border-b border-white/10">
                 <tr>
-                  <th className="px-6 py-4 font-medium text-muted-foreground">Policy Number</th>
-                  <th className="px-6 py-4 font-medium text-muted-foreground">Type</th>
-                  <th className="px-6 py-4 font-medium text-muted-foreground">Status</th>
-                  <th className="px-6 py-4 font-medium text-muted-foreground">Premium</th>
-                  <th className="px-6 py-4 font-medium text-muted-foreground">Coverage</th>
-                  <th className="px-6 py-4 font-medium text-muted-foreground">Dates</th>
-                  <th className="px-6 py-4 font-medium text-muted-foreground">Actions</th>
+                  <th className="px-6 py-4 font-medium text-white/70">Policy Number</th>
+                  <th className="px-6 py-4 font-medium text-white/70">Type</th>
+                  <th className="px-6 py-4 font-medium text-white/70">Status</th>
+                  <th className="px-6 py-4 font-medium text-white/70">Premium</th>
+                  <th className="px-6 py-4 font-medium text-white/70">Coverage</th>
+                  <th className="px-6 py-4 font-medium text-white/70">Dates</th>
+                  <th className="px-6 py-4 font-medium text-white/70">Actions</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-border">
                 {displayItems.map((policy) => (
                   <tr 
                     key={policy.id} 
-                    className="hover:bg-muted/30 transition-colors cursor-pointer"
+                    className="hover:bg-white/10 transition-colors cursor-pointer"
                     onClick={() => setSelectedCustomerId(policy.customer_id)}
                   >
-                    <td className="px-6 py-4 font-medium text-foreground">{policy.policy_number}</td>
+                    <td className="px-6 py-4 font-medium text-white">{policy.policy_number}</td>
                     <td className="px-6 py-4">
-                      <span className="inline-flex items-center rounded-full bg-secondary px-2.5 py-0.5 text-xs font-semibold text-secondary-foreground border border-border">
+                      <span className="inline-flex items-center rounded-full bg-secondary px-2.5 py-0.5 text-xs font-semibold text-secondary-foreground border border-white/10">
                         {policy.policy_type}
                       </span>
                     </td>
@@ -229,15 +229,15 @@ export default function PoliciesPage() {
                         {policy.status}
                       </span>
                     </td>
-                    <td className="px-6 py-4 text-foreground">${policy.premium_amount.toLocaleString(undefined, { minimumFractionDigits: 2 })}</td>
-                    <td className="px-6 py-4 text-muted-foreground">${policy.coverage_amount.toLocaleString()}</td>
+                    <td className="px-6 py-4 text-white">${policy.premium_amount.toLocaleString(undefined, { minimumFractionDigits: 2 })}</td>
+                    <td className="px-6 py-4 text-white/70">${policy.coverage_amount.toLocaleString()}</td>
                     <td className="px-6 py-4">
                       <div className="flex flex-col gap-1 text-xs">
-                        <div className="flex items-center gap-2 text-foreground font-medium">
-                          <CalendarDays className="h-3.5 w-3.5 text-muted-foreground" />
+                        <div className="flex items-center gap-2 text-white font-medium">
+                          <CalendarDays className="h-3.5 w-3.5 text-white/70" />
                           {new Date(policy.start_date).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' })}
                         </div>
-                        <div className="flex items-center gap-2 text-muted-foreground">
+                        <div className="flex items-center gap-2 text-white/70">
                           <ArrowRight className="h-3 w-3 ml-[2px] opacity-70" />
                           {new Date(policy.end_date).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' })}
                         </div>
@@ -250,7 +250,7 @@ export default function PoliciesPage() {
                           setActivePolicy(policy.id, policy.policy_number);
                           setChatOpen(true);
                         }}
-                        className="inline-flex h-8 items-center justify-center gap-2 rounded-md bg-secondary/50 px-3 text-xs font-medium text-secondary-foreground shadow-sm transition-colors hover:bg-secondary hover:text-foreground"
+                        className="inline-flex h-8 items-center justify-center gap-2 rounded-md bg-white/10 border-white/20 px-3 text-xs font-medium text-secondary-foreground shadow-sm transition-colors hover:bg-secondary hover:text-white"
                         title="Ask AI about this policy"
                       >
                         <MessageSquare className="h-3.5 w-3.5" />

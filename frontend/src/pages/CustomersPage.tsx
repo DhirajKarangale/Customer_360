@@ -77,7 +77,7 @@ export default function CustomersPage() {
   return (
     <div className="space-y-6">
       {/* Page Header & Filters */}
-      <div className="flex flex-col gap-4 rounded-xl border border-border bg-card p-4 shadow-sm md:flex-row md:items-center md:justify-between">
+      <div className="flex flex-col gap-4 rounded-xl border border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-xl p-4 shadow-sm md:flex-row md:items-center md:justify-between">
         <div className="flex items-center gap-2">
           <div className="rounded-lg bg-primary/10 p-2 text-primary">
             <Users className="h-6 w-6" />
@@ -88,13 +88,13 @@ export default function CustomersPage() {
         <div className="flex flex-col gap-3 md:flex-row md:items-center">
           {/* Search Bar */}
           <div className="relative">
-            <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+            <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-white/70" />
             <input
               type="text"
               placeholder="Search Name, Email..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="h-10 w-full rounded-lg border border-input bg-background pl-9 pr-4 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:w-[250px]"
+              className="h-10 w-full rounded-lg border border-input bg-transparent pl-9 pr-4 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-white/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:w-[250px]"
             />
             {isFetching && (
               <Loader2 className="absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 animate-spin text-primary" />
@@ -104,45 +104,45 @@ export default function CustomersPage() {
       </div>
 
       {/* Table Section */}
-      <div className="rounded-xl border border-border bg-card shadow-sm">
+      <div className="rounded-xl border border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-xl shadow-sm">
         <div className="overflow-x-auto">
           {isLoading && !data && displayItems.length === 0 ? (
-            <div className="flex flex-col items-center justify-center p-12 text-muted-foreground">
+            <div className="flex flex-col items-center justify-center p-12 text-white/70">
               <Loader2 className="h-8 w-8 animate-spin text-primary mb-4" />
               <p>Loading customers...</p>
             </div>
           ) : displayItems.length === 0 ? (
-            <div className="flex flex-col items-center justify-center p-12 text-muted-foreground">
-              <Users className="h-12 w-12 text-muted mb-4 opacity-50" />
-              <p className="text-lg font-medium text-foreground">No customers found</p>
+            <div className="flex flex-col items-center justify-center p-12 text-white/70">
+              <Users className="h-12 w-12 text-white/40 mb-4 opacity-50" />
+              <p className="text-lg font-medium text-white">No customers found</p>
               <p className="text-sm">Try adjusting your search criteria</p>
             </div>
           ) : (
             <table className="w-full text-left text-sm">
-              <thead className="bg-muted/50 border-b border-border">
+              <thead className="bg-white/5 border-b border-white/10">
                 <tr>
-                  <th className="px-6 py-4 font-medium text-muted-foreground">Name</th>
-                  <th className="px-6 py-4 font-medium text-muted-foreground">Email</th>
-                  <th className="px-6 py-4 font-medium text-muted-foreground">Phone Number</th>
-                  <th className="px-6 py-4 font-medium text-muted-foreground">Date of Birth</th>
-                  <th className="px-6 py-4 font-medium text-muted-foreground">Address</th>
-                  <th className="px-6 py-4 font-medium text-muted-foreground">Actions</th>
+                  <th className="px-6 py-4 font-medium text-white/70">Name</th>
+                  <th className="px-6 py-4 font-medium text-white/70">Email</th>
+                  <th className="px-6 py-4 font-medium text-white/70">Phone Number</th>
+                  <th className="px-6 py-4 font-medium text-white/70">Date of Birth</th>
+                  <th className="px-6 py-4 font-medium text-white/70">Address</th>
+                  <th className="px-6 py-4 font-medium text-white/70">Actions</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-border">
                 {displayItems.map((customer) => (
                   <tr 
                     key={customer.id} 
-                    className="hover:bg-muted/30 transition-colors cursor-pointer"
+                    className="hover:bg-white/10 transition-colors cursor-pointer"
                     onClick={() => setSelectedCustomerId(customer.id)}
                   >
-                    <td className="px-6 py-4 font-medium text-foreground">{customer.name}</td>
-                    <td className="px-6 py-4 text-muted-foreground">{customer.email}</td>
-                    <td className="px-6 py-4 text-muted-foreground">{customer.phone_number}</td>
-                    <td className="px-6 py-4 text-muted-foreground">
+                    <td className="px-6 py-4 font-medium text-white">{customer.name}</td>
+                    <td className="px-6 py-4 text-white/70">{customer.email}</td>
+                    <td className="px-6 py-4 text-white/70">{customer.phone_number}</td>
+                    <td className="px-6 py-4 text-white/70">
                       {new Date(customer.date_of_birth).toLocaleDateString(undefined, { month: 'long', day: 'numeric', year: 'numeric' })}
                     </td>
-                    <td className="px-6 py-4 text-muted-foreground max-w-[200px] truncate" title={customer.address}>
+                    <td className="px-6 py-4 text-white/70 max-w-[200px] truncate" title={customer.address}>
                       {customer.address}
                     </td>
                     <td className="px-6 py-4">
@@ -152,7 +152,7 @@ export default function CustomersPage() {
                           setActiveCustomer(customer.id, customer.name);
                           setChatOpen(true);
                         }}
-                        className="inline-flex h-8 items-center justify-center gap-2 rounded-md bg-secondary/50 px-3 text-xs font-medium text-secondary-foreground shadow-sm transition-colors hover:bg-secondary hover:text-foreground"
+                        className="inline-flex h-8 items-center justify-center gap-2 rounded-md bg-white/10 border-white/20 px-3 text-xs font-medium text-secondary-foreground shadow-sm transition-colors hover:bg-secondary hover:text-white"
                         title="Ask AI about this customer"
                       >
                         <MessageSquare className="h-3.5 w-3.5" />

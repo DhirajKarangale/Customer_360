@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useAuthStore } from '../store/useAuthStore';
 import { TokenService } from '../api/tokenService';
 import { useUIStore } from '../store/useUIStore';
-import { LogOut, User, Mail, Phone, Building2, FileCheck, Hash } from 'lucide-react';
+import { LogOut, User, Mail, Phone, Building2, FileCheck, Shield } from 'lucide-react';
 import { useQueryClient } from '@tanstack/react-query';
 import { useAIChatStore } from '../store/useAIChatStore';
 import { abortAllRequests } from '../api/axios';
@@ -21,98 +21,119 @@ export default function ProfilePage() {
     TokenService.removeToken();
     setAgent(null);
     useAIChatStore.getState().clearMessages(undefined, true);
-    queryClient.clear(); // Clear all cached API queries
-    showToast('Signed out successfully.', 'text-green-500');
+    queryClient.clear();
+    showToast('Signed out successfully.', 'text-emerald-400');
     navigate('/login');
   };
 
   if (!agent) {
-    return null; // or loading
+    return null;
   }
 
   return (
-    <div className="space-y-6">
-      {/* Page Header */}
-      <div className="flex flex-col gap-4 rounded-xl border border-border bg-card p-4 shadow-sm md:flex-row md:items-center md:justify-between">
-        <div className="flex items-center gap-2">
-          <div className="rounded-lg bg-primary/10 p-2 text-primary">
-            <User className="h-6 w-6" />
-          </div>
-          <h1 className="text-xl font-semibold tracking-tight">Agent Profile</h1>
-        </div>
+    <div className="relative min-h-[80vh] w-full overflow-hidden rounded-2xl bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-xl p-8 shadow-2xl border border-white/10">
+      
+      {/* Background ambient glows */}
+      <div className="absolute top-0 right-1/4 h-[500px] w-[500px] rounded-full bg-blue-600/20 blur-[120px] pointer-events-none mix-blend-screen" />
+      <div className="absolute bottom-0 left-1/4 h-[400px] w-[400px] rounded-full bg-purple-600/20 blur-[100px] pointer-events-none mix-blend-screen" />
+      
+      <div className="relative z-10 mx-auto max-w-5xl space-y-8">
         
-        <button
-          onClick={handleSignOut}
-          className="inline-flex h-10 items-center justify-center gap-2 rounded-md bg-destructive/10 px-4 py-2 text-sm font-medium text-destructive transition-colors hover:bg-destructive hover:text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-destructive"
-        >
-          <LogOut className="h-4 w-4" />
-          Sign Out
-        </button>
-      </div>
-
-      {/* Main Content Area */}
-      <div className="rounded-xl border border-border bg-card shadow-sm p-8">
-        <div className="flex flex-col md:flex-row items-center gap-8 mb-10">
-          {!imgError && agent.profile_image_url ? (
-            <img 
-              src={agent.profile_image_url} 
-              alt={agent.name} 
-              className="h-32 w-32 rounded-full object-cover object-top border-4 border-background shadow-lg"
-              onError={() => setImgError(true)}
-            />
-          ) : (
-            <div className="flex h-32 w-32 items-center justify-center rounded-full bg-primary/10 border-4 border-background shadow-lg">
-              <User className="h-16 w-16 text-primary/50" />
+        {/* Page Header */}
+        <div className="flex flex-col gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md shadow-lg md:flex-row md:items-center md:justify-between transition-all duration-300 hover:bg-white/[0.08]">
+          <div className="flex items-center gap-3">
+            <div className="rounded-xl bg-blue-500/20 p-3 text-blue-400 border border-blue-500/30">
+              <User className="h-6 w-6" />
             </div>
-          )}
-          
-          <div className="text-center md:text-left space-y-1">
-            <h2 className="text-3xl font-bold tracking-tight text-foreground">{agent.name}</h2>
-            <p className="text-sm font-medium text-muted-foreground truncate" title={agent.id}>
-              ID: {agent.id}
-            </p>
+            <div>
+              <h1 className="text-2xl font-bold tracking-tight text-white">Agent Profile</h1>
+              <p className="text-sm text-blue-200/70">Manage your account settings and details</p>
+            </div>
           </div>
+          
+          <button
+            onClick={handleSignOut}
+            className="group relative inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-red-500/10 px-6 py-2 text-sm font-medium text-red-400 transition-all hover:bg-red-500 hover:text-white border border-red-500/20 hover:border-red-500 hover:shadow-[0_0_20px_rgba(239,68,68,0.4)]"
+          >
+            <LogOut className="h-4 w-4 transition-transform group-hover:-translate-x-1" />
+            Sign Out
+          </button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="flex items-center gap-4 rounded-xl border border-border/50 bg-muted/30 p-5 transition-colors hover:bg-muted/50">
-            <div className="rounded-full bg-primary/10 p-3 text-primary">
-              <Mail className="h-6 w-6" />
+        {/* Main Content Area */}
+        <div className="rounded-2xl border border-white/10 bg-white/5 shadow-xl p-8 backdrop-blur-md">
+          <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
+            <div className="relative group">
+              <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-50 blur transition duration-500 group-hover:opacity-100 group-hover:duration-200"></div>
+              <div className="relative flex h-32 w-32 items-center justify-center overflow-hidden rounded-full bg-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] border-2 border-white/20 p-1 backdrop-blur-md">
+                {!imgError && agent.profile_image_url ? (
+                  <img 
+                    src={agent.profile_image_url} 
+                    alt={agent.name} 
+                    className="h-full w-full rounded-full object-cover object-top"
+                    onError={() => setImgError(true)}
+                  />
+                ) : (
+                  <div className="flex h-full w-full items-center justify-center rounded-full bg-blue-500/10 text-blue-400">
+                    <User className="h-14 w-14" />
+                  </div>
+                )}
+              </div>
             </div>
-            <div>
-              <p className="text-sm text-muted-foreground font-medium">Email Address</p>
-              <p className="text-base font-semibold text-foreground mt-0.5">{agent.email}</p>
-            </div>
-          </div>
-          
-          <div className="flex items-center gap-4 rounded-xl border border-border/50 bg-muted/30 p-5 transition-colors hover:bg-muted/50">
-            <div className="rounded-full bg-primary/10 p-3 text-primary">
-              <Phone className="h-6 w-6" />
-            </div>
-            <div>
-              <p className="text-sm text-muted-foreground font-medium">Phone Number</p>
-              <p className="text-base font-semibold text-foreground mt-0.5">{agent.phone_number}</p>
+            
+            <div className="text-center md:text-left space-y-2">
+              <h2 className="text-4xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-white to-purple-300">
+                {agent.name}
+              </h2>
+              <div className="flex items-center justify-center md:justify-start gap-2 text-sm font-medium text-blue-200/70 bg-blue-500/10 w-fit px-3 py-1.5 rounded-full mx-auto md:mx-0 border border-blue-500/20">
+                <Shield className="h-4 w-4 text-blue-400" />
+                ID: <span className="font-mono">{agent.id}</span>
+              </div>
             </div>
           </div>
 
-          <div className="flex items-center gap-4 rounded-xl border border-border/50 bg-muted/30 p-5 transition-colors hover:bg-muted/50">
-            <div className="rounded-full bg-primary/10 p-3 text-primary">
-              <Building2 className="h-6 w-6" />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <div className="group flex items-center gap-5 rounded-2xl border border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] p-6 transition-all duration-300 hover:bg-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] hover:border-white/20 hover:-translate-y-1">
+              <div className="rounded-xl bg-blue-500/10 p-3.5 text-blue-400 transition-colors group-hover:bg-blue-500/20 group-hover:text-blue-300">
+                <Mail className="h-6 w-6" />
+              </div>
+              <div>
+                <p className="text-sm text-gray-400 font-medium mb-1">Email Address</p>
+                <p className="text-lg font-semibold text-gray-100">{agent.email}</p>
+              </div>
             </div>
-            <div>
-              <p className="text-sm text-muted-foreground font-medium">Agency Name</p>
-              <p className="text-base font-semibold text-foreground mt-0.5">{agent.agency_name}</p>
+            
+            <div className="group flex items-center gap-5 rounded-2xl border border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] p-6 transition-all duration-300 hover:bg-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] hover:border-white/20 hover:-translate-y-1">
+              <div className="rounded-xl bg-emerald-500/10 p-3.5 text-emerald-400 transition-colors group-hover:bg-emerald-500/20 group-hover:text-emerald-300">
+                <Phone className="h-6 w-6" />
+              </div>
+              <div>
+                <p className="text-sm text-gray-400 font-medium mb-1">Phone Number</p>
+                <p className="text-lg font-mono font-semibold text-gray-100">{agent.phone_number}</p>
+              </div>
             </div>
-          </div>
 
-          <div className="flex items-center gap-4 rounded-xl border border-border/50 bg-muted/30 p-5 transition-colors hover:bg-muted/50">
-            <div className="rounded-full bg-primary/10 p-3 text-primary">
-              <FileCheck className="h-6 w-6" />
+            <div className="group flex items-center gap-5 rounded-2xl border border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] p-6 transition-all duration-300 hover:bg-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] hover:border-white/20 hover:-translate-y-1">
+              <div className="rounded-xl bg-purple-500/10 p-3.5 text-purple-400 transition-colors group-hover:bg-purple-500/20 group-hover:text-purple-300">
+                <Building2 className="h-6 w-6" />
+              </div>
+              <div>
+                <p className="text-sm text-gray-400 font-medium mb-1">Agency Name</p>
+                <p className="text-lg font-semibold text-gray-100">{agent.agency_name}</p>
+              </div>
             </div>
-            <div>
-              <p className="text-sm text-muted-foreground font-medium">License Number</p>
-              <p className="text-base font-semibold text-foreground mt-0.5">{agent.license_number}</p>
+
+            <div className="group flex items-center gap-5 rounded-2xl border border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] p-6 transition-all duration-300 hover:bg-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] hover:border-white/20 hover:-translate-y-1">
+              <div className="rounded-xl bg-amber-500/10 p-3.5 text-amber-400 transition-colors group-hover:bg-amber-500/20 group-hover:text-amber-300">
+                <FileCheck className="h-6 w-6" />
+              </div>
+              <div>
+                <p className="text-sm text-gray-400 font-medium mb-1">License Number</p>
+                <p className="text-lg font-mono font-semibold text-gray-100">{agent.license_number}</p>
+              </div>
             </div>
+            
           </div>
         </div>
       </div>

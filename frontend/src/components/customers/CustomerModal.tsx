@@ -62,10 +62,10 @@ export function CustomerModal({ customerId, onClose }: CustomerModalProps) {
   if (shouldFetch && customerLoading && !customer) {
     return (
       <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-        <div className="fixed inset-0 bg-background/80 backdrop-blur-sm transition-opacity" onClick={onClose} />
-        <div className="relative flex flex-col items-center justify-center gap-4 rounded-xl border border-border bg-card p-12 shadow-2xl animate-in fade-in zoom-in-95 duration-200">
+        <div className="fixed inset-0 bg-transparent/80 backdrop-blur-sm transition-opacity" onClick={onClose} />
+        <div className="relative flex flex-col items-center justify-center gap-4 rounded-xl border border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-xl p-12 shadow-2xl">
           <Loader2 className="h-8 w-8 animate-spin text-primary" />
-          <p className="text-muted-foreground font-medium">Loading Customer Profile...</p>
+          <p className="text-white/70 font-medium">Loading Customer Profile...</p>
         </div>
       </div>
     );
@@ -77,22 +77,22 @@ export function CustomerModal({ customerId, onClose }: CustomerModalProps) {
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6">
       {/* Backdrop */}
       <div 
-        className="fixed inset-0 bg-background/80 backdrop-blur-sm transition-opacity" 
+        className="fixed inset-0 bg-transparent/80 backdrop-blur-sm transition-opacity" 
         onClick={onClose}
       />
       
       {/* Modal Content */}
-      <div className="relative flex w-full max-w-4xl max-h-[90vh] flex-col overflow-hidden rounded-xl border border-border bg-card shadow-2xl animate-in fade-in zoom-in-95 duration-200">
+      <div className="relative flex w-full max-w-4xl max-h-[90vh] flex-col overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-xl shadow-2xl">
         
         {/* Header */}
-        <div className="flex items-center justify-between border-b border-border bg-muted/30 px-6 py-4">
+        <div className="flex items-center justify-between border-b border-white/10 bg-muted/30 px-6 py-4">
           <div>
-            <h2 className="text-xl font-semibold tracking-tight text-foreground">{customer.name}</h2>
-            <p className="text-sm text-muted-foreground">Customer Profile & Policies</p>
+            <h2 className="text-xl font-semibold tracking-tight text-white">{customer.name}</h2>
+            <p className="text-sm text-white/70">Customer Profile & Policies</p>
           </div>
           <button 
             onClick={onClose}
-            className="rounded-full p-2 text-muted-foreground hover:bg-muted hover:text-foreground transition-colors"
+            className="rounded-full p-2 text-white/70 hover:bg-white/10 text-white hover:text-white transition-colors"
           >
             <X className="h-5 w-5" />
           </button>
@@ -104,63 +104,63 @@ export function CustomerModal({ customerId, onClose }: CustomerModalProps) {
           {/* Customer Details Grid */}
           <div className="mb-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             <div className="space-y-1">
-              <span className="text-xs font-medium text-muted-foreground uppercase tracking-wider">Email</span>
-              <p className="text-sm font-medium text-foreground">{customer.email}</p>
+              <span className="text-xs font-medium text-white/70 uppercase tracking-wider">Email</span>
+              <p className="text-sm font-medium text-white">{customer.email}</p>
             </div>
             <div className="space-y-1">
-              <span className="text-xs font-medium text-muted-foreground uppercase tracking-wider">Phone</span>
-              <p className="text-sm font-medium text-foreground">{customer.phone_number}</p>
+              <span className="text-xs font-medium text-white/70 uppercase tracking-wider">Phone</span>
+              <p className="text-sm font-medium text-white">{customer.phone_number}</p>
             </div>
             <div className="space-y-1">
-              <span className="text-xs font-medium text-muted-foreground uppercase tracking-wider">Date of Birth</span>
-              <p className="text-sm font-medium text-foreground">
+              <span className="text-xs font-medium text-white/70 uppercase tracking-wider">Date of Birth</span>
+              <p className="text-sm font-medium text-white">
                 {new Date(customer.date_of_birth).toLocaleDateString(undefined, { month: 'long', day: 'numeric', year: 'numeric' })}
               </p>
             </div>
             <div className="space-y-1">
-              <span className="text-xs font-medium text-muted-foreground uppercase tracking-wider">Address</span>
-              <p className="text-sm font-medium text-foreground">{customer.address}</p>
+              <span className="text-xs font-medium text-white/70 uppercase tracking-wider">Address</span>
+              <p className="text-sm font-medium text-white">{customer.address}</p>
             </div>
           </div>
 
           {/* Policies Section */}
           <div>
-            <h3 className="mb-4 text-lg font-semibold tracking-tight text-foreground flex items-center gap-2">
+            <h3 className="mb-4 text-lg font-semibold tracking-tight text-white flex items-center gap-2">
               <ShieldAlert className="h-5 w-5 text-primary" />
               Active Policies
             </h3>
             
-            <div className="rounded-xl border border-border overflow-hidden shadow-sm">
+            <div className="rounded-xl border border-white/10 overflow-hidden shadow-sm">
               {policiesLoading ? (
-                <div className="flex flex-col items-center justify-center p-12 text-muted-foreground">
+                <div className="flex flex-col items-center justify-center p-12 text-white/70">
                   <Loader2 className="h-8 w-8 animate-spin text-primary mb-4" />
                   <p>Loading policies...</p>
                 </div>
               ) : !policiesData?.items || policiesData.items.length === 0 ? (
-                <div className="flex flex-col items-center justify-center p-12 text-muted-foreground">
-                  <ShieldAlert className="h-12 w-12 text-muted mb-4 opacity-50" />
-                  <p className="text-base font-medium text-foreground">No policies found</p>
+                <div className="flex flex-col items-center justify-center p-12 text-white/70">
+                  <ShieldAlert className="h-12 w-12 text-white/40 mb-4 opacity-50" />
+                  <p className="text-base font-medium text-white">No policies found</p>
                   <p className="text-sm">This customer does not have any active policies.</p>
                 </div>
               ) : (
                 <div className="overflow-auto max-h-[50vh]">
                   <table className="w-full text-left text-sm relative">
-                    <thead className="bg-muted/90 backdrop-blur-sm border-b border-border sticky top-0 z-10 shadow-sm">
+                    <thead className="bg-muted/90 backdrop-blur-sm border-b border-white/10 sticky top-0 z-10 shadow-sm">
                       <tr>
-                        <th className="px-6 py-4 font-medium text-muted-foreground">Policy Number</th>
-                        <th className="px-6 py-4 font-medium text-muted-foreground">Type</th>
-                        <th className="px-6 py-4 font-medium text-muted-foreground">Status</th>
-                        <th className="px-6 py-4 font-medium text-muted-foreground">Premium</th>
-                        <th className="px-6 py-4 font-medium text-muted-foreground">Coverage</th>
-                        <th className="px-6 py-4 font-medium text-muted-foreground">Dates</th>
+                        <th className="px-6 py-4 font-medium text-white/70">Policy Number</th>
+                        <th className="px-6 py-4 font-medium text-white/70">Type</th>
+                        <th className="px-6 py-4 font-medium text-white/70">Status</th>
+                        <th className="px-6 py-4 font-medium text-white/70">Premium</th>
+                        <th className="px-6 py-4 font-medium text-white/70">Coverage</th>
+                        <th className="px-6 py-4 font-medium text-white/70">Dates</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-border">
                       {policiesData.items.map((policy) => (
-                        <tr key={policy.id} className="hover:bg-muted/30 transition-colors">
-                          <td className="px-6 py-4 font-medium text-foreground">{policy.policy_number}</td>
+                        <tr key={policy.id} className="hover:bg-white/10 transition-colors">
+                          <td className="px-6 py-4 font-medium text-white">{policy.policy_number}</td>
                           <td className="px-6 py-4">
-                            <span className="inline-flex items-center rounded-full bg-secondary px-2.5 py-0.5 text-xs font-semibold text-secondary-foreground border border-border">
+                            <span className="inline-flex items-center rounded-full bg-secondary px-2.5 py-0.5 text-xs font-semibold text-secondary-foreground border border-white/10">
                               {policy.policy_type}
                             </span>
                           </td>
@@ -173,15 +173,15 @@ export function CustomerModal({ customerId, onClose }: CustomerModalProps) {
                               {policy.status}
                             </span>
                           </td>
-                          <td className="px-6 py-4 text-foreground">${policy.premium_amount.toLocaleString(undefined, { minimumFractionDigits: 2 })}</td>
-                          <td className="px-6 py-4 text-muted-foreground">${policy.coverage_amount.toLocaleString()}</td>
+                          <td className="px-6 py-4 text-white">${policy.premium_amount.toLocaleString(undefined, { minimumFractionDigits: 2 })}</td>
+                          <td className="px-6 py-4 text-white/70">${policy.coverage_amount.toLocaleString()}</td>
                           <td className="px-6 py-4">
                             <div className="flex flex-col gap-1 text-xs">
-                              <div className="flex items-center gap-2 text-foreground font-medium">
-                                <CalendarDays className="h-3.5 w-3.5 text-muted-foreground" />
+                              <div className="flex items-center gap-2 text-white font-medium">
+                                <CalendarDays className="h-3.5 w-3.5 text-white/70" />
                                 {new Date(policy.start_date).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' })}
                               </div>
-                              <div className="flex items-center gap-2 text-muted-foreground">
+                              <div className="flex items-center gap-2 text-white/70">
                                 <ArrowRight className="h-3 w-3 ml-[2px] opacity-70" />
                                 {new Date(policy.end_date).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' })}
                               </div>

@@ -1,12 +1,15 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import { Navbar } from './Navbar';
 import { Footer } from './Footer';
 import { ChatPanel } from './ChatPanel';
 import { connectSSE } from '../../api/sse';
 import { TokenService } from '../../api/tokenService';
+import { AnimatePresence, motion } from 'framer-motion';
 
 export function AppLayout() {
+  const location = useLocation();
+
   useEffect(() => {
     const token = TokenService.getToken();
     if (!token) return;
@@ -20,12 +23,23 @@ export function AppLayout() {
   }, []);
 
   return (
-    <div className="flex min-h-screen flex-col bg-background text-foreground">
+    <div className="flex min-h-screen flex-col bg-transparent text-white">
       <Navbar />
       
       {/* Main Content Area */}
-      <main className="flex-1 container mx-auto px-4 py-8">
-        <Outlet />
+      <main className="flex-1 container mx-auto px-4 py-8 overflow-hidden">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={location.pathname}
+            initial={{ opacity: 0, y: 20, filter: 'blur(10px)' }}
+            animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+            exit={{ opacity: 0, y: -20, filter: 'blur(10px)' }}
+            transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+            className="h-full"
+          >
+            <Outlet />
+          </motion.div>
+        </AnimatePresence>
       </main>
 
       <ChatPanel />

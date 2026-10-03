@@ -30,13 +30,13 @@ export function GlobalLoader() {
   if (!isLoaderVisible) return null;
 
   return (
-    <div className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-black/60 backdrop-blur-sm animate-in fade-in duration-300">
-      <div className="flex flex-col items-center justify-center gap-6 rounded-2xl bg-card/80 p-8 shadow-2xl border border-border backdrop-blur-md">
+    <div className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-sm animate-in fade-in duration-300">
+      <div className="flex flex-col items-center justify-center gap-6 rounded-2xl bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-xl/80 p-8 shadow-2xl border border-white/10 backdrop-blur-md">
         {/* Spinner */}
         <Loader2 className="h-12 w-12 animate-spin text-primary" />
         
         {/* Funny Message */}
-        <p className="text-sm font-medium text-foreground animate-pulse">
+        <p className="text-sm font-medium text-white animate-pulse">
           {message}
         </p>
       </div>

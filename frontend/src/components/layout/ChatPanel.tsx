@@ -112,18 +112,18 @@ export function ChatPanel() {
     <>
       {/* Backdrop overlay (blocks background clicks) */}
       <div 
-        className={`fixed inset-0 z-40 bg-background/60 backdrop-blur-sm transition-opacity duration-300 ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`} 
+        className={`fixed inset-0 z-40 bg-transparent/60 backdrop-blur-sm transition-opacity duration-300 ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`} 
         onClick={() => setIsOpen(false)}
       />
 
       {/* The Chat Panel */}
       <div 
-        className={`fixed right-0 top-0 z-50 flex h-screen w-full max-w-md flex-col border-l border-border bg-card shadow-2xl transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
+        className={`fixed right-0 top-0 z-50 flex h-screen w-full max-w-md flex-col border-l border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-xl shadow-2xl transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
       >
         {/* Sticky Toggle Button */}
         <button
           onClick={togglePanel}
-          className={`absolute left-0 top-1/2 flex h-20 w-8 -translate-x-full -translate-y-1/2 items-center justify-center rounded-l-xl border-y border-l border-border bg-card text-foreground shadow-lg transition-colors duration-300 hover:bg-muted ${isOpen ? 'bg-primary border-primary text-primary-foreground hover:bg-primary/90' : ''}`}
+          className={`absolute left-0 top-1/2 flex h-20 w-8 -translate-x-full -translate-y-1/2 items-center justify-center rounded-l-xl border-y border-l border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-xl text-white shadow-lg transition-colors duration-300 hover:bg-white/10 text-white ${isOpen ? 'bg-primary border-primary text-primary-foreground hover:bg-primary/90' : ''}`}
           aria-label="Toggle Chat"
         >
           {/* Unread Notification Dot */}
@@ -139,8 +139,8 @@ export function ChatPanel() {
         </button>
 
         {/* Panel Header */}
-        <div className="flex items-center justify-between border-b border-border p-4 bg-background/50 backdrop-blur-md">
-          <h2 className="text-sm font-semibold text-foreground flex items-center gap-2">
+        <div className="flex items-center justify-between border-b border-white/10 p-4 bg-transparent/50 backdrop-blur-md">
+          <h2 className="text-sm font-semibold text-white flex items-center gap-2">
             {activePolicyNumber ? `Asking about ${activePolicyNumber}` : activeCustomerName ? `Asking about ${activeCustomerName}` : 'AI Assistant'}
           </h2>
           <div className="flex items-center gap-3">
@@ -150,7 +150,7 @@ export function ChatPanel() {
                   setActivePolicy(null, null);
                   setActiveCustomer(null, null);
                 }}
-                className="text-xs text-muted-foreground hover:text-foreground transition-colors"
+                className="text-xs text-white/70 hover:text-white transition-colors"
               >
                 Clear Context
               </button>
@@ -167,7 +167,7 @@ export function ChatPanel() {
                       console.error("Failed to clear chats", e);
                     }
                   }}
-                  className="text-muted-foreground hover:text-destructive transition-colors"
+                  className="text-white/70 hover:text-destructive transition-colors"
                   title="Clear Chat History"
                 >
                   <Trash2 className="h-4 w-4" />
@@ -178,14 +178,14 @@ export function ChatPanel() {
         </div>
 
         {/* Messages Area (Scrollable) */}
-        <div className="relative flex-1 overflow-hidden bg-background/20">
+        <div className="relative flex-1 overflow-hidden bg-transparent/20">
           
           {/* Top/Bottom Scroll Buttons */}
           <div className="absolute right-4 top-1/2 -translate-y-1/2 z-10 flex flex-col gap-3">
-             <button onClick={scrollToTop} className="rounded-full border border-border bg-card/80 p-2 text-muted-foreground shadow-sm backdrop-blur-md transition-colors hover:bg-muted hover:text-foreground">
+             <button onClick={scrollToTop} className="rounded-full border border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-xl/80 p-2 text-white/70 shadow-sm backdrop-blur-md transition-colors hover:bg-white/10 text-white hover:text-white">
                <ArrowUp className="h-4 w-4" />
              </button>
-             <button onClick={scrollToBottom} className="rounded-full border border-border bg-card/80 p-2 text-muted-foreground shadow-sm backdrop-blur-md transition-colors hover:bg-muted hover:text-foreground">
+             <button onClick={scrollToBottom} className="rounded-full border border-white/10 bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-xl/80 p-2 text-white/70 shadow-sm backdrop-blur-md transition-colors hover:bg-white/10 text-white hover:text-white">
                <ArrowDown className="h-4 w-4" />
              </button>
           </div>
@@ -196,7 +196,7 @@ export function ChatPanel() {
               return (
                 <>
                   {displayMessages.length === 0 && (
-                    <div className="flex h-full items-center justify-center text-center text-sm text-muted-foreground">
+                    <div className="flex h-full items-center justify-center text-center text-sm text-white/70">
                       Hello! I am your AI assistant. <br/> How can I help you today?
                     </div>
                   )}
@@ -211,7 +211,7 @@ export function ChatPanel() {
                 
                 {/* LLM Response */}
                 <div className="flex justify-start">
-                  <div className={`max-w-[90%] rounded-2xl px-3 py-2.5 text-sm shadow-sm border rounded-bl-none ${msg.status === 'failed' ? 'bg-destructive/10 border-destructive/50 text-destructive' : 'bg-muted border-border text-foreground'}`}>
+                  <div className={`max-w-[90%] rounded-2xl px-3 py-2.5 text-sm shadow-sm border rounded-bl-none ${msg.status === 'failed' ? 'bg-destructive/10 border-destructive/50 text-destructive' : 'bg-muted border-white/10 text-white'}`}>
                     {msg.status === 'processing' ? (
                       <span className="flex items-center gap-1.5 px-2 py-1">
                         <span className="h-2 w-2 rounded-full bg-primary/60 animate-bounce" style={{ animationDelay: '0ms' }} />
@@ -238,7 +238,7 @@ export function ChatPanel() {
         </div>
 
         {/* Sticky Input Area */}
-        <div className="border-t border-border bg-background p-4 shadow-[0_-10px_20px_-10px_rgba(0,0,0,0.5)]">
+        <div className="border-t border-white/10 bg-transparent p-4 shadow-[0_-10px_20px_-10px_rgba(0,0,0,0.5)]">
           <form onSubmit={handleSend} className="flex items-end gap-3">
             <textarea
               value={draftInput}
@@ -250,7 +250,7 @@ export function ChatPanel() {
                 }
               }}
               placeholder="Ask me anything..."
-              className="max-h-32 min-h-[52px] w-full resize-none rounded-xl border border-input bg-card px-4 py-3 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+              className="max-h-32 min-h-[52px] w-full resize-none rounded-xl border border-input bg-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-xl px-4 py-3 text-sm ring-offset-background placeholder:text-white/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
               rows={1}
             />
             <button
