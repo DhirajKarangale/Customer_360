@@ -23,6 +23,19 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Create Snowflake Config
+        run: |
+          cat <<EOF > config.toml
+          [connections.default]
+          account = "${{ secrets.SNOWFLAKE_ACCOUNT }}"
+          user = "${{ secrets.SNOWFLAKE_USER }}"
+          password = "${{ secrets.SNOWFLAKE_PASSWORD }}"
+          role = "${{ secrets.SNOWFLAKE_ROLE }}"
+          warehouse = "${{ secrets.SNOWFLAKE_WAREHOUSE }}"
+          database = "${{ secrets.SNOWFLAKE_DATABASE }}"
+          schema = "${{ secrets.SNOWFLAKE_SCHEMA }}"
+          EOF
+
       - name: Setup Snowflake CLI
         uses: Snowflake-Labs/snowflake-cli-action@v1.5
         with:
@@ -36,14 +49,6 @@ jobs:
       #     docker push ${{ env.IMAGE_NAME }}
 
       - name: Stop, Delete, and Redeploy Workers
-        env:
-          SNOWFLAKE_CONNECTIONS_DEFAULT_ACCOUNT: ${{ secrets.SNOWFLAKE_ACCOUNT }}
-          SNOWFLAKE_CONNECTIONS_DEFAULT_USER: ${{ secrets.SNOWFLAKE_USER }}
-          SNOWFLAKE_CONNECTIONS_DEFAULT_PASSWORD: ${{ secrets.SNOWFLAKE_PASSWORD }}
-          SNOWFLAKE_CONNECTIONS_DEFAULT_ROLE: ${{ secrets.SNOWFLAKE_ROLE }}
-          SNOWFLAKE_CONNECTIONS_DEFAULT_WAREHOUSE: ${{ secrets.SNOWFLAKE_WAREHOUSE }}
-          SNOWFLAKE_CONNECTIONS_DEFAULT_DATABASE: ${{ secrets.SNOWFLAKE_DATABASE }}
-          SNOWFLAKE_CONNECTIONS_DEFAULT_SCHEMA: ${{ secrets.SNOWFLAKE_SCHEMA }}
         run: |
           echo "Checking for existing AI worker service..."
           
