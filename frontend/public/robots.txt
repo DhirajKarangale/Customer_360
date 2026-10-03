@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://customer360-theta.vercel.app/sitemap.xml
