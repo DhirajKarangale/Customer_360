@@ -4,7 +4,7 @@ from langchain_core.runnables import RunnableLambda
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_groq import ChatGroq
 from ai.utils.sf_auth import get_snowflake_conn
-LLM_PROVIDERS_LIST = ['snowflake']
+LLM_PROVIDERS_LIST = ['gemini', 'groq', 'snowflake']
 
 # ─── Snowflake Cortex Model Assignments ────────────────────────────────────────
 # Model names must be lowercase kebab-case as used by SNOWFLAKE.CORTEX.COMPLETE().
