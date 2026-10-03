@@ -46,6 +46,5 @@ export function usePoliciesQuery(params: PoliciesParams, enabled: boolean = true
       return data;
     },
     enabled,
-    staleTime: 60 * 1000,
   });
 }

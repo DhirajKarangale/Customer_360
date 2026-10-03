@@ -9,6 +9,8 @@ export const queryClient = new QueryClient({
       staleTime: 1000 * 60 * 5, // 5 minutes (data considered fresh)
       gcTime: 1000 * 60 * 15, // 15 minutes (keep unused data in memory)
       refetchOnWindowFocus: false, // Prevent refetching when switching tabs
+      refetchOnMount: false, // Prevent refetching on component remount
+      refetchOnReconnect: false, // Prevent refetching on network reconnect
       retry: 1,
     },
   },

@@ -39,6 +39,5 @@ export function useCustomersQuery(params: CustomersParams, enabled: boolean = tr
       return data;
     },
     enabled,
-    staleTime: 60 * 1000,
   });
 }
