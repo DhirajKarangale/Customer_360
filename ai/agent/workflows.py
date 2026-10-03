@@ -1,7 +1,7 @@
 import logging
 from ai.agent.run import invoke_agent
 import concurrent.futures
-from ai.agent.memory import fetch_and_filter_memory, update_redis_memory_background
+from ai.memory.manager import fetch_and_filter_memory, update_redis_memory_background
 
 logger = logging.getLogger(__name__)
 
