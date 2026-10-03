@@ -53,7 +53,6 @@ jobs:
       - name: Setup Snowflake CLI
         uses: Snowflake-Labs/snowflake-cli-action@v2
         with:
-          cli-version: "latest"
           default-config-file-path: "~/.snowflake/config.toml"
 
       # ── 4. Verify connection ──────────────────────────────────────────────────
