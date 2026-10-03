@@ -1,0 +1,91 @@
+name: Deploy AI Workers to Snowflake
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'ai/**'
+      - '.github/workflows/deploy-ai-workers.yml'
+
+env:
+  # Constant variable N for number of workers
+  WORKER_COUNT: 3 
+  SERVICE_NAME: "ai_worker_service"
+  COMPUTE_POOL: "ai_compute_pool" 
+  # Update this to your Snowflake image repository path
+  IMAGE_NAME: "<orgname>-<accountname>.registry.snowflakecomputing.com/<database>/<schema>/<repository>/ai_worker:latest"
+
+jobs:
+  deploy-workers:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Snowflake CLI
+        uses: Snowflake-Labs/snowflake-cli-action@v1.5
+        with:
+          cli-version: "latest"
+
+      # Optional: You need to build and push the docker image for the AI worker to Snowflake
+      # - name: Build and Push Docker Image
+      #   run: |
+      #     docker build -t ${{ env.IMAGE_NAME }} ./ai
+      #     echo "${{ secrets.SNOWFLAKE_PASSWORD }}" | docker login ${{ env.IMAGE_NAME }} -u "${{ secrets.SNOWFLAKE_USER }}" --password-stdin
+      #     docker push ${{ env.IMAGE_NAME }}
+
+      - name: Stop, Delete, and Redeploy Workers
+        env:
+          SNOWFLAKE_ACCOUNT: ${{ secrets.SNOWFLAKE_ACCOUNT }}
+          SNOWFLAKE_USER: ${{ secrets.SNOWFLAKE_USER }}
+          SNOWFLAKE_PASSWORD: ${{ secrets.SNOWFLAKE_PASSWORD }}
+          SNOWFLAKE_ROLE: ${{ secrets.SNOWFLAKE_ROLE }}
+          SNOWFLAKE_WAREHOUSE: ${{ secrets.SNOWFLAKE_WAREHOUSE }}
+          SNOWFLAKE_DATABASE: ${{ secrets.SNOWFLAKE_DATABASE }}
+          SNOWFLAKE_SCHEMA: ${{ secrets.SNOWFLAKE_SCHEMA }}
+        run: |
+          echo "Checking for existing AI worker service..."
+          
+          # 1. Stop them (Suspend the service if it exists)
+          echo "Stopping existing workers..."
+          snow sql -q "ALTER SERVICE IF EXISTS ${{ env.SERVICE_NAME }} SUSPEND;" || true
+          
+          # 2. Delete them (Drop the service if it exists)
+          echo "Deleting existing workers..."
+          snow sql -q "DROP SERVICE IF EXISTS ${{ env.SERVICE_NAME }};" || true
+          
+          # 3. Redeploy N workers (Create the service with N instances)
+          echo "Redeploying ${{ env.WORKER_COUNT }} workers on Snowflake SPCS..."
+          snow sql -q "
+            CREATE SERVICE ${{ env.SERVICE_NAME }}
+            IN COMPUTE POOL ${{ env.COMPUTE_POOL }}
+            FROM SPECIFICATION \$\$
+            spec:
+              containers:
+              - name: ai-worker
+                image: /${{ secrets.SNOWFLAKE_DATABASE }}/${{ secrets.SNOWFLAKE_SCHEMA }}/<repository>/ai_worker:latest
+                env:
+                  AGENT_MEMORY: \"${{ secrets.AGENT_MEMORY }}\"
+                  ENABLE_AGENT_DATA_RESTRICTIONS: \"${{ secrets.ENABLE_AGENT_DATA_RESTRICTIONS }}\"
+                  ENABLE_TEXT_FORMAT: \"${{ secrets.ENABLE_TEXT_FORMAT }}\"
+                  POSTGRES_DB: \"${{ secrets.POSTGRES_DB }}\"
+                  POSTGRES_HOST: \"${{ secrets.POSTGRES_HOST }}\"
+                  POSTGRES_PASSWORD: \"${{ secrets.POSTGRES_PASSWORD }}\"
+                  POSTGRES_PORT: \"${{ secrets.POSTGRES_PORT }}\"
+                  POSTGRES_USER: \"${{ secrets.POSTGRES_USER }}\"
+                  REDIS_CONSUMER_GROUP: \"${{ secrets.REDIS_CONSUMER_GROUP }}\"
+                  REDIS_URL: \"${{ secrets.REDIS_URL }}\"
+                  SNOWFLAKE_ACCOUNT: \"${{ secrets.SNOWFLAKE_ACCOUNT }}\"
+                  SNOWFLAKE_DATABASE: \"${{ secrets.SNOWFLAKE_DATABASE }}\"
+                  SNOWFLAKE_PASSWORD: \"${{ secrets.SNOWFLAKE_PASSWORD }}\"
+                  SNOWFLAKE_ROLE: \"${{ secrets.SNOWFLAKE_ROLE }}\"
+                  SNOWFLAKE_SCHEMA: \"${{ secrets.SNOWFLAKE_SCHEMA }}\"
+                  SNOWFLAKE_USER: \"${{ secrets.SNOWFLAKE_USER }}\"
+                  SNOWFLAKE_WAREHOUSE: \"${{ secrets.SNOWFLAKE_WAREHOUSE }}\"
+            \$\$
+            MIN_INSTANCES = ${{ env.WORKER_COUNT }}
+            MAX_INSTANCES = ${{ env.WORKER_COUNT }};
+          "
+          
+          echo "✅ Successfully redeployed ${{ env.WORKER_COUNT }} workers!"
