@@ -315,3 +315,27 @@
   padding: 0 !important;
   margin: 0 !important;
 }
+
+/* Global Clickable Elements Styling */
+button, 
+a, 
+[role="button"],
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  cursor: pointer;
+}
+
+button:disabled,
+button[disabled],
+a[disabled],
+a[aria-disabled="true"],
+[disabled],
+[aria-disabled="true"],
+[data-disabled],
+[data-state="disabled"],
+.disabled,
+button:disabled *,
+[disabled] * {
+  cursor: not-allowed !important;
+}
