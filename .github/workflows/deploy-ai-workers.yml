@@ -48,6 +48,7 @@ jobs:
           schema           = "${{ secrets.SNOWFLAKE_SCHEMA }}"
           private_key_file = "/tmp/sf_key.pem"
           TOML
+          chmod 0600 ~/.snowflake/config.toml
 
       # ── 3. Install Snowflake CLI ──────────────────────────────────────────────
       - name: Setup Snowflake CLI
