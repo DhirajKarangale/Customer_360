@@ -1,5 +1,7 @@
 import { Mail, Phone, Code, Rocket, Sparkles } from 'lucide-react';
 import { useUIStore } from '../store/useUIStore';
+import dhirajAvatar from '../../assets/dhiraj_1.png';
+import dCodersLogo from '../../assets/DCoders.webp';
 
 const teamMembers = [
   {
@@ -7,7 +9,7 @@ const teamMembers = [
     role: "Full Stack Developer",
     phone: "+91 7620320595",
     email: "dakarangale02@gmail.com",
-    avatar: "./dhiraj_1.png"
+    avatar: dhirajAvatar
   },
   {
     name: "Vedang Joshi",
@@ -56,7 +58,7 @@ export default function AboutPage() {
             <div className="relative flex h-20 w-20 items-center justify-center overflow-hidden rounded-full bg-black border border-white/5 p-3">
 
               <img
-                src="/DCoders.webp"
+                src={dCodersLogo}
                 alt="DCoders Logo"
                 className="h-full w-full object-contain transform transition-transform duration-500 group-hover:scale-110"
                 onError={(e) => {
