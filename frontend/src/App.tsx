@@ -37,34 +37,52 @@ function App() {
 
       <BrowserRouter>
         <SetBG />
-        <Suspense fallback={<PageFallback />}>
-          <Routes>
+        <Routes>
+          <Route path="/login" element={
+            <Suspense fallback={<PageFallback />}>
+              <LoginPage />
+            </Suspense>
+          } />
+          <Route path="/maintenance" element={
+            <Suspense fallback={<PageFallback />}>
+              <MaintenancePage />
+            </Suspense>
+          } />
 
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="/maintenance" element={<MaintenancePage />} />
+          <Route element={<PublicLayout />}>
+            <Route path="/privacy" element={
+              <Suspense fallback={<PageFallback />}>
+                <PrivacyPage />
+              </Suspense>
+            } />
+            <Route path="/terms" element={
+              <Suspense fallback={<PageFallback />}>
+                <TermsPage />
+              </Suspense>
+            } />
+            <Route path="/cookies" element={
+              <Suspense fallback={<PageFallback />}>
+                <CookiesPage />
+              </Suspense>
+            } />
+          </Route>
 
-
-            <Route element={<PublicLayout />}>
-              <Route path="/privacy" element={<PrivacyPage />} />
-              <Route path="/terms" element={<TermsPage />} />
-              <Route path="/cookies" element={<CookiesPage />} />
+          <Route element={<ProtectedRoute />}>
+            <Route path="/" element={<AppLayout />}>
+              <Route index element={<Customer360Page />} />
+              <Route path="policies" element={<PoliciesPage />} />
+              <Route path="customers" element={<CustomersPage />} />
+              <Route path="about" element={<AboutPage />} />
+              <Route path="profile" element={<ProfilePage />} />
             </Route>
+          </Route>
 
-
-            <Route element={<ProtectedRoute />}>
-              <Route path="/" element={<AppLayout />}>
-                <Route index element={<Customer360Page />} />
-                <Route path="policies" element={<PoliciesPage />} />
-                <Route path="customers" element={<CustomersPage />} />
-                <Route path="about" element={<AboutPage />} />
-                <Route path="profile" element={<ProfilePage />} />
-              </Route>
-            </Route>
-
-
-            <Route path="*" element={<NotFoundPage />} />
-          </Routes>
-        </Suspense>
+          <Route path="*" element={
+            <Suspense fallback={<PageFallback />}>
+              <NotFoundPage />
+            </Suspense>
+          } />
+        </Routes>
       </BrowserRouter>
     </>
   );
