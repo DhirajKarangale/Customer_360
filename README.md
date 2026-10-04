@@ -12,6 +12,11 @@
 ## 🔗 Live Demo
 **[Customer 360 Web Application](https://customer360-theta.vercel.app/)**
 
+### 🔐 Demo Accounts
+You can test the application using the following demo credentials:
+- **Emails:** `suresh.d@dcoders.com` | `neha.k@dcoders.com`
+- **Password:** `Pass@123`
+
 ---
 
 ## 📖 Project Overview
