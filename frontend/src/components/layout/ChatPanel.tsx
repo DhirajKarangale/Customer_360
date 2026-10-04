@@ -161,7 +161,7 @@ export const ChatPanel = memo(function ChatPanel() {
               </button>
             )}
             {(() => {
-              const displayMessages = activeCustomerId ? messages.filter(m => m.customer_id === activeCustomerId) : messages;
+              const displayMessages = messages;
               return displayMessages.length > 0 && (
                 isClearing ? (
                   <div className="flex items-center gap-2 text-xs text-white/70">
@@ -211,7 +211,7 @@ export const ChatPanel = memo(function ChatPanel() {
 
           <div ref={scrollRef} className="h-full overflow-y-auto p-4 space-y-6 pb-20">
             {(() => {
-              const displayMessages = activeCustomerId ? messages.filter(m => m.customer_id === activeCustomerId) : messages;
+              const displayMessages = messages;
               return (
                 <>
                   {displayMessages.length === 0 && (
