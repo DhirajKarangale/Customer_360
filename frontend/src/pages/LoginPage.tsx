@@ -1,3 +1,4 @@
+import { SEO } from '../components/SEO';
 import { useState } from 'react';
 import { Lock, Mail, Loader2 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
@@ -8,6 +9,15 @@ import { useAIChatStore } from '../store/useAIChatStore';
 import { fetchChats } from '../api/chat';
 
 export default function LoginPage() {
+  return (
+    <>
+      <SEO title="Login | Customer 360 AI Insights" />
+      <OriginalLoginPage />
+    </>
+  );
+}
+
+function OriginalLoginPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();

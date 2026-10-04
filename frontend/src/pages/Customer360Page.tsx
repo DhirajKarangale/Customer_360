@@ -1,3 +1,4 @@
+import { SEO } from '../components/SEO';
 import { useState, useEffect, useMemo } from 'react';
 import { StaggerContainer, StaggerItem } from '../components/layout/PageWrapper';
 import { useAuthStore } from '../store/useAuthStore';
@@ -32,6 +33,15 @@ import { getRandomMessage } from '../utils/messages';
 const CHART_COLORS = ['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6'];
 
 export default function Customer360Page() {
+  return (
+    <>
+      <SEO title="Customer 360 AI Insights Dashboard" />
+      <OriginalCustomer360Page />
+    </>
+  );
+}
+
+function OriginalCustomer360Page() {
   const agent = useAuthStore((state) => state.agent);
 
 

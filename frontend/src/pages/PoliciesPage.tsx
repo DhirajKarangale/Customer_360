@@ -1,3 +1,4 @@
+import { SEO } from '../components/SEO';
 import { useState, useEffect, useMemo } from 'react';
 import { Search, FileText, ShieldAlert, CalendarDays, ArrowRight, MessageSquare } from 'lucide-react';
 import { useAuthStore } from '../store/useAuthStore';
@@ -20,6 +21,15 @@ const POLICY_TYPES = ["Life", "Health", "Auto", "Home", "Liability", "Property",
 const POLICY_STATUSES = ["Active", "Pending", "Expired", "Cancelled", "Suspended", "Claimed"];
 
 export default function PoliciesPage() {
+  return (
+    <>
+      <SEO title="Policies | Customer 360 AI Insights" />
+      <OriginalPoliciesPage />
+    </>
+  );
+}
+
+function OriginalPoliciesPage() {
   const agent = useAuthStore((state) => state.agent);
 
 

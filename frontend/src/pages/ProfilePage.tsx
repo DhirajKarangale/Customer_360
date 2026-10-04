@@ -1,3 +1,4 @@
+import { SEO } from '../components/SEO';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuthStore } from '../store/useAuthStore';
@@ -9,6 +10,15 @@ import { useAIChatStore } from '../store/useAIChatStore';
 import { abortAllRequests } from '../api/axios';
 
 export default function ProfilePage() {
+  return (
+    <>
+      <SEO title="Profile | Customer 360 AI Insights" />
+      <OriginalProfilePage />
+    </>
+  );
+}
+
+function OriginalProfilePage() {
   const [imgError, setImgError] = useState(false);
   const agent = useAuthStore((state) => state.agent);
   const setAgent = useAuthStore((state) => state.setAgent);

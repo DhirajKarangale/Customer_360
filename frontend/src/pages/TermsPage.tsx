@@ -1,6 +1,16 @@
+import { SEO } from '../components/SEO';
 import { PolicyLayout } from '../components/layout/PolicyLayout';
 
 export default function TermsPage() {
+  return (
+    <>
+      <SEO title="Terms | Customer 360 AI Insights" />
+      <OriginalTermsPage />
+    </>
+  );
+}
+
+function OriginalTermsPage() {
   return (
     <PolicyLayout title="Terms of Service">
           <p className="lead text-xl text-white/90 font-medium mb-8">

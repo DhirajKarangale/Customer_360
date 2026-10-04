@@ -9,6 +9,11 @@
   <strong>An enterprise-ready AI application providing a unified 360-degree customer view for insurers and lenders.</strong>
 </p>
 
+<div align="center">
+  <img src="frontend/public/icons/Customer%20360%20AI%20Insights%20Dashboard.png" alt="Customer 360 AI Insights Dashboard" width="100%" />
+</div>
+
+
 ## 🔗 Live Demo
 **[Customer 360 Web Application](https://customer360-theta.vercel.app/)**
 

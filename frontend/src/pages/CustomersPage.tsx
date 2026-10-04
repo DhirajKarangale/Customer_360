@@ -1,3 +1,4 @@
+import { SEO } from '../components/SEO';
 import { useState, useEffect, useMemo } from 'react';
 import { Search, Loader2, Users, MessageSquare } from 'lucide-react';
 import { useAuthStore } from '../store/useAuthStore';
@@ -10,6 +11,15 @@ import { CustomerModal } from '../components/customers/CustomerModal';
 import { getRandomMessage } from '../utils/messages';
 
 export default function CustomersPage() {
+  return (
+    <>
+      <SEO title="Customers | Customer 360 AI Insights" />
+      <OriginalCustomersPage />
+    </>
+  );
+}
+
+function OriginalCustomersPage() {
   const agent = useAuthStore((state) => state.agent);
 
 

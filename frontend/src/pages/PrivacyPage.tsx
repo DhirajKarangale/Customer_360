@@ -1,6 +1,16 @@
+import { SEO } from '../components/SEO';
 import { PolicyLayout } from '../components/layout/PolicyLayout';
 
 export default function PrivacyPage() {
+  return (
+    <>
+      <SEO title="Privacy | Customer 360 AI Insights" />
+      <OriginalPrivacyPage />
+    </>
+  );
+}
+
+function OriginalPrivacyPage() {
   return (
     <PolicyLayout title="Privacy Policy">
           <p className="lead text-xl text-white/90 font-medium mb-8">

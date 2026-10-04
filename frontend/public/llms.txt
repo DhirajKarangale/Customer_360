@@ -1,0 +1,58 @@
+# Customer 360 & Next Best Action Engine 
+
+> An enterprise-ready AI application providing a unified 360-degree customer view for insurers and lenders.
+
+## 📖 Project Overview
+We built an AI powered Customer 360 and Next Best Action platform to help insurance agents understand customers and decide what to do next. It brings together data from databases such as customer profiles, policies, coverage, transactions, and KPIs with call transcripts, notes, chats, and past interactions. Agents get everything in one dashboard, including key insights, risk signals, and Daily Suggestions. The AI copilot can pull the right information from both databases and interactions when needed. Using RAG and LLMs, it understands customer history, sentiment, and satisfaction to recommend personalized Next Best Actions with supporting context. LLM memory keeps conversations consistent over time, while role based access ensures agents only see their assigned customers. Developed for the Snowflake CoCo CLI Hackathon – GCC Edition.
+
+## ✨ Key Features
+- **Unified 360° Customer Dashboard**: Move from a customer question to a recommended action in a single, intuitive experience.
+- **Next Best Action Engine**: AI-driven suggestions tailored to each customer's specific profile, interactions, and policies.
+- **Asynchronous AI Workflows**: Handles long-running generative tasks through a scalable worker queue using Redis Streams.
+- **Snowflake Integration**: Uses Snowflake for robust data handling, semantic models, and retrieval pipelines.
+
+## 🔗 Site Structure & Demo
+- [Live Demo - Customer 360 Web Application](https://customer360-theta.vercel.app/)
+
+### Main Routes
+- `/` - Main AI Insights Dashboard
+- `/about` - Information about the Customer 360 platform
+- `/customers` - Customer relationship management and analytics
+- `/policies` - Policy administration and tracking
+- `/login` - Authentication Portal
+
+### 🔐 Demo Accounts
+You can test the application using the following demo credentials:
+- **Emails:** `suresh.d@dcoders.com` | `neha.k@dcoders.com`
+- **Password:** `Pass@123`
+
+## 🏗️ Architecture & Technologies Used
+
+The architecture is split into three main microservices:
+
+### 1. Frontend (Web Application)
+A modern, highly responsive React web interface providing the agent portal.
+- **Framework**: React 19, Vite
+- **Styling & UI**: Tailwind CSS v4, Shadcn UI, Framer Motion (for dynamic micro-animations)
+- **State Management**: Zustand
+- **Routing**: React Router v7
+- **Data Visualization**: Recharts
+
+### 2. Backend (API Gateway)
+A fast, robust REST API that connects the frontend to the database and orchestrates AI tasks.
+- **Framework**: FastAPI (Python)
+- **Authentication**: PyJWT (Secure Bearer Tokens), Passlib (Bcrypt)
+- **Database Connection**: Snowflake Connector, Psycopg2 (PostgreSQL)
+- **Task Delegation**: Redis (for queuing asynchronous LLM processing jobs)
+
+### 3. AI Worker (Agentic Workflow Service)
+A dedicated background worker service tailored for intensive language modeling and RAG tasks.
+- **Frameworks**: LangGraph, LangChain
+- **LLMs**: Google GenAI, Groq
+- **Vector Search / RAG**: FAISS
+- **Queue Consumer**: Redis Streams consumer ensuring reliable job execution and callbacks.
+
+## ⚙️ Snowflake CoCo Capabilities
+- **Data Processing**: Using Snowflake to query structured/semi-structured customer data and store unstructured documents.
+- **AI Agent Orchestration**: Connecting LLM architectures with enterprise data securely.
+- **Semantic Data Models**: Querying semantic views of customer, policy, and claims data directly from the AI agents.

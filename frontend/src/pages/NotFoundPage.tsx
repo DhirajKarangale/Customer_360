@@ -1,7 +1,17 @@
+import { SEO } from '../components/SEO';
 import { AlertTriangle, Home, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function NotFoundPage() {
+  return (
+    <>
+      <SEO title="Page Not Found | Customer 360 AI Insights" />
+      <OriginalNotFoundPage />
+    </>
+  );
+}
+
+function OriginalNotFoundPage() {
   return (
     <div className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-transparent p-4 text-center">
 

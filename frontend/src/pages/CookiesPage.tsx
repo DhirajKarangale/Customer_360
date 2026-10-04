@@ -1,6 +1,16 @@
+import { SEO } from '../components/SEO';
 import { PolicyLayout } from '../components/layout/PolicyLayout';
 
 export default function CookiesPage() {
+  return (
+    <>
+      <SEO title="Cookies | Customer 360 AI Insights" />
+      <OriginalCookiesPage />
+    </>
+  );
+}
+
+function OriginalCookiesPage() {
   return (
     <PolicyLayout title="Cookie Policy">
           <p className="lead text-xl text-white/90 font-medium mb-8">

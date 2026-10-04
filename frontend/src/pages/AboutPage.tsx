@@ -1,3 +1,4 @@
+import { SEO } from '../components/SEO';
 import { Mail, Phone, Code, Rocket, Sparkles } from 'lucide-react';
 import { useUIStore } from '../store/useUIStore';
 import dhirajAvatar from '../../assets/dhiraj_1.png';
@@ -35,6 +36,15 @@ const teamMembers = [
 ];
 
 export default function AboutPage() {
+  return (
+    <>
+      <SEO title="About | Customer 360 AI Insights" />
+      <OriginalAboutPage />
+    </>
+  );
+}
+
+function OriginalAboutPage() {
   const showToast = useUIStore((state) => state.showToast);
 
   const handleCopy = (text: string, label: string) => {

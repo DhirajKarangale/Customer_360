@@ -1,6 +1,16 @@
+import { SEO } from '../components/SEO';
 import { ServerCrash, Wrench, Sparkles } from 'lucide-react';
 
 export default function MaintenancePage() {
+  return (
+    <>
+      <SEO title="Maintenance | Customer 360 AI Insights" />
+      <OriginalMaintenancePage />
+    </>
+  );
+}
+
+function OriginalMaintenancePage() {
   return (
     <div className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-transparent p-4 text-center">
 
