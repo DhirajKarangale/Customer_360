@@ -86,6 +86,6 @@ Thumbs.db
 # rag/chunks_data/
 # rag/embeddings_data/
 # rag/vector_store_data/
-ai\certs
 
+ai/certs
 Bruno_Hackathon_Snowflake_Coco_Cli
