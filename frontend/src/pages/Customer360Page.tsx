@@ -86,7 +86,7 @@ function OriginalCustomer360Page() {
 
       if (content) {
         setLiveSuggestionText(content.replace(/\[DONE\]/g, ''));
-        setIsGenerating(false); 
+        setIsGenerating(false);
       }
     };
 
@@ -139,8 +139,8 @@ function OriginalCustomer360Page() {
       }
     });
 
-    const crossSellRatio = uniqueCustomers.size > 0 
-      ? (policies.filter(p => p.status === 'Active').length / uniqueCustomers.size).toFixed(1) 
+    const crossSellRatio = uniqueCustomers.size > 0
+      ? (policies.filter(p => p.status === 'Active').length / uniqueCustomers.size).toFixed(1)
       : '0.0';
 
 
@@ -150,7 +150,7 @@ function OriginalCustomer360Page() {
     const barData = Object.entries(renewalsByMonth)
       .map(([name, count]) => ({ name, count }))
       .sort((a, b) => new Date(`1 ${a.name}`).getTime() - new Date(`1 ${b.name}`).getTime())
-      .slice(0, 5); 
+      .slice(0, 5);
 
     return {
       activePremium,
@@ -182,7 +182,7 @@ function OriginalCustomer360Page() {
 
           {policiesLoading ? (
             <div className="flex h-32 items-center justify-center rounded-xl border border-white/5 bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl shadow-sm">
-               <Loader2 className="h-6 w-6 animate-spin text-primary" />
+              <Loader2 className="h-6 w-6 animate-spin text-primary" />
             </div>
           ) : (
             <StaggerContainer className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -262,7 +262,7 @@ function OriginalCustomer360Page() {
                           <Cell key={`cell-${index}`} fill={CHART_COLORS[index % CHART_COLORS.length]} />
                         ))}
                       </Pie>
-                      <Tooltip 
+                      <Tooltip
                         formatter={(value: any) => formatCurrency(Number(value))}
                         contentStyle={{ borderRadius: '8px', border: '1px solid #27272a', backgroundColor: '#09090b', color: '#fafafa' }}
                         itemStyle={{ color: '#fafafa' }}
@@ -291,7 +291,7 @@ function OriginalCustomer360Page() {
                       <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#27272a" opacity={0.5} />
                       <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{ fontSize: 12, fill: '#a1a1aa' }} dy={10} />
                       <YAxis axisLine={false} tickLine={false} tick={{ fontSize: 12, fill: '#a1a1aa' }} />
-                      <Tooltip 
+                      <Tooltip
                         cursor={{ fill: '#27272a' }}
                         contentStyle={{ borderRadius: '8px', border: '1px solid #27272a', backgroundColor: '#09090b', color: '#fafafa' }}
                         itemStyle={{ color: '#fafafa' }}
@@ -312,39 +312,39 @@ function OriginalCustomer360Page() {
             <div className="flex items-center justify-between border-b border-white/10 bg-white/5 px-6 py-4">
               <div className="flex items-center gap-2">
                 <Sparkles className="h-5 w-5 text-indigo-500" />
-                <h2 className="text-lg font-semibold tracking-tight text-white">Today's Suggestions</h2>
+                <h2 className="text-lg font-semibold tracking-tight text-white">Next Best Action</h2>
               </div>
               {isGenerating && <Loader2 className="h-4 w-4 animate-spin text-indigo-500" />}
             </div>
 
-          <div className="flex-1 overflow-y-auto p-6 scroll-smooth">
-            {suggestionsLoading && !liveSuggestionText ? (
-              <div className="flex flex-col items-center justify-center h-full gap-4 text-white/70 opacity-70">
-                <Loader2 className="h-6 w-6 animate-spin text-indigo-500" />
-                <p className="text-sm text-center px-4">{getRandomMessage('aiSuggestionsLoading')}</p>
-              </div>
-            ) : (
-              <div className="w-full space-y-4">
-                {liveSuggestionText ? (
-                  <div className="text-sm text-white">
-                    {/<[a-z][\s\S]*>/i.test(liveSuggestionText) ? (
-                      <div className="llm-content" dangerouslySetInnerHTML={{ __html: liveSuggestionText.replace(/\[DONE\]/g, '') }} />
-                    ) : (
-                      <div className="whitespace-pre-wrap">{liveSuggestionText.replace(/\[DONE\]/g, '')}</div>
-                    )}
-                    {isGenerating && (
-                      <span className="inline-block w-2 h-4 ml-1 bg-indigo-500 animate-pulse align-middle rounded-full"></span>
-                    )}
-                  </div>
-                ) : (
-                  <div className="text-center text-white/70 pt-10 px-4">
-                    {getRandomMessage('aiSuggestionsEmpty')}
-                  </div>
-                )}
-              </div>
-            )}
+            <div className="flex-1 overflow-y-auto p-6 scroll-smooth">
+              {suggestionsLoading && !liveSuggestionText ? (
+                <div className="flex flex-col items-center justify-center h-full gap-4 text-white/70 opacity-70">
+                  <Loader2 className="h-6 w-6 animate-spin text-indigo-500" />
+                  <p className="text-sm text-center px-4">{getRandomMessage('aiSuggestionsLoading')}</p>
+                </div>
+              ) : (
+                <div className="w-full space-y-4">
+                  {liveSuggestionText ? (
+                    <div className="text-sm text-white">
+                      {/<[a-z][\s\S]*>/i.test(liveSuggestionText) ? (
+                        <div className="llm-content" dangerouslySetInnerHTML={{ __html: liveSuggestionText.replace(/\[DONE\]/g, '') }} />
+                      ) : (
+                        <div className="whitespace-pre-wrap">{liveSuggestionText.replace(/\[DONE\]/g, '')}</div>
+                      )}
+                      {isGenerating && (
+                        <span className="inline-block w-2 h-4 ml-1 bg-indigo-500 animate-pulse align-middle rounded-full"></span>
+                      )}
+                    </div>
+                  ) : (
+                    <div className="text-center text-white/70 pt-10 px-4">
+                      {getRandomMessage('aiSuggestionsEmpty')}
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
           </div>
-        </div>
         </div>
 
       </div>
