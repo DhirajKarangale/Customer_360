@@ -35,6 +35,10 @@ jobs:
         run: |
           mkdir -p ~/.snowflake
 
+          # Write the private key from the Github secret to a temporary file
+          echo "${{ secrets.SNOWFLAKE_PRIVATE_KEY }}" > ~/.snowflake/key.pem
+          chmod 0600 ~/.snowflake/key.pem
+
           cat > ~/.snowflake/config.toml << TOML
           [connections.default]
           account          = "${{ secrets.SNOWFLAKE_ACCOUNT }}"
@@ -43,10 +47,9 @@ jobs:
           database         = "${{ secrets.SNOWFLAKE_DATABASE }}"
           schema           = "${{ secrets.SNOWFLAKE_SCHEMA }}"
           authenticator    = "SNOWFLAKE_JWT"
-          private_key_path = "${{ github.workspace }}/ai/certs/key.pem"
+          private_key_path = "${HOME}/.snowflake/key.pem"
           TOML
           chmod 0600 ~/.snowflake/config.toml
-          chmod 0600 "${{ github.workspace }}/ai/certs/key.pem"
 
       # ── 3. Install Snowflake CLI ──────────────────────────────────────────────
       - name: Setup Snowflake CLI
